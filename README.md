@@ -32,7 +32,7 @@ The project combines precise platforming with switches, cargo crates, power-rout
 - **Puzzle-first gameplay:** Progress through environmental logic and movement challenges, without combat.
 - **80 chambers in eight chapters:** Different facility areas introduce changing visual themes, mechanics, and puzzle combinations.
 - **Expressive robot movement:** Walk, run, jump, crouch, crouch-walk, wall-slide, wall-jump, dash, climb, and push cargo where supported by the level.
-- **Expanded character animations:** 78 individual player sprite frames across 17 animation states, including dedicated crate-pushing and strain poses.
+- **Expanded character animations:** 78 individual player sprite frames across 17 animation states.
 - **Interactive machinery:** Work with switches, relays, generators, valves, mirrors, pressure plates, conveyors, moving platforms, and other room-specific devices.
 - **Atmosphere and sound:** Chapter-specific music with quieter and rhythmic layers, sound effects, and a separate finale cue.
 - **Guidance without hand-holding:** KIP dialogue and optional puzzle hints accompany the exploration.
