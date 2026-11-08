@@ -60,10 +60,6 @@ These previews use the **original character frames from `data/art/player/`**. Th
 
 *The GIFs cycle through existing PNG frames for demonstration. In the actual game, jumping and landing respond to gameplay events rather than looping continuously.*
 
-### Chapter backgrounds
-
-![Eight background image assets used by ECHO-7](docs/readme/actual_chapter_background_assets.jpg)
-
 *Actual files from `data/art/backgrounds/`. These show background assets, not the full scene as rendered in a playable level.*
 
 ### Gameplay screenshots
@@ -219,7 +215,7 @@ The `tools/` directory contains scripts for generating or inspecting music, back
 
 ## Credits and licensing
 
-ECHO-7 is a personal game-development project. Its repository contains game code, authored/generated artwork, music assets, and development tools. See [`MUSIC_CREDITS.md`](MUSIC_CREDITS.md) for the audio-production notes included with the project.
+ECHO-7 is a personal game-development project. Its repository contains game code, authored/generated artwork, music assets, and development tools. 
 
 **License:** Consult the repository's [`LICENSE`](LICENSE) file once one has been added. If you choose the **MIT License**, include its complete text in a root-level `LICENSE` file with the correct copyright year and owner. Confirm that all code and assets you intend to license or redistribute are yours or are covered by compatible permissions; software, images, fonts, and music may have different rights.
 
