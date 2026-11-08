@@ -1,0 +1,32 @@
+name: Build ECHO-7 (Linux & Windows)
+on: [push, workflow_dispatch]
+
+jobs:
+  build:
+    runs-on: ${{ matrix.os }}
+    strategy:
+      matrix:
+        os: [ubuntu-latest, windows-latest]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install pygame-ce pyinstaller
+          if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
+      - name: Build with PyInstaller
+        shell: bash
+        run: |
+          pyinstaller -y --noconsole --onedir \
+            --add-data "data:data" \
+            --hidden-import "tools.check_runtime_assets" \
+            --hidden-import "src.levels.level_loader" \
+            --hidden-import "src.core.game" \
+            --name "ECHO-7" main.py
+      - uses: actions/upload-artifact@v4
+        with:
+          name: ECHO-7-${{ matrix.os }}
+          path: dist/ECHO-7
