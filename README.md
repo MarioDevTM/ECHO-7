@@ -42,12 +42,6 @@ The project combines precise platforming with switches, cargo crates, power-rout
 
 The player is a small robot with a **rounded white helmet and cyan visor**. Its sprite set includes dedicated animations for walking, crouch-walking, jumping, falling, landing, climbing, and interacting with crates.
 
-The repository also contains concept/reference art and assets for the different chapters. Some backgrounds are rendered procedurally by the game; the reference images below **are artwork previews, not screenshots of live gameplay**.
-
-| Chapter 1 — Awakening | Chapter 8 — Surface Breach |
-|:---:|:---:|
-| <img src="data/art/backgrounds/chapter_01.png" alt="Awakening chapter artwork" width="460" /> | <img src="data/art/backgrounds/chapter_08.png" alt="Surface Breach chapter artwork" width="460" /> |
-
 ## The eight chapters
 
 | Chapter | Levels | Focus |
