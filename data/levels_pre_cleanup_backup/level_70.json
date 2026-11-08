@@ -1,0 +1,921 @@
+{
+  "tiles": [
+    [
+      0,
+      0,
+      36,
+      1210
+    ],
+    [
+      2718,
+      0,
+      36,
+      1210
+    ],
+    [
+      36,
+      0,
+      2682,
+      30
+    ],
+    [
+      150,
+      1075,
+      432,
+      135
+    ],
+    [
+      776,
+      1075,
+      362,
+      135
+    ],
+    [
+      776,
+      835,
+      362,
+      23
+    ],
+    [
+      1630,
+      835,
+      390,
+      40
+    ],
+    [
+      2214,
+      595,
+      340,
+      40
+    ],
+    [
+      2214,
+      355,
+      340,
+      23
+    ],
+    [
+      1630,
+      355,
+      390,
+      40
+    ],
+    [
+      776,
+      355,
+      362,
+      40
+    ],
+    [
+      899,
+      221,
+      155,
+      18
+    ],
+    [
+      1036,
+      239,
+      18,
+      116
+    ],
+    [
+      1254,
+      865,
+      14,
+      174
+    ],
+    [
+      2670,
+      385,
+      14,
+      174
+    ],
+    [
+      820,
+      858,
+      274,
+      22
+    ],
+    [
+      1674,
+      875,
+      302,
+      22
+    ],
+    [
+      2258,
+      635,
+      252,
+      22
+    ],
+    [
+      2238,
+      378,
+      44,
+      56
+    ],
+    [
+      2362,
+      378,
+      44,
+      56
+    ],
+    [
+      1674,
+      395,
+      302,
+      22
+    ],
+    [
+      820,
+      395,
+      274,
+      22
+    ],
+    [
+      156,
+      30,
+      90,
+      42
+    ],
+    [
+      176,
+      72,
+      50,
+      16
+    ],
+    [
+      516,
+      30,
+      114,
+      42
+    ],
+    [
+      536,
+      72,
+      74,
+      16
+    ],
+    [
+      876,
+      30,
+      90,
+      28
+    ],
+    [
+      896,
+      58,
+      50,
+      16
+    ],
+    [
+      1236,
+      30,
+      114,
+      56
+    ],
+    [
+      1256,
+      86,
+      74,
+      16
+    ],
+    [
+      1596,
+      30,
+      90,
+      42
+    ],
+    [
+      1616,
+      72,
+      50,
+      16
+    ],
+    [
+      1956,
+      30,
+      114,
+      42
+    ],
+    [
+      1976,
+      72,
+      74,
+      16
+    ],
+    [
+      2316,
+      30,
+      90,
+      28
+    ],
+    [
+      2336,
+      58,
+      50,
+      16
+    ],
+    [
+      36,
+      140,
+      40,
+      90
+    ],
+    [
+      36,
+      380,
+      40,
+      74
+    ],
+    [
+      36,
+      620,
+      40,
+      90
+    ],
+    [
+      2678,
+      660,
+      40,
+      90
+    ],
+    [
+      36,
+      860,
+      40,
+      74
+    ],
+    [
+      2678,
+      900,
+      40,
+      74
+    ]
+  ],
+  "ladders": [],
+  "crates": [],
+  "plates": [],
+  "switches": [
+    {
+      "link_id": "timer",
+      "x": 1825,
+      "y": 355,
+      "mode": "timed",
+      "duration": 24
+    }
+  ],
+  "doors": [
+    {
+      "id": "surface_lock",
+      "x": 899,
+      "y": 239,
+      "w": 20,
+      "h": 116,
+      "required_links": [
+        "power",
+        "beta",
+        "timer"
+      ]
+    }
+  ],
+  "moving_platforms": [
+    {
+      "id": "car0",
+      "x": 1317,
+      "y": 797,
+      "w": 83,
+      "h": 16,
+      "end_x": 1396,
+      "end_y": 869,
+      "speed": 124,
+      "active_by_default": true,
+      "required_links": []
+    },
+    {
+      "id": "car1",
+      "x": 1317,
+      "y": 317,
+      "w": 83,
+      "h": 16,
+      "end_x": 1396,
+      "end_y": 389,
+      "speed": 124,
+      "active_by_default": true,
+      "required_links": []
+    }
+  ],
+  "conveyors": [],
+  "wind_zones": [],
+  "water_zones": [],
+  "valves": [],
+  "generators": [
+    {
+      "link_id": "power",
+      "x": 957,
+      "y": 1075
+    },
+    {
+      "link_id": "overhaul_70_generator",
+      "x": 247,
+      "y": 1010
+    }
+  ],
+  "cables": [
+    {
+      "link_id": "A",
+      "points": [
+        [
+          966,
+          823
+        ],
+        [
+          966,
+          859
+        ],
+        [
+          1841,
+          859
+        ],
+        [
+          1841,
+          825
+        ]
+      ]
+    },
+    {
+      "link_id": "power",
+      "points": [
+        [
+          966,
+          1063
+        ],
+        [
+          966,
+          1106
+        ],
+        [
+          1841,
+          1106
+        ],
+        [
+          1841,
+          825
+        ]
+      ]
+    },
+    {
+      "link_id": "alpha",
+      "points": [
+        [
+          1834,
+          823
+        ],
+        [
+          1834,
+          859
+        ],
+        [
+          2400,
+          859
+        ],
+        [
+          2400,
+          345
+        ]
+      ]
+    },
+    {
+      "link_id": "B",
+      "points": [
+        [
+          976,
+          823
+        ],
+        [
+          976,
+          866
+        ],
+        [
+          2400,
+          866
+        ],
+        [
+          2400,
+          345
+        ]
+      ]
+    },
+    {
+      "link_id": "power",
+      "points": [
+        [
+          957,
+          1063
+        ],
+        [
+          957,
+          1097
+        ],
+        [
+          907,
+          1097
+        ],
+        [
+          907,
+          299
+        ]
+      ]
+    },
+    {
+      "link_id": "beta",
+      "points": [
+        [
+          2384,
+          343
+        ],
+        [
+          2384,
+          384
+        ],
+        [
+          907,
+          384
+        ],
+        [
+          907,
+          299
+        ]
+      ]
+    },
+    {
+      "link_id": "timer",
+      "points": [
+        [
+          1825,
+          343
+        ],
+        [
+          1825,
+          391
+        ],
+        [
+          907,
+          391
+        ],
+        [
+          907,
+          299
+        ]
+      ]
+    }
+  ],
+  "mirrors": [],
+  "crushers": [],
+  "steam_vents": [],
+  "collapsing_platforms": [
+    {
+      "id": "walk0",
+      "x": 1178,
+      "y": 995,
+      "w": 70,
+      "h": 12,
+      "delay": 0.48,
+      "respawn": 2.4
+    },
+    {
+      "id": "walk2",
+      "x": 1178,
+      "y": 835,
+      "w": 70,
+      "h": 12,
+      "delay": 0.48,
+      "respawn": 2.4
+    },
+    {
+      "id": "walk4",
+      "x": 2120,
+      "y": 675,
+      "w": 58,
+      "h": 12,
+      "delay": 0.48,
+      "respawn": 2.4
+    },
+    {
+      "id": "walk6",
+      "x": 2554,
+      "y": 435,
+      "w": 70,
+      "h": 12,
+      "delay": 0.48,
+      "respawn": 2.4
+    }
+  ],
+  "checkpoints": [
+    {
+      "id": "beacon_70",
+      "x": 1955,
+      "y": 355
+    }
+  ],
+  "spikes": [],
+  "acids": [
+    {
+      "x": 36,
+      "y": 1135,
+      "w": 114,
+      "h": 75
+    },
+    {
+      "x": 582,
+      "y": 1135,
+      "w": 194,
+      "h": 75
+    },
+    {
+      "x": 1138,
+      "y": 1135,
+      "w": 1580,
+      "h": 75
+    }
+  ],
+  "lasers": [],
+  "optical_beams": [],
+  "sequences": [],
+  "collectibles": [
+    {
+      "id": "log_70",
+      "x": 818,
+      "y": 1043,
+      "title": "Collapse Protocol / Shift Notes",
+      "text": "Collapse Protocol. Check the signal lines before you leave the service deck."
+    },
+    {
+      "id": "field_trace_70",
+      "x": 435,
+      "y": 999,
+      "title": "FIELD TRACE 70 / UPPER MEGASTRUCTURE FINALE",
+      "text": "ECHO-7 field diagnostics: Build the chapter's ultimate interior collapse loop: restore power, store A proof, traverse a vertical spring section, select B, and unlock the timed retreat.",
+      "required_links": [
+        "alpha"
+      ],
+      "optional_investigation": true
+    },
+    {
+      "id": "service_challenge_70",
+      "x": 2111,
+      "y": 188,
+      "title": "Optional Diagnostics 70",
+      "text": "Optional master circuit cleared. The standard exit never depends on this side challenge.",
+      "required_links": [
+        "sector_70_validated"
+      ],
+      "optional_investigation": true
+    }
+  ],
+  "decorations": [
+    {
+      "type": "warning_stripe",
+      "x": 788,
+      "y": 847,
+      "w": 120
+    },
+    {
+      "type": "warning_stripe",
+      "x": 1642,
+      "y": 847,
+      "w": 120
+    },
+    {
+      "type": "warning_stripe",
+      "x": 2226,
+      "y": 607,
+      "w": 120
+    },
+    {
+      "type": "warning_stripe",
+      "x": 2226,
+      "y": 367,
+      "w": 120
+    },
+    {
+      "type": "warning_stripe",
+      "x": 1642,
+      "y": 367,
+      "w": 120
+    },
+    {
+      "type": "warning_stripe",
+      "x": 788,
+      "y": 367,
+      "w": 120
+    },
+    {
+      "type": "monitor",
+      "x": 927,
+      "y": 975,
+      "text": "ENERGIZE"
+    },
+    {
+      "type": "monitor",
+      "x": 917,
+      "y": 736,
+      "text": "SELECT A / B"
+    },
+    {
+      "type": "monitor",
+      "x": 1795,
+      "y": 735,
+      "text": "HOLD A + POWER"
+    },
+    {
+      "type": "monitor",
+      "x": 2226,
+      "y": 499,
+      "text": "LAUNCH"
+    },
+    {
+      "type": "monitor",
+      "x": 2354,
+      "y": 255,
+      "text": "HOLD ALPHA + B"
+    },
+    {
+      "type": "monitor",
+      "x": 1793,
+      "y": 262,
+      "text": "ESCAPE 24s"
+    },
+    {
+      "type": "monitor",
+      "x": 922,
+      "y": 181,
+      "text": "EXIT LOCK"
+    },
+    {
+      "type": "monitor",
+      "x": 448,
+      "y": 961,
+      "text": "FORENSIC TRACE 70"
+    },
+    {
+      "type": "monitor",
+      "x": 231,
+      "y": 907,
+      "text": "ACCESS / 70"
+    },
+    {
+      "type": "warning_stripe",
+      "x": 260,
+      "y": 903,
+      "w": 78
+    }
+  ],
+  "latching_relays": [
+    {
+      "link_id": "alpha",
+      "x": 1825,
+      "y": 835,
+      "required_links": [
+        "A",
+        "power"
+      ]
+    },
+    {
+      "link_id": "beta",
+      "x": 2384,
+      "y": 355,
+      "required_links": [
+        "alpha",
+        "B"
+      ]
+    },
+    {
+      "link_id": "overhaul_70_record",
+      "x": 278,
+      "y": 891,
+      "required_links": [
+        "overhaul_70_generator"
+      ]
+    },
+    {
+      "link_id": "sector_70_validated",
+      "x": 2099,
+      "y": 230,
+      "required_links": [
+        "overhaul_70_record"
+      ]
+    }
+  ],
+  "routing_consoles": [
+    {
+      "id": "selector",
+      "route_id": "supply",
+      "x": 957,
+      "y": 835,
+      "a_signal": "A",
+      "b_signal": "B"
+    }
+  ],
+  "signal_inverters": [],
+  "npcs": [
+    {
+      "id": "kip",
+      "x": 250,
+      "y": 1075,
+      "dialogue": [
+        "Collapse Protocol. If you hear applause, that is a loose pipe.",
+        "Start the generator to bring the circuit online.",
+        "Start the clock after the other lock lights are green."
+      ]
+    },
+    {
+      "id": "ada",
+      "x": 820,
+      "y": 355
+    }
+  ],
+  "springs": [
+    {
+      "id": "launch",
+      "x": 2499,
+      "y": 585,
+      "w": 56,
+      "h": 10
+    }
+  ],
+  "dash_recharges": [
+    {
+      "id": "ring5",
+      "x": 2103,
+      "y": 257
+    }
+  ],
+  "one_way_platforms": [
+    {
+      "id": "walk1",
+      "x": 1138,
+      "y": 915,
+      "w": 70,
+      "h": 12
+    },
+    {
+      "id": "walk3",
+      "x": 2056,
+      "y": 755,
+      "w": 58,
+      "h": 12
+    },
+    {
+      "id": "walk5",
+      "x": 2594,
+      "y": 515,
+      "w": 70,
+      "h": 12
+    },
+    {
+      "id": "walk7",
+      "x": 2594,
+      "y": 355,
+      "w": 70,
+      "h": 12
+    },
+    {
+      "id": "overhaul_step_70_0",
+      "x": 229,
+      "y": 1010,
+      "w": 78,
+      "h": 12
+    },
+    {
+      "id": "overhaul_step_70_1",
+      "x": 318,
+      "y": 950,
+      "w": 78,
+      "h": 12
+    },
+    {
+      "id": "overhaul_step_70_2",
+      "x": 260,
+      "y": 891,
+      "w": 78,
+      "h": 12
+    },
+    {
+      "id": "validation_foot_70_0",
+      "x": 1996,
+      "y": 292,
+      "w": 78,
+      "h": 12
+    },
+    {
+      "id": "validation_foot_70_1",
+      "x": 2081,
+      "y": 230,
+      "w": 78,
+      "h": 12
+    }
+  ],
+  "dash_barriers": [],
+  "level_id": 70,
+  "width": 2754,
+  "height": 1210,
+  "name": "Chamber 70 // Collapse Protocol",
+  "abilities": {
+    "wall_jump": true,
+    "dash": true
+  },
+  "spawn": [
+    188,
+    1029
+  ],
+  "exit": [
+    956,
+    275
+  ],
+  "hint_route": [
+    "power",
+    "A",
+    "alpha",
+    "B",
+    "beta",
+    "timer"
+  ],
+  "hint_notes": {
+    "power": [
+      "Start the generator to bring the circuit online.",
+      "Start the generator to bring the circuit online.",
+      "Start the generator to bring the circuit online."
+    ],
+    "A": [
+      "Set the supply selector to A.",
+      "Set the supply selector to A.",
+      "Set the supply selector to A."
+    ],
+    "alpha": [
+      "Keep A and power live, then interact with the recorder to hold the reading.",
+      "Keep A and power live, then interact with the recorder to hold the reading.",
+      "Keep A and power live, then interact with the recorder to hold the reading."
+    ],
+    "B": [
+      "Transfer the selector to B after recording the A-side reading.",
+      "Transfer the selector to B after recording the A-side reading.",
+      "Transfer the selector to B after recording the A-side reading."
+    ],
+    "beta": [
+      "Keep alpha and B live, then interact with the recorder to hold the reading.",
+      "Keep alpha and B live, then interact with the recorder to hold the reading.",
+      "Keep alpha and B live, then interact with the recorder to hold the reading."
+    ],
+    "timer": [
+      "Start the clock after the other lock lights are green.",
+      "Start the clock after the other lock lights are green.",
+      "Start the clock after the other lock lights are green."
+    ]
+  },
+  "solution_steps": [
+    "Start the generator to bring the circuit online.",
+    "Set the supply selector to A.",
+    "Keep A and power live, then interact with the recorder to hold the reading.",
+    "Transfer the selector to B after recording the A-side reading.",
+    "Keep alpha and B live, then interact with the recorder to hold the reading.",
+    "Start the clock after the other lock lights are green."
+  ],
+  "subtitle": "Start the generator to bring the circuit online.  //  SERVICE DETOUR: Restore the auxiliary feeder and latch a reading from the upper inspection platform.",
+  "chapter": 7,
+  "theme": "spire",
+  "topology": "Upper Megastructure Finale",
+  "overhaul_version": 1,
+  "overhaul_design": {
+    "profile": "generator_relay",
+    "route": "left_return",
+    "actual_direction": 1,
+    "mandatory": true,
+    "service_platform_count": 3
+  },
+  "secondary_validation_1": {
+    "checkpoint": "beacon_70",
+    "extra_platforms": 2,
+    "signal": "sector_70_validated"
+  },
+  "side_challenge_policy": {
+    "campaign_blocking": false,
+    "optional_signals": [
+      "overhaul_70_record",
+      "sector_70_validated"
+    ],
+    "reason": "Not proven traversable in the Pygame engine; preserve main progression."
+  },
+  "architectural_overhaul_v2": {
+    "archetype": "Buttressed Machinery Core",
+    "chapter": 7,
+    "theme": "spire",
+    "original_tile_count": 15,
+    "final_tile_count": 42,
+    "thickened_decks": 4,
+    "added_piers": 0,
+    "added_corbels": 7,
+    "added_soffits": 7,
+    "added_buttresses": 6
+  }
+}

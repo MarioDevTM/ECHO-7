@@ -1,0 +1,849 @@
+{
+  "tiles": [
+    [
+      0,
+      0,
+      36,
+      922
+    ],
+    [
+      2084,
+      0,
+      36,
+      922
+    ],
+    [
+      36,
+      0,
+      2048,
+      30
+    ],
+    [
+      1008,
+      787,
+      340,
+      135
+    ],
+    [
+      1008,
+      571,
+      340,
+      23
+    ],
+    [
+      150,
+      571,
+      390,
+      23
+    ],
+    [
+      150,
+      355,
+      390,
+      23
+    ],
+    [
+      1008,
+      355,
+      340,
+      23
+    ],
+    [
+      1488,
+      355,
+      432,
+      23
+    ],
+    [
+      1488,
+      571,
+      432,
+      23
+    ],
+    [
+      1646,
+      437,
+      155,
+      18
+    ],
+    [
+      1783,
+      455,
+      18,
+      116
+    ],
+    [
+      194,
+      594,
+      302,
+      22
+    ],
+    [
+      1860,
+      378,
+      36,
+      56
+    ],
+    [
+      1860,
+      594,
+      36,
+      56
+    ],
+    [
+      1686,
+      594,
+      36,
+      56
+    ],
+    [
+      156,
+      30,
+      108,
+      42
+    ],
+    [
+      176,
+      72,
+      68,
+      16
+    ],
+    [
+      516,
+      30,
+      132,
+      42
+    ],
+    [
+      536,
+      72,
+      92,
+      16
+    ],
+    [
+      876,
+      30,
+      108,
+      28
+    ],
+    [
+      896,
+      58,
+      68,
+      16
+    ],
+    [
+      1236,
+      30,
+      132,
+      56
+    ],
+    [
+      1256,
+      86,
+      92,
+      16
+    ],
+    [
+      1596,
+      30,
+      108,
+      42
+    ],
+    [
+      1616,
+      72,
+      68,
+      16
+    ],
+    [
+      36,
+      140,
+      40,
+      84
+    ],
+    [
+      36,
+      380,
+      40,
+      68
+    ],
+    [
+      36,
+      620,
+      40,
+      84
+    ],
+    [
+      2044,
+      660,
+      40,
+      84
+    ]
+  ],
+  "ladders": [],
+  "crates": [],
+  "plates": [],
+  "switches": [
+    {
+      "link_id": "timer",
+      "x": 1704,
+      "y": 355,
+      "mode": "timed",
+      "duration": 19
+    }
+  ],
+  "doors": [
+    {
+      "id": "surface_lock",
+      "x": 1646,
+      "y": 455,
+      "w": 20,
+      "h": 116,
+      "required_links": [
+        "alpha",
+        "beta",
+        "up",
+        "timer"
+      ]
+    }
+  ],
+  "moving_platforms": [
+    {
+      "id": "car0",
+      "x": 544,
+      "y": 557,
+      "w": 108,
+      "h": 16,
+      "end_x": 895,
+      "end_y": 557,
+      "speed": 112,
+      "active_by_default": false,
+      "required_links": [
+        "up"
+      ]
+    },
+    {
+      "id": "car1",
+      "x": 558,
+      "y": 563,
+      "w": 86,
+      "h": 16,
+      "end_x": 558,
+      "end_y": 347,
+      "speed": 112,
+      "active_by_default": true,
+      "required_links": []
+    },
+    {
+      "id": "car2",
+      "x": 544,
+      "y": 341,
+      "w": 108,
+      "h": 16,
+      "end_x": 895,
+      "end_y": 341,
+      "speed": 112,
+      "active_by_default": false,
+      "required_links": [
+        "up"
+      ]
+    },
+    {
+      "id": "car3",
+      "x": 1938,
+      "y": 563,
+      "w": 86,
+      "h": 16,
+      "end_x": 1938,
+      "end_y": 347,
+      "speed": 112,
+      "active_by_default": true,
+      "required_links": []
+    }
+  ],
+  "conveyors": [],
+  "wind_zones": [],
+  "water_zones": [],
+  "valves": [],
+  "generators": [],
+  "cables": [
+    {
+      "link_id": "up",
+      "points": [
+        [
+          1201,
+          417
+        ],
+        [
+          1201,
+          595
+        ],
+        [
+          361,
+          595
+        ],
+        [
+          361,
+          561
+        ]
+      ]
+    },
+    {
+      "link_id": "east_up",
+      "points": [
+        [
+          368,
+          201
+        ],
+        [
+          368,
+          379
+        ],
+        [
+          1194,
+          379
+        ],
+        [
+          1194,
+          345
+        ]
+      ]
+    },
+    {
+      "link_id": "down",
+      "points": [
+        [
+          1201,
+          548
+        ],
+        [
+          1201,
+          591
+        ],
+        [
+          1194,
+          591
+        ],
+        [
+          1194,
+          345
+        ]
+      ]
+    },
+    {
+      "link_id": "alpha",
+      "points": [
+        [
+          345,
+          559
+        ],
+        [
+          345,
+          593
+        ],
+        [
+          1654,
+          593
+        ],
+        [
+          1654,
+          515
+        ]
+      ]
+    },
+    {
+      "link_id": "beta",
+      "points": [
+        [
+          1178,
+          343
+        ],
+        [
+          1178,
+          544
+        ],
+        [
+          1654,
+          544
+        ],
+        [
+          1654,
+          515
+        ]
+      ]
+    },
+    {
+      "link_id": "up",
+      "points": [
+        [
+          1192,
+          417
+        ],
+        [
+          1192,
+          551
+        ],
+        [
+          1654,
+          551
+        ],
+        [
+          1654,
+          515
+        ]
+      ]
+    },
+    {
+      "link_id": "timer",
+      "points": [
+        [
+          1704,
+          343
+        ],
+        [
+          1704,
+          558
+        ],
+        [
+          1654,
+          558
+        ],
+        [
+          1654,
+          515
+        ]
+      ]
+    }
+  ],
+  "mirrors": [
+    {
+      "id": "prism",
+      "x": 1178,
+      "y": 535,
+      "orientation": 1
+    },
+    {
+      "id": "secondprism",
+      "x": 345,
+      "y": 319,
+      "orientation": 1
+    }
+  ],
+  "crushers": [],
+  "steam_vents": [
+    {
+      "id": "seam1",
+      "x": 756,
+      "y": 486,
+      "w": 36,
+      "h": 134,
+      "period": 3.1,
+      "duty_cycle": 0.43,
+      "disabled_by": []
+    },
+    {
+      "id": "seam4",
+      "x": 1400,
+      "y": 270,
+      "w": 36,
+      "h": 134,
+      "period": 3.1,
+      "duty_cycle": 0.43,
+      "disabled_by": []
+    }
+  ],
+  "collapsing_platforms": [],
+  "checkpoints": [
+    {
+      "id": "beacon_40",
+      "x": 1855,
+      "y": 355
+    }
+  ],
+  "spikes": [],
+  "acids": [
+    {
+      "x": 36,
+      "y": 847,
+      "w": 972,
+      "h": 75
+    },
+    {
+      "x": 1348,
+      "y": 847,
+      "w": 736,
+      "h": 75
+    }
+  ],
+  "lasers": [],
+  "optical_beams": [
+    {
+      "link_id": "up",
+      "x": 1063,
+      "y": 553,
+      "dir": [
+        1,
+        0
+      ],
+      "max_length": 430,
+      "receiver": [
+        1185,
+        429,
+        14,
+        10
+      ]
+    },
+    {
+      "link_id": "down",
+      "x": 1063,
+      "y": 553,
+      "dir": [
+        1,
+        0
+      ],
+      "max_length": 430,
+      "receiver": [
+        1185,
+        560,
+        14,
+        10
+      ]
+    },
+    {
+      "link_id": "east_up",
+      "x": 205,
+      "y": 337,
+      "dir": [
+        1,
+        0
+      ],
+      "max_length": 480,
+      "receiver": [
+        352,
+        213,
+        14,
+        10
+      ]
+    },
+    {
+      "link_id": "east_down",
+      "x": 205,
+      "y": 337,
+      "dir": [
+        1,
+        0
+      ],
+      "max_length": 480,
+      "receiver": [
+        352,
+        344,
+        14,
+        10
+      ]
+    }
+  ],
+  "sequences": [],
+  "collectibles": [
+    {
+      "id": "log_40",
+      "x": 1050,
+      "y": 539,
+      "title": "Panopticon Lockdown / Shift Notes",
+      "text": "Panopticon Lockdown. Check the signal lines before you leave the service deck."
+    },
+    {
+      "id": "field_trace_40",
+      "x": 1283,
+      "y": 711,
+      "title": "FIELD TRACE 40 / SURVEILLANCE SYSTEM FINALE",
+      "text": "ECHO-7 field diagnostics: Use two distinct regional security proofs plus a final ordered access sequence.",
+      "required_links": [
+        "alpha"
+      ],
+      "optional_investigation": true
+    },
+    {
+      "id": "service_challenge_40",
+      "x": 1883,
+      "y": 313,
+      "title": "Optional Diagnostics 40",
+      "text": "Optional auxiliary service record recovered. This archive is no longer linked to a redundant side circuit and does not gate the exit.",
+      "required_links": [],
+      "optional_investigation": true
+    }
+  ],
+  "decorations": [
+    {
+      "type": "warning_stripe",
+      "x": 1020,
+      "y": 583,
+      "w": 120
+    },
+    {
+      "type": "warning_stripe",
+      "x": 162,
+      "y": 583,
+      "w": 120
+    },
+    {
+      "type": "warning_stripe",
+      "x": 162,
+      "y": 367,
+      "w": 120
+    },
+    {
+      "type": "warning_stripe",
+      "x": 1020,
+      "y": 367,
+      "w": 120
+    },
+    {
+      "type": "warning_stripe",
+      "x": 1500,
+      "y": 367,
+      "w": 120
+    },
+    {
+      "type": "warning_stripe",
+      "x": 1500,
+      "y": 583,
+      "w": 120
+    },
+    {
+      "type": "monitor",
+      "x": 315,
+      "y": 471,
+      "text": "HOLD UP"
+    },
+    {
+      "type": "monitor",
+      "x": 1148,
+      "y": 255,
+      "text": "HOLD EAST_UP + DOWN"
+    },
+    {
+      "type": "monitor",
+      "x": 1672,
+      "y": 262,
+      "text": "ESCAPE 19s"
+    },
+    {
+      "type": "monitor",
+      "x": 1669,
+      "y": 397,
+      "text": "EXIT LOCK"
+    },
+    {
+      "type": "monitor",
+      "x": 1296,
+      "y": 673,
+      "text": "FORENSIC TRACE 40"
+    }
+  ],
+  "latching_relays": [
+    {
+      "link_id": "alpha",
+      "x": 345,
+      "y": 571,
+      "required_links": [
+        "up"
+      ]
+    },
+    {
+      "link_id": "beta",
+      "x": 1178,
+      "y": 355,
+      "required_links": [
+        "east_up",
+        "down"
+      ]
+    }
+  ],
+  "routing_consoles": [],
+  "signal_inverters": [],
+  "npcs": [
+    {
+      "id": "kip",
+      "x": 1108,
+      "y": 787,
+      "dialogue": [
+        "Panopticon Lockdown. Please count the clicks. I keep losing count.",
+        "Turn the mirror toward its ceiling pickup.",
+        "Start the clock after the other lock lights are green."
+      ]
+    },
+    {
+      "id": "ada",
+      "x": 1532,
+      "y": 571
+    }
+  ],
+  "springs": [],
+  "dash_recharges": [],
+  "one_way_platforms": [
+    {
+      "id": "walk0",
+      "x": 1388,
+      "y": 715,
+      "w": 83,
+      "h": 12
+    },
+    {
+      "id": "walk1",
+      "x": 1348,
+      "y": 643,
+      "w": 83,
+      "h": 12
+    },
+    {
+      "id": "walk2",
+      "x": 1388,
+      "y": 571,
+      "w": 83,
+      "h": 12
+    },
+    {
+      "id": "walk3",
+      "x": 749,
+      "y": 656,
+      "w": 56,
+      "h": 12
+    },
+    {
+      "id": "walk4",
+      "x": 749,
+      "y": 440,
+      "w": 56,
+      "h": 12
+    }
+  ],
+  "dash_barriers": [],
+  "level_id": 40,
+  "width": 2120,
+  "height": 922,
+  "name": "Chamber 40 // Panopticon Lockdown",
+  "abilities": {
+    "wall_jump": true,
+    "dash": true
+  },
+  "spawn": [
+    1046,
+    741
+  ],
+  "exit": [
+    1703,
+    491
+  ],
+  "hint_route": [
+    "up",
+    "alpha",
+    "east_up",
+    "down",
+    "beta",
+    "timer"
+  ],
+  "hint_notes": {
+    "up": [
+      "Turn the mirror toward its ceiling pickup.",
+      "Turn the mirror toward its ceiling pickup.",
+      "Turn the mirror toward its ceiling pickup."
+    ],
+    "alpha": [
+      "Keep up live, then interact with the recorder to hold the reading.",
+      "Keep up live, then interact with the recorder to hold the reading.",
+      "Keep up live, then interact with the recorder to hold the reading."
+    ],
+    "east_up": [
+      "Aim the second reflector at its overhead pickup.",
+      "Aim the second reflector at its overhead pickup.",
+      "Aim the second reflector at its overhead pickup."
+    ],
+    "down": [
+      "Turn the mirror toward the low pickup beside its foot.",
+      "Turn the mirror toward the low pickup beside its foot.",
+      "Turn the mirror toward the low pickup beside its foot."
+    ],
+    "beta": [
+      "Keep east_up and down live, then interact with the recorder to hold the reading.",
+      "Keep east_up and down live, then interact with the recorder to hold the reading.",
+      "Keep east_up and down live, then interact with the recorder to hold the reading."
+    ],
+    "timer": [
+      "Start the clock after the other lock lights are green.",
+      "Start the clock after the other lock lights are green.",
+      "Start the clock after the other lock lights are green."
+    ]
+  },
+  "solution_steps": [
+    "Turn the mirror toward its ceiling pickup.",
+    "Keep up live, then interact with the recorder to hold the reading.",
+    "Aim the second reflector at its overhead pickup.",
+    "Turn the mirror toward the low pickup beside its foot.",
+    "Keep east_up and down live, then interact with the recorder to hold the reading.",
+    "Start the clock after the other lock lights are green."
+  ],
+  "subtitle": "Turn the mirror toward its ceiling pickup.",
+  "chapter": 4,
+  "theme": "optical",
+  "topology": "Central Surveillance Finale",
+  "overhaul_version": 1,
+  "overhaul_design": {
+    "profile": "relay_bus",
+    "route": "left_return",
+    "actual_direction": -1,
+    "mandatory": false,
+    "service_platform_count": 0,
+    "retired_by_cleanup": true
+  },
+  "secondary_validation_1": {
+    "checkpoint": "beacon_40",
+    "extra_platforms": 0,
+    "signal": "sector_40_validated",
+    "retired_by_cleanup": true
+  },
+  "side_challenge_policy": {
+    "campaign_blocking": false,
+    "optional_signals": [],
+    "reason": "Deprecated optional side circuit removed; service record remains accessible."
+  },
+  "architectural_overhaul_v2": {
+    "archetype": "Segmented Security Bulkhead Corridor",
+    "chapter": 4,
+    "theme": "optical",
+    "original_tile_count": 12,
+    "final_tile_count": 30,
+    "thickened_decks": 0,
+    "added_piers": 0,
+    "added_corbels": 4,
+    "added_soffits": 5,
+    "added_buttresses": 4,
+    "tiles_before_cleanup_pass": 30,
+    "removed_legacy_platforms": 5,
+    "removed_legacy_devices": 4,
+    "added_partition_walls": 0,
+    "added_grounded_piers": 0,
+    "added_stepped_terraces": 0
+  },
+  "cleanup_v3_audit": {
+    "level": 40,
+    "chapter": 4,
+    "theme": "optical",
+    "name": "Chamber 40 // Panopticon Lockdown",
+    "archetype": "Segmented Security Bulkhead Corridor",
+    "orig_backup_tiles": 12,
+    "final_tiles": 30,
+    "removed_platforms": 5,
+    "retained_platforms": 5,
+    "removed_devices": 4,
+    "added_walls": 0,
+    "added_piers": 0,
+    "added_terraces": 0,
+    "gate_links": [
+      "alpha",
+      "beta",
+      "up",
+      "timer"
+    ]
+  }
+}

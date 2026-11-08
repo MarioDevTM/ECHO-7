@@ -1,0 +1,706 @@
+{
+  "tiles": [
+    [
+      0,
+      0,
+      36,
+      742
+    ],
+    [
+      3218,
+      0,
+      36,
+      742
+    ],
+    [
+      36,
+      0,
+      3182,
+      30
+    ],
+    [
+      150,
+      355,
+      362,
+      44
+    ],
+    [
+      708,
+      355,
+      390,
+      44
+    ],
+    [
+      1528,
+      355,
+      340,
+      23
+    ],
+    [
+      2064,
+      355,
+      432,
+      23
+    ],
+    [
+      2064,
+      607,
+      432,
+      135
+    ],
+    [
+      2692,
+      607,
+      362,
+      135
+    ],
+    [
+      1063,
+      338,
+      10,
+      17
+    ],
+    [
+      2815,
+      473,
+      155,
+      18
+    ],
+    [
+      2952,
+      491,
+      18,
+      116
+    ],
+    [
+      2612,
+      385,
+      14,
+      186
+    ],
+    [
+      202,
+      399,
+      258,
+      22
+    ],
+    [
+      760,
+      399,
+      286,
+      22
+    ],
+    [
+      1580,
+      378,
+      236,
+      22
+    ],
+    [
+      556,
+      30,
+      111,
+      56
+    ],
+    [
+      576,
+      86,
+      71,
+      16
+    ],
+    [
+      956,
+      30,
+      127,
+      42
+    ],
+    [
+      976,
+      72,
+      87,
+      16
+    ],
+    [
+      1356,
+      30,
+      95,
+      42
+    ],
+    [
+      1376,
+      72,
+      55,
+      16
+    ],
+    [
+      1756,
+      30,
+      111,
+      28
+    ],
+    [
+      1776,
+      58,
+      71,
+      16
+    ],
+    [
+      2156,
+      30,
+      127,
+      28
+    ],
+    [
+      2176,
+      58,
+      87,
+      16
+    ],
+    [
+      2556,
+      30,
+      95,
+      56
+    ],
+    [
+      2576,
+      86,
+      55,
+      16
+    ],
+    [
+      2956,
+      30,
+      111,
+      56
+    ],
+    [
+      2976,
+      86,
+      71,
+      16
+    ],
+    [
+      36,
+      140,
+      28,
+      75
+    ],
+    [
+      3190,
+      180,
+      28,
+      75
+    ],
+    [
+      36,
+      380,
+      28,
+      91
+    ],
+    [
+      3190,
+      420,
+      28,
+      91
+    ],
+    [
+      365,
+      131,
+      32,
+      120
+    ],
+    [
+      2088,
+      378,
+      36,
+      127
+    ]
+  ],
+  "ladders": [],
+  "crates": [
+    {
+      "id": "load",
+      "x": 823,
+      "y": 319
+    }
+  ],
+  "plates": [
+    {
+      "link_id": "weight",
+      "x": 1015,
+      "y": 355
+    }
+  ],
+  "switches": [
+    {
+      "link_id": "timer",
+      "x": 2280,
+      "y": 607,
+      "mode": "timed",
+      "duration": 19
+    }
+  ],
+  "doors": [
+    {
+      "id": "surface_lock",
+      "x": 2815,
+      "y": 491,
+      "w": 20,
+      "h": 116,
+      "required_links": [
+        "alpha",
+        "weight",
+        "timer"
+      ]
+    }
+  ],
+  "moving_platforms": [
+    {
+      "id": "car0",
+      "x": 1873,
+      "y": 331,
+      "w": 65,
+      "h": 16,
+      "end_x": 1994,
+      "end_y": 289,
+      "speed": 120,
+      "active_by_default": true,
+      "required_links": []
+    }
+  ],
+  "conveyors": [],
+  "wind_zones": [],
+  "water_zones": [],
+  "valves": [],
+  "generators": [],
+  "cables": [
+    {
+      "link_id": "weight",
+      "points": [
+        [
+          1024,
+          343
+        ],
+        [
+          1024,
+          379
+        ],
+        [
+          2296,
+          379
+        ],
+        [
+          2296,
+          345
+        ]
+      ]
+    },
+    {
+      "link_id": "alpha",
+      "points": [
+        [
+          2280,
+          343
+        ],
+        [
+          2280,
+          573
+        ],
+        [
+          2823,
+          573
+        ],
+        [
+          2823,
+          551
+        ]
+      ]
+    },
+    {
+      "link_id": "weight",
+      "points": [
+        [
+          1015,
+          343
+        ],
+        [
+          1015,
+          580
+        ],
+        [
+          2823,
+          580
+        ],
+        [
+          2823,
+          551
+        ]
+      ]
+    },
+    {
+      "link_id": "timer",
+      "points": [
+        [
+          2280,
+          595
+        ],
+        [
+          2280,
+          643
+        ],
+        [
+          2823,
+          643
+        ],
+        [
+          2823,
+          551
+        ]
+      ]
+    }
+  ],
+  "mirrors": [],
+  "crushers": [
+    {
+      "id": "ram2",
+      "x": 1663,
+      "y": 140,
+      "w": 74,
+      "h": 42,
+      "travel": 172,
+      "period": 2.9,
+      "disabled_by": [
+        "weight"
+      ]
+    },
+    {
+      "id": "hammer1",
+      "x": 1364,
+      "y": 177,
+      "w": 54,
+      "h": 33,
+      "travel": 178,
+      "period": 3.2,
+      "disabled_by": [
+        "weight"
+      ]
+    }
+  ],
+  "steam_vents": [
+    {
+      "id": "seam0",
+      "x": 592,
+      "y": 270,
+      "w": 36,
+      "h": 134,
+      "period": 3.1,
+      "duty_cycle": 0.43,
+      "disabled_by": []
+    }
+  ],
+  "collapsing_platforms": [],
+  "checkpoints": [
+    {
+      "id": "beacon_59",
+      "x": 2431,
+      "y": 607
+    }
+  ],
+  "spikes": [],
+  "acids": [
+    {
+      "x": 36,
+      "y": 667,
+      "w": 2028,
+      "h": 75
+    },
+    {
+      "x": 2496,
+      "y": 667,
+      "w": 196,
+      "h": 75
+    },
+    {
+      "x": 3054,
+      "y": 667,
+      "w": 164,
+      "h": 75
+    }
+  ],
+  "lasers": [
+    {
+      "x": 2431,
+      "y": 445,
+      "dir": [
+        0,
+        1
+      ],
+      "max_length": 155,
+      "disabled_by": [
+        "alpha"
+      ]
+    }
+  ],
+  "optical_beams": [],
+  "sequences": [],
+  "collectibles": [
+    {
+      "id": "log_59",
+      "x": 750,
+      "y": 323,
+      "title": "Containment Breach / Shift Notes",
+      "text": "Containment Breach. Check the signal lines before you leave the service deck."
+    },
+    {
+      "id": "field_trace_59",
+      "x": 770,
+      "y": 279,
+      "title": "FIELD TRACE 59 / LASER & CRUSHER GAUNTLET",
+      "text": "ECHO-7 field diagnostics: Make the player inspect safe hazard periods, arrange a counterweight proof, then commit to a final timed crossing.",
+      "required_links": [
+        "alpha"
+      ],
+      "optional_investigation": true
+    },
+    {
+      "id": "service_challenge_59",
+      "x": 2459,
+      "y": 565,
+      "title": "Optional Diagnostics 59",
+      "text": "Optional auxiliary service record recovered. This archive is no longer linked to a redundant side circuit and does not gate the exit.",
+      "required_links": [],
+      "optional_investigation": true
+    }
+  ],
+  "decorations": [
+    {
+      "type": "warning_stripe",
+      "x": 162,
+      "y": 367,
+      "w": 120
+    },
+    {
+      "type": "warning_stripe",
+      "x": 720,
+      "y": 367,
+      "w": 120
+    },
+    {
+      "type": "warning_stripe",
+      "x": 1540,
+      "y": 367,
+      "w": 120
+    },
+    {
+      "type": "warning_stripe",
+      "x": 2076,
+      "y": 367,
+      "w": 120
+    },
+    {
+      "type": "monitor",
+      "x": 952,
+      "y": 263,
+      "text": "RECEIVING SCALE"
+    },
+    {
+      "type": "monitor",
+      "x": 1538,
+      "y": 255,
+      "text": "PRESS LINE"
+    },
+    {
+      "type": "monitor",
+      "x": 2250,
+      "y": 255,
+      "text": "HOLD WEIGHT"
+    },
+    {
+      "type": "monitor",
+      "x": 2248,
+      "y": 514,
+      "text": "ESCAPE 19s"
+    },
+    {
+      "type": "monitor",
+      "x": 2838,
+      "y": 433,
+      "text": "EXIT LOCK"
+    },
+    {
+      "type": "monitor",
+      "x": 783,
+      "y": 241,
+      "text": "FORENSIC TRACE 59"
+    }
+  ],
+  "latching_relays": [
+    {
+      "link_id": "alpha",
+      "x": 2280,
+      "y": 355,
+      "required_links": [
+        "weight"
+      ]
+    }
+  ],
+  "routing_consoles": [],
+  "signal_inverters": [],
+  "npcs": [
+    {
+      "id": "kip",
+      "x": 250,
+      "y": 355,
+      "dialogue": [
+        "Containment Breach. Maintenance says the gap is within budget.",
+        "Move the cargo right until it rests on the receiving scale.",
+        "Start the clock after the other lock lights are green."
+      ]
+    }
+  ],
+  "springs": [],
+  "dash_recharges": [
+    {
+      "id": "ring4",
+      "x": 2580,
+      "y": 509
+    }
+  ],
+  "one_way_platforms": [
+    {
+      "id": "walk0",
+      "x": 1204,
+      "y": 317,
+      "w": 68,
+      "h": 12
+    },
+    {
+      "id": "walk1",
+      "x": 1358,
+      "y": 389,
+      "w": 68,
+      "h": 12
+    },
+    {
+      "id": "walk2",
+      "x": 2536,
+      "y": 523,
+      "w": 70,
+      "h": 12
+    },
+    {
+      "id": "walk3",
+      "x": 2496,
+      "y": 439,
+      "w": 70,
+      "h": 12
+    }
+  ],
+  "dash_barriers": [],
+  "level_id": 59,
+  "width": 3254,
+  "height": 742,
+  "name": "Chamber 59 // Containment Breach",
+  "abilities": {
+    "wall_jump": true,
+    "dash": true
+  },
+  "spawn": [
+    188,
+    309
+  ],
+  "exit": [
+    2872,
+    527
+  ],
+  "hint_route": [
+    "weight",
+    "alpha",
+    "timer"
+  ],
+  "hint_notes": {
+    "weight": [
+      "Move the cargo right until it rests on the receiving scale.",
+      "Move the cargo right until it rests on the receiving scale.",
+      "Move the cargo right until it rests on the receiving scale."
+    ],
+    "alpha": [
+      "Keep weight live, then interact with the recorder to hold the reading.",
+      "Keep weight live, then interact with the recorder to hold the reading.",
+      "Keep weight live, then interact with the recorder to hold the reading."
+    ],
+    "timer": [
+      "Start the clock after the other lock lights are green.",
+      "Start the clock after the other lock lights are green.",
+      "Start the clock after the other lock lights are green."
+    ]
+  },
+  "solution_steps": [
+    "Move the cargo right until it rests on the receiving scale.",
+    "Keep weight live, then interact with the recorder to hold the reading.",
+    "Start the clock after the other lock lights are green."
+  ],
+  "subtitle": "Move the cargo right until it rests on the receiving scale.",
+  "chapter": 6,
+  "theme": "furnace",
+  "topology": "Laser & Crusher Gauntlet",
+  "overhaul_version": 1,
+  "overhaul_design": {
+    "profile": "valve",
+    "route": "right_return",
+    "actual_direction": 1,
+    "mandatory": false,
+    "service_platform_count": 0,
+    "retired_by_cleanup": true
+  },
+  "secondary_validation_1": {
+    "checkpoint": "beacon_59",
+    "extra_platforms": 0,
+    "signal": "sector_59_validated",
+    "retired_by_cleanup": true
+  },
+  "side_challenge_policy": {
+    "campaign_blocking": false,
+    "optional_signals": [],
+    "reason": "Deprecated optional side circuit removed; service record remains accessible."
+  },
+  "architectural_overhaul_v2": {
+    "archetype": "Blast-Baffled Furnace Casemate",
+    "chapter": 6,
+    "theme": "furnace",
+    "original_tile_count": 13,
+    "final_tile_count": 36,
+    "thickened_decks": 2,
+    "added_piers": 0,
+    "added_corbels": 3,
+    "added_soffits": 7,
+    "added_buttresses": 4,
+    "tiles_before_cleanup_pass": 34,
+    "removed_legacy_platforms": 5,
+    "removed_legacy_devices": 2,
+    "added_partition_walls": 1,
+    "added_grounded_piers": 1,
+    "added_stepped_terraces": 0
+  },
+  "cleanup_v3_audit": {
+    "level": 59,
+    "chapter": 6,
+    "theme": "furnace",
+    "name": "Chamber 59 // Containment Breach",
+    "archetype": "Blast-Baffled Furnace Casemate",
+    "orig_backup_tiles": 13,
+    "final_tiles": 36,
+    "removed_platforms": 5,
+    "retained_platforms": 4,
+    "removed_devices": 2,
+    "added_walls": 1,
+    "added_piers": 0,
+    "added_terraces": 0,
+    "gate_links": [
+      "alpha",
+      "weight",
+      "timer"
+    ]
+  }
+}

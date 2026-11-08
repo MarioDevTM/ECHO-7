@@ -1,0 +1,772 @@
+[
+  {
+    "number": 25,
+    "title": "The Distribution Hub",
+    "topology": "Central Hub (3-Branch)",
+    "theme": "power",
+    "layout": "10:start 11:bus 01:weight 00:alpha.A,weight 20:power 21:beta.B,power 12:exit",
+    "gate": "alpha,beta,B",
+    "crossing": [
+      0,
+      392,
+      "ferry",
+      "A"
+    ]
+  },
+  {
+    "number": 26,
+    "title": "The Relay Tower",
+    "topology": "Vertical Shaft",
+    "theme": "power",
+    "layout": "00:start 10:power 11:bus 12:proof.A,power 13:timer 03:exit",
+    "gate": "proof,B,timer",
+    "crossing": [
+      0,
+      324,
+      "post",
+      ""
+    ]
+  },
+  {
+    "number": 27,
+    "title": "Crossed Circuits",
+    "topology": "Parallel Crossings",
+    "theme": "power",
+    "layout": "00:start 10:bus 20:weight 21:alpha.A,weight 11:beta.B,alpha 01:exit",
+    "gate": "alpha,beta,A",
+    "crossing": [
+      1,
+      480,
+      "ferry",
+      "A"
+    ]
+  },
+  {
+    "number": 28,
+    "title": "The Capacitor Array",
+    "topology": "Cascaded Sequence Array",
+    "theme": "power",
+    "layout": "01:start 11:first 10:second 00:third 02:alpha.order 12:timer 22:exit",
+    "gate": "alpha,timer",
+    "crossing": [
+      0,
+      255,
+      "post",
+      ""
+    ]
+  },
+  {
+    "number": 29,
+    "title": "Grid Instability",
+    "topology": "Asymmetric Return Corridor",
+    "theme": "power",
+    "layout": "00:start 10:bus 20:power 30:weight 31:proof.A,power,weight 41:exit",
+    "gate": "proof,B",
+    "crossing": [
+      2,
+      536,
+      "ferry",
+      "A"
+    ]
+  },
+  {
+    "number": 30,
+    "title": "Blackout Protocol",
+    "topology": "Multi-Chamber Substation Finale",
+    "theme": "power",
+    "layout": "00:start 10:power 11:bus 21:weight 31:alpha.A,weight 30:beta.B,alpha,power 40:timer 41:exit",
+    "gate": "power,alpha,beta,timer",
+    "crossing": [
+      2,
+      512,
+      "ferry",
+      "A"
+    ]
+  },
+  {
+    "number": 31,
+    "title": "Corridor Sightline",
+    "topology": "Monitored Security Hall",
+    "theme": "optical",
+    "layout": "00:start 10:prism 20:alpha.up 21:exit",
+    "gate": "alpha,down",
+    "crossing": [
+      0,
+      248,
+      "post",
+      ""
+    ]
+  },
+  {
+    "number": 32,
+    "title": "Dual Panopticon",
+    "topology": "Twin Optic Checkpoints",
+    "theme": "optical",
+    "layout": "00:start 10:prism 20:alpha.up 30:secondprism 40:exit",
+    "gate": "alpha,down,east_up",
+    "crossing": [
+      1,
+      392,
+      "pair",
+      ""
+    ]
+  },
+  {
+    "number": 33,
+    "title": "Blind Spot Cargo",
+    "topology": "Shutter-Crate Bypass",
+    "theme": "optical",
+    "layout": "01:start 11:power 21:lampbox 20:proof.light,park 10:exit",
+    "gate": "proof,light",
+    "crossing": [
+      0,
+      422,
+      "swing",
+      ""
+    ]
+  },
+  {
+    "number": 34,
+    "title": "Crossed Scanlines",
+    "topology": "Interlocked Mirror Matrix",
+    "theme": "optical",
+    "layout": "10:start 00:prism 01:alpha.down 11:secondprism 12:beta.east_up,up 02:exit",
+    "gate": "alpha,beta,down",
+    "crossing": [
+      0,
+      354,
+      "pair",
+      ""
+    ]
+  },
+  {
+    "number": 35,
+    "title": "Sweep Frequency",
+    "topology": "Optical Ferry Bridge",
+    "theme": "optical",
+    "layout": "00:start 10:power 11:prism 21:proof.up,power 20:exit",
+    "gate": "proof,down",
+    "crossing": [
+      1,
+      506,
+      "ferry",
+      "up"
+    ]
+  },
+  {
+    "number": 36,
+    "title": "The Observation Wing",
+    "topology": "Three-Wing Security Hub",
+    "theme": "optical",
+    "layout": "11:start 10:prism 00:alpha.down 20:lampbox 21:beta.light,up 12:exit",
+    "gate": "alpha,beta,park",
+    "crossing": [
+      0,
+      368,
+      "swing",
+      ""
+    ]
+  },
+  {
+    "number": 37,
+    "title": "Laser Interdiction",
+    "topology": "Elevated Sightline Vault",
+    "theme": "optical",
+    "layout": "20:start 10:power 01:prism 02:proof.up,power 12:exit",
+    "gate": "proof,down",
+    "crossing": [
+      1,
+      488,
+      "dash",
+      ""
+    ]
+  },
+  {
+    "number": 38,
+    "title": "Cipher Checkpoint",
+    "topology": "Sequential Scanner Lock",
+    "theme": "optical",
+    "layout": "00:start 10:prism 20:first 21:second 31:third 30:alpha.order,up 40:exit",
+    "gate": "alpha,down",
+    "crossing": [
+      2,
+      402,
+      "ferry",
+      "up"
+    ]
+  },
+  {
+    "number": 39,
+    "title": "Parallax Array",
+    "topology": "Four-Tier Optical Tower",
+    "theme": "optical",
+    "layout": "00:start 10:prism 11:alpha.down 12:secondprism 22:proof.up,east_up 23:timer 13:exit",
+    "gate": "alpha,proof,timer",
+    "crossing": [
+      1,
+      428,
+      "pair",
+      ""
+    ]
+  },
+  {
+    "number": 40,
+    "title": "Panopticon Lockdown",
+    "topology": "Central Surveillance Finale",
+    "theme": "optical",
+    "layout": "10:start 11:prism 01:alpha.up 02:secondprism 12:beta.east_up,down 22:timer 21:exit",
+    "gate": "alpha,beta,up,timer",
+    "crossing": [
+      0,
+      468,
+      "ferry",
+      "up"
+    ]
+  },
+  {
+    "number": 41,
+    "title": "Ruptured Main",
+    "topology": "Sump & Steam Bypass",
+    "theme": "environmental",
+    "layout": "10:start 00:drain 11:tank 21:vent.dry 31:exit",
+    "gate": "dry,weight",
+    "crossing": [
+      1,
+      354,
+      "post",
+      ""
+    ]
+  },
+  {
+    "number": 42,
+    "title": "The Drainage Shaft",
+    "topology": "Vertical Sump Lock",
+    "theme": "environmental",
+    "layout": "00:start 10:drain 11:tank 12:proof.weight,dry 13:exit",
+    "gate": "proof,full",
+    "crossing": [
+      0,
+      382,
+      "post",
+      ""
+    ]
+  },
+  {
+    "number": 43,
+    "title": "Buoyancy Exchange",
+    "topology": "Reversible Float Basin",
+    "theme": "environmental",
+    "layout": "00:start 10:tank 20:proof.weight,dry 21:drain 11:exit",
+    "gate": "proof,full",
+    "crossing": [
+      1,
+      394,
+      "swing",
+      ""
+    ]
+  },
+  {
+    "number": 44,
+    "title": "Pressurized Spillway",
+    "topology": "Steam-Gated Spillway",
+    "theme": "environmental",
+    "layout": "01:start 11:drain 20:tank 30:vent.dry 31:alpha.weight,dry 41:exit",
+    "gate": "alpha,full",
+    "crossing": [
+      2,
+      464,
+      "jet",
+      "dry"
+    ]
+  },
+  {
+    "number": 45,
+    "title": "Turbine Intake",
+    "topology": "Hydro-Ferry Crossing",
+    "theme": "environmental",
+    "layout": "00:start 10:drain 11:tank 21:alpha.weight 31:exit",
+    "gate": "alpha,full",
+    "crossing": [
+      1,
+      490,
+      "ferry",
+      "dry"
+    ]
+  },
+  {
+    "number": 46,
+    "title": "The Maintenance Bypass",
+    "topology": "Dual-Valve Service Loop",
+    "theme": "environmental",
+    "layout": "11:start 01:valve 00:vent.valve 10:drain 20:tank 21:proof.weight,valve 31:exit",
+    "gate": "proof,full",
+    "crossing": [
+      1,
+      408,
+      "pair",
+      ""
+    ]
+  },
+  {
+    "number": 47,
+    "title": "Rising Headwater",
+    "topology": "Vertical Flood Column",
+    "theme": "environmental",
+    "layout": "10:start 00:drain 01:tank 02:alpha.weight,dry 12:valve 22:exit",
+    "gate": "alpha,full,valve",
+    "crossing": [
+      0,
+      372,
+      "swing",
+      ""
+    ]
+  },
+  {
+    "number": 48,
+    "title": "The Valve Network",
+    "topology": "Interlocked Hydro Grid",
+    "theme": "environmental",
+    "layout": "00:start 10:drain 20:tank 21:alpha.weight 31:valve 30:beta.full,valve 40:exit",
+    "gate": "alpha,beta,valve",
+    "crossing": [
+      2,
+      486,
+      "jet",
+      "valve"
+    ]
+  },
+  {
+    "number": 49,
+    "title": "Submerged Updraft",
+    "topology": "Updraft & Basin Hybrid",
+    "theme": "environmental",
+    "layout": "20:start 10:valve 11:fan.valve 12:drain 22:tank 32:alpha.weight,valve 31:exit",
+    "gate": "alpha,full",
+    "crossing": [
+      1,
+      476,
+      "post",
+      ""
+    ]
+  },
+  {
+    "number": 50,
+    "title": "The Reservoir",
+    "topology": "Multi-Stage Hydro Finale",
+    "theme": "environmental",
+    "layout": "01:start 11:drain 10:tank 20:alpha.weight 30:valve 31:beta.full,alpha 41:timer 42:exit",
+    "gate": "alpha,beta,valve,timer",
+    "crossing": [
+      2,
+      498,
+      "ferry",
+      "full"
+    ]
+  },
+  {
+    "number": 51,
+    "title": "Thermal Isolation",
+    "topology": "Pressurized Crusher Bay",
+    "theme": "furnace",
+    "layout": "00:start 10:valve 11:press.valve 21:weight 20:exit",
+    "gate": "valve,weight",
+    "crossing": [
+      0,
+      334,
+      "ram",
+      "valve"
+    ]
+  },
+  {
+    "number": 52,
+    "title": "The Stamping Line",
+    "topology": "Dual-Press Power Corridor",
+    "theme": "furnace",
+    "layout": "00:start 10:press.power 20:power 30:weight 31:proof.power,weight 41:exit",
+    "gate": "proof,power",
+    "crossing": [
+      1,
+      466,
+      "ram",
+      "power"
+    ]
+  },
+  {
+    "number": 53,
+    "title": "Conveyor Polarity",
+    "topology": "Reversible Cargo Belt",
+    "theme": "furnace",
+    "layout": "10:start 00:bus 01:belt 11:proof.freight,A 21:exit",
+    "gate": "proof,B",
+    "crossing": [
+      0,
+      442,
+      "ferry",
+      "A"
+    ]
+  },
+  {
+    "number": 54,
+    "title": "Superheated Venting",
+    "topology": "Updraft Thermal Crossing",
+    "theme": "furnace",
+    "layout": "01:start 11:valve 10:fan.valve 20:vent.valve 21:timer 31:exit",
+    "gate": "valve,timer",
+    "crossing": [
+      1,
+      504,
+      "jet",
+      "valve"
+    ]
+  },
+  {
+    "number": 55,
+    "title": "The Forging Pit",
+    "topology": "Caisson Counterweight Pit",
+    "theme": "furnace",
+    "layout": "11:start 01:power 00:press.power 10:weight 20:proof.power,weight 21:timer 31:exit",
+    "gate": "proof,timer",
+    "crossing": [
+      1,
+      494,
+      "ram",
+      "power"
+    ]
+  },
+  {
+    "number": 56,
+    "title": "Slag Transfer",
+    "topology": "Multi-Floor Belt & Press",
+    "theme": "furnace",
+    "layout": "00:start 10:belt 11:proof.freight 21:bus 22:press.A 12:exit",
+    "gate": "proof,B",
+    "crossing": [
+      0,
+      408,
+      "swing",
+      ""
+    ]
+  },
+  {
+    "number": 57,
+    "title": "Coolant Boil-Off",
+    "topology": "Thermal-Hydro Synthesis",
+    "theme": "furnace",
+    "layout": "00:start 10:valve 20:vent.valve 21:drain 31:tank 30:alpha.weight,valve 40:exit",
+    "gate": "alpha,full",
+    "crossing": [
+      2,
+      414,
+      "jet",
+      "dry"
+    ]
+  },
+  {
+    "number": 58,
+    "title": "Reactor Feed Line",
+    "topology": "Synchronized Belt Ferry",
+    "theme": "furnace",
+    "layout": "00:start 10:belt 20:alpha.freight 30:bus 40:press.A 50:exit",
+    "gate": "alpha,B,freight",
+    "crossing": [
+      2,
+      496,
+      "ferry",
+      "freight"
+    ]
+  },
+  {
+    "number": 59,
+    "title": "Containment Breach",
+    "topology": "Laser & Crusher Gauntlet",
+    "theme": "furnace",
+    "layout": "01:start 11:weight 21:press.weight 31:alpha.weight 30:timer 40:exit",
+    "gate": "alpha,weight,timer",
+    "crossing": [
+      1,
+      430,
+      "ram",
+      "weight"
+    ]
+  },
+  {
+    "number": 60,
+    "title": "Core Collapse Protocol",
+    "topology": "Central Reactor Finale",
+    "theme": "furnace",
+    "layout": "10:start 00:bus 01:valve 11:belt 21:alpha.A,freight 22:press.valve 32:beta.B,alpha 31:timer 20:exit",
+    "gate": "alpha,beta,valve,timer",
+    "crossing": [
+      1,
+      552,
+      "kiln",
+      "A"
+    ]
+  },
+  {
+    "number": 61,
+    "title": "Shear Line",
+    "topology": "Fracture-Seal Breach",
+    "theme": "spire",
+    "layout": "00:start 10:lever 20:seal 21:weight 31:exit",
+    "gate": "lever,weight",
+    "crossing": [
+      1,
+      414,
+      "dash",
+      ""
+    ]
+  },
+  {
+    "number": 62,
+    "title": "The Broken Elevator",
+    "topology": "Ruptured Vertical Hoist",
+    "theme": "spire",
+    "layout": "00:start 10:power 11:bus 12:spring 13:proof.A,power 14:exit",
+    "gate": "proof,B",
+    "crossing": [
+      0,
+      356,
+      "swing",
+      ""
+    ]
+  },
+  {
+    "number": 63,
+    "title": "Hanging Foundations",
+    "topology": "Suspended Collapse Span",
+    "theme": "spire",
+    "layout": "02:start 12:weight 21:seal 31:proof.weight 32:lever 42:exit",
+    "gate": "proof,lever",
+    "crossing": [
+      2,
+      526,
+      "swing",
+      ""
+    ]
+  },
+  {
+    "number": 64,
+    "title": "The Fractured Bridge",
+    "topology": "High-Altitude Dash Chasm",
+    "theme": "spire",
+    "layout": "01:start 11:power 21:spring 22:alpha.power 31:timer 41:exit",
+    "gate": "alpha,timer",
+    "crossing": [
+      1,
+      532,
+      "dash",
+      ""
+    ]
+  },
+  {
+    "number": 65,
+    "title": "Failing Busbars",
+    "topology": "Laser-Locked Relay Tower",
+    "theme": "spire",
+    "layout": "10:start 00:bus 01:alpha.A 11:beta.B,alpha 21:power 12:exit",
+    "gate": "beta,power",
+    "crossing": [
+      0,
+      338,
+      "post",
+      ""
+    ]
+  },
+  {
+    "number": 66,
+    "title": "The Split Spire",
+    "topology": "Twin Vertical Rupture",
+    "theme": "spire",
+    "layout": "00:start 01:power 02:bus 12:alpha.A 11:beta.B,alpha 10:exit",
+    "gate": "alpha,beta,power",
+    "crossing": [
+      0,
+      482,
+      "ferry",
+      "A"
+    ]
+  },
+  {
+    "number": 67,
+    "title": "Ruptured Risers",
+    "topology": "Steam & Collapse Ascent",
+    "theme": "spire",
+    "layout": "01:start 11:valve 21:vent.valve 22:alpha.valve 32:timer 42:exit",
+    "gate": "alpha,valve,timer",
+    "crossing": [
+      1,
+      500,
+      "swing",
+      ""
+    ]
+  },
+  {
+    "number": 68,
+    "title": "The Last Support",
+    "topology": "Seal & Counterweight Span",
+    "theme": "spire",
+    "layout": "00:start 10:weight 11:proof.weight 21:seal 31:timer 30:exit",
+    "gate": "proof,weight,timer",
+    "crossing": [
+      1,
+      486,
+      "pair",
+      ""
+    ]
+  },
+  {
+    "number": 69,
+    "title": "Critical Instability",
+    "topology": "Optical-Spring Ruin",
+    "theme": "spire",
+    "layout": "00:start 10:prism 11:alpha.up 12:spring 22:timer 32:exit",
+    "gate": "alpha,down,timer",
+    "crossing": [
+      1,
+      444,
+      "dash",
+      ""
+    ]
+  },
+  {
+    "number": 70,
+    "title": "Collapse Protocol",
+    "topology": "Upper Megastructure Finale",
+    "theme": "spire",
+    "layout": "00:start 10:power 11:bus 21:alpha.A,power 32:spring 33:beta.B,alpha 23:timer 13:exit",
+    "gate": "power,beta,timer",
+    "crossing": [
+      1,
+      492,
+      "swing",
+      ""
+    ]
+  },
+  {
+    "number": 71,
+    "title": "Perimeter Breach",
+    "topology": "Moonlit Outfall Terrace",
+    "theme": "surface",
+    "layout": "00:start 10:power 20:seal 21:alpha.power 31:exit",
+    "gate": "alpha,power",
+    "crossing": [
+      2,
+      352,
+      "post",
+      ""
+    ]
+  },
+  {
+    "number": 72,
+    "title": "Exterior Causeway",
+    "topology": "Nocturnal Ridge Span",
+    "theme": "surface",
+    "layout": "01:start 11:spring 22:weight 32:proof.weight 31:lever 41:exit",
+    "gate": "proof,lever",
+    "crossing": [
+      2,
+      508,
+      "dash",
+      ""
+    ]
+  },
+  {
+    "number": 73,
+    "title": "The Outer Substation",
+    "topology": "Moonlit Busbar Yard",
+    "theme": "surface",
+    "layout": "10:start 00:power 01:bus 11:alpha.A 21:beta.B,alpha 20:exit",
+    "gate": "power,alpha,beta",
+    "crossing": [
+      1,
+      462,
+      "ferry",
+      "A"
+    ]
+  },
+  {
+    "number": 74,
+    "title": "Watchtower Ruins",
+    "topology": "Exterior Beacon Array",
+    "theme": "surface",
+    "layout": "00:start 10:prism 20:alpha.up 21:lampbox 31:exit",
+    "gate": "alpha,down,light,park",
+    "crossing": [
+      1,
+      472,
+      "pair",
+      ""
+    ]
+  },
+  {
+    "number": 75,
+    "title": "Cargo Pier",
+    "topology": "Reversible Outfall Gantry",
+    "theme": "surface",
+    "layout": "01:start 11:bus 21:belt 31:power 41:proof.freight,power,A 40:exit",
+    "gate": "proof,B",
+    "crossing": [
+      2,
+      542,
+      "ferry",
+      "power"
+    ]
+  },
+  {
+    "number": 76,
+    "title": "The Storm Trench",
+    "topology": "Wind-Swept Breach Span",
+    "theme": "surface",
+    "layout": "00:start 10:valve 11:fan.valve 12:alpha.valve 22:seal 21:timer 31:exit",
+    "gate": "alpha,valve,timer",
+    "crossing": [
+      1,
+      526,
+      "dash",
+      ""
+    ]
+  },
+  {
+    "number": 77,
+    "title": "Emergency Conduit",
+    "topology": "Multi-Deck Relay Yard",
+    "theme": "surface",
+    "layout": "01:start 11:bus 21:belt 20:alpha.A,freight 30:power 31:beta.B,alpha,power 41:exit",
+    "gate": "beta,power",
+    "crossing": [
+      1,
+      490,
+      "ferry",
+      "A"
+    ]
+  },
+  {
+    "number": 78,
+    "title": "The Escape Network",
+    "topology": "Three-Node Sequence Ridge",
+    "theme": "surface",
+    "layout": "11:start 01:first 00:weight 10:second 20:third 21:alpha.order,weight 12:exit",
+    "gate": "alpha,weight",
+    "crossing": [
+      0,
+      512,
+      "swing",
+      ""
+    ]
+  },
+  {
+    "number": 79,
+    "title": "Final Approach",
+    "topology": "Outer Perimeter Gauntlet",
+    "theme": "surface",
+    "layout": "00:start 10:bus 20:press.A 21:alpha.A 31:beta.B,alpha 32:timer 42:exit",
+    "gate": "alpha,beta,timer",
+    "crossing": [
+      2,
+      530,
+      "ram",
+      "A"
+    ]
+  }
+]

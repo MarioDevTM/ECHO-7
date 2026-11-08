@@ -1,0 +1,889 @@
+{
+  "tiles": [
+    [
+      0,
+      0,
+      36,
+      922
+    ],
+    [
+      2710,
+      0,
+      36,
+      922
+    ],
+    [
+      36,
+      0,
+      2674,
+      30
+    ],
+    [
+      700,
+      787,
+      340,
+      135
+    ],
+    [
+      150,
+      787,
+      390,
+      135
+    ],
+    [
+      150,
+      571,
+      390,
+      23
+    ],
+    [
+      700,
+      571,
+      70,
+      30
+    ],
+    [
+      950,
+      571,
+      90,
+      30
+    ],
+    [
+      1592,
+      571,
+      432,
+      23
+    ],
+    [
+      1592,
+      355,
+      432,
+      23
+    ],
+    [
+      2184,
+      355,
+      362,
+      23
+    ],
+    [
+      2184,
+      571,
+      362,
+      23
+    ],
+    [
+      1592,
+      787,
+      432,
+      135
+    ],
+    [
+      1005,
+      554,
+      10,
+      17
+    ],
+    [
+      1750,
+      653,
+      155,
+      18
+    ],
+    [
+      1887,
+      671,
+      18,
+      116
+    ],
+    [
+      656,
+      601,
+      14,
+      150
+    ],
+    [
+      2140,
+      385,
+      14,
+      150
+    ],
+    [
+      2662,
+      385,
+      14,
+      150
+    ]
+  ],
+  "ladders": [],
+  "crates": [
+    {
+      "id": "load",
+      "x": 785,
+      "y": 535
+    }
+  ],
+  "plates": [
+    {
+      "link_id": "freight",
+      "x": 957,
+      "y": 571
+    }
+  ],
+  "switches": [
+    {
+      "link_id": "timer",
+      "x": 2365,
+      "y": 571,
+      "mode": "timed",
+      "duration": 19
+    }
+  ],
+  "doors": [
+    {
+      "id": "surface_lock",
+      "x": 1750,
+      "y": 671,
+      "w": 20,
+      "h": 116,
+      "required_links": [
+        "alpha",
+        "beta",
+        "valve",
+        "timer"
+      ]
+    }
+  ],
+  "moving_platforms": [
+    {
+      "id": "car0",
+      "x": 2029,
+      "y": 331,
+      "w": 65,
+      "h": 16,
+      "end_x": 2114,
+      "end_y": 289,
+      "speed": 120,
+      "active_by_default": true,
+      "required_links": []
+    },
+    {
+      "id": "car1",
+      "x": 2564,
+      "y": 563,
+      "w": 86,
+      "h": 16,
+      "end_x": 2564,
+      "end_y": 347,
+      "speed": 120,
+      "active_by_default": true,
+      "required_links": []
+    }
+  ],
+  "conveyors": [
+    {
+      "id": "freight_line",
+      "x": 770,
+      "y": 571,
+      "w": 180,
+      "h": 18,
+      "speed": -85,
+      "reversed_by": "A"
+    }
+  ],
+  "wind_zones": [],
+  "water_zones": [],
+  "valves": [
+    {
+      "link_id": "valve",
+      "x": 345,
+      "y": 571
+    }
+  ],
+  "generators": [
+    {
+      "link_id": "overhaul_60_generator",
+      "x": 757,
+      "y": 727
+    }
+  ],
+  "cables": [
+    {
+      "link_id": "A",
+      "points": [
+        [
+          354,
+          775
+        ],
+        [
+          354,
+          811
+        ],
+        [
+          1824,
+          811
+        ],
+        [
+          1824,
+          561
+        ]
+      ]
+    },
+    {
+      "link_id": "freight",
+      "points": [
+        [
+          966,
+          559
+        ],
+        [
+          966,
+          602
+        ],
+        [
+          1824,
+          602
+        ],
+        [
+          1824,
+          561
+        ]
+      ]
+    },
+    {
+      "link_id": "alpha",
+      "points": [
+        [
+          1817,
+          559
+        ],
+        [
+          1817,
+          595
+        ],
+        [
+          2381,
+          595
+        ],
+        [
+          2381,
+          345
+        ]
+      ]
+    },
+    {
+      "link_id": "B",
+      "points": [
+        [
+          364,
+          775
+        ],
+        [
+          364,
+          818
+        ],
+        [
+          2381,
+          818
+        ],
+        [
+          2381,
+          345
+        ]
+      ]
+    },
+    {
+      "link_id": "alpha",
+      "points": [
+        [
+          1808,
+          559
+        ],
+        [
+          1808,
+          753
+        ],
+        [
+          1758,
+          753
+        ],
+        [
+          1758,
+          731
+        ]
+      ]
+    },
+    {
+      "link_id": "beta",
+      "points": [
+        [
+          2365,
+          343
+        ],
+        [
+          2365,
+          760
+        ],
+        [
+          1758,
+          760
+        ],
+        [
+          1758,
+          731
+        ]
+      ]
+    },
+    {
+      "link_id": "valve",
+      "points": [
+        [
+          345,
+          559
+        ],
+        [
+          345,
+          767
+        ],
+        [
+          1758,
+          767
+        ],
+        [
+          1758,
+          731
+        ]
+      ]
+    },
+    {
+      "link_id": "timer",
+      "points": [
+        [
+          2365,
+          559
+        ],
+        [
+          2365,
+          774
+        ],
+        [
+          1758,
+          774
+        ],
+        [
+          1758,
+          731
+        ]
+      ]
+    }
+  ],
+  "mirrors": [],
+  "crushers": [
+    {
+      "id": "ram5",
+      "x": 1773,
+      "y": 140,
+      "w": 74,
+      "h": 42,
+      "travel": 172,
+      "period": 2.9,
+      "disabled_by": [
+        "valve"
+      ]
+    },
+    {
+      "id": "hammer3",
+      "x": 1389,
+      "y": 393,
+      "w": 54,
+      "h": 33,
+      "travel": 178,
+      "period": 3.2,
+      "disabled_by": [
+        "A"
+      ]
+    }
+  ],
+  "steam_vents": [
+    {
+      "id": "seam2",
+      "x": 602,
+      "y": 486,
+      "w": 36,
+      "h": 134,
+      "period": 3.1,
+      "duty_cycle": 0.43,
+      "disabled_by": []
+    },
+    {
+      "id": "seam5",
+      "x": 2086,
+      "y": 270,
+      "w": 36,
+      "h": 134,
+      "period": 3.1,
+      "duty_cycle": 0.43,
+      "disabled_by": []
+    }
+  ],
+  "collapsing_platforms": [],
+  "checkpoints": [
+    {
+      "id": "beacon_60",
+      "x": 2481,
+      "y": 571
+    }
+  ],
+  "spikes": [],
+  "acids": [
+    {
+      "x": 36,
+      "y": 847,
+      "w": 114,
+      "h": 75
+    },
+    {
+      "x": 540,
+      "y": 847,
+      "w": 160,
+      "h": 75
+    },
+    {
+      "x": 1040,
+      "y": 847,
+      "w": 552,
+      "h": 75
+    },
+    {
+      "x": 2024,
+      "y": 847,
+      "w": 686,
+      "h": 75
+    }
+  ],
+  "lasers": [],
+  "optical_beams": [],
+  "sequences": [],
+  "collectibles": [
+    {
+      "id": "log_60",
+      "x": 192,
+      "y": 755,
+      "title": "Core Collapse Protocol / Shift Notes",
+      "text": "Core Collapse Protocol. Check the signal lines before you leave the service deck."
+    },
+    {
+      "id": "field_trace_60",
+      "x": 975,
+      "y": 711,
+      "title": "FIELD TRACE 60 / CENTRAL REACTOR FINALE",
+      "text": "ECHO-7 field diagnostics: Design a distinctive three-phase sequence: stabilize freight/pressure, preserve two independent relay proofs, then initiate reactor escape.",
+      "required_links": [
+        "alpha"
+      ],
+      "optional_investigation": true
+    },
+    {
+      "id": "service_challenge_60",
+      "x": 2307,
+      "y": 404,
+      "title": "Optional Diagnostics 60",
+      "text": "Optional master circuit cleared. The standard exit never depends on this side challenge.",
+      "required_links": [
+        "sector_60_validated"
+      ],
+      "optional_investigation": true
+    }
+  ],
+  "decorations": [
+    {
+      "type": "warning_stripe",
+      "x": 162,
+      "y": 583,
+      "w": 120
+    },
+    {
+      "type": "warning_stripe",
+      "x": 712,
+      "y": 583,
+      "w": 120
+    },
+    {
+      "type": "warning_stripe",
+      "x": 1604,
+      "y": 583,
+      "w": 120
+    },
+    {
+      "type": "warning_stripe",
+      "x": 1604,
+      "y": 367,
+      "w": 120
+    },
+    {
+      "type": "warning_stripe",
+      "x": 2196,
+      "y": 367,
+      "w": 120
+    },
+    {
+      "type": "warning_stripe",
+      "x": 2196,
+      "y": 583,
+      "w": 120
+    },
+    {
+      "type": "monitor",
+      "x": 305,
+      "y": 688,
+      "text": "SELECT A / B"
+    },
+    {
+      "type": "monitor",
+      "x": 297,
+      "y": 479,
+      "text": "ISOLATE"
+    },
+    {
+      "type": "monitor",
+      "x": 894,
+      "y": 479,
+      "text": "RECEIVING SCALE"
+    },
+    {
+      "type": "monitor",
+      "x": 1778,
+      "y": 471,
+      "text": "HOLD A + FREIGHT"
+    },
+    {
+      "type": "monitor",
+      "x": 1602,
+      "y": 255,
+      "text": "PRESS LINE"
+    },
+    {
+      "type": "monitor",
+      "x": 2335,
+      "y": 255,
+      "text": "HOLD ALPHA + B"
+    },
+    {
+      "type": "monitor",
+      "x": 2333,
+      "y": 478,
+      "text": "ESCAPE 19s"
+    },
+    {
+      "type": "monitor",
+      "x": 1773,
+      "y": 613,
+      "text": "EXIT LOCK"
+    },
+    {
+      "type": "monitor",
+      "x": 988,
+      "y": 673,
+      "text": "FORENSIC TRACE 60"
+    },
+    {
+      "type": "monitor",
+      "x": 741,
+      "y": 624,
+      "text": "ACCESS / 60"
+    },
+    {
+      "type": "warning_stripe",
+      "x": 792,
+      "y": 619,
+      "w": 78
+    }
+  ],
+  "latching_relays": [
+    {
+      "link_id": "alpha",
+      "x": 1808,
+      "y": 571,
+      "required_links": [
+        "A",
+        "freight"
+      ]
+    },
+    {
+      "link_id": "beta",
+      "x": 2365,
+      "y": 355,
+      "required_links": [
+        "alpha",
+        "B"
+      ]
+    },
+    {
+      "link_id": "overhaul_60_memory",
+      "x": 858,
+      "y": 676,
+      "required_links": [
+        "overhaul_60_generator",
+        "overhaul_60_A"
+      ]
+    },
+    {
+      "link_id": "sector_60_validated",
+      "x": 2295,
+      "y": 446,
+      "required_links": [
+        "overhaul_60_B"
+      ]
+    }
+  ],
+  "routing_consoles": [
+    {
+      "id": "selector",
+      "route_id": "supply",
+      "x": 345,
+      "y": 787,
+      "a_signal": "A",
+      "b_signal": "B"
+    },
+    {
+      "id": "overhaul_60_selector",
+      "route_id": "overhaul_60_bus",
+      "x": 810,
+      "y": 607,
+      "a_signal": "overhaul_60_A",
+      "b_signal": "overhaul_60_B"
+    }
+  ],
+  "signal_inverters": [],
+  "npcs": [
+    {
+      "id": "kip",
+      "x": 800,
+      "y": 787,
+      "dialogue": [
+        "Core Collapse Protocol. I have reserved us a spot on the other side.",
+        "Set the supply selector to A.",
+        "Start the clock after the other lock lights are green."
+      ]
+    },
+    {
+      "id": "ada",
+      "x": 1636,
+      "y": 787
+    }
+  ],
+  "springs": [],
+  "dash_recharges": [
+    {
+      "id": "ring0",
+      "x": 606,
+      "y": 689
+    }
+  ],
+  "one_way_platforms": [
+    {
+      "id": "walk0",
+      "x": 580,
+      "y": 715,
+      "w": 70,
+      "h": 12
+    },
+    {
+      "id": "walk1",
+      "x": 540,
+      "y": 643,
+      "w": 70,
+      "h": 12
+    },
+    {
+      "id": "walk2",
+      "x": 580,
+      "y": 571,
+      "w": 70,
+      "h": 12
+    },
+    {
+      "id": "walk3",
+      "x": 1185,
+      "y": 533,
+      "w": 68,
+      "h": 12
+    },
+    {
+      "id": "walk4",
+      "x": 1383,
+      "y": 605,
+      "w": 68,
+      "h": 12
+    },
+    {
+      "id": "walk5",
+      "x": 2064,
+      "y": 499,
+      "w": 70,
+      "h": 12
+    },
+    {
+      "id": "walk6",
+      "x": 2024,
+      "y": 427,
+      "w": 70,
+      "h": 12
+    },
+    {
+      "id": "walk7",
+      "x": 2064,
+      "y": 355,
+      "w": 70,
+      "h": 12
+    },
+    {
+      "id": "walk8",
+      "x": 2048,
+      "y": 715,
+      "w": 58,
+      "h": 12
+    },
+    {
+      "id": "walk9",
+      "x": 2102,
+      "y": 643,
+      "w": 58,
+      "h": 12
+    },
+    {
+      "id": "overhaul_step_60_0",
+      "x": 739,
+      "y": 727,
+      "w": 78,
+      "h": 12
+    },
+    {
+      "id": "overhaul_step_60_1",
+      "x": 840,
+      "y": 676,
+      "w": 78,
+      "h": 12
+    },
+    {
+      "id": "overhaul_step_60_2",
+      "x": 792,
+      "y": 607,
+      "w": 78,
+      "h": 12
+    },
+    {
+      "id": "validation_foot_60_0",
+      "x": 2362,
+      "y": 508,
+      "w": 78,
+      "h": 12
+    },
+    {
+      "id": "validation_foot_60_1",
+      "x": 2277,
+      "y": 446,
+      "w": 78,
+      "h": 12
+    }
+  ],
+  "dash_barriers": [],
+  "level_id": 60,
+  "width": 2746,
+  "height": 922,
+  "name": "Chamber 60 // Core Collapse Protocol",
+  "abilities": {
+    "wall_jump": true,
+    "dash": true
+  },
+  "spawn": [
+    738,
+    741
+  ],
+  "exit": [
+    1807,
+    707
+  ],
+  "hint_route": [
+    "A",
+    "freight",
+    "alpha",
+    "B",
+    "beta",
+    "valve",
+    "timer"
+  ],
+  "hint_notes": {
+    "A": [
+      "Set the supply selector to A.",
+      "Set the supply selector to A.",
+      "Set the supply selector to A."
+    ],
+    "freight": [
+      "Move the cargo right until it rests on the receiving scale.",
+      "Move the cargo right until it rests on the receiving scale.",
+      "Move the cargo right until it rests on the receiving scale."
+    ],
+    "alpha": [
+      "Keep A and freight live, then interact with the recorder to hold the reading.",
+      "Keep A and freight live, then interact with the recorder to hold the reading.",
+      "Keep A and freight live, then interact with the recorder to hold the reading."
+    ],
+    "B": [
+      "Transfer the selector to B after recording the A-side reading.",
+      "Transfer the selector to B after recording the A-side reading.",
+      "Transfer the selector to B after recording the A-side reading."
+    ],
+    "beta": [
+      "Keep alpha and B live, then interact with the recorder to hold the reading.",
+      "Keep alpha and B live, then interact with the recorder to hold the reading.",
+      "Keep alpha and B live, then interact with the recorder to hold the reading."
+    ],
+    "valve": [
+      "Turn the handwheel and watch which machinery changes.",
+      "Turn the handwheel and watch which machinery changes.",
+      "Turn the handwheel and watch which machinery changes."
+    ],
+    "timer": [
+      "Start the clock after the other lock lights are green.",
+      "Start the clock after the other lock lights are green.",
+      "Start the clock after the other lock lights are green."
+    ]
+  },
+  "solution_steps": [
+    "Set the supply selector to A.",
+    "Move the cargo right until it rests on the receiving scale.",
+    "Keep A and freight live, then interact with the recorder to hold the reading.",
+    "Transfer the selector to B after recording the A-side reading.",
+    "Keep alpha and B live, then interact with the recorder to hold the reading.",
+    "Turn the handwheel and watch which machinery changes.",
+    "Start the clock after the other lock lights are green.",
+    "Energize the service bus, memorize A at the middle station, and reroute to B before proceeding."
+  ],
+  "subtitle": "Set the supply selector to A.  //  SERVICE DETOUR: Energize the service bus, memorize A at the middle station, and reroute to B before proceeding.",
+  "chapter": 6,
+  "theme": "furnace",
+  "topology": "Central Reactor Finale",
+  "overhaul_version": 1,
+  "overhaul_design": {
+    "profile": "relay_bus",
+    "route": "left_switchback",
+    "actual_direction": 1,
+    "mandatory": true,
+    "service_platform_count": 3
+  },
+  "secondary_validation_1": {
+    "checkpoint": "beacon_60",
+    "extra_platforms": 2,
+    "signal": "sector_60_validated"
+  },
+  "side_challenge_policy": {
+    "campaign_blocking": false,
+    "optional_signals": [
+      "overhaul_60_memory",
+      "overhaul_60_B",
+      "sector_60_validated"
+    ],
+    "reason": "Not proven traversable in the Pygame engine; preserve main progression."
+  }
+}

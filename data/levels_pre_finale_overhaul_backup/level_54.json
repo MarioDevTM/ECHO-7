@@ -1,0 +1,632 @@
+{
+  "tiles": [
+    [
+      0,
+      0,
+      36,
+      730
+    ],
+    [
+      2710,
+      0,
+      36,
+      730
+    ],
+    [
+      36,
+      0,
+      2674,
+      30
+    ],
+    [
+      150,
+      355,
+      432,
+      44
+    ],
+    [
+      766,
+      355,
+      362,
+      23
+    ],
+    [
+      766,
+      595,
+      362,
+      135
+    ],
+    [
+      1632,
+      595,
+      390,
+      135
+    ],
+    [
+      1632,
+      355,
+      390,
+      23
+    ],
+    [
+      2206,
+      355,
+      340,
+      44
+    ],
+    [
+      2318,
+      221,
+      155,
+      18
+    ],
+    [
+      2455,
+      239,
+      18,
+      116
+    ],
+    [
+      1244,
+      385,
+      14,
+      174
+    ],
+    [
+      2138,
+      385,
+      14,
+      174
+    ],
+    [
+      186,
+      399,
+      360,
+      22
+    ],
+    [
+      790,
+      378,
+      44,
+      56
+    ],
+    [
+      925,
+      378,
+      44,
+      56
+    ],
+    [
+      1656,
+      378,
+      44,
+      56
+    ],
+    [
+      1954,
+      378,
+      44,
+      56
+    ],
+    [
+      2242,
+      399,
+      268,
+      22
+    ],
+    [
+      476,
+      30,
+      90,
+      56
+    ],
+    [
+      496,
+      86,
+      50,
+      16
+    ],
+    [
+      796,
+      30,
+      122,
+      42
+    ],
+    [
+      816,
+      72,
+      82,
+      16
+    ],
+    [
+      1116,
+      30,
+      106,
+      28
+    ],
+    [
+      1136,
+      58,
+      66,
+      16
+    ],
+    [
+      1436,
+      30,
+      90,
+      56
+    ],
+    [
+      1456,
+      86,
+      50,
+      16
+    ],
+    [
+      1756,
+      30,
+      122,
+      42
+    ],
+    [
+      1776,
+      72,
+      82,
+      16
+    ],
+    [
+      2076,
+      30,
+      106,
+      28
+    ],
+    [
+      2396,
+      30,
+      90,
+      56
+    ],
+    [
+      36,
+      140,
+      40,
+      74
+    ],
+    [
+      2670,
+      180,
+      40,
+      74
+    ],
+    [
+      36,
+      380,
+      40,
+      90
+    ],
+    [
+      2670,
+      420,
+      40,
+      90
+    ]
+  ],
+  "ladders": [],
+  "crates": [],
+  "plates": [],
+  "switches": [
+    {
+      "link_id": "timer",
+      "x": 1827,
+      "y": 355,
+      "mode": "timed",
+      "duration": 19
+    }
+  ],
+  "doors": [
+    {
+      "id": "surface_lock",
+      "x": 2318,
+      "y": 239,
+      "w": 20,
+      "h": 116,
+      "required_links": [
+        "valve",
+        "timer"
+      ]
+    }
+  ],
+  "moving_platforms": [
+    {
+      "id": "car0",
+      "x": 2040,
+      "y": 587,
+      "w": 86,
+      "h": 16,
+      "end_x": 2040,
+      "end_y": 347,
+      "speed": 120,
+      "active_by_default": true,
+      "required_links": []
+    }
+  ],
+  "conveyors": [],
+  "wind_zones": [
+    {
+      "id": "column",
+      "x": 1016,
+      "y": 220,
+      "w": 104,
+      "h": 375,
+      "vx": 0,
+      "vy": -2400,
+      "controlled_by": "valve",
+      "active_by_default": false
+    }
+  ],
+  "water_zones": [],
+  "valves": [
+    {
+      "link_id": "valve",
+      "x": 947,
+      "y": 355
+    }
+  ],
+  "generators": [],
+  "cables": [
+    {
+      "link_id": "valve",
+      "points": [
+        [
+          947,
+          343
+        ],
+        [
+          947,
+          377
+        ],
+        [
+          2326,
+          377
+        ],
+        [
+          2326,
+          299
+        ]
+      ]
+    },
+    {
+      "link_id": "timer",
+      "points": [
+        [
+          1827,
+          343
+        ],
+        [
+          1827,
+          384
+        ],
+        [
+          2326,
+          384
+        ],
+        [
+          2326,
+          299
+        ]
+      ]
+    }
+  ],
+  "mirrors": [],
+  "crushers": [],
+  "steam_vents": [
+    {
+      "id": "jet",
+      "x": 1803,
+      "y": 433,
+      "w": 48,
+      "h": 162,
+      "period": 2.7,
+      "duty_cycle": 0.55,
+      "disabled_by": [
+        "valve"
+      ]
+    },
+    {
+      "id": "flue2",
+      "x": 1271,
+      "y": 452,
+      "w": 36,
+      "h": 100,
+      "period": 2.8,
+      "duty_cycle": 0.45,
+      "disabled_by": [
+        "valve"
+      ]
+    },
+    {
+      "id": "seam2",
+      "x": 1362,
+      "y": 510,
+      "w": 36,
+      "h": 134,
+      "period": 3.1,
+      "duty_cycle": 0.43,
+      "disabled_by": []
+    }
+  ],
+  "collapsing_platforms": [],
+  "checkpoints": [
+    {
+      "id": "beacon_54",
+      "x": 1957,
+      "y": 355
+    }
+  ],
+  "spikes": [],
+  "acids": [
+    {
+      "x": 36,
+      "y": 655,
+      "w": 730,
+      "h": 75
+    },
+    {
+      "x": 1128,
+      "y": 655,
+      "w": 504,
+      "h": 75
+    },
+    {
+      "x": 2022,
+      "y": 655,
+      "w": 688,
+      "h": 75
+    }
+  ],
+  "lasers": [],
+  "optical_beams": [],
+  "sequences": [],
+  "collectibles": [
+    {
+      "id": "log_54",
+      "x": 808,
+      "y": 323,
+      "title": "Superheated Venting / Shift Notes",
+      "text": "Superheated Venting. Check the signal lines before you leave the service deck."
+    },
+    {
+      "id": "field_trace_54",
+      "x": 823,
+      "y": 279,
+      "title": "FIELD TRACE 54 / UPDRAFT THERMAL CROSSING",
+      "text": "ECHO-7 field diagnostics: Let the player first configure a valve/bypass safely, then cross a short timed section using known wind or thermal effects.",
+      "required_links": [
+        "valve"
+      ],
+      "optional_investigation": true
+    },
+    {
+      "id": "service_challenge_54",
+      "x": 1985,
+      "y": 313,
+      "title": "Optional Diagnostics 54",
+      "text": "Optional auxiliary service record recovered. This archive is no longer linked to a redundant side circuit and does not gate the exit.",
+      "required_links": [],
+      "optional_investigation": true
+    }
+  ],
+  "decorations": [
+    {
+      "type": "warning_stripe",
+      "x": 162,
+      "y": 367,
+      "w": 120
+    },
+    {
+      "type": "warning_stripe",
+      "x": 778,
+      "y": 367,
+      "w": 120
+    },
+    {
+      "type": "warning_stripe",
+      "x": 1644,
+      "y": 367,
+      "w": 120
+    },
+    {
+      "type": "warning_stripe",
+      "x": 2218,
+      "y": 367,
+      "w": 120
+    },
+    {
+      "type": "monitor",
+      "x": 899,
+      "y": 263,
+      "text": "ISOLATE"
+    },
+    {
+      "type": "monitor",
+      "x": 778,
+      "y": 501,
+      "text": "EXHAUST"
+    },
+    {
+      "type": "monitor",
+      "x": 1642,
+      "y": 497,
+      "text": "STEAM LINE"
+    },
+    {
+      "type": "monitor",
+      "x": 1795,
+      "y": 262,
+      "text": "ESCAPE 19s"
+    },
+    {
+      "type": "monitor",
+      "x": 2341,
+      "y": 181,
+      "text": "EXIT LOCK"
+    },
+    {
+      "type": "monitor",
+      "x": 836,
+      "y": 241,
+      "text": "FORENSIC TRACE 54"
+    }
+  ],
+  "latching_relays": [],
+  "routing_consoles": [],
+  "signal_inverters": [],
+  "npcs": [
+    {
+      "id": "kip",
+      "x": 250,
+      "y": 355,
+      "dialogue": [
+        "Superheated Venting. I brought a spare fuse and a very small umbrella.",
+        "Turn the handwheel and watch which machinery changes.",
+        "Start the clock after the other lock lights are green."
+      ]
+    }
+  ],
+  "springs": [],
+  "dash_recharges": [
+    {
+      "id": "ring0",
+      "x": 660,
+      "y": 257
+    }
+  ],
+  "one_way_platforms": [
+    {
+      "id": "walk0",
+      "x": 1168,
+      "y": 515,
+      "w": 70,
+      "h": 12
+    },
+    {
+      "id": "walk1",
+      "x": 1128,
+      "y": 435,
+      "w": 70,
+      "h": 12
+    },
+    {
+      "id": "walk3",
+      "x": 1257,
+      "y": 557,
+      "w": 68,
+      "h": 12
+    },
+    {
+      "id": "walk4",
+      "x": 1439,
+      "y": 629,
+      "w": 68,
+      "h": 12
+    }
+  ],
+  "dash_barriers": [],
+  "level_id": 54,
+  "width": 2746,
+  "height": 730,
+  "name": "Chamber 54 // Superheated Venting",
+  "abilities": {
+    "wall_jump": true,
+    "dash": true
+  },
+  "spawn": [
+    188,
+    309
+  ],
+  "exit": [
+    2375,
+    275
+  ],
+  "hint_route": [
+    "valve",
+    "timer"
+  ],
+  "hint_notes": {
+    "valve": [
+      "Turn the handwheel and watch which machinery changes.",
+      "Turn the handwheel and watch which machinery changes.",
+      "Turn the handwheel and watch which machinery changes."
+    ],
+    "timer": [
+      "Start the clock after the other lock lights are green.",
+      "Start the clock after the other lock lights are green.",
+      "Start the clock after the other lock lights are green."
+    ]
+  },
+  "solution_steps": [
+    "Turn the handwheel and watch which machinery changes.",
+    "Start the clock after the other lock lights are green."
+  ],
+  "subtitle": "Turn the handwheel and watch which machinery changes.",
+  "chapter": 6,
+  "theme": "furnace",
+  "topology": "Updraft Thermal Crossing",
+  "overhaul_version": 1,
+  "overhaul_design": {
+    "profile": "valve_relay",
+    "route": "left_switchback",
+    "actual_direction": 1,
+    "mandatory": false,
+    "service_platform_count": 0,
+    "retired_by_cleanup": true
+  },
+  "secondary_validation_1": {
+    "checkpoint": "beacon_54",
+    "extra_platforms": 0,
+    "signal": "sector_54_validated",
+    "retired_by_cleanup": true
+  },
+  "side_challenge_policy": {
+    "campaign_blocking": false,
+    "optional_signals": [],
+    "reason": "Deprecated optional side circuit removed; service record remains accessible."
+  },
+  "architectural_overhaul_v2": {
+    "archetype": "Containment Bastion & Service Duct",
+    "chapter": 6,
+    "theme": "furnace",
+    "original_tile_count": 13,
+    "final_tile_count": 35,
+    "thickened_decks": 2,
+    "added_piers": 0,
+    "added_corbels": 6,
+    "added_soffits": 7,
+    "added_buttresses": 4,
+    "tiles_before_cleanup_pass": 35,
+    "removed_legacy_platforms": 5,
+    "removed_legacy_devices": 3,
+    "added_partition_walls": 0,
+    "added_grounded_piers": 0,
+    "added_stepped_terraces": 0
+  },
+  "cleanup_v3_audit": {
+    "level": 54,
+    "chapter": 6,
+    "theme": "furnace",
+    "name": "Chamber 54 // Superheated Venting",
+    "archetype": "Containment Bastion & Service Duct",
+    "orig_backup_tiles": 13,
+    "final_tiles": 35,
+    "removed_platforms": 5,
+    "retained_platforms": 5,
+    "removed_devices": 3,
+    "added_walls": 0,
+    "added_piers": 0,
+    "added_terraces": 0,
+    "gate_links": [
+      "valve",
+      "timer"
+    ]
+  }
+}

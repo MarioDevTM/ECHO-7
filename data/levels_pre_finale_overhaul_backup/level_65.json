@@ -1,0 +1,705 @@
+{
+  "tiles": [
+    [
+      0,
+      0,
+      36,
+      946
+    ],
+    [
+      1968,
+      0,
+      36,
+      946
+    ],
+    [
+      36,
+      0,
+      1932,
+      30
+    ],
+    [
+      828,
+      811,
+      432,
+      135
+    ],
+    [
+      150,
+      811,
+      340,
+      135
+    ],
+    [
+      150,
+      583,
+      340,
+      23
+    ],
+    [
+      828,
+      583,
+      432,
+      23
+    ],
+    [
+      1442,
+      583,
+      362,
+      40
+    ],
+    [
+      828,
+      355,
+      432,
+      40
+    ],
+    [
+      986,
+      221,
+      155,
+      18
+    ],
+    [
+      1123,
+      239,
+      18,
+      116
+    ],
+    [
+      628,
+      849,
+      62,
+      97
+    ],
+    [
+      606,
+      613,
+      14,
+      162
+    ],
+    [
+      628,
+      621,
+      62,
+      24
+    ],
+    [
+      174,
+      606,
+      44,
+      56
+    ],
+    [
+      298,
+      606,
+      44,
+      56
+    ],
+    [
+      1192,
+      606,
+      44,
+      56
+    ],
+    [
+      1494,
+      623,
+      258,
+      22
+    ],
+    [
+      880,
+      395,
+      328,
+      22
+    ],
+    [
+      156,
+      30,
+      101,
+      56
+    ],
+    [
+      176,
+      86,
+      61,
+      16
+    ],
+    [
+      556,
+      30,
+      117,
+      56
+    ],
+    [
+      576,
+      86,
+      77,
+      16
+    ],
+    [
+      956,
+      30,
+      133,
+      42
+    ],
+    [
+      976,
+      72,
+      93,
+      16
+    ],
+    [
+      1356,
+      30,
+      101,
+      42
+    ],
+    [
+      1376,
+      72,
+      61,
+      16
+    ],
+    [
+      1756,
+      30,
+      117,
+      28
+    ],
+    [
+      1776,
+      58,
+      77,
+      16
+    ],
+    [
+      36,
+      140,
+      28,
+      89
+    ],
+    [
+      1940,
+      180,
+      28,
+      89
+    ],
+    [
+      36,
+      380,
+      28,
+      73
+    ],
+    [
+      1940,
+      420,
+      28,
+      73
+    ],
+    [
+      36,
+      620,
+      28,
+      89
+    ],
+    [
+      1940,
+      660,
+      28,
+      89
+    ]
+  ],
+  "ladders": [],
+  "crates": [],
+  "plates": [],
+  "switches": [],
+  "doors": [
+    {
+      "id": "surface_lock",
+      "x": 986,
+      "y": 239,
+      "w": 20,
+      "h": 116,
+      "required_links": [
+        "beta",
+        "power"
+      ]
+    }
+  ],
+  "moving_platforms": [
+    {
+      "id": "car0",
+      "x": 508,
+      "y": 803,
+      "w": 86,
+      "h": 16,
+      "end_x": 508,
+      "end_y": 575,
+      "speed": 124,
+      "active_by_default": true,
+      "required_links": []
+    }
+  ],
+  "conveyors": [],
+  "wind_zones": [],
+  "water_zones": [],
+  "valves": [],
+  "generators": [
+    {
+      "link_id": "power",
+      "x": 1623,
+      "y": 583
+    }
+  ],
+  "cables": [
+    {
+      "link_id": "A",
+      "points": [
+        [
+          329,
+          799
+        ],
+        [
+          329,
+          835
+        ],
+        [
+          336,
+          835
+        ],
+        [
+          336,
+          573
+        ]
+      ]
+    },
+    {
+      "link_id": "alpha",
+      "points": [
+        [
+          329,
+          571
+        ],
+        [
+          329,
+          607
+        ],
+        [
+          1060,
+          607
+        ],
+        [
+          1060,
+          573
+        ]
+      ]
+    },
+    {
+      "link_id": "B",
+      "points": [
+        [
+          339,
+          799
+        ],
+        [
+          339,
+          842
+        ],
+        [
+          1060,
+          842
+        ],
+        [
+          1060,
+          573
+        ]
+      ]
+    },
+    {
+      "link_id": "beta",
+      "points": [
+        [
+          1044,
+          571
+        ],
+        [
+          1044,
+          605
+        ],
+        [
+          994,
+          605
+        ],
+        [
+          994,
+          299
+        ]
+      ]
+    },
+    {
+      "link_id": "power",
+      "points": [
+        [
+          1623,
+          571
+        ],
+        [
+          1623,
+          612
+        ],
+        [
+          994,
+          612
+        ],
+        [
+          994,
+          299
+        ]
+      ]
+    }
+  ],
+  "mirrors": [],
+  "crushers": [],
+  "steam_vents": [
+    {
+      "id": "seam0",
+      "x": 641,
+      "y": 726,
+      "w": 36,
+      "h": 134,
+      "period": 3.1,
+      "duty_cycle": 0.43,
+      "disabled_by": []
+    },
+    {
+      "id": "seam3",
+      "x": 1333,
+      "y": 498,
+      "w": 36,
+      "h": 134,
+      "period": 3.1,
+      "duty_cycle": 0.43,
+      "disabled_by": []
+    }
+  ],
+  "collapsing_platforms": [
+    {
+      "id": "walk0",
+      "x": 1292,
+      "y": 431,
+      "w": 58,
+      "h": 12,
+      "delay": 0.54,
+      "respawn": 2.4
+    }
+  ],
+  "checkpoints": [
+    {
+      "id": "beacon_65",
+      "x": 1739,
+      "y": 583
+    }
+  ],
+  "spikes": [],
+  "acids": [
+    {
+      "x": 36,
+      "y": 871,
+      "w": 114,
+      "h": 75
+    },
+    {
+      "x": 490,
+      "y": 871,
+      "w": 338,
+      "h": 75
+    },
+    {
+      "x": 1260,
+      "y": 871,
+      "w": 708,
+      "h": 75
+    }
+  ],
+  "lasers": [
+    {
+      "x": 1739,
+      "y": 421,
+      "dir": [
+        0,
+        1
+      ],
+      "max_length": 155,
+      "disabled_by": [
+        "beta"
+      ]
+    }
+  ],
+  "optical_beams": [],
+  "sequences": [],
+  "collectibles": [
+    {
+      "id": "log_65",
+      "x": 192,
+      "y": 779,
+      "title": "Failing Busbars / Shift Notes",
+      "text": "Failing Busbars. Check the signal lines before you leave the service deck."
+    },
+    {
+      "id": "field_trace_65",
+      "x": 425,
+      "y": 735,
+      "title": "FIELD TRACE 65 / LASER-LOCKED RELAY TOWER",
+      "text": "ECHO-7 field diagnostics: Require saving an A-bus reading before switching to B and restoring a second generator link.",
+      "required_links": [
+        "alpha"
+      ],
+      "optional_investigation": true
+    },
+    {
+      "id": "service_challenge_65",
+      "x": 1767,
+      "y": 541,
+      "title": "Optional Diagnostics 65",
+      "text": "Optional auxiliary service record recovered. This archive is no longer linked to a redundant side circuit and does not gate the exit.",
+      "required_links": [],
+      "optional_investigation": true
+    }
+  ],
+  "decorations": [
+    {
+      "type": "warning_stripe",
+      "x": 162,
+      "y": 595,
+      "w": 120
+    },
+    {
+      "type": "warning_stripe",
+      "x": 840,
+      "y": 595,
+      "w": 120
+    },
+    {
+      "type": "warning_stripe",
+      "x": 1454,
+      "y": 595,
+      "w": 120
+    },
+    {
+      "type": "warning_stripe",
+      "x": 840,
+      "y": 367,
+      "w": 120
+    },
+    {
+      "type": "monitor",
+      "x": 280,
+      "y": 712,
+      "text": "SELECT A / B"
+    },
+    {
+      "type": "monitor",
+      "x": 290,
+      "y": 483,
+      "text": "HOLD A"
+    },
+    {
+      "type": "monitor",
+      "x": 1014,
+      "y": 483,
+      "text": "HOLD ALPHA + B"
+    },
+    {
+      "type": "monitor",
+      "x": 1593,
+      "y": 483,
+      "text": "ENERGIZE"
+    },
+    {
+      "type": "monitor",
+      "x": 1009,
+      "y": 181,
+      "text": "EXIT LOCK"
+    },
+    {
+      "type": "monitor",
+      "x": 438,
+      "y": 697,
+      "text": "FORENSIC TRACE 65"
+    }
+  ],
+  "latching_relays": [
+    {
+      "link_id": "alpha",
+      "x": 320,
+      "y": 583,
+      "required_links": [
+        "A"
+      ]
+    },
+    {
+      "link_id": "beta",
+      "x": 1044,
+      "y": 583,
+      "required_links": [
+        "alpha",
+        "B"
+      ]
+    }
+  ],
+  "routing_consoles": [
+    {
+      "id": "selector",
+      "route_id": "supply",
+      "x": 320,
+      "y": 811,
+      "a_signal": "A",
+      "b_signal": "B"
+    }
+  ],
+  "signal_inverters": [],
+  "npcs": [
+    {
+      "id": "kip",
+      "x": 928,
+      "y": 811,
+      "dialogue": [
+        "Failing Busbars. The backup is ready. It even looks worried.",
+        "Set the supply selector to A.",
+        "Start the generator to bring the circuit online."
+      ]
+    }
+  ],
+  "springs": [],
+  "dash_recharges": [],
+  "one_way_platforms": [
+    {
+      "id": "walk1",
+      "x": 1352,
+      "y": 507,
+      "w": 58,
+      "h": 12
+    }
+  ],
+  "dash_barriers": [],
+  "level_id": 65,
+  "width": 2004,
+  "height": 946,
+  "name": "Chamber 65 // Failing Busbars",
+  "abilities": {
+    "wall_jump": true,
+    "dash": true
+  },
+  "spawn": [
+    866,
+    765
+  ],
+  "exit": [
+    1043,
+    275
+  ],
+  "hint_route": [
+    "A",
+    "alpha",
+    "B",
+    "beta",
+    "power"
+  ],
+  "hint_notes": {
+    "A": [
+      "Set the supply selector to A.",
+      "Set the supply selector to A.",
+      "Set the supply selector to A."
+    ],
+    "alpha": [
+      "Keep A live, then interact with the recorder to hold the reading.",
+      "Keep A live, then interact with the recorder to hold the reading.",
+      "Keep A live, then interact with the recorder to hold the reading."
+    ],
+    "B": [
+      "Transfer the selector to B after recording the A-side reading.",
+      "Transfer the selector to B after recording the A-side reading.",
+      "Transfer the selector to B after recording the A-side reading."
+    ],
+    "beta": [
+      "Keep alpha and B live, then interact with the recorder to hold the reading.",
+      "Keep alpha and B live, then interact with the recorder to hold the reading.",
+      "Keep alpha and B live, then interact with the recorder to hold the reading."
+    ],
+    "power": [
+      "Start the generator to bring the circuit online.",
+      "Start the generator to bring the circuit online.",
+      "Start the generator to bring the circuit online."
+    ]
+  },
+  "solution_steps": [
+    "Set the supply selector to A.",
+    "Keep A live, then interact with the recorder to hold the reading.",
+    "Transfer the selector to B after recording the A-side reading.",
+    "Keep alpha and B live, then interact with the recorder to hold the reading.",
+    "Start the generator to bring the circuit online."
+  ],
+  "subtitle": "Set the supply selector to A.",
+  "chapter": 7,
+  "theme": "spire",
+  "topology": "Laser-Locked Relay Tower",
+  "overhaul_version": 1,
+  "overhaul_design": {
+    "profile": "generator",
+    "route": "right_switchback",
+    "actual_direction": 1,
+    "mandatory": false,
+    "service_platform_count": 0,
+    "retired_by_cleanup": true
+  },
+  "secondary_validation_1": {
+    "checkpoint": "beacon_65",
+    "extra_platforms": 0,
+    "signal": "sector_65_validated",
+    "retired_by_cleanup": true
+  },
+  "side_challenge_policy": {
+    "campaign_blocking": false,
+    "optional_signals": [],
+    "reason": "Deprecated optional side circuit removed; service record remains accessible."
+  },
+  "architectural_overhaul_v2": {
+    "archetype": "Fractured Upper-Spire Chamber",
+    "chapter": 7,
+    "theme": "spire",
+    "original_tile_count": 14,
+    "final_tile_count": 35,
+    "thickened_decks": 2,
+    "added_piers": 0,
+    "added_corbels": 5,
+    "added_soffits": 5,
+    "added_buttresses": 6,
+    "tiles_before_cleanup_pass": 35,
+    "removed_legacy_platforms": 5,
+    "removed_legacy_devices": 2,
+    "added_partition_walls": 0,
+    "added_grounded_piers": 0,
+    "added_stepped_terraces": 0
+  },
+  "cleanup_v3_audit": {
+    "level": 65,
+    "chapter": 7,
+    "theme": "spire",
+    "name": "Chamber 65 // Failing Busbars",
+    "archetype": "Fractured Upper-Spire Chamber",
+    "orig_backup_tiles": 14,
+    "final_tiles": 35,
+    "removed_platforms": 5,
+    "retained_platforms": 1,
+    "removed_devices": 2,
+    "added_walls": 0,
+    "added_piers": 0,
+    "added_terraces": 0,
+    "gate_links": [
+      "beta",
+      "power"
+    ]
+  }
+}

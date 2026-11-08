@@ -1,0 +1,364 @@
+{
+  "level_id": 17,
+  "chapter": 2,
+  "theme": "mechanical",
+  "name": "Chamber 17 // System Reboot",
+  "subtitle": "Synchronize the two substations. The alignment signal only exists while the west optical path is clear.",
+  "width": 2080,
+  "height": 980,
+  "spawn": [
+    85,
+    754
+  ],
+  "exit": [
+    1956,
+    315
+  ],
+  "tiles": [
+    [
+      0,
+      0,
+      40,
+      980
+    ],
+    [
+      40,
+      0,
+      2000,
+      32
+    ],
+    [
+      2040,
+      0,
+      40,
+      980
+    ],
+    [
+      40,
+      800,
+      780,
+      180
+    ],
+    [
+      1290,
+      800,
+      750,
+      180
+    ],
+    [
+      1885,
+      275,
+      155,
+      20
+    ],
+    [
+      1885,
+      395,
+      155,
+      20
+    ]
+  ],
+  "ladders": [],
+  "crates": [
+    {
+      "id": "shutter",
+      "x": 456,
+      "y": 764
+    }
+  ],
+  "plates": [
+    {
+      "link_id": "plate_17_core",
+      "x": 730,
+      "y": 800
+    }
+  ],
+  "switches": [],
+  "doors": [
+    {
+      "id": "d17_exit",
+      "x": 1885,
+      "y": 295,
+      "w": 24,
+      "h": 100,
+      "required_links": [
+        "sync",
+        "gen_17_east"
+      ],
+      "logic": "ALL"
+    }
+  ],
+  "moving_platforms": [
+    {
+      "id": "mp17_bridge",
+      "x": 830,
+      "y": 783,
+      "w": 108,
+      "h": 18,
+      "end_x": 1175,
+      "end_y": 760,
+      "speed": 135,
+      "active_by_default": false,
+      "logic": "ALL",
+      "required_links": [
+        "opt_17_sync"
+      ]
+    }
+  ],
+  "conveyors": [],
+  "wind_zones": [],
+  "water_zones": [],
+  "valves": [],
+  "generators": [
+    {
+      "link_id": "gen_17_west",
+      "x": 250,
+      "y": 800
+    },
+    {
+      "link_id": "gen_17_east",
+      "x": 1650,
+      "y": 620
+    }
+  ],
+  "cables": [
+    {
+      "link_id": "gen_17_east",
+      "points": [
+        [
+          1662,
+          606
+        ],
+        [
+          1662,
+          666
+        ],
+        [
+          1893,
+          666
+        ],
+        [
+          1893,
+          345
+        ]
+      ]
+    },
+    {
+      "link_id": "gen_17_east",
+      "points": [
+        [
+          1662,
+          606
+        ],
+        [
+          1662,
+          671
+        ],
+        [
+          478,
+          671
+        ],
+        [
+          478,
+          617
+        ]
+      ]
+    },
+    {
+      "link_id": "plate_17_core",
+      "points": [
+        [
+          742,
+          786
+        ],
+        [
+          742,
+          852
+        ],
+        [
+          478,
+          852
+        ],
+        [
+          478,
+          617
+        ]
+      ]
+    }
+  ],
+  "mirrors": [
+    {
+      "id": "sync_face",
+      "x": 580,
+      "y": 764,
+      "orientation": 1
+    }
+  ],
+  "crushers": [],
+  "steam_vents": [],
+  "collapsing_platforms": [],
+  "checkpoints": [
+    {
+      "id": "cp17_1",
+      "x": 1350,
+      "y": 800
+    }
+  ],
+  "spikes": [],
+  "acids": [
+    {
+      "x": 820,
+      "y": 890,
+      "w": 470,
+      "h": 90
+    }
+  ],
+  "lasers": [],
+  "optical_beams": [
+    {
+      "link_id": "opt_17_sync",
+      "x": 350,
+      "y": 782,
+      "dir": [
+        1,
+        0
+      ],
+      "max_length": 650,
+      "receiver": [
+        585,
+        565,
+        18,
+        18
+      ],
+      "enabled_by": "gen_17_west"
+    }
+  ],
+  "sequences": [],
+  "collectibles": [
+    {
+      "id": "log_17",
+      "x": 255,
+      "y": 678,
+      "title": "Core Reboot Protocol",
+      "text": "West and East substations must be phase-locked before entering the central core."
+    }
+  ],
+  "decorations": [
+    {
+      "type": "monitor",
+      "x": 444,
+      "y": 536,
+      "text": "PHASE SYNC"
+    },
+    {
+      "type": "monitor",
+      "x": 1624,
+      "y": 531,
+      "text": "EAST FEED"
+    }
+  ],
+  "solution_steps": [
+    "Power west, park the shutter and turn the mirror upward to launch the service car.",
+    "Start the east generator. Return to the west timing bench to store synchronization, then climb the east pylon."
+  ],
+  "hint_route": [
+    "sync",
+    "gen_17_east"
+  ],
+  "npcs": [
+    {
+      "id": "kip",
+      "x": 155,
+      "y": 800
+    }
+  ],
+  "abilities": {
+    "wall_jump": true,
+    "dash": true
+  },
+  "springs": [],
+  "dash_recharges": [
+    {
+      "id": "ring1040",
+      "x": 1040,
+      "y": 676
+    }
+  ],
+  "one_way_platforms": [
+    {
+      "id": "deck220_710",
+      "x": 220,
+      "y": 710,
+      "w": 125,
+      "h": 14
+    },
+    {
+      "id": "deck425_625",
+      "x": 425,
+      "y": 625,
+      "w": 150,
+      "h": 14
+    },
+    {
+      "id": "deck610_540",
+      "x": 610,
+      "y": 540,
+      "w": 130,
+      "h": 14
+    },
+    {
+      "id": "deck1430_710",
+      "x": 1430,
+      "y": 710,
+      "w": 130,
+      "h": 14
+    },
+    {
+      "id": "deck1610_620",
+      "x": 1610,
+      "y": 620,
+      "w": 138,
+      "h": 14
+    },
+    {
+      "id": "deck1450_532",
+      "x": 1450,
+      "y": 532,
+      "w": 100,
+      "h": 14
+    },
+    {
+      "id": "deck1630_450",
+      "x": 1630,
+      "y": 450,
+      "w": 125,
+      "h": 14
+    }
+  ],
+  "dash_barriers": [],
+  "routing_consoles": [],
+  "latching_relays": [
+    {
+      "link_id": "sync",
+      "x": 470,
+      "y": 625,
+      "required_links": [
+        "gen_17_east",
+        "opt_17_sync",
+        "plate_17_core"
+      ]
+    }
+  ],
+  "hint_notes": {
+    "sync": [
+      "Synchronize the two substations. The alignment signal only exists while the west optical path is clear.",
+      "Power west, park the shutter and turn the mirror upward to launch the service car.",
+      "Start the east generator. Return to the west timing bench to store synchronization, then climb the east pylon."
+    ],
+    "gen_17_east": [
+      "Synchronize the two substations. The alignment signal only exists while the west optical path is clear.",
+      "Power west, park the shutter and turn the mirror upward to launch the service car.",
+      "Start the east generator. Return to the west timing bench to store synchronization, then climb the east pylon."
+    ]
+  }
+}

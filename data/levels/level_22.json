@@ -1,0 +1,295 @@
+{
+  "level_id": 22,
+  "chapter": 3,
+  "name": "Chamber 22 // Periscope Relay",
+  "subtitle": "Fold the beam through the periscope. Store its straight-through reading before steering it to the side port.",
+  "theme": "power",
+  "width": 1590,
+  "height": 1050,
+  "spawn": [
+    86,
+    854
+  ],
+  "exit": [
+    1466,
+    390
+  ],
+  "tiles": [
+    [
+      0,
+      0,
+      40,
+      1050
+    ],
+    [
+      40,
+      0,
+      1510,
+      32
+    ],
+    [
+      1550,
+      0,
+      40,
+      1050
+    ],
+    [
+      40,
+      900,
+      1510,
+      150
+    ],
+    [
+      1395,
+      350,
+      155,
+      20
+    ],
+    [
+      1395,
+      470,
+      155,
+      20
+    ]
+  ],
+  "hint_route": [
+    "sighting",
+    "relay"
+  ],
+  "generators": [
+    {
+      "link_id": "lamp",
+      "x": 235,
+      "y": 900
+    }
+  ],
+  "mirrors": [
+    {
+      "id": "heel",
+      "x": 710,
+      "y": 864,
+      "orientation": 1
+    },
+    {
+      "id": "head",
+      "x": 710,
+      "y": 541,
+      "orientation": 1
+    }
+  ],
+  "optical_beams": [
+    {
+      "link_id": "bore",
+      "x": 350,
+      "y": 882,
+      "dir": [
+        1,
+        0
+      ],
+      "max_length": 1320,
+      "receiver": [
+        261,
+        550,
+        18,
+        18
+      ],
+      "enabled_by": "lamp"
+    },
+    {
+      "link_id": "relay",
+      "x": 350,
+      "y": 882,
+      "dir": [
+        1,
+        0
+      ],
+      "max_length": 1270,
+      "receiver": [
+        1160,
+        550,
+        18,
+        18
+      ],
+      "enabled_by": "lamp"
+    }
+  ],
+  "ladders": [],
+  "doors": [
+    {
+      "id": "exit_lock",
+      "x": 1395,
+      "y": 370,
+      "w": 24,
+      "h": 100,
+      "required_links": [
+        "sighting",
+        "relay"
+      ],
+      "logic": "ALL"
+    }
+  ],
+  "cables": [
+    {
+      "link_id": "sighting",
+      "points": [
+        [
+          287,
+          409
+        ],
+        [
+          287,
+          474
+        ],
+        [
+          1403,
+          474
+        ],
+        [
+          1403,
+          420
+        ]
+      ]
+    }
+  ],
+  "decorations": [
+    {
+      "type": "monitor",
+      "x": 249,
+      "y": 334,
+      "text": "WEST SIGHT"
+    },
+    {
+      "type": "monitor",
+      "x": 209,
+      "y": 811,
+      "text": "PERISCOPE"
+    }
+  ],
+  "npcs": [
+    {
+      "id": "kip",
+      "x": 156,
+      "y": 900
+    }
+  ],
+  "abilities": {
+    "wall_jump": true,
+    "dash": true
+  },
+  "springs": [],
+  "dash_recharges": [
+    {
+      "id": "ring860",
+      "x": 860,
+      "y": 525
+    }
+  ],
+  "one_way_platforms": [
+    {
+      "id": "deck660_577",
+      "x": 660,
+      "y": 577,
+      "w": 130,
+      "h": 14
+    },
+    {
+      "id": "deck980_813",
+      "x": 980,
+      "y": 813,
+      "w": 140,
+      "h": 14
+    },
+    {
+      "id": "deck1180_729",
+      "x": 1180,
+      "y": 729,
+      "w": 114,
+      "h": 14
+    },
+    {
+      "id": "deck960_643",
+      "x": 960,
+      "y": 643,
+      "w": 125,
+      "h": 14
+    },
+    {
+      "id": "deck1020_495",
+      "x": 1020,
+      "y": 495,
+      "w": 125,
+      "h": 14
+    },
+    {
+      "id": "deck1230_420",
+      "x": 1230,
+      "y": 420,
+      "w": 108,
+      "h": 14
+    },
+    {
+      "id": "deck450_502",
+      "x": 450,
+      "y": 502,
+      "w": 125,
+      "h": 14
+    },
+    {
+      "id": "deck235_423",
+      "x": 235,
+      "y": 423,
+      "w": 150,
+      "h": 14
+    }
+  ],
+  "dash_barriers": [],
+  "routing_consoles": [],
+  "latching_relays": [
+    {
+      "link_id": "sighting",
+      "x": 275,
+      "y": 423,
+      "required_links": [
+        "bore"
+      ]
+    }
+  ],
+  "switches": [],
+  "checkpoints": [
+    {
+      "id": "cp22_1",
+      "x": 1300,
+      "y": 900
+    }
+  ],
+  "acids": [],
+  "spikes": [],
+  "collapsing_platforms": [],
+  "conveyors": [],
+  "steam_vents": [],
+  "hint_notes": {
+    "sighting": [
+      "Fold the beam through the periscope. Store its straight-through reading before steering it to the side port.",
+      "Light the tube. Set its heel to turn light upward, then use the head mirror to send it west.",
+      "Cross to the west sighting bench and store that reading. Reverse only the upper mirror to illuminate the east port."
+    ],
+    "relay": [
+      "Fold the beam through the periscope. Store its straight-through reading before steering it to the side port.",
+      "Light the tube. Set its heel to turn light upward, then use the head mirror to send it west.",
+      "Cross to the west sighting bench and store that reading. Reverse only the upper mirror to illuminate the east port."
+    ]
+  },
+  "solution_steps": [
+    "Light the tube. Set its heel to turn light upward, then use the head mirror to send it west.",
+    "Cross to the west sighting bench and store that reading. Reverse only the upper mirror to illuminate the east port."
+  ],
+  "collectibles": [
+    {
+      "id": "log_22",
+      "x": 211,
+      "y": 864,
+      "title": "Sector 3 / Recovery Log 22",
+      "text": "The facility reclassified optional service room 22 as essential for surface access."
+    }
+  ]
+}

@@ -1,0 +1,383 @@
+{
+  "level_id": 23,
+  "chapter": 3,
+  "name": "Chamber 23 // Ballast Sump",
+  "subtitle": "Dry ballast can arm the exhaust. Retain its proof while the tank refills and the float leaves the scale.",
+  "theme": "power",
+  "width": 1540,
+  "height": 1200,
+  "spawn": [
+    82,
+    564
+  ],
+  "exit": [
+    1416,
+    346
+  ],
+  "tiles": [
+    [
+      0,
+      0,
+      40,
+      1200
+    ],
+    [
+      40,
+      0,
+      1460,
+      32
+    ],
+    [
+      1500,
+      0,
+      40,
+      1200
+    ],
+    [
+      40,
+      610,
+      375,
+      590
+    ],
+    [
+      415,
+      1040,
+      775,
+      160
+    ],
+    [
+      1190,
+      710,
+      310,
+      490
+    ],
+    [
+      1345,
+      306,
+      155,
+      20
+    ],
+    [
+      1345,
+      426,
+      155,
+      20
+    ]
+  ],
+  "hint_route": [
+    "high",
+    "afloat"
+  ],
+  "valves": [
+    {
+      "link_id": "drain",
+      "x": 282,
+      "y": 610
+    }
+  ],
+  "water_zones": [
+    {
+      "id": "tank",
+      "x": 415,
+      "y": 624,
+      "w": 775,
+      "h": 416,
+      "drained_y": 1040,
+      "controlled_by": "drain"
+    }
+  ],
+  "crates": [
+    {
+      "id": "float",
+      "x": 650,
+      "y": 1004
+    }
+  ],
+  "plates": [
+    {
+      "link_id": "ballast",
+      "x": 925,
+      "y": 1040
+    }
+  ],
+  "wind_zones": [
+    {
+      "id": "updraft",
+      "x": 1040,
+      "y": 410,
+      "w": 123,
+      "h": 630,
+      "vx": 0,
+      "vy": -2350,
+      "controlled_by": "afloat",
+      "active_by_default": false
+    }
+  ],
+  "switches": [],
+  "doors": [
+    {
+      "id": "exit_lock",
+      "x": 1345,
+      "y": 326,
+      "w": 24,
+      "h": 100,
+      "required_links": [
+        "high",
+        "afloat"
+      ],
+      "logic": "ALL"
+    }
+  ],
+  "checkpoints": [
+    {
+      "id": "cp23_1",
+      "x": 1250,
+      "y": 710
+    }
+  ],
+  "ladders": [],
+  "decorations": [
+    {
+      "type": "monitor",
+      "x": 449,
+      "y": 694,
+      "text": "DRY SAMPLE"
+    },
+    {
+      "type": "monitor",
+      "x": 1150,
+      "y": 426,
+      "text": "FULL TANK"
+    }
+  ],
+  "npcs": [
+    {
+      "id": "kip",
+      "x": 152,
+      "y": 610
+    }
+  ],
+  "abilities": {
+    "wall_jump": true,
+    "dash": true
+  },
+  "springs": [],
+  "dash_recharges": [
+    {
+      "id": "ring1140",
+      "x": 1140,
+      "y": 466
+    }
+  ],
+  "one_way_platforms": [
+    {
+      "id": "deck440_955",
+      "x": 440,
+      "y": 955,
+      "w": 100,
+      "h": 14
+    },
+    {
+      "id": "deck620_870",
+      "x": 620,
+      "y": 870,
+      "w": 95,
+      "h": 14
+    },
+    {
+      "id": "deck455_783",
+      "x": 455,
+      "y": 783,
+      "w": 96,
+      "h": 14
+    },
+    {
+      "id": "deck580_698",
+      "x": 580,
+      "y": 698,
+      "w": 100,
+      "h": 14
+    },
+    {
+      "id": "deck1000_945",
+      "x": 1000,
+      "y": 945,
+      "w": 98,
+      "h": 14
+    },
+    {
+      "id": "deck1070_854",
+      "x": 1070,
+      "y": 854,
+      "w": 92,
+      "h": 14
+    },
+    {
+      "id": "deck1135_779",
+      "x": 1135,
+      "y": 779,
+      "w": 55,
+      "h": 14
+    },
+    {
+      "id": "deck1195_515",
+      "x": 1195,
+      "y": 515,
+      "w": 173,
+      "h": 14
+    },
+    {
+      "id": "deck1280_426",
+      "x": 1280,
+      "y": 426,
+      "w": 65,
+      "h": 14
+    }
+  ],
+  "dash_barriers": [],
+  "routing_consoles": [],
+  "latching_relays": [
+    {
+      "link_id": "dry_test",
+      "x": 475,
+      "y": 783,
+      "required_links": [
+        "drain",
+        "ballast"
+      ]
+    },
+    {
+      "link_id": "high",
+      "x": 1225,
+      "y": 515,
+      "required_links": [
+        "afloat",
+        "dry_test"
+      ]
+    }
+  ],
+  "acids": [],
+  "spikes": [],
+  "collapsing_platforms": [],
+  "conveyors": [],
+  "steam_vents": [],
+  "generators": [],
+  "cables": [
+    {
+      "link_id": "high",
+      "points": [
+        [
+          1237,
+          501
+        ],
+        [
+          1237,
+          555
+        ],
+        [
+          1353,
+          555
+        ],
+        [
+          1353,
+          376
+        ]
+      ]
+    },
+    {
+      "link_id": "drain",
+      "points": [
+        [
+          294,
+          596
+        ],
+        [
+          294,
+          829
+        ],
+        [
+          483,
+          829
+        ],
+        [
+          483,
+          775
+        ]
+      ]
+    },
+    {
+      "link_id": "ballast",
+      "points": [
+        [
+          937,
+          1026
+        ],
+        [
+          937,
+          1086
+        ],
+        [
+          483,
+          1086
+        ],
+        [
+          483,
+          775
+        ]
+      ]
+    },
+    {
+      "link_id": "dry_test",
+      "points": [
+        [
+          487,
+          769
+        ],
+        [
+          487,
+          829
+        ],
+        [
+          1233,
+          829
+        ],
+        [
+          1233,
+          507
+        ]
+      ]
+    }
+  ],
+  "hint_notes": {
+    "high": [
+      "Dry ballast can arm the exhaust. Retain its proof while the tank refills and the float leaves the scale.",
+      "Drain the tank, move the float to ballast and store the dry test on the west pipe rack.",
+      "Reopen the inlet. The full tank powers the exhaust column. Catch the high sill to authorize the east hatch."
+    ],
+    "afloat": [
+      "Dry ballast can arm the exhaust. Retain its proof while the tank refills and the float leaves the scale.",
+      "Drain the tank, move the float to ballast and store the dry test on the west pipe rack.",
+      "Reopen the inlet. The full tank powers the exhaust column. Catch the high sill to authorize the east hatch."
+    ]
+  },
+  "solution_steps": [
+    "Drain the tank, move the float to ballast and store the dry test on the west pipe rack.",
+    "Reopen the inlet. The full tank powers the exhaust column. Catch the high sill to authorize the east hatch."
+  ],
+  "collectibles": [
+    {
+      "id": "log_23",
+      "x": 207,
+      "y": 574,
+      "title": "Sector 3 / Recovery Log 23",
+      "text": "The facility reclassified optional service room 23 as essential for surface access."
+    }
+  ],
+  "signal_inverters": [
+    {
+      "link_id": "afloat",
+      "input": "drain",
+      "water_zone": "tank"
+    }
+  ]
+}

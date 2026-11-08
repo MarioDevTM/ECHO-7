@@ -1,0 +1,684 @@
+{
+  "tiles": [
+    [
+      0,
+      0,
+      36,
+      994
+    ],
+    [
+      3344,
+      0,
+      36,
+      994
+    ],
+    [
+      36,
+      0,
+      3308,
+      30
+    ],
+    [
+      150,
+      355,
+      362,
+      40
+    ],
+    [
+      718,
+      355,
+      390,
+      40
+    ],
+    [
+      1314,
+      607,
+      340,
+      40
+    ],
+    [
+      2180,
+      607,
+      432,
+      23
+    ],
+    [
+      2180,
+      355,
+      432,
+      23
+    ],
+    [
+      2818,
+      355,
+      362,
+      40
+    ],
+    [
+      1073,
+      338,
+      10,
+      17
+    ],
+    [
+      2941,
+      221,
+      155,
+      18
+    ],
+    [
+      3078,
+      239,
+      18,
+      116
+    ],
+    [
+      2728,
+      385,
+      14,
+      186
+    ],
+    [
+      186,
+      395,
+      290,
+      22
+    ],
+    [
+      754,
+      395,
+      318,
+      22
+    ],
+    [
+      1350,
+      647,
+      268,
+      22
+    ],
+    [
+      2216,
+      630,
+      360,
+      22
+    ],
+    [
+      2216,
+      378,
+      360,
+      22
+    ],
+    [
+      2854,
+      395,
+      290,
+      22
+    ],
+    [
+      156,
+      30,
+      115,
+      28
+    ],
+    [
+      176,
+      58,
+      75,
+      16
+    ],
+    [
+      796,
+      30,
+      131,
+      42
+    ],
+    [
+      816,
+      72,
+      91,
+      16
+    ],
+    [
+      1116,
+      30,
+      115,
+      28
+    ],
+    [
+      1136,
+      58,
+      75,
+      16
+    ],
+    [
+      1436,
+      30,
+      99,
+      56
+    ],
+    [
+      1456,
+      86,
+      59,
+      16
+    ],
+    [
+      1756,
+      30,
+      131,
+      42
+    ],
+    [
+      1776,
+      72,
+      91,
+      16
+    ],
+    [
+      2076,
+      30,
+      115,
+      28
+    ],
+    [
+      2096,
+      58,
+      75,
+      16
+    ],
+    [
+      2716,
+      30,
+      131,
+      42
+    ],
+    [
+      2736,
+      72,
+      91,
+      16
+    ],
+    [
+      3036,
+      30,
+      115,
+      28
+    ],
+    [
+      3056,
+      58,
+      75,
+      16
+    ],
+    [
+      36,
+      140,
+      28,
+      95
+    ],
+    [
+      3316,
+      180,
+      28,
+      95
+    ],
+    [
+      36,
+      380,
+      28,
+      79
+    ],
+    [
+      3316,
+      420,
+      28,
+      79
+    ],
+    [
+      36,
+      620,
+      28,
+      95
+    ],
+    [
+      3316,
+      660,
+      28,
+      95
+    ]
+  ],
+  "ladders": [],
+  "crates": [
+    {
+      "id": "load",
+      "x": 833,
+      "y": 319
+    }
+  ],
+  "plates": [
+    {
+      "link_id": "weight",
+      "x": 1025,
+      "y": 355
+    }
+  ],
+  "switches": [
+    {
+      "link_id": "lever",
+      "x": 2396,
+      "y": 355,
+      "mode": "permanent",
+      "duration": 0
+    }
+  ],
+  "doors": [
+    {
+      "id": "surface_lock",
+      "x": 2941,
+      "y": 239,
+      "w": 20,
+      "h": 116,
+      "required_links": [
+        "proof",
+        "lever"
+      ]
+    }
+  ],
+  "moving_platforms": [
+    {
+      "id": "car0",
+      "x": 1850,
+      "y": 569,
+      "w": 83,
+      "h": 16,
+      "end_x": 1929,
+      "end_y": 641,
+      "speed": 124,
+      "active_by_default": true,
+      "required_links": []
+    },
+    {
+      "id": "car1",
+      "x": 2630,
+      "y": 599,
+      "w": 86,
+      "h": 16,
+      "end_x": 2630,
+      "end_y": 347,
+      "speed": 124,
+      "active_by_default": true,
+      "required_links": []
+    }
+  ],
+  "conveyors": [],
+  "wind_zones": [],
+  "water_zones": [],
+  "valves": [],
+  "generators": [],
+  "cables": [
+    {
+      "link_id": "weight",
+      "points": [
+        [
+          1034,
+          343
+        ],
+        [
+          1034,
+          631
+        ],
+        [
+          2412,
+          631
+        ],
+        [
+          2412,
+          597
+        ]
+      ]
+    },
+    {
+      "link_id": "proof",
+      "points": [
+        [
+          2396,
+          595
+        ],
+        [
+          2396,
+          629
+        ],
+        [
+          2949,
+          629
+        ],
+        [
+          2949,
+          299
+        ]
+      ]
+    },
+    {
+      "link_id": "lever",
+      "points": [
+        [
+          2396,
+          343
+        ],
+        [
+          2396,
+          384
+        ],
+        [
+          2949,
+          384
+        ],
+        [
+          2949,
+          299
+        ]
+      ]
+    }
+  ],
+  "mirrors": [],
+  "crushers": [],
+  "steam_vents": [
+    {
+      "id": "seam2",
+      "x": 1899,
+      "y": 522,
+      "w": 36,
+      "h": 134,
+      "period": 3.1,
+      "duty_cycle": 0.43,
+      "disabled_by": []
+    }
+  ],
+  "collapsing_platforms": [
+    {
+      "id": "walk0",
+      "x": 1148,
+      "y": 439,
+      "w": 58,
+      "h": 12,
+      "delay": 0.42,
+      "respawn": 2.4
+    }
+  ],
+  "checkpoints": [
+    {
+      "id": "beacon_63",
+      "x": 2547,
+      "y": 355
+    }
+  ],
+  "spikes": [],
+  "acids": [
+    {
+      "x": 36,
+      "y": 919,
+      "w": 3308,
+      "h": 75
+    }
+  ],
+  "lasers": [],
+  "optical_beams": [],
+  "sequences": [],
+  "collectibles": [
+    {
+      "id": "log_63",
+      "x": 760,
+      "y": 323,
+      "title": "Hanging Foundations / Shift Notes",
+      "text": "Hanging Foundations. Check the signal lines before you leave the service deck."
+    },
+    {
+      "id": "field_trace_63",
+      "x": 780,
+      "y": 279,
+      "title": "FIELD TRACE 63 / SUSPENDED COLLAPSE SPAN",
+      "text": "ECHO-7 field diagnostics: Use a hanging counterweight to prepare a seal crossing, then release a gate on the far side.",
+      "required_links": [
+        "proof"
+      ],
+      "optional_investigation": true
+    },
+    {
+      "id": "service_challenge_63",
+      "x": 2575,
+      "y": 313,
+      "title": "Optional Diagnostics 63",
+      "text": "Optional auxiliary service record recovered. This archive is no longer linked to a redundant side circuit and does not gate the exit.",
+      "required_links": [],
+      "optional_investigation": true
+    }
+  ],
+  "decorations": [
+    {
+      "type": "warning_stripe",
+      "x": 162,
+      "y": 367,
+      "w": 120
+    },
+    {
+      "type": "warning_stripe",
+      "x": 730,
+      "y": 367,
+      "w": 120
+    },
+    {
+      "type": "warning_stripe",
+      "x": 1326,
+      "y": 619,
+      "w": 120
+    },
+    {
+      "type": "warning_stripe",
+      "x": 2192,
+      "y": 619,
+      "w": 120
+    },
+    {
+      "type": "warning_stripe",
+      "x": 2192,
+      "y": 367,
+      "w": 120
+    },
+    {
+      "type": "warning_stripe",
+      "x": 2830,
+      "y": 367,
+      "w": 120
+    },
+    {
+      "type": "monitor",
+      "x": 962,
+      "y": 263,
+      "text": "RECEIVING SCALE"
+    },
+    {
+      "type": "monitor",
+      "x": 1440,
+      "y": 475,
+      "text": "DASH SEAL"
+    },
+    {
+      "type": "monitor",
+      "x": 2366,
+      "y": 507,
+      "text": "HOLD WEIGHT"
+    },
+    {
+      "type": "monitor",
+      "x": 2364,
+      "y": 262,
+      "text": "RELEASE"
+    },
+    {
+      "type": "monitor",
+      "x": 2964,
+      "y": 181,
+      "text": "EXIT LOCK"
+    },
+    {
+      "type": "monitor",
+      "x": 793,
+      "y": 241,
+      "text": "FORENSIC TRACE 63"
+    }
+  ],
+  "latching_relays": [
+    {
+      "link_id": "proof",
+      "x": 2396,
+      "y": 607,
+      "required_links": [
+        "weight"
+      ]
+    }
+  ],
+  "routing_consoles": [],
+  "signal_inverters": [],
+  "npcs": [
+    {
+      "id": "kip",
+      "x": 250,
+      "y": 355,
+      "dialogue": [
+        "Hanging Foundations. Two circuits, one wrench. I know which one I am.",
+        "Move the cargo right until it rests on the receiving scale.",
+        "Use the release panel."
+      ]
+    }
+  ],
+  "springs": [],
+  "dash_recharges": [
+    {
+      "id": "ring0",
+      "x": 601,
+      "y": 257
+    }
+  ],
+  "one_way_platforms": [
+    {
+      "id": "walk1",
+      "x": 1216,
+      "y": 523,
+      "w": 58,
+      "h": 12
+    }
+  ],
+  "dash_barriers": [
+    {
+      "id": "seal",
+      "x": 1484,
+      "y": 519,
+      "w": 24,
+      "h": 88
+    }
+  ],
+  "level_id": 63,
+  "width": 3380,
+  "height": 994,
+  "name": "Chamber 63 // Hanging Foundations",
+  "abilities": {
+    "wall_jump": true,
+    "dash": true
+  },
+  "spawn": [
+    188,
+    309
+  ],
+  "exit": [
+    2998,
+    275
+  ],
+  "hint_route": [
+    "weight",
+    "proof",
+    "lever"
+  ],
+  "hint_notes": {
+    "weight": [
+      "Move the cargo right until it rests on the receiving scale.",
+      "Move the cargo right until it rests on the receiving scale.",
+      "Move the cargo right until it rests on the receiving scale."
+    ],
+    "proof": [
+      "Keep weight live, then interact with the recorder to hold the reading.",
+      "Keep weight live, then interact with the recorder to hold the reading.",
+      "Keep weight live, then interact with the recorder to hold the reading."
+    ],
+    "lever": [
+      "Use the release panel.",
+      "Use the release panel.",
+      "Use the release panel."
+    ]
+  },
+  "solution_steps": [
+    "Move the cargo right until it rests on the receiving scale.",
+    "Keep weight live, then interact with the recorder to hold the reading.",
+    "Use the release panel."
+  ],
+  "subtitle": "Move the cargo right until it rests on the receiving scale.",
+  "chapter": 7,
+  "theme": "spire",
+  "topology": "Suspended Collapse Span",
+  "overhaul_version": 1,
+  "overhaul_design": {
+    "profile": "sequence",
+    "route": "right_rise",
+    "actual_direction": 1,
+    "mandatory": false,
+    "service_platform_count": 0,
+    "retired_by_cleanup": true
+  },
+  "secondary_validation_1": {
+    "checkpoint": "beacon_63",
+    "extra_platforms": 0,
+    "signal": "sector_63_validated",
+    "retired_by_cleanup": true
+  },
+  "side_challenge_policy": {
+    "campaign_blocking": false,
+    "optional_signals": [],
+    "reason": "Deprecated optional side circuit removed; service record remains accessible."
+  },
+  "architectural_overhaul_v2": {
+    "archetype": "Fractured Upper-Spire Chamber",
+    "chapter": 7,
+    "theme": "spire",
+    "original_tile_count": 13,
+    "final_tile_count": 41,
+    "thickened_decks": 4,
+    "added_piers": 0,
+    "added_corbels": 6,
+    "added_soffits": 8,
+    "added_buttresses": 6,
+    "tiles_before_cleanup_pass": 41,
+    "removed_legacy_platforms": 5,
+    "removed_legacy_devices": 5,
+    "added_partition_walls": 0,
+    "added_grounded_piers": 0,
+    "added_stepped_terraces": 0
+  },
+  "cleanup_v3_audit": {
+    "level": 63,
+    "chapter": 7,
+    "theme": "spire",
+    "name": "Chamber 63 // Hanging Foundations",
+    "archetype": "Fractured Upper-Spire Chamber",
+    "orig_backup_tiles": 13,
+    "final_tiles": 41,
+    "removed_platforms": 5,
+    "retained_platforms": 1,
+    "removed_devices": 5,
+    "added_walls": 0,
+    "added_piers": 0,
+    "added_terraces": 0,
+    "gate_links": [
+      "proof",
+      "lever"
+    ]
+  }
+}

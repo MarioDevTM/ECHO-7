@@ -1,0 +1,249 @@
+{
+  "level_id": 1,
+  "chapter": 1,
+  "theme": "awakening",
+  "name": "Chamber 01 // Awakening",
+  "subtitle": "Wake the balcony console, then send the sample down to the weighing floor.",
+  "width": 1510,
+  "height": 760,
+  "spawn": [
+    80,
+    594
+  ],
+  "exit": [
+    72,
+    280
+  ],
+  "tiles": [
+    [
+      0,
+      0,
+      40,
+      760
+    ],
+    [
+      40,
+      0,
+      1430,
+      32
+    ],
+    [
+      1470,
+      0,
+      40,
+      760
+    ],
+    [
+      40,
+      640,
+      1430,
+      120
+    ],
+    [
+      192,
+      360,
+      240,
+      20
+    ],
+    [
+      510,
+      438,
+      155,
+      20
+    ],
+    [
+      730,
+      508,
+      195,
+      20
+    ],
+    [
+      990,
+      560,
+      320,
+      20
+    ],
+    [
+      40,
+      240,
+      152,
+      20
+    ],
+    [
+      40,
+      360,
+      152,
+      20
+    ]
+  ],
+  "ladders": [],
+  "crates": [
+    {
+      "id": "c1_1",
+      "x": 1050,
+      "y": 524
+    }
+  ],
+  "plates": [
+    {
+      "link_id": "plate_1",
+      "x": 1340,
+      "y": 640
+    }
+  ],
+  "switches": [
+    {
+      "link_id": "sw_intro",
+      "x": 575,
+      "y": 438,
+      "mode": "permanent",
+      "duration": 0
+    }
+  ],
+  "doors": [
+    {
+      "id": "d1_exit",
+      "x": 168,
+      "y": 260,
+      "w": 24,
+      "h": 100,
+      "required_links": [
+        "sw_intro",
+        "plate_1"
+      ],
+      "logic": "ALL"
+    }
+  ],
+  "moving_platforms": [],
+  "conveyors": [],
+  "wind_zones": [],
+  "water_zones": [],
+  "valves": [],
+  "generators": [],
+  "cables": [
+    {
+      "link_id": "sw_intro",
+      "points": [
+        [
+          587,
+          424
+        ],
+        [
+          587,
+          478
+        ],
+        [
+          176,
+          478
+        ],
+        [
+          176,
+          310
+        ]
+      ]
+    },
+    {
+      "link_id": "plate_1",
+      "points": [
+        [
+          1352,
+          626
+        ],
+        [
+          1352,
+          686
+        ],
+        [
+          176,
+          686
+        ],
+        [
+          176,
+          310
+        ]
+      ]
+    }
+  ],
+  "mirrors": [],
+  "crushers": [],
+  "steam_vents": [],
+  "collapsing_platforms": [],
+  "checkpoints": [
+    {
+      "id": "cp1_1",
+      "x": 820,
+      "y": 640
+    }
+  ],
+  "spikes": [],
+  "acids": [],
+  "lasers": [],
+  "optical_beams": [],
+  "sequences": [],
+  "collectibles": [
+    {
+      "id": "log_01",
+      "x": 300,
+      "y": 328,
+      "title": "Cryo-Bay Log #01",
+      "text": "Automated wake-up triggered. All surface comms offline for 1,400 days."
+    }
+  ],
+  "decorations": [
+    {
+      "type": "monitor",
+      "x": 1090,
+      "y": 486,
+      "text": "DROP SAMPLE →"
+    },
+    {
+      "type": "monitor",
+      "x": 549,
+      "y": 349,
+      "text": "BALCONY LOCK"
+    },
+    {
+      "type": "monitor",
+      "x": 1314,
+      "y": 551,
+      "text": "SAMPLE SCALE"
+    }
+  ],
+  "solution_steps": [
+    "Climb the loading shelf from its east end. Push the sample off the right lip onto the scale.",
+    "Cross back above the floor, wake the console and enter the west balcony."
+  ],
+  "hint_route": [
+    "sw_intro",
+    "plate_1"
+  ],
+  "npcs": [
+    {
+      "id": "kip",
+      "x": 150,
+      "y": 640
+    }
+  ],
+  "abilities": {
+    "wall_jump": false,
+    "dash": false
+  },
+  "springs": [],
+  "dash_recharges": [],
+  "one_way_platforms": [],
+  "dash_barriers": [],
+  "routing_consoles": [],
+  "latching_relays": [],
+  "hint_notes": {
+    "sw_intro": [
+      "Wake the balcony console, then send the sample down to the weighing floor.",
+      "Climb the loading shelf from its east end. Push the sample off the right lip onto the scale.",
+      "Cross back above the floor, wake the console and enter the west balcony."
+    ],
+    "plate_1": [
+      "Wake the balcony console, then send the sample down to the weighing floor.",
+      "Climb the loading shelf from its east end. Push the sample off the right lip onto the scale.",
+      "Cross back above the floor, wake the console and enter the west balcony."
+    ]
+  }
+}

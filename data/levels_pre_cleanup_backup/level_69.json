@@ -1,0 +1,814 @@
+{
+  "tiles": [
+    [
+      0,
+      0,
+      36,
+      946
+    ],
+    [
+      2646,
+      0,
+      36,
+      946
+    ],
+    [
+      36,
+      0,
+      2610,
+      30
+    ],
+    [
+      150,
+      811,
+      340,
+      135
+    ],
+    [
+      672,
+      811,
+      432,
+      135
+    ],
+    [
+      672,
+      583,
+      432,
+      23
+    ],
+    [
+      672,
+      355,
+      432,
+      23
+    ],
+    [
+      1548,
+      355,
+      362,
+      23
+    ],
+    [
+      2092,
+      355,
+      390,
+      23
+    ],
+    [
+      2229,
+      221,
+      155,
+      18
+    ],
+    [
+      2366,
+      239,
+      18,
+      116
+    ],
+    [
+      1220,
+      613,
+      14,
+      162
+    ],
+    [
+      1220,
+      385,
+      14,
+      162
+    ],
+    [
+      708,
+      378,
+      360,
+      22
+    ],
+    [
+      1584,
+      378,
+      290,
+      22
+    ],
+    [
+      2128,
+      378,
+      318,
+      22
+    ],
+    [
+      156,
+      30,
+      121,
+      28
+    ],
+    [
+      176,
+      58,
+      81,
+      16
+    ],
+    [
+      476,
+      30,
+      105,
+      56
+    ],
+    [
+      496,
+      86,
+      65,
+      16
+    ],
+    [
+      796,
+      30,
+      89,
+      42
+    ],
+    [
+      1116,
+      30,
+      121,
+      28
+    ],
+    [
+      1136,
+      58,
+      81,
+      16
+    ],
+    [
+      1436,
+      30,
+      105,
+      56
+    ],
+    [
+      1456,
+      86,
+      65,
+      16
+    ],
+    [
+      1756,
+      30,
+      89,
+      42
+    ],
+    [
+      1776,
+      72,
+      49,
+      16
+    ],
+    [
+      2076,
+      30,
+      121,
+      28
+    ],
+    [
+      2096,
+      58,
+      81,
+      16
+    ],
+    [
+      2396,
+      30,
+      105,
+      56
+    ],
+    [
+      2416,
+      86,
+      65,
+      16
+    ],
+    [
+      36,
+      140,
+      28,
+      77
+    ],
+    [
+      2618,
+      180,
+      28,
+      77
+    ],
+    [
+      36,
+      380,
+      28,
+      93
+    ],
+    [
+      2618,
+      420,
+      28,
+      93
+    ],
+    [
+      36,
+      620,
+      28,
+      77
+    ],
+    [
+      2618,
+      660,
+      28,
+      77
+    ]
+  ],
+  "ladders": [],
+  "crates": [],
+  "plates": [],
+  "switches": [
+    {
+      "link_id": "timer",
+      "x": 1729,
+      "y": 355,
+      "mode": "timed",
+      "duration": 19
+    },
+    {
+      "link_id": "overhaul_69_first",
+      "x": 222,
+      "y": 752,
+      "mode": "sequence"
+    },
+    {
+      "link_id": "overhaul_69_second",
+      "x": 299,
+      "y": 686,
+      "mode": "sequence"
+    },
+    {
+      "link_id": "overhaul_69_third",
+      "x": 379,
+      "y": 631,
+      "mode": "sequence"
+    }
+  ],
+  "doors": [
+    {
+      "id": "surface_lock",
+      "x": 2229,
+      "y": 239,
+      "w": 20,
+      "h": 116,
+      "required_links": [
+        "alpha",
+        "down",
+        "timer"
+      ]
+    }
+  ],
+  "moving_platforms": [
+    {
+      "id": "car0",
+      "x": 495,
+      "y": 787,
+      "w": 65,
+      "h": 16,
+      "end_x": 602,
+      "end_y": 745,
+      "speed": 124,
+      "active_by_default": true,
+      "required_links": []
+    },
+    {
+      "id": "car1",
+      "x": 1915,
+      "y": 331,
+      "w": 65,
+      "h": 16,
+      "end_x": 2022,
+      "end_y": 289,
+      "speed": 124,
+      "active_by_default": true,
+      "required_links": []
+    }
+  ],
+  "conveyors": [],
+  "wind_zones": [],
+  "water_zones": [],
+  "valves": [],
+  "generators": [],
+  "cables": [
+    {
+      "link_id": "up",
+      "points": [
+        [
+          911,
+          657
+        ],
+        [
+          911,
+          693
+        ],
+        [
+          904,
+          693
+        ],
+        [
+          904,
+          573
+        ]
+      ]
+    },
+    {
+      "link_id": "alpha",
+      "points": [
+        [
+          888,
+          571
+        ],
+        [
+          888,
+          605
+        ],
+        [
+          2237,
+          605
+        ],
+        [
+          2237,
+          299
+        ]
+      ]
+    },
+    {
+      "link_id": "down",
+      "points": [
+        [
+          902,
+          788
+        ],
+        [
+          902,
+          829
+        ],
+        [
+          2237,
+          829
+        ],
+        [
+          2237,
+          299
+        ]
+      ]
+    },
+    {
+      "link_id": "timer",
+      "points": [
+        [
+          1729,
+          343
+        ],
+        [
+          1729,
+          391
+        ],
+        [
+          2237,
+          391
+        ],
+        [
+          2237,
+          299
+        ]
+      ]
+    }
+  ],
+  "mirrors": [
+    {
+      "id": "prism",
+      "x": 888,
+      "y": 775,
+      "orientation": 1
+    }
+  ],
+  "crushers": [],
+  "steam_vents": [],
+  "collapsing_platforms": [
+    {
+      "id": "walk0",
+      "x": 1144,
+      "y": 735,
+      "w": 70,
+      "h": 12,
+      "delay": 0.42,
+      "respawn": 2.4
+    },
+    {
+      "id": "walk2",
+      "x": 1144,
+      "y": 583,
+      "w": 70,
+      "h": 12,
+      "delay": 0.42,
+      "respawn": 2.4
+    },
+    {
+      "id": "walk4",
+      "x": 1104,
+      "y": 431,
+      "w": 70,
+      "h": 12,
+      "delay": 0.42,
+      "respawn": 2.4
+    },
+    {
+      "id": "walk6",
+      "x": 1296,
+      "y": 403,
+      "w": 60,
+      "h": 12,
+      "delay": 0.42,
+      "respawn": 2.4
+    }
+  ],
+  "checkpoints": [
+    {
+      "id": "beacon_69",
+      "x": 1845,
+      "y": 355
+    }
+  ],
+  "spikes": [],
+  "acids": [
+    {
+      "x": 36,
+      "y": 871,
+      "w": 114,
+      "h": 75
+    },
+    {
+      "x": 490,
+      "y": 871,
+      "w": 182,
+      "h": 75
+    },
+    {
+      "x": 1104,
+      "y": 871,
+      "w": 1542,
+      "h": 75
+    }
+  ],
+  "lasers": [
+    {
+      "x": 1845,
+      "y": 193,
+      "dir": [
+        0,
+        1
+      ],
+      "max_length": 155,
+      "disabled_by": [
+        "alpha"
+      ]
+    }
+  ],
+  "optical_beams": [
+    {
+      "link_id": "up",
+      "x": 727,
+      "y": 793,
+      "dir": [
+        1,
+        0
+      ],
+      "max_length": 522,
+      "receiver": [
+        895,
+        669,
+        14,
+        10
+      ]
+    },
+    {
+      "link_id": "down",
+      "x": 727,
+      "y": 793,
+      "dir": [
+        1,
+        0
+      ],
+      "max_length": 522,
+      "receiver": [
+        895,
+        800,
+        14,
+        10
+      ]
+    }
+  ],
+  "sequences": [
+    {
+      "group_id": "overhaul_69_order",
+      "order": [
+        "overhaul_69_first",
+        "overhaul_69_second",
+        "overhaul_69_third"
+      ]
+    }
+  ],
+  "collectibles": [
+    {
+      "id": "log_69",
+      "x": 714,
+      "y": 779,
+      "title": "Critical Instability / Shift Notes",
+      "text": "Critical Instability. Check the signal lines before you leave the service deck."
+    },
+    {
+      "id": "field_trace_69",
+      "x": 741,
+      "y": 735,
+      "title": "FIELD TRACE 69 / OPTICAL-SPRING RUIN",
+      "text": "ECHO-7 field diagnostics: Combine reflector orientation and a spring-powered vertical return; the reflector's active beam must be readable from both sides.",
+      "required_links": [
+        "alpha"
+      ],
+      "optional_investigation": true
+    },
+    {
+      "id": "service_challenge_69",
+      "x": 1671,
+      "y": 188,
+      "title": "Optional Diagnostics 69",
+      "text": "Optional master circuit cleared. The standard exit never depends on this side challenge.",
+      "required_links": [
+        "sector_69_validated"
+      ],
+      "optional_investigation": true
+    }
+  ],
+  "decorations": [
+    {
+      "type": "warning_stripe",
+      "x": 684,
+      "y": 595,
+      "w": 120
+    },
+    {
+      "type": "warning_stripe",
+      "x": 684,
+      "y": 367,
+      "w": 120
+    },
+    {
+      "type": "warning_stripe",
+      "x": 1560,
+      "y": 367,
+      "w": 120
+    },
+    {
+      "type": "warning_stripe",
+      "x": 2104,
+      "y": 367,
+      "w": 120
+    },
+    {
+      "type": "monitor",
+      "x": 858,
+      "y": 483,
+      "text": "HOLD UP"
+    },
+    {
+      "type": "monitor",
+      "x": 684,
+      "y": 259,
+      "text": "LAUNCH"
+    },
+    {
+      "type": "monitor",
+      "x": 1697,
+      "y": 262,
+      "text": "ESCAPE 19s"
+    },
+    {
+      "type": "monitor",
+      "x": 2252,
+      "y": 181,
+      "text": "EXIT LOCK"
+    },
+    {
+      "type": "monitor",
+      "x": 754,
+      "y": 697,
+      "text": "FORENSIC TRACE 69"
+    },
+    {
+      "type": "monitor",
+      "x": 206,
+      "y": 649,
+      "text": "ACCESS / 69"
+    },
+    {
+      "type": "warning_stripe",
+      "x": 361,
+      "y": 643,
+      "w": 78
+    }
+  ],
+  "latching_relays": [
+    {
+      "link_id": "alpha",
+      "x": 888,
+      "y": 583,
+      "required_links": [
+        "up"
+      ]
+    },
+    {
+      "link_id": "sector_69_validated",
+      "x": 1659,
+      "y": 230,
+      "required_links": [
+        "overhaul_69_order"
+      ]
+    }
+  ],
+  "routing_consoles": [],
+  "signal_inverters": [],
+  "npcs": [
+    {
+      "id": "kip",
+      "x": 250,
+      "y": 811,
+      "dialogue": [
+        "Critical Instability. The upper deck has a fine view of the problem.",
+        "Turn the mirror toward its ceiling pickup.",
+        "Start the clock after the other lock lights are green."
+      ]
+    }
+  ],
+  "springs": [
+    {
+      "id": "launch",
+      "x": 860,
+      "y": 345,
+      "w": 56,
+      "h": 10
+    }
+  ],
+  "dash_recharges": [
+    {
+      "id": "span_charge3",
+      "x": 1314,
+      "y": 289
+    }
+  ],
+  "one_way_platforms": [
+    {
+      "id": "walk1",
+      "x": 1104,
+      "y": 659,
+      "w": 70,
+      "h": 12
+    },
+    {
+      "id": "walk3",
+      "x": 1144,
+      "y": 507,
+      "w": 70,
+      "h": 12
+    },
+    {
+      "id": "walk5",
+      "x": 1144,
+      "y": 355,
+      "w": 70,
+      "h": 12
+    },
+    {
+      "id": "overhaul_step_69_0",
+      "x": 204,
+      "y": 752,
+      "w": 78,
+      "h": 12
+    },
+    {
+      "id": "overhaul_step_69_1",
+      "x": 281,
+      "y": 686,
+      "w": 78,
+      "h": 12
+    },
+    {
+      "id": "overhaul_step_69_2",
+      "x": 361,
+      "y": 631,
+      "w": 78,
+      "h": 12
+    },
+    {
+      "id": "validation_foot_69_0",
+      "x": 1726,
+      "y": 292,
+      "w": 78,
+      "h": 12
+    },
+    {
+      "id": "validation_foot_69_1",
+      "x": 1641,
+      "y": 230,
+      "w": 78,
+      "h": 12
+    }
+  ],
+  "dash_barriers": [],
+  "level_id": 69,
+  "width": 2682,
+  "height": 946,
+  "name": "Chamber 69 // Critical Instability",
+  "abilities": {
+    "wall_jump": true,
+    "dash": true
+  },
+  "spawn": [
+    188,
+    765
+  ],
+  "exit": [
+    2286,
+    275
+  ],
+  "hint_route": [
+    "up",
+    "alpha",
+    "down",
+    "timer"
+  ],
+  "hint_notes": {
+    "up": [
+      "Turn the mirror toward its ceiling pickup.",
+      "Turn the mirror toward its ceiling pickup.",
+      "Turn the mirror toward its ceiling pickup."
+    ],
+    "alpha": [
+      "Keep up live, then interact with the recorder to hold the reading.",
+      "Keep up live, then interact with the recorder to hold the reading.",
+      "Keep up live, then interact with the recorder to hold the reading."
+    ],
+    "down": [
+      "Turn the mirror toward the low pickup beside its foot.",
+      "Turn the mirror toward the low pickup beside its foot.",
+      "Turn the mirror toward the low pickup beside its foot."
+    ],
+    "timer": [
+      "Start the clock after the other lock lights are green.",
+      "Start the clock after the other lock lights are green.",
+      "Start the clock after the other lock lights are green."
+    ]
+  },
+  "solution_steps": [
+    "Turn the mirror toward its ceiling pickup.",
+    "Keep up live, then interact with the recorder to hold the reading.",
+    "Turn the mirror toward the low pickup beside its foot.",
+    "Start the clock after the other lock lights are green."
+  ],
+  "subtitle": "Turn the mirror toward its ceiling pickup.  //  SERVICE DETOUR: Visit three elevated diagnostics in the numbered order; an incorrect input resets the chain.",
+  "chapter": 7,
+  "theme": "spire",
+  "topology": "Optical-Spring Ruin",
+  "overhaul_version": 1,
+  "overhaul_design": {
+    "profile": "sequence",
+    "route": "right_up",
+    "actual_direction": 1,
+    "mandatory": true,
+    "service_platform_count": 3
+  },
+  "secondary_validation_1": {
+    "checkpoint": "beacon_69",
+    "extra_platforms": 2,
+    "signal": "sector_69_validated"
+  },
+  "side_challenge_policy": {
+    "campaign_blocking": false,
+    "optional_signals": [
+      "overhaul_69_order",
+      "sector_69_validated"
+    ],
+    "reason": "Not proven traversable in the Pygame engine; preserve main progression."
+  },
+  "architectural_overhaul_v2": {
+    "archetype": "Stepped Gantry & Shaft",
+    "chapter": 7,
+    "theme": "spire",
+    "original_tile_count": 13,
+    "final_tile_count": 37,
+    "thickened_decks": 0,
+    "added_piers": 0,
+    "added_corbels": 3,
+    "added_soffits": 8,
+    "added_buttresses": 6
+  }
+}

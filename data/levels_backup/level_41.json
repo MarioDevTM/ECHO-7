@@ -1,0 +1,500 @@
+{
+  "tiles": [
+    [
+      0,
+      0,
+      36,
+      720
+    ],
+    [
+      2516,
+      0,
+      36,
+      720
+    ],
+    [
+      36,
+      0,
+      2480,
+      30
+    ],
+    [
+      652,
+      585,
+      432,
+      135
+    ],
+    [
+      150,
+      585,
+      340,
+      135
+    ],
+    [
+      652,
+      357,
+      432,
+      23
+    ],
+    [
+      1438,
+      357,
+      362,
+      23
+    ],
+    [
+      1962,
+      357,
+      390,
+      23
+    ],
+    [
+      1049,
+      340,
+      10,
+      17
+    ],
+    [
+      2099,
+      223,
+      155,
+      18
+    ],
+    [
+      2236,
+      241,
+      18,
+      116
+    ],
+    [
+      1230,
+      395,
+      62,
+      24
+    ]
+  ],
+  "ladders": [],
+  "crates": [
+    {
+      "id": "load",
+      "x": 767,
+      "y": 321
+    }
+  ],
+  "plates": [
+    {
+      "link_id": "weight",
+      "x": 1001,
+      "y": 357
+    }
+  ],
+  "switches": [],
+  "doors": [
+    {
+      "id": "surface_lock",
+      "x": 2099,
+      "y": 241,
+      "w": 20,
+      "h": 116,
+      "required_links": [
+        "dry",
+        "weight"
+      ]
+    }
+  ],
+  "moving_platforms": [
+    {
+      "id": "car0",
+      "x": 495,
+      "y": 561,
+      "w": 65,
+      "h": 16,
+      "end_x": 582,
+      "end_y": 519,
+      "speed": 116,
+      "active_by_default": true,
+      "required_links": []
+    }
+  ],
+  "conveyors": [],
+  "wind_zones": [],
+  "water_zones": [
+    {
+      "id": "sump",
+      "x": 682,
+      "y": 239,
+      "w": 382,
+      "h": 118,
+      "drained_y": 357,
+      "controlled_by": "dry"
+    }
+  ],
+  "valves": [
+    {
+      "link_id": "dry",
+      "x": 320,
+      "y": 585
+    },
+    {
+      "link_id": "overhaul_41_valve",
+      "x": 899,
+      "y": 401
+    }
+  ],
+  "generators": [],
+  "cables": [
+    {
+      "link_id": "dry",
+      "points": [
+        [
+          320,
+          573
+        ],
+        [
+          320,
+          607
+        ],
+        [
+          2107,
+          607
+        ],
+        [
+          2107,
+          301
+        ]
+      ]
+    },
+    {
+      "link_id": "weight",
+      "points": [
+        [
+          1001,
+          345
+        ],
+        [
+          1001,
+          386
+        ],
+        [
+          2107,
+          386
+        ],
+        [
+          2107,
+          301
+        ]
+      ]
+    }
+  ],
+  "mirrors": [],
+  "crushers": [],
+  "steam_vents": [
+    {
+      "id": "jet",
+      "x": 1595,
+      "y": 195,
+      "w": 48,
+      "h": 162,
+      "period": 2.7,
+      "duty_cycle": 0.55,
+      "disabled_by": [
+        "dry"
+      ]
+    },
+    {
+      "id": "seam0",
+      "x": 553,
+      "y": 500,
+      "w": 36,
+      "h": 134,
+      "period": 3.1,
+      "duty_cycle": 0.43,
+      "disabled_by": [
+        "dry"
+      ]
+    },
+    {
+      "id": "seam3",
+      "x": 1863,
+      "y": 272,
+      "w": 36,
+      "h": 134,
+      "period": 3.1,
+      "duty_cycle": 0.43,
+      "disabled_by": [
+        "dry"
+      ]
+    }
+  ],
+  "collapsing_platforms": [],
+  "checkpoints": [
+    {
+      "id": "beacon_41",
+      "x": 425,
+      "y": 585
+    }
+  ],
+  "spikes": [],
+  "acids": [
+    {
+      "x": 36,
+      "y": 645,
+      "w": 114,
+      "h": 75
+    },
+    {
+      "x": 490,
+      "y": 645,
+      "w": 162,
+      "h": 75
+    },
+    {
+      "x": 1084,
+      "y": 645,
+      "w": 1432,
+      "h": 75
+    }
+  ],
+  "lasers": [],
+  "optical_beams": [],
+  "sequences": [],
+  "collectibles": [
+    {
+      "id": "log_41",
+      "x": 192,
+      "y": 553,
+      "title": "Ruptured Main / Shift Notes",
+      "text": "Ruptured Main. Check the signal lines before you leave the service deck."
+    },
+    {
+      "id": "field_trace_41",
+      "x": 1006,
+      "y": 509,
+      "title": "FIELD TRACE 41 / SUMP & STEAM BYPASS",
+      "text": "ECHO-7 field diagnostics: Use a localized pipe leak and a mechanical drain-state clue, then route the player around a separate steam vent.",
+      "required_links": [
+        "dry"
+      ],
+      "optional_investigation": true
+    },
+    {
+      "id": "service_challenge_41",
+      "x": 251,
+      "y": 418,
+      "title": "Optional Diagnostics 41",
+      "text": "Optional master circuit cleared. The standard exit never depends on this side challenge.",
+      "required_links": [
+        "sector_41_validated"
+      ],
+      "optional_investigation": true
+    }
+  ],
+  "decorations": [
+    {
+      "type": "warning_stripe",
+      "x": 664,
+      "y": 369,
+      "w": 120
+    },
+    {
+      "type": "warning_stripe",
+      "x": 1450,
+      "y": 369,
+      "w": 120
+    },
+    {
+      "type": "warning_stripe",
+      "x": 1974,
+      "y": 369,
+      "w": 120
+    },
+    {
+      "type": "monitor",
+      "x": 272,
+      "y": 493,
+      "text": "DRAIN / FILL"
+    },
+    {
+      "type": "monitor",
+      "x": 938,
+      "y": 265,
+      "text": "RECEIVING SCALE"
+    },
+    {
+      "type": "monitor",
+      "x": 1448,
+      "y": 259,
+      "text": "STEAM LINE"
+    },
+    {
+      "type": "monitor",
+      "x": 2122,
+      "y": 183,
+      "text": "EXIT LOCK"
+    },
+    {
+      "type": "monitor",
+      "x": 1019,
+      "y": 471,
+      "text": "FORENSIC TRACE 41"
+    },
+    {
+      "type": "monitor",
+      "x": 719,
+      "y": 421,
+      "text": "ACCESS / 41"
+    },
+    {
+      "type": "warning_stripe",
+      "x": 881,
+      "y": 413,
+      "w": 78
+    }
+  ],
+  "latching_relays": [
+    {
+      "link_id": "sector_41_validated",
+      "x": 239,
+      "y": 460,
+      "required_links": [
+        "overhaul_41_valve"
+      ]
+    }
+  ],
+  "routing_consoles": [],
+  "signal_inverters": [
+    {
+      "link_id": "full",
+      "input": "dry",
+      "water_zone": "sump"
+    }
+  ],
+  "npcs": [
+    {
+      "id": "kip",
+      "x": 752,
+      "y": 585,
+      "dialogue": [
+        "Ruptured Main. The backup is ready. It even looks worried.",
+        "Turn the handwheel and watch which machinery changes.",
+        "Move the cargo right until it rests on the receiving scale."
+      ]
+    }
+  ],
+  "springs": [],
+  "dash_recharges": [],
+  "one_way_platforms": [
+    {
+      "id": "walk0",
+      "x": 515,
+      "y": 509,
+      "w": 78,
+      "h": 12
+    },
+    {
+      "id": "walk1",
+      "x": 569,
+      "y": 433,
+      "w": 78,
+      "h": 12
+    },
+    {
+      "id": "overhaul_step_41_0",
+      "x": 717,
+      "y": 524,
+      "w": 78,
+      "h": 12
+    },
+    {
+      "id": "overhaul_step_41_1",
+      "x": 800,
+      "y": 465,
+      "w": 78,
+      "h": 12
+    },
+    {
+      "id": "overhaul_step_41_2",
+      "x": 881,
+      "y": 401,
+      "w": 78,
+      "h": 12
+    },
+    {
+      "id": "validation_foot_41_0",
+      "x": 306,
+      "y": 522,
+      "w": 78,
+      "h": 12
+    },
+    {
+      "id": "validation_foot_41_1",
+      "x": 221,
+      "y": 460,
+      "w": 78,
+      "h": 12
+    }
+  ],
+  "dash_barriers": [],
+  "level_id": 41,
+  "width": 2552,
+  "height": 720,
+  "name": "Chamber 41 // Ruptured Main",
+  "abilities": {
+    "wall_jump": true,
+    "dash": true
+  },
+  "spawn": [
+    690,
+    539
+  ],
+  "exit": [
+    2156,
+    277
+  ],
+  "hint_route": [
+    "dry",
+    "weight"
+  ],
+  "hint_notes": {
+    "dry": [
+      "Turn the handwheel and watch which machinery changes.",
+      "Turn the handwheel and watch which machinery changes.",
+      "Turn the handwheel and watch which machinery changes."
+    ],
+    "weight": [
+      "Move the cargo right until it rests on the receiving scale.",
+      "Move the cargo right until it rests on the receiving scale.",
+      "Move the cargo right until it rests on the receiving scale."
+    ]
+  },
+  "solution_steps": [
+    "Turn the handwheel and watch which machinery changes.",
+    "Move the cargo right until it rests on the receiving scale.",
+    "Find the upper service handwheel and restore the isolated circuit."
+  ],
+  "subtitle": "Turn the handwheel and watch which machinery changes.  //  SERVICE DETOUR: Find the upper service handwheel and restore the isolated circuit.",
+  "chapter": 5,
+  "theme": "environmental",
+  "topology": "Sump & Steam Bypass",
+  "overhaul_version": 1,
+  "overhaul_design": {
+    "profile": "valve",
+    "route": "right_rise",
+    "actual_direction": 1,
+    "mandatory": true,
+    "service_platform_count": 3
+  },
+  "secondary_validation_1": {
+    "checkpoint": "beacon_41",
+    "extra_platforms": 2,
+    "signal": "sector_41_validated"
+  },
+  "side_challenge_policy": {
+    "campaign_blocking": false,
+    "optional_signals": [
+      "overhaul_41_valve",
+      "sector_41_validated"
+    ],
+    "reason": "Not proven traversable in the Pygame engine; preserve main progression."
+  }
+}

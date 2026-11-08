@@ -1,0 +1,623 @@
+{
+  "tiles": [
+    [
+      0,
+      0,
+      36,
+      730
+    ],
+    [
+      2594,
+      0,
+      36,
+      730
+    ],
+    [
+      36,
+      0,
+      2558,
+      30
+    ],
+    [
+      756,
+      355,
+      362,
+      23
+    ],
+    [
+      150,
+      355,
+      432,
+      23
+    ],
+    [
+      150,
+      595,
+      432,
+      135
+    ],
+    [
+      756,
+      595,
+      362,
+      135
+    ],
+    [
+      1526,
+      595,
+      390,
+      135
+    ],
+    [
+      1526,
+      355,
+      390,
+      23
+    ],
+    [
+      2090,
+      355,
+      340,
+      23
+    ],
+    [
+      1881,
+      578,
+      10,
+      17
+    ],
+    [
+      2202,
+      221,
+      155,
+      18
+    ],
+    [
+      2339,
+      239,
+      18,
+      116
+    ]
+  ],
+  "ladders": [],
+  "crates": [
+    {
+      "id": "load",
+      "x": 1641,
+      "y": 559
+    }
+  ],
+  "plates": [
+    {
+      "link_id": "weight",
+      "x": 1833,
+      "y": 595
+    }
+  ],
+  "switches": [],
+  "doors": [
+    {
+      "id": "surface_lock",
+      "x": 2202,
+      "y": 239,
+      "w": 20,
+      "h": 116,
+      "required_links": [
+        "proof",
+        "full"
+      ]
+    }
+  ],
+  "moving_platforms": [],
+  "conveyors": [],
+  "wind_zones": [],
+  "water_zones": [
+    {
+      "id": "sump",
+      "x": 1556,
+      "y": 477,
+      "w": 340,
+      "h": 118,
+      "drained_y": 595,
+      "controlled_by": "dry"
+    }
+  ],
+  "valves": [
+    {
+      "link_id": "valve",
+      "x": 366,
+      "y": 355
+    },
+    {
+      "link_id": "dry",
+      "x": 937,
+      "y": 595
+    }
+  ],
+  "generators": [
+    {
+      "link_id": "overhaul_46_power",
+      "x": 985,
+      "y": 175
+    }
+  ],
+  "cables": [
+    {
+      "link_id": "weight",
+      "points": [
+        [
+          1842,
+          583
+        ],
+        [
+          1842,
+          619
+        ],
+        [
+          1737,
+          619
+        ],
+        [
+          1737,
+          345
+        ]
+      ]
+    },
+    {
+      "link_id": "valve",
+      "points": [
+        [
+          375,
+          343
+        ],
+        [
+          375,
+          386
+        ],
+        [
+          1737,
+          386
+        ],
+        [
+          1737,
+          345
+        ]
+      ]
+    },
+    {
+      "link_id": "proof",
+      "points": [
+        [
+          1721,
+          343
+        ],
+        [
+          1721,
+          377
+        ],
+        [
+          2210,
+          377
+        ],
+        [
+          2210,
+          299
+        ]
+      ]
+    },
+    {
+      "link_id": "full",
+      "points": [
+        [
+          1568,
+          463
+        ],
+        [
+          1568,
+          504
+        ],
+        [
+          2210,
+          504
+        ],
+        [
+          2210,
+          299
+        ]
+      ]
+    }
+  ],
+  "mirrors": [],
+  "crushers": [],
+  "steam_vents": [
+    {
+      "id": "jet",
+      "x": 342,
+      "y": 433,
+      "w": 48,
+      "h": 162,
+      "period": 2.7,
+      "duty_cycle": 0.55,
+      "disabled_by": [
+        "valve"
+      ]
+    }
+  ],
+  "collapsing_platforms": [],
+  "checkpoints": [
+    {
+      "id": "beacon_46",
+      "x": 1851,
+      "y": 355
+    }
+  ],
+  "spikes": [],
+  "acids": [
+    {
+      "x": 36,
+      "y": 655,
+      "w": 114,
+      "h": 75
+    },
+    {
+      "x": 582,
+      "y": 655,
+      "w": 174,
+      "h": 75
+    },
+    {
+      "x": 1118,
+      "y": 655,
+      "w": 408,
+      "h": 75
+    },
+    {
+      "x": 1916,
+      "y": 655,
+      "w": 678,
+      "h": 75
+    }
+  ],
+  "lasers": [],
+  "optical_beams": [],
+  "sequences": [],
+  "collectibles": [
+    {
+      "id": "log_46",
+      "x": 192,
+      "y": 323,
+      "title": "The Maintenance Bypass / Shift Notes",
+      "text": "The Maintenance Bypass. Check the signal lines before you leave the service deck."
+    },
+    {
+      "id": "field_trace_46",
+      "x": 1052,
+      "y": 279,
+      "title": "FIELD TRACE 46 / DUAL-VALVE SERVICE LOOP",
+      "text": "ECHO-7 field diagnostics: Make a service bypass where steam isolation and basin control occur in a deliberately constrained order.",
+      "required_links": [
+        "proof"
+      ],
+      "optional_investigation": true
+    },
+    {
+      "id": "service_challenge_46",
+      "x": 2007,
+      "y": 188,
+      "title": "Optional Diagnostics 46",
+      "text": "Optional master circuit cleared. The standard exit never depends on this side challenge.",
+      "required_links": [
+        "sector_46_validated"
+      ],
+      "optional_investigation": true
+    }
+  ],
+  "decorations": [
+    {
+      "type": "warning_stripe",
+      "x": 768,
+      "y": 367,
+      "w": 120
+    },
+    {
+      "type": "warning_stripe",
+      "x": 162,
+      "y": 367,
+      "w": 120
+    },
+    {
+      "type": "warning_stripe",
+      "x": 1538,
+      "y": 367,
+      "w": 120
+    },
+    {
+      "type": "warning_stripe",
+      "x": 2102,
+      "y": 367,
+      "w": 120
+    },
+    {
+      "type": "monitor",
+      "x": 318,
+      "y": 263,
+      "text": "ISOLATE"
+    },
+    {
+      "type": "monitor",
+      "x": 160,
+      "y": 497,
+      "text": "STEAM LINE"
+    },
+    {
+      "type": "monitor",
+      "x": 889,
+      "y": 503,
+      "text": "DRAIN / FILL"
+    },
+    {
+      "type": "monitor",
+      "x": 1770,
+      "y": 503,
+      "text": "RECEIVING SCALE"
+    },
+    {
+      "type": "monitor",
+      "x": 1691,
+      "y": 255,
+      "text": "HOLD WEIGHT + VALVE"
+    },
+    {
+      "type": "monitor",
+      "x": 2225,
+      "y": 181,
+      "text": "EXIT LOCK"
+    },
+    {
+      "type": "monitor",
+      "x": 1065,
+      "y": 241,
+      "text": "FORENSIC TRACE 46"
+    },
+    {
+      "type": "monitor",
+      "x": 812,
+      "y": 193,
+      "text": "ACCESS / 46"
+    },
+    {
+      "type": "warning_stripe",
+      "x": 967,
+      "y": 187,
+      "w": 78
+    }
+  ],
+  "latching_relays": [
+    {
+      "link_id": "proof",
+      "x": 1721,
+      "y": 355,
+      "required_links": [
+        "weight",
+        "valve"
+      ]
+    },
+    {
+      "link_id": "sector_46_validated",
+      "x": 1995,
+      "y": 230,
+      "required_links": [
+        "overhaul_46_power"
+      ]
+    }
+  ],
+  "routing_consoles": [],
+  "signal_inverters": [
+    {
+      "link_id": "full",
+      "input": "dry",
+      "water_zone": "sump"
+    }
+  ],
+  "npcs": [
+    {
+      "id": "kip",
+      "x": 856,
+      "y": 355,
+      "dialogue": [
+        "The Maintenance Bypass. If you hear applause, that is a loose pipe.",
+        "Turn the handwheel and watch which machinery changes.",
+        "Open the inlet again and let the basin refill. The float will lift off the scale."
+      ]
+    }
+  ],
+  "springs": [],
+  "dash_recharges": [
+    {
+      "id": "ring2",
+      "x": 655,
+      "y": 497
+    },
+    {
+      "id": "ring5",
+      "x": 1989,
+      "y": 257
+    }
+  ],
+  "one_way_platforms": [
+    {
+      "id": "walk0",
+      "x": 622,
+      "y": 515,
+      "w": 83,
+      "h": 12
+    },
+    {
+      "id": "walk1",
+      "x": 582,
+      "y": 435,
+      "w": 83,
+      "h": 12
+    },
+    {
+      "id": "walk2",
+      "x": 622,
+      "y": 355,
+      "w": 83,
+      "h": 12
+    },
+    {
+      "id": "walk3",
+      "x": 1217,
+      "y": 557,
+      "w": 68,
+      "h": 12
+    },
+    {
+      "id": "walk4",
+      "x": 1363,
+      "y": 629,
+      "w": 68,
+      "h": 12
+    },
+    {
+      "id": "walk5",
+      "x": 1956,
+      "y": 515,
+      "w": 83,
+      "h": 12
+    },
+    {
+      "id": "walk6",
+      "x": 1916,
+      "y": 435,
+      "w": 83,
+      "h": 12
+    },
+    {
+      "id": "walk7",
+      "x": 1956,
+      "y": 355,
+      "w": 83,
+      "h": 12
+    },
+    {
+      "id": "overhaul_step_46_0",
+      "x": 810,
+      "y": 296,
+      "w": 78,
+      "h": 12
+    },
+    {
+      "id": "overhaul_step_46_1",
+      "x": 887,
+      "y": 230,
+      "w": 78,
+      "h": 12
+    },
+    {
+      "id": "overhaul_step_46_2",
+      "x": 967,
+      "y": 175,
+      "w": 78,
+      "h": 12
+    },
+    {
+      "id": "validation_foot_46_0",
+      "x": 1892,
+      "y": 292,
+      "w": 78,
+      "h": 12
+    },
+    {
+      "id": "validation_foot_46_1",
+      "x": 1977,
+      "y": 230,
+      "w": 78,
+      "h": 12
+    }
+  ],
+  "dash_barriers": [],
+  "level_id": 46,
+  "width": 2630,
+  "height": 730,
+  "name": "Chamber 46 // The Maintenance Bypass",
+  "abilities": {
+    "wall_jump": true,
+    "dash": true
+  },
+  "spawn": [
+    794,
+    309
+  ],
+  "exit": [
+    2259,
+    275
+  ],
+  "hint_route": [
+    "dry",
+    "weight",
+    "valve",
+    "proof",
+    "full"
+  ],
+  "hint_notes": {
+    "dry": [
+      "Turn the handwheel and watch which machinery changes.",
+      "Turn the handwheel and watch which machinery changes.",
+      "Turn the handwheel and watch which machinery changes."
+    ],
+    "weight": [
+      "Move the cargo right until it rests on the receiving scale.",
+      "Move the cargo right until it rests on the receiving scale.",
+      "Move the cargo right until it rests on the receiving scale."
+    ],
+    "valve": [
+      "Turn the handwheel and watch which machinery changes.",
+      "Turn the handwheel and watch which machinery changes.",
+      "Turn the handwheel and watch which machinery changes."
+    ],
+    "proof": [
+      "Keep weight and valve live, then interact with the recorder to hold the reading.",
+      "Keep weight and valve live, then interact with the recorder to hold the reading.",
+      "Keep weight and valve live, then interact with the recorder to hold the reading."
+    ],
+    "full": [
+      "Open the inlet again and let the basin refill. The float will lift off the scale.",
+      "Open the inlet again and let the basin refill. The float will lift off the scale.",
+      "Open the inlet again and let the basin refill. The float will lift off the scale."
+    ]
+  },
+  "solution_steps": [
+    "Turn the handwheel and watch which machinery changes.",
+    "Move the cargo right until it rests on the receiving scale.",
+    "Turn the handwheel and watch which machinery changes.",
+    "Keep weight and valve live, then interact with the recorder to hold the reading.",
+    "Open the inlet again and let the basin refill. The float will lift off the scale."
+  ],
+  "subtitle": "Turn the handwheel and watch which machinery changes.  //  SERVICE DETOUR: Explore the elevated service detour and energize its auxiliary generator.",
+  "chapter": 5,
+  "theme": "environmental",
+  "topology": "Dual-Valve Service Loop",
+  "overhaul_version": 1,
+  "overhaul_design": {
+    "profile": "generator",
+    "route": "right_up",
+    "actual_direction": 1,
+    "mandatory": true,
+    "service_platform_count": 3
+  },
+  "secondary_validation_1": {
+    "checkpoint": "beacon_46",
+    "extra_platforms": 2,
+    "signal": "sector_46_validated"
+  },
+  "side_challenge_policy": {
+    "campaign_blocking": false,
+    "optional_signals": [
+      "overhaul_46_power",
+      "sector_46_validated"
+    ],
+    "reason": "Not proven traversable in the Pygame engine; preserve main progression."
+  }
+}

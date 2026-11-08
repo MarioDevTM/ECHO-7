@@ -1,0 +1,832 @@
+{
+  "tiles": [
+    [
+      0,
+      0,
+      36,
+      1246
+    ],
+    [
+      2010,
+      0,
+      36,
+      1246
+    ],
+    [
+      36,
+      0,
+      1974,
+      30
+    ],
+    [
+      150,
+      1111,
+      362,
+      135
+    ],
+    [
+      688,
+      1111,
+      390,
+      135
+    ],
+    [
+      688,
+      859,
+      390,
+      23
+    ],
+    [
+      688,
+      607,
+      390,
+      23
+    ],
+    [
+      1506,
+      607,
+      340,
+      40
+    ],
+    [
+      1506,
+      355,
+      340,
+      23
+    ],
+    [
+      688,
+      355,
+      390,
+      40
+    ],
+    [
+      825,
+      221,
+      155,
+      18
+    ],
+    [
+      962,
+      239,
+      18,
+      116
+    ],
+    [
+      724,
+      882,
+      318,
+      22
+    ],
+    [
+      1542,
+      647,
+      268,
+      22
+    ],
+    [
+      1542,
+      378,
+      268,
+      22
+    ],
+    [
+      724,
+      395,
+      318,
+      22
+    ],
+    [
+      156,
+      30,
+      91,
+      28
+    ],
+    [
+      176,
+      58,
+      51,
+      16
+    ],
+    [
+      476,
+      30,
+      123,
+      56
+    ],
+    [
+      496,
+      86,
+      83,
+      16
+    ],
+    [
+      796,
+      30,
+      107,
+      42
+    ],
+    [
+      816,
+      72,
+      67,
+      16
+    ],
+    [
+      1116,
+      30,
+      91,
+      28
+    ],
+    [
+      1136,
+      58,
+      51,
+      16
+    ],
+    [
+      1756,
+      30,
+      107,
+      42
+    ],
+    [
+      1776,
+      72,
+      67,
+      16
+    ],
+    [
+      36,
+      140,
+      28,
+      71
+    ],
+    [
+      36,
+      380,
+      28,
+      87
+    ],
+    [
+      36,
+      620,
+      28,
+      71
+    ],
+    [
+      1982,
+      660,
+      28,
+      71
+    ],
+    [
+      36,
+      860,
+      28,
+      87
+    ],
+    [
+      1982,
+      900,
+      28,
+      87
+    ]
+  ],
+  "ladders": [],
+  "crates": [],
+  "plates": [],
+  "switches": [
+    {
+      "link_id": "timer",
+      "x": 1676,
+      "y": 355,
+      "mode": "timed",
+      "duration": 24
+    }
+  ],
+  "doors": [
+    {
+      "id": "surface_lock",
+      "x": 825,
+      "y": 239,
+      "w": 20,
+      "h": 116,
+      "required_links": [
+        "alpha",
+        "proof",
+        "timer"
+      ]
+    }
+  ],
+  "moving_platforms": [],
+  "conveyors": [],
+  "wind_zones": [],
+  "water_zones": [],
+  "valves": [],
+  "generators": [],
+  "cables": [
+    {
+      "link_id": "down",
+      "points": [
+        [
+          906,
+          1088
+        ],
+        [
+          906,
+          1124
+        ],
+        [
+          899,
+          1124
+        ],
+        [
+          899,
+          849
+        ]
+      ]
+    },
+    {
+      "link_id": "up",
+      "points": [
+        [
+          906,
+          957
+        ],
+        [
+          906,
+          993
+        ],
+        [
+          1692,
+          993
+        ],
+        [
+          1692,
+          597
+        ]
+      ]
+    },
+    {
+      "link_id": "east_up",
+      "points": [
+        [
+          906,
+          453
+        ],
+        [
+          906,
+          638
+        ],
+        [
+          1692,
+          638
+        ],
+        [
+          1692,
+          597
+        ]
+      ]
+    },
+    {
+      "link_id": "alpha",
+      "points": [
+        [
+          883,
+          847
+        ],
+        [
+          883,
+          881
+        ],
+        [
+          833,
+          881
+        ],
+        [
+          833,
+          299
+        ]
+      ]
+    },
+    {
+      "link_id": "proof",
+      "points": [
+        [
+          1676,
+          595
+        ],
+        [
+          1676,
+          636
+        ],
+        [
+          833,
+          636
+        ],
+        [
+          833,
+          299
+        ]
+      ]
+    },
+    {
+      "link_id": "timer",
+      "points": [
+        [
+          1676,
+          343
+        ],
+        [
+          1676,
+          391
+        ],
+        [
+          833,
+          391
+        ],
+        [
+          833,
+          299
+        ]
+      ]
+    }
+  ],
+  "mirrors": [
+    {
+      "id": "prism",
+      "x": 883,
+      "y": 1075,
+      "orientation": 1
+    },
+    {
+      "id": "secondprism",
+      "x": 883,
+      "y": 571,
+      "orientation": 1
+    }
+  ],
+  "crushers": [],
+  "steam_vents": [
+    {
+      "id": "seam5",
+      "x": 1274,
+      "y": 270,
+      "w": 36,
+      "h": 134,
+      "period": 3.1,
+      "duty_cycle": 0.43,
+      "disabled_by": []
+    }
+  ],
+  "collapsing_platforms": [],
+  "checkpoints": [
+    {
+      "id": "beacon_39",
+      "x": 1781,
+      "y": 355
+    }
+  ],
+  "spikes": [],
+  "acids": [
+    {
+      "x": 36,
+      "y": 1171,
+      "w": 114,
+      "h": 75
+    },
+    {
+      "x": 512,
+      "y": 1171,
+      "w": 176,
+      "h": 75
+    },
+    {
+      "x": 1078,
+      "y": 1171,
+      "w": 932,
+      "h": 75
+    }
+  ],
+  "lasers": [],
+  "optical_beams": [
+    {
+      "link_id": "up",
+      "x": 743,
+      "y": 1093,
+      "dir": [
+        1,
+        0
+      ],
+      "max_length": 480,
+      "receiver": [
+        890,
+        969,
+        14,
+        10
+      ]
+    },
+    {
+      "link_id": "down",
+      "x": 743,
+      "y": 1093,
+      "dir": [
+        1,
+        0
+      ],
+      "max_length": 480,
+      "receiver": [
+        890,
+        1100,
+        14,
+        10
+      ]
+    },
+    {
+      "link_id": "east_up",
+      "x": 743,
+      "y": 589,
+      "dir": [
+        1,
+        0
+      ],
+      "max_length": 480,
+      "receiver": [
+        890,
+        465,
+        14,
+        10
+      ]
+    },
+    {
+      "link_id": "east_down",
+      "x": 743,
+      "y": 589,
+      "dir": [
+        1,
+        0
+      ],
+      "max_length": 480,
+      "receiver": [
+        890,
+        596,
+        14,
+        10
+      ]
+    }
+  ],
+  "sequences": [],
+  "collectibles": [
+    {
+      "id": "log_39",
+      "x": 730,
+      "y": 1079,
+      "title": "Parallax Array / Shift Notes",
+      "text": "Parallax Array. Check the signal lines before you leave the service deck."
+    },
+    {
+      "id": "field_trace_39",
+      "x": 446,
+      "y": 1035,
+      "title": "FIELD TRACE 39 / FOUR-TIER OPTICAL TOWER",
+      "text": "ECHO-7 field diagnostics: Alternate low and high reflector states across genuinely different vertical return routes.",
+      "required_links": [
+        "alpha"
+      ],
+      "optional_investigation": true
+    },
+    {
+      "id": "service_challenge_39",
+      "x": 1809,
+      "y": 313,
+      "title": "Optional Diagnostics 39",
+      "text": "Optional auxiliary service record recovered. This archive is no longer linked to a redundant side circuit and does not gate the exit.",
+      "required_links": [],
+      "optional_investigation": true
+    }
+  ],
+  "decorations": [
+    {
+      "type": "warning_stripe",
+      "x": 700,
+      "y": 871,
+      "w": 120
+    },
+    {
+      "type": "warning_stripe",
+      "x": 700,
+      "y": 619,
+      "w": 120
+    },
+    {
+      "type": "warning_stripe",
+      "x": 1518,
+      "y": 619,
+      "w": 120
+    },
+    {
+      "type": "warning_stripe",
+      "x": 1518,
+      "y": 367,
+      "w": 120
+    },
+    {
+      "type": "warning_stripe",
+      "x": 700,
+      "y": 367,
+      "w": 120
+    },
+    {
+      "type": "monitor",
+      "x": 853,
+      "y": 759,
+      "text": "HOLD DOWN"
+    },
+    {
+      "type": "monitor",
+      "x": 1646,
+      "y": 507,
+      "text": "HOLD UP + EAST_UP"
+    },
+    {
+      "type": "monitor",
+      "x": 1644,
+      "y": 262,
+      "text": "ESCAPE 24s"
+    },
+    {
+      "type": "monitor",
+      "x": 848,
+      "y": 181,
+      "text": "EXIT LOCK"
+    },
+    {
+      "type": "monitor",
+      "x": 459,
+      "y": 997,
+      "text": "FORENSIC TRACE 39"
+    }
+  ],
+  "latching_relays": [
+    {
+      "link_id": "alpha",
+      "x": 883,
+      "y": 859,
+      "required_links": [
+        "down"
+      ]
+    },
+    {
+      "link_id": "proof",
+      "x": 1676,
+      "y": 607,
+      "required_links": [
+        "up",
+        "east_up"
+      ]
+    }
+  ],
+  "routing_consoles": [],
+  "signal_inverters": [],
+  "npcs": [
+    {
+      "id": "kip",
+      "x": 250,
+      "y": 1111,
+      "dialogue": [
+        "Parallax Array. Two circuits, one wrench. I know which one I am.",
+        "Turn the mirror toward the low pickup beside its foot.",
+        "Start the clock after the other lock lights are green."
+      ]
+    }
+  ],
+  "springs": [],
+  "dash_recharges": [
+    {
+      "id": "ring0",
+      "x": 586,
+      "y": 1013
+    }
+  ],
+  "one_way_platforms": [
+    {
+      "id": "walk0",
+      "x": 1118,
+      "y": 1027,
+      "w": 83,
+      "h": 12
+    },
+    {
+      "id": "walk1",
+      "x": 1078,
+      "y": 943,
+      "w": 83,
+      "h": 12
+    },
+    {
+      "id": "walk2",
+      "x": 1118,
+      "y": 859,
+      "w": 83,
+      "h": 12
+    },
+    {
+      "id": "walk3",
+      "x": 1118,
+      "y": 775,
+      "w": 83,
+      "h": 12
+    },
+    {
+      "id": "walk4",
+      "x": 1078,
+      "y": 691,
+      "w": 83,
+      "h": 12
+    },
+    {
+      "id": "walk5",
+      "x": 1118,
+      "y": 607,
+      "w": 83,
+      "h": 12
+    },
+    {
+      "id": "walk6",
+      "x": 1183,
+      "y": 569,
+      "w": 68,
+      "h": 12
+    },
+    {
+      "id": "walk7",
+      "x": 1337,
+      "y": 641,
+      "w": 68,
+      "h": 12
+    },
+    {
+      "id": "walk8",
+      "x": 1886,
+      "y": 523,
+      "w": 83,
+      "h": 12
+    },
+    {
+      "id": "walk9",
+      "x": 1846,
+      "y": 439,
+      "w": 83,
+      "h": 12
+    },
+    {
+      "id": "walk10",
+      "x": 1886,
+      "y": 355,
+      "w": 83,
+      "h": 12
+    },
+    {
+      "id": "walk11",
+      "x": 1183,
+      "y": 317,
+      "w": 68,
+      "h": 12
+    },
+    {
+      "id": "walk12",
+      "x": 1337,
+      "y": 389,
+      "w": 68,
+      "h": 12
+    }
+  ],
+  "dash_barriers": [],
+  "level_id": 39,
+  "width": 2046,
+  "height": 1246,
+  "name": "Chamber 39 // Parallax Array",
+  "abilities": {
+    "wall_jump": true,
+    "dash": true
+  },
+  "spawn": [
+    188,
+    1065
+  ],
+  "exit": [
+    882,
+    275
+  ],
+  "hint_route": [
+    "down",
+    "alpha",
+    "up",
+    "east_up",
+    "proof",
+    "timer"
+  ],
+  "hint_notes": {
+    "down": [
+      "Turn the mirror toward the low pickup beside its foot.",
+      "Turn the mirror toward the low pickup beside its foot.",
+      "Turn the mirror toward the low pickup beside its foot."
+    ],
+    "alpha": [
+      "Keep down live, then interact with the recorder to hold the reading.",
+      "Keep down live, then interact with the recorder to hold the reading.",
+      "Keep down live, then interact with the recorder to hold the reading."
+    ],
+    "up": [
+      "Turn the mirror toward its ceiling pickup.",
+      "Turn the mirror toward its ceiling pickup.",
+      "Turn the mirror toward its ceiling pickup."
+    ],
+    "east_up": [
+      "Aim the second reflector at its overhead pickup.",
+      "Aim the second reflector at its overhead pickup.",
+      "Aim the second reflector at its overhead pickup."
+    ],
+    "proof": [
+      "Keep up and east_up live, then interact with the recorder to hold the reading.",
+      "Keep up and east_up live, then interact with the recorder to hold the reading.",
+      "Keep up and east_up live, then interact with the recorder to hold the reading."
+    ],
+    "timer": [
+      "Start the clock after the other lock lights are green.",
+      "Start the clock after the other lock lights are green.",
+      "Start the clock after the other lock lights are green."
+    ]
+  },
+  "solution_steps": [
+    "Turn the mirror toward the low pickup beside its foot.",
+    "Keep down live, then interact with the recorder to hold the reading.",
+    "Turn the mirror toward its ceiling pickup.",
+    "Aim the second reflector at its overhead pickup.",
+    "Keep up and east_up live, then interact with the recorder to hold the reading.",
+    "Start the clock after the other lock lights are green."
+  ],
+  "subtitle": "Turn the mirror toward the low pickup beside its foot.",
+  "chapter": 4,
+  "theme": "optical",
+  "topology": "Four-Tier Optical Tower",
+  "overhaul_version": 1,
+  "overhaul_design": {
+    "profile": "route_proof",
+    "route": "right_switchback",
+    "actual_direction": 1,
+    "mandatory": false,
+    "service_platform_count": 0,
+    "retired_by_cleanup": true
+  },
+  "secondary_validation_1": {
+    "checkpoint": "beacon_39",
+    "extra_platforms": 0,
+    "signal": "sector_39_validated",
+    "retired_by_cleanup": true
+  },
+  "side_challenge_policy": {
+    "campaign_blocking": false,
+    "optional_signals": [],
+    "reason": "Deprecated optional side circuit removed; service record remains accessible."
+  },
+  "architectural_overhaul_v2": {
+    "archetype": "Segmented Security Bulkhead Corridor",
+    "chapter": 4,
+    "theme": "optical",
+    "original_tile_count": 12,
+    "final_tile_count": 32,
+    "thickened_decks": 2,
+    "added_piers": 0,
+    "added_corbels": 4,
+    "added_soffits": 5,
+    "added_buttresses": 6,
+    "tiles_before_cleanup_pass": 32,
+    "removed_legacy_platforms": 5,
+    "removed_legacy_devices": 3,
+    "added_partition_walls": 0,
+    "added_grounded_piers": 0,
+    "added_stepped_terraces": 0
+  },
+  "cleanup_v3_audit": {
+    "level": 39,
+    "chapter": 4,
+    "theme": "optical",
+    "name": "Chamber 39 // Parallax Array",
+    "archetype": "Segmented Security Bulkhead Corridor",
+    "orig_backup_tiles": 12,
+    "final_tiles": 32,
+    "removed_platforms": 5,
+    "retained_platforms": 13,
+    "removed_devices": 3,
+    "added_walls": 0,
+    "added_piers": 0,
+    "added_terraces": 0,
+    "gate_links": [
+      "alpha",
+      "proof",
+      "timer"
+    ]
+  }
+}

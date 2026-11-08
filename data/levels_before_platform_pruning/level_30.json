@@ -1,0 +1,942 @@
+{
+  "tiles": [
+    [
+      0,
+      0,
+      36,
+      730
+    ],
+    [
+      3244,
+      0,
+      36,
+      730
+    ],
+    [
+      36,
+      0,
+      3208,
+      30
+    ],
+    [
+      150,
+      595,
+      432,
+      135
+    ],
+    [
+      736,
+      595,
+      362,
+      135
+    ],
+    [
+      736,
+      355,
+      362,
+      23
+    ],
+    [
+      1252,
+      355,
+      390,
+      23
+    ],
+    [
+      2154,
+      355,
+      340,
+      23
+    ],
+    [
+      2154,
+      595,
+      340,
+      135
+    ],
+    [
+      2648,
+      595,
+      432,
+      135
+    ],
+    [
+      2648,
+      355,
+      432,
+      23
+    ],
+    [
+      1607,
+      338,
+      10,
+      17
+    ],
+    [
+      2806,
+      221,
+      155,
+      18
+    ],
+    [
+      2943,
+      239,
+      18,
+      116
+    ],
+    [
+      772,
+      378,
+      290,
+      22
+    ],
+    [
+      1288,
+      378,
+      318,
+      22
+    ],
+    [
+      2190,
+      378,
+      268,
+      22
+    ],
+    [
+      2684,
+      378,
+      360,
+      22
+    ],
+    [
+      156,
+      30,
+      130,
+      28
+    ],
+    [
+      176,
+      58,
+      90,
+      16
+    ],
+    [
+      476,
+      30,
+      114,
+      56
+    ],
+    [
+      496,
+      86,
+      74,
+      16
+    ],
+    [
+      796,
+      30,
+      98,
+      42
+    ],
+    [
+      816,
+      72,
+      58,
+      16
+    ],
+    [
+      1116,
+      30,
+      130,
+      28
+    ],
+    [
+      1136,
+      58,
+      90,
+      16
+    ],
+    [
+      1436,
+      30,
+      114,
+      56
+    ],
+    [
+      1456,
+      86,
+      74,
+      16
+    ],
+    [
+      1756,
+      30,
+      98,
+      42
+    ],
+    [
+      1776,
+      72,
+      58,
+      16
+    ],
+    [
+      2076,
+      30,
+      130,
+      28
+    ],
+    [
+      2096,
+      58,
+      90,
+      16
+    ],
+    [
+      2396,
+      30,
+      114,
+      56
+    ],
+    [
+      2416,
+      86,
+      74,
+      16
+    ],
+    [
+      2716,
+      30,
+      98,
+      42
+    ],
+    [
+      2736,
+      72,
+      58,
+      16
+    ],
+    [
+      3036,
+      30,
+      130,
+      28
+    ],
+    [
+      3056,
+      58,
+      90,
+      16
+    ],
+    [
+      36,
+      140,
+      40,
+      82
+    ],
+    [
+      36,
+      380,
+      40,
+      66
+    ]
+  ],
+  "ladders": [],
+  "crates": [
+    {
+      "id": "load",
+      "x": 1367,
+      "y": 319
+    }
+  ],
+  "plates": [
+    {
+      "link_id": "weight",
+      "x": 1559,
+      "y": 355
+    }
+  ],
+  "switches": [
+    {
+      "link_id": "timer",
+      "x": 2864,
+      "y": 595,
+      "mode": "timed",
+      "duration": 19
+    }
+  ],
+  "doors": [
+    {
+      "id": "surface_lock",
+      "x": 2806,
+      "y": 239,
+      "w": 20,
+      "h": 116,
+      "required_links": [
+        "power",
+        "alpha",
+        "beta",
+        "timer"
+      ]
+    }
+  ],
+  "moving_platforms": [
+    {
+      "id": "car0",
+      "x": 1646,
+      "y": 341,
+      "w": 108,
+      "h": 16,
+      "end_x": 2041,
+      "end_y": 341,
+      "speed": 108,
+      "active_by_default": false,
+      "required_links": [
+        "A"
+      ]
+    },
+    {
+      "id": "car1",
+      "x": 3098,
+      "y": 587,
+      "w": 86,
+      "h": 16,
+      "end_x": 3098,
+      "end_y": 347,
+      "speed": 108,
+      "active_by_default": false,
+      "required_links": [
+        "power"
+      ]
+    }
+  ],
+  "conveyors": [],
+  "wind_zones": [],
+  "water_zones": [],
+  "valves": [],
+  "generators": [
+    {
+      "link_id": "power",
+      "x": 917,
+      "y": 595
+    }
+  ],
+  "cables": [
+    {
+      "link_id": "A",
+      "points": [
+        [
+          926,
+          343
+        ],
+        [
+          926,
+          379
+        ],
+        [
+          2340,
+          379
+        ],
+        [
+          2340,
+          345
+        ]
+      ]
+    },
+    {
+      "link_id": "weight",
+      "points": [
+        [
+          1568,
+          343
+        ],
+        [
+          1568,
+          386
+        ],
+        [
+          2340,
+          386
+        ],
+        [
+          2340,
+          345
+        ]
+      ]
+    },
+    {
+      "link_id": "alpha",
+      "points": [
+        [
+          2333,
+          343
+        ],
+        [
+          2333,
+          619
+        ],
+        [
+          2340,
+          619
+        ],
+        [
+          2340,
+          585
+        ]
+      ]
+    },
+    {
+      "link_id": "B",
+      "points": [
+        [
+          936,
+          343
+        ],
+        [
+          936,
+          626
+        ],
+        [
+          2340,
+          626
+        ],
+        [
+          2340,
+          585
+        ]
+      ]
+    },
+    {
+      "link_id": "power",
+      "points": [
+        [
+          926,
+          583
+        ],
+        [
+          926,
+          633
+        ],
+        [
+          2340,
+          633
+        ],
+        [
+          2340,
+          585
+        ]
+      ]
+    },
+    {
+      "link_id": "power",
+      "points": [
+        [
+          917,
+          583
+        ],
+        [
+          917,
+          617
+        ],
+        [
+          2814,
+          617
+        ],
+        [
+          2814,
+          299
+        ]
+      ]
+    },
+    {
+      "link_id": "alpha",
+      "points": [
+        [
+          2324,
+          343
+        ],
+        [
+          2324,
+          384
+        ],
+        [
+          2814,
+          384
+        ],
+        [
+          2814,
+          299
+        ]
+      ]
+    },
+    {
+      "link_id": "beta",
+      "points": [
+        [
+          2324,
+          583
+        ],
+        [
+          2324,
+          631
+        ],
+        [
+          2814,
+          631
+        ],
+        [
+          2814,
+          299
+        ]
+      ]
+    },
+    {
+      "link_id": "timer",
+      "points": [
+        [
+          2864,
+          583
+        ],
+        [
+          2864,
+          638
+        ],
+        [
+          2814,
+          638
+        ],
+        [
+          2814,
+          299
+        ]
+      ]
+    }
+  ],
+  "mirrors": [],
+  "crushers": [],
+  "steam_vents": [
+    {
+      "id": "seam2",
+      "x": 1157,
+      "y": 270,
+      "w": 36,
+      "h": 134,
+      "period": 3.1,
+      "duty_cycle": 0.43,
+      "disabled_by": []
+    },
+    {
+      "id": "seam5",
+      "x": 2553,
+      "y": 510,
+      "w": 36,
+      "h": 134,
+      "period": 3.1,
+      "duty_cycle": 0.43,
+      "disabled_by": []
+    }
+  ],
+  "collapsing_platforms": [],
+  "checkpoints": [
+    {
+      "id": "beacon_30",
+      "x": 3015,
+      "y": 595
+    }
+  ],
+  "spikes": [],
+  "acids": [
+    {
+      "x": 36,
+      "y": 655,
+      "w": 114,
+      "h": 75
+    },
+    {
+      "x": 582,
+      "y": 655,
+      "w": 154,
+      "h": 75
+    },
+    {
+      "x": 1098,
+      "y": 655,
+      "w": 1056,
+      "h": 75
+    },
+    {
+      "x": 2494,
+      "y": 655,
+      "w": 154,
+      "h": 75
+    },
+    {
+      "x": 3080,
+      "y": 655,
+      "w": 164,
+      "h": 75
+    }
+  ],
+  "lasers": [
+    {
+      "x": 3015,
+      "y": 433,
+      "dir": [
+        0,
+        1
+      ],
+      "max_length": 155,
+      "disabled_by": [
+        "power"
+      ]
+    }
+  ],
+  "optical_beams": [],
+  "sequences": [],
+  "collectibles": [
+    {
+      "id": "log_30",
+      "x": 778,
+      "y": 563,
+      "title": "Blackout Protocol / Shift Notes",
+      "text": "Blackout Protocol. Check the signal lines before you leave the service deck."
+    },
+    {
+      "id": "field_trace_30",
+      "x": 435,
+      "y": 519,
+      "title": "FIELD TRACE 30 / BLACKOUT PROTOCOL",
+      "text": "ECHO-7 field diagnostics: Build a multi-room chapter finale combining generator activation, cargo proof, A/B state memory and a final timed evacuation.",
+      "required_links": [
+        "alpha"
+      ],
+      "optional_investigation": true
+    },
+    {
+      "id": "service_challenge_30",
+      "x": 3043,
+      "y": 553,
+      "title": "Optional Diagnostics 30",
+      "text": "Optional auxiliary service record recovered. This archive is no longer linked to a redundant side circuit and does not gate the exit.",
+      "required_links": [],
+      "optional_investigation": true
+    }
+  ],
+  "decorations": [
+    {
+      "type": "warning_stripe",
+      "x": 748,
+      "y": 367,
+      "w": 120
+    },
+    {
+      "type": "warning_stripe",
+      "x": 1264,
+      "y": 367,
+      "w": 120
+    },
+    {
+      "type": "warning_stripe",
+      "x": 2166,
+      "y": 367,
+      "w": 120
+    },
+    {
+      "type": "warning_stripe",
+      "x": 2660,
+      "y": 367,
+      "w": 120
+    },
+    {
+      "type": "monitor",
+      "x": 887,
+      "y": 495,
+      "text": "ENERGIZE"
+    },
+    {
+      "type": "monitor",
+      "x": 877,
+      "y": 256,
+      "text": "SELECT A / B"
+    },
+    {
+      "type": "monitor",
+      "x": 1496,
+      "y": 263,
+      "text": "RECEIVING SCALE"
+    },
+    {
+      "type": "monitor",
+      "x": 2294,
+      "y": 255,
+      "text": "HOLD A + WEIGHT"
+    },
+    {
+      "type": "monitor",
+      "x": 2294,
+      "y": 495,
+      "text": "HOLD ALPHA + B + POWER"
+    },
+    {
+      "type": "monitor",
+      "x": 2832,
+      "y": 502,
+      "text": "ESCAPE 19s"
+    },
+    {
+      "type": "monitor",
+      "x": 2829,
+      "y": 181,
+      "text": "EXIT LOCK"
+    },
+    {
+      "type": "monitor",
+      "x": 448,
+      "y": 481,
+      "text": "FORENSIC TRACE 30"
+    }
+  ],
+  "latching_relays": [
+    {
+      "link_id": "alpha",
+      "x": 2324,
+      "y": 355,
+      "required_links": [
+        "A",
+        "weight"
+      ]
+    },
+    {
+      "link_id": "beta",
+      "x": 2324,
+      "y": 595,
+      "required_links": [
+        "alpha",
+        "B",
+        "power"
+      ]
+    }
+  ],
+  "routing_consoles": [
+    {
+      "id": "selector",
+      "route_id": "supply",
+      "x": 917,
+      "y": 355,
+      "a_signal": "A",
+      "b_signal": "B"
+    }
+  ],
+  "signal_inverters": [],
+  "npcs": [
+    {
+      "id": "kip",
+      "x": 250,
+      "y": 595,
+      "dialogue": [
+        "Blackout Protocol. I brought a spare fuse and a very small umbrella.",
+        "Start the generator to bring the circuit online.",
+        "Start the clock after the other lock lights are green."
+      ]
+    },
+    {
+      "id": "ada",
+      "x": 2692,
+      "y": 355
+    }
+  ],
+  "springs": [],
+  "dash_recharges": [
+    {
+      "id": "ring0",
+      "x": 645,
+      "y": 497
+    }
+  ],
+  "one_way_platforms": [
+    {
+      "id": "walk0",
+      "x": 1138,
+      "y": 515,
+      "w": 83,
+      "h": 12
+    },
+    {
+      "id": "walk1",
+      "x": 1098,
+      "y": 435,
+      "w": 83,
+      "h": 12
+    },
+    {
+      "id": "walk2",
+      "x": 1138,
+      "y": 355,
+      "w": 83,
+      "h": 12
+    },
+    {
+      "id": "walk3",
+      "x": 1873,
+      "y": 440,
+      "w": 56,
+      "h": 12
+    },
+    {
+      "id": "walk4",
+      "x": 2534,
+      "y": 515,
+      "w": 83,
+      "h": 12
+    },
+    {
+      "id": "walk5",
+      "x": 2494,
+      "y": 435,
+      "w": 83,
+      "h": 12
+    },
+    {
+      "id": "walk6",
+      "x": 2534,
+      "y": 355,
+      "w": 83,
+      "h": 12
+    }
+  ],
+  "dash_barriers": [],
+  "level_id": 30,
+  "width": 3280,
+  "height": 730,
+  "name": "Chamber 30 // Blackout Protocol",
+  "abilities": {
+    "wall_jump": true,
+    "dash": true
+  },
+  "spawn": [
+    188,
+    549
+  ],
+  "exit": [
+    2863,
+    275
+  ],
+  "hint_route": [
+    "power",
+    "A",
+    "weight",
+    "alpha",
+    "B",
+    "beta",
+    "timer"
+  ],
+  "hint_notes": {
+    "power": [
+      "Start the generator to bring the circuit online.",
+      "Start the generator to bring the circuit online.",
+      "Start the generator to bring the circuit online."
+    ],
+    "A": [
+      "Set the supply selector to A.",
+      "Set the supply selector to A.",
+      "Set the supply selector to A."
+    ],
+    "weight": [
+      "Move the cargo right until it rests on the receiving scale.",
+      "Move the cargo right until it rests on the receiving scale.",
+      "Move the cargo right until it rests on the receiving scale."
+    ],
+    "alpha": [
+      "Keep A and weight live, then interact with the recorder to hold the reading.",
+      "Keep A and weight live, then interact with the recorder to hold the reading.",
+      "Keep A and weight live, then interact with the recorder to hold the reading."
+    ],
+    "B": [
+      "Transfer the selector to B after recording the A-side reading.",
+      "Transfer the selector to B after recording the A-side reading.",
+      "Transfer the selector to B after recording the A-side reading."
+    ],
+    "beta": [
+      "Keep alpha and B and power live, then interact with the recorder to hold the reading.",
+      "Keep alpha and B and power live, then interact with the recorder to hold the reading.",
+      "Keep alpha and B and power live, then interact with the recorder to hold the reading."
+    ],
+    "timer": [
+      "Start the clock after the other lock lights are green.",
+      "Start the clock after the other lock lights are green.",
+      "Start the clock after the other lock lights are green."
+    ]
+  },
+  "solution_steps": [
+    "Start the generator to bring the circuit online.",
+    "Set the supply selector to A.",
+    "Move the cargo right until it rests on the receiving scale.",
+    "Keep A and weight live, then interact with the recorder to hold the reading.",
+    "Transfer the selector to B after recording the A-side reading.",
+    "Keep alpha and B and power live, then interact with the recorder to hold the reading.",
+    "Start the clock after the other lock lights are green."
+  ],
+  "subtitle": "Start the generator to bring the circuit online.",
+  "chapter": 3,
+  "theme": "power",
+  "topology": "Multi-Chamber Substation Finale",
+  "overhaul_version": 1,
+  "overhaul_design": {
+    "profile": "generator_relay",
+    "route": "left_rise",
+    "actual_direction": 1,
+    "mandatory": false,
+    "service_platform_count": 0,
+    "retired_by_cleanup": true
+  },
+  "secondary_validation_1": {
+    "checkpoint": "beacon_30",
+    "extra_platforms": 0,
+    "signal": "sector_30_validated",
+    "retired_by_cleanup": true
+  },
+  "side_challenge_policy": {
+    "campaign_blocking": false,
+    "optional_signals": [],
+    "reason": "Deprecated optional side circuit removed; service record remains accessible."
+  },
+  "architectural_overhaul_v2": {
+    "archetype": "Vaulted Substation & Bus Gallery",
+    "chapter": 3,
+    "theme": "power",
+    "original_tile_count": 14,
+    "final_tile_count": 40,
+    "thickened_decks": 0,
+    "added_piers": 0,
+    "added_corbels": 4,
+    "added_soffits": 10,
+    "added_buttresses": 2,
+    "tiles_before_cleanup_pass": 40,
+    "removed_legacy_platforms": 5,
+    "removed_legacy_devices": 3,
+    "added_partition_walls": 0,
+    "added_grounded_piers": 0,
+    "added_stepped_terraces": 0
+  },
+  "cleanup_v3_audit": {
+    "level": 30,
+    "chapter": 3,
+    "theme": "power",
+    "name": "Chamber 30 // Blackout Protocol",
+    "archetype": "Vaulted Substation & Bus Gallery",
+    "orig_backup_tiles": 14,
+    "final_tiles": 40,
+    "removed_platforms": 5,
+    "retained_platforms": 7,
+    "removed_devices": 3,
+    "added_walls": 0,
+    "added_piers": 0,
+    "added_terraces": 0,
+    "gate_links": [
+      "power",
+      "alpha",
+      "beta",
+      "timer"
+    ]
+  }
+}

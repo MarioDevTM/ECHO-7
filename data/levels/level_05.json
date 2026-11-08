@@ -1,0 +1,386 @@
+{
+  "level_id": 5,
+  "hint_route": [
+    "upper_brake"
+  ],
+  "chapter": 1,
+  "theme": "awakening",
+  "name": "Chamber 05 // The Elevator Shaft",
+  "subtitle": "Two lift cars share a shaft. Commission the upper car from the transfer floor.",
+  "width": 1120,
+  "height": 1320,
+  "spawn": [
+    80,
+    1144
+  ],
+  "exit": [
+    996,
+    258
+  ],
+  "tiles": [
+    [
+      0,
+      0,
+      40,
+      1320
+    ],
+    [
+      40,
+      0,
+      1040,
+      32
+    ],
+    [
+      1080,
+      0,
+      40,
+      1320
+    ],
+    [
+      40,
+      1190,
+      1040,
+      130
+    ],
+    [
+      925,
+      218,
+      155,
+      20
+    ],
+    [
+      925,
+      338,
+      155,
+      20
+    ],
+    [
+      639,
+      512,
+      26,
+      210
+    ],
+    [
+      769,
+      452,
+      26,
+      180
+    ]
+  ],
+  "ladders": [],
+  "crates": [
+    {
+      "id": "ballast",
+      "x": 490,
+      "y": 1154
+    }
+  ],
+  "plates": [
+    {
+      "link_id": "plate_elev_2",
+      "x": 635,
+      "y": 1190
+    }
+  ],
+  "switches": [
+    {
+      "link_id": "sw_elev_1",
+      "x": 720,
+      "y": 825,
+      "mode": "permanent",
+      "duration": 0
+    }
+  ],
+  "doors": [
+    {
+      "id": "d5_exit",
+      "x": 925,
+      "y": 238,
+      "w": 24,
+      "h": 100,
+      "required_links": [
+        "upper_brake"
+      ],
+      "logic": "ALL"
+    }
+  ],
+  "moving_platforms": [
+    {
+      "id": "mp5_1",
+      "x": 315,
+      "y": 1168,
+      "w": 120,
+      "h": 18,
+      "end_x": 315,
+      "end_y": 886,
+      "speed": 105,
+      "active_by_default": false,
+      "logic": "ALL",
+      "required_links": [
+        "plate_elev_2"
+      ]
+    },
+    {
+      "id": "mp5_2",
+      "x": 444,
+      "y": 810,
+      "w": 105,
+      "h": 18,
+      "end_x": 444,
+      "end_y": 442,
+      "speed": 120,
+      "active_by_default": false,
+      "logic": "ALL",
+      "required_links": [
+        "sw_elev_1"
+      ]
+    }
+  ],
+  "conveyors": [],
+  "wind_zones": [],
+  "water_zones": [],
+  "valves": [],
+  "generators": [],
+  "cables": [
+    {
+      "link_id": "upper_brake",
+      "points": [
+        [
+          207,
+          521
+        ],
+        [
+          207,
+          575
+        ],
+        [
+          933,
+          575
+        ],
+        [
+          933,
+          288
+        ]
+      ]
+    },
+    {
+      "link_id": "plate_elev_2",
+      "points": [
+        [
+          647,
+          1176
+        ],
+        [
+          647,
+          1230
+        ],
+        [
+          323,
+          1230
+        ],
+        [
+          323,
+          1160
+        ]
+      ]
+    },
+    {
+      "link_id": "sw_elev_1",
+      "points": [
+        [
+          732,
+          811
+        ],
+        [
+          732,
+          865
+        ],
+        [
+          452,
+          865
+        ],
+        [
+          452,
+          802
+        ]
+      ]
+    },
+    {
+      "link_id": "plate_elev_2",
+      "points": [
+        [
+          647,
+          1176
+        ],
+        [
+          647,
+          1230
+        ],
+        [
+          203,
+          1230
+        ],
+        [
+          203,
+          527
+        ]
+      ]
+    },
+    {
+      "link_id": "sw_elev_1",
+      "points": [
+        [
+          732,
+          811
+        ],
+        [
+          732,
+          871
+        ],
+        [
+          203,
+          871
+        ],
+        [
+          203,
+          527
+        ]
+      ]
+    }
+  ],
+  "mirrors": [],
+  "crushers": [],
+  "steam_vents": [],
+  "collapsing_platforms": [],
+  "checkpoints": [
+    {
+      "id": "cp5_1",
+      "x": 840,
+      "y": 825
+    }
+  ],
+  "spikes": [],
+  "acids": [],
+  "lasers": [],
+  "optical_beams": [],
+  "sequences": [],
+  "collectibles": [
+    {
+      "id": "log_05",
+      "x": 98,
+      "y": 503,
+      "title": "Shaft Inspection Report",
+      "text": "Hoist motors recalibrated. Secondary lift requires 50kg counter-load."
+    }
+  ],
+  "decorations": [
+    {
+      "type": "monitor",
+      "x": 169,
+      "y": 446,
+      "text": "BRAKE TEST"
+    },
+    {
+      "type": "monitor",
+      "x": 694,
+      "y": 736,
+      "text": "UPPER CAR"
+    }
+  ],
+  "solution_steps": [
+    "Weight the bottom lift, board it and jump east onto the transfer floor. Wake the second car.",
+    "Ride high to the west brake, store pressure, then cross back to the east headhouse."
+  ],
+  "npcs": [
+    {
+      "id": "kip",
+      "x": 150,
+      "y": 1190
+    }
+  ],
+  "abilities": {
+    "wall_jump": true,
+    "dash": false
+  },
+  "springs": [
+    {
+      "id": "spring590",
+      "x": 590,
+      "y": 815,
+      "w": 64,
+      "h": 10
+    }
+  ],
+  "dash_recharges": [],
+  "one_way_platforms": [
+    {
+      "id": "deck70_900",
+      "x": 70,
+      "y": 900,
+      "w": 235,
+      "h": 14
+    },
+    {
+      "id": "deck560_825",
+      "x": 560,
+      "y": 825,
+      "w": 480,
+      "h": 14
+    },
+    {
+      "id": "deck55_535",
+      "x": 55,
+      "y": 535,
+      "w": 235,
+      "h": 14
+    },
+    {
+      "id": "deck630_338",
+      "x": 630,
+      "y": 338,
+      "w": 245,
+      "h": 14
+    },
+    {
+      "id": "deck600_420",
+      "x": 600,
+      "y": 420,
+      "w": 80,
+      "h": 14
+    },
+    {
+      "id": "deck439_886",
+      "x": 439,
+      "y": 886,
+      "w": 115,
+      "h": 14
+    },
+    {
+      "id": "deck555_502",
+      "x": 555,
+      "y": 502,
+      "w": 75,
+      "h": 14
+    }
+  ],
+  "dash_barriers": [],
+  "routing_consoles": [],
+  "latching_relays": [
+    {
+      "link_id": "upper_brake",
+      "x": 195,
+      "y": 535,
+      "required_links": [
+        "plate_elev_2",
+        "sw_elev_1"
+      ]
+    }
+  ],
+  "hint_notes": {
+    "upper_brake": [
+      "Two lift cars share a shaft. Commission the upper car from the transfer floor.",
+      "Weight the bottom lift, board it and jump east onto the transfer floor. Wake the second car.",
+      "Ride high to the west brake, store pressure, then cross back to the east headhouse."
+    ]
+  }
+}

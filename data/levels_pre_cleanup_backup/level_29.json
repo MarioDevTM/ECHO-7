@@ -1,0 +1,784 @@
+{
+  "tiles": [
+    [
+      0,
+      0,
+      36,
+      720
+    ],
+    [
+      3140,
+      0,
+      36,
+      720
+    ],
+    [
+      36,
+      0,
+      3104,
+      30
+    ],
+    [
+      150,
+      585,
+      340,
+      135
+    ],
+    [
+      632,
+      585,
+      432,
+      135
+    ],
+    [
+      1206,
+      585,
+      362,
+      135
+    ],
+    [
+      2104,
+      585,
+      390,
+      135
+    ],
+    [
+      2104,
+      357,
+      390,
+      23
+    ],
+    [
+      2636,
+      357,
+      340,
+      23
+    ],
+    [
+      2459,
+      568,
+      10,
+      17
+    ],
+    [
+      2748,
+      223,
+      155,
+      18
+    ],
+    [
+      2885,
+      241,
+      18,
+      116
+    ],
+    [
+      2156,
+      380,
+      286,
+      22
+    ],
+    [
+      2688,
+      380,
+      236,
+      22
+    ],
+    [
+      156,
+      30,
+      113,
+      56
+    ],
+    [
+      176,
+      86,
+      73,
+      16
+    ],
+    [
+      556,
+      30,
+      129,
+      56
+    ],
+    [
+      576,
+      86,
+      89,
+      16
+    ],
+    [
+      956,
+      30,
+      97,
+      42
+    ],
+    [
+      976,
+      72,
+      57,
+      16
+    ],
+    [
+      1356,
+      30,
+      113,
+      42
+    ],
+    [
+      1376,
+      72,
+      73,
+      16
+    ],
+    [
+      1756,
+      30,
+      129,
+      28
+    ],
+    [
+      1776,
+      58,
+      89,
+      16
+    ],
+    [
+      2156,
+      30,
+      97,
+      28
+    ],
+    [
+      2176,
+      58,
+      57,
+      16
+    ],
+    [
+      2556,
+      30,
+      113,
+      56
+    ],
+    [
+      2576,
+      86,
+      73,
+      16
+    ],
+    [
+      2956,
+      30,
+      129,
+      56
+    ],
+    [
+      2976,
+      86,
+      89,
+      16
+    ],
+    [
+      36,
+      140,
+      28,
+      69
+    ],
+    [
+      3112,
+      180,
+      28,
+      69
+    ],
+    [
+      36,
+      380,
+      28,
+      85
+    ],
+    [
+      3112,
+      420,
+      28,
+      85
+    ]
+  ],
+  "ladders": [],
+  "crates": [
+    {
+      "id": "load",
+      "x": 2219,
+      "y": 549
+    }
+  ],
+  "plates": [
+    {
+      "link_id": "weight",
+      "x": 2411,
+      "y": 585
+    }
+  ],
+  "switches": [],
+  "doors": [
+    {
+      "id": "surface_lock",
+      "x": 2748,
+      "y": 241,
+      "w": 20,
+      "h": 116,
+      "required_links": [
+        "proof",
+        "B"
+      ]
+    }
+  ],
+  "moving_platforms": [
+    {
+      "id": "car0",
+      "x": 495,
+      "y": 561,
+      "w": 65,
+      "h": 16,
+      "end_x": 562,
+      "end_y": 519,
+      "speed": 108,
+      "active_by_default": true,
+      "required_links": []
+    },
+    {
+      "id": "car1",
+      "x": 1572,
+      "y": 571,
+      "w": 108,
+      "h": 16,
+      "end_x": 1991,
+      "end_y": 571,
+      "speed": 108,
+      "active_by_default": false,
+      "required_links": [
+        "A"
+      ]
+    },
+    {
+      "id": "car2",
+      "x": 2499,
+      "y": 333,
+      "w": 65,
+      "h": 16,
+      "end_x": 2566,
+      "end_y": 291,
+      "speed": 108,
+      "active_by_default": true,
+      "required_links": []
+    }
+  ],
+  "conveyors": [],
+  "wind_zones": [],
+  "water_zones": [],
+  "valves": [
+    {
+      "link_id": "overhaul_29_valve",
+      "x": 250,
+      "y": 520
+    }
+  ],
+  "generators": [
+    {
+      "link_id": "power",
+      "x": 1387,
+      "y": 585
+    }
+  ],
+  "cables": [
+    {
+      "link_id": "A",
+      "points": [
+        [
+          857,
+          573
+        ],
+        [
+          857,
+          609
+        ],
+        [
+          2315,
+          609
+        ],
+        [
+          2315,
+          347
+        ]
+      ]
+    },
+    {
+      "link_id": "power",
+      "points": [
+        [
+          1396,
+          573
+        ],
+        [
+          1396,
+          616
+        ],
+        [
+          2315,
+          616
+        ],
+        [
+          2315,
+          347
+        ]
+      ]
+    },
+    {
+      "link_id": "weight",
+      "points": [
+        [
+          2420,
+          573
+        ],
+        [
+          2420,
+          623
+        ],
+        [
+          2315,
+          623
+        ],
+        [
+          2315,
+          347
+        ]
+      ]
+    },
+    {
+      "link_id": "proof",
+      "points": [
+        [
+          2299,
+          345
+        ],
+        [
+          2299,
+          379
+        ],
+        [
+          2756,
+          379
+        ],
+        [
+          2756,
+          301
+        ]
+      ]
+    },
+    {
+      "link_id": "B",
+      "points": [
+        [
+          858,
+          573
+        ],
+        [
+          858,
+          614
+        ],
+        [
+          2756,
+          614
+        ],
+        [
+          2756,
+          301
+        ]
+      ]
+    }
+  ],
+  "mirrors": [],
+  "crushers": [],
+  "steam_vents": [
+    {
+      "id": "seam0",
+      "x": 543,
+      "y": 500,
+      "w": 36,
+      "h": 134,
+      "period": 3.1,
+      "duty_cycle": 0.43,
+      "disabled_by": []
+    }
+  ],
+  "collapsing_platforms": [],
+  "checkpoints": [
+    {
+      "id": "beacon_29",
+      "x": 2429,
+      "y": 357
+    }
+  ],
+  "spikes": [],
+  "acids": [
+    {
+      "x": 36,
+      "y": 645,
+      "w": 114,
+      "h": 75
+    },
+    {
+      "x": 490,
+      "y": 645,
+      "w": 142,
+      "h": 75
+    },
+    {
+      "x": 1064,
+      "y": 645,
+      "w": 142,
+      "h": 75
+    },
+    {
+      "x": 1568,
+      "y": 645,
+      "w": 536,
+      "h": 75
+    },
+    {
+      "x": 2494,
+      "y": 645,
+      "w": 646,
+      "h": 75
+    }
+  ],
+  "lasers": [
+    {
+      "x": 2429,
+      "y": 195,
+      "dir": [
+        0,
+        1
+      ],
+      "max_length": 155,
+      "disabled_by": [
+        "proof"
+      ]
+    }
+  ],
+  "optical_beams": [],
+  "sequences": [],
+  "collectibles": [
+    {
+      "id": "log_29",
+      "x": 674,
+      "y": 553,
+      "title": "Grid Instability / Shift Notes",
+      "text": "Grid Instability. Check the signal lines before you leave the service deck."
+    },
+    {
+      "id": "field_trace_29",
+      "x": 701,
+      "y": 509,
+      "title": "FIELD TRACE 29 / GRID INSTABILITY",
+      "text": "ECHO-7 field diagnostics: Add an asymmetric power/weight relay where a remote proof is stored before the bus must be changed.",
+      "required_links": [
+        "proof"
+      ],
+      "optional_investigation": true
+    },
+    {
+      "id": "service_challenge_29",
+      "x": 2255,
+      "y": 190,
+      "title": "Optional Diagnostics 29",
+      "text": "Optional master circuit cleared. The standard exit never depends on this side challenge.",
+      "required_links": [
+        "sector_29_validated"
+      ],
+      "optional_investigation": true
+    }
+  ],
+  "decorations": [
+    {
+      "type": "warning_stripe",
+      "x": 2116,
+      "y": 369,
+      "w": 120
+    },
+    {
+      "type": "warning_stripe",
+      "x": 2648,
+      "y": 369,
+      "w": 120
+    },
+    {
+      "type": "monitor",
+      "x": 808,
+      "y": 486,
+      "text": "SELECT A / B"
+    },
+    {
+      "type": "monitor",
+      "x": 1357,
+      "y": 485,
+      "text": "ENERGIZE"
+    },
+    {
+      "type": "monitor",
+      "x": 2348,
+      "y": 493,
+      "text": "RECEIVING SCALE"
+    },
+    {
+      "type": "monitor",
+      "x": 2269,
+      "y": 257,
+      "text": "HOLD A + POWER + WEIGHT"
+    },
+    {
+      "type": "monitor",
+      "x": 2771,
+      "y": 183,
+      "text": "EXIT LOCK"
+    },
+    {
+      "type": "monitor",
+      "x": 714,
+      "y": 471,
+      "text": "FORENSIC TRACE 29"
+    },
+    {
+      "type": "monitor",
+      "x": 234,
+      "y": 417,
+      "text": "ACCESS / 29"
+    },
+    {
+      "type": "warning_stripe",
+      "x": 268,
+      "y": 419,
+      "w": 78
+    }
+  ],
+  "latching_relays": [
+    {
+      "link_id": "proof",
+      "x": 2299,
+      "y": 357,
+      "required_links": [
+        "A",
+        "power",
+        "weight"
+      ]
+    },
+    {
+      "link_id": "overhaul_29_proof",
+      "x": 286,
+      "y": 407,
+      "required_links": [
+        "overhaul_29_valve"
+      ]
+    },
+    {
+      "link_id": "sector_29_validated",
+      "x": 2243,
+      "y": 232,
+      "required_links": [
+        "overhaul_29_proof"
+      ]
+    }
+  ],
+  "routing_consoles": [
+    {
+      "id": "selector",
+      "route_id": "supply",
+      "x": 848,
+      "y": 585,
+      "a_signal": "A",
+      "b_signal": "B"
+    }
+  ],
+  "signal_inverters": [],
+  "npcs": [
+    {
+      "id": "kip",
+      "x": 250,
+      "y": 585,
+      "dialogue": [
+        "Grid Instability. The backup is ready. It even looks worried.",
+        "Set the supply selector to A.",
+        "Transfer the selector to B after recording the A-side reading."
+      ]
+    }
+  ],
+  "springs": [],
+  "dash_recharges": [
+    {
+      "id": "ring1",
+      "x": 1121,
+      "y": 487
+    }
+  ],
+  "one_way_platforms": [
+    {
+      "id": "walk0",
+      "x": 1811,
+      "y": 670,
+      "w": 56,
+      "h": 12
+    },
+    {
+      "id": "walk1",
+      "x": 2534,
+      "y": 509,
+      "w": 83,
+      "h": 12
+    },
+    {
+      "id": "walk2",
+      "x": 2494,
+      "y": 433,
+      "w": 83,
+      "h": 12
+    },
+    {
+      "id": "walk3",
+      "x": 2534,
+      "y": 357,
+      "w": 83,
+      "h": 12
+    },
+    {
+      "id": "overhaul_step_29_0",
+      "x": 232,
+      "y": 520,
+      "w": 78,
+      "h": 12
+    },
+    {
+      "id": "overhaul_step_29_1",
+      "x": 323,
+      "y": 466,
+      "w": 78,
+      "h": 12
+    },
+    {
+      "id": "overhaul_step_29_2",
+      "x": 268,
+      "y": 407,
+      "w": 78,
+      "h": 12
+    },
+    {
+      "id": "validation_foot_29_0",
+      "x": 2310,
+      "y": 294,
+      "w": 78,
+      "h": 12
+    },
+    {
+      "id": "validation_foot_29_1",
+      "x": 2225,
+      "y": 232,
+      "w": 78,
+      "h": 12
+    }
+  ],
+  "dash_barriers": [],
+  "level_id": 29,
+  "width": 3176,
+  "height": 720,
+  "name": "Chamber 29 // Grid Instability",
+  "abilities": {
+    "wall_jump": true,
+    "dash": true
+  },
+  "spawn": [
+    188,
+    539
+  ],
+  "exit": [
+    2805,
+    277
+  ],
+  "hint_route": [
+    "A",
+    "power",
+    "weight",
+    "proof",
+    "B"
+  ],
+  "hint_notes": {
+    "A": [
+      "Set the supply selector to A.",
+      "Set the supply selector to A.",
+      "Set the supply selector to A."
+    ],
+    "power": [
+      "Start the generator to bring the circuit online.",
+      "Start the generator to bring the circuit online.",
+      "Start the generator to bring the circuit online."
+    ],
+    "weight": [
+      "Move the cargo right until it rests on the receiving scale.",
+      "Move the cargo right until it rests on the receiving scale.",
+      "Move the cargo right until it rests on the receiving scale."
+    ],
+    "proof": [
+      "Keep A and power and weight live, then interact with the recorder to hold the reading.",
+      "Keep A and power and weight live, then interact with the recorder to hold the reading.",
+      "Keep A and power and weight live, then interact with the recorder to hold the reading."
+    ],
+    "B": [
+      "Transfer the selector to B after recording the A-side reading.",
+      "Transfer the selector to B after recording the A-side reading.",
+      "Transfer the selector to B after recording the A-side reading."
+    ]
+  },
+  "solution_steps": [
+    "Set the supply selector to A.",
+    "Start the generator to bring the circuit online.",
+    "Move the cargo right until it rests on the receiving scale.",
+    "Keep A and power and weight live, then interact with the recorder to hold the reading.",
+    "Transfer the selector to B after recording the A-side reading."
+  ],
+  "subtitle": "Set the supply selector to A.  //  SERVICE DETOUR: Activate the lower isolation valve, then climb and permanently record its state.",
+  "chapter": 3,
+  "theme": "power",
+  "topology": "Asymmetric Return Corridor",
+  "overhaul_version": 1,
+  "overhaul_design": {
+    "profile": "route_proof",
+    "route": "right_return",
+    "actual_direction": 1,
+    "mandatory": true,
+    "service_platform_count": 3
+  },
+  "secondary_validation_1": {
+    "checkpoint": "beacon_29",
+    "extra_platforms": 2,
+    "signal": "sector_29_validated"
+  },
+  "side_challenge_policy": {
+    "campaign_blocking": false,
+    "optional_signals": [
+      "overhaul_29_proof",
+      "sector_29_validated"
+    ],
+    "reason": "Not proven traversable in the Pygame engine; preserve main progression."
+  },
+  "architectural_overhaul_v2": {
+    "archetype": "Sunken Caisson & Overhangs",
+    "chapter": 3,
+    "theme": "power",
+    "original_tile_count": 12,
+    "final_tile_count": 34,
+    "thickened_decks": 0,
+    "added_piers": 0,
+    "added_corbels": 2,
+    "added_soffits": 8,
+    "added_buttresses": 4
+  }
+}

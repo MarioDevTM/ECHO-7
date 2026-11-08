@@ -1,0 +1,649 @@
+{
+  "tiles": [
+    [
+      0,
+      0,
+      36,
+      922
+    ],
+    [
+      3276,
+      0,
+      36,
+      922
+    ],
+    [
+      36,
+      0,
+      3240,
+      30
+    ],
+    [
+      150,
+      571,
+      390,
+      40
+    ],
+    [
+      720,
+      571,
+      340,
+      40
+    ],
+    [
+      1240,
+      355,
+      432,
+      23
+    ],
+    [
+      2180,
+      355,
+      362,
+      23
+    ],
+    [
+      2180,
+      571,
+      362,
+      23
+    ],
+    [
+      2722,
+      571,
+      390,
+      40
+    ],
+    [
+      1637,
+      338,
+      10,
+      17
+    ],
+    [
+      2859,
+      437,
+      155,
+      18
+    ],
+    [
+      2996,
+      455,
+      18,
+      116
+    ],
+    [
+      2658,
+      385,
+      14,
+      150
+    ],
+    [
+      186,
+      611,
+      318,
+      22
+    ],
+    [
+      756,
+      611,
+      268,
+      22
+    ],
+    [
+      1276,
+      378,
+      360,
+      22
+    ],
+    [
+      2474,
+      378,
+      44,
+      56
+    ],
+    [
+      2216,
+      594,
+      290,
+      22
+    ],
+    [
+      2758,
+      611,
+      318,
+      22
+    ],
+    [
+      36,
+      140,
+      40,
+      84
+    ],
+    [
+      3236,
+      180,
+      40,
+      84
+    ],
+    [
+      36,
+      380,
+      40,
+      68
+    ],
+    [
+      3236,
+      420,
+      40,
+      68
+    ],
+    [
+      36,
+      620,
+      40,
+      84
+    ],
+    [
+      3236,
+      660,
+      40,
+      84
+    ]
+  ],
+  "ladders": [],
+  "crates": [
+    {
+      "id": "load",
+      "x": 1355,
+      "y": 319
+    }
+  ],
+  "plates": [
+    {
+      "link_id": "weight",
+      "x": 1589,
+      "y": 355
+    }
+  ],
+  "switches": [
+    {
+      "link_id": "lever",
+      "x": 2361,
+      "y": 571,
+      "mode": "permanent",
+      "duration": 0
+    }
+  ],
+  "doors": [
+    {
+      "id": "surface_lock",
+      "x": 2859,
+      "y": 455,
+      "w": 20,
+      "h": 116,
+      "required_links": [
+        "proof",
+        "lever"
+      ]
+    }
+  ],
+  "moving_platforms": [
+    {
+      "id": "car0",
+      "x": 2560,
+      "y": 563,
+      "w": 86,
+      "h": 16,
+      "end_x": 2560,
+      "end_y": 347,
+      "speed": 128,
+      "active_by_default": true,
+      "required_links": []
+    }
+  ],
+  "conveyors": [],
+  "wind_zones": [],
+  "water_zones": [],
+  "valves": [],
+  "generators": [
+    {
+      "link_id": "overhaul_72_generator",
+      "x": 215,
+      "y": 511
+    }
+  ],
+  "cables": [
+    {
+      "link_id": "weight",
+      "points": [
+        [
+          1598,
+          343
+        ],
+        [
+          1598,
+          379
+        ],
+        [
+          2377,
+          379
+        ],
+        [
+          2377,
+          345
+        ]
+      ]
+    },
+    {
+      "link_id": "proof",
+      "points": [
+        [
+          2361,
+          343
+        ],
+        [
+          2361,
+          537
+        ],
+        [
+          2867,
+          537
+        ],
+        [
+          2867,
+          515
+        ]
+      ]
+    },
+    {
+      "link_id": "lever",
+      "points": [
+        [
+          2361,
+          559
+        ],
+        [
+          2361,
+          600
+        ],
+        [
+          2867,
+          600
+        ],
+        [
+          2867,
+          515
+        ]
+      ]
+    }
+  ],
+  "mirrors": [],
+  "crushers": [],
+  "steam_vents": [
+    {
+      "id": "seam2",
+      "x": 1908,
+      "y": 270,
+      "w": 36,
+      "h": 134,
+      "period": 3.1,
+      "duty_cycle": 0.43,
+      "disabled_by": []
+    }
+  ],
+  "collapsing_platforms": [
+    {
+      "id": "walk0",
+      "x": 1091,
+      "y": 499,
+      "w": 58,
+      "h": 12,
+      "delay": 0.42,
+      "respawn": 2.4
+    },
+    {
+      "id": "walk2",
+      "x": 1896,
+      "y": 403,
+      "w": 60,
+      "h": 12,
+      "delay": 0.42,
+      "respawn": 2.4
+    }
+  ],
+  "checkpoints": [
+    {
+      "id": "beacon_72",
+      "x": 2477,
+      "y": 571
+    }
+  ],
+  "spikes": [],
+  "acids": [
+    {
+      "x": 36,
+      "y": 847,
+      "w": 3240,
+      "h": 75
+    }
+  ],
+  "lasers": [],
+  "optical_beams": [],
+  "sequences": [],
+  "collectibles": [
+    {
+      "id": "log_72",
+      "x": 1282,
+      "y": 323,
+      "title": "Exterior Causeway / Shift Notes",
+      "text": "Exterior Causeway. Check the signal lines before you leave the service deck."
+    },
+    {
+      "id": "field_trace_72",
+      "x": 469,
+      "y": 495,
+      "title": "FIELD TRACE 72 / NOCTURNAL RIDGE SPAN",
+      "text": "ECHO-7 field diagnostics: Use a spring to access the upper cargo path, then plan the weight/proof placement on the opposite ridge.",
+      "required_links": [
+        "proof"
+      ],
+      "optional_investigation": true
+    },
+    {
+      "id": "service_challenge_72",
+      "x": 2303,
+      "y": 404,
+      "title": "Optional Diagnostics 72",
+      "text": "Optional master circuit cleared. The standard exit never depends on this side challenge.",
+      "required_links": [
+        "sector_72_validated"
+      ],
+      "optional_investigation": true
+    }
+  ],
+  "decorations": [
+    {
+      "type": "warning_stripe",
+      "x": 162,
+      "y": 583,
+      "w": 120
+    },
+    {
+      "type": "warning_stripe",
+      "x": 732,
+      "y": 583,
+      "w": 120
+    },
+    {
+      "type": "warning_stripe",
+      "x": 1252,
+      "y": 367,
+      "w": 120
+    },
+    {
+      "type": "warning_stripe",
+      "x": 2192,
+      "y": 367,
+      "w": 120
+    },
+    {
+      "type": "warning_stripe",
+      "x": 2192,
+      "y": 583,
+      "w": 120
+    },
+    {
+      "type": "warning_stripe",
+      "x": 2734,
+      "y": 583,
+      "w": 120
+    },
+    {
+      "type": "monitor",
+      "x": 732,
+      "y": 475,
+      "text": "LAUNCH"
+    },
+    {
+      "type": "monitor",
+      "x": 1526,
+      "y": 263,
+      "text": "RECEIVING SCALE"
+    },
+    {
+      "type": "monitor",
+      "x": 2331,
+      "y": 255,
+      "text": "HOLD WEIGHT"
+    },
+    {
+      "type": "monitor",
+      "x": 2329,
+      "y": 478,
+      "text": "RELEASE"
+    },
+    {
+      "type": "monitor",
+      "x": 2882,
+      "y": 397,
+      "text": "EXIT LOCK"
+    },
+    {
+      "type": "monitor",
+      "x": 482,
+      "y": 457,
+      "text": "FORENSIC TRACE 72"
+    },
+    {
+      "type": "monitor",
+      "x": 199,
+      "y": 408,
+      "text": "ACCESS / 72"
+    },
+    {
+      "type": "warning_stripe",
+      "x": 356,
+      "y": 409,
+      "w": 78
+    }
+  ],
+  "latching_relays": [
+    {
+      "link_id": "proof",
+      "x": 2361,
+      "y": 355,
+      "required_links": [
+        "weight"
+      ]
+    },
+    {
+      "link_id": "overhaul_72_memory",
+      "x": 285,
+      "y": 453,
+      "required_links": [
+        "overhaul_72_generator",
+        "overhaul_72_A"
+      ]
+    },
+    {
+      "link_id": "sector_72_validated",
+      "x": 2291,
+      "y": 446,
+      "required_links": [
+        "overhaul_72_B"
+      ]
+    }
+  ],
+  "routing_consoles": [
+    {
+      "id": "overhaul_72_selector",
+      "route_id": "overhaul_72_bus",
+      "x": 374,
+      "y": 397,
+      "a_signal": "overhaul_72_A",
+      "b_signal": "overhaul_72_B"
+    }
+  ],
+  "signal_inverters": [],
+  "npcs": [
+    {
+      "id": "kip",
+      "x": 250,
+      "y": 571,
+      "dialogue": [
+        "Exterior Causeway. I have reserved us a spot on the other side.",
+        "Move the cargo right until it rests on the receiving scale.",
+        "Use the release panel."
+      ]
+    }
+  ],
+  "springs": [
+    {
+      "id": "launch",
+      "x": 862,
+      "y": 561,
+      "w": 56,
+      "h": 10
+    }
+  ],
+  "dash_recharges": [
+    {
+      "id": "ring0",
+      "x": 616,
+      "y": 473
+    },
+    {
+      "id": "span_charge2",
+      "x": 1914,
+      "y": 289
+    }
+  ],
+  "one_way_platforms": [
+    {
+      "id": "walk1",
+      "x": 1151,
+      "y": 427,
+      "w": 58,
+      "h": 12
+    },
+    {
+      "id": "overhaul_step_72_0",
+      "x": 197,
+      "y": 511,
+      "w": 78,
+      "h": 12
+    },
+    {
+      "id": "overhaul_step_72_1",
+      "x": 267,
+      "y": 453,
+      "w": 78,
+      "h": 12
+    },
+    {
+      "id": "overhaul_step_72_2",
+      "x": 356,
+      "y": 397,
+      "w": 78,
+      "h": 12
+    },
+    {
+      "id": "validation_foot_72_0",
+      "x": 2358,
+      "y": 508,
+      "w": 78,
+      "h": 12
+    },
+    {
+      "id": "validation_foot_72_1",
+      "x": 2273,
+      "y": 446,
+      "w": 78,
+      "h": 12
+    }
+  ],
+  "dash_barriers": [],
+  "level_id": 72,
+  "width": 3312,
+  "height": 922,
+  "name": "Chamber 72 // Exterior Causeway",
+  "abilities": {
+    "wall_jump": true,
+    "dash": true
+  },
+  "spawn": [
+    188,
+    525
+  ],
+  "exit": [
+    2916,
+    491
+  ],
+  "hint_route": [
+    "weight",
+    "proof",
+    "lever"
+  ],
+  "hint_notes": {
+    "weight": [
+      "Move the cargo right until it rests on the receiving scale.",
+      "Move the cargo right until it rests on the receiving scale.",
+      "Move the cargo right until it rests on the receiving scale."
+    ],
+    "proof": [
+      "Keep weight live, then interact with the recorder to hold the reading.",
+      "Keep weight live, then interact with the recorder to hold the reading.",
+      "Keep weight live, then interact with the recorder to hold the reading."
+    ],
+    "lever": [
+      "Use the release panel.",
+      "Use the release panel.",
+      "Use the release panel."
+    ]
+  },
+  "solution_steps": [
+    "Move the cargo right until it rests on the receiving scale.",
+    "Keep weight live, then interact with the recorder to hold the reading.",
+    "Use the release panel.",
+    "Energize the service bus, memorize A at the middle station, and reroute to B before proceeding."
+  ],
+  "subtitle": "Move the cargo right until it rests on the receiving scale.  //  SERVICE DETOUR: Energize the service bus, memorize A at the middle station, and reroute to B before proceeding.",
+  "chapter": 8,
+  "theme": "surface",
+  "topology": "Nocturnal Ridge Span",
+  "overhaul_version": 1,
+  "overhaul_design": {
+    "profile": "relay_bus",
+    "route": "left_up",
+    "actual_direction": 1,
+    "mandatory": true,
+    "service_platform_count": 3
+  },
+  "secondary_validation_1": {
+    "checkpoint": "beacon_72",
+    "extra_platforms": 2,
+    "signal": "sector_72_validated"
+  },
+  "side_challenge_policy": {
+    "campaign_blocking": false,
+    "optional_signals": [
+      "overhaul_72_memory",
+      "overhaul_72_B",
+      "sector_72_validated"
+    ],
+    "reason": "Not proven traversable in the Pygame engine; preserve main progression."
+  },
+  "architectural_overhaul_v2": {
+    "archetype": "Terraced Bastion Chamber",
+    "chapter": 8,
+    "theme": "surface",
+    "original_tile_count": 13,
+    "final_tile_count": 25,
+    "thickened_decks": 3,
+    "added_piers": 0,
+    "added_corbels": 6,
+    "added_soffits": 0,
+    "added_buttresses": 6
+  }
+}

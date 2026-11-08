@@ -1,0 +1,651 @@
+{
+  "tiles": [
+    [
+      0,
+      0,
+      36,
+      720
+    ],
+    [
+      2664,
+      0,
+      36,
+      720
+    ],
+    [
+      36,
+      0,
+      2628,
+      30
+    ],
+    [
+      150,
+      585,
+      390,
+      135
+    ],
+    [
+      710,
+      585,
+      340,
+      135
+    ],
+    [
+      710,
+      369,
+      340,
+      23
+    ],
+    [
+      1536,
+      369,
+      432,
+      40
+    ],
+    [
+      2138,
+      369,
+      362,
+      23
+    ],
+    [
+      2138,
+      585,
+      362,
+      135
+    ],
+    [
+      1015,
+      568,
+      10,
+      17
+    ],
+    [
+      2261,
+      451,
+      155,
+      18
+    ],
+    [
+      2398,
+      469,
+      18,
+      116
+    ],
+    [
+      1166,
+      399,
+      14,
+      150
+    ],
+    [
+      2616,
+      399,
+      14,
+      150
+    ],
+    [
+      1588,
+      409,
+      328,
+      22
+    ],
+    [
+      156,
+      30,
+      104,
+      56
+    ],
+    [
+      176,
+      86,
+      64,
+      16
+    ],
+    [
+      556,
+      30,
+      120,
+      56
+    ],
+    [
+      576,
+      86,
+      80,
+      16
+    ],
+    [
+      956,
+      30,
+      88,
+      42
+    ],
+    [
+      976,
+      72,
+      48,
+      16
+    ],
+    [
+      1356,
+      30,
+      104,
+      42
+    ],
+    [
+      1376,
+      72,
+      64,
+      16
+    ],
+    [
+      1756,
+      30,
+      120,
+      28
+    ],
+    [
+      1776,
+      58,
+      80,
+      16
+    ],
+    [
+      2156,
+      30,
+      88,
+      28
+    ],
+    [
+      2176,
+      58,
+      48,
+      16
+    ],
+    [
+      36,
+      140,
+      40,
+      64
+    ],
+    [
+      36,
+      380,
+      40,
+      80
+    ],
+    [
+      329,
+      361,
+      32,
+      120
+    ],
+    [
+      2162,
+      392,
+      36,
+      91
+    ]
+  ],
+  "ladders": [],
+  "crates": [
+    {
+      "id": "load",
+      "x": 825,
+      "y": 549
+    }
+  ],
+  "plates": [
+    {
+      "link_id": "weight",
+      "x": 967,
+      "y": 585
+    }
+  ],
+  "switches": [
+    {
+      "link_id": "timer",
+      "x": 2319,
+      "y": 369,
+      "mode": "timed",
+      "duration": 19
+    }
+  ],
+  "doors": [
+    {
+      "id": "surface_lock",
+      "x": 2261,
+      "y": 469,
+      "w": 20,
+      "h": 116,
+      "required_links": [
+        "proof",
+        "weight",
+        "timer"
+      ]
+    }
+  ],
+  "moving_platforms": [
+    {
+      "id": "car0",
+      "x": 1068,
+      "y": 577,
+      "w": 86,
+      "h": 16,
+      "end_x": 1068,
+      "end_y": 361,
+      "speed": 124,
+      "active_by_default": true,
+      "required_links": []
+    },
+    {
+      "id": "car1",
+      "x": 2518,
+      "y": 577,
+      "w": 86,
+      "h": 16,
+      "end_x": 2518,
+      "end_y": 361,
+      "speed": 124,
+      "active_by_default": true,
+      "required_links": []
+    }
+  ],
+  "conveyors": [],
+  "wind_zones": [],
+  "water_zones": [],
+  "valves": [],
+  "generators": [],
+  "cables": [
+    {
+      "link_id": "weight",
+      "points": [
+        [
+          976,
+          573
+        ],
+        [
+          976,
+          609
+        ],
+        [
+          896,
+          609
+        ],
+        [
+          896,
+          359
+        ]
+      ]
+    },
+    {
+      "link_id": "proof",
+      "points": [
+        [
+          880,
+          357
+        ],
+        [
+          880,
+          551
+        ],
+        [
+          2269,
+          551
+        ],
+        [
+          2269,
+          529
+        ]
+      ]
+    },
+    {
+      "link_id": "weight",
+      "points": [
+        [
+          967,
+          573
+        ],
+        [
+          967,
+          614
+        ],
+        [
+          2269,
+          614
+        ],
+        [
+          2269,
+          529
+        ]
+      ]
+    },
+    {
+      "link_id": "timer",
+      "points": [
+        [
+          2319,
+          357
+        ],
+        [
+          2319,
+          565
+        ],
+        [
+          2269,
+          565
+        ],
+        [
+          2269,
+          529
+        ]
+      ]
+    }
+  ],
+  "mirrors": [],
+  "crushers": [],
+  "steam_vents": [
+    {
+      "id": "seam0",
+      "x": 607,
+      "y": 500,
+      "w": 36,
+      "h": 134,
+      "period": 3.1,
+      "duty_cycle": 0.43,
+      "disabled_by": []
+    },
+    {
+      "id": "seam3",
+      "x": 2035,
+      "y": 284,
+      "w": 36,
+      "h": 134,
+      "period": 3.1,
+      "duty_cycle": 0.43,
+      "disabled_by": []
+    }
+  ],
+  "collapsing_platforms": [
+    {
+      "id": "walk0",
+      "x": 1174,
+      "y": 331,
+      "w": 68,
+      "h": 12,
+      "delay": 0.54,
+      "respawn": 2.4
+    }
+  ],
+  "checkpoints": [
+    {
+      "id": "beacon_68",
+      "x": 2435,
+      "y": 369
+    }
+  ],
+  "spikes": [],
+  "acids": [
+    {
+      "x": 36,
+      "y": 645,
+      "w": 114,
+      "h": 75
+    },
+    {
+      "x": 540,
+      "y": 645,
+      "w": 170,
+      "h": 75
+    },
+    {
+      "x": 1050,
+      "y": 645,
+      "w": 1088,
+      "h": 75
+    },
+    {
+      "x": 2500,
+      "y": 645,
+      "w": 164,
+      "h": 75
+    }
+  ],
+  "lasers": [],
+  "optical_beams": [],
+  "sequences": [],
+  "collectibles": [
+    {
+      "id": "log_68",
+      "x": 752,
+      "y": 553,
+      "title": "The Last Support / Shift Notes",
+      "text": "The Last Support. Check the signal lines before you leave the service deck."
+    },
+    {
+      "id": "field_trace_68",
+      "x": 764,
+      "y": 509,
+      "title": "FIELD TRACE 68 / SEAL & COUNTERWEIGHT SPAN",
+      "text": "ECHO-7 field diagnostics: Force cargo staging before the player commits through a dash seal.",
+      "required_links": [
+        "proof"
+      ],
+      "optional_investigation": true
+    },
+    {
+      "id": "service_challenge_68",
+      "x": 2463,
+      "y": 327,
+      "title": "Optional Diagnostics 68",
+      "text": "Optional auxiliary service record recovered. This archive is no longer linked to a redundant side circuit and does not gate the exit.",
+      "required_links": [],
+      "optional_investigation": true
+    }
+  ],
+  "decorations": [
+    {
+      "type": "warning_stripe",
+      "x": 722,
+      "y": 381,
+      "w": 120
+    },
+    {
+      "type": "warning_stripe",
+      "x": 1548,
+      "y": 381,
+      "w": 120
+    },
+    {
+      "type": "warning_stripe",
+      "x": 2150,
+      "y": 381,
+      "w": 120
+    },
+    {
+      "type": "monitor",
+      "x": 904,
+      "y": 493,
+      "text": "RECEIVING SCALE"
+    },
+    {
+      "type": "monitor",
+      "x": 850,
+      "y": 269,
+      "text": "HOLD WEIGHT"
+    },
+    {
+      "type": "monitor",
+      "x": 1708,
+      "y": 237,
+      "text": "DASH SEAL"
+    },
+    {
+      "type": "monitor",
+      "x": 2287,
+      "y": 276,
+      "text": "ESCAPE 19s"
+    },
+    {
+      "type": "monitor",
+      "x": 2284,
+      "y": 411,
+      "text": "EXIT LOCK"
+    },
+    {
+      "type": "monitor",
+      "x": 777,
+      "y": 471,
+      "text": "FORENSIC TRACE 68"
+    }
+  ],
+  "latching_relays": [
+    {
+      "link_id": "proof",
+      "x": 880,
+      "y": 369,
+      "required_links": [
+        "weight"
+      ]
+    }
+  ],
+  "routing_consoles": [],
+  "signal_inverters": [],
+  "npcs": [
+    {
+      "id": "kip",
+      "x": 250,
+      "y": 585,
+      "dialogue": [
+        "The Last Support. The crate gets paid by the metre.",
+        "Move the cargo right until it rests on the receiving scale.",
+        "Start the clock after the other lock lights are green."
+      ]
+    }
+  ],
+  "springs": [],
+  "dash_recharges": [],
+  "one_way_platforms": [
+    {
+      "id": "walk1",
+      "x": 1348,
+      "y": 403,
+      "w": 68,
+      "h": 12
+    }
+  ],
+  "dash_barriers": [
+    {
+      "id": "seal",
+      "x": 1752,
+      "y": 281,
+      "w": 24,
+      "h": 88
+    }
+  ],
+  "level_id": 68,
+  "width": 2700,
+  "height": 720,
+  "name": "Chamber 68 // The Last Support",
+  "abilities": {
+    "wall_jump": true,
+    "dash": true
+  },
+  "spawn": [
+    188,
+    539
+  ],
+  "exit": [
+    2318,
+    505
+  ],
+  "hint_route": [
+    "weight",
+    "proof",
+    "timer"
+  ],
+  "hint_notes": {
+    "weight": [
+      "Move the cargo right until it rests on the receiving scale.",
+      "Move the cargo right until it rests on the receiving scale.",
+      "Move the cargo right until it rests on the receiving scale."
+    ],
+    "proof": [
+      "Keep weight live, then interact with the recorder to hold the reading.",
+      "Keep weight live, then interact with the recorder to hold the reading.",
+      "Keep weight live, then interact with the recorder to hold the reading."
+    ],
+    "timer": [
+      "Start the clock after the other lock lights are green.",
+      "Start the clock after the other lock lights are green.",
+      "Start the clock after the other lock lights are green."
+    ]
+  },
+  "solution_steps": [
+    "Move the cargo right until it rests on the receiving scale.",
+    "Keep weight live, then interact with the recorder to hold the reading.",
+    "Start the clock after the other lock lights are green."
+  ],
+  "subtitle": "Move the cargo right until it rests on the receiving scale.",
+  "chapter": 7,
+  "theme": "spire",
+  "topology": "Seal & Counterweight Span",
+  "overhaul_version": 1,
+  "overhaul_design": {
+    "profile": "route_proof",
+    "route": "left_switchback",
+    "actual_direction": 1,
+    "mandatory": false,
+    "service_platform_count": 0,
+    "retired_by_cleanup": true
+  },
+  "secondary_validation_1": {
+    "checkpoint": "beacon_68",
+    "extra_platforms": 0,
+    "signal": "sector_68_validated",
+    "retired_by_cleanup": true
+  },
+  "side_challenge_policy": {
+    "campaign_blocking": false,
+    "optional_signals": [],
+    "reason": "Deprecated optional side circuit removed; service record remains accessible."
+  },
+  "architectural_overhaul_v2": {
+    "archetype": "Collapsed Observatory Catwalk Hall",
+    "chapter": 7,
+    "theme": "spire",
+    "original_tile_count": 14,
+    "final_tile_count": 31,
+    "thickened_decks": 1,
+    "added_piers": 0,
+    "added_corbels": 1,
+    "added_soffits": 6,
+    "added_buttresses": 2,
+    "tiles_before_cleanup_pass": 29,
+    "removed_legacy_platforms": 5,
+    "removed_legacy_devices": 3,
+    "added_partition_walls": 1,
+    "added_grounded_piers": 1,
+    "added_stepped_terraces": 0
+  },
+  "cleanup_v3_audit": {
+    "level": 68,
+    "chapter": 7,
+    "theme": "spire",
+    "name": "Chamber 68 // The Last Support",
+    "archetype": "Collapsed Observatory Catwalk Hall",
+    "orig_backup_tiles": 14,
+    "final_tiles": 31,
+    "removed_platforms": 5,
+    "retained_platforms": 1,
+    "removed_devices": 3,
+    "added_walls": 1,
+    "added_piers": 0,
+    "added_terraces": 0,
+    "gate_links": [
+      "proof",
+      "weight",
+      "timer"
+    ]
+  }
+}

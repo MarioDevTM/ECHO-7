@@ -1,0 +1,868 @@
+{
+  "tiles": [
+    [
+      0,
+      0,
+      36,
+      970
+    ],
+    [
+      3290,
+      0,
+      36,
+      970
+    ],
+    [
+      36,
+      0,
+      3254,
+      30
+    ],
+    [
+      150,
+      595,
+      432,
+      40
+    ],
+    [
+      756,
+      595,
+      362,
+      23
+    ],
+    [
+      756,
+      835,
+      362,
+      135
+    ],
+    [
+      1292,
+      835,
+      390,
+      135
+    ],
+    [
+      2180,
+      835,
+      340,
+      135
+    ],
+    [
+      2180,
+      595,
+      340,
+      23
+    ],
+    [
+      2694,
+      595,
+      432,
+      40
+    ],
+    [
+      2694,
+      355,
+      432,
+      23
+    ],
+    [
+      1083,
+      818,
+      10,
+      17
+    ],
+    [
+      2852,
+      221,
+      155,
+      18
+    ],
+    [
+      2989,
+      239,
+      18,
+      116
+    ],
+    [
+      202,
+      635,
+      328,
+      22
+    ],
+    [
+      808,
+      618,
+      258,
+      22
+    ],
+    [
+      2232,
+      618,
+      236,
+      22
+    ],
+    [
+      2746,
+      635,
+      328,
+      22
+    ],
+    [
+      2746,
+      378,
+      328,
+      22
+    ],
+    [
+      156,
+      30,
+      134,
+      56
+    ],
+    [
+      176,
+      86,
+      94,
+      16
+    ],
+    [
+      556,
+      30,
+      102,
+      56
+    ],
+    [
+      576,
+      86,
+      62,
+      16
+    ],
+    [
+      956,
+      30,
+      118,
+      42
+    ],
+    [
+      976,
+      72,
+      78,
+      16
+    ],
+    [
+      1356,
+      30,
+      134,
+      42
+    ],
+    [
+      1376,
+      72,
+      94,
+      16
+    ],
+    [
+      1756,
+      30,
+      102,
+      28
+    ],
+    [
+      1776,
+      58,
+      62,
+      16
+    ],
+    [
+      2156,
+      30,
+      118,
+      28
+    ],
+    [
+      2176,
+      58,
+      78,
+      16
+    ],
+    [
+      2556,
+      30,
+      134,
+      56
+    ],
+    [
+      2576,
+      86,
+      94,
+      16
+    ],
+    [
+      2956,
+      30,
+      102,
+      56
+    ],
+    [
+      36,
+      140,
+      40,
+      86
+    ],
+    [
+      36,
+      380,
+      40,
+      70
+    ],
+    [
+      36,
+      620,
+      40,
+      86
+    ],
+    [
+      3250,
+      660,
+      40,
+      86
+    ]
+  ],
+  "ladders": [],
+  "crates": [
+    {
+      "id": "load",
+      "x": 871,
+      "y": 799
+    }
+  ],
+  "plates": [
+    {
+      "link_id": "weight",
+      "x": 1035,
+      "y": 835
+    }
+  ],
+  "switches": [
+    {
+      "link_id": "timer",
+      "x": 2910,
+      "y": 595,
+      "mode": "timed",
+      "duration": 19
+    }
+  ],
+  "doors": [
+    {
+      "id": "surface_lock",
+      "x": 2852,
+      "y": 239,
+      "w": 20,
+      "h": 116,
+      "required_links": [
+        "alpha",
+        "beta",
+        "valve",
+        "timer"
+      ]
+    }
+  ],
+  "moving_platforms": [
+    {
+      "id": "car0",
+      "x": 1136,
+      "y": 827,
+      "w": 86,
+      "h": 16,
+      "end_x": 1136,
+      "end_y": 587,
+      "speed": 116,
+      "active_by_default": true,
+      "required_links": []
+    },
+    {
+      "id": "car1",
+      "x": 1686,
+      "y": 821,
+      "w": 108,
+      "h": 16,
+      "end_x": 2067,
+      "end_y": 821,
+      "speed": 116,
+      "active_by_default": false,
+      "required_links": [
+        "full"
+      ]
+    },
+    {
+      "id": "car2",
+      "x": 2538,
+      "y": 827,
+      "w": 86,
+      "h": 16,
+      "end_x": 2538,
+      "end_y": 587,
+      "speed": 116,
+      "active_by_default": true,
+      "required_links": []
+    }
+  ],
+  "conveyors": [],
+  "wind_zones": [],
+  "water_zones": [
+    {
+      "id": "sump",
+      "x": 786,
+      "y": 717,
+      "w": 312,
+      "h": 118,
+      "drained_y": 835,
+      "controlled_by": "dry"
+    }
+  ],
+  "valves": [
+    {
+      "link_id": "dry",
+      "x": 937,
+      "y": 595
+    },
+    {
+      "link_id": "valve",
+      "x": 2350,
+      "y": 835
+    }
+  ],
+  "generators": [],
+  "cables": [
+    {
+      "link_id": "weight",
+      "points": [
+        [
+          1044,
+          823
+        ],
+        [
+          1044,
+          859
+        ],
+        [
+          1503,
+          859
+        ],
+        [
+          1503,
+          825
+        ]
+      ]
+    },
+    {
+      "link_id": "alpha",
+      "points": [
+        [
+          1496,
+          823
+        ],
+        [
+          1496,
+          859
+        ],
+        [
+          2366,
+          859
+        ],
+        [
+          2366,
+          585
+        ]
+      ]
+    },
+    {
+      "link_id": "full",
+      "points": [
+        [
+          807,
+          703
+        ],
+        [
+          807,
+          746
+        ],
+        [
+          2366,
+          746
+        ],
+        [
+          2366,
+          585
+        ]
+      ]
+    },
+    {
+      "link_id": "alpha",
+      "points": [
+        [
+          1487,
+          823
+        ],
+        [
+          1487,
+          857
+        ],
+        [
+          2860,
+          857
+        ],
+        [
+          2860,
+          299
+        ]
+      ]
+    },
+    {
+      "link_id": "beta",
+      "points": [
+        [
+          2350,
+          583
+        ],
+        [
+          2350,
+          624
+        ],
+        [
+          2860,
+          624
+        ],
+        [
+          2860,
+          299
+        ]
+      ]
+    },
+    {
+      "link_id": "valve",
+      "points": [
+        [
+          2350,
+          823
+        ],
+        [
+          2350,
+          871
+        ],
+        [
+          2860,
+          871
+        ],
+        [
+          2860,
+          299
+        ]
+      ]
+    },
+    {
+      "link_id": "timer",
+      "points": [
+        [
+          2910,
+          583
+        ],
+        [
+          2910,
+          638
+        ],
+        [
+          2860,
+          638
+        ],
+        [
+          2860,
+          299
+        ]
+      ]
+    }
+  ],
+  "mirrors": [],
+  "crushers": [],
+  "steam_vents": [
+    {
+      "id": "seam0",
+      "x": 651,
+      "y": 510,
+      "w": 36,
+      "h": 134,
+      "period": 3.1,
+      "duty_cycle": 0.43,
+      "disabled_by": []
+    },
+    {
+      "id": "seam3",
+      "x": 1913,
+      "y": 750,
+      "w": 36,
+      "h": 134,
+      "period": 3.1,
+      "duty_cycle": 0.43,
+      "disabled_by": []
+    }
+  ],
+  "collapsing_platforms": [],
+  "checkpoints": [
+    {
+      "id": "beacon_50",
+      "x": 3061,
+      "y": 595
+    }
+  ],
+  "spikes": [],
+  "acids": [
+    {
+      "x": 36,
+      "y": 895,
+      "w": 720,
+      "h": 75
+    },
+    {
+      "x": 1118,
+      "y": 895,
+      "w": 174,
+      "h": 75
+    },
+    {
+      "x": 1682,
+      "y": 895,
+      "w": 498,
+      "h": 75
+    },
+    {
+      "x": 2520,
+      "y": 895,
+      "w": 770,
+      "h": 75
+    }
+  ],
+  "lasers": [],
+  "optical_beams": [],
+  "sequences": [],
+  "collectibles": [
+    {
+      "id": "log_50",
+      "x": 798,
+      "y": 563,
+      "title": "The Reservoir / Shift Notes",
+      "text": "The Reservoir. Check the signal lines before you leave the service deck."
+    },
+    {
+      "id": "field_trace_50",
+      "x": 435,
+      "y": 519,
+      "title": "FIELD TRACE 50 / MULTI-STAGE HYDRO FINALE",
+      "text": "ECHO-7 field diagnostics: Create a branching reservoir puzzle with two remembered tank controls and one final isolation choice.",
+      "required_links": [
+        "alpha"
+      ],
+      "optional_investigation": true
+    },
+    {
+      "id": "service_challenge_50",
+      "x": 3089,
+      "y": 553,
+      "title": "Optional Diagnostics 50",
+      "text": "Optional auxiliary service record recovered. This archive is no longer linked to a redundant side circuit and does not gate the exit.",
+      "required_links": [],
+      "optional_investigation": true
+    }
+  ],
+  "decorations": [
+    {
+      "type": "warning_stripe",
+      "x": 162,
+      "y": 607,
+      "w": 120
+    },
+    {
+      "type": "warning_stripe",
+      "x": 768,
+      "y": 607,
+      "w": 120
+    },
+    {
+      "type": "warning_stripe",
+      "x": 2192,
+      "y": 607,
+      "w": 120
+    },
+    {
+      "type": "warning_stripe",
+      "x": 2706,
+      "y": 607,
+      "w": 120
+    },
+    {
+      "type": "warning_stripe",
+      "x": 2706,
+      "y": 367,
+      "w": 120
+    },
+    {
+      "type": "monitor",
+      "x": 889,
+      "y": 503,
+      "text": "DRAIN / FILL"
+    },
+    {
+      "type": "monitor",
+      "x": 972,
+      "y": 743,
+      "text": "RECEIVING SCALE"
+    },
+    {
+      "type": "monitor",
+      "x": 1457,
+      "y": 735,
+      "text": "HOLD WEIGHT"
+    },
+    {
+      "type": "monitor",
+      "x": 2302,
+      "y": 743,
+      "text": "ISOLATE"
+    },
+    {
+      "type": "monitor",
+      "x": 2320,
+      "y": 495,
+      "text": "HOLD ALPHA + FULL"
+    },
+    {
+      "type": "monitor",
+      "x": 2878,
+      "y": 502,
+      "text": "ESCAPE 19s"
+    },
+    {
+      "type": "monitor",
+      "x": 2875,
+      "y": 181,
+      "text": "EXIT LOCK"
+    },
+    {
+      "type": "monitor",
+      "x": 448,
+      "y": 481,
+      "text": "FORENSIC TRACE 50"
+    }
+  ],
+  "latching_relays": [
+    {
+      "link_id": "alpha",
+      "x": 1487,
+      "y": 835,
+      "required_links": [
+        "weight"
+      ]
+    },
+    {
+      "link_id": "beta",
+      "x": 2350,
+      "y": 595,
+      "required_links": [
+        "alpha",
+        "full"
+      ]
+    }
+  ],
+  "routing_consoles": [],
+  "signal_inverters": [
+    {
+      "link_id": "full",
+      "input": "dry",
+      "water_zone": "sump"
+    }
+  ],
+  "npcs": [
+    {
+      "id": "kip",
+      "x": 250,
+      "y": 595,
+      "dialogue": [
+        "The Reservoir. Our lift has ambitions. Mostly upward.",
+        "Turn the handwheel and watch which machinery changes.",
+        "Start the clock after the other lock lights are green."
+      ]
+    },
+    {
+      "id": "ada",
+      "x": 2738,
+      "y": 355
+    }
+  ],
+  "springs": [],
+  "dash_recharges": [],
+  "one_way_platforms": [
+    {
+      "id": "walk0",
+      "x": 1906,
+      "y": 920,
+      "w": 56,
+      "h": 12
+    },
+    {
+      "id": "walk1",
+      "x": 3166,
+      "y": 515,
+      "w": 83,
+      "h": 12
+    },
+    {
+      "id": "walk2",
+      "x": 3126,
+      "y": 435,
+      "w": 83,
+      "h": 12
+    },
+    {
+      "id": "walk3",
+      "x": 3166,
+      "y": 355,
+      "w": 83,
+      "h": 12
+    }
+  ],
+  "dash_barriers": [],
+  "level_id": 50,
+  "width": 3326,
+  "height": 970,
+  "name": "Chamber 50 // The Reservoir",
+  "abilities": {
+    "wall_jump": true,
+    "dash": true
+  },
+  "spawn": [
+    188,
+    549
+  ],
+  "exit": [
+    2909,
+    275
+  ],
+  "hint_route": [
+    "dry",
+    "weight",
+    "alpha",
+    "full",
+    "beta",
+    "valve",
+    "timer"
+  ],
+  "hint_notes": {
+    "dry": [
+      "Turn the handwheel and watch which machinery changes.",
+      "Turn the handwheel and watch which machinery changes.",
+      "Turn the handwheel and watch which machinery changes."
+    ],
+    "weight": [
+      "Move the cargo right until it rests on the receiving scale.",
+      "Move the cargo right until it rests on the receiving scale.",
+      "Move the cargo right until it rests on the receiving scale."
+    ],
+    "alpha": [
+      "Keep weight live, then interact with the recorder to hold the reading.",
+      "Keep weight live, then interact with the recorder to hold the reading.",
+      "Keep weight live, then interact with the recorder to hold the reading."
+    ],
+    "full": [
+      "Open the inlet again and let the basin refill. The float will lift off the scale.",
+      "Open the inlet again and let the basin refill. The float will lift off the scale.",
+      "Open the inlet again and let the basin refill. The float will lift off the scale."
+    ],
+    "beta": [
+      "Keep alpha and full live, then interact with the recorder to hold the reading.",
+      "Keep alpha and full live, then interact with the recorder to hold the reading.",
+      "Keep alpha and full live, then interact with the recorder to hold the reading."
+    ],
+    "valve": [
+      "Turn the handwheel and watch which machinery changes.",
+      "Turn the handwheel and watch which machinery changes.",
+      "Turn the handwheel and watch which machinery changes."
+    ],
+    "timer": [
+      "Start the clock after the other lock lights are green.",
+      "Start the clock after the other lock lights are green.",
+      "Start the clock after the other lock lights are green."
+    ]
+  },
+  "solution_steps": [
+    "Turn the handwheel and watch which machinery changes.",
+    "Move the cargo right until it rests on the receiving scale.",
+    "Keep weight live, then interact with the recorder to hold the reading.",
+    "Open the inlet again and let the basin refill. The float will lift off the scale.",
+    "Keep alpha and full live, then interact with the recorder to hold the reading.",
+    "Turn the handwheel and watch which machinery changes.",
+    "Start the clock after the other lock lights are green."
+  ],
+  "subtitle": "Turn the handwheel and watch which machinery changes.",
+  "chapter": 5,
+  "theme": "environmental",
+  "topology": "Multi-Stage Hydro Finale",
+  "overhaul_version": 1,
+  "overhaul_design": {
+    "profile": "generator_relay",
+    "route": "right_rise",
+    "actual_direction": 1,
+    "mandatory": false,
+    "service_platform_count": 0,
+    "retired_by_cleanup": true
+  },
+  "secondary_validation_1": {
+    "checkpoint": "beacon_50",
+    "extra_platforms": 0,
+    "signal": "sector_50_validated",
+    "retired_by_cleanup": true
+  },
+  "side_challenge_policy": {
+    "campaign_blocking": false,
+    "optional_signals": [],
+    "reason": "Deprecated optional side circuit removed; service record remains accessible."
+  },
+  "architectural_overhaul_v2": {
+    "archetype": "Stepped Hydraulic Caisson & Manifold Bay",
+    "chapter": 5,
+    "theme": "environmental",
+    "original_tile_count": 14,
+    "final_tile_count": 38,
+    "thickened_decks": 2,
+    "added_piers": 0,
+    "added_corbels": 5,
+    "added_soffits": 8,
+    "added_buttresses": 4,
+    "tiles_before_cleanup_pass": 38,
+    "removed_legacy_platforms": 5,
+    "removed_legacy_devices": 3,
+    "added_partition_walls": 0,
+    "added_grounded_piers": 0,
+    "added_stepped_terraces": 0
+  },
+  "cleanup_v3_audit": {
+    "level": 50,
+    "chapter": 5,
+    "theme": "environmental",
+    "name": "Chamber 50 // The Reservoir",
+    "archetype": "Stepped Hydraulic Caisson & Manifold Bay",
+    "orig_backup_tiles": 14,
+    "final_tiles": 38,
+    "removed_platforms": 5,
+    "retained_platforms": 4,
+    "removed_devices": 3,
+    "added_walls": 0,
+    "added_piers": 0,
+    "added_terraces": 0,
+    "gate_links": [
+      "alpha",
+      "beta",
+      "valve",
+      "timer"
+    ]
+  }
+}

@@ -1,0 +1,327 @@
+{
+  "level_id": 9,
+  "hint_route": [
+    "hatch",
+    "gen_9_2",
+    "plate_9"
+  ],
+  "chapter": 1,
+  "theme": "awakening",
+  "name": "Chamber 09 // Power Failure",
+  "subtitle": "The west substation feeds the car. Its remote feeder frees the supply for the hatch.",
+  "width": 1820,
+  "height": 1040,
+  "spawn": [
+    80,
+    839
+  ],
+  "exit": [
+    1696,
+    310
+  ],
+  "tiles": [
+    [
+      0,
+      0,
+      40,
+      1040
+    ],
+    [
+      40,
+      0,
+      1740,
+      32
+    ],
+    [
+      1780,
+      0,
+      40,
+      1040
+    ],
+    [
+      40,
+      885,
+      690,
+      155
+    ],
+    [
+      1180,
+      765,
+      600,
+      275
+    ],
+    [
+      1625,
+      270,
+      155,
+      20
+    ],
+    [
+      1625,
+      390,
+      155,
+      20
+    ]
+  ],
+  "ladders": [],
+  "crates": [
+    {
+      "id": "cell",
+      "x": 1300,
+      "y": 729
+    }
+  ],
+  "plates": [
+    {
+      "link_id": "plate_9",
+      "x": 1540,
+      "y": 765
+    }
+  ],
+  "switches": [],
+  "doors": [
+    {
+      "id": "d9_exit",
+      "x": 1625,
+      "y": 290,
+      "w": 24,
+      "h": 100,
+      "required_links": [
+        "hatch",
+        "gen_9_2",
+        "plate_9"
+      ],
+      "logic": "ALL"
+    }
+  ],
+  "moving_platforms": [
+    {
+      "id": "mp9_lift",
+      "x": 735,
+      "y": 870,
+      "w": 122,
+      "h": 18,
+      "end_x": 1050,
+      "end_y": 752,
+      "speed": 112,
+      "active_by_default": false,
+      "logic": "ANY",
+      "required_links": [
+        "car",
+        "gen_9_2"
+      ]
+    }
+  ],
+  "conveyors": [],
+  "wind_zones": [],
+  "water_zones": [],
+  "valves": [],
+  "generators": [
+    {
+      "link_id": "gen_9_1",
+      "x": 245,
+      "y": 885
+    },
+    {
+      "link_id": "gen_9_2",
+      "x": 1310,
+      "y": 500
+    }
+  ],
+  "cables": [
+    {
+      "link_id": "gen_9_2",
+      "points": [
+        [
+          1322,
+          486
+        ],
+        [
+          1322,
+          546
+        ],
+        [
+          1633,
+          546
+        ],
+        [
+          1633,
+          340
+        ]
+      ]
+    },
+    {
+      "link_id": "plate_9",
+      "points": [
+        [
+          1552,
+          751
+        ],
+        [
+          1552,
+          817
+        ],
+        [
+          1633,
+          817
+        ],
+        [
+          1633,
+          340
+        ]
+      ]
+    },
+    {
+      "link_id": "gen_9_2",
+      "points": [
+        [
+          1322,
+          486
+        ],
+        [
+          1322,
+          922
+        ],
+        [
+          743,
+          922
+        ],
+        [
+          743,
+          862
+        ]
+      ]
+    }
+  ],
+  "mirrors": [],
+  "crushers": [],
+  "steam_vents": [],
+  "collapsing_platforms": [],
+  "checkpoints": [
+    {
+      "id": "cp9_1",
+      "x": 1220,
+      "y": 765
+    }
+  ],
+  "spikes": [],
+  "acids": [
+    {
+      "x": 730,
+      "y": 950,
+      "w": 450,
+      "h": 90
+    }
+  ],
+  "lasers": [],
+  "optical_beams": [],
+  "sequences": [],
+  "collectibles": [
+    {
+      "id": "log_09",
+      "x": 1500,
+      "y": 384,
+      "title": "Grid Collapse Log",
+      "text": "Main reactor scrammed. Auxiliary diesel-electric turbines remain operational."
+    }
+  ],
+  "decorations": [
+    {
+      "type": "monitor",
+      "x": 1284,
+      "y": 411,
+      "text": "BACKUP FEED"
+    },
+    {
+      "type": "monitor",
+      "x": 464,
+      "y": 796,
+      "text": "CAR / HATCH"
+    }
+  ],
+  "solution_steps": [
+    "Energize the west feeder. Cross on the car, park the cell and climb the east substation to start backup.",
+    "Return west and transfer the supply to the hatch. Backup now carries the crossing."
+  ],
+  "npcs": [
+    {
+      "id": "kip",
+      "x": 150,
+      "y": 885
+    }
+  ],
+  "abilities": {
+    "wall_jump": true,
+    "dash": true
+  },
+  "springs": [],
+  "dash_recharges": [
+    {
+      "id": "ring980",
+      "x": 980,
+      "y": 715
+    }
+  ],
+  "one_way_platforms": [
+    {
+      "id": "deck1210_675",
+      "x": 1210,
+      "y": 675,
+      "w": 120,
+      "h": 14
+    },
+    {
+      "id": "deck1430_585",
+      "x": 1430,
+      "y": 585,
+      "w": 120,
+      "h": 14
+    },
+    {
+      "id": "deck1260_500",
+      "x": 1260,
+      "y": 500,
+      "w": 105,
+      "h": 14
+    },
+    {
+      "id": "deck1470_416",
+      "x": 1470,
+      "y": 416,
+      "w": 124,
+      "h": 14
+    }
+  ],
+  "dash_barriers": [],
+  "routing_consoles": [
+    {
+      "id": "west",
+      "x": 490,
+      "y": 885,
+      "route_id": "feed",
+      "a_signal": "car",
+      "b_signal": "hatch",
+      "required_links": [
+        "gen_9_1"
+      ]
+    }
+  ],
+  "latching_relays": [],
+  "hint_notes": {
+    "hatch": [
+      "The west substation feeds the car. Its remote feeder frees the supply for the hatch.",
+      "Energize the west feeder. Cross on the car, park the cell and climb the east substation to start backup.",
+      "Return west and transfer the supply to the hatch. Backup now carries the crossing."
+    ],
+    "gen_9_2": [
+      "The west substation feeds the car. Its remote feeder frees the supply for the hatch.",
+      "Energize the west feeder. Cross on the car, park the cell and climb the east substation to start backup.",
+      "Return west and transfer the supply to the hatch. Backup now carries the crossing."
+    ],
+    "plate_9": [
+      "The west substation feeds the car. Its remote feeder frees the supply for the hatch.",
+      "Energize the west feeder. Cross on the car, park the cell and climb the east substation to start backup.",
+      "Return west and transfer the supply to the hatch. Backup now carries the crossing."
+    ]
+  }
+}

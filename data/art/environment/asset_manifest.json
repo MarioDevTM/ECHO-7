@@ -1,0 +1,965 @@
+{
+  "source_sheet": {
+    "supplied_filename": "Image 1 (ChatGPT Image Nov 6, 2026, 04_16_47 AM-9.png)",
+    "size": [
+      1448,
+      1086
+    ],
+    "transparent_output": "data/art/environment/environment_asset_sheet_transparent.png"
+  },
+  "chapter_file_mapping": {
+    "chapter_01": {
+      "supplied_filename": "Chapter1.png",
+      "Prompt_Image_Order": "Image 9",
+      "theme": "awakening",
+      "output_file": "data/art/backgrounds/chapter_01.png"
+    },
+    "chapter_02": {
+      "supplied_filename": "Chapter2.png",
+      "Prompt_Image_Order": "Image 8",
+      "theme": "mechanical",
+      "output_file": "data/art/backgrounds/chapter_02.png"
+    },
+    "chapter_03": {
+      "supplied_filename": "Chapter3.png",
+      "Prompt_Image_Order": "Image 7",
+      "theme": "power",
+      "output_file": "data/art/backgrounds/chapter_03.png"
+    },
+    "chapter_04": {
+      "supplied_filename": "Chapter4.png",
+      "Prompt_Image_Order": "Image 6",
+      "theme": "optical",
+      "output_file": "data/art/backgrounds/chapter_04.png"
+    },
+    "chapter_05": {
+      "supplied_filename": "Chapter5.png",
+      "Prompt_Image_Order": "Image 5",
+      "theme": "environmental",
+      "output_file": "data/art/backgrounds/chapter_05.png"
+    },
+    "chapter_06": {
+      "supplied_filename": "Chapter6.png",
+      "Prompt_Image_Order": "Image 4",
+      "theme": "furnace",
+      "output_file": "data/art/backgrounds/chapter_06.png"
+    },
+    "chapter_07": {
+      "supplied_filename": "Chapter7.png",
+      "Prompt_Image_Order": "Image 3",
+      "theme": "spire",
+      "output_file": "data/art/backgrounds/chapter_07.png"
+    },
+    "chapter_08": {
+      "supplied_filename": "Chapter8.png",
+      "Prompt_Image_Order": "Image 2",
+      "theme": "surface",
+      "output_file": "data/art/backgrounds/chapter_08.png"
+    }
+  },
+  "separated_rotors": {
+    "rotor_ch1_turbine": {
+      "file": "data/art/environment/rotor_ch1_turbine.png",
+      "chapter": 1,
+      "center": [
+        950,
+        510
+      ],
+      "radius": 46
+    },
+    "rotor_ch2_gear": {
+      "file": "data/art/environment/rotor_ch2_gear.png",
+      "chapter": 2,
+      "center": [
+        776,
+        370
+      ],
+      "radius": 62
+    },
+    "rotor_ch5_turbine": {
+      "file": "data/art/environment/rotor_ch5_turbine.png",
+      "chapter": 5,
+      "center": [
+        824,
+        342
+      ],
+      "radius": 56
+    }
+  },
+  "sprites": {
+    "wall_tile_steel": {
+      "file": "data/art/environment/wall_tile_steel.png",
+      "sheet_rect": [
+        10,
+        8,
+        58,
+        58
+      ],
+      "size": [
+        58,
+        58
+      ],
+      "anchor": [
+        29,
+        58
+      ],
+      "padding_px": 2,
+      "runtime_use": "SceneRenderer.draw_platform (interior wall/platform fill)"
+    },
+    "wall_tile_panel": {
+      "file": "data/art/environment/wall_tile_panel.png",
+      "sheet_rect": [
+        74,
+        80,
+        70,
+        72
+      ],
+      "size": [
+        70,
+        72
+      ],
+      "anchor": [
+        35,
+        72
+      ],
+      "padding_px": 2,
+      "runtime_use": "SceneRenderer.draw_platform (tech panel fill)"
+    },
+    "wall_tile_vines": {
+      "file": "data/art/environment/wall_tile_vines.png",
+      "sheet_rect": [
+        334,
+        8,
+        78,
+        74
+      ],
+      "size": [
+        78,
+        74
+      ],
+      "anchor": [
+        39,
+        74
+      ],
+      "padding_px": 2,
+      "runtime_use": "SceneRenderer.draw_platform (Chapter 1 & 8 overgrown wall tile)"
+    },
+    "wall_lamp_warm": {
+      "file": "data/art/environment/wall_lamp_warm.png",
+      "sheet_rect": [
+        334,
+        150,
+        118,
+        74
+      ],
+      "size": [
+        118,
+        74
+      ],
+      "anchor": [
+        59,
+        74
+      ],
+      "padding_px": 2,
+      "runtime_use": "SceneRenderer.draw_room_scenery (Chapter 2 & 6 wall sconce)"
+    },
+    "wall_lamp_cyan": {
+      "file": "data/art/environment/wall_lamp_cyan.png",
+      "sheet_rect": [
+        462,
+        150,
+        60,
+        74
+      ],
+      "size": [
+        60,
+        74
+      ],
+      "anchor": [
+        30,
+        74
+      ],
+      "padding_px": 2,
+      "runtime_use": "SceneRenderer.draw_room_scenery (Chapter 1, 3, 5 wall lamp)"
+    },
+    "pipe_alcove_curved": {
+      "file": "data/art/environment/pipe_alcove_curved.png",
+      "sheet_rect": [
+        528,
+        8,
+        106,
+        88
+      ],
+      "size": [
+        106,
+        88
+      ],
+      "anchor": [
+        53,
+        88
+      ],
+      "padding_px": 2,
+      "runtime_use": "SceneRenderer.draw_room_scenery (structural pipe junction)"
+    },
+    "platform_solid_long": {
+      "file": "data/art/environment/platform_solid_long.png",
+      "sheet_rect": [
+        768,
+        12,
+        176,
+        30
+      ],
+      "size": [
+        176,
+        30
+      ],
+      "anchor": [
+        88,
+        30
+      ],
+      "padding_px": 2,
+      "runtime_use": "MovingPlatform.draw & CollapsingPlatform.draw (catwalk deck)"
+    },
+    "platform_hazard_long": {
+      "file": "data/art/environment/platform_hazard_long.png",
+      "sheet_rect": [
+        768,
+        52,
+        138,
+        56
+      ],
+      "size": [
+        138,
+        56
+      ],
+      "anchor": [
+        69,
+        56
+      ],
+      "padding_px": 2,
+      "runtime_use": "SceneRenderer.draw_platform & MovingPlatform.draw (hazard trim)"
+    },
+    "platform_hazard_wide": {
+      "file": "data/art/environment/platform_hazard_wide.png",
+      "sheet_rect": [
+        922,
+        52,
+        212,
+        56
+      ],
+      "size": [
+        212,
+        56
+      ],
+      "anchor": [
+        106,
+        56
+      ],
+      "padding_px": 2,
+      "runtime_use": "SceneRenderer.draw_platform (wide industrial hazard beam)"
+    },
+    "platform_cap_pillar": {
+      "file": "data/art/environment/platform_cap_pillar.png",
+      "sheet_rect": [
+        1216,
+        114,
+        62,
+        108
+      ],
+      "size": [
+        62,
+        108
+      ],
+      "anchor": [
+        31,
+        108
+      ],
+      "padding_px": 2,
+      "runtime_use": "SceneRenderer.draw_platform (vertical support stanchion)"
+    },
+    "railing_yellow_long": {
+      "file": "data/art/environment/railing_yellow_long.png",
+      "sheet_rect": [
+        770,
+        232,
+        154,
+        32
+      ],
+      "size": [
+        154,
+        32
+      ],
+      "anchor": [
+        77,
+        32
+      ],
+      "padding_px": 2,
+      "runtime_use": "SceneRenderer.draw_room_scenery (long safety catwalk railing)"
+    },
+    "railing_yellow_med": {
+      "file": "data/art/environment/railing_yellow_med.png",
+      "sheet_rect": [
+        944,
+        232,
+        100,
+        32
+      ],
+      "size": [
+        100,
+        32
+      ],
+      "anchor": [
+        50,
+        32
+      ],
+      "padding_px": 2,
+      "runtime_use": "SceneRenderer.draw_room_scenery (medium catwalk railing)"
+    },
+    "window_cyan_lab": {
+      "file": "data/art/environment/window_cyan_lab.png",
+      "sheet_rect": [
+        770,
+        278,
+        182,
+        80
+      ],
+      "size": [
+        182,
+        80
+      ],
+      "anchor": [
+        91,
+        80
+      ],
+      "padding_px": 2,
+      "runtime_use": "SceneRenderer.draw_landmark (Chapter 1 & 5 lab window bay)"
+    },
+    "window_purple_optical": {
+      "file": "data/art/environment/window_purple_optical.png",
+      "sheet_rect": [
+        966,
+        278,
+        166,
+        80
+      ],
+      "size": [
+        166,
+        80
+      ],
+      "anchor": [
+        83,
+        80
+      ],
+      "padding_px": 2,
+      "runtime_use": "SceneRenderer.draw_landmark (Chapter 4 optical window bay)"
+    },
+    "window_crystal_vat": {
+      "file": "data/art/environment/window_crystal_vat.png",
+      "sheet_rect": [
+        1146,
+        278,
+        62,
+        80
+      ],
+      "size": [
+        62,
+        80
+      ],
+      "anchor": [
+        31,
+        80
+      ],
+      "padding_px": 2,
+      "runtime_use": "SceneRenderer.draw_landmark (Chapter 4 containment vat)"
+    },
+    "door_airlock_double": {
+      "file": "data/art/environment/door_airlock_double.png",
+      "sheet_rect": [
+        14,
+        342,
+        120,
+        104
+      ],
+      "size": [
+        120,
+        104
+      ],
+      "anchor": [
+        60,
+        104
+      ],
+      "padding_px": 2,
+      "runtime_use": "SceneRenderer.draw_exit (exit bulkhead airlock)"
+    },
+    "door_narrow_active": {
+      "file": "data/art/environment/door_narrow_active.png",
+      "sheet_rect": [
+        142,
+        342,
+        56,
+        104
+      ],
+      "size": [
+        56,
+        104
+      ],
+      "anchor": [
+        28,
+        104
+      ],
+      "padding_px": 2,
+      "runtime_use": "Door.draw (open/energized bulkhead state)"
+    },
+    "door_hazard_shutter": {
+      "file": "data/art/environment/door_hazard_shutter.png",
+      "sheet_rect": [
+        364,
+        342,
+        100,
+        104
+      ],
+      "size": [
+        100,
+        104
+      ],
+      "anchor": [
+        50,
+        104
+      ],
+      "padding_px": 2,
+      "runtime_use": "Door.draw (closed mechanical security door)"
+    },
+    "crate_wood": {
+      "file": "data/art/environment/crate_wood.png",
+      "sheet_rect": [
+        482,
+        350,
+        62,
+        54
+      ],
+      "size": [
+        62,
+        54
+      ],
+      "anchor": [
+        31,
+        54
+      ],
+      "padding_px": 2,
+      "runtime_use": "Crate.draw (standard cargo crate)"
+    },
+    "crate_steel": {
+      "file": "data/art/environment/crate_steel.png",
+      "sheet_rect": [
+        550,
+        350,
+        62,
+        54
+      ],
+      "size": [
+        62,
+        54
+      ],
+      "anchor": [
+        31,
+        54
+      ],
+      "padding_px": 2,
+      "runtime_use": "Crate.draw (heavy reinforced ballast crate)"
+    },
+    "crate_energy_core": {
+      "file": "data/art/environment/crate_energy_core.png",
+      "sheet_rect": [
+        620,
+        346,
+        58,
+        60
+      ],
+      "size": [
+        58,
+        60
+      ],
+      "anchor": [
+        29,
+        60
+      ],
+      "padding_px": 2,
+      "runtime_use": "Crate.draw (lightweight buoyant/wind-reactive core crate)"
+    },
+    "console_cyan": {
+      "file": "data/art/environment/console_cyan.png",
+      "sheet_rect": [
+        776,
+        372,
+        68,
+        64
+      ],
+      "size": [
+        68,
+        64
+      ],
+      "anchor": [
+        34,
+        64
+      ],
+      "padding_px": 2,
+      "runtime_use": "Switch.draw & RoutingConsole.draw (active/Mode-A telemetry console)"
+    },
+    "console_magenta": {
+      "file": "data/art/environment/console_magenta.png",
+      "sheet_rect": [
+        854,
+        372,
+        70,
+        64
+      ],
+      "size": [
+        70,
+        64
+      ],
+      "anchor": [
+        35,
+        64
+      ],
+      "padding_px": 2,
+      "runtime_use": "Switch.draw & RoutingConsole.draw (standby/Mode-B telemetry console)"
+    },
+    "lever_switch_red": {
+      "file": "data/art/environment/lever_switch_red.png",
+      "sheet_rect": [
+        976,
+        372,
+        32,
+        64
+      ],
+      "size": [
+        32,
+        64
+      ],
+      "anchor": [
+        16,
+        64
+      ],
+      "padding_px": 2,
+      "runtime_use": "LatchingRelay.draw (relay lever housing)"
+    },
+    "sign_high_voltage": {
+      "file": "data/art/environment/sign_high_voltage.png",
+      "sheet_rect": [
+        1192,
+        372,
+        44,
+        52
+      ],
+      "size": [
+        44,
+        52
+      ],
+      "anchor": [
+        22,
+        52
+      ],
+      "padding_px": 2,
+      "runtime_use": "SceneRenderer.draw_room_scenery (Chapter 3 & 7 hazard placard)"
+    },
+    "electric_arc_assembly": {
+      "file": "data/art/environment/electric_arc_assembly.png",
+      "sheet_rect": [
+        14,
+        456,
+        254,
+        98
+      ],
+      "size": [
+        254,
+        98
+      ],
+      "anchor": [
+        127,
+        98
+      ],
+      "padding_px": 2,
+      "runtime_use": "SceneRenderer.draw_landmark (Chapter 3 high-voltage arc rig)"
+    },
+    "power_cell_blue": {
+      "file": "data/art/environment/power_cell_blue.png",
+      "sheet_rect": [
+        282,
+        456,
+        44,
+        98
+      ],
+      "size": [
+        44,
+        98
+      ],
+      "anchor": [
+        22,
+        98
+      ],
+      "padding_px": 2,
+      "runtime_use": "Generator.draw (energized induction power generator)"
+    },
+    "fan_turbine_blue": {
+      "file": "data/art/environment/fan_turbine_blue.png",
+      "sheet_rect": [
+        392,
+        466,
+        84,
+        86
+      ],
+      "size": [
+        84,
+        86
+      ],
+      "anchor": [
+        42,
+        86
+      ],
+      "padding_px": 2,
+      "runtime_use": "WindZone.draw & SceneRenderer (ventilation turbine rotor)"
+    },
+    "gear_amber_large": {
+      "file": "data/art/environment/gear_amber_large.png",
+      "sheet_rect": [
+        492,
+        458,
+        116,
+        108
+      ],
+      "size": [
+        116,
+        108
+      ],
+      "anchor": [
+        58,
+        108
+      ],
+      "padding_px": 2,
+      "runtime_use": "SceneRenderer.draw_landmark (Chapter 2 rotating drive gear)"
+    },
+    "gear_steel_med": {
+      "file": "data/art/environment/gear_steel_med.png",
+      "sheet_rect": [
+        620,
+        456,
+        62,
+        62
+      ],
+      "size": [
+        62,
+        62
+      ],
+      "anchor": [
+        31,
+        62
+      ],
+      "padding_px": 2,
+      "runtime_use": "SceneRenderer.draw_landmark (Chapter 2 secondary meshing gear)"
+    },
+    "conveyor_belt": {
+      "file": "data/art/environment/conveyor_belt.png",
+      "sheet_rect": [
+        492,
+        574,
+        186,
+        42
+      ],
+      "size": [
+        186,
+        42
+      ],
+      "anchor": [
+        93,
+        42
+      ],
+      "padding_px": 2,
+      "runtime_use": "ConveyorBelt.draw (mechanical belt body)"
+    },
+    "laser_emitter_mirror_set": {
+      "file": "data/art/environment/laser_emitter_mirror_set.png",
+      "sheet_rect": [
+        692,
+        454,
+        190,
+        104
+      ],
+      "size": [
+        190,
+        104
+      ],
+      "anchor": [
+        95,
+        104
+      ],
+      "padding_px": 2,
+      "runtime_use": "OpticalBeam.draw & RotatableMirror.draw (emitter/mirror assembly)"
+    },
+    "laser_emitter_unit": {
+      "file": "data/art/environment/laser_emitter_unit.png",
+      "sheet_rect": [
+        692,
+        454,
+        56,
+        102
+      ],
+      "size": [
+        56,
+        102
+      ],
+      "anchor": [
+        28,
+        102
+      ],
+      "padding_px": 2,
+      "runtime_use": "OpticalBeam.draw (beam emitter pedestal)"
+    },
+    "mirror_rotatable_frame": {
+      "file": "data/art/environment/mirror_rotatable_frame.png",
+      "sheet_rect": [
+        752,
+        454,
+        70,
+        102
+      ],
+      "size": [
+        70,
+        102
+      ],
+      "anchor": [
+        35,
+        102
+      ],
+      "padding_px": 2,
+      "runtime_use": "RotatableMirror.draw (gimbal reflector frame)"
+    },
+    "optical_receiver_node": {
+      "file": "data/art/environment/optical_receiver_node.png",
+      "sheet_rect": [
+        824,
+        492,
+        58,
+        64
+      ],
+      "size": [
+        58,
+        64
+      ],
+      "anchor": [
+        29,
+        64
+      ],
+      "padding_px": 2,
+      "runtime_use": "OpticalBeam.draw (optical target receiver node)"
+    },
+    "crystal_chamber_purple": {
+      "file": "data/art/environment/crystal_chamber_purple.png",
+      "sheet_rect": [
+        1296,
+        486,
+        70,
+        144
+      ],
+      "size": [
+        70,
+        144
+      ],
+      "anchor": [
+        35,
+        144
+      ],
+      "padding_px": 2,
+      "runtime_use": "SceneRenderer.draw_landmark (Chapter 4 crystal chamber)"
+    },
+    "furnace_crucible_glow": {
+      "file": "data/art/environment/furnace_crucible_glow.png",
+      "sheet_rect": [
+        832,
+        560,
+        90,
+        100
+      ],
+      "size": [
+        90,
+        100
+      ],
+      "anchor": [
+        45,
+        100
+      ],
+      "padding_px": 2,
+      "runtime_use": "SceneRenderer.draw_landmark (Chapter 6 molten crucible)"
+    },
+    "valve_wheel_station": {
+      "file": "data/art/environment/valve_wheel_station.png",
+      "sheet_rect": [
+        342,
+        566,
+        70,
+        132
+      ],
+      "size": [
+        70,
+        132
+      ],
+      "anchor": [
+        35,
+        132
+      ],
+      "padding_px": 2,
+      "runtime_use": "Valve.draw (industrial drainage handwheel station)"
+    },
+    "vines_hanging_cluster": {
+      "file": "data/art/environment/vines_hanging_cluster.png",
+      "sheet_rect": [
+        10,
+        714,
+        82,
+        90
+      ],
+      "size": [
+        82,
+        90
+      ],
+      "anchor": [
+        41,
+        90
+      ],
+      "padding_px": 2,
+      "runtime_use": "SceneRenderer.draw_room_scenery (hanging foliage cluster)"
+    },
+    "bush_moss_flora": {
+      "file": "data/art/environment/bush_moss_flora.png",
+      "sheet_rect": [
+        10,
+        822,
+        164,
+        70
+      ],
+      "size": [
+        164,
+        70
+      ],
+      "anchor": [
+        82,
+        70
+      ],
+      "padding_px": 2,
+      "runtime_use": "SceneRenderer.draw_platform (top-edge moss & flora)"
+    },
+    "waterfall_sluice_tile": {
+      "file": "data/art/environment/waterfall_sluice_tile.png",
+      "sheet_rect": [
+        298,
+        824,
+        88,
+        68
+      ],
+      "size": [
+        88,
+        68
+      ],
+      "anchor": [
+        44,
+        68
+      ],
+      "padding_px": 2,
+      "runtime_use": "WaterZone.draw (active valve discharge stream)"
+    },
+    "water_surface_tile": {
+      "file": "data/art/environment/water_surface_tile.png",
+      "sheet_rect": [
+        182,
+        836,
+        108,
+        56
+      ],
+      "size": [
+        108,
+        56
+      ],
+      "anchor": [
+        54,
+        56
+      ],
+      "padding_px": 2,
+      "runtime_use": "WaterZone.draw (simulated water surface wave crest)"
+    },
+    "spire_broken_girder": {
+      "file": "data/art/environment/spire_broken_girder.png",
+      "sheet_rect": [
+        968,
+        644,
+        202,
+        130
+      ],
+      "size": [
+        202,
+        130
+      ],
+      "anchor": [
+        101,
+        130
+      ],
+      "padding_px": 2,
+      "runtime_use": "SceneRenderer.draw_landmark (Chapter 7 fractured girder)"
+    },
+    "spire_curved_rib": {
+      "file": "data/art/environment/spire_curved_rib.png",
+      "sheet_rect": [
+        12,
+        902,
+        220,
+        164
+      ],
+      "size": [
+        220,
+        164
+      ],
+      "anchor": [
+        110,
+        164
+      ],
+      "padding_px": 2,
+      "runtime_use": "SceneRenderer.draw_landmark (Chapter 7 & 8 broken arch rib)"
+    },
+    "pylon_substation_pair": {
+      "file": "data/art/environment/pylon_substation_pair.png",
+      "sheet_rect": [
+        506,
+        902,
+        488,
+        166
+      ],
+      "size": [
+        488,
+        166
+      ],
+      "anchor": [
+        244,
+        166
+      ],
+      "padding_px": 2,
+      "runtime_use": "SceneRenderer.draw_landmark (Chapter 3 substation pylons)"
+    },
+    "surface_overgrown_cliff": {
+      "file": "data/art/environment/surface_overgrown_cliff.png",
+      "sheet_rect": [
+        1222,
+        902,
+        216,
+        166
+      ],
+      "size": [
+        216,
+        166
+      ],
+      "anchor": [
+        108,
+        166
+      ],
+      "padding_px": 2,
+      "runtime_use": "SceneRenderer.draw_landmark (Chapter 8 mossy cliff foundation)"
+    }
+  }
+}

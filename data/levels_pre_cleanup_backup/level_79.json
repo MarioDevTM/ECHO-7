@@ -1,0 +1,787 @@
+{
+  "tiles": [
+    [
+      0,
+      0,
+      36,
+      994
+    ],
+    [
+      3378,
+      0,
+      36,
+      994
+    ],
+    [
+      36,
+      0,
+      3342,
+      30
+    ],
+    [
+      150,
+      859,
+      362,
+      135
+    ],
+    [
+      728,
+      859,
+      390,
+      135
+    ],
+    [
+      1334,
+      859,
+      340,
+      135
+    ],
+    [
+      1334,
+      607,
+      340,
+      23
+    ],
+    [
+      2204,
+      607,
+      432,
+      40
+    ],
+    [
+      2204,
+      355,
+      432,
+      23
+    ],
+    [
+      2852,
+      355,
+      362,
+      40
+    ],
+    [
+      2975,
+      221,
+      155,
+      18
+    ],
+    [
+      3112,
+      239,
+      18,
+      116
+    ],
+    [
+      1790,
+      637,
+      14,
+      186
+    ],
+    [
+      2752,
+      385,
+      14,
+      186
+    ],
+    [
+      1358,
+      630,
+      44,
+      56
+    ],
+    [
+      1606,
+      630,
+      44,
+      56
+    ],
+    [
+      2248,
+      647,
+      344,
+      22
+    ],
+    [
+      2248,
+      378,
+      344,
+      22
+    ],
+    [
+      2896,
+      395,
+      274,
+      22
+    ],
+    [
+      36,
+      140,
+      28,
+      79
+    ],
+    [
+      3350,
+      180,
+      28,
+      79
+    ],
+    [
+      36,
+      380,
+      28,
+      95
+    ],
+    [
+      3350,
+      420,
+      28,
+      95
+    ],
+    [
+      36,
+      620,
+      28,
+      79
+    ],
+    [
+      3350,
+      660,
+      28,
+      79
+    ]
+  ],
+  "ladders": [],
+  "crates": [],
+  "plates": [],
+  "switches": [
+    {
+      "link_id": "timer",
+      "x": 2420,
+      "y": 355,
+      "mode": "timed",
+      "duration": 24
+    },
+    {
+      "link_id": "overhaul_79_first",
+      "x": 233,
+      "y": 798,
+      "mode": "sequence"
+    },
+    {
+      "link_id": "overhaul_79_second",
+      "x": 316,
+      "y": 739,
+      "mode": "sequence"
+    },
+    {
+      "link_id": "overhaul_79_third",
+      "x": 397,
+      "y": 675,
+      "mode": "sequence"
+    }
+  ],
+  "doors": [
+    {
+      "id": "surface_lock",
+      "x": 2975,
+      "y": 239,
+      "w": 20,
+      "h": 116,
+      "required_links": [
+        "alpha",
+        "beta",
+        "timer"
+      ]
+    }
+  ],
+  "moving_platforms": [
+    {
+      "id": "car0",
+      "x": 1692,
+      "y": 851,
+      "w": 86,
+      "h": 16,
+      "end_x": 1692,
+      "end_y": 599,
+      "speed": 128,
+      "active_by_default": true,
+      "required_links": []
+    }
+  ],
+  "conveyors": [],
+  "wind_zones": [],
+  "water_zones": [],
+  "valves": [],
+  "generators": [],
+  "cables": [
+    {
+      "link_id": "A",
+      "points": [
+        [
+          932,
+          847
+        ],
+        [
+          932,
+          883
+        ],
+        [
+          1520,
+          883
+        ],
+        [
+          1520,
+          597
+        ]
+      ]
+    },
+    {
+      "link_id": "alpha",
+      "points": [
+        [
+          1513,
+          595
+        ],
+        [
+          1513,
+          631
+        ],
+        [
+          2436,
+          631
+        ],
+        [
+          2436,
+          597
+        ]
+      ]
+    },
+    {
+      "link_id": "B",
+      "points": [
+        [
+          942,
+          847
+        ],
+        [
+          942,
+          890
+        ],
+        [
+          2436,
+          890
+        ],
+        [
+          2436,
+          597
+        ]
+      ]
+    },
+    {
+      "link_id": "alpha",
+      "points": [
+        [
+          1504,
+          595
+        ],
+        [
+          1504,
+          629
+        ],
+        [
+          2983,
+          629
+        ],
+        [
+          2983,
+          299
+        ]
+      ]
+    },
+    {
+      "link_id": "beta",
+      "points": [
+        [
+          2420,
+          595
+        ],
+        [
+          2420,
+          636
+        ],
+        [
+          2983,
+          636
+        ],
+        [
+          2983,
+          299
+        ]
+      ]
+    },
+    {
+      "link_id": "timer",
+      "points": [
+        [
+          2420,
+          343
+        ],
+        [
+          2420,
+          391
+        ],
+        [
+          2983,
+          391
+        ],
+        [
+          2983,
+          299
+        ]
+      ]
+    }
+  ],
+  "mirrors": [],
+  "crushers": [
+    {
+      "id": "ram2",
+      "x": 1469,
+      "y": 644,
+      "w": 74,
+      "h": 42,
+      "travel": 172,
+      "period": 2.9,
+      "disabled_by": [
+        "A"
+      ]
+    },
+    {
+      "id": "hammer3",
+      "x": 2008,
+      "y": 429,
+      "w": 54,
+      "h": 33,
+      "travel": 178,
+      "period": 3.2,
+      "disabled_by": [
+        "A"
+      ]
+    }
+  ],
+  "steam_vents": [
+    {
+      "id": "seam1",
+      "x": 1208,
+      "y": 774,
+      "w": 36,
+      "h": 134,
+      "period": 3.1,
+      "duty_cycle": 0.43,
+      "disabled_by": []
+    }
+  ],
+  "collapsing_platforms": [
+    {
+      "id": "walk0",
+      "x": 1812,
+      "y": 569,
+      "w": 68,
+      "h": 12,
+      "delay": 0.48,
+      "respawn": 2.4
+    },
+    {
+      "id": "walk2",
+      "x": 2676,
+      "y": 523,
+      "w": 70,
+      "h": 12,
+      "delay": 0.48,
+      "respawn": 2.4
+    },
+    {
+      "id": "walk4",
+      "x": 2676,
+      "y": 355,
+      "w": 70,
+      "h": 12,
+      "delay": 0.48,
+      "respawn": 2.4
+    }
+  ],
+  "checkpoints": [
+    {
+      "id": "beacon_79",
+      "x": 2571,
+      "y": 355
+    }
+  ],
+  "spikes": [],
+  "acids": [
+    {
+      "x": 36,
+      "y": 919,
+      "w": 114,
+      "h": 75
+    },
+    {
+      "x": 512,
+      "y": 919,
+      "w": 216,
+      "h": 75
+    },
+    {
+      "x": 1118,
+      "y": 919,
+      "w": 216,
+      "h": 75
+    },
+    {
+      "x": 1674,
+      "y": 919,
+      "w": 1704,
+      "h": 75
+    }
+  ],
+  "lasers": [
+    {
+      "x": 2571,
+      "y": 193,
+      "dir": [
+        0,
+        1
+      ],
+      "max_length": 155,
+      "disabled_by": [
+        "alpha"
+      ]
+    }
+  ],
+  "optical_beams": [],
+  "sequences": [
+    {
+      "group_id": "overhaul_79_order",
+      "order": [
+        "overhaul_79_first",
+        "overhaul_79_second",
+        "overhaul_79_third"
+      ]
+    }
+  ],
+  "collectibles": [
+    {
+      "id": "log_79",
+      "x": 770,
+      "y": 827,
+      "title": "Final Approach / Shift Notes",
+      "text": "Final Approach. Check the signal lines before you leave the service deck."
+    },
+    {
+      "id": "field_trace_79",
+      "x": 790,
+      "y": 783,
+      "title": "FIELD TRACE 79 / OUTER PERIMETER GAUNTLET",
+      "text": "ECHO-7 field diagnostics: Add a final malfunctioning press whose state is first recorded under A-power, then safely repowered through B before an end timer.",
+      "required_links": [
+        "alpha"
+      ],
+      "optional_investigation": true
+    },
+    {
+      "id": "service_challenge_79",
+      "x": 2397,
+      "y": 188,
+      "title": "Optional Diagnostics 79",
+      "text": "Optional master circuit cleared. The standard exit never depends on this side challenge.",
+      "required_links": [
+        "sector_79_validated"
+      ],
+      "optional_investigation": true
+    }
+  ],
+  "decorations": [
+    {
+      "type": "warning_stripe",
+      "x": 1346,
+      "y": 619,
+      "w": 120
+    },
+    {
+      "type": "warning_stripe",
+      "x": 2216,
+      "y": 619,
+      "w": 120
+    },
+    {
+      "type": "warning_stripe",
+      "x": 2216,
+      "y": 367,
+      "w": 120
+    },
+    {
+      "type": "warning_stripe",
+      "x": 2864,
+      "y": 367,
+      "w": 120
+    },
+    {
+      "type": "monitor",
+      "x": 883,
+      "y": 760,
+      "text": "SELECT A / B"
+    },
+    {
+      "type": "monitor",
+      "x": 1344,
+      "y": 759,
+      "text": "PRESS LINE"
+    },
+    {
+      "type": "monitor",
+      "x": 1474,
+      "y": 507,
+      "text": "HOLD A"
+    },
+    {
+      "type": "monitor",
+      "x": 2390,
+      "y": 507,
+      "text": "HOLD ALPHA + B"
+    },
+    {
+      "type": "monitor",
+      "x": 2388,
+      "y": 262,
+      "text": "ESCAPE 24s"
+    },
+    {
+      "type": "monitor",
+      "x": 2998,
+      "y": 181,
+      "text": "EXIT LOCK"
+    },
+    {
+      "type": "monitor",
+      "x": 803,
+      "y": 745,
+      "text": "FORENSIC TRACE 79"
+    },
+    {
+      "type": "monitor",
+      "x": 217,
+      "y": 695,
+      "text": "ACCESS / 79"
+    },
+    {
+      "type": "warning_stripe",
+      "x": 379,
+      "y": 687,
+      "w": 78
+    }
+  ],
+  "latching_relays": [
+    {
+      "link_id": "alpha",
+      "x": 1504,
+      "y": 607,
+      "required_links": [
+        "A"
+      ]
+    },
+    {
+      "link_id": "beta",
+      "x": 2420,
+      "y": 607,
+      "required_links": [
+        "alpha",
+        "B"
+      ]
+    },
+    {
+      "link_id": "sector_79_validated",
+      "x": 2385,
+      "y": 230,
+      "required_links": [
+        "overhaul_79_order"
+      ]
+    }
+  ],
+  "routing_consoles": [
+    {
+      "id": "selector",
+      "route_id": "supply",
+      "x": 923,
+      "y": 859,
+      "a_signal": "A",
+      "b_signal": "B"
+    }
+  ],
+  "signal_inverters": [],
+  "npcs": [
+    {
+      "id": "kip",
+      "x": 250,
+      "y": 859,
+      "dialogue": [
+        "Final Approach. My reflection never takes the night shift.",
+        "Set the supply selector to A.",
+        "Start the clock after the other lock lights are green."
+      ]
+    }
+  ],
+  "springs": [],
+  "dash_recharges": [
+    {
+      "id": "ring5",
+      "x": 2730,
+      "y": 257
+    }
+  ],
+  "one_way_platforms": [
+    {
+      "id": "walk1",
+      "x": 2002,
+      "y": 641,
+      "w": 68,
+      "h": 12
+    },
+    {
+      "id": "walk3",
+      "x": 2636,
+      "y": 439,
+      "w": 70,
+      "h": 12
+    },
+    {
+      "id": "overhaul_step_79_0",
+      "x": 215,
+      "y": 798,
+      "w": 78,
+      "h": 12
+    },
+    {
+      "id": "overhaul_step_79_1",
+      "x": 298,
+      "y": 739,
+      "w": 78,
+      "h": 12
+    },
+    {
+      "id": "overhaul_step_79_2",
+      "x": 379,
+      "y": 675,
+      "w": 78,
+      "h": 12
+    },
+    {
+      "id": "validation_foot_79_0",
+      "x": 2452,
+      "y": 292,
+      "w": 78,
+      "h": 12
+    },
+    {
+      "id": "validation_foot_79_1",
+      "x": 2367,
+      "y": 230,
+      "w": 78,
+      "h": 12
+    }
+  ],
+  "dash_barriers": [],
+  "level_id": 79,
+  "width": 3414,
+  "height": 994,
+  "name": "Chamber 79 // Final Approach",
+  "abilities": {
+    "wall_jump": true,
+    "dash": true
+  },
+  "spawn": [
+    188,
+    813
+  ],
+  "exit": [
+    3032,
+    275
+  ],
+  "hint_route": [
+    "A",
+    "alpha",
+    "B",
+    "beta",
+    "timer"
+  ],
+  "hint_notes": {
+    "A": [
+      "Set the supply selector to A.",
+      "Set the supply selector to A.",
+      "Set the supply selector to A."
+    ],
+    "alpha": [
+      "Keep A live, then interact with the recorder to hold the reading.",
+      "Keep A live, then interact with the recorder to hold the reading.",
+      "Keep A live, then interact with the recorder to hold the reading."
+    ],
+    "B": [
+      "Transfer the selector to B after recording the A-side reading.",
+      "Transfer the selector to B after recording the A-side reading.",
+      "Transfer the selector to B after recording the A-side reading."
+    ],
+    "beta": [
+      "Keep alpha and B live, then interact with the recorder to hold the reading.",
+      "Keep alpha and B live, then interact with the recorder to hold the reading.",
+      "Keep alpha and B live, then interact with the recorder to hold the reading."
+    ],
+    "timer": [
+      "Start the clock after the other lock lights are green.",
+      "Start the clock after the other lock lights are green.",
+      "Start the clock after the other lock lights are green."
+    ]
+  },
+  "solution_steps": [
+    "Set the supply selector to A.",
+    "Keep A live, then interact with the recorder to hold the reading.",
+    "Transfer the selector to B after recording the A-side reading.",
+    "Keep alpha and B live, then interact with the recorder to hold the reading.",
+    "Start the clock after the other lock lights are green."
+  ],
+  "subtitle": "Set the supply selector to A.  //  SERVICE DETOUR: Visit three elevated diagnostics in the numbered order; an incorrect input resets the chain.",
+  "chapter": 8,
+  "theme": "surface",
+  "topology": "Outer Perimeter Gauntlet",
+  "overhaul_version": 1,
+  "overhaul_design": {
+    "profile": "sequence",
+    "route": "right_rise",
+    "actual_direction": 1,
+    "mandatory": true,
+    "service_platform_count": 3
+  },
+  "secondary_validation_1": {
+    "checkpoint": "beacon_79",
+    "extra_platforms": 2,
+    "signal": "sector_79_validated"
+  },
+  "side_challenge_policy": {
+    "campaign_blocking": false,
+    "optional_signals": [
+      "overhaul_79_order",
+      "sector_79_validated"
+    ],
+    "reason": "Not proven traversable in the Pygame engine; preserve main progression."
+  },
+  "architectural_overhaul_v2": {
+    "archetype": "Viaduct & Support Piers",
+    "chapter": 8,
+    "theme": "surface",
+    "original_tile_count": 14,
+    "final_tile_count": 25,
+    "thickened_decks": 2,
+    "added_piers": 0,
+    "added_corbels": 5,
+    "added_soffits": 0,
+    "added_buttresses": 6
+  }
+}

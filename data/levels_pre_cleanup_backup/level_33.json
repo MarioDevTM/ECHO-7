@@ -1,0 +1,650 @@
+{
+  "tiles": [
+    [
+      0,
+      0,
+      36,
+      720
+    ],
+    [
+      2022,
+      0,
+      36,
+      720
+    ],
+    [
+      36,
+      0,
+      1986,
+      30
+    ],
+    [
+      150,
+      357,
+      340,
+      40
+    ],
+    [
+      912,
+      357,
+      432,
+      23
+    ],
+    [
+      1496,
+      357,
+      362,
+      23
+    ],
+    [
+      1496,
+      585,
+      362,
+      135
+    ],
+    [
+      912,
+      585,
+      432,
+      135
+    ],
+    [
+      1823,
+      340,
+      10,
+      17
+    ],
+    [
+      1070,
+      451,
+      155,
+      18
+    ],
+    [
+      1207,
+      469,
+      18,
+      116
+    ],
+    [
+      186,
+      397,
+      268,
+      22
+    ],
+    [
+      936,
+      380,
+      36,
+      56
+    ],
+    [
+      156,
+      30,
+      133,
+      28
+    ],
+    [
+      176,
+      58,
+      93,
+      16
+    ],
+    [
+      796,
+      30,
+      101,
+      42
+    ],
+    [
+      816,
+      72,
+      61,
+      16
+    ],
+    [
+      1116,
+      30,
+      133,
+      28
+    ],
+    [
+      1136,
+      58,
+      93,
+      16
+    ],
+    [
+      1436,
+      30,
+      117,
+      56
+    ],
+    [
+      1456,
+      86,
+      77,
+      16
+    ],
+    [
+      1756,
+      30,
+      101,
+      42
+    ],
+    [
+      1776,
+      72,
+      61,
+      16
+    ],
+    [
+      36,
+      140,
+      28,
+      89
+    ],
+    [
+      36,
+      380,
+      28,
+      73
+    ]
+  ],
+  "ladders": [
+    {
+      "x": 1860,
+      "y": 319,
+      "h": 276
+    }
+  ],
+  "crates": [
+    {
+      "id": "load",
+      "x": 1611,
+      "y": 321
+    }
+  ],
+  "plates": [
+    {
+      "link_id": "park",
+      "x": 1775,
+      "y": 357
+    }
+  ],
+  "switches": [],
+  "doors": [
+    {
+      "id": "surface_lock",
+      "x": 1070,
+      "y": 469,
+      "w": 20,
+      "h": 116,
+      "required_links": [
+        "proof",
+        "light"
+      ]
+    }
+  ],
+  "moving_platforms": [
+    {
+      "id": "car0",
+      "x": 634,
+      "y": 319,
+      "w": 83,
+      "h": 16,
+      "end_x": 713,
+      "end_y": 391,
+      "speed": 112,
+      "active_by_default": true,
+      "required_links": []
+    }
+  ],
+  "conveyors": [],
+  "wind_zones": [],
+  "water_zones": [],
+  "valves": [],
+  "generators": [
+    {
+      "link_id": "power",
+      "x": 1128,
+      "y": 357
+    },
+    {
+      "link_id": "overhaul_33_generator",
+      "x": 233,
+      "y": 296
+    }
+  ],
+  "cables": [
+    {
+      "link_id": "light",
+      "points": [
+        [
+          1743,
+          323
+        ],
+        [
+          1743,
+          609
+        ],
+        [
+          1693,
+          609
+        ],
+        [
+          1693,
+          575
+        ]
+      ]
+    },
+    {
+      "link_id": "park",
+      "points": [
+        [
+          1784,
+          345
+        ],
+        [
+          1784,
+          616
+        ],
+        [
+          1693,
+          616
+        ],
+        [
+          1693,
+          575
+        ]
+      ]
+    },
+    {
+      "link_id": "proof",
+      "points": [
+        [
+          1677,
+          573
+        ],
+        [
+          1677,
+          607
+        ],
+        [
+          1078,
+          607
+        ],
+        [
+          1078,
+          529
+        ]
+      ]
+    },
+    {
+      "link_id": "light",
+      "points": [
+        [
+          1734,
+          323
+        ],
+        [
+          1734,
+          558
+        ],
+        [
+          1078,
+          558
+        ],
+        [
+          1078,
+          529
+        ]
+      ]
+    }
+  ],
+  "mirrors": [],
+  "crushers": [],
+  "steam_vents": [],
+  "collapsing_platforms": [],
+  "checkpoints": [
+    {
+      "id": "beacon_33",
+      "x": 1793,
+      "y": 585
+    }
+  ],
+  "spikes": [],
+  "acids": [
+    {
+      "x": 36,
+      "y": 645,
+      "w": 876,
+      "h": 75
+    },
+    {
+      "x": 1344,
+      "y": 645,
+      "w": 152,
+      "h": 75
+    },
+    {
+      "x": 1858,
+      "y": 645,
+      "w": 164,
+      "h": 75
+    }
+  ],
+  "lasers": [],
+  "optical_beams": [
+    {
+      "link_id": "light",
+      "x": 1550,
+      "y": 335,
+      "dir": [
+        1,
+        0
+      ],
+      "max_length": 252,
+      "receiver": [
+        1734,
+        326,
+        18,
+        18
+      ]
+    }
+  ],
+  "sequences": [],
+  "collectibles": [
+    {
+      "id": "log_33",
+      "x": 954,
+      "y": 325,
+      "title": "Blind Spot Cargo / Shift Notes",
+      "text": "Blind Spot Cargo. Check the signal lines before you leave the service deck."
+    },
+    {
+      "id": "field_trace_33",
+      "x": 425,
+      "y": 281,
+      "title": "FIELD TRACE 33 / SHUTTER-CRATE BYPASS",
+      "text": "ECHO-7 field diagnostics: Expand crate placement into a real beam/shutter state puzzle with a protected restaging area.",
+      "required_links": [
+        "proof"
+      ],
+      "optional_investigation": true
+    },
+    {
+      "id": "service_challenge_33",
+      "x": 1619,
+      "y": 418,
+      "title": "Optional Diagnostics 33",
+      "text": "Optional master circuit cleared. The standard exit never depends on this side challenge.",
+      "required_links": [
+        "sector_33_validated"
+      ],
+      "optional_investigation": true
+    }
+  ],
+  "decorations": [
+    {
+      "type": "warning_stripe",
+      "x": 162,
+      "y": 369,
+      "w": 120
+    },
+    {
+      "type": "warning_stripe",
+      "x": 924,
+      "y": 369,
+      "w": 120
+    },
+    {
+      "type": "warning_stripe",
+      "x": 1508,
+      "y": 369,
+      "w": 120
+    },
+    {
+      "type": "monitor",
+      "x": 1098,
+      "y": 257,
+      "text": "ENERGIZE"
+    },
+    {
+      "type": "monitor",
+      "x": 1712,
+      "y": 265,
+      "text": "RECEIVING SCALE"
+    },
+    {
+      "type": "monitor",
+      "x": 1647,
+      "y": 485,
+      "text": "HOLD LIGHT + PARK"
+    },
+    {
+      "type": "monitor",
+      "x": 1093,
+      "y": 411,
+      "text": "EXIT LOCK"
+    },
+    {
+      "type": "monitor",
+      "x": 438,
+      "y": 243,
+      "text": "FORENSIC TRACE 33"
+    },
+    {
+      "type": "monitor",
+      "x": 217,
+      "y": 193,
+      "text": "ACCESS / 33"
+    },
+    {
+      "type": "warning_stripe",
+      "x": 379,
+      "y": 185,
+      "w": 78
+    }
+  ],
+  "latching_relays": [
+    {
+      "link_id": "proof",
+      "x": 1677,
+      "y": 585,
+      "required_links": [
+        "light",
+        "park"
+      ]
+    },
+    {
+      "link_id": "overhaul_33_memory",
+      "x": 316,
+      "y": 237,
+      "required_links": [
+        "overhaul_33_generator",
+        "overhaul_33_A"
+      ]
+    },
+    {
+      "link_id": "sector_33_validated",
+      "x": 1607,
+      "y": 460,
+      "required_links": [
+        "overhaul_33_B"
+      ]
+    }
+  ],
+  "routing_consoles": [
+    {
+      "id": "overhaul_33_selector",
+      "route_id": "overhaul_33_bus",
+      "x": 397,
+      "y": 173,
+      "a_signal": "overhaul_33_A",
+      "b_signal": "overhaul_33_B"
+    }
+  ],
+  "signal_inverters": [],
+  "npcs": [
+    {
+      "id": "kip",
+      "x": 250,
+      "y": 357,
+      "dialogue": [
+        "Blind Spot Cargo. The upper deck has a fine view of the problem.",
+        "Push the shutter crate past the optical receiver.",
+        "Keep light and park live, then interact with the recorder to hold the reading."
+      ]
+    }
+  ],
+  "springs": [],
+  "dash_recharges": [
+    {
+      "id": "ring3",
+      "x": 1406,
+      "y": 487
+    }
+  ],
+  "one_way_platforms": [
+    {
+      "id": "walk0",
+      "x": 1898,
+      "y": 509,
+      "w": 83,
+      "h": 12
+    },
+    {
+      "id": "walk1",
+      "x": 1858,
+      "y": 433,
+      "w": 83,
+      "h": 12
+    },
+    {
+      "id": "walk2",
+      "x": 1898,
+      "y": 357,
+      "w": 83,
+      "h": 12
+    },
+    {
+      "id": "overhaul_step_33_0",
+      "x": 215,
+      "y": 296,
+      "w": 78,
+      "h": 12
+    },
+    {
+      "id": "overhaul_step_33_1",
+      "x": 298,
+      "y": 237,
+      "w": 78,
+      "h": 12
+    },
+    {
+      "id": "overhaul_step_33_2",
+      "x": 379,
+      "y": 173,
+      "w": 78,
+      "h": 12
+    },
+    {
+      "id": "validation_foot_33_0",
+      "x": 1674,
+      "y": 522,
+      "w": 78,
+      "h": 12
+    },
+    {
+      "id": "validation_foot_33_1",
+      "x": 1589,
+      "y": 460,
+      "w": 78,
+      "h": 12
+    }
+  ],
+  "dash_barriers": [],
+  "level_id": 33,
+  "width": 2058,
+  "height": 720,
+  "name": "Chamber 33 // Blind Spot Cargo",
+  "abilities": {
+    "wall_jump": true,
+    "dash": true
+  },
+  "spawn": [
+    188,
+    311
+  ],
+  "exit": [
+    1127,
+    505
+  ],
+  "hint_route": [
+    "light",
+    "park",
+    "proof"
+  ],
+  "hint_notes": {
+    "light": [
+      "Push the shutter crate past the optical receiver.",
+      "Push the shutter crate past the optical receiver.",
+      "Push the shutter crate past the optical receiver."
+    ],
+    "park": [
+      "Move the cargo right until it rests on the receiving scale.",
+      "Move the cargo right until it rests on the receiving scale.",
+      "Move the cargo right until it rests on the receiving scale."
+    ],
+    "proof": [
+      "Keep light and park live, then interact with the recorder to hold the reading.",
+      "Keep light and park live, then interact with the recorder to hold the reading.",
+      "Keep light and park live, then interact with the recorder to hold the reading."
+    ]
+  },
+  "solution_steps": [
+    "Push the shutter crate past the optical receiver.",
+    "Move the cargo right until it rests on the receiving scale.",
+    "Keep light and park live, then interact with the recorder to hold the reading.",
+    "Energize the service bus, memorize A at the middle station, and reroute to B before proceeding."
+  ],
+  "subtitle": "Push the shutter crate past the optical receiver.  //  SERVICE DETOUR: Energize the service bus, memorize A at the middle station, and reroute to B before proceeding.",
+  "chapter": 4,
+  "theme": "optical",
+  "topology": "Shutter-Crate Bypass",
+  "overhaul_version": 1,
+  "overhaul_design": {
+    "profile": "relay_bus",
+    "route": "right_rise",
+    "actual_direction": 1,
+    "mandatory": true,
+    "service_platform_count": 3
+  },
+  "secondary_validation_1": {
+    "checkpoint": "beacon_33",
+    "extra_platforms": 2,
+    "signal": "sector_33_validated"
+  },
+  "side_challenge_policy": {
+    "campaign_blocking": false,
+    "optional_signals": [
+      "overhaul_33_memory",
+      "overhaul_33_B",
+      "sector_33_validated"
+    ],
+    "reason": "Not proven traversable in the Pygame engine; preserve main progression."
+  },
+  "architectural_overhaul_v2": {
+    "archetype": "Stepped Gantry & Shaft",
+    "chapter": 4,
+    "theme": "optical",
+    "original_tile_count": 11,
+    "final_tile_count": 25,
+    "thickened_decks": 1,
+    "added_piers": 0,
+    "added_corbels": 2,
+    "added_soffits": 5,
+    "added_buttresses": 2
+  }
+}

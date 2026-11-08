@@ -1,0 +1,638 @@
+{
+  "tiles": [
+    [
+      0,
+      0,
+      36,
+      720
+    ],
+    [
+      3040,
+      0,
+      36,
+      720
+    ],
+    [
+      36,
+      0,
+      3004,
+      30
+    ],
+    [
+      150,
+      585,
+      390,
+      135
+    ],
+    [
+      680,
+      585,
+      340,
+      135
+    ],
+    [
+      1412,
+      585,
+      432,
+      135
+    ],
+    [
+      1984,
+      585,
+      362,
+      135
+    ],
+    [
+      2486,
+      585,
+      390,
+      135
+    ],
+    [
+      2623,
+      451,
+      155,
+      18
+    ],
+    [
+      2760,
+      469,
+      18,
+      116
+    ],
+    [
+      156,
+      30,
+      116,
+      56
+    ],
+    [
+      176,
+      86,
+      76,
+      16
+    ],
+    [
+      556,
+      30,
+      132,
+      56
+    ],
+    [
+      576,
+      86,
+      92,
+      16
+    ],
+    [
+      956,
+      30,
+      100,
+      42
+    ],
+    [
+      976,
+      72,
+      60,
+      16
+    ],
+    [
+      1356,
+      30,
+      116,
+      42
+    ],
+    [
+      1376,
+      72,
+      76,
+      16
+    ],
+    [
+      1756,
+      30,
+      132,
+      28
+    ],
+    [
+      1776,
+      58,
+      92,
+      16
+    ],
+    [
+      2156,
+      30,
+      100,
+      28
+    ],
+    [
+      2176,
+      58,
+      60,
+      16
+    ],
+    [
+      2556,
+      30,
+      116,
+      56
+    ],
+    [
+      2576,
+      86,
+      76,
+      16
+    ],
+    [
+      36,
+      140,
+      40,
+      76
+    ],
+    [
+      3000,
+      180,
+      40,
+      76
+    ],
+    [
+      36,
+      380,
+      40,
+      92
+    ],
+    [
+      3000,
+      420,
+      40,
+      92
+    ]
+  ],
+  "ladders": [],
+  "crates": [],
+  "plates": [],
+  "switches": [],
+  "doors": [
+    {
+      "id": "surface_lock",
+      "x": 2623,
+      "y": 469,
+      "w": 20,
+      "h": 116,
+      "required_links": [
+        "alpha",
+        "down",
+        "east_up"
+      ]
+    }
+  ],
+  "moving_platforms": [],
+  "conveyors": [],
+  "wind_zones": [],
+  "water_zones": [],
+  "valves": [],
+  "generators": [],
+  "cables": [
+    {
+      "link_id": "up",
+      "points": [
+        [
+          873,
+          431
+        ],
+        [
+          873,
+          609
+        ],
+        [
+          1644,
+          609
+        ],
+        [
+          1644,
+          575
+        ]
+      ]
+    },
+    {
+      "link_id": "alpha",
+      "points": [
+        [
+          1628,
+          573
+        ],
+        [
+          1628,
+          607
+        ],
+        [
+          2631,
+          607
+        ],
+        [
+          2631,
+          529
+        ]
+      ]
+    },
+    {
+      "link_id": "down",
+      "points": [
+        [
+          864,
+          562
+        ],
+        [
+          864,
+          603
+        ],
+        [
+          2631,
+          603
+        ],
+        [
+          2631,
+          529
+        ]
+      ]
+    },
+    {
+      "link_id": "east_up",
+      "points": [
+        [
+          2179,
+          431
+        ],
+        [
+          2179,
+          565
+        ],
+        [
+          2631,
+          565
+        ],
+        [
+          2631,
+          529
+        ]
+      ]
+    }
+  ],
+  "mirrors": [
+    {
+      "id": "prism",
+      "x": 850,
+      "y": 549,
+      "orientation": 1
+    },
+    {
+      "id": "secondprism",
+      "x": 2165,
+      "y": 549,
+      "orientation": 1
+    }
+  ],
+  "crushers": [],
+  "steam_vents": [
+    {
+      "id": "seam0",
+      "x": 592,
+      "y": 500,
+      "w": 36,
+      "h": 134,
+      "period": 3.1,
+      "duty_cycle": 0.43,
+      "disabled_by": []
+    },
+    {
+      "id": "seam3",
+      "x": 2398,
+      "y": 500,
+      "w": 36,
+      "h": 134,
+      "period": 3.1,
+      "duty_cycle": 0.43,
+      "disabled_by": []
+    }
+  ],
+  "collapsing_platforms": [],
+  "checkpoints": [
+    {
+      "id": "beacon_32",
+      "x": 2281,
+      "y": 585
+    }
+  ],
+  "spikes": [],
+  "acids": [
+    {
+      "x": 36,
+      "y": 645,
+      "w": 114,
+      "h": 75
+    },
+    {
+      "x": 540,
+      "y": 645,
+      "w": 140,
+      "h": 75
+    },
+    {
+      "x": 1020,
+      "y": 645,
+      "w": 392,
+      "h": 75
+    },
+    {
+      "x": 1844,
+      "y": 645,
+      "w": 140,
+      "h": 75
+    },
+    {
+      "x": 2346,
+      "y": 645,
+      "w": 140,
+      "h": 75
+    },
+    {
+      "x": 2876,
+      "y": 645,
+      "w": 164,
+      "h": 75
+    }
+  ],
+  "lasers": [],
+  "optical_beams": [
+    {
+      "link_id": "up",
+      "x": 735,
+      "y": 567,
+      "dir": [
+        1,
+        0
+      ],
+      "max_length": 430,
+      "receiver": [
+        857,
+        443,
+        14,
+        10
+      ]
+    },
+    {
+      "link_id": "down",
+      "x": 735,
+      "y": 567,
+      "dir": [
+        1,
+        0
+      ],
+      "max_length": 430,
+      "receiver": [
+        857,
+        574,
+        14,
+        10
+      ]
+    },
+    {
+      "link_id": "east_up",
+      "x": 2039,
+      "y": 567,
+      "dir": [
+        1,
+        0
+      ],
+      "max_length": 452,
+      "receiver": [
+        2172,
+        443,
+        14,
+        10
+      ]
+    },
+    {
+      "link_id": "east_down",
+      "x": 2039,
+      "y": 567,
+      "dir": [
+        1,
+        0
+      ],
+      "max_length": 452,
+      "receiver": [
+        2172,
+        574,
+        14,
+        10
+      ]
+    }
+  ],
+  "sequences": [],
+  "collectibles": [
+    {
+      "id": "log_32",
+      "x": 722,
+      "y": 553,
+      "title": "Dual Panopticon / Shift Notes",
+      "text": "Dual Panopticon. Check the signal lines before you leave the service deck."
+    },
+    {
+      "id": "field_trace_32",
+      "x": 469,
+      "y": 509,
+      "title": "FIELD TRACE 32 / TWIN OPTIC CHECKPOINTS",
+      "text": "ECHO-7 field diagnostics: Place two reflector tasks with different sightline orientations and a meaningful intervening return path; indicate which receiver is saved and which remains live.",
+      "required_links": [
+        "alpha"
+      ],
+      "optional_investigation": true
+    },
+    {
+      "id": "service_challenge_32",
+      "x": 2309,
+      "y": 543,
+      "title": "Optional Diagnostics 32",
+      "text": "Optional auxiliary service record recovered. This archive is no longer linked to a redundant side circuit and does not gate the exit.",
+      "required_links": [],
+      "optional_investigation": true
+    }
+  ],
+  "decorations": [
+    {
+      "type": "monitor",
+      "x": 1598,
+      "y": 485,
+      "text": "HOLD UP"
+    },
+    {
+      "type": "monitor",
+      "x": 2646,
+      "y": 411,
+      "text": "EXIT LOCK"
+    },
+    {
+      "type": "monitor",
+      "x": 482,
+      "y": 471,
+      "text": "FORENSIC TRACE 32"
+    }
+  ],
+  "latching_relays": [
+    {
+      "link_id": "alpha",
+      "x": 1628,
+      "y": 585,
+      "required_links": [
+        "up"
+      ]
+    }
+  ],
+  "routing_consoles": [],
+  "signal_inverters": [],
+  "npcs": [
+    {
+      "id": "kip",
+      "x": 250,
+      "y": 585,
+      "dialogue": [
+        "Dual Panopticon. The crate gets paid by the metre.",
+        "Turn the mirror toward its ceiling pickup.",
+        "Aim the second reflector at its overhead pickup."
+      ]
+    }
+  ],
+  "springs": [],
+  "dash_recharges": [],
+  "one_way_platforms": [
+    {
+      "id": "walk0",
+      "x": 1113,
+      "y": 547,
+      "w": 68,
+      "h": 12
+    },
+    {
+      "id": "walk1",
+      "x": 1255,
+      "y": 619,
+      "w": 68,
+      "h": 12
+    }
+  ],
+  "dash_barriers": [],
+  "level_id": 32,
+  "width": 3076,
+  "height": 720,
+  "name": "Chamber 32 // Dual Panopticon",
+  "abilities": {
+    "wall_jump": true,
+    "dash": true
+  },
+  "spawn": [
+    188,
+    539
+  ],
+  "exit": [
+    2680,
+    505
+  ],
+  "hint_route": [
+    "up",
+    "alpha",
+    "down",
+    "east_up"
+  ],
+  "hint_notes": {
+    "up": [
+      "Turn the mirror toward its ceiling pickup.",
+      "Turn the mirror toward its ceiling pickup.",
+      "Turn the mirror toward its ceiling pickup."
+    ],
+    "alpha": [
+      "Keep up live, then interact with the recorder to hold the reading.",
+      "Keep up live, then interact with the recorder to hold the reading.",
+      "Keep up live, then interact with the recorder to hold the reading."
+    ],
+    "down": [
+      "Turn the mirror toward the low pickup beside its foot.",
+      "Turn the mirror toward the low pickup beside its foot.",
+      "Turn the mirror toward the low pickup beside its foot."
+    ],
+    "east_up": [
+      "Aim the second reflector at its overhead pickup.",
+      "Aim the second reflector at its overhead pickup.",
+      "Aim the second reflector at its overhead pickup."
+    ]
+  },
+  "solution_steps": [
+    "Turn the mirror toward its ceiling pickup.",
+    "Keep up live, then interact with the recorder to hold the reading.",
+    "Turn the mirror toward the low pickup beside its foot.",
+    "Aim the second reflector at its overhead pickup."
+  ],
+  "subtitle": "Turn the mirror toward its ceiling pickup.",
+  "chapter": 4,
+  "theme": "optical",
+  "topology": "Twin Optic Checkpoints",
+  "overhaul_version": 1,
+  "overhaul_design": {
+    "profile": "valve",
+    "route": "left_return",
+    "actual_direction": 1,
+    "mandatory": false,
+    "service_platform_count": 0,
+    "retired_by_cleanup": true
+  },
+  "secondary_validation_1": {
+    "checkpoint": "beacon_32",
+    "extra_platforms": 0,
+    "signal": "sector_32_validated",
+    "retired_by_cleanup": true
+  },
+  "side_challenge_policy": {
+    "campaign_blocking": false,
+    "optional_signals": [],
+    "reason": "Deprecated optional side circuit removed; service record remains accessible."
+  },
+  "architectural_overhaul_v2": {
+    "archetype": "Segmented Security Bulkhead Corridor",
+    "chapter": 4,
+    "theme": "optical",
+    "original_tile_count": 10,
+    "final_tile_count": 28,
+    "thickened_decks": 0,
+    "added_piers": 0,
+    "added_corbels": 0,
+    "added_soffits": 7,
+    "added_buttresses": 4,
+    "tiles_before_cleanup_pass": 28,
+    "removed_legacy_platforms": 5,
+    "removed_legacy_devices": 2,
+    "added_partition_walls": 0,
+    "added_grounded_piers": 0,
+    "added_stepped_terraces": 0
+  },
+  "cleanup_v3_audit": {
+    "level": 32,
+    "chapter": 4,
+    "theme": "optical",
+    "name": "Chamber 32 // Dual Panopticon",
+    "archetype": "Segmented Security Bulkhead Corridor",
+    "orig_backup_tiles": 10,
+    "final_tiles": 28,
+    "removed_platforms": 5,
+    "retained_platforms": 2,
+    "removed_devices": 2,
+    "added_walls": 0,
+    "added_piers": 0,
+    "added_terraces": 0,
+    "gate_links": [
+      "alpha",
+      "down",
+      "east_up"
+    ]
+  }
+}

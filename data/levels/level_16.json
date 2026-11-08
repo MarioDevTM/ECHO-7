@@ -1,0 +1,427 @@
+{
+  "level_id": 16,
+  "chapter": 2,
+  "theme": "mechanical",
+  "name": "Chamber 16 // Structural Failure",
+  "subtitle": "The upper span rocks on its suspension. The lower rescue car needs power from both ends.",
+  "width": 2430,
+  "height": 1010,
+  "spawn": [
+    80,
+    519
+  ],
+  "exit": [
+    2306,
+    570
+  ],
+  "tiles": [
+    [
+      0,
+      0,
+      40,
+      1010
+    ],
+    [
+      40,
+      0,
+      2350,
+      32
+    ],
+    [
+      2390,
+      0,
+      40,
+      1010
+    ],
+    [
+      40,
+      565,
+      465,
+      445
+    ],
+    [
+      505,
+      860,
+      330,
+      150
+    ],
+    [
+      1560,
+      860,
+      400,
+      150
+    ],
+    [
+      1960,
+      650,
+      430,
+      360
+    ],
+    [
+      2235,
+      530,
+      155,
+      20
+    ]
+  ],
+  "ladders": [
+    {
+      "x": 509,
+      "y": 552,
+      "h": 308
+    }
+  ],
+  "crates": [],
+  "plates": [],
+  "switches": [],
+  "doors": [
+    {
+      "id": "d16_exit",
+      "x": 2235,
+      "y": 550,
+      "w": 24,
+      "h": 100,
+      "required_links": [
+        "rescue",
+        "valve_16_1"
+      ],
+      "logic": "ALL"
+    }
+  ],
+  "moving_platforms": [
+    {
+      "id": "sway615",
+      "x": 615,
+      "y": 540,
+      "w": 116,
+      "h": 18,
+      "end_x": 655,
+      "end_y": 600,
+      "speed": 68,
+      "active_by_default": true,
+      "logic": "ALL",
+      "required_links": []
+    },
+    {
+      "id": "sway870",
+      "x": 870,
+      "y": 583,
+      "w": 98,
+      "h": 18,
+      "end_x": 910,
+      "end_y": 643,
+      "speed": 68,
+      "active_by_default": true,
+      "logic": "ALL",
+      "required_links": []
+    },
+    {
+      "id": "sway1115",
+      "x": 1115,
+      "y": 515,
+      "w": 105,
+      "h": 18,
+      "end_x": 1155,
+      "end_y": 575,
+      "speed": 68,
+      "active_by_default": true,
+      "logic": "ALL",
+      "required_links": []
+    },
+    {
+      "id": "sway1375",
+      "x": 1375,
+      "y": 563,
+      "w": 93,
+      "h": 18,
+      "end_x": 1415,
+      "end_y": 623,
+      "speed": 68,
+      "active_by_default": true,
+      "logic": "ALL",
+      "required_links": []
+    },
+    {
+      "id": "sway1625",
+      "x": 1625,
+      "y": 498,
+      "w": 125,
+      "h": 18,
+      "end_x": 1665,
+      "end_y": 558,
+      "speed": 68,
+      "active_by_default": true,
+      "logic": "ALL",
+      "required_links": []
+    },
+    {
+      "id": "mp16_rescue",
+      "x": 840,
+      "y": 842,
+      "w": 122,
+      "h": 18,
+      "end_x": 1435,
+      "end_y": 835,
+      "speed": 160,
+      "active_by_default": false,
+      "logic": "ALL",
+      "required_links": [
+        "gen_16_1",
+        "valve_16_1"
+      ]
+    }
+  ],
+  "conveyors": [],
+  "wind_zones": [],
+  "water_zones": [],
+  "valves": [
+    {
+      "link_id": "valve_16_1",
+      "x": 1790,
+      "y": 860
+    }
+  ],
+  "generators": [
+    {
+      "link_id": "gen_16_1",
+      "x": 340,
+      "y": 565
+    }
+  ],
+  "cables": [
+    {
+      "link_id": "valve_16_1",
+      "points": [
+        [
+          1802,
+          846
+        ],
+        [
+          1802,
+          906
+        ],
+        [
+          2243,
+          906
+        ],
+        [
+          2243,
+          600
+        ]
+      ]
+    },
+    {
+      "link_id": "gen_16_1",
+      "points": [
+        [
+          352,
+          551
+        ],
+        [
+          352,
+          888
+        ],
+        [
+          848,
+          888
+        ],
+        [
+          848,
+          834
+        ]
+      ]
+    },
+    {
+      "link_id": "valve_16_1",
+      "points": [
+        [
+          1802,
+          846
+        ],
+        [
+          1802,
+          906
+        ],
+        [
+          848,
+          906
+        ],
+        [
+          848,
+          834
+        ]
+      ]
+    },
+    {
+      "link_id": "gen_16_1",
+      "points": [
+        [
+          352,
+          551
+        ],
+        [
+          352,
+          906
+        ],
+        [
+          608,
+          906
+        ],
+        [
+          608,
+          852
+        ]
+      ]
+    },
+    {
+      "link_id": "valve_16_1",
+      "points": [
+        [
+          1802,
+          846
+        ],
+        [
+          1802,
+          912
+        ],
+        [
+          608,
+          912
+        ],
+        [
+          608,
+          852
+        ]
+      ]
+    }
+  ],
+  "mirrors": [],
+  "crushers": [],
+  "steam_vents": [],
+  "collapsing_platforms": [],
+  "checkpoints": [
+    {
+      "id": "cp16_1",
+      "x": 685,
+      "y": 860
+    }
+  ],
+  "spikes": [],
+  "acids": [
+    {
+      "x": 835,
+      "y": 930,
+      "w": 725,
+      "h": 80
+    }
+  ],
+  "lasers": [],
+  "optical_beams": [],
+  "sequences": [],
+  "collectibles": [
+    {
+      "id": "log_16",
+      "x": 1670,
+      "y": 466,
+      "title": "Structural Integrity Alert",
+      "text": "Catwalk supports corroded over the coolant trench. Do not linger on spans."
+    }
+  ],
+  "decorations": [
+    {
+      "type": "monitor",
+      "x": 1764,
+      "y": 771,
+      "text": "RESCUE CAR"
+    },
+    {
+      "type": "monitor",
+      "x": 574,
+      "y": 771,
+      "text": "ACK RETURN"
+    }
+  ],
+  "solution_steps": [
+    "Start the rescue supply and cross the swaying upper span to the east valve.",
+    "Ride the lower rescue car west to acknowledge its return, then use the east launch pad to reach the lock."
+  ],
+  "hint_route": [
+    "rescue",
+    "valve_16_1"
+  ],
+  "npcs": [
+    {
+      "id": "kip",
+      "x": 150,
+      "y": 565
+    }
+  ],
+  "abilities": {
+    "wall_jump": true,
+    "dash": true
+  },
+  "springs": [
+    {
+      "id": "spring1880",
+      "x": 1880,
+      "y": 850,
+      "w": 64,
+      "h": 10
+    }
+  ],
+  "dash_recharges": [
+    {
+      "id": "ring1260",
+      "x": 1260,
+      "y": 435
+    }
+  ],
+  "one_way_platforms": [
+    {
+      "id": "deck1830_565",
+      "x": 1830,
+      "y": 565,
+      "w": 110,
+      "h": 14
+    },
+    {
+      "id": "deck1640_772",
+      "x": 1640,
+      "y": 772,
+      "w": 95,
+      "h": 14
+    },
+    {
+      "id": "deck1780_695",
+      "x": 1780,
+      "y": 695,
+      "w": 92,
+      "h": 14
+    }
+  ],
+  "dash_barriers": [],
+  "routing_consoles": [],
+  "latching_relays": [
+    {
+      "link_id": "rescue",
+      "x": 600,
+      "y": 860,
+      "required_links": [
+        "gen_16_1",
+        "valve_16_1"
+      ]
+    }
+  ],
+  "hint_notes": {
+    "rescue": [
+      "The upper span rocks on its suspension. The lower rescue car needs power from both ends.",
+      "Start the rescue supply and cross the swaying upper span to the east valve.",
+      "Ride the lower rescue car west to acknowledge its return, then use the east launch pad to reach the lock."
+    ],
+    "valve_16_1": [
+      "The upper span rocks on its suspension. The lower rescue car needs power from both ends.",
+      "Start the rescue supply and cross the swaying upper span to the east valve.",
+      "Ride the lower rescue car west to acknowledge its return, then use the east launch pad to reach the lock."
+    ]
+  }
+}

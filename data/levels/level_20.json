@@ -1,0 +1,585 @@
+{
+  "level_id": 20,
+  "chapter": 2,
+  "theme": "mechanical",
+  "name": "Chamber 20 // Final Escape",
+  "subtitle": "Evacuate in three phases. Calibrate the lens, establish an independent ferry supply, then transfer the reserve.",
+  "width": 2500,
+  "height": 1200,
+  "spawn": [
+    85,
+    984
+  ],
+  "exit": [
+    72,
+    420
+  ],
+  "tiles": [
+    [
+      0,
+      0,
+      40,
+      1200
+    ],
+    [
+      40,
+      0,
+      2420,
+      32
+    ],
+    [
+      2460,
+      0,
+      40,
+      1200
+    ],
+    [
+      40,
+      1030,
+      960,
+      170
+    ],
+    [
+      1540,
+      970,
+      920,
+      230
+    ],
+    [
+      40,
+      380,
+      152,
+      20
+    ],
+    [
+      40,
+      500,
+      152,
+      20
+    ]
+  ],
+  "ladders": [],
+  "crates": [
+    {
+      "id": "lens",
+      "x": 458,
+      "y": 994
+    },
+    {
+      "id": "omega",
+      "x": 1990,
+      "y": 934
+    }
+  ],
+  "plates": [
+    {
+      "link_id": "plate_20_lens_park",
+      "x": 865,
+      "y": 1030
+    },
+    {
+      "link_id": "plate_20_omega",
+      "x": 2280,
+      "y": 970
+    }
+  ],
+  "switches": [
+    {
+      "link_id": "seq_20_1",
+      "x": 510,
+      "y": 855,
+      "mode": "sequence",
+      "duration": 0
+    },
+    {
+      "link_id": "seq_20_2",
+      "x": 1685,
+      "y": 565,
+      "mode": "sequence",
+      "duration": 0
+    },
+    {
+      "link_id": "seq_20_3",
+      "x": 795,
+      "y": 1030,
+      "mode": "sequence",
+      "duration": 0
+    },
+    {
+      "link_id": "sw_20_final_sprint",
+      "x": 720,
+      "y": 775,
+      "mode": "timed",
+      "duration": 12
+    }
+  ],
+  "doors": [
+    {
+      "id": "d20_exit",
+      "x": 168,
+      "y": 400,
+      "w": 24,
+      "h": 100,
+      "required_links": [
+        "gen_20_independent",
+        "route_20_exit",
+        "flight",
+        "escape",
+        "sw_20_final_sprint",
+        "plate_20_lens_park"
+      ],
+      "logic": "ALL"
+    }
+  ],
+  "moving_platforms": [
+    {
+      "id": "mp20_ferry",
+      "x": 1005,
+      "y": 1014,
+      "w": 120,
+      "h": 18,
+      "end_x": 1412,
+      "end_y": 960,
+      "speed": 144,
+      "active_by_default": false,
+      "logic": "ANY",
+      "required_links": [
+        "route_20_ferry",
+        "gen_20_independent"
+      ]
+    }
+  ],
+  "conveyors": [],
+  "wind_zones": [],
+  "water_zones": [],
+  "valves": [],
+  "generators": [
+    {
+      "link_id": "gen_20_alpha",
+      "x": 215,
+      "y": 1030
+    },
+    {
+      "link_id": "gen_20_independent",
+      "x": 2100,
+      "y": 720
+    }
+  ],
+  "cables": [
+    {
+      "link_id": "sw_20_final_sprint",
+      "points": [
+        [
+          732,
+          761
+        ],
+        [
+          732,
+          839
+        ],
+        [
+          176,
+          839
+        ],
+        [
+          176,
+          450
+        ]
+      ]
+    },
+    {
+      "link_id": "plate_20_lens_park",
+      "points": [
+        [
+          877,
+          1016
+        ],
+        [
+          877,
+          1100
+        ],
+        [
+          176,
+          1100
+        ],
+        [
+          176,
+          450
+        ]
+      ]
+    },
+    {
+      "link_id": "gen_20_independent",
+      "points": [
+        [
+          2112,
+          706
+        ],
+        [
+          2112,
+          1066
+        ],
+        [
+          1013,
+          1066
+        ],
+        [
+          1013,
+          1006
+        ]
+      ]
+    },
+    {
+      "link_id": "plate_20_omega",
+      "points": [
+        [
+          2292,
+          956
+        ],
+        [
+          2292,
+          1010
+        ],
+        [
+          1898,
+          1010
+        ],
+        [
+          1898,
+          632
+        ]
+      ]
+    },
+    {
+      "link_id": "gen_20_independent",
+      "points": [
+        [
+          2112,
+          706
+        ],
+        [
+          2112,
+          766
+        ],
+        [
+          1898,
+          766
+        ],
+        [
+          1898,
+          632
+        ]
+      ]
+    },
+    {
+      "link_id": "seq_20_2",
+      "points": [
+        [
+          1697,
+          551
+        ],
+        [
+          1697,
+          704
+        ],
+        [
+          1898,
+          704
+        ],
+        [
+          1898,
+          632
+        ]
+      ]
+    }
+  ],
+  "mirrors": [
+    {
+      "id": "m20",
+      "x": 650,
+      "y": 994,
+      "orientation": 1
+    }
+  ],
+  "crushers": [],
+  "steam_vents": [],
+  "collapsing_platforms": [],
+  "checkpoints": [
+    {
+      "id": "cp20_1",
+      "x": 1570,
+      "y": 970
+    }
+  ],
+  "spikes": [],
+  "acids": [
+    {
+      "x": 1000,
+      "y": 1100,
+      "w": 540,
+      "h": 100
+    }
+  ],
+  "lasers": [],
+  "optical_beams": [
+    {
+      "link_id": "opt_20_final",
+      "x": 340,
+      "y": 1012,
+      "dir": [
+        1,
+        0
+      ],
+      "max_length": 680,
+      "receiver": [
+        655,
+        850,
+        18,
+        18
+      ],
+      "enabled_by": "gen_20_alpha"
+    }
+  ],
+  "sequences": [
+    {
+      "group_id": "escape",
+      "order": [
+        "seq_20_1",
+        "seq_20_2",
+        "seq_20_3"
+      ]
+    }
+  ],
+  "collectibles": [
+    {
+      "id": "log_20",
+      "x": 1900,
+      "y": 768,
+      "title": "Surface Ascent Telemetry",
+      "text": "External hatch unlocked. Daylight sensors registering clear skies above Sector 7."
+    }
+  ],
+  "decorations": [
+    {
+      "type": "monitor",
+      "x": 466,
+      "y": 760,
+      "text": "1 / LENS"
+    },
+    {
+      "type": "monitor",
+      "x": 1645,
+      "y": 467,
+      "text": "2 / RESERVE"
+    },
+    {
+      "type": "monitor",
+      "x": 785,
+      "y": 918,
+      "text": "3 / RETURN"
+    },
+    {
+      "type": "monitor",
+      "x": 1864,
+      "y": 551,
+      "text": "FERRY PROOF"
+    },
+    {
+      "type": "monitor",
+      "x": 1785,
+      "y": 881,
+      "text": "FERRY / EXIT"
+    }
+  ],
+  "solution_steps": [
+    "Start alpha, move the lens load to its contact, aim the beam up and stamp station 1.",
+    "Ride the ferry east. Weight omega, start backup, stamp 2 and store the live ferry supply at flight control.",
+    "Transfer reserve to EXIT and ride back on backup. Stamp 3, arm the timer and climb west to the surface hatch."
+  ],
+  "hint_route": [
+    "gen_20_independent",
+    "route_20_exit",
+    "flight",
+    "escape",
+    "sw_20_final_sprint",
+    "plate_20_lens_park"
+  ],
+  "routing_consoles": [
+    {
+      "id": "panel_20_west",
+      "x": 740,
+      "y": 1030,
+      "route_id": "reserve_20",
+      "a_signal": "route_20_ferry",
+      "b_signal": "route_20_exit",
+      "required_links": [
+        "opt_20_final"
+      ]
+    },
+    {
+      "id": "panel_20_east",
+      "x": 1740,
+      "y": 970,
+      "route_id": "reserve_20",
+      "a_signal": "route_20_ferry",
+      "b_signal": "route_20_exit",
+      "required_links": [
+        "opt_20_final"
+      ]
+    }
+  ],
+  "hint_notes": {
+    "gen_20_independent": [
+      "Start alpha, move the lens load to its contact, aim the beam up and stamp station 1.",
+      "Ride the ferry east. Weight omega, start backup, stamp 2 and store the live ferry supply at flight control.",
+      "Transfer reserve to EXIT and ride back on backup. Stamp 3, arm the timer and climb west to the surface hatch."
+    ],
+    "route_20_exit": [
+      "Start alpha, move the lens load to its contact, aim the beam up and stamp station 1.",
+      "Ride the ferry east. Weight omega, start backup, stamp 2 and store the live ferry supply at flight control.",
+      "Transfer reserve to EXIT and ride back on backup. Stamp 3, arm the timer and climb west to the surface hatch."
+    ],
+    "flight": [
+      "Start alpha, move the lens load to its contact, aim the beam up and stamp station 1.",
+      "Ride the ferry east. Weight omega, start backup, stamp 2 and store the live ferry supply at flight control.",
+      "Transfer reserve to EXIT and ride back on backup. Stamp 3, arm the timer and climb west to the surface hatch."
+    ],
+    "escape": [
+      "Start alpha, move the lens load to its contact, aim the beam up and stamp station 1.",
+      "Ride the ferry east. Weight omega, start backup, stamp 2 and store the live ferry supply at flight control.",
+      "Transfer reserve to EXIT and ride back on backup. Stamp 3, arm the timer and climb west to the surface hatch."
+    ],
+    "sw_20_final_sprint": [
+      "Start alpha, move the lens load to its contact, aim the beam up and stamp station 1.",
+      "Ride the ferry east. Weight omega, start backup, stamp 2 and store the live ferry supply at flight control.",
+      "Transfer reserve to EXIT and ride back on backup. Stamp 3, arm the timer and climb west to the surface hatch."
+    ],
+    "plate_20_lens_park": [
+      "Start alpha, move the lens load to its contact, aim the beam up and stamp station 1.",
+      "Ride the ferry east. Weight omega, start backup, stamp 2 and store the live ferry supply at flight control.",
+      "Transfer reserve to EXIT and ride back on backup. Stamp 3, arm the timer and climb west to the surface hatch."
+    ]
+  },
+  "npcs": [
+    {
+      "id": "kip",
+      "x": 155,
+      "y": 1030
+    },
+    {
+      "id": "kip_final",
+      "x": 2360,
+      "y": 970
+    },
+    {
+      "id": "ada_final",
+      "x": 330,
+      "y": 940
+    }
+  ],
+  "abilities": {
+    "wall_jump": true,
+    "dash": true
+  },
+  "springs": [],
+  "dash_recharges": [
+    {
+      "id": "ring1240",
+      "x": 1240,
+      "y": 885
+    }
+  ],
+  "one_way_platforms": [
+    {
+      "id": "deck210_940",
+      "x": 210,
+      "y": 940,
+      "w": 150,
+      "h": 14
+    },
+    {
+      "id": "deck445_855",
+      "x": 445,
+      "y": 855,
+      "w": 150,
+      "h": 14
+    },
+    {
+      "id": "deck680_775",
+      "x": 680,
+      "y": 775,
+      "w": 125,
+      "h": 14
+    },
+    {
+      "id": "deck460_695",
+      "x": 460,
+      "y": 695,
+      "w": 120,
+      "h": 14
+    },
+    {
+      "id": "deck260_610",
+      "x": 260,
+      "y": 610,
+      "w": 118,
+      "h": 14
+    },
+    {
+      "id": "deck198_512",
+      "x": 198,
+      "y": 512,
+      "w": 125,
+      "h": 14
+    },
+    {
+      "id": "deck1650_885",
+      "x": 1650,
+      "y": 885,
+      "w": 123,
+      "h": 14
+    },
+    {
+      "id": "deck1870_800",
+      "x": 1870,
+      "y": 800,
+      "w": 133,
+      "h": 14
+    },
+    {
+      "id": "deck2070_720",
+      "x": 2070,
+      "y": 720,
+      "w": 142,
+      "h": 14
+    },
+    {
+      "id": "deck1860_640",
+      "x": 1860,
+      "y": 640,
+      "w": 118,
+      "h": 14
+    },
+    {
+      "id": "deck1640_565",
+      "x": 1640,
+      "y": 565,
+      "w": 130,
+      "h": 14
+    }
+  ],
+  "dash_barriers": [],
+  "latching_relays": [
+    {
+      "link_id": "flight",
+      "x": 1890,
+      "y": 640,
+      "required_links": [
+        "plate_20_omega",
+        "gen_20_independent",
+        "route_20_ferry",
+        "seq_20_2"
+      ]
+    }
+  ]
+}

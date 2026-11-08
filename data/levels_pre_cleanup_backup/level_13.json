@@ -1,0 +1,318 @@
+{
+  "level_id": 13,
+  "chapter": 2,
+  "theme": "mechanical",
+  "name": "Chamber 13 // Flooded Corridor",
+  "subtitle": "The basin floor proves drainage. Its stored reading survives refilling.",
+  "width": 1770,
+  "height": 1020,
+  "spawn": [
+    80,
+    529
+  ],
+  "exit": [
+    1646,
+    495
+  ],
+  "tiles": [
+    [
+      0,
+      0,
+      40,
+      1020
+    ],
+    [
+      40,
+      0,
+      1690,
+      32
+    ],
+    [
+      1730,
+      0,
+      40,
+      1020
+    ],
+    [
+      40,
+      575,
+      390,
+      445
+    ],
+    [
+      430,
+      890,
+      900,
+      130
+    ],
+    [
+      1330,
+      575,
+      400,
+      445
+    ],
+    [
+      540,
+      800,
+      88,
+      16
+    ],
+    [
+      1575,
+      455,
+      155,
+      20
+    ]
+  ],
+  "ladders": [],
+  "crates": [
+    {
+      "id": "float",
+      "x": 740,
+      "y": 854
+    }
+  ],
+  "plates": [
+    {
+      "link_id": "plate_13_dry",
+      "x": 1030,
+      "y": 890
+    }
+  ],
+  "switches": [],
+  "doors": [
+    {
+      "id": "d13_exit",
+      "x": 1575,
+      "y": 475,
+      "w": 24,
+      "h": 100,
+      "required_links": [
+        "relay_13_sump",
+        "sump_refilled"
+      ],
+      "logic": "ALL"
+    }
+  ],
+  "moving_platforms": [],
+  "conveyors": [],
+  "wind_zones": [],
+  "water_zones": [
+    {
+      "id": "wz_13_1",
+      "x": 430,
+      "y": 615,
+      "w": 900,
+      "h": 275,
+      "drained_y": 890,
+      "controlled_by": "valve_13_drain"
+    }
+  ],
+  "valves": [
+    {
+      "link_id": "valve_13_drain",
+      "x": 302,
+      "y": 575
+    }
+  ],
+  "generators": [],
+  "cables": [
+    {
+      "link_id": "relay_13_sump",
+      "points": [
+        [
+          580,
+          786
+        ],
+        [
+          580,
+          840
+        ],
+        [
+          1583,
+          840
+        ],
+        [
+          1583,
+          525
+        ]
+      ]
+    },
+    {
+      "link_id": "valve_13_drain",
+      "points": [
+        [
+          314,
+          561
+        ],
+        [
+          314,
+          846
+        ],
+        [
+          576,
+          846
+        ],
+        [
+          576,
+          792
+        ]
+      ]
+    },
+    {
+      "link_id": "plate_13_dry",
+      "points": [
+        [
+          1042,
+          876
+        ],
+        [
+          1042,
+          936
+        ],
+        [
+          576,
+          936
+        ],
+        [
+          576,
+          792
+        ]
+      ]
+    }
+  ],
+  "mirrors": [],
+  "crushers": [],
+  "steam_vents": [],
+  "collapsing_platforms": [],
+  "checkpoints": [
+    {
+      "id": "cp13_1",
+      "x": 205,
+      "y": 575
+    }
+  ],
+  "spikes": [],
+  "acids": [],
+  "lasers": [],
+  "optical_beams": [],
+  "sequences": [],
+  "collectibles": [
+    {
+      "id": "log_13",
+      "x": 1160,
+      "y": 763,
+      "title": "Hydro-Control Log",
+      "text": "Drainage valves purge auxiliary basins in 3 seconds, allowing heavy crate handling."
+    }
+  ],
+  "decorations": [
+    {
+      "type": "monitor",
+      "x": 276,
+      "y": 486,
+      "text": "DRAIN / FILL"
+    },
+    {
+      "type": "monitor",
+      "x": 542,
+      "y": 711,
+      "text": "DRY PROOF"
+    }
+  ],
+  "solution_steps": [
+    "Drain the basin. Move the float to the submerged scale and store the dry reading on the west sill.",
+    "Climb out, refill the tank and use the east spillway steps."
+  ],
+  "hint_route": [
+    "relay_13_sump",
+    "sump_refilled"
+  ],
+  "latching_relays": [
+    {
+      "link_id": "relay_13_sump",
+      "x": 568,
+      "y": 800,
+      "required_links": [
+        "valve_13_drain",
+        "plate_13_dry"
+      ]
+    }
+  ],
+  "signal_inverters": [
+    {
+      "link_id": "sump_refilled",
+      "input": "valve_13_drain",
+      "water_zone": "wz_13_1"
+    }
+  ],
+  "hint_notes": {
+    "relay_13_sump": [
+      "The basin floor proves drainage. Its stored reading survives refilling.",
+      "Drain the basin. Move the float to the submerged scale and store the dry reading on the west sill.",
+      "Climb out, refill the tank and use the east spillway steps."
+    ],
+    "sump_refilled": [
+      "The basin floor proves drainage. Its stored reading survives refilling.",
+      "Drain the basin. Move the float to the submerged scale and store the dry reading on the west sill.",
+      "Climb out, refill the tank and use the east spillway steps."
+    ]
+  },
+  "npcs": [
+    {
+      "id": "kip",
+      "x": 150,
+      "y": 575
+    },
+    {
+      "id": "ada",
+      "x": 1400,
+      "y": 575
+    }
+  ],
+  "abilities": {
+    "wall_jump": true,
+    "dash": true
+  },
+  "springs": [],
+  "dash_recharges": [],
+  "one_way_platforms": [
+    {
+      "id": "deck680_714",
+      "x": 680,
+      "y": 714,
+      "w": 115,
+      "h": 14
+    },
+    {
+      "id": "deck495_632",
+      "x": 495,
+      "y": 632,
+      "w": 98,
+      "h": 14
+    },
+    {
+      "id": "deck1090_795",
+      "x": 1090,
+      "y": 795,
+      "w": 110,
+      "h": 14
+    },
+    {
+      "id": "deck1180_710",
+      "x": 1180,
+      "y": 710,
+      "w": 90,
+      "h": 14
+    },
+    {
+      "id": "deck1260_630",
+      "x": 1260,
+      "y": 630,
+      "w": 70,
+      "h": 14
+    }
+  ],
+  "dash_barriers": [],
+  "routing_consoles": []
+}

@@ -1,0 +1,344 @@
+{
+  "level_id": 8,
+  "chapter": 1,
+  "theme": "awakening",
+  "name": "Chamber 08 // Factory Shutdown",
+  "subtitle": "Shutdown order follows the stamped numbers from the press floor to the crane and back.",
+  "width": 1950,
+  "height": 960,
+  "spawn": [
+    90,
+    769
+  ],
+  "exit": [
+    1826,
+    735
+  ],
+  "tiles": [
+    [
+      0,
+      0,
+      40,
+      960
+    ],
+    [
+      40,
+      0,
+      1870,
+      32
+    ],
+    [
+      1910,
+      0,
+      40,
+      960
+    ],
+    [
+      40,
+      815,
+      1870,
+      145
+    ],
+    [
+      700,
+      32,
+      32,
+      487
+    ],
+    [
+      1755,
+      695,
+      155,
+      20
+    ]
+  ],
+  "ladders": [],
+  "crates": [
+    {
+      "id": "ingot",
+      "x": 908,
+      "y": 779
+    }
+  ],
+  "plates": [
+    {
+      "link_id": "plate_8_core",
+      "x": 1350,
+      "y": 815
+    }
+  ],
+  "switches": [
+    {
+      "link_id": "seq_8_1",
+      "x": 470,
+      "y": 815,
+      "mode": "sequence",
+      "duration": 0
+    },
+    {
+      "link_id": "seq_8_2",
+      "x": 1000,
+      "y": 342,
+      "mode": "sequence",
+      "duration": 0
+    },
+    {
+      "link_id": "seq_8_3",
+      "x": 1515,
+      "y": 815,
+      "mode": "sequence",
+      "duration": 0
+    },
+    {
+      "link_id": "intake_reset",
+      "x": 765,
+      "y": 815,
+      "mode": "permanent",
+      "duration": 0
+    }
+  ],
+  "doors": [
+    {
+      "id": "d8_mid",
+      "x": 700,
+      "y": 519,
+      "w": 24,
+      "h": 296,
+      "required_links": [
+        "seq_8_1",
+        "intake_reset"
+      ],
+      "logic": "ANY"
+    },
+    {
+      "id": "d8_exit",
+      "x": 1755,
+      "y": 715,
+      "w": 24,
+      "h": 100,
+      "required_links": [
+        "shutdown",
+        "plate_8_core"
+      ],
+      "logic": "ALL"
+    }
+  ],
+  "moving_platforms": [],
+  "conveyors": [],
+  "wind_zones": [],
+  "water_zones": [],
+  "valves": [],
+  "generators": [],
+  "cables": [
+    {
+      "link_id": "seq_8_1",
+      "points": [
+        [
+          482,
+          801
+        ],
+        [
+          482,
+          855
+        ],
+        [
+          708,
+          855
+        ],
+        [
+          708,
+          667
+        ]
+      ]
+    },
+    {
+      "link_id": "intake_reset",
+      "points": [
+        [
+          777,
+          801
+        ],
+        [
+          777,
+          861
+        ],
+        [
+          708,
+          861
+        ],
+        [
+          708,
+          667
+        ]
+      ]
+    },
+    {
+      "link_id": "plate_8_core",
+      "points": [
+        [
+          1362,
+          801
+        ],
+        [
+          1362,
+          861
+        ],
+        [
+          1763,
+          861
+        ],
+        [
+          1763,
+          765
+        ]
+      ]
+    }
+  ],
+  "mirrors": [],
+  "crushers": [
+    {
+      "id": "press1140",
+      "x": 1140,
+      "y": 620,
+      "w": 84,
+      "h": 40,
+      "travel": 150,
+      "period": 3,
+      "disabled_by": [
+        "shutdown"
+      ]
+    }
+  ],
+  "steam_vents": [],
+  "collapsing_platforms": [],
+  "checkpoints": [
+    {
+      "id": "cp8_1",
+      "x": 845,
+      "y": 815
+    }
+  ],
+  "spikes": [],
+  "acids": [],
+  "lasers": [],
+  "optical_beams": [],
+  "sequences": [
+    {
+      "group_id": "shutdown",
+      "order": [
+        "seq_8_1",
+        "seq_8_2",
+        "seq_8_3"
+      ]
+    }
+  ],
+  "collectibles": [
+    {
+      "id": "log_08",
+      "x": 1520,
+      "y": 463,
+      "title": "Foundry Shutdown Protocol",
+      "text": "Sequence order: Floor Intake (1) -> Catwalk Bus (2) -> Bulkhead Relay (3)."
+    }
+  ],
+  "decorations": [
+    {
+      "type": "monitor",
+      "x": 450,
+      "y": 721,
+      "text": "01 / INTAKE"
+    },
+    {
+      "type": "monitor",
+      "x": 978,
+      "y": 250,
+      "text": "02 / CRANE"
+    },
+    {
+      "type": "monitor",
+      "x": 1490,
+      "y": 720,
+      "text": "03 / BRAKE"
+    }
+  ],
+  "solution_steps": [
+    "Use 01 to release the intake, fold back along the crane to 02, then drop to floor station 03.",
+    "Move the core under the stopped ram to the pressure bed."
+  ],
+  "hint_route": [
+    "shutdown",
+    "plate_8_core"
+  ],
+  "npcs": [
+    {
+      "id": "kip",
+      "x": 160,
+      "y": 815
+    }
+  ],
+  "abilities": {
+    "wall_jump": true,
+    "dash": false
+  },
+  "springs": [],
+  "dash_recharges": [],
+  "one_way_platforms": [
+    {
+      "id": "deck820_735",
+      "x": 820,
+      "y": 735,
+      "w": 145,
+      "h": 14
+    },
+    {
+      "id": "deck1040_655",
+      "x": 1040,
+      "y": 655,
+      "w": 110,
+      "h": 14
+    },
+    {
+      "id": "deck1280_575",
+      "x": 1280,
+      "y": 575,
+      "w": 140,
+      "h": 14
+    },
+    {
+      "id": "deck1480_495",
+      "x": 1480,
+      "y": 495,
+      "w": 165,
+      "h": 14
+    },
+    {
+      "id": "deck1200_413",
+      "x": 1200,
+      "y": 413,
+      "w": 150,
+      "h": 14
+    },
+    {
+      "id": "deck970_342",
+      "x": 970,
+      "y": 342,
+      "w": 165,
+      "h": 14
+    }
+  ],
+  "dash_barriers": [],
+  "routing_consoles": [],
+  "latching_relays": [],
+  "hint_notes": {
+    "shutdown": [
+      "Shutdown order follows the stamped numbers from the press floor to the crane and back.",
+      "Use 01 to release the intake, fold back along the crane to 02, then drop to floor station 03.",
+      "Move the core under the stopped ram to the pressure bed."
+    ],
+    "plate_8_core": [
+      "Shutdown order follows the stamped numbers from the press floor to the crane and back.",
+      "Use 01 to release the intake, fold back along the crane to 02, then drop to floor station 03.",
+      "Move the core under the stopped ram to the pressure bed."
+    ]
+  }
+}

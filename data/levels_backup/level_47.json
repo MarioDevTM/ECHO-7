@@ -1,0 +1,663 @@
+{
+  "tiles": [
+    [
+      0,
+      0,
+      36,
+      994
+    ],
+    [
+      1964,
+      0,
+      36,
+      994
+    ],
+    [
+      36,
+      0,
+      1928,
+      30
+    ],
+    [
+      884,
+      859,
+      390,
+      135
+    ],
+    [
+      150,
+      859,
+      362,
+      135
+    ],
+    [
+      150,
+      607,
+      362,
+      23
+    ],
+    [
+      150,
+      355,
+      362,
+      23
+    ],
+    [
+      884,
+      355,
+      390,
+      23
+    ],
+    [
+      1460,
+      355,
+      340,
+      23
+    ],
+    [
+      477,
+      590,
+      10,
+      17
+    ],
+    [
+      1572,
+      221,
+      155,
+      18
+    ],
+    [
+      1709,
+      239,
+      18,
+      116
+    ]
+  ],
+  "ladders": [
+    {
+      "x": 514,
+      "y": 569,
+      "h": 300
+    },
+    {
+      "x": 514,
+      "y": 317,
+      "h": 300
+    }
+  ],
+  "crates": [
+    {
+      "id": "load",
+      "x": 265,
+      "y": 571
+    }
+  ],
+  "plates": [
+    {
+      "link_id": "weight",
+      "x": 429,
+      "y": 607
+    }
+  ],
+  "switches": [],
+  "doors": [
+    {
+      "id": "surface_lock",
+      "x": 1572,
+      "y": 239,
+      "w": 20,
+      "h": 116,
+      "required_links": [
+        "alpha",
+        "full",
+        "valve"
+      ]
+    }
+  ],
+  "moving_platforms": [
+    {
+      "id": "car0",
+      "x": 631,
+      "y": 821,
+      "w": 83,
+      "h": 16,
+      "end_x": 710,
+      "end_y": 893,
+      "speed": 116,
+      "active_by_default": true,
+      "required_links": []
+    },
+    {
+      "id": "car1",
+      "x": 530,
+      "y": 851,
+      "w": 86,
+      "h": 16,
+      "end_x": 530,
+      "end_y": 599,
+      "speed": 116,
+      "active_by_default": true,
+      "required_links": []
+    },
+    {
+      "id": "car2",
+      "x": 631,
+      "y": 317,
+      "w": 83,
+      "h": 16,
+      "end_x": 710,
+      "end_y": 389,
+      "speed": 116,
+      "active_by_default": true,
+      "required_links": []
+    }
+  ],
+  "conveyors": [],
+  "wind_zones": [],
+  "water_zones": [
+    {
+      "id": "sump",
+      "x": 180,
+      "y": 489,
+      "w": 312,
+      "h": 118,
+      "drained_y": 607,
+      "controlled_by": "dry"
+    }
+  ],
+  "valves": [
+    {
+      "link_id": "dry",
+      "x": 331,
+      "y": 859
+    },
+    {
+      "link_id": "valve",
+      "x": 1079,
+      "y": 355
+    }
+  ],
+  "generators": [
+    {
+      "link_id": "overhaul_47_generator",
+      "x": 861,
+      "y": 799
+    }
+  ],
+  "cables": [
+    {
+      "link_id": "weight",
+      "points": [
+        [
+          438,
+          595
+        ],
+        [
+          438,
+          631
+        ],
+        [
+          347,
+          631
+        ],
+        [
+          347,
+          345
+        ]
+      ]
+    },
+    {
+      "link_id": "dry",
+      "points": [
+        [
+          340,
+          847
+        ],
+        [
+          340,
+          890
+        ],
+        [
+          347,
+          890
+        ],
+        [
+          347,
+          345
+        ]
+      ]
+    },
+    {
+      "link_id": "alpha",
+      "points": [
+        [
+          331,
+          343
+        ],
+        [
+          331,
+          377
+        ],
+        [
+          1580,
+          377
+        ],
+        [
+          1580,
+          299
+        ]
+      ]
+    },
+    {
+      "link_id": "full",
+      "points": [
+        [
+          192,
+          475
+        ],
+        [
+          192,
+          516
+        ],
+        [
+          1580,
+          516
+        ],
+        [
+          1580,
+          299
+        ]
+      ]
+    },
+    {
+      "link_id": "valve",
+      "points": [
+        [
+          1079,
+          343
+        ],
+        [
+          1079,
+          391
+        ],
+        [
+          1580,
+          391
+        ],
+        [
+          1580,
+          299
+        ]
+      ]
+    }
+  ],
+  "mirrors": [],
+  "crushers": [],
+  "steam_vents": [
+    {
+      "id": "seam0",
+      "x": 680,
+      "y": 774,
+      "w": 36,
+      "h": 134,
+      "period": 3.1,
+      "duty_cycle": 0.43,
+      "disabled_by": []
+    },
+    {
+      "id": "seam3",
+      "x": 680,
+      "y": 270,
+      "w": 36,
+      "h": 134,
+      "period": 3.1,
+      "duty_cycle": 0.43,
+      "disabled_by": []
+    }
+  ],
+  "collapsing_platforms": [],
+  "checkpoints": [
+    {
+      "id": "beacon_47",
+      "x": 1209,
+      "y": 355
+    }
+  ],
+  "spikes": [],
+  "acids": [
+    {
+      "x": 36,
+      "y": 919,
+      "w": 114,
+      "h": 75
+    },
+    {
+      "x": 512,
+      "y": 919,
+      "w": 372,
+      "h": 75
+    },
+    {
+      "x": 1274,
+      "y": 919,
+      "w": 690,
+      "h": 75
+    }
+  ],
+  "lasers": [],
+  "optical_beams": [],
+  "sequences": [],
+  "collectibles": [
+    {
+      "id": "log_47",
+      "x": 192,
+      "y": 827,
+      "title": "Rising Headwater / Shift Notes",
+      "text": "Rising Headwater. Check the signal lines before you leave the service deck."
+    },
+    {
+      "id": "field_trace_47",
+      "x": 1203,
+      "y": 783,
+      "title": "FIELD TRACE 47 / VERTICAL FLOOD COLUMN",
+      "text": "ECHO-7 field diagnostics: Build a compact vertical climb where a previously saved drain state unlocks a high recorder; provide vertical camera visibility, safe pauses, and checkpoints....",
+      "required_links": [
+        "alpha"
+      ],
+      "optional_investigation": true
+    },
+    {
+      "id": "service_challenge_47",
+      "x": 1035,
+      "y": 188,
+      "title": "Optional Diagnostics 47",
+      "text": "Optional master circuit cleared. The standard exit never depends on this side challenge.",
+      "required_links": [
+        "sector_47_validated"
+      ],
+      "optional_investigation": true
+    }
+  ],
+  "decorations": [
+    {
+      "type": "warning_stripe",
+      "x": 162,
+      "y": 619,
+      "w": 120
+    },
+    {
+      "type": "warning_stripe",
+      "x": 162,
+      "y": 367,
+      "w": 120
+    },
+    {
+      "type": "warning_stripe",
+      "x": 896,
+      "y": 367,
+      "w": 120
+    },
+    {
+      "type": "warning_stripe",
+      "x": 1472,
+      "y": 367,
+      "w": 120
+    },
+    {
+      "type": "monitor",
+      "x": 283,
+      "y": 767,
+      "text": "DRAIN / FILL"
+    },
+    {
+      "type": "monitor",
+      "x": 366,
+      "y": 515,
+      "text": "RECEIVING SCALE"
+    },
+    {
+      "type": "monitor",
+      "x": 301,
+      "y": 255,
+      "text": "HOLD WEIGHT + DRY"
+    },
+    {
+      "type": "monitor",
+      "x": 1031,
+      "y": 263,
+      "text": "ISOLATE"
+    },
+    {
+      "type": "monitor",
+      "x": 1595,
+      "y": 181,
+      "text": "EXIT LOCK"
+    },
+    {
+      "type": "monitor",
+      "x": 1216,
+      "y": 745,
+      "text": "FORENSIC TRACE 47"
+    },
+    {
+      "type": "monitor",
+      "x": 845,
+      "y": 696,
+      "text": "ACCESS / 47"
+    },
+    {
+      "type": "warning_stripe",
+      "x": 790,
+      "y": 691,
+      "w": 78
+    }
+  ],
+  "latching_relays": [
+    {
+      "link_id": "alpha",
+      "x": 331,
+      "y": 355,
+      "required_links": [
+        "weight",
+        "dry"
+      ]
+    },
+    {
+      "link_id": "overhaul_47_memory",
+      "x": 760,
+      "y": 748,
+      "required_links": [
+        "overhaul_47_generator",
+        "overhaul_47_A"
+      ]
+    },
+    {
+      "link_id": "sector_47_validated",
+      "x": 1023,
+      "y": 230,
+      "required_links": [
+        "overhaul_47_B"
+      ]
+    }
+  ],
+  "routing_consoles": [
+    {
+      "id": "overhaul_47_selector",
+      "route_id": "overhaul_47_bus",
+      "x": 808,
+      "y": 679,
+      "a_signal": "overhaul_47_A",
+      "b_signal": "overhaul_47_B"
+    }
+  ],
+  "signal_inverters": [
+    {
+      "link_id": "full",
+      "input": "dry",
+      "water_zone": "sump"
+    }
+  ],
+  "npcs": [
+    {
+      "id": "kip",
+      "x": 984,
+      "y": 859,
+      "dialogue": [
+        "Rising Headwater. Maintenance says the gap is within budget.",
+        "Turn the handwheel and watch which machinery changes.",
+        "Turn the handwheel and watch which machinery changes."
+      ]
+    }
+  ],
+  "springs": [],
+  "dash_recharges": [
+    {
+      "id": "ring4",
+      "x": 1353,
+      "y": 257
+    }
+  ],
+  "one_way_platforms": [
+    {
+      "id": "walk0",
+      "x": 552,
+      "y": 523,
+      "w": 83,
+      "h": 12
+    },
+    {
+      "id": "walk1",
+      "x": 512,
+      "y": 439,
+      "w": 83,
+      "h": 12
+    },
+    {
+      "id": "walk2",
+      "x": 552,
+      "y": 355,
+      "w": 83,
+      "h": 12
+    },
+    {
+      "id": "overhaul_step_47_0",
+      "x": 843,
+      "y": 799,
+      "w": 78,
+      "h": 12
+    },
+    {
+      "id": "overhaul_step_47_1",
+      "x": 742,
+      "y": 748,
+      "w": 78,
+      "h": 12
+    },
+    {
+      "id": "overhaul_step_47_2",
+      "x": 790,
+      "y": 679,
+      "w": 78,
+      "h": 12
+    },
+    {
+      "id": "validation_foot_47_0",
+      "x": 1090,
+      "y": 292,
+      "w": 78,
+      "h": 12
+    },
+    {
+      "id": "validation_foot_47_1",
+      "x": 1005,
+      "y": 230,
+      "w": 78,
+      "h": 12
+    }
+  ],
+  "dash_barriers": [],
+  "level_id": 47,
+  "width": 2000,
+  "height": 994,
+  "name": "Chamber 47 // Rising Headwater",
+  "abilities": {
+    "wall_jump": true,
+    "dash": true
+  },
+  "spawn": [
+    922,
+    813
+  ],
+  "exit": [
+    1629,
+    275
+  ],
+  "hint_route": [
+    "dry",
+    "weight",
+    "alpha",
+    "full",
+    "valve"
+  ],
+  "hint_notes": {
+    "dry": [
+      "Turn the handwheel and watch which machinery changes.",
+      "Turn the handwheel and watch which machinery changes.",
+      "Turn the handwheel and watch which machinery changes."
+    ],
+    "weight": [
+      "Move the cargo right until it rests on the receiving scale.",
+      "Move the cargo right until it rests on the receiving scale.",
+      "Move the cargo right until it rests on the receiving scale."
+    ],
+    "alpha": [
+      "Keep weight and dry live, then interact with the recorder to hold the reading.",
+      "Keep weight and dry live, then interact with the recorder to hold the reading.",
+      "Keep weight and dry live, then interact with the recorder to hold the reading."
+    ],
+    "full": [
+      "Open the inlet again and let the basin refill. The float will lift off the scale.",
+      "Open the inlet again and let the basin refill. The float will lift off the scale.",
+      "Open the inlet again and let the basin refill. The float will lift off the scale."
+    ],
+    "valve": [
+      "Turn the handwheel and watch which machinery changes.",
+      "Turn the handwheel and watch which machinery changes.",
+      "Turn the handwheel and watch which machinery changes."
+    ]
+  },
+  "solution_steps": [
+    "Turn the handwheel and watch which machinery changes.",
+    "Move the cargo right until it rests on the receiving scale.",
+    "Keep weight and dry live, then interact with the recorder to hold the reading.",
+    "Open the inlet again and let the basin refill. The float will lift off the scale.",
+    "Turn the handwheel and watch which machinery changes.",
+    "Energize the service bus, memorize A at the middle station, and reroute to B before proceeding."
+  ],
+  "subtitle": "Turn the handwheel and watch which machinery changes.  //  SERVICE DETOUR: Energize the service bus, memorize A at the middle station, and reroute to B before proceeding.",
+  "chapter": 5,
+  "theme": "environmental",
+  "topology": "Vertical Flood Column",
+  "overhaul_version": 1,
+  "overhaul_design": {
+    "profile": "relay_bus",
+    "route": "left_switchback",
+    "actual_direction": -1,
+    "mandatory": true,
+    "service_platform_count": 3
+  },
+  "secondary_validation_1": {
+    "checkpoint": "beacon_47",
+    "extra_platforms": 2,
+    "signal": "sector_47_validated"
+  },
+  "side_challenge_policy": {
+    "campaign_blocking": false,
+    "optional_signals": [
+      "overhaul_47_memory",
+      "overhaul_47_B",
+      "sector_47_validated"
+    ],
+    "reason": "Not proven traversable in the Pygame engine; preserve main progression."
+  }
+}

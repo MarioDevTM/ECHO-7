@@ -1,0 +1,432 @@
+{
+  "level_id": 21,
+  "chapter": 3,
+  "name": "Chamber 21 // Freight Dispatch",
+  "subtitle": "Dispatch uses one pallet twice. Weigh it on arrival, stamp the ticket, then reverse the line.",
+  "theme": "power",
+  "width": 1910,
+  "height": 950,
+  "spawn": [
+    80,
+    729
+  ],
+  "exit": [
+    72,
+    358
+  ],
+  "tiles": [
+    [
+      0,
+      0,
+      40,
+      950
+    ],
+    [
+      40,
+      0,
+      1830,
+      32
+    ],
+    [
+      1870,
+      0,
+      40,
+      950
+    ],
+    [
+      40,
+      775,
+      520,
+      175
+    ],
+    [
+      560,
+      791,
+      670,
+      159
+    ],
+    [
+      1230,
+      775,
+      640,
+      175
+    ],
+    [
+      40,
+      318,
+      152,
+      20
+    ],
+    [
+      40,
+      438,
+      152,
+      20
+    ],
+    [
+      192,
+      438,
+      38,
+      20
+    ]
+  ],
+  "hint_route": [
+    "release",
+    "cargo"
+  ],
+  "generators": [
+    {
+      "link_id": "motor",
+      "x": 274,
+      "y": 775
+    }
+  ],
+  "switches": [
+    {
+      "link_id": "polarity",
+      "x": 1520,
+      "y": 685,
+      "mode": "toggle",
+      "duration": 0
+    }
+  ],
+  "conveyors": [
+    {
+      "id": "line",
+      "x": 560,
+      "y": 775,
+      "w": 670,
+      "h": 16,
+      "speed": -105,
+      "powered_by": "motor",
+      "reversed_by": "polarity"
+    }
+  ],
+  "crates": [
+    {
+      "id": "pallet",
+      "x": 900,
+      "y": 739
+    }
+  ],
+  "plates": [
+    {
+      "link_id": "intake",
+      "x": 523,
+      "y": 775
+    },
+    {
+      "link_id": "cargo",
+      "x": 1240,
+      "y": 775
+    }
+  ],
+  "ladders": [],
+  "doors": [
+    {
+      "id": "exit_lock",
+      "x": 168,
+      "y": 338,
+      "w": 24,
+      "h": 100,
+      "required_links": [
+        "release",
+        "cargo"
+      ],
+      "logic": "ALL"
+    }
+  ],
+  "checkpoints": [
+    {
+      "id": "cp21_1",
+      "x": 1640,
+      "y": 775
+    }
+  ],
+  "cables": [
+    {
+      "link_id": "release",
+      "points": [
+        [
+          802,
+          437
+        ],
+        [
+          802,
+          491
+        ],
+        [
+          176,
+          491
+        ],
+        [
+          176,
+          388
+        ]
+      ]
+    },
+    {
+      "link_id": "cargo",
+      "points": [
+        [
+          1252,
+          761
+        ],
+        [
+          1252,
+          821
+        ],
+        [
+          176,
+          821
+        ],
+        [
+          176,
+          388
+        ]
+      ]
+    },
+    {
+      "link_id": "intake",
+      "points": [
+        [
+          535,
+          761
+        ],
+        [
+          535,
+          815
+        ],
+        [
+          1063,
+          815
+        ],
+        [
+          1063,
+          514
+        ]
+      ]
+    },
+    {
+      "link_id": "motor",
+      "points": [
+        [
+          286,
+          761
+        ],
+        [
+          286,
+          821
+        ],
+        [
+          1063,
+          821
+        ],
+        [
+          1063,
+          514
+        ]
+      ]
+    },
+    {
+      "link_id": "cargo",
+      "points": [
+        [
+          1252,
+          761
+        ],
+        [
+          1252,
+          815
+        ],
+        [
+          798,
+          815
+        ],
+        [
+          798,
+          443
+        ]
+      ]
+    },
+    {
+      "link_id": "ticket",
+      "points": [
+        [
+          1067,
+          508
+        ],
+        [
+          1067,
+          568
+        ],
+        [
+          798,
+          568
+        ],
+        [
+          798,
+          443
+        ]
+      ]
+    },
+    {
+      "link_id": "polarity",
+      "points": [
+        [
+          1532,
+          671
+        ],
+        [
+          1532,
+          737
+        ],
+        [
+          798,
+          737
+        ],
+        [
+          798,
+          443
+        ]
+      ]
+    }
+  ],
+  "decorations": [
+    {
+      "type": "monitor",
+      "x": 1029,
+      "y": 433,
+      "text": "INBOUND"
+    },
+    {
+      "type": "monitor",
+      "x": 764,
+      "y": 362,
+      "text": "DISPATCH"
+    },
+    {
+      "type": "monitor",
+      "x": 1494,
+      "y": 596,
+      "text": "REVERSE LINE"
+    }
+  ],
+  "npcs": [
+    {
+      "id": "kip",
+      "x": 150,
+      "y": 775
+    }
+  ],
+  "abilities": {
+    "wall_jump": true,
+    "dash": true
+  },
+  "springs": [],
+  "dash_recharges": [],
+  "one_way_platforms": [
+    {
+      "id": "deck1470_685",
+      "x": 1470,
+      "y": 685,
+      "w": 170,
+      "h": 14
+    },
+    {
+      "id": "deck1250_605",
+      "x": 1250,
+      "y": 605,
+      "w": 108,
+      "h": 14
+    },
+    {
+      "id": "deck1020_522",
+      "x": 1020,
+      "y": 522,
+      "w": 125,
+      "h": 14
+    },
+    {
+      "id": "deck762_451",
+      "x": 762,
+      "y": 451,
+      "w": 120,
+      "h": 14
+    },
+    {
+      "id": "deck510_380",
+      "x": 510,
+      "y": 380,
+      "w": 105,
+      "h": 14
+    },
+    {
+      "id": "deck230_438",
+      "x": 230,
+      "y": 438,
+      "w": 140,
+      "h": 14
+    }
+  ],
+  "dash_barriers": [
+    {
+      "id": "shipping_seal",
+      "x": 1444,
+      "y": 675,
+      "w": 22,
+      "h": 100
+    }
+  ],
+  "routing_consoles": [],
+  "latching_relays": [
+    {
+      "link_id": "ticket",
+      "x": 1055,
+      "y": 522,
+      "required_links": [
+        "intake",
+        "motor"
+      ]
+    },
+    {
+      "link_id": "release",
+      "x": 790,
+      "y": 451,
+      "required_links": [
+        "cargo",
+        "ticket",
+        "polarity"
+      ]
+    }
+  ],
+  "acids": [],
+  "spikes": [],
+  "collapsing_platforms": [],
+  "steam_vents": [],
+  "hint_notes": {
+    "release": [
+      "Dispatch uses one pallet twice. Weigh it on arrival, stamp the ticket, then reverse the line.",
+      "Start the westbound line and weigh the pallet on intake. Climb to the ticket punch and store its arrival.",
+      "Reverse the line at the east station. Push the pallet to cargo, then climb the dispatch truss and release it."
+    ],
+    "cargo": [
+      "Dispatch uses one pallet twice. Weigh it on arrival, stamp the ticket, then reverse the line.",
+      "Start the westbound line and weigh the pallet on intake. Climb to the ticket punch and store its arrival.",
+      "Reverse the line at the east station. Push the pallet to cargo, then climb the dispatch truss and release it."
+    ]
+  },
+  "solution_steps": [
+    "Start the westbound line and weigh the pallet on intake. Climb to the ticket punch and store its arrival.",
+    "Reverse the line at the east station. Push the pallet to cargo, then climb the dispatch truss and release it."
+  ],
+  "collectibles": [
+    {
+      "id": "log_21",
+      "x": 205,
+      "y": 739,
+      "title": "Sector 3 / Recovery Log 21",
+      "text": "The facility reclassified optional service room 21 as essential for surface access."
+    }
+  ]
+}

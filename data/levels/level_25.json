@@ -1,0 +1,792 @@
+{
+  "tiles": [
+    [
+      0,
+      0,
+      36,
+      946
+    ],
+    [
+      1982,
+      0,
+      36,
+      946
+    ],
+    [
+      36,
+      0,
+      1946,
+      30
+    ],
+    [
+      882,
+      811,
+      432,
+      135
+    ],
+    [
+      882,
+      583,
+      432,
+      23
+    ],
+    [
+      150,
+      583,
+      340,
+      23
+    ],
+    [
+      150,
+      811,
+      340,
+      135
+    ],
+    [
+      1456,
+      811,
+      362,
+      135
+    ],
+    [
+      1456,
+      583,
+      362,
+      23
+    ],
+    [
+      882,
+      355,
+      432,
+      23
+    ],
+    [
+      455,
+      566,
+      10,
+      17
+    ],
+    [
+      1040,
+      221,
+      155,
+      18
+    ],
+    [
+      1177,
+      239,
+      18,
+      116
+    ],
+    [
+      1080,
+      606,
+      36,
+      56
+    ],
+    [
+      194,
+      606,
+      252,
+      22
+    ],
+    [
+      1619,
+      606,
+      36,
+      56
+    ],
+    [
+      926,
+      378,
+      344,
+      22
+    ],
+    [
+      156,
+      30,
+      93,
+      42
+    ],
+    [
+      176,
+      72,
+      53,
+      16
+    ],
+    [
+      516,
+      30,
+      117,
+      42
+    ],
+    [
+      536,
+      72,
+      77,
+      16
+    ],
+    [
+      876,
+      30,
+      93,
+      28
+    ],
+    [
+      896,
+      58,
+      53,
+      16
+    ],
+    [
+      1236,
+      30,
+      117,
+      56
+    ],
+    [
+      1256,
+      86,
+      77,
+      16
+    ],
+    [
+      1596,
+      30,
+      93,
+      42
+    ],
+    [
+      1616,
+      72,
+      53,
+      16
+    ],
+    [
+      36,
+      140,
+      28,
+      81
+    ],
+    [
+      1954,
+      180,
+      28,
+      81
+    ],
+    [
+      36,
+      380,
+      28,
+      65
+    ],
+    [
+      36,
+      620,
+      28,
+      81
+    ],
+    [
+      218,
+      628,
+      32,
+      81
+    ],
+    [
+      1214,
+      400,
+      32,
+      81
+    ]
+  ],
+  "ladders": [],
+  "crates": [
+    {
+      "id": "load",
+      "x": 265,
+      "y": 547
+    }
+  ],
+  "plates": [
+    {
+      "link_id": "weight",
+      "x": 407,
+      "y": 583
+    }
+  ],
+  "switches": [],
+  "doors": [
+    {
+      "id": "surface_lock",
+      "x": 1040,
+      "y": 239,
+      "w": 20,
+      "h": 116,
+      "required_links": [
+        "alpha",
+        "beta",
+        "B"
+      ]
+    }
+  ],
+  "moving_platforms": [
+    {
+      "id": "car0",
+      "x": 494,
+      "y": 569,
+      "w": 108,
+      "h": 16,
+      "end_x": 769,
+      "end_y": 569,
+      "speed": 108,
+      "active_by_default": false,
+      "required_links": [
+        "A"
+      ]
+    },
+    {
+      "id": "car1",
+      "x": 508,
+      "y": 803,
+      "w": 86,
+      "h": 16,
+      "end_x": 508,
+      "end_y": 575,
+      "speed": 108,
+      "active_by_default": true,
+      "required_links": []
+    }
+  ],
+  "conveyors": [],
+  "wind_zones": [],
+  "water_zones": [],
+  "valves": [],
+  "generators": [
+    {
+      "link_id": "power",
+      "x": 1637,
+      "y": 811
+    }
+  ],
+  "cables": [
+    {
+      "link_id": "A",
+      "points": [
+        [
+          1107,
+          571
+        ],
+        [
+          1107,
+          835
+        ],
+        [
+          336,
+          835
+        ],
+        [
+          336,
+          801
+        ]
+      ]
+    },
+    {
+      "link_id": "weight",
+      "points": [
+        [
+          416,
+          571
+        ],
+        [
+          416,
+          842
+        ],
+        [
+          336,
+          842
+        ],
+        [
+          336,
+          801
+        ]
+      ]
+    },
+    {
+      "link_id": "B",
+      "points": [
+        [
+          1117,
+          571
+        ],
+        [
+          1117,
+          607
+        ],
+        [
+          1653,
+          607
+        ],
+        [
+          1653,
+          573
+        ]
+      ]
+    },
+    {
+      "link_id": "power",
+      "points": [
+        [
+          1646,
+          799
+        ],
+        [
+          1646,
+          842
+        ],
+        [
+          1653,
+          842
+        ],
+        [
+          1653,
+          573
+        ]
+      ]
+    },
+    {
+      "link_id": "alpha",
+      "points": [
+        [
+          320,
+          799
+        ],
+        [
+          320,
+          833
+        ],
+        [
+          1048,
+          833
+        ],
+        [
+          1048,
+          299
+        ]
+      ]
+    },
+    {
+      "link_id": "beta",
+      "points": [
+        [
+          1637,
+          571
+        ],
+        [
+          1637,
+          612
+        ],
+        [
+          1048,
+          612
+        ],
+        [
+          1048,
+          299
+        ]
+      ]
+    },
+    {
+      "link_id": "B",
+      "points": [
+        [
+          1108,
+          571
+        ],
+        [
+          1108,
+          619
+        ],
+        [
+          1048,
+          619
+        ],
+        [
+          1048,
+          299
+        ]
+      ]
+    }
+  ],
+  "mirrors": [],
+  "crushers": [],
+  "steam_vents": [
+    {
+      "id": "seam1",
+      "x": 668,
+      "y": 498,
+      "w": 36,
+      "h": 134,
+      "period": 3.1,
+      "duty_cycle": 0.43,
+      "disabled_by": []
+    }
+  ],
+  "collapsing_platforms": [],
+  "checkpoints": [
+    {
+      "id": "beacon_25",
+      "x": 1753,
+      "y": 583
+    }
+  ],
+  "spikes": [],
+  "acids": [
+    {
+      "x": 36,
+      "y": 871,
+      "w": 114,
+      "h": 75
+    },
+    {
+      "x": 490,
+      "y": 871,
+      "w": 392,
+      "h": 75
+    },
+    {
+      "x": 1314,
+      "y": 871,
+      "w": 142,
+      "h": 75
+    },
+    {
+      "x": 1818,
+      "y": 871,
+      "w": 164,
+      "h": 75
+    }
+  ],
+  "lasers": [],
+  "optical_beams": [],
+  "sequences": [],
+  "collectibles": [
+    {
+      "id": "log_25",
+      "x": 924,
+      "y": 551,
+      "title": "The Distribution Hub / Shift Notes",
+      "text": "The Distribution Hub. Check the signal lines before you leave the service deck."
+    },
+    {
+      "id": "field_trace_25",
+      "x": 1513,
+      "y": 735,
+      "title": "FIELD TRACE 25 / DISTRIBUTION HUB",
+      "text": "ECHO-7 field diagnostics: Add a genuine three-branch choice: an early A-bus cargo relay opens access to one route, but later B-power rerouting is needed at another.",
+      "required_links": [
+        "alpha"
+      ],
+      "optional_investigation": true
+    },
+    {
+      "id": "service_challenge_25",
+      "x": 1781,
+      "y": 541,
+      "title": "Optional Diagnostics 25",
+      "text": "Optional auxiliary service record recovered. This archive is no longer linked to a redundant side circuit and does not gate the exit.",
+      "required_links": [],
+      "optional_investigation": true
+    }
+  ],
+  "decorations": [
+    {
+      "type": "warning_stripe",
+      "x": 894,
+      "y": 595,
+      "w": 120
+    },
+    {
+      "type": "warning_stripe",
+      "x": 162,
+      "y": 595,
+      "w": 120
+    },
+    {
+      "type": "warning_stripe",
+      "x": 1468,
+      "y": 595,
+      "w": 120
+    },
+    {
+      "type": "warning_stripe",
+      "x": 894,
+      "y": 367,
+      "w": 120
+    },
+    {
+      "type": "monitor",
+      "x": 1058,
+      "y": 484,
+      "text": "SELECT A / B"
+    },
+    {
+      "type": "monitor",
+      "x": 344,
+      "y": 491,
+      "text": "RECEIVING SCALE"
+    },
+    {
+      "type": "monitor",
+      "x": 290,
+      "y": 711,
+      "text": "HOLD A + WEIGHT"
+    },
+    {
+      "type": "monitor",
+      "x": 1607,
+      "y": 711,
+      "text": "ENERGIZE"
+    },
+    {
+      "type": "monitor",
+      "x": 1607,
+      "y": 483,
+      "text": "HOLD B + POWER"
+    },
+    {
+      "type": "monitor",
+      "x": 1063,
+      "y": 181,
+      "text": "EXIT LOCK"
+    },
+    {
+      "type": "monitor",
+      "x": 1526,
+      "y": 697,
+      "text": "FORENSIC TRACE 25"
+    }
+  ],
+  "latching_relays": [
+    {
+      "link_id": "alpha",
+      "x": 320,
+      "y": 811,
+      "required_links": [
+        "A",
+        "weight"
+      ]
+    },
+    {
+      "link_id": "beta",
+      "x": 1637,
+      "y": 583,
+      "required_links": [
+        "B",
+        "power"
+      ]
+    }
+  ],
+  "routing_consoles": [
+    {
+      "id": "selector",
+      "route_id": "supply",
+      "x": 1098,
+      "y": 583,
+      "a_signal": "A",
+      "b_signal": "B"
+    }
+  ],
+  "signal_inverters": [],
+  "npcs": [
+    {
+      "id": "kip",
+      "x": 982,
+      "y": 811,
+      "dialogue": [
+        "The Distribution Hub. I signed the inspection sheet in pencil.",
+        "Set the supply selector to A.",
+        "Keep B and power live, then interact with the recorder to hold the reading."
+      ]
+    }
+  ],
+  "springs": [],
+  "dash_recharges": [],
+  "one_way_platforms": [
+    {
+      "id": "walk0",
+      "x": 1354,
+      "y": 735,
+      "w": 83,
+      "h": 12
+    },
+    {
+      "id": "walk1",
+      "x": 1314,
+      "y": 659,
+      "w": 83,
+      "h": 12
+    },
+    {
+      "id": "walk4",
+      "x": 1858,
+      "y": 735,
+      "w": 83,
+      "h": 12
+    },
+    {
+      "id": "walk5",
+      "x": 1818,
+      "y": 659,
+      "w": 83,
+      "h": 12
+    },
+    {
+      "id": "walk6",
+      "x": 1858,
+      "y": 583,
+      "w": 83,
+      "h": 12
+    },
+    {
+      "id": "walk7",
+      "x": 1332,
+      "y": 431,
+      "w": 78,
+      "h": 12
+    },
+    {
+      "id": "walk8",
+      "x": 1380,
+      "y": 507,
+      "w": 78,
+      "h": 12
+    }
+  ],
+  "dash_barriers": [],
+  "level_id": 25,
+  "width": 2018,
+  "height": 946,
+  "name": "Chamber 25 // The Distribution Hub",
+  "abilities": {
+    "wall_jump": true,
+    "dash": true
+  },
+  "spawn": [
+    920,
+    765
+  ],
+  "exit": [
+    1097,
+    275
+  ],
+  "hint_route": [
+    "A",
+    "weight",
+    "alpha",
+    "B",
+    "power",
+    "beta"
+  ],
+  "hint_notes": {
+    "A": [
+      "Set the supply selector to A.",
+      "Set the supply selector to A.",
+      "Set the supply selector to A."
+    ],
+    "weight": [
+      "Move the cargo right until it rests on the receiving scale.",
+      "Move the cargo right until it rests on the receiving scale.",
+      "Move the cargo right until it rests on the receiving scale."
+    ],
+    "alpha": [
+      "Keep A and weight live, then interact with the recorder to hold the reading.",
+      "Keep A and weight live, then interact with the recorder to hold the reading.",
+      "Keep A and weight live, then interact with the recorder to hold the reading."
+    ],
+    "B": [
+      "Transfer the selector to B after recording the A-side reading.",
+      "Transfer the selector to B after recording the A-side reading.",
+      "Transfer the selector to B after recording the A-side reading."
+    ],
+    "power": [
+      "Start the generator to bring the circuit online.",
+      "Start the generator to bring the circuit online.",
+      "Start the generator to bring the circuit online."
+    ],
+    "beta": [
+      "Keep B and power live, then interact with the recorder to hold the reading.",
+      "Keep B and power live, then interact with the recorder to hold the reading.",
+      "Keep B and power live, then interact with the recorder to hold the reading."
+    ]
+  },
+  "solution_steps": [
+    "Set the supply selector to A.",
+    "Move the cargo right until it rests on the receiving scale.",
+    "Keep A and weight live, then interact with the recorder to hold the reading.",
+    "Transfer the selector to B after recording the A-side reading.",
+    "Start the generator to bring the circuit online.",
+    "Keep B and power live, then interact with the recorder to hold the reading."
+  ],
+  "subtitle": "Set the supply selector to A.",
+  "chapter": 3,
+  "theme": "power",
+  "topology": "Central Hub (3-Branch)",
+  "overhaul_version": 1,
+  "overhaul_design": {
+    "profile": "relay_bus",
+    "route": "left_up",
+    "actual_direction": -1,
+    "mandatory": false,
+    "service_platform_count": 0,
+    "retired_by_cleanup": true
+  },
+  "secondary_validation_1": {
+    "checkpoint": "beacon_25",
+    "extra_platforms": 0,
+    "signal": "sector_25_validated",
+    "retired_by_cleanup": true
+  },
+  "side_challenge_policy": {
+    "campaign_blocking": false,
+    "optional_signals": [],
+    "reason": "Deprecated optional side circuit removed; service record remains accessible."
+  },
+  "architectural_overhaul_v2": {
+    "archetype": "Twin-Bus Relay Conduit Bay",
+    "chapter": 3,
+    "theme": "power",
+    "original_tile_count": 13,
+    "final_tile_count": 33,
+    "thickened_decks": 0,
+    "added_piers": 0,
+    "added_corbels": 4,
+    "added_soffits": 5,
+    "added_buttresses": 4,
+    "tiles_before_cleanup_pass": 31,
+    "removed_legacy_platforms": 5,
+    "removed_legacy_devices": 4,
+    "added_partition_walls": 0,
+    "added_grounded_piers": 2,
+    "added_stepped_terraces": 0
+  },
+  "cleanup_v3_audit": {
+    "level": 25,
+    "chapter": 3,
+    "theme": "power",
+    "name": "Chamber 25 // The Distribution Hub",
+    "archetype": "Twin-Bus Relay Conduit Bay",
+    "orig_backup_tiles": 13,
+    "final_tiles": 33,
+    "removed_platforms": 5,
+    "retained_platforms": 7,
+    "removed_devices": 4,
+    "added_walls": 0,
+    "added_piers": 0,
+    "added_terraces": 0,
+    "gate_links": [
+      "alpha",
+      "beta",
+      "B"
+    ]
+  }
+}

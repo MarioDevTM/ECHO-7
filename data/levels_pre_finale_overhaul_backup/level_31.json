@@ -1,0 +1,534 @@
+{
+  "tiles": [
+    [
+      0,
+      0,
+      36,
+      742
+    ],
+    [
+      1830,
+      0,
+      36,
+      742
+    ],
+    [
+      36,
+      0,
+      1794,
+      30
+    ],
+    [
+      150,
+      607,
+      362,
+      135
+    ],
+    [
+      760,
+      607,
+      390,
+      135
+    ],
+    [
+      1326,
+      607,
+      340,
+      135
+    ],
+    [
+      1326,
+      355,
+      340,
+      23
+    ],
+    [
+      1438,
+      221,
+      155,
+      18
+    ],
+    [
+      1575,
+      239,
+      18,
+      116
+    ],
+    [
+      605,
+      645,
+      62,
+      97
+    ],
+    [
+      156,
+      30,
+      99,
+      42
+    ],
+    [
+      176,
+      72,
+      59,
+      16
+    ],
+    [
+      516,
+      30,
+      123,
+      42
+    ],
+    [
+      536,
+      72,
+      83,
+      16
+    ],
+    [
+      876,
+      30,
+      99,
+      28
+    ],
+    [
+      896,
+      58,
+      59,
+      16
+    ],
+    [
+      1236,
+      30,
+      123,
+      56
+    ],
+    [
+      1256,
+      86,
+      83,
+      16
+    ],
+    [
+      1596,
+      30,
+      99,
+      42
+    ],
+    [
+      1616,
+      72,
+      59,
+      16
+    ],
+    [
+      36,
+      140,
+      28,
+      95
+    ],
+    [
+      1802,
+      180,
+      28,
+      95
+    ],
+    [
+      36,
+      380,
+      28,
+      79
+    ],
+    [
+      1802,
+      420,
+      28,
+      79
+    ]
+  ],
+  "ladders": [
+    {
+      "x": 1668,
+      "y": 317,
+      "h": 300
+    }
+  ],
+  "crates": [],
+  "plates": [],
+  "switches": [],
+  "doors": [
+    {
+      "id": "surface_lock",
+      "x": 1438,
+      "y": 239,
+      "w": 20,
+      "h": 116,
+      "required_links": [
+        "alpha",
+        "down"
+      ]
+    }
+  ],
+  "moving_platforms": [
+    {
+      "id": "car0",
+      "x": 1684,
+      "y": 599,
+      "w": 86,
+      "h": 16,
+      "end_x": 1684,
+      "end_y": 347,
+      "speed": 112,
+      "active_by_default": true,
+      "required_links": []
+    }
+  ],
+  "conveyors": [],
+  "wind_zones": [],
+  "water_zones": [],
+  "valves": [],
+  "generators": [],
+  "cables": [
+    {
+      "link_id": "up",
+      "points": [
+        [
+          978,
+          453
+        ],
+        [
+          978,
+          631
+        ],
+        [
+          1512,
+          631
+        ],
+        [
+          1512,
+          597
+        ]
+      ]
+    },
+    {
+      "link_id": "alpha",
+      "points": [
+        [
+          1496,
+          595
+        ],
+        [
+          1496,
+          629
+        ],
+        [
+          1446,
+          629
+        ],
+        [
+          1446,
+          299
+        ]
+      ]
+    },
+    {
+      "link_id": "down",
+      "points": [
+        [
+          969,
+          584
+        ],
+        [
+          969,
+          625
+        ],
+        [
+          1446,
+          625
+        ],
+        [
+          1446,
+          299
+        ]
+      ]
+    }
+  ],
+  "mirrors": [
+    {
+      "id": "prism",
+      "x": 955,
+      "y": 571,
+      "orientation": 1
+    }
+  ],
+  "crushers": [],
+  "steam_vents": [
+    {
+      "id": "seam1",
+      "x": 1220,
+      "y": 522,
+      "w": 36,
+      "h": 134,
+      "period": 3.1,
+      "duty_cycle": 0.43,
+      "disabled_by": []
+    }
+  ],
+  "collapsing_platforms": [],
+  "checkpoints": [
+    {
+      "id": "beacon_31",
+      "x": 1601,
+      "y": 607
+    }
+  ],
+  "spikes": [],
+  "acids": [
+    {
+      "x": 36,
+      "y": 667,
+      "w": 114,
+      "h": 75
+    },
+    {
+      "x": 512,
+      "y": 667,
+      "w": 248,
+      "h": 75
+    },
+    {
+      "x": 1150,
+      "y": 667,
+      "w": 176,
+      "h": 75
+    },
+    {
+      "x": 1666,
+      "y": 667,
+      "w": 164,
+      "h": 75
+    }
+  ],
+  "lasers": [],
+  "optical_beams": [
+    {
+      "link_id": "up",
+      "x": 815,
+      "y": 589,
+      "dir": [
+        1,
+        0
+      ],
+      "max_length": 480,
+      "receiver": [
+        962,
+        465,
+        14,
+        10
+      ]
+    },
+    {
+      "link_id": "down",
+      "x": 815,
+      "y": 589,
+      "dir": [
+        1,
+        0
+      ],
+      "max_length": 480,
+      "receiver": [
+        962,
+        596,
+        14,
+        10
+      ]
+    }
+  ],
+  "sequences": [],
+  "collectibles": [
+    {
+      "id": "log_31",
+      "x": 802,
+      "y": 575,
+      "title": "Corridor Sightline / Shift Notes",
+      "text": "Corridor Sightline. Check the signal lines before you leave the service deck."
+    },
+    {
+      "id": "field_trace_31",
+      "x": 446,
+      "y": 531,
+      "title": "FIELD TRACE 31 / FIRST SURVEILLANCE READING",
+      "text": "ECHO-7 field diagnostics: Add a visual line-of-sight inference: distinguish the actual optical receiver from decorative ceiling security cameras using unique active-state indicators.",
+      "required_links": [
+        "alpha"
+      ],
+      "optional_investigation": true
+    },
+    {
+      "id": "service_challenge_31",
+      "x": 1629,
+      "y": 565,
+      "title": "Optional Diagnostics 31",
+      "text": "Optional auxiliary service record recovered. This archive is no longer linked to a redundant side circuit and does not gate the exit.",
+      "required_links": [],
+      "optional_investigation": true
+    }
+  ],
+  "decorations": [
+    {
+      "type": "warning_stripe",
+      "x": 1338,
+      "y": 367,
+      "w": 120
+    },
+    {
+      "type": "monitor",
+      "x": 1466,
+      "y": 507,
+      "text": "HOLD UP"
+    },
+    {
+      "type": "monitor",
+      "x": 1461,
+      "y": 181,
+      "text": "EXIT LOCK"
+    },
+    {
+      "type": "monitor",
+      "x": 459,
+      "y": 493,
+      "text": "FORENSIC TRACE 31"
+    }
+  ],
+  "latching_relays": [
+    {
+      "link_id": "alpha",
+      "x": 1496,
+      "y": 607,
+      "required_links": [
+        "up"
+      ]
+    }
+  ],
+  "routing_consoles": [],
+  "signal_inverters": [],
+  "npcs": [
+    {
+      "id": "kip",
+      "x": 250,
+      "y": 607,
+      "dialogue": [
+        "Corridor Sightline. My reflection never takes the night shift.",
+        "Turn the mirror toward its ceiling pickup.",
+        "Turn the mirror toward the low pickup beside its foot."
+      ]
+    }
+  ],
+  "springs": [],
+  "dash_recharges": [],
+  "one_way_platforms": [],
+  "dash_barriers": [],
+  "level_id": 31,
+  "width": 1866,
+  "height": 742,
+  "name": "Chamber 31 // Corridor Sightline",
+  "abilities": {
+    "wall_jump": true,
+    "dash": true
+  },
+  "spawn": [
+    188,
+    561
+  ],
+  "exit": [
+    1495,
+    275
+  ],
+  "hint_route": [
+    "up",
+    "alpha",
+    "down"
+  ],
+  "hint_notes": {
+    "up": [
+      "Turn the mirror toward its ceiling pickup.",
+      "Turn the mirror toward its ceiling pickup.",
+      "Turn the mirror toward its ceiling pickup."
+    ],
+    "alpha": [
+      "Keep up live, then interact with the recorder to hold the reading.",
+      "Keep up live, then interact with the recorder to hold the reading.",
+      "Keep up live, then interact with the recorder to hold the reading."
+    ],
+    "down": [
+      "Turn the mirror toward the low pickup beside its foot.",
+      "Turn the mirror toward the low pickup beside its foot.",
+      "Turn the mirror toward the low pickup beside its foot."
+    ]
+  },
+  "solution_steps": [
+    "Turn the mirror toward its ceiling pickup.",
+    "Keep up live, then interact with the recorder to hold the reading.",
+    "Turn the mirror toward the low pickup beside its foot."
+  ],
+  "subtitle": "Turn the mirror toward its ceiling pickup.",
+  "chapter": 4,
+  "theme": "optical",
+  "topology": "Monitored Security Hall",
+  "overhaul_version": 1,
+  "overhaul_design": {
+    "profile": "sequence",
+    "route": "right_switchback",
+    "actual_direction": 1,
+    "mandatory": false,
+    "service_platform_count": 0,
+    "retired_by_cleanup": true
+  },
+  "secondary_validation_1": {
+    "checkpoint": "beacon_31",
+    "extra_platforms": 0,
+    "signal": "sector_31_validated",
+    "retired_by_cleanup": true
+  },
+  "side_challenge_policy": {
+    "campaign_blocking": false,
+    "optional_signals": [],
+    "reason": "Deprecated optional side circuit removed; service record remains accessible."
+  },
+  "architectural_overhaul_v2": {
+    "archetype": "Segmented Security Bulkhead Corridor",
+    "chapter": 4,
+    "theme": "optical",
+    "original_tile_count": 10,
+    "final_tile_count": 24,
+    "thickened_decks": 0,
+    "added_piers": 0,
+    "added_corbels": 0,
+    "added_soffits": 5,
+    "added_buttresses": 4,
+    "tiles_before_cleanup_pass": 24,
+    "removed_legacy_platforms": 5,
+    "removed_legacy_devices": 5,
+    "added_partition_walls": 0,
+    "added_grounded_piers": 0,
+    "added_stepped_terraces": 0
+  },
+  "cleanup_v3_audit": {
+    "level": 31,
+    "chapter": 4,
+    "theme": "optical",
+    "name": "Chamber 31 // Corridor Sightline",
+    "archetype": "Segmented Security Bulkhead Corridor",
+    "orig_backup_tiles": 10,
+    "final_tiles": 24,
+    "removed_platforms": 5,
+    "retained_platforms": 0,
+    "removed_devices": 5,
+    "added_walls": 0,
+    "added_piers": 0,
+    "added_terraces": 0,
+    "gate_links": [
+      "alpha",
+      "down"
+    ]
+  }
+}

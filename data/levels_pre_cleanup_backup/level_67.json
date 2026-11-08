@@ -1,0 +1,753 @@
+{
+  "tiles": [
+    [
+      0,
+      0,
+      36,
+      994
+    ],
+    [
+      3318,
+      0,
+      36,
+      994
+    ],
+    [
+      36,
+      0,
+      3282,
+      30
+    ],
+    [
+      150,
+      607,
+      362,
+      23
+    ],
+    [
+      718,
+      607,
+      390,
+      40
+    ],
+    [
+      1608,
+      607,
+      340,
+      23
+    ],
+    [
+      1608,
+      355,
+      340,
+      23
+    ],
+    [
+      2154,
+      355,
+      432,
+      40
+    ],
+    [
+      2792,
+      355,
+      362,
+      40
+    ],
+    [
+      2915,
+      221,
+      155,
+      18
+    ],
+    [
+      3052,
+      239,
+      18,
+      116
+    ],
+    [
+      2064,
+      385,
+      14,
+      186
+    ],
+    [
+      194,
+      630,
+      274,
+      22
+    ],
+    [
+      762,
+      647,
+      302,
+      22
+    ],
+    [
+      1652,
+      630,
+      252,
+      22
+    ],
+    [
+      1632,
+      378,
+      44,
+      56
+    ],
+    [
+      1880,
+      378,
+      44,
+      56
+    ],
+    [
+      2198,
+      395,
+      344,
+      22
+    ],
+    [
+      2836,
+      395,
+      274,
+      22
+    ],
+    [
+      156,
+      30,
+      135,
+      42
+    ],
+    [
+      176,
+      72,
+      95,
+      16
+    ],
+    [
+      516,
+      30,
+      111,
+      42
+    ],
+    [
+      536,
+      72,
+      71,
+      16
+    ],
+    [
+      876,
+      30,
+      135,
+      28
+    ],
+    [
+      896,
+      58,
+      95,
+      16
+    ],
+    [
+      1236,
+      30,
+      111,
+      56
+    ],
+    [
+      1256,
+      86,
+      71,
+      16
+    ],
+    [
+      1596,
+      30,
+      135,
+      42
+    ],
+    [
+      1616,
+      72,
+      95,
+      16
+    ],
+    [
+      1956,
+      30,
+      111,
+      42
+    ],
+    [
+      1976,
+      72,
+      71,
+      16
+    ],
+    [
+      2316,
+      30,
+      135,
+      28
+    ],
+    [
+      2676,
+      30,
+      111,
+      56
+    ],
+    [
+      2696,
+      86,
+      71,
+      16
+    ],
+    [
+      3036,
+      30,
+      135,
+      42
+    ],
+    [
+      3056,
+      72,
+      95,
+      16
+    ],
+    [
+      36,
+      140,
+      28,
+      83
+    ],
+    [
+      3290,
+      180,
+      28,
+      83
+    ],
+    [
+      36,
+      380,
+      28,
+      67
+    ],
+    [
+      3290,
+      420,
+      28,
+      67
+    ],
+    [
+      36,
+      620,
+      28,
+      83
+    ],
+    [
+      3290,
+      660,
+      28,
+      83
+    ]
+  ],
+  "ladders": [],
+  "crates": [],
+  "plates": [],
+  "switches": [
+    {
+      "link_id": "timer",
+      "x": 2370,
+      "y": 355,
+      "mode": "timed",
+      "duration": 19
+    }
+  ],
+  "doors": [
+    {
+      "id": "surface_lock",
+      "x": 2915,
+      "y": 239,
+      "w": 20,
+      "h": 116,
+      "required_links": [
+        "alpha",
+        "valve",
+        "timer"
+      ]
+    }
+  ],
+  "moving_platforms": [
+    {
+      "id": "car0",
+      "x": 1291,
+      "y": 569,
+      "w": 83,
+      "h": 16,
+      "end_x": 1370,
+      "end_y": 641,
+      "speed": 124,
+      "active_by_default": true,
+      "required_links": []
+    },
+    {
+      "id": "car1",
+      "x": 1966,
+      "y": 599,
+      "w": 86,
+      "h": 16,
+      "end_x": 1966,
+      "end_y": 347,
+      "speed": 124,
+      "active_by_default": true,
+      "required_links": []
+    }
+  ],
+  "conveyors": [],
+  "wind_zones": [],
+  "water_zones": [],
+  "valves": [
+    {
+      "link_id": "valve",
+      "x": 913,
+      "y": 607
+    },
+    {
+      "link_id": "overhaul_67_valve",
+      "x": 341,
+      "y": 488
+    }
+  ],
+  "generators": [],
+  "cables": [
+    {
+      "link_id": "valve",
+      "points": [
+        [
+          922,
+          595
+        ],
+        [
+          922,
+          631
+        ],
+        [
+          1794,
+          631
+        ],
+        [
+          1794,
+          345
+        ]
+      ]
+    },
+    {
+      "link_id": "alpha",
+      "points": [
+        [
+          1778,
+          343
+        ],
+        [
+          1778,
+          377
+        ],
+        [
+          2923,
+          377
+        ],
+        [
+          2923,
+          299
+        ]
+      ]
+    },
+    {
+      "link_id": "valve",
+      "points": [
+        [
+          913,
+          595
+        ],
+        [
+          913,
+          636
+        ],
+        [
+          2923,
+          636
+        ],
+        [
+          2923,
+          299
+        ]
+      ]
+    },
+    {
+      "link_id": "timer",
+      "points": [
+        [
+          2370,
+          343
+        ],
+        [
+          2370,
+          391
+        ],
+        [
+          2923,
+          391
+        ],
+        [
+          2923,
+          299
+        ]
+      ]
+    }
+  ],
+  "mirrors": [],
+  "crushers": [],
+  "steam_vents": [
+    {
+      "id": "jet",
+      "x": 1754,
+      "y": 445,
+      "w": 48,
+      "h": 162,
+      "period": 2.7,
+      "duty_cycle": 0.55,
+      "disabled_by": [
+        "valve"
+      ]
+    },
+    {
+      "id": "seam1",
+      "x": 1340,
+      "y": 522,
+      "w": 36,
+      "h": 134,
+      "period": 3.1,
+      "duty_cycle": 0.43,
+      "disabled_by": []
+    },
+    {
+      "id": "seam4",
+      "x": 2671,
+      "y": 270,
+      "w": 36,
+      "h": 134,
+      "period": 3.1,
+      "duty_cycle": 0.43,
+      "disabled_by": []
+    }
+  ],
+  "collapsing_platforms": [
+    {
+      "id": "broken_lip",
+      "x": 524,
+      "y": 595,
+      "w": 69,
+      "h": 16,
+      "delay": 0.44,
+      "respawn": 2.4
+    }
+  ],
+  "checkpoints": [
+    {
+      "id": "beacon_67",
+      "x": 2521,
+      "y": 355
+    }
+  ],
+  "spikes": [],
+  "acids": [
+    {
+      "x": 36,
+      "y": 919,
+      "w": 3282,
+      "h": 75
+    }
+  ],
+  "lasers": [],
+  "optical_beams": [],
+  "sequences": [],
+  "collectibles": [
+    {
+      "id": "log_67",
+      "x": 760,
+      "y": 575,
+      "title": "Ruptured Risers / Shift Notes",
+      "text": "Ruptured Risers. Check the signal lines before you leave the service deck."
+    },
+    {
+      "id": "field_trace_67",
+      "x": 446,
+      "y": 531,
+      "title": "FIELD TRACE 67 / STEAM & COLLAPSE ASCENT",
+      "text": "ECHO-7 field diagnostics: Use a shutoff valve to clear a steam-blocked ascent, prove the state and then tackle a brief timed final span.",
+      "required_links": [
+        "alpha"
+      ],
+      "optional_investigation": true
+    },
+    {
+      "id": "service_challenge_67",
+      "x": 2347,
+      "y": 188,
+      "title": "Optional Diagnostics 67",
+      "text": "Optional master circuit cleared. The standard exit never depends on this side challenge.",
+      "required_links": [
+        "sector_67_validated"
+      ],
+      "optional_investigation": true
+    }
+  ],
+  "decorations": [
+    {
+      "type": "warning_stripe",
+      "x": 162,
+      "y": 619,
+      "w": 120
+    },
+    {
+      "type": "warning_stripe",
+      "x": 730,
+      "y": 619,
+      "w": 120
+    },
+    {
+      "type": "warning_stripe",
+      "x": 1620,
+      "y": 619,
+      "w": 120
+    },
+    {
+      "type": "warning_stripe",
+      "x": 1620,
+      "y": 367,
+      "w": 120
+    },
+    {
+      "type": "warning_stripe",
+      "x": 2166,
+      "y": 367,
+      "w": 120
+    },
+    {
+      "type": "warning_stripe",
+      "x": 2804,
+      "y": 367,
+      "w": 120
+    },
+    {
+      "type": "monitor",
+      "x": 865,
+      "y": 515,
+      "text": "ISOLATE"
+    },
+    {
+      "type": "monitor",
+      "x": 1618,
+      "y": 509,
+      "text": "STEAM LINE"
+    },
+    {
+      "type": "monitor",
+      "x": 1748,
+      "y": 255,
+      "text": "HOLD VALVE"
+    },
+    {
+      "type": "monitor",
+      "x": 2338,
+      "y": 262,
+      "text": "ESCAPE 19s"
+    },
+    {
+      "type": "monitor",
+      "x": 2938,
+      "y": 181,
+      "text": "EXIT LOCK"
+    },
+    {
+      "type": "monitor",
+      "x": 459,
+      "y": 493,
+      "text": "FORENSIC TRACE 67"
+    },
+    {
+      "type": "monitor",
+      "x": 234,
+      "y": 439,
+      "text": "ACCESS / 67"
+    },
+    {
+      "type": "warning_stripe",
+      "x": 268,
+      "y": 441,
+      "w": 78
+    }
+  ],
+  "latching_relays": [
+    {
+      "link_id": "alpha",
+      "x": 1778,
+      "y": 355,
+      "required_links": [
+        "valve"
+      ]
+    },
+    {
+      "link_id": "overhaul_67_record",
+      "x": 286,
+      "y": 429,
+      "required_links": [
+        "overhaul_67_valve"
+      ]
+    },
+    {
+      "link_id": "sector_67_validated",
+      "x": 2335,
+      "y": 230,
+      "required_links": [
+        "overhaul_67_record"
+      ]
+    }
+  ],
+  "routing_consoles": [],
+  "signal_inverters": [],
+  "npcs": [
+    {
+      "id": "kip",
+      "x": 250,
+      "y": 607,
+      "dialogue": [
+        "Ruptured Risers. My reflection never takes the night shift.",
+        "Turn the handwheel and watch which machinery changes.",
+        "Start the clock after the other lock lights are green."
+      ]
+    }
+  ],
+  "springs": [],
+  "dash_recharges": [],
+  "one_way_platforms": [
+    {
+      "id": "overhaul_step_67_0",
+      "x": 232,
+      "y": 542,
+      "w": 78,
+      "h": 12
+    },
+    {
+      "id": "overhaul_step_67_1",
+      "x": 323,
+      "y": 488,
+      "w": 78,
+      "h": 12
+    },
+    {
+      "id": "overhaul_step_67_2",
+      "x": 268,
+      "y": 429,
+      "w": 78,
+      "h": 12
+    },
+    {
+      "id": "validation_foot_67_0",
+      "x": 2402,
+      "y": 292,
+      "w": 78,
+      "h": 12
+    },
+    {
+      "id": "validation_foot_67_1",
+      "x": 2317,
+      "y": 230,
+      "w": 78,
+      "h": 12
+    }
+  ],
+  "dash_barriers": [],
+  "level_id": 67,
+  "width": 3354,
+  "height": 994,
+  "name": "Chamber 67 // Ruptured Risers",
+  "abilities": {
+    "wall_jump": true,
+    "dash": true
+  },
+  "spawn": [
+    188,
+    561
+  ],
+  "exit": [
+    2972,
+    275
+  ],
+  "hint_route": [
+    "valve",
+    "alpha",
+    "timer"
+  ],
+  "hint_notes": {
+    "valve": [
+      "Turn the handwheel and watch which machinery changes.",
+      "Turn the handwheel and watch which machinery changes.",
+      "Turn the handwheel and watch which machinery changes."
+    ],
+    "alpha": [
+      "Keep valve live, then interact with the recorder to hold the reading.",
+      "Keep valve live, then interact with the recorder to hold the reading.",
+      "Keep valve live, then interact with the recorder to hold the reading."
+    ],
+    "timer": [
+      "Start the clock after the other lock lights are green.",
+      "Start the clock after the other lock lights are green.",
+      "Start the clock after the other lock lights are green."
+    ]
+  },
+  "solution_steps": [
+    "Turn the handwheel and watch which machinery changes.",
+    "Keep valve live, then interact with the recorder to hold the reading.",
+    "Start the clock after the other lock lights are green."
+  ],
+  "subtitle": "Turn the handwheel and watch which machinery changes.  //  SERVICE DETOUR: Use the intermediate valve and record its new state at the higher control point.",
+  "chapter": 7,
+  "theme": "spire",
+  "topology": "Steam & Collapse Ascent",
+  "overhaul_version": 1,
+  "overhaul_design": {
+    "profile": "valve_relay",
+    "route": "right_return",
+    "actual_direction": 1,
+    "mandatory": true,
+    "service_platform_count": 3
+  },
+  "secondary_validation_1": {
+    "checkpoint": "beacon_67",
+    "extra_platforms": 2,
+    "signal": "sector_67_validated"
+  },
+  "side_challenge_policy": {
+    "campaign_blocking": false,
+    "optional_signals": [
+      "overhaul_67_record",
+      "sector_67_validated"
+    ],
+    "reason": "Not proven traversable in the Pygame engine; preserve main progression."
+  },
+  "architectural_overhaul_v2": {
+    "archetype": "Viaduct & Support Piers",
+    "chapter": 7,
+    "theme": "spire",
+    "original_tile_count": 12,
+    "final_tile_count": 42,
+    "thickened_decks": 3,
+    "added_piers": 0,
+    "added_corbels": 7,
+    "added_soffits": 9,
+    "added_buttresses": 6
+  }
+}

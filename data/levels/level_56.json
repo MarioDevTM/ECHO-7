@@ -1,0 +1,655 @@
+{
+  "tiles": [
+    [
+      0,
+      0,
+      36,
+      922
+    ],
+    [
+      2044,
+      0,
+      36,
+      922
+    ],
+    [
+      36,
+      0,
+      2008,
+      30
+    ],
+    [
+      150,
+      787,
+      390,
+      135
+    ],
+    [
+      948,
+      787,
+      70,
+      30
+    ],
+    [
+      1198,
+      787,
+      90,
+      30
+    ],
+    [
+      948,
+      571,
+      340,
+      23
+    ],
+    [
+      1448,
+      571,
+      432,
+      44
+    ],
+    [
+      1448,
+      355,
+      432,
+      23
+    ],
+    [
+      948,
+      355,
+      340,
+      44
+    ],
+    [
+      1253,
+      770,
+      10,
+      17
+    ],
+    [
+      1060,
+      221,
+      155,
+      18
+    ],
+    [
+      1197,
+      239,
+      18,
+      116
+    ],
+    [
+      1404,
+      601,
+      14,
+      150
+    ],
+    [
+      1996,
+      385,
+      14,
+      150
+    ],
+    [
+      1000,
+      594,
+      236,
+      22
+    ],
+    [
+      1500,
+      615,
+      328,
+      22
+    ],
+    [
+      1472,
+      378,
+      44,
+      56
+    ],
+    [
+      1000,
+      399,
+      236,
+      22
+    ],
+    [
+      156,
+      30,
+      92,
+      56
+    ],
+    [
+      176,
+      86,
+      52,
+      16
+    ],
+    [
+      556,
+      30,
+      108,
+      56
+    ],
+    [
+      576,
+      86,
+      68,
+      16
+    ],
+    [
+      956,
+      30,
+      124,
+      42
+    ],
+    [
+      976,
+      72,
+      84,
+      16
+    ],
+    [
+      1356,
+      30,
+      92,
+      42
+    ],
+    [
+      1376,
+      72,
+      52,
+      16
+    ],
+    [
+      1756,
+      30,
+      108,
+      28
+    ],
+    [
+      1776,
+      58,
+      68,
+      16
+    ],
+    [
+      36,
+      140,
+      40,
+      68
+    ],
+    [
+      36,
+      380,
+      40,
+      84
+    ],
+    [
+      36,
+      620,
+      40,
+      68
+    ],
+    [
+      2004,
+      660,
+      40,
+      68
+    ],
+    [
+      329,
+      563,
+      32,
+      120
+    ]
+  ],
+  "ladders": [],
+  "crates": [
+    {
+      "id": "load",
+      "x": 1033,
+      "y": 751
+    }
+  ],
+  "plates": [
+    {
+      "link_id": "freight",
+      "x": 1205,
+      "y": 787
+    }
+  ],
+  "switches": [],
+  "doors": [
+    {
+      "id": "surface_lock",
+      "x": 1060,
+      "y": 239,
+      "w": 20,
+      "h": 116,
+      "required_links": [
+        "proof",
+        "B"
+      ]
+    }
+  ],
+  "moving_platforms": [
+    {
+      "id": "car0",
+      "x": 677,
+      "y": 749,
+      "w": 83,
+      "h": 16,
+      "end_x": 756,
+      "end_y": 821,
+      "speed": 120,
+      "active_by_default": true,
+      "required_links": []
+    },
+    {
+      "id": "car1",
+      "x": 1306,
+      "y": 779,
+      "w": 86,
+      "h": 16,
+      "end_x": 1306,
+      "end_y": 563,
+      "speed": 120,
+      "active_by_default": true,
+      "required_links": []
+    }
+  ],
+  "conveyors": [
+    {
+      "id": "freight_line",
+      "x": 1018,
+      "y": 787,
+      "w": 180,
+      "h": 18,
+      "speed": -85,
+      "reversed_by": "A"
+    }
+  ],
+  "wind_zones": [],
+  "water_zones": [],
+  "valves": [],
+  "generators": [],
+  "cables": [
+    {
+      "link_id": "freight",
+      "points": [
+        [
+          1214,
+          775
+        ],
+        [
+          1214,
+          811
+        ],
+        [
+          1134,
+          811
+        ],
+        [
+          1134,
+          561
+        ]
+      ]
+    },
+    {
+      "link_id": "proof",
+      "points": [
+        [
+          1118,
+          559
+        ],
+        [
+          1118,
+          593
+        ],
+        [
+          1068,
+          593
+        ],
+        [
+          1068,
+          299
+        ]
+      ]
+    },
+    {
+      "link_id": "B",
+      "points": [
+        [
+          1674,
+          559
+        ],
+        [
+          1674,
+          600
+        ],
+        [
+          1068,
+          600
+        ],
+        [
+          1068,
+          299
+        ]
+      ]
+    }
+  ],
+  "mirrors": [],
+  "crushers": [
+    {
+      "id": "ram4",
+      "x": 1629,
+      "y": 140,
+      "w": 74,
+      "h": 42,
+      "travel": 172,
+      "period": 2.9,
+      "disabled_by": [
+        "A"
+      ]
+    }
+  ],
+  "steam_vents": [
+    {
+      "id": "seam0",
+      "x": 726,
+      "y": 702,
+      "w": 36,
+      "h": 134,
+      "period": 3.1,
+      "duty_cycle": 0.43,
+      "disabled_by": []
+    }
+  ],
+  "collapsing_platforms": [],
+  "checkpoints": [
+    {
+      "id": "beacon_56",
+      "x": 1815,
+      "y": 571
+    }
+  ],
+  "spikes": [],
+  "acids": [
+    {
+      "x": 36,
+      "y": 847,
+      "w": 114,
+      "h": 75
+    },
+    {
+      "x": 540,
+      "y": 847,
+      "w": 408,
+      "h": 75
+    },
+    {
+      "x": 1288,
+      "y": 847,
+      "w": 756,
+      "h": 75
+    }
+  ],
+  "lasers": [],
+  "optical_beams": [],
+  "sequences": [],
+  "collectibles": [
+    {
+      "id": "log_56",
+      "x": 990,
+      "y": 539,
+      "title": "Slag Transfer / Shift Notes",
+      "text": "Slag Transfer. Check the signal lines before you leave the service deck."
+    },
+    {
+      "id": "field_trace_56",
+      "x": 469,
+      "y": 711,
+      "title": "FIELD TRACE 56 / MULTI-FLOOR BELT & PRESS",
+      "text": "ECHO-7 field diagnostics: Combine a multi-level cargo belt transfer with a necessary post-transfer A→B switch; show why the initial bus state was needed and provide a clear route back to....",
+      "required_links": [
+        "proof"
+      ],
+      "optional_investigation": true
+    },
+    {
+      "id": "service_challenge_56",
+      "x": 1843,
+      "y": 529,
+      "title": "Optional Diagnostics 56",
+      "text": "Optional auxiliary service record recovered. This archive is no longer linked to a redundant side circuit and does not gate the exit.",
+      "required_links": [],
+      "optional_investigation": true
+    }
+  ],
+  "decorations": [
+    {
+      "type": "warning_stripe",
+      "x": 960,
+      "y": 583,
+      "w": 120
+    },
+    {
+      "type": "warning_stripe",
+      "x": 1460,
+      "y": 583,
+      "w": 120
+    },
+    {
+      "type": "warning_stripe",
+      "x": 1460,
+      "y": 367,
+      "w": 120
+    },
+    {
+      "type": "warning_stripe",
+      "x": 960,
+      "y": 367,
+      "w": 120
+    },
+    {
+      "type": "monitor",
+      "x": 1142,
+      "y": 695,
+      "text": "RECEIVING SCALE"
+    },
+    {
+      "type": "monitor",
+      "x": 1088,
+      "y": 471,
+      "text": "HOLD FREIGHT"
+    },
+    {
+      "type": "monitor",
+      "x": 1624,
+      "y": 472,
+      "text": "SELECT A / B"
+    },
+    {
+      "type": "monitor",
+      "x": 1458,
+      "y": 255,
+      "text": "PRESS LINE"
+    },
+    {
+      "type": "monitor",
+      "x": 1083,
+      "y": 181,
+      "text": "EXIT LOCK"
+    },
+    {
+      "type": "monitor",
+      "x": 482,
+      "y": 673,
+      "text": "FORENSIC TRACE 56"
+    }
+  ],
+  "latching_relays": [
+    {
+      "link_id": "proof",
+      "x": 1118,
+      "y": 571,
+      "required_links": [
+        "freight"
+      ]
+    }
+  ],
+  "routing_consoles": [
+    {
+      "id": "selector",
+      "route_id": "supply",
+      "x": 1664,
+      "y": 571,
+      "a_signal": "A",
+      "b_signal": "B"
+    }
+  ],
+  "signal_inverters": [],
+  "npcs": [
+    {
+      "id": "kip",
+      "x": 250,
+      "y": 787,
+      "dialogue": [
+        "Slag Transfer. The crate gets paid by the metre.",
+        "Move the cargo right until it rests on the receiving scale.",
+        "Transfer the selector to B after recording the A-side reading."
+      ]
+    }
+  ],
+  "springs": [],
+  "dash_recharges": [
+    {
+      "id": "ring4",
+      "x": 1354,
+      "y": 257
+    }
+  ],
+  "one_way_platforms": [
+    {
+      "id": "walk0",
+      "x": 1920,
+      "y": 499,
+      "w": 70,
+      "h": 12
+    },
+    {
+      "id": "walk1",
+      "x": 1880,
+      "y": 427,
+      "w": 70,
+      "h": 12
+    }
+  ],
+  "dash_barriers": [],
+  "level_id": 56,
+  "width": 2080,
+  "height": 922,
+  "name": "Chamber 56 // Slag Transfer",
+  "abilities": {
+    "wall_jump": true,
+    "dash": true
+  },
+  "spawn": [
+    188,
+    741
+  ],
+  "exit": [
+    1117,
+    275
+  ],
+  "hint_route": [
+    "freight",
+    "proof",
+    "B"
+  ],
+  "hint_notes": {
+    "freight": [
+      "Move the cargo right until it rests on the receiving scale.",
+      "Move the cargo right until it rests on the receiving scale.",
+      "Move the cargo right until it rests on the receiving scale."
+    ],
+    "proof": [
+      "Keep freight live, then interact with the recorder to hold the reading.",
+      "Keep freight live, then interact with the recorder to hold the reading.",
+      "Keep freight live, then interact with the recorder to hold the reading."
+    ],
+    "B": [
+      "Transfer the selector to B after recording the A-side reading.",
+      "Transfer the selector to B after recording the A-side reading.",
+      "Transfer the selector to B after recording the A-side reading."
+    ]
+  },
+  "solution_steps": [
+    "Move the cargo right until it rests on the receiving scale.",
+    "Keep freight live, then interact with the recorder to hold the reading.",
+    "Transfer the selector to B after recording the A-side reading."
+  ],
+  "subtitle": "Move the cargo right until it rests on the receiving scale.",
+  "chapter": 6,
+  "theme": "furnace",
+  "topology": "Multi-Floor Belt & Press",
+  "overhaul_version": 1,
+  "overhaul_design": {
+    "profile": "generator_relay",
+    "route": "left_return",
+    "actual_direction": 1,
+    "mandatory": false,
+    "service_platform_count": 0,
+    "retired_by_cleanup": true
+  },
+  "secondary_validation_1": {
+    "checkpoint": "beacon_56",
+    "extra_platforms": 0,
+    "signal": "sector_56_validated",
+    "retired_by_cleanup": true
+  },
+  "side_challenge_policy": {
+    "campaign_blocking": false,
+    "optional_signals": [],
+    "reason": "Deprecated optional side circuit removed; service record remains accessible."
+  },
+  "architectural_overhaul_v2": {
+    "archetype": "Containment Bastion & Thermal Siphon Duct",
+    "chapter": 6,
+    "theme": "furnace",
+    "original_tile_count": 15,
+    "final_tile_count": 34,
+    "thickened_decks": 2,
+    "added_piers": 0,
+    "added_corbels": 4,
+    "added_soffits": 5,
+    "added_buttresses": 4,
+    "tiles_before_cleanup_pass": 33,
+    "removed_legacy_platforms": 5,
+    "removed_legacy_devices": 3,
+    "added_partition_walls": 1,
+    "added_grounded_piers": 0,
+    "added_stepped_terraces": 0
+  },
+  "cleanup_v3_audit": {
+    "level": 56,
+    "chapter": 6,
+    "theme": "furnace",
+    "name": "Chamber 56 // Slag Transfer",
+    "archetype": "Containment Bastion & Thermal Siphon Duct",
+    "orig_backup_tiles": 15,
+    "final_tiles": 34,
+    "removed_platforms": 5,
+    "retained_platforms": 2,
+    "removed_devices": 3,
+    "added_walls": 1,
+    "added_piers": 0,
+    "added_terraces": 0,
+    "gate_links": [
+      "proof",
+      "B"
+    ]
+  }
+}

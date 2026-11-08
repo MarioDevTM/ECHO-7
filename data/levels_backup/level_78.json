@@ -1,0 +1,648 @@
+{
+  "tiles": [
+    [
+      0,
+      0,
+      36,
+      970
+    ],
+    [
+      2214,
+      0,
+      36,
+      970
+    ],
+    [
+      36,
+      0,
+      2178,
+      30
+    ],
+    [
+      1094,
+      595,
+      362,
+      23
+    ],
+    [
+      150,
+      595,
+      432,
+      23
+    ],
+    [
+      150,
+      835,
+      432,
+      135
+    ],
+    [
+      1094,
+      835,
+      362,
+      135
+    ],
+    [
+      1660,
+      835,
+      390,
+      135
+    ],
+    [
+      1660,
+      595,
+      390,
+      23
+    ],
+    [
+      1094,
+      355,
+      362,
+      23
+    ],
+    [
+      547,
+      818,
+      10,
+      17
+    ],
+    [
+      1217,
+      221,
+      155,
+      18
+    ],
+    [
+      1354,
+      239,
+      18,
+      116
+    ],
+    [
+      698,
+      625,
+      14,
+      174
+    ],
+    [
+      2166,
+      625,
+      14,
+      174
+    ]
+  ],
+  "ladders": [],
+  "crates": [
+    {
+      "id": "load",
+      "x": 265,
+      "y": 799
+    }
+  ],
+  "plates": [
+    {
+      "link_id": "weight",
+      "x": 499,
+      "y": 835
+    }
+  ],
+  "switches": [
+    {
+      "link_id": "first",
+      "x": 366,
+      "y": 595,
+      "mode": "sequence",
+      "duration": 0
+    },
+    {
+      "link_id": "second",
+      "x": 1275,
+      "y": 835,
+      "mode": "sequence",
+      "duration": 0
+    },
+    {
+      "link_id": "third",
+      "x": 1855,
+      "y": 835,
+      "mode": "sequence",
+      "duration": 0
+    }
+  ],
+  "doors": [
+    {
+      "id": "surface_lock",
+      "x": 1217,
+      "y": 239,
+      "w": 20,
+      "h": 116,
+      "required_links": [
+        "alpha",
+        "weight"
+      ]
+    }
+  ],
+  "moving_platforms": [
+    {
+      "id": "car0",
+      "x": 771,
+      "y": 557,
+      "w": 83,
+      "h": 16,
+      "end_x": 850,
+      "end_y": 629,
+      "speed": 128,
+      "active_by_default": true,
+      "required_links": []
+    },
+    {
+      "id": "car1",
+      "x": 771,
+      "y": 797,
+      "w": 83,
+      "h": 16,
+      "end_x": 850,
+      "end_y": 869,
+      "speed": 128,
+      "active_by_default": true,
+      "required_links": []
+    },
+    {
+      "id": "car2",
+      "x": 1461,
+      "y": 811,
+      "w": 65,
+      "h": 16,
+      "end_x": 1590,
+      "end_y": 769,
+      "speed": 128,
+      "active_by_default": true,
+      "required_links": []
+    }
+  ],
+  "conveyors": [],
+  "wind_zones": [],
+  "water_zones": [],
+  "valves": [],
+  "generators": [
+    {
+      "link_id": "overhaul_78_generator",
+      "x": 1031,
+      "y": 530
+    }
+  ],
+  "cables": [
+    {
+      "link_id": "weight",
+      "points": [
+        [
+          508,
+          823
+        ],
+        [
+          508,
+          866
+        ],
+        [
+          1871,
+          866
+        ],
+        [
+          1871,
+          585
+        ]
+      ]
+    },
+    {
+      "link_id": "alpha",
+      "points": [
+        [
+          1855,
+          583
+        ],
+        [
+          1855,
+          617
+        ],
+        [
+          1225,
+          617
+        ],
+        [
+          1225,
+          299
+        ]
+      ]
+    },
+    {
+      "link_id": "weight",
+      "points": [
+        [
+          499,
+          823
+        ],
+        [
+          499,
+          864
+        ],
+        [
+          1225,
+          864
+        ],
+        [
+          1225,
+          299
+        ]
+      ]
+    }
+  ],
+  "mirrors": [],
+  "crushers": [],
+  "steam_vents": [
+    {
+      "id": "seam2",
+      "x": 820,
+      "y": 750,
+      "w": 36,
+      "h": 134,
+      "period": 3.1,
+      "duty_cycle": 0.43,
+      "disabled_by": []
+    }
+  ],
+  "collapsing_platforms": [],
+  "checkpoints": [
+    {
+      "id": "beacon_78",
+      "x": 1985,
+      "y": 595
+    }
+  ],
+  "spikes": [],
+  "acids": [
+    {
+      "x": 36,
+      "y": 895,
+      "w": 114,
+      "h": 75
+    },
+    {
+      "x": 582,
+      "y": 895,
+      "w": 512,
+      "h": 75
+    },
+    {
+      "x": 1456,
+      "y": 895,
+      "w": 204,
+      "h": 75
+    },
+    {
+      "x": 2050,
+      "y": 895,
+      "w": 164,
+      "h": 75
+    }
+  ],
+  "lasers": [],
+  "optical_beams": [],
+  "sequences": [
+    {
+      "group_id": "order",
+      "order": [
+        "first",
+        "second",
+        "third"
+      ]
+    }
+  ],
+  "collectibles": [
+    {
+      "id": "log_78",
+      "x": 192,
+      "y": 563,
+      "title": "The Escape Network / Shift Notes",
+      "text": "The Escape Network. Check the signal lines before you leave the service deck."
+    },
+    {
+      "id": "field_trace_78",
+      "x": 1722,
+      "y": 519,
+      "title": "FIELD TRACE 78 / THREE-NODE SEQUENCE RIDGE",
+      "text": "ECHO-7 field diagnostics: Interleave an ordered three-node activation with one remote weighted test, forcing a meaningful reverse traversal.",
+      "required_links": [
+        "alpha"
+      ],
+      "optional_investigation": true
+    },
+    {
+      "id": "service_challenge_78",
+      "x": 2141,
+      "y": 428,
+      "title": "Optional Diagnostics 78",
+      "text": "Optional master circuit cleared. The standard exit never depends on this side challenge.",
+      "required_links": [
+        "sector_78_validated"
+      ],
+      "optional_investigation": true
+    }
+  ],
+  "decorations": [
+    {
+      "type": "warning_stripe",
+      "x": 1106,
+      "y": 607,
+      "w": 120
+    },
+    {
+      "type": "warning_stripe",
+      "x": 162,
+      "y": 607,
+      "w": 120
+    },
+    {
+      "type": "warning_stripe",
+      "x": 1672,
+      "y": 607,
+      "w": 120
+    },
+    {
+      "type": "warning_stripe",
+      "x": 1106,
+      "y": 367,
+      "w": 120
+    },
+    {
+      "type": "monitor",
+      "x": 334,
+      "y": 502,
+      "text": "01 / IN"
+    },
+    {
+      "type": "monitor",
+      "x": 436,
+      "y": 743,
+      "text": "RECEIVING SCALE"
+    },
+    {
+      "type": "monitor",
+      "x": 1243,
+      "y": 742,
+      "text": "02 / TEST"
+    },
+    {
+      "type": "monitor",
+      "x": 1823,
+      "y": 742,
+      "text": "03 / OUT"
+    },
+    {
+      "type": "monitor",
+      "x": 1825,
+      "y": 495,
+      "text": "HOLD ORDER + WEIGHT"
+    },
+    {
+      "type": "monitor",
+      "x": 1240,
+      "y": 181,
+      "text": "EXIT LOCK"
+    },
+    {
+      "type": "monitor",
+      "x": 1735,
+      "y": 481,
+      "text": "FORENSIC TRACE 78"
+    },
+    {
+      "type": "monitor",
+      "x": 1015,
+      "y": 427,
+      "text": "ACCESS / 78"
+    },
+    {
+      "type": "warning_stripe",
+      "x": 982,
+      "y": 423,
+      "w": 78
+    }
+  ],
+  "latching_relays": [
+    {
+      "link_id": "alpha",
+      "x": 1855,
+      "y": 595,
+      "required_links": [
+        "order",
+        "weight"
+      ]
+    },
+    {
+      "link_id": "overhaul_78_memory",
+      "x": 942,
+      "y": 470,
+      "required_links": [
+        "overhaul_78_generator",
+        "overhaul_78_A"
+      ]
+    },
+    {
+      "link_id": "sector_78_validated",
+      "x": 2129,
+      "y": 470,
+      "required_links": [
+        "overhaul_78_B"
+      ]
+    }
+  ],
+  "routing_consoles": [
+    {
+      "id": "overhaul_78_selector",
+      "route_id": "overhaul_78_bus",
+      "x": 1000,
+      "y": 411,
+      "a_signal": "overhaul_78_A",
+      "b_signal": "overhaul_78_B"
+    }
+  ],
+  "signal_inverters": [],
+  "npcs": [
+    {
+      "id": "kip",
+      "x": 1194,
+      "y": 595,
+      "dialogue": [
+        "The Escape Network. I brought a spare fuse and a very small umbrella.",
+        "Stamp 01, 02 and 03 in order. A wrong stamp resets the sequence.",
+        "Keep order and weight live, then interact with the recorder to hold the reading."
+      ]
+    }
+  ],
+  "springs": [],
+  "dash_recharges": [],
+  "one_way_platforms": [
+    {
+      "id": "walk0",
+      "x": 622,
+      "y": 755,
+      "w": 70,
+      "h": 12
+    },
+    {
+      "id": "walk1",
+      "x": 582,
+      "y": 675,
+      "w": 70,
+      "h": 12
+    },
+    {
+      "id": "walk2",
+      "x": 622,
+      "y": 595,
+      "w": 70,
+      "h": 12
+    },
+    {
+      "id": "walk3",
+      "x": 2090,
+      "y": 755,
+      "w": 70,
+      "h": 12
+    },
+    {
+      "id": "walk4",
+      "x": 2050,
+      "y": 675,
+      "w": 70,
+      "h": 12
+    },
+    {
+      "id": "walk5",
+      "x": 2090,
+      "y": 595,
+      "w": 70,
+      "h": 12
+    },
+    {
+      "id": "walk6",
+      "x": 1495,
+      "y": 435,
+      "w": 58,
+      "h": 12
+    },
+    {
+      "id": "walk7",
+      "x": 1563,
+      "y": 515,
+      "w": 58,
+      "h": 12
+    },
+    {
+      "id": "overhaul_step_78_0",
+      "x": 1013,
+      "y": 530,
+      "w": 78,
+      "h": 12
+    },
+    {
+      "id": "overhaul_step_78_1",
+      "x": 924,
+      "y": 470,
+      "w": 78,
+      "h": 12
+    },
+    {
+      "id": "overhaul_step_78_2",
+      "x": 982,
+      "y": 411,
+      "w": 78,
+      "h": 12
+    },
+    {
+      "id": "validation_foot_78_0",
+      "x": 2026,
+      "y": 532,
+      "w": 78,
+      "h": 12
+    },
+    {
+      "id": "validation_foot_78_1",
+      "x": 2111,
+      "y": 470,
+      "w": 78,
+      "h": 12
+    }
+  ],
+  "dash_barriers": [],
+  "level_id": 78,
+  "width": 2250,
+  "height": 970,
+  "name": "Chamber 78 // The Escape Network",
+  "abilities": {
+    "wall_jump": true,
+    "dash": true
+  },
+  "spawn": [
+    1132,
+    549
+  ],
+  "exit": [
+    1274,
+    275
+  ],
+  "hint_route": [
+    "order",
+    "weight",
+    "alpha"
+  ],
+  "hint_notes": {
+    "order": [
+      "Stamp 01, 02 and 03 in order. A wrong stamp resets the sequence.",
+      "Stamp 01, 02 and 03 in order. A wrong stamp resets the sequence.",
+      "Stamp 01, 02 and 03 in order. A wrong stamp resets the sequence."
+    ],
+    "weight": [
+      "Move the cargo right until it rests on the receiving scale.",
+      "Move the cargo right until it rests on the receiving scale.",
+      "Move the cargo right until it rests on the receiving scale."
+    ],
+    "alpha": [
+      "Keep order and weight live, then interact with the recorder to hold the reading.",
+      "Keep order and weight live, then interact with the recorder to hold the reading.",
+      "Keep order and weight live, then interact with the recorder to hold the reading."
+    ]
+  },
+  "solution_steps": [
+    "Stamp 01, 02 and 03 in order. A wrong stamp resets the sequence.",
+    "Move the cargo right until it rests on the receiving scale.",
+    "Keep order and weight live, then interact with the recorder to hold the reading.",
+    "Energize the service bus, memorize A at the middle station, and reroute to B before proceeding."
+  ],
+  "subtitle": "Stamp 01, 02 and 03 in order. A wrong stamp resets the sequence.  //  SERVICE DETOUR: Energize the service bus, memorize A at the middle station, and reroute to B before proceeding.",
+  "chapter": 8,
+  "theme": "surface",
+  "topology": "Three-Node Sequence Ridge",
+  "overhaul_version": 1,
+  "overhaul_design": {
+    "profile": "relay_bus",
+    "route": "left_return",
+    "actual_direction": -1,
+    "mandatory": true,
+    "service_platform_count": 3
+  },
+  "secondary_validation_1": {
+    "checkpoint": "beacon_78",
+    "extra_platforms": 2,
+    "signal": "sector_78_validated"
+  },
+  "side_challenge_policy": {
+    "campaign_blocking": false,
+    "optional_signals": [
+      "overhaul_78_memory",
+      "overhaul_78_B",
+      "sector_78_validated"
+    ],
+    "reason": "Not proven traversable in the Pygame engine; preserve main progression."
+  }
+}

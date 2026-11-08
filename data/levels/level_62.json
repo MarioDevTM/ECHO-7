@@ -1,0 +1,701 @@
+{
+  "tiles": [
+    [
+      0,
+      0,
+      36,
+      1450
+    ],
+    [
+      1464,
+      0,
+      36,
+      1450
+    ],
+    [
+      36,
+      0,
+      1428,
+      30
+    ],
+    [
+      150,
+      1315,
+      432,
+      135
+    ],
+    [
+      938,
+      1315,
+      362,
+      135
+    ],
+    [
+      938,
+      1075,
+      362,
+      23
+    ],
+    [
+      938,
+      835,
+      362,
+      23
+    ],
+    [
+      938,
+      595,
+      362,
+      23
+    ],
+    [
+      938,
+      355,
+      362,
+      23
+    ],
+    [
+      1061,
+      221,
+      155,
+      18
+    ],
+    [
+      1198,
+      239,
+      18,
+      116
+    ],
+    [
+      1416,
+      1105,
+      14,
+      174
+    ],
+    [
+      1416,
+      865,
+      14,
+      174
+    ],
+    [
+      1416,
+      625,
+      14,
+      174
+    ],
+    [
+      1416,
+      385,
+      14,
+      174
+    ],
+    [
+      990,
+      1098,
+      258,
+      22
+    ],
+    [
+      990,
+      858,
+      258,
+      22
+    ],
+    [
+      962,
+      618,
+      44,
+      56
+    ],
+    [
+      1097,
+      618,
+      44,
+      56
+    ],
+    [
+      156,
+      30,
+      98,
+      56
+    ],
+    [
+      176,
+      86,
+      58,
+      16
+    ],
+    [
+      556,
+      30,
+      114,
+      56
+    ],
+    [
+      576,
+      86,
+      74,
+      16
+    ],
+    [
+      956,
+      30,
+      130,
+      42
+    ],
+    [
+      976,
+      72,
+      90,
+      16
+    ],
+    [
+      36,
+      140,
+      40,
+      82
+    ],
+    [
+      36,
+      380,
+      40,
+      66
+    ],
+    [
+      36,
+      620,
+      40,
+      82
+    ],
+    [
+      36,
+      860,
+      40,
+      66
+    ],
+    [
+      36,
+      1100,
+      40,
+      82
+    ],
+    [
+      350,
+      1091,
+      32,
+      120
+    ],
+    [
+      962,
+      378,
+      36,
+      115
+    ],
+    [
+      1014,
+      880,
+      36,
+      93
+    ]
+  ],
+  "ladders": [
+    {
+      "x": 1302,
+      "y": 1037,
+      "h": 288
+    },
+    {
+      "x": 1302,
+      "y": 797,
+      "h": 288
+    },
+    {
+      "x": 1302,
+      "y": 557,
+      "h": 288
+    },
+    {
+      "x": 1302,
+      "y": 317,
+      "h": 288
+    }
+  ],
+  "crates": [],
+  "plates": [],
+  "switches": [],
+  "doors": [
+    {
+      "id": "surface_lock",
+      "x": 1061,
+      "y": 239,
+      "w": 20,
+      "h": 116,
+      "required_links": [
+        "proof",
+        "B"
+      ]
+    }
+  ],
+  "moving_platforms": [
+    {
+      "id": "car0",
+      "x": 693,
+      "y": 1277,
+      "w": 83,
+      "h": 16,
+      "end_x": 772,
+      "end_y": 1349,
+      "speed": 124,
+      "active_by_default": true,
+      "required_links": []
+    },
+    {
+      "id": "car1",
+      "x": 1318,
+      "y": 1307,
+      "w": 86,
+      "h": 16,
+      "end_x": 1318,
+      "end_y": 1067,
+      "speed": 124,
+      "active_by_default": false,
+      "required_links": [
+        "power"
+      ]
+    },
+    {
+      "id": "car2",
+      "x": 1318,
+      "y": 587,
+      "w": 86,
+      "h": 16,
+      "end_x": 1318,
+      "end_y": 347,
+      "speed": 124,
+      "active_by_default": false,
+      "required_links": [
+        "power"
+      ]
+    }
+  ],
+  "conveyors": [],
+  "wind_zones": [],
+  "water_zones": [],
+  "valves": [],
+  "generators": [
+    {
+      "link_id": "power",
+      "x": 1119,
+      "y": 1315
+    }
+  ],
+  "cables": [
+    {
+      "link_id": "A",
+      "points": [
+        [
+          1128,
+          1063
+        ],
+        [
+          1128,
+          1099
+        ],
+        [
+          1135,
+          1099
+        ],
+        [
+          1135,
+          585
+        ]
+      ]
+    },
+    {
+      "link_id": "power",
+      "points": [
+        [
+          1128,
+          1303
+        ],
+        [
+          1128,
+          1346
+        ],
+        [
+          1135,
+          1346
+        ],
+        [
+          1135,
+          585
+        ]
+      ]
+    },
+    {
+      "link_id": "proof",
+      "points": [
+        [
+          1119,
+          583
+        ],
+        [
+          1119,
+          617
+        ],
+        [
+          1069,
+          617
+        ],
+        [
+          1069,
+          299
+        ]
+      ]
+    },
+    {
+      "link_id": "B",
+      "points": [
+        [
+          1129,
+          1063
+        ],
+        [
+          1129,
+          1104
+        ],
+        [
+          1069,
+          1104
+        ],
+        [
+          1069,
+          299
+        ]
+      ]
+    }
+  ],
+  "mirrors": [],
+  "crushers": [],
+  "steam_vents": [
+    {
+      "id": "seam0",
+      "x": 742,
+      "y": 1230,
+      "w": 36,
+      "h": 134,
+      "period": 3.1,
+      "duty_cycle": 0.43,
+      "disabled_by": []
+    }
+  ],
+  "collapsing_platforms": [
+    {
+      "id": "walk0",
+      "x": 1340,
+      "y": 995,
+      "w": 70,
+      "h": 12,
+      "delay": 0.54,
+      "respawn": 2.4
+    },
+    {
+      "id": "walk2",
+      "x": 1340,
+      "y": 835,
+      "w": 70,
+      "h": 12,
+      "delay": 0.54,
+      "respawn": 2.4
+    },
+    {
+      "id": "walk4",
+      "x": 1300,
+      "y": 675,
+      "w": 70,
+      "h": 12,
+      "delay": 0.54,
+      "respawn": 2.4
+    }
+  ],
+  "checkpoints": [
+    {
+      "id": "beacon_62",
+      "x": 1235,
+      "y": 595
+    }
+  ],
+  "spikes": [],
+  "acids": [
+    {
+      "x": 36,
+      "y": 1375,
+      "w": 114,
+      "h": 75
+    },
+    {
+      "x": 582,
+      "y": 1375,
+      "w": 356,
+      "h": 75
+    },
+    {
+      "x": 1300,
+      "y": 1375,
+      "w": 164,
+      "h": 75
+    }
+  ],
+  "lasers": [],
+  "optical_beams": [],
+  "sequences": [],
+  "collectibles": [
+    {
+      "id": "log_62",
+      "x": 980,
+      "y": 1283,
+      "title": "The Broken Elevator / Shift Notes",
+      "text": "The Broken Elevator. Check the signal lines before you leave the service deck."
+    },
+    {
+      "id": "field_trace_62",
+      "x": 504,
+      "y": 1239,
+      "title": "FIELD TRACE 62 / RUPTURED VERTICAL HOIST",
+      "text": "ECHO-7 field diagnostics: Pair a damaged power lift with a spring-assisted high-platform route; the player must capture a remote upper bus state and decide how to descend.",
+      "required_links": [
+        "proof"
+      ],
+      "optional_investigation": true
+    },
+    {
+      "id": "service_challenge_62",
+      "x": 1263,
+      "y": 553,
+      "title": "Optional Diagnostics 62",
+      "text": "Optional auxiliary service record recovered. This archive is no longer linked to a redundant side circuit and does not gate the exit.",
+      "required_links": [],
+      "optional_investigation": true
+    }
+  ],
+  "decorations": [
+    {
+      "type": "warning_stripe",
+      "x": 950,
+      "y": 1087,
+      "w": 120
+    },
+    {
+      "type": "warning_stripe",
+      "x": 950,
+      "y": 847,
+      "w": 120
+    },
+    {
+      "type": "warning_stripe",
+      "x": 950,
+      "y": 607,
+      "w": 120
+    },
+    {
+      "type": "warning_stripe",
+      "x": 950,
+      "y": 367,
+      "w": 120
+    },
+    {
+      "type": "monitor",
+      "x": 1089,
+      "y": 1215,
+      "text": "ENERGIZE"
+    },
+    {
+      "type": "monitor",
+      "x": 1079,
+      "y": 976,
+      "text": "SELECT A / B"
+    },
+    {
+      "type": "monitor",
+      "x": 950,
+      "y": 739,
+      "text": "LAUNCH"
+    },
+    {
+      "type": "monitor",
+      "x": 1089,
+      "y": 495,
+      "text": "HOLD A + POWER"
+    },
+    {
+      "type": "monitor",
+      "x": 1084,
+      "y": 181,
+      "text": "EXIT LOCK"
+    },
+    {
+      "type": "monitor",
+      "x": 517,
+      "y": 1201,
+      "text": "FORENSIC TRACE 62"
+    }
+  ],
+  "latching_relays": [
+    {
+      "link_id": "proof",
+      "x": 1119,
+      "y": 595,
+      "required_links": [
+        "A",
+        "power"
+      ]
+    }
+  ],
+  "routing_consoles": [
+    {
+      "id": "selector",
+      "route_id": "supply",
+      "x": 1119,
+      "y": 1075,
+      "a_signal": "A",
+      "b_signal": "B"
+    }
+  ],
+  "signal_inverters": [],
+  "npcs": [
+    {
+      "id": "kip",
+      "x": 250,
+      "y": 1315,
+      "dialogue": [
+        "The Broken Elevator. Our lift has ambitions. Mostly upward.",
+        "Set the supply selector to A.",
+        "Transfer the selector to B after recording the A-side reading."
+      ]
+    }
+  ],
+  "springs": [
+    {
+      "id": "launch",
+      "x": 1245,
+      "y": 825,
+      "w": 56,
+      "h": 10
+    }
+  ],
+  "dash_recharges": [],
+  "one_way_platforms": [],
+  "dash_barriers": [],
+  "level_id": 62,
+  "width": 1500,
+  "height": 1450,
+  "name": "Chamber 62 // The Broken Elevator",
+  "abilities": {
+    "wall_jump": true,
+    "dash": true
+  },
+  "spawn": [
+    188,
+    1269
+  ],
+  "exit": [
+    1118,
+    275
+  ],
+  "hint_route": [
+    "A",
+    "power",
+    "proof",
+    "B"
+  ],
+  "hint_notes": {
+    "A": [
+      "Set the supply selector to A.",
+      "Set the supply selector to A.",
+      "Set the supply selector to A."
+    ],
+    "power": [
+      "Start the generator to bring the circuit online.",
+      "Start the generator to bring the circuit online.",
+      "Start the generator to bring the circuit online."
+    ],
+    "proof": [
+      "Keep A and power live, then interact with the recorder to hold the reading.",
+      "Keep A and power live, then interact with the recorder to hold the reading.",
+      "Keep A and power live, then interact with the recorder to hold the reading."
+    ],
+    "B": [
+      "Transfer the selector to B after recording the A-side reading.",
+      "Transfer the selector to B after recording the A-side reading.",
+      "Transfer the selector to B after recording the A-side reading."
+    ]
+  },
+  "solution_steps": [
+    "Set the supply selector to A.",
+    "Start the generator to bring the circuit online.",
+    "Keep A and power live, then interact with the recorder to hold the reading.",
+    "Transfer the selector to B after recording the A-side reading."
+  ],
+  "subtitle": "Set the supply selector to A.",
+  "chapter": 7,
+  "theme": "spire",
+  "topology": "Ruptured Vertical Hoist",
+  "overhaul_version": 1,
+  "overhaul_design": {
+    "profile": "generator_relay",
+    "route": "left_return",
+    "actual_direction": 1,
+    "mandatory": false,
+    "service_platform_count": 0,
+    "retired_by_cleanup": true
+  },
+  "secondary_validation_1": {
+    "checkpoint": "beacon_62",
+    "extra_platforms": 0,
+    "signal": "sector_62_validated",
+    "retired_by_cleanup": true
+  },
+  "side_challenge_policy": {
+    "campaign_blocking": false,
+    "optional_signals": [],
+    "reason": "Deprecated optional side circuit removed; service record remains accessible."
+  },
+  "architectural_overhaul_v2": {
+    "archetype": "Torn Girder & Wind-Tunnel Gallery",
+    "chapter": 7,
+    "theme": "spire",
+    "original_tile_count": 15,
+    "final_tile_count": 33,
+    "thickened_decks": 0,
+    "added_piers": 0,
+    "added_corbels": 4,
+    "added_soffits": 3,
+    "added_buttresses": 5,
+    "tiles_before_cleanup_pass": 30,
+    "removed_legacy_platforms": 5,
+    "removed_legacy_devices": 3,
+    "added_partition_walls": 1,
+    "added_grounded_piers": 2,
+    "added_stepped_terraces": 0
+  },
+  "cleanup_v3_audit": {
+    "level": 62,
+    "chapter": 7,
+    "theme": "spire",
+    "name": "Chamber 62 // The Broken Elevator",
+    "archetype": "Torn Girder & Wind-Tunnel Gallery",
+    "orig_backup_tiles": 15,
+    "final_tiles": 33,
+    "removed_platforms": 5,
+    "retained_platforms": 0,
+    "removed_devices": 3,
+    "added_walls": 1,
+    "added_piers": 0,
+    "added_terraces": 0,
+    "gate_links": [
+      "proof",
+      "B"
+    ]
+  }
+}

@@ -1,0 +1,702 @@
+{
+  "tiles": [
+    [
+      0,
+      0,
+      36,
+      922
+    ],
+    [
+      1861,
+      0,
+      36,
+      922
+    ],
+    [
+      36,
+      0,
+      1825,
+      30
+    ],
+    [
+      150,
+      571,
+      390,
+      23
+    ],
+    [
+      795,
+      571,
+      340,
+      23
+    ],
+    [
+      795,
+      787,
+      340,
+      135
+    ],
+    [
+      150,
+      787,
+      390,
+      135
+    ],
+    [
+      150,
+      355,
+      390,
+      23
+    ],
+    [
+      795,
+      355,
+      340,
+      23
+    ],
+    [
+      1265,
+      355,
+      432,
+      23
+    ],
+    [
+      1423,
+      221,
+      155,
+      18
+    ],
+    [
+      1560,
+      239,
+      18,
+      116
+    ],
+    [
+      636,
+      609,
+      62,
+      24
+    ],
+    [
+      636,
+      825,
+      62,
+      97
+    ],
+    [
+      636,
+      393,
+      62,
+      24
+    ],
+    [
+      194,
+      594,
+      302,
+      22
+    ],
+    [
+      839,
+      594,
+      252,
+      22
+    ],
+    [
+      839,
+      378,
+      252,
+      22
+    ],
+    [
+      1309,
+      378,
+      344,
+      22
+    ],
+    [
+      156,
+      30,
+      96,
+      42
+    ],
+    [
+      176,
+      72,
+      56,
+      16
+    ],
+    [
+      516,
+      30,
+      120,
+      42
+    ],
+    [
+      536,
+      72,
+      80,
+      16
+    ],
+    [
+      876,
+      30,
+      96,
+      28
+    ],
+    [
+      896,
+      58,
+      56,
+      16
+    ],
+    [
+      1596,
+      30,
+      96,
+      42
+    ],
+    [
+      1616,
+      72,
+      56,
+      16
+    ],
+    [
+      36,
+      140,
+      40,
+      88
+    ],
+    [
+      1821,
+      180,
+      40,
+      88
+    ],
+    [
+      36,
+      380,
+      40,
+      72
+    ],
+    [
+      1821,
+      420,
+      40,
+      72
+    ],
+    [
+      36,
+      620,
+      40,
+      88
+    ],
+    [
+      1821,
+      660,
+      40,
+      88
+    ]
+  ],
+  "ladders": [
+    {
+      "x": 1137,
+      "y": 533,
+      "h": 264
+    },
+    {
+      "x": 542,
+      "y": 317,
+      "h": 480
+    }
+  ],
+  "crates": [],
+  "plates": [],
+  "switches": [
+    {
+      "link_id": "first",
+      "x": 965,
+      "y": 571,
+      "mode": "sequence",
+      "duration": 0
+    },
+    {
+      "link_id": "second",
+      "x": 965,
+      "y": 787,
+      "mode": "sequence",
+      "duration": 0
+    },
+    {
+      "link_id": "third",
+      "x": 345,
+      "y": 787,
+      "mode": "sequence",
+      "duration": 0
+    },
+    {
+      "link_id": "timer",
+      "x": 965,
+      "y": 355,
+      "mode": "timed",
+      "duration": 19
+    }
+  ],
+  "doors": [
+    {
+      "id": "surface_lock",
+      "x": 1423,
+      "y": 239,
+      "w": 20,
+      "h": 116,
+      "required_links": [
+        "alpha",
+        "timer"
+      ]
+    }
+  ],
+  "moving_platforms": [
+    {
+      "id": "car0",
+      "x": 1140,
+      "y": 331,
+      "w": 65,
+      "h": 16,
+      "end_x": 1195,
+      "end_y": 289,
+      "speed": 108,
+      "active_by_default": true,
+      "required_links": []
+    }
+  ],
+  "conveyors": [],
+  "wind_zones": [],
+  "water_zones": [],
+  "valves": [
+    {
+      "link_id": "overhaul_28_valve",
+      "x": 299,
+      "y": 446
+    }
+  ],
+  "generators": [],
+  "cables": [
+    {
+      "link_id": "alpha",
+      "points": [
+        [
+          345,
+          343
+        ],
+        [
+          345,
+          377
+        ],
+        [
+          1431,
+          377
+        ],
+        [
+          1431,
+          299
+        ]
+      ]
+    },
+    {
+      "link_id": "timer",
+      "points": [
+        [
+          965,
+          343
+        ],
+        [
+          965,
+          384
+        ],
+        [
+          1431,
+          384
+        ],
+        [
+          1431,
+          299
+        ]
+      ]
+    }
+  ],
+  "mirrors": [],
+  "crushers": [],
+  "steam_vents": [
+    {
+      "id": "seam4",
+      "x": 649,
+      "y": 270,
+      "w": 36,
+      "h": 134,
+      "period": 3.1,
+      "duty_cycle": 0.43,
+      "disabled_by": []
+    }
+  ],
+  "collapsing_platforms": [],
+  "checkpoints": [
+    {
+      "id": "beacon_28",
+      "x": 1070,
+      "y": 355
+    }
+  ],
+  "spikes": [],
+  "acids": [
+    {
+      "x": 36,
+      "y": 847,
+      "w": 114,
+      "h": 75
+    },
+    {
+      "x": 540,
+      "y": 847,
+      "w": 255,
+      "h": 75
+    },
+    {
+      "x": 1135,
+      "y": 847,
+      "w": 726,
+      "h": 75
+    }
+  ],
+  "lasers": [],
+  "optical_beams": [],
+  "sequences": [
+    {
+      "group_id": "order",
+      "order": [
+        "first",
+        "second",
+        "third"
+      ]
+    }
+  ],
+  "collectibles": [
+    {
+      "id": "log_28",
+      "x": 837,
+      "y": 539,
+      "title": "The Capacitor Array / Shift Notes",
+      "text": "The Capacitor Array. Check the signal lines before you leave the service deck."
+    },
+    {
+      "id": "field_trace_28",
+      "x": 469,
+      "y": 495,
+      "title": "FIELD TRACE 28 / CAPACITOR ARRAY",
+      "text": "ECHO-7 field diagnostics: Make the three-step sequence a spatial puzzle rather than three adjacent buttons: the player must infer order from numbered power diagnostics and walk a....",
+      "required_links": [
+        "alpha"
+      ],
+      "optional_investigation": true
+    },
+    {
+      "id": "service_challenge_28",
+      "x": 1226,
+      "y": 188,
+      "title": "Optional Diagnostics 28",
+      "text": "Optional master circuit cleared. The standard exit never depends on this side challenge.",
+      "required_links": [
+        "sector_28_validated"
+      ],
+      "optional_investigation": true
+    }
+  ],
+  "decorations": [
+    {
+      "type": "warning_stripe",
+      "x": 162,
+      "y": 583,
+      "w": 120
+    },
+    {
+      "type": "warning_stripe",
+      "x": 807,
+      "y": 583,
+      "w": 120
+    },
+    {
+      "type": "warning_stripe",
+      "x": 162,
+      "y": 367,
+      "w": 120
+    },
+    {
+      "type": "warning_stripe",
+      "x": 807,
+      "y": 367,
+      "w": 120
+    },
+    {
+      "type": "warning_stripe",
+      "x": 1277,
+      "y": 367,
+      "w": 120
+    },
+    {
+      "type": "monitor",
+      "x": 933,
+      "y": 478,
+      "text": "01 / IN"
+    },
+    {
+      "type": "monitor",
+      "x": 933,
+      "y": 694,
+      "text": "02 / TEST"
+    },
+    {
+      "type": "monitor",
+      "x": 313,
+      "y": 694,
+      "text": "03 / OUT"
+    },
+    {
+      "type": "monitor",
+      "x": 315,
+      "y": 255,
+      "text": "HOLD ORDER"
+    },
+    {
+      "type": "monitor",
+      "x": 933,
+      "y": 262,
+      "text": "ESCAPE 19s"
+    },
+    {
+      "type": "monitor",
+      "x": 1446,
+      "y": 181,
+      "text": "EXIT LOCK"
+    },
+    {
+      "type": "monitor",
+      "x": 482,
+      "y": 457,
+      "text": "FORENSIC TRACE 28"
+    },
+    {
+      "type": "monitor",
+      "x": 206,
+      "y": 409,
+      "text": "ACCESS / 28"
+    },
+    {
+      "type": "warning_stripe",
+      "x": 361,
+      "y": 403,
+      "w": 78
+    }
+  ],
+  "latching_relays": [
+    {
+      "link_id": "alpha",
+      "x": 345,
+      "y": 355,
+      "required_links": [
+        "order"
+      ]
+    },
+    {
+      "link_id": "overhaul_28_record",
+      "x": 379,
+      "y": 391,
+      "required_links": [
+        "overhaul_28_valve"
+      ]
+    },
+    {
+      "link_id": "sector_28_validated",
+      "x": 1214,
+      "y": 230,
+      "required_links": [
+        "overhaul_28_record"
+      ]
+    }
+  ],
+  "routing_consoles": [],
+  "signal_inverters": [],
+  "npcs": [
+    {
+      "id": "kip",
+      "x": 250,
+      "y": 571,
+      "dialogue": [
+        "The Capacitor Array. Please count the clicks. I keep losing count.",
+        "Stamp 01, 02 and 03 in order. A wrong stamp resets the sequence.",
+        "Start the clock after the other lock lights are green."
+      ]
+    }
+  ],
+  "springs": [],
+  "dash_recharges": [],
+  "one_way_platforms": [
+    {
+      "id": "walk0",
+      "x": 1175,
+      "y": 715,
+      "w": 83,
+      "h": 12
+    },
+    {
+      "id": "walk1",
+      "x": 1135,
+      "y": 643,
+      "w": 83,
+      "h": 12
+    },
+    {
+      "id": "walk2",
+      "x": 1175,
+      "y": 571,
+      "w": 83,
+      "h": 12
+    },
+    {
+      "id": "walk3",
+      "x": 580,
+      "y": 643,
+      "w": 83,
+      "h": 12
+    },
+    {
+      "id": "walk4",
+      "x": 540,
+      "y": 499,
+      "w": 83,
+      "h": 12
+    },
+    {
+      "id": "walk5",
+      "x": 580,
+      "y": 355,
+      "w": 83,
+      "h": 12
+    },
+    {
+      "id": "overhaul_step_28_0",
+      "x": 204,
+      "y": 512,
+      "w": 78,
+      "h": 12
+    },
+    {
+      "id": "overhaul_step_28_1",
+      "x": 281,
+      "y": 446,
+      "w": 78,
+      "h": 12
+    },
+    {
+      "id": "overhaul_step_28_2",
+      "x": 361,
+      "y": 391,
+      "w": 78,
+      "h": 12
+    },
+    {
+      "id": "validation_foot_28_0",
+      "x": 1111,
+      "y": 292,
+      "w": 78,
+      "h": 12
+    },
+    {
+      "id": "validation_foot_28_1",
+      "x": 1196,
+      "y": 230,
+      "w": 78,
+      "h": 12
+    }
+  ],
+  "dash_barriers": [],
+  "level_id": 28,
+  "width": 1897,
+  "height": 922,
+  "name": "Chamber 28 // The Capacitor Array",
+  "abilities": {
+    "wall_jump": true,
+    "dash": true
+  },
+  "spawn": [
+    188,
+    525
+  ],
+  "exit": [
+    1480,
+    275
+  ],
+  "hint_route": [
+    "order",
+    "alpha",
+    "timer"
+  ],
+  "hint_notes": {
+    "order": [
+      "Stamp 01, 02 and 03 in order. A wrong stamp resets the sequence.",
+      "Stamp 01, 02 and 03 in order. A wrong stamp resets the sequence.",
+      "Stamp 01, 02 and 03 in order. A wrong stamp resets the sequence."
+    ],
+    "alpha": [
+      "Keep order live, then interact with the recorder to hold the reading.",
+      "Keep order live, then interact with the recorder to hold the reading.",
+      "Keep order live, then interact with the recorder to hold the reading."
+    ],
+    "timer": [
+      "Start the clock after the other lock lights are green.",
+      "Start the clock after the other lock lights are green.",
+      "Start the clock after the other lock lights are green."
+    ]
+  },
+  "solution_steps": [
+    "Stamp 01, 02 and 03 in order. A wrong stamp resets the sequence.",
+    "Keep order live, then interact with the recorder to hold the reading.",
+    "Start the clock after the other lock lights are green."
+  ],
+  "subtitle": "Stamp 01, 02 and 03 in order. A wrong stamp resets the sequence.  //  SERVICE DETOUR: Use the intermediate valve and record its new state at the higher control point.",
+  "chapter": 3,
+  "theme": "power",
+  "topology": "Cascaded Sequence Array",
+  "overhaul_version": 1,
+  "overhaul_design": {
+    "profile": "valve_relay",
+    "route": "right_up",
+    "actual_direction": 1,
+    "mandatory": true,
+    "service_platform_count": 3
+  },
+  "secondary_validation_1": {
+    "checkpoint": "beacon_28",
+    "extra_platforms": 2,
+    "signal": "sector_28_validated"
+  },
+  "side_challenge_policy": {
+    "campaign_blocking": false,
+    "optional_signals": [
+      "overhaul_28_record",
+      "sector_28_validated"
+    ],
+    "reason": "Not proven traversable in the Pygame engine; preserve main progression."
+  },
+  "architectural_overhaul_v2": {
+    "archetype": "Buttressed Machinery Core",
+    "chapter": 3,
+    "theme": "power",
+    "original_tile_count": 15,
+    "final_tile_count": 33,
+    "thickened_decks": 0,
+    "added_piers": 0,
+    "added_corbels": 4,
+    "added_soffits": 4,
+    "added_buttresses": 6
+  }
+}

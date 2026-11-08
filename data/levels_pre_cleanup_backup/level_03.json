@@ -1,0 +1,354 @@
+{
+  "level_id": 3,
+  "chapter": 1,
+  "theme": "awakening",
+  "name": "Chamber 03 // The Assembly Line",
+  "subtitle": "Sample the cargo at the west scale before sending it to dispatch.",
+  "width": 2020,
+  "height": 760,
+  "spawn": [
+    90,
+    574
+  ],
+  "exit": [
+    1896,
+    450
+  ],
+  "tiles": [
+    [
+      0,
+      0,
+      40,
+      760
+    ],
+    [
+      40,
+      0,
+      1940,
+      32
+    ],
+    [
+      1980,
+      0,
+      40,
+      760
+    ],
+    [
+      40,
+      620,
+      550,
+      140
+    ],
+    [
+      590,
+      636,
+      440,
+      124
+    ],
+    [
+      1030,
+      620,
+      160,
+      140
+    ],
+    [
+      1660,
+      530,
+      320,
+      230
+    ],
+    [
+      250,
+      530,
+      200,
+      20
+    ],
+    [
+      510,
+      448,
+      240,
+      20
+    ],
+    [
+      1825,
+      410,
+      155,
+      20
+    ]
+  ],
+  "ladders": [],
+  "crates": [
+    {
+      "id": "c3",
+      "x": 730,
+      "y": 584
+    }
+  ],
+  "plates": [
+    {
+      "link_id": "plate_3_staging",
+      "x": 555,
+      "y": 620
+    },
+    {
+      "link_id": "plate_assembly",
+      "x": 1036,
+      "y": 620
+    }
+  ],
+  "switches": [
+    {
+      "link_id": "sw_conv_rev",
+      "x": 820,
+      "y": 620,
+      "mode": "toggle",
+      "duration": 0
+    }
+  ],
+  "doors": [
+    {
+      "id": "d3_exit",
+      "x": 1825,
+      "y": 430,
+      "w": 24,
+      "h": 100,
+      "required_links": [
+        "relay_3_staged",
+        "plate_assembly"
+      ],
+      "logic": "ALL"
+    }
+  ],
+  "moving_platforms": [
+    {
+      "id": "mp3_ferry",
+      "x": 1194,
+      "y": 614,
+      "w": 120,
+      "h": 18,
+      "end_x": 1530,
+      "end_y": 535,
+      "speed": 95,
+      "active_by_default": false,
+      "logic": "ALL",
+      "required_links": [
+        "relay_3_staged",
+        "plate_assembly"
+      ]
+    }
+  ],
+  "conveyors": [
+    {
+      "id": "line",
+      "x": 590,
+      "y": 620,
+      "w": 440,
+      "h": 16,
+      "speed": -78,
+      "reversed_by": "sw_conv_rev"
+    }
+  ],
+  "wind_zones": [],
+  "water_zones": [],
+  "valves": [],
+  "generators": [],
+  "cables": [
+    {
+      "link_id": "relay_3_staged",
+      "points": [
+        [
+          602,
+          434
+        ],
+        [
+          602,
+          534
+        ],
+        [
+          1833,
+          534
+        ],
+        [
+          1833,
+          480
+        ]
+      ]
+    },
+    {
+      "link_id": "plate_assembly",
+      "points": [
+        [
+          1048,
+          606
+        ],
+        [
+          1048,
+          666
+        ],
+        [
+          1833,
+          666
+        ],
+        [
+          1833,
+          480
+        ]
+      ]
+    },
+    {
+      "link_id": "relay_3_staged",
+      "points": [
+        [
+          602,
+          434
+        ],
+        [
+          602,
+          660
+        ],
+        [
+          1202,
+          660
+        ],
+        [
+          1202,
+          606
+        ]
+      ]
+    },
+    {
+      "link_id": "plate_assembly",
+      "points": [
+        [
+          1048,
+          606
+        ],
+        [
+          1048,
+          666
+        ],
+        [
+          1202,
+          666
+        ],
+        [
+          1202,
+          606
+        ]
+      ]
+    },
+    {
+      "link_id": "plate_3_staging",
+      "points": [
+        [
+          567,
+          606
+        ],
+        [
+          567,
+          660
+        ],
+        [
+          598,
+          660
+        ],
+        [
+          598,
+          440
+        ]
+      ]
+    }
+  ],
+  "mirrors": [],
+  "crushers": [],
+  "steam_vents": [],
+  "collapsing_platforms": [],
+  "checkpoints": [
+    {
+      "id": "cp3_1",
+      "x": 1120,
+      "y": 620
+    }
+  ],
+  "spikes": [],
+  "acids": [
+    {
+      "x": 1190,
+      "y": 700,
+      "w": 470,
+      "h": 60
+    }
+  ],
+  "lasers": [],
+  "optical_beams": [],
+  "sequences": [],
+  "collectibles": [
+    {
+      "id": "log_03",
+      "x": 320,
+      "y": 498,
+      "title": "Logistics Memo #12",
+      "text": "Conveyor drive polarity reversed during the evacuation rush."
+    }
+  ],
+  "decorations": [
+    {
+      "type": "monitor",
+      "x": 564,
+      "y": 359,
+      "text": "WEIGH TICKET"
+    },
+    {
+      "type": "monitor",
+      "x": 794,
+      "y": 531,
+      "text": "REVERSE LINE"
+    }
+  ],
+  "solution_steps": [
+    "Let the belt feed west and seat the load on the staging plate. Climb to the sampler and store its reading.",
+    "Reverse the belt, push the cargo east to dispatch and ride the diagonal pallet."
+  ],
+  "hint_route": [
+    "relay_3_staged",
+    "plate_assembly"
+  ],
+  "latching_relays": [
+    {
+      "link_id": "relay_3_staged",
+      "x": 590,
+      "y": 448,
+      "required_links": [
+        "plate_3_staging"
+      ]
+    }
+  ],
+  "hint_notes": {
+    "relay_3_staged": [
+      "Sample the cargo at the west scale before sending it to dispatch.",
+      "Let the belt feed west and seat the load on the staging plate. Climb to the sampler and store its reading.",
+      "Reverse the belt, push the cargo east to dispatch and ride the diagonal pallet."
+    ],
+    "plate_assembly": [
+      "Sample the cargo at the west scale before sending it to dispatch.",
+      "Let the belt feed west and seat the load on the staging plate. Climb to the sampler and store its reading.",
+      "Reverse the belt, push the cargo east to dispatch and ride the diagonal pallet."
+    ]
+  },
+  "npcs": [
+    {
+      "id": "kip",
+      "x": 160,
+      "y": 620
+    }
+  ],
+  "abilities": {
+    "wall_jump": false,
+    "dash": false
+  },
+  "springs": [],
+  "dash_recharges": [],
+  "one_way_platforms": [],
+  "dash_barriers": [],
+  "routing_consoles": []
+}

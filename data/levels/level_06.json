@@ -1,0 +1,320 @@
+{
+  "level_id": 6,
+  "chapter": 1,
+  "theme": "awakening",
+  "name": "Chamber 06 // Heavy Machinery",
+  "subtitle": "The press line feeds west. Isolate the ram from its raised service cradle.",
+  "width": 2050,
+  "height": 820,
+  "spawn": [
+    1750,
+    629
+  ],
+  "exit": [
+    72,
+    595
+  ],
+  "tiles": [
+    [
+      0,
+      0,
+      40,
+      820
+    ],
+    [
+      40,
+      0,
+      1970,
+      32
+    ],
+    [
+      2010,
+      0,
+      40,
+      820
+    ],
+    [
+      40,
+      675,
+      450,
+      145
+    ],
+    [
+      490,
+      691,
+      850,
+      129
+    ],
+    [
+      1340,
+      675,
+      670,
+      145
+    ],
+    [
+      40,
+      555,
+      152,
+      20
+    ]
+  ],
+  "ladders": [],
+  "crates": [
+    {
+      "id": "billet",
+      "x": 1450,
+      "y": 639
+    }
+  ],
+  "plates": [
+    {
+      "link_id": "plate_6",
+      "x": 365,
+      "y": 675
+    }
+  ],
+  "switches": [
+    {
+      "link_id": "sw_crusher_halt",
+      "x": 825,
+      "y": 370,
+      "mode": "permanent",
+      "duration": 0
+    }
+  ],
+  "doors": [
+    {
+      "id": "d6_exit",
+      "x": 168,
+      "y": 575,
+      "w": 24,
+      "h": 100,
+      "required_links": [
+        "stamp"
+      ],
+      "logic": "ALL"
+    }
+  ],
+  "moving_platforms": [],
+  "conveyors": [
+    {
+      "id": "line",
+      "x": 490,
+      "y": 675,
+      "w": 850,
+      "h": 16,
+      "speed": -65,
+      "powered_by": "drive"
+    }
+  ],
+  "wind_zones": [],
+  "water_zones": [],
+  "valves": [],
+  "generators": [
+    {
+      "link_id": "drive",
+      "x": 1870,
+      "y": 675
+    }
+  ],
+  "cables": [
+    {
+      "link_id": "stamp",
+      "points": [
+        [
+          522,
+          661
+        ],
+        [
+          522,
+          715
+        ],
+        [
+          176,
+          715
+        ],
+        [
+          176,
+          625
+        ]
+      ]
+    },
+    {
+      "link_id": "plate_6",
+      "points": [
+        [
+          377,
+          661
+        ],
+        [
+          377,
+          721
+        ],
+        [
+          518,
+          721
+        ],
+        [
+          518,
+          667
+        ]
+      ]
+    },
+    {
+      "link_id": "sw_crusher_halt",
+      "points": [
+        [
+          837,
+          356
+        ],
+        [
+          837,
+          733
+        ],
+        [
+          518,
+          733
+        ],
+        [
+          518,
+          667
+        ]
+      ]
+    }
+  ],
+  "mirrors": [],
+  "crushers": [
+    {
+      "id": "press710",
+      "x": 710,
+      "y": 447,
+      "w": 84,
+      "h": 40,
+      "travel": 183,
+      "period": 3,
+      "disabled_by": [
+        "sw_crusher_halt"
+      ]
+    },
+    {
+      "id": "press1000",
+      "x": 1000,
+      "y": 430,
+      "w": 84,
+      "h": 40,
+      "travel": 200,
+      "period": 3,
+      "disabled_by": [
+        "sw_crusher_halt"
+      ]
+    }
+  ],
+  "steam_vents": [],
+  "collapsing_platforms": [],
+  "checkpoints": [
+    {
+      "id": "cp6_1",
+      "x": 1370,
+      "y": 675
+    }
+  ],
+  "spikes": [],
+  "acids": [],
+  "lasers": [],
+  "optical_beams": [],
+  "sequences": [],
+  "collectibles": [
+    {
+      "id": "log_06",
+      "x": 1100,
+      "y": 415,
+      "title": "Foundry Safety Bulletin",
+      "text": "Hydraulic press #2 governors failed. Engage manual override on catwalk before passing."
+    }
+  ],
+  "decorations": [
+    {
+      "type": "monitor",
+      "x": 799,
+      "y": 281,
+      "text": "ISOLATE RAM"
+    },
+    {
+      "type": "monitor",
+      "x": 484,
+      "y": 586,
+      "text": "STAMP BILLET"
+    }
+  ],
+  "solution_steps": [
+    "Start the westbound line, then climb over the rams to isolate the press.",
+    "Follow the billet west, seat it on the receiving scale and record a safe stamp."
+  ],
+  "hint_route": [
+    "stamp"
+  ],
+  "npcs": [
+    {
+      "id": "kip",
+      "x": 1820,
+      "y": 675
+    }
+  ],
+  "abilities": {
+    "wall_jump": true,
+    "dash": false
+  },
+  "springs": [],
+  "dash_recharges": [],
+  "one_way_platforms": [
+    {
+      "id": "deck1460_590",
+      "x": 1460,
+      "y": 590,
+      "w": 150,
+      "h": 14
+    },
+    {
+      "id": "deck1280_512",
+      "x": 1280,
+      "y": 512,
+      "w": 115,
+      "h": 14
+    },
+    {
+      "id": "deck1050_447",
+      "x": 1050,
+      "y": 447,
+      "w": 130,
+      "h": 14
+    },
+    {
+      "id": "deck785_370",
+      "x": 785,
+      "y": 370,
+      "w": 140,
+      "h": 14
+    }
+  ],
+  "dash_barriers": [],
+  "routing_consoles": [],
+  "latching_relays": [
+    {
+      "link_id": "stamp",
+      "x": 510,
+      "y": 675,
+      "required_links": [
+        "plate_6",
+        "drive",
+        "sw_crusher_halt"
+      ]
+    }
+  ],
+  "hint_notes": {
+    "stamp": [
+      "The press line feeds west. Isolate the ram from its raised service cradle.",
+      "Start the westbound line, then climb over the rams to isolate the press.",
+      "Follow the billet west, seat it on the receiving scale and record a safe stamp."
+    ]
+  }
+}

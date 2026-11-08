@@ -1,0 +1,776 @@
+{
+  "tiles": [
+    [
+      0,
+      0,
+      36,
+      720
+    ],
+    [
+      3108,
+      0,
+      36,
+      720
+    ],
+    [
+      36,
+      0,
+      3072,
+      30
+    ],
+    [
+      150,
+      585,
+      340,
+      135
+    ],
+    [
+      662,
+      585,
+      432,
+      135
+    ],
+    [
+      1266,
+      585,
+      362,
+      135
+    ],
+    [
+      1266,
+      357,
+      362,
+      23
+    ],
+    [
+      2042,
+      357,
+      390,
+      23
+    ],
+    [
+      2042,
+      585,
+      390,
+      135
+    ],
+    [
+      2604,
+      585,
+      340,
+      135
+    ],
+    [
+      2397,
+      340,
+      10,
+      17
+    ],
+    [
+      2716,
+      451,
+      155,
+      18
+    ],
+    [
+      2853,
+      469,
+      18,
+      116
+    ],
+    [
+      1744,
+      387,
+      14,
+      162
+    ],
+    [
+      2548,
+      387,
+      14,
+      162
+    ],
+    [
+      1290,
+      380,
+      44,
+      56
+    ],
+    [
+      2066,
+      380,
+      44,
+      56
+    ],
+    [
+      156,
+      30,
+      109,
+      28
+    ],
+    [
+      176,
+      58,
+      69,
+      16
+    ],
+    [
+      476,
+      30,
+      93,
+      56
+    ],
+    [
+      496,
+      86,
+      53,
+      16
+    ],
+    [
+      796,
+      30,
+      125,
+      42
+    ],
+    [
+      816,
+      72,
+      85,
+      16
+    ],
+    [
+      1116,
+      30,
+      109,
+      28
+    ],
+    [
+      1136,
+      58,
+      69,
+      16
+    ],
+    [
+      1436,
+      30,
+      93,
+      56
+    ],
+    [
+      1456,
+      86,
+      53,
+      16
+    ],
+    [
+      1756,
+      30,
+      125,
+      42
+    ],
+    [
+      1776,
+      72,
+      85,
+      16
+    ],
+    [
+      2076,
+      30,
+      109,
+      28
+    ],
+    [
+      2096,
+      58,
+      69,
+      16
+    ],
+    [
+      2396,
+      30,
+      93,
+      56
+    ],
+    [
+      2416,
+      86,
+      53,
+      16
+    ],
+    [
+      2716,
+      30,
+      125,
+      42
+    ],
+    [
+      2736,
+      72,
+      85,
+      16
+    ],
+    [
+      36,
+      140,
+      28,
+      81
+    ],
+    [
+      3080,
+      180,
+      28,
+      81
+    ],
+    [
+      36,
+      380,
+      28,
+      65
+    ],
+    [
+      3080,
+      420,
+      28,
+      65
+    ]
+  ],
+  "ladders": [],
+  "crates": [
+    {
+      "id": "load",
+      "x": 2157,
+      "y": 321
+    }
+  ],
+  "plates": [
+    {
+      "link_id": "weight",
+      "x": 2349,
+      "y": 357
+    }
+  ],
+  "switches": [],
+  "doors": [
+    {
+      "id": "surface_lock",
+      "x": 2716,
+      "y": 469,
+      "w": 20,
+      "h": 116,
+      "required_links": [
+        "alpha",
+        "full"
+      ]
+    }
+  ],
+  "moving_platforms": [
+    {
+      "id": "car0",
+      "x": 495,
+      "y": 561,
+      "w": 65,
+      "h": 16,
+      "end_x": 592,
+      "end_y": 519,
+      "speed": 120,
+      "active_by_default": true,
+      "required_links": []
+    }
+  ],
+  "conveyors": [],
+  "wind_zones": [],
+  "water_zones": [
+    {
+      "id": "sump",
+      "x": 2072,
+      "y": 239,
+      "w": 340,
+      "h": 118,
+      "drained_y": 357,
+      "controlled_by": "dry"
+    }
+  ],
+  "valves": [
+    {
+      "link_id": "valve",
+      "x": 878,
+      "y": 585
+    },
+    {
+      "link_id": "dry",
+      "x": 1447,
+      "y": 357
+    }
+  ],
+  "generators": [],
+  "cables": [
+    {
+      "link_id": "weight",
+      "points": [
+        [
+          2358,
+          345
+        ],
+        [
+          2358,
+          609
+        ],
+        [
+          2253,
+          609
+        ],
+        [
+          2253,
+          575
+        ]
+      ]
+    },
+    {
+      "link_id": "valve",
+      "points": [
+        [
+          887,
+          573
+        ],
+        [
+          887,
+          616
+        ],
+        [
+          2253,
+          616
+        ],
+        [
+          2253,
+          575
+        ]
+      ]
+    },
+    {
+      "link_id": "alpha",
+      "points": [
+        [
+          2237,
+          573
+        ],
+        [
+          2237,
+          607
+        ],
+        [
+          2724,
+          607
+        ],
+        [
+          2724,
+          529
+        ]
+      ]
+    },
+    {
+      "link_id": "full",
+      "points": [
+        [
+          2084,
+          225
+        ],
+        [
+          2084,
+          558
+        ],
+        [
+          2724,
+          558
+        ],
+        [
+          2724,
+          529
+        ]
+      ]
+    }
+  ],
+  "mirrors": [],
+  "crushers": [],
+  "steam_vents": [
+    {
+      "id": "jet",
+      "x": 1423,
+      "y": 423,
+      "w": 48,
+      "h": 162,
+      "period": 2.7,
+      "duty_cycle": 0.55,
+      "disabled_by": [
+        "valve"
+      ]
+    },
+    {
+      "id": "flue3",
+      "x": 1742,
+      "y": 214,
+      "w": 36,
+      "h": 100,
+      "period": 2.8,
+      "duty_cycle": 0.45,
+      "disabled_by": [
+        "dry"
+      ]
+    },
+    {
+      "id": "seam5",
+      "x": 2500,
+      "y": 500,
+      "w": 36,
+      "h": 134,
+      "period": 3.1,
+      "duty_cycle": 0.43,
+      "disabled_by": []
+    }
+  ],
+  "collapsing_platforms": [],
+  "checkpoints": [
+    {
+      "id": "beacon_57",
+      "x": 2367,
+      "y": 585
+    }
+  ],
+  "spikes": [],
+  "acids": [
+    {
+      "x": 36,
+      "y": 645,
+      "w": 114,
+      "h": 75
+    },
+    {
+      "x": 490,
+      "y": 645,
+      "w": 172,
+      "h": 75
+    },
+    {
+      "x": 1094,
+      "y": 645,
+      "w": 172,
+      "h": 75
+    },
+    {
+      "x": 1628,
+      "y": 645,
+      "w": 414,
+      "h": 75
+    },
+    {
+      "x": 2432,
+      "y": 645,
+      "w": 172,
+      "h": 75
+    },
+    {
+      "x": 2944,
+      "y": 645,
+      "w": 164,
+      "h": 75
+    }
+  ],
+  "lasers": [],
+  "optical_beams": [],
+  "sequences": [],
+  "collectibles": [
+    {
+      "id": "log_57",
+      "x": 704,
+      "y": 553,
+      "title": "Coolant Boil-Off / Shift Notes",
+      "text": "Coolant Boil-Off. Check the signal lines before you leave the service deck."
+    },
+    {
+      "id": "field_trace_57",
+      "x": 425,
+      "y": 509,
+      "title": "FIELD TRACE 57 / THERMAL-HYDRO SYNTHESIS",
+      "text": "ECHO-7 field diagnostics: Cross-connect steam isolation, water control and cargo scale in one coolant chamber.",
+      "required_links": [
+        "alpha"
+      ],
+      "optional_investigation": true
+    },
+    {
+      "id": "service_challenge_57",
+      "x": 2395,
+      "y": 543,
+      "title": "Optional Diagnostics 57",
+      "text": "Optional auxiliary service record recovered. This archive is no longer linked to a redundant side circuit and does not gate the exit.",
+      "required_links": [],
+      "optional_investigation": true
+    }
+  ],
+  "decorations": [
+    {
+      "type": "warning_stripe",
+      "x": 1278,
+      "y": 369,
+      "w": 120
+    },
+    {
+      "type": "warning_stripe",
+      "x": 2054,
+      "y": 369,
+      "w": 120
+    },
+    {
+      "type": "monitor",
+      "x": 830,
+      "y": 493,
+      "text": "ISOLATE"
+    },
+    {
+      "type": "monitor",
+      "x": 1276,
+      "y": 487,
+      "text": "STEAM LINE"
+    },
+    {
+      "type": "monitor",
+      "x": 1399,
+      "y": 265,
+      "text": "DRAIN / FILL"
+    },
+    {
+      "type": "monitor",
+      "x": 2286,
+      "y": 265,
+      "text": "RECEIVING SCALE"
+    },
+    {
+      "type": "monitor",
+      "x": 2207,
+      "y": 485,
+      "text": "HOLD WEIGHT + VALVE"
+    },
+    {
+      "type": "monitor",
+      "x": 2739,
+      "y": 411,
+      "text": "EXIT LOCK"
+    },
+    {
+      "type": "monitor",
+      "x": 438,
+      "y": 471,
+      "text": "FORENSIC TRACE 57"
+    }
+  ],
+  "latching_relays": [
+    {
+      "link_id": "alpha",
+      "x": 2237,
+      "y": 585,
+      "required_links": [
+        "weight",
+        "valve"
+      ]
+    }
+  ],
+  "routing_consoles": [],
+  "signal_inverters": [
+    {
+      "link_id": "full",
+      "input": "dry",
+      "water_zone": "sump"
+    }
+  ],
+  "npcs": [
+    {
+      "id": "kip",
+      "x": 250,
+      "y": 585,
+      "dialogue": [
+        "Coolant Boil-Off. The upper deck has a fine view of the problem.",
+        "Turn the handwheel and watch which machinery changes.",
+        "Open the inlet again and let the basin refill. The float will lift off the scale."
+      ]
+    }
+  ],
+  "springs": [],
+  "dash_recharges": [],
+  "one_way_platforms": [
+    {
+      "id": "walk0",
+      "x": 1668,
+      "y": 509,
+      "w": 70,
+      "h": 12
+    },
+    {
+      "id": "walk1",
+      "x": 1628,
+      "y": 433,
+      "w": 70,
+      "h": 12
+    },
+    {
+      "id": "walk2",
+      "x": 1668,
+      "y": 357,
+      "w": 70,
+      "h": 12
+    },
+    {
+      "id": "walk3",
+      "x": 1728,
+      "y": 319,
+      "w": 68,
+      "h": 12
+    },
+    {
+      "id": "walk4",
+      "x": 1878,
+      "y": 391,
+      "w": 68,
+      "h": 12
+    },
+    {
+      "id": "walk5",
+      "x": 2472,
+      "y": 509,
+      "w": 70,
+      "h": 12
+    },
+    {
+      "id": "walk6",
+      "x": 2432,
+      "y": 433,
+      "w": 70,
+      "h": 12
+    },
+    {
+      "id": "walk7",
+      "x": 2472,
+      "y": 357,
+      "w": 70,
+      "h": 12
+    }
+  ],
+  "dash_barriers": [],
+  "level_id": 57,
+  "width": 3144,
+  "height": 720,
+  "name": "Chamber 57 // Coolant Boil-Off",
+  "abilities": {
+    "wall_jump": true,
+    "dash": true
+  },
+  "spawn": [
+    188,
+    539
+  ],
+  "exit": [
+    2773,
+    505
+  ],
+  "hint_route": [
+    "dry",
+    "weight",
+    "valve",
+    "alpha",
+    "full"
+  ],
+  "hint_notes": {
+    "dry": [
+      "Turn the handwheel and watch which machinery changes.",
+      "Turn the handwheel and watch which machinery changes.",
+      "Turn the handwheel and watch which machinery changes."
+    ],
+    "weight": [
+      "Move the cargo right until it rests on the receiving scale.",
+      "Move the cargo right until it rests on the receiving scale.",
+      "Move the cargo right until it rests on the receiving scale."
+    ],
+    "valve": [
+      "Turn the handwheel and watch which machinery changes.",
+      "Turn the handwheel and watch which machinery changes.",
+      "Turn the handwheel and watch which machinery changes."
+    ],
+    "alpha": [
+      "Keep weight and valve live, then interact with the recorder to hold the reading.",
+      "Keep weight and valve live, then interact with the recorder to hold the reading.",
+      "Keep weight and valve live, then interact with the recorder to hold the reading."
+    ],
+    "full": [
+      "Open the inlet again and let the basin refill. The float will lift off the scale.",
+      "Open the inlet again and let the basin refill. The float will lift off the scale.",
+      "Open the inlet again and let the basin refill. The float will lift off the scale."
+    ]
+  },
+  "solution_steps": [
+    "Turn the handwheel and watch which machinery changes.",
+    "Move the cargo right until it rests on the receiving scale.",
+    "Turn the handwheel and watch which machinery changes.",
+    "Keep weight and valve live, then interact with the recorder to hold the reading.",
+    "Open the inlet again and let the basin refill. The float will lift off the scale."
+  ],
+  "subtitle": "Turn the handwheel and watch which machinery changes.",
+  "chapter": 6,
+  "theme": "furnace",
+  "topology": "Thermal-Hydro Synthesis",
+  "overhaul_version": 1,
+  "overhaul_design": {
+    "profile": "sequence",
+    "route": "right_rise",
+    "actual_direction": 1,
+    "mandatory": false,
+    "service_platform_count": 0,
+    "retired_by_cleanup": true
+  },
+  "secondary_validation_1": {
+    "checkpoint": "beacon_57",
+    "extra_platforms": 0,
+    "signal": "sector_57_validated",
+    "retired_by_cleanup": true
+  },
+  "side_challenge_policy": {
+    "campaign_blocking": false,
+    "optional_signals": [],
+    "reason": "Deprecated optional side circuit removed; service record remains accessible."
+  },
+  "architectural_overhaul_v2": {
+    "archetype": "Containment Bastion & Service Duct",
+    "chapter": 6,
+    "theme": "furnace",
+    "original_tile_count": 15,
+    "final_tile_count": 39,
+    "thickened_decks": 0,
+    "added_piers": 0,
+    "added_corbels": 2,
+    "added_soffits": 9,
+    "added_buttresses": 4,
+    "tiles_before_cleanup_pass": 39,
+    "removed_legacy_platforms": 5,
+    "removed_legacy_devices": 5,
+    "added_partition_walls": 0,
+    "added_grounded_piers": 0,
+    "added_stepped_terraces": 0
+  },
+  "cleanup_v3_audit": {
+    "level": 57,
+    "chapter": 6,
+    "theme": "furnace",
+    "name": "Chamber 57 // Coolant Boil-Off",
+    "archetype": "Containment Bastion & Service Duct",
+    "orig_backup_tiles": 15,
+    "final_tiles": 39,
+    "removed_platforms": 5,
+    "retained_platforms": 8,
+    "removed_devices": 5,
+    "added_walls": 0,
+    "added_piers": 0,
+    "added_terraces": 0,
+    "gate_links": [
+      "alpha",
+      "full"
+    ]
+  }
+}

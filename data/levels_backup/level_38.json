@@ -1,0 +1,638 @@
+{
+  "tiles": [
+    [
+      0,
+      0,
+      36,
+      730
+    ],
+    [
+      3164,
+      0,
+      36,
+      730
+    ],
+    [
+      36,
+      0,
+      3128,
+      30
+    ],
+    [
+      150,
+      595,
+      432,
+      135
+    ],
+    [
+      746,
+      595,
+      362,
+      135
+    ],
+    [
+      1272,
+      595,
+      390,
+      135
+    ],
+    [
+      1272,
+      355,
+      390,
+      23
+    ],
+    [
+      2064,
+      355,
+      340,
+      23
+    ],
+    [
+      2064,
+      595,
+      340,
+      135
+    ],
+    [
+      2568,
+      595,
+      432,
+      135
+    ],
+    [
+      2726,
+      461,
+      155,
+      18
+    ],
+    [
+      2863,
+      479,
+      18,
+      116
+    ]
+  ],
+  "ladders": [],
+  "crates": [],
+  "plates": [],
+  "switches": [
+    {
+      "link_id": "first",
+      "x": 1467,
+      "y": 595,
+      "mode": "sequence",
+      "duration": 0
+    },
+    {
+      "link_id": "second",
+      "x": 1467,
+      "y": 355,
+      "mode": "sequence",
+      "duration": 0
+    },
+    {
+      "link_id": "third",
+      "x": 2234,
+      "y": 355,
+      "mode": "sequence",
+      "duration": 0
+    }
+  ],
+  "doors": [
+    {
+      "id": "surface_lock",
+      "x": 2726,
+      "y": 479,
+      "w": 20,
+      "h": 116,
+      "required_links": [
+        "alpha",
+        "down"
+      ]
+    }
+  ],
+  "moving_platforms": [
+    {
+      "id": "car0",
+      "x": 1666,
+      "y": 341,
+      "w": 108,
+      "h": 16,
+      "end_x": 1951,
+      "end_y": 341,
+      "speed": 112,
+      "active_by_default": false,
+      "required_links": [
+        "up"
+      ]
+    },
+    {
+      "id": "car1",
+      "x": 2422,
+      "y": 587,
+      "w": 86,
+      "h": 16,
+      "end_x": 2422,
+      "end_y": 347,
+      "speed": 112,
+      "active_by_default": true,
+      "required_links": []
+    }
+  ],
+  "conveyors": [],
+  "wind_zones": [],
+  "water_zones": [],
+  "valves": [],
+  "generators": [
+    {
+      "link_id": "overhaul_38_generator",
+      "x": 250,
+      "y": 530
+    }
+  ],
+  "cables": [
+    {
+      "link_id": "up",
+      "points": [
+        [
+          950,
+          441
+        ],
+        [
+          950,
+          626
+        ],
+        [
+          2250,
+          626
+        ],
+        [
+          2250,
+          585
+        ]
+      ]
+    },
+    {
+      "link_id": "alpha",
+      "points": [
+        [
+          2234,
+          583
+        ],
+        [
+          2234,
+          617
+        ],
+        [
+          2734,
+          617
+        ],
+        [
+          2734,
+          539
+        ]
+      ]
+    },
+    {
+      "link_id": "down",
+      "points": [
+        [
+          941,
+          572
+        ],
+        [
+          941,
+          613
+        ],
+        [
+          2734,
+          613
+        ],
+        [
+          2734,
+          539
+        ]
+      ]
+    }
+  ],
+  "mirrors": [
+    {
+      "id": "prism",
+      "x": 927,
+      "y": 559,
+      "orientation": 1
+    }
+  ],
+  "crushers": [],
+  "steam_vents": [
+    {
+      "id": "seam0",
+      "x": 646,
+      "y": 510,
+      "w": 36,
+      "h": 134,
+      "period": 3.1,
+      "duty_cycle": 0.43,
+      "disabled_by": []
+    },
+    {
+      "id": "seam3",
+      "x": 1845,
+      "y": 270,
+      "w": 36,
+      "h": 134,
+      "period": 3.1,
+      "duty_cycle": 0.43,
+      "disabled_by": []
+    }
+  ],
+  "collapsing_platforms": [],
+  "checkpoints": [
+    {
+      "id": "beacon_38",
+      "x": 2339,
+      "y": 595
+    }
+  ],
+  "spikes": [],
+  "acids": [
+    {
+      "x": 36,
+      "y": 655,
+      "w": 114,
+      "h": 75
+    },
+    {
+      "x": 582,
+      "y": 655,
+      "w": 164,
+      "h": 75
+    },
+    {
+      "x": 1108,
+      "y": 655,
+      "w": 164,
+      "h": 75
+    },
+    {
+      "x": 1662,
+      "y": 655,
+      "w": 402,
+      "h": 75
+    },
+    {
+      "x": 2404,
+      "y": 655,
+      "w": 164,
+      "h": 75
+    },
+    {
+      "x": 3000,
+      "y": 655,
+      "w": 164,
+      "h": 75
+    }
+  ],
+  "lasers": [
+    {
+      "x": 2339,
+      "y": 433,
+      "dir": [
+        0,
+        1
+      ],
+      "max_length": 155,
+      "disabled_by": [
+        "alpha"
+      ]
+    }
+  ],
+  "optical_beams": [
+    {
+      "link_id": "up",
+      "x": 801,
+      "y": 577,
+      "dir": [
+        1,
+        0
+      ],
+      "max_length": 452,
+      "receiver": [
+        934,
+        453,
+        14,
+        10
+      ]
+    },
+    {
+      "link_id": "down",
+      "x": 801,
+      "y": 577,
+      "dir": [
+        1,
+        0
+      ],
+      "max_length": 452,
+      "receiver": [
+        934,
+        584,
+        14,
+        10
+      ]
+    }
+  ],
+  "sequences": [
+    {
+      "group_id": "order",
+      "order": [
+        "first",
+        "second",
+        "third"
+      ]
+    }
+  ],
+  "collectibles": [
+    {
+      "id": "log_38",
+      "x": 788,
+      "y": 563,
+      "title": "Cipher Checkpoint / Shift Notes",
+      "text": "Cipher Checkpoint. Check the signal lines before you leave the service deck."
+    },
+    {
+      "id": "field_trace_38",
+      "x": 504,
+      "y": 519,
+      "title": "FIELD TRACE 38 / SEQUENTIAL SCANNER LOCK",
+      "text": "ECHO-7 field diagnostics: Make the three-console order discoverable from corridor scan readouts; combine it with one live optical constraint.",
+      "required_links": [
+        "alpha"
+      ],
+      "optional_investigation": true
+    },
+    {
+      "id": "service_challenge_38",
+      "x": 2495,
+      "y": 428,
+      "title": "Optional Diagnostics 38",
+      "text": "Optional master circuit cleared. The standard exit never depends on this side challenge.",
+      "required_links": [
+        "sector_38_validated"
+      ],
+      "optional_investigation": true
+    }
+  ],
+  "decorations": [
+    {
+      "type": "warning_stripe",
+      "x": 1284,
+      "y": 367,
+      "w": 120
+    },
+    {
+      "type": "warning_stripe",
+      "x": 2076,
+      "y": 367,
+      "w": 120
+    },
+    {
+      "type": "monitor",
+      "x": 1435,
+      "y": 502,
+      "text": "01 / IN"
+    },
+    {
+      "type": "monitor",
+      "x": 1435,
+      "y": 262,
+      "text": "02 / TEST"
+    },
+    {
+      "type": "monitor",
+      "x": 2202,
+      "y": 262,
+      "text": "03 / OUT"
+    },
+    {
+      "type": "monitor",
+      "x": 2204,
+      "y": 495,
+      "text": "HOLD ORDER + UP"
+    },
+    {
+      "type": "monitor",
+      "x": 2749,
+      "y": 421,
+      "text": "EXIT LOCK"
+    },
+    {
+      "type": "monitor",
+      "x": 517,
+      "y": 481,
+      "text": "FORENSIC TRACE 38"
+    },
+    {
+      "type": "monitor",
+      "x": 234,
+      "y": 427,
+      "text": "ACCESS / 38"
+    },
+    {
+      "type": "warning_stripe",
+      "x": 268,
+      "y": 429,
+      "w": 78
+    }
+  ],
+  "latching_relays": [
+    {
+      "link_id": "alpha",
+      "x": 2234,
+      "y": 595,
+      "required_links": [
+        "order",
+        "up"
+      ]
+    },
+    {
+      "link_id": "overhaul_38_record",
+      "x": 286,
+      "y": 417,
+      "required_links": [
+        "overhaul_38_generator"
+      ]
+    },
+    {
+      "link_id": "sector_38_validated",
+      "x": 2483,
+      "y": 470,
+      "required_links": [
+        "overhaul_38_record"
+      ]
+    }
+  ],
+  "routing_consoles": [],
+  "signal_inverters": [],
+  "npcs": [
+    {
+      "id": "kip",
+      "x": 250,
+      "y": 595,
+      "dialogue": [
+        "Cipher Checkpoint. Our lift has ambitions. Mostly upward.",
+        "Stamp 01, 02 and 03 in order. A wrong stamp resets the sequence.",
+        "Turn the mirror toward the low pickup beside its foot."
+      ]
+    }
+  ],
+  "springs": [],
+  "dash_recharges": [
+    {
+      "id": "ring1",
+      "x": 1176,
+      "y": 497
+    }
+  ],
+  "one_way_platforms": [
+    {
+      "id": "walk0",
+      "x": 1702,
+      "y": 515,
+      "w": 83,
+      "h": 12
+    },
+    {
+      "id": "walk1",
+      "x": 1662,
+      "y": 435,
+      "w": 83,
+      "h": 12
+    },
+    {
+      "id": "walk2",
+      "x": 1702,
+      "y": 355,
+      "w": 83,
+      "h": 12
+    },
+    {
+      "id": "walk3",
+      "x": 1838,
+      "y": 440,
+      "w": 56,
+      "h": 12
+    },
+    {
+      "id": "overhaul_step_38_0",
+      "x": 232,
+      "y": 530,
+      "w": 78,
+      "h": 12
+    },
+    {
+      "id": "overhaul_step_38_1",
+      "x": 323,
+      "y": 476,
+      "w": 78,
+      "h": 12
+    },
+    {
+      "id": "overhaul_step_38_2",
+      "x": 268,
+      "y": 417,
+      "w": 78,
+      "h": 12
+    },
+    {
+      "id": "validation_foot_38_0",
+      "x": 2380,
+      "y": 532,
+      "w": 78,
+      "h": 12
+    },
+    {
+      "id": "validation_foot_38_1",
+      "x": 2465,
+      "y": 470,
+      "w": 78,
+      "h": 12
+    }
+  ],
+  "dash_barriers": [],
+  "level_id": 38,
+  "width": 3200,
+  "height": 730,
+  "name": "Chamber 38 // Cipher Checkpoint",
+  "abilities": {
+    "wall_jump": true,
+    "dash": true
+  },
+  "spawn": [
+    188,
+    549
+  ],
+  "exit": [
+    2783,
+    515
+  ],
+  "hint_route": [
+    "order",
+    "up",
+    "alpha",
+    "down"
+  ],
+  "hint_notes": {
+    "order": [
+      "Stamp 01, 02 and 03 in order. A wrong stamp resets the sequence.",
+      "Stamp 01, 02 and 03 in order. A wrong stamp resets the sequence.",
+      "Stamp 01, 02 and 03 in order. A wrong stamp resets the sequence."
+    ],
+    "up": [
+      "Turn the mirror toward its ceiling pickup.",
+      "Turn the mirror toward its ceiling pickup.",
+      "Turn the mirror toward its ceiling pickup."
+    ],
+    "alpha": [
+      "Keep order and up live, then interact with the recorder to hold the reading.",
+      "Keep order and up live, then interact with the recorder to hold the reading.",
+      "Keep order and up live, then interact with the recorder to hold the reading."
+    ],
+    "down": [
+      "Turn the mirror toward the low pickup beside its foot.",
+      "Turn the mirror toward the low pickup beside its foot.",
+      "Turn the mirror toward the low pickup beside its foot."
+    ]
+  },
+  "solution_steps": [
+    "Stamp 01, 02 and 03 in order. A wrong stamp resets the sequence.",
+    "Turn the mirror toward its ceiling pickup.",
+    "Keep order and up live, then interact with the recorder to hold the reading.",
+    "Turn the mirror toward the low pickup beside its foot."
+  ],
+  "subtitle": "Stamp 01, 02 and 03 in order. A wrong stamp resets the sequence.  //  SERVICE DETOUR: Restore the auxiliary feeder and latch a reading from the upper inspection platform.",
+  "chapter": 4,
+  "theme": "optical",
+  "topology": "Sequential Scanner Lock",
+  "overhaul_version": 1,
+  "overhaul_design": {
+    "profile": "generator_relay",
+    "route": "right_return",
+    "actual_direction": 1,
+    "mandatory": true,
+    "service_platform_count": 3
+  },
+  "secondary_validation_1": {
+    "checkpoint": "beacon_38",
+    "extra_platforms": 2,
+    "signal": "sector_38_validated"
+  },
+  "side_challenge_policy": {
+    "campaign_blocking": false,
+    "optional_signals": [
+      "overhaul_38_record",
+      "sector_38_validated"
+    ],
+    "reason": "Not proven traversable in the Pygame engine; preserve main progression."
+  }
+}

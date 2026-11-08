@@ -1,0 +1,756 @@
+{
+  "tiles": [
+    [
+      0,
+      0,
+      36,
+      922
+    ],
+    [
+      1984,
+      0,
+      36,
+      922
+    ],
+    [
+      36,
+      0,
+      1948,
+      30
+    ],
+    [
+      908,
+      571,
+      340,
+      23
+    ],
+    [
+      908,
+      787,
+      340,
+      135
+    ],
+    [
+      150,
+      787,
+      390,
+      135
+    ],
+    [
+      1388,
+      787,
+      432,
+      135
+    ],
+    [
+      1388,
+      571,
+      432,
+      23
+    ],
+    [
+      908,
+      355,
+      340,
+      23
+    ],
+    [
+      1785,
+      770,
+      10,
+      17
+    ],
+    [
+      1020,
+      221,
+      155,
+      18
+    ],
+    [
+      1157,
+      239,
+      18,
+      116
+    ],
+    [
+      1586,
+      594,
+      36,
+      56
+    ],
+    [
+      1188,
+      378,
+      36,
+      56
+    ],
+    [
+      1060,
+      378,
+      36,
+      56
+    ],
+    [
+      156,
+      30,
+      88,
+      28
+    ],
+    [
+      176,
+      58,
+      48,
+      16
+    ],
+    [
+      476,
+      30,
+      120,
+      56
+    ],
+    [
+      496,
+      86,
+      80,
+      16
+    ],
+    [
+      796,
+      30,
+      104,
+      42
+    ],
+    [
+      816,
+      72,
+      64,
+      16
+    ],
+    [
+      1116,
+      30,
+      88,
+      28
+    ],
+    [
+      1136,
+      58,
+      48,
+      16
+    ],
+    [
+      1436,
+      30,
+      120,
+      56
+    ],
+    [
+      1456,
+      86,
+      80,
+      16
+    ],
+    [
+      1756,
+      30,
+      104,
+      42
+    ],
+    [
+      1776,
+      72,
+      64,
+      16
+    ],
+    [
+      36,
+      140,
+      40,
+      64
+    ],
+    [
+      1944,
+      180,
+      40,
+      64
+    ],
+    [
+      36,
+      380,
+      40,
+      80
+    ],
+    [
+      36,
+      620,
+      40,
+      64
+    ]
+  ],
+  "ladders": [],
+  "crates": [
+    {
+      "id": "load",
+      "x": 1503,
+      "y": 751
+    }
+  ],
+  "plates": [
+    {
+      "link_id": "park",
+      "x": 1737,
+      "y": 787
+    }
+  ],
+  "switches": [],
+  "doors": [
+    {
+      "id": "surface_lock",
+      "x": 1020,
+      "y": 239,
+      "w": 20,
+      "h": 116,
+      "required_links": [
+        "alpha",
+        "beta",
+        "park"
+      ]
+    }
+  ],
+  "moving_platforms": [
+    {
+      "id": "car0",
+      "x": 1266,
+      "y": 779,
+      "w": 86,
+      "h": 16,
+      "end_x": 1266,
+      "end_y": 563,
+      "speed": 112,
+      "active_by_default": true,
+      "required_links": []
+    },
+    {
+      "id": "car1",
+      "x": 657,
+      "y": 749,
+      "w": 83,
+      "h": 16,
+      "end_x": 736,
+      "end_y": 821,
+      "speed": 112,
+      "active_by_default": true,
+      "required_links": []
+    },
+    {
+      "id": "car2",
+      "x": 1838,
+      "y": 779,
+      "w": 86,
+      "h": 16,
+      "end_x": 1838,
+      "end_y": 563,
+      "speed": 112,
+      "active_by_default": true,
+      "required_links": []
+    }
+  ],
+  "conveyors": [],
+  "wind_zones": [],
+  "water_zones": [],
+  "valves": [],
+  "generators": [],
+  "cables": [
+    {
+      "link_id": "down",
+      "points": [
+        [
+          1101,
+          764
+        ],
+        [
+          1101,
+          811
+        ],
+        [
+          361,
+          811
+        ],
+        [
+          361,
+          777
+        ]
+      ]
+    },
+    {
+      "link_id": "light",
+      "points": [
+        [
+          1705,
+          753
+        ],
+        [
+          1705,
+          789
+        ],
+        [
+          1620,
+          789
+        ],
+        [
+          1620,
+          561
+        ]
+      ]
+    },
+    {
+      "link_id": "up",
+      "points": [
+        [
+          1101,
+          633
+        ],
+        [
+          1101,
+          676
+        ],
+        [
+          1620,
+          676
+        ],
+        [
+          1620,
+          561
+        ]
+      ]
+    },
+    {
+      "link_id": "alpha",
+      "points": [
+        [
+          345,
+          775
+        ],
+        [
+          345,
+          809
+        ],
+        [
+          1028,
+          809
+        ],
+        [
+          1028,
+          299
+        ]
+      ]
+    },
+    {
+      "link_id": "beta",
+      "points": [
+        [
+          1604,
+          559
+        ],
+        [
+          1604,
+          600
+        ],
+        [
+          1028,
+          600
+        ],
+        [
+          1028,
+          299
+        ]
+      ]
+    },
+    {
+      "link_id": "park",
+      "points": [
+        [
+          1737,
+          775
+        ],
+        [
+          1737,
+          823
+        ],
+        [
+          1028,
+          823
+        ],
+        [
+          1028,
+          299
+        ]
+      ]
+    }
+  ],
+  "mirrors": [
+    {
+      "id": "prism",
+      "x": 1078,
+      "y": 751,
+      "orientation": 1
+    }
+  ],
+  "crushers": [],
+  "steam_vents": [
+    {
+      "id": "seam2",
+      "x": 946,
+      "y": 702,
+      "w": 36,
+      "h": 134,
+      "period": 3.1,
+      "duty_cycle": 0.43,
+      "disabled_by": []
+    }
+  ],
+  "collapsing_platforms": [],
+  "checkpoints": [
+    {
+      "id": "beacon_36",
+      "x": 1755,
+      "y": 571
+    }
+  ],
+  "spikes": [],
+  "acids": [
+    {
+      "x": 36,
+      "y": 847,
+      "w": 114,
+      "h": 75
+    },
+    {
+      "x": 540,
+      "y": 847,
+      "w": 368,
+      "h": 75
+    },
+    {
+      "x": 1248,
+      "y": 847,
+      "w": 140,
+      "h": 75
+    },
+    {
+      "x": 1820,
+      "y": 847,
+      "w": 164,
+      "h": 75
+    }
+  ],
+  "lasers": [],
+  "optical_beams": [
+    {
+      "link_id": "up",
+      "x": 963,
+      "y": 769,
+      "dir": [
+        1,
+        0
+      ],
+      "max_length": 430,
+      "receiver": [
+        1085,
+        645,
+        14,
+        10
+      ]
+    },
+    {
+      "link_id": "down",
+      "x": 963,
+      "y": 769,
+      "dir": [
+        1,
+        0
+      ],
+      "max_length": 430,
+      "receiver": [
+        1085,
+        776,
+        14,
+        10
+      ]
+    },
+    {
+      "link_id": "light",
+      "x": 1442,
+      "y": 765,
+      "dir": [
+        1,
+        0
+      ],
+      "max_length": 322,
+      "receiver": [
+        1696,
+        756,
+        18,
+        18
+      ]
+    }
+  ],
+  "sequences": [],
+  "collectibles": [
+    {
+      "id": "log_36",
+      "x": 950,
+      "y": 755,
+      "title": "The Observation Wing / Shift Notes",
+      "text": "The Observation Wing. Check the signal lines before you leave the service deck."
+    },
+    {
+      "id": "field_trace_36",
+      "x": 1457,
+      "y": 495,
+      "title": "FIELD TRACE 36 / THREE-WING SECURITY HUB",
+      "text": "ECHO-7 field diagnostics: Develop three wings with different roles: first obtain low-sensor proof, then transport/park the optical crate, then use both stored states to exit.",
+      "required_links": [
+        "alpha"
+      ],
+      "optional_investigation": true
+    },
+    {
+      "id": "service_challenge_36",
+      "x": 1783,
+      "y": 529,
+      "title": "Optional Diagnostics 36",
+      "text": "Optional auxiliary service record recovered. This archive is no longer linked to a redundant side circuit and does not gate the exit.",
+      "required_links": [],
+      "optional_investigation": true
+    }
+  ],
+  "decorations": [
+    {
+      "type": "warning_stripe",
+      "x": 920,
+      "y": 583,
+      "w": 120
+    },
+    {
+      "type": "warning_stripe",
+      "x": 1400,
+      "y": 583,
+      "w": 120
+    },
+    {
+      "type": "warning_stripe",
+      "x": 920,
+      "y": 367,
+      "w": 120
+    },
+    {
+      "type": "monitor",
+      "x": 315,
+      "y": 687,
+      "text": "HOLD DOWN"
+    },
+    {
+      "type": "monitor",
+      "x": 1674,
+      "y": 695,
+      "text": "RECEIVING SCALE"
+    },
+    {
+      "type": "monitor",
+      "x": 1574,
+      "y": 471,
+      "text": "HOLD LIGHT + UP"
+    },
+    {
+      "type": "monitor",
+      "x": 1043,
+      "y": 181,
+      "text": "EXIT LOCK"
+    },
+    {
+      "type": "monitor",
+      "x": 1470,
+      "y": 457,
+      "text": "FORENSIC TRACE 36"
+    }
+  ],
+  "latching_relays": [
+    {
+      "link_id": "alpha",
+      "x": 345,
+      "y": 787,
+      "required_links": [
+        "down"
+      ]
+    },
+    {
+      "link_id": "beta",
+      "x": 1604,
+      "y": 571,
+      "required_links": [
+        "light",
+        "up"
+      ]
+    }
+  ],
+  "routing_consoles": [],
+  "signal_inverters": [],
+  "npcs": [
+    {
+      "id": "kip",
+      "x": 1008,
+      "y": 571,
+      "dialogue": [
+        "The Observation Wing. I have reserved us a spot on the other side.",
+        "Turn the mirror toward the low pickup beside its foot.",
+        "Move the cargo right until it rests on the receiving scale."
+      ]
+    }
+  ],
+  "springs": [],
+  "dash_recharges": [],
+  "one_way_platforms": [
+    {
+      "id": "walk0",
+      "x": 1266,
+      "y": 427,
+      "w": 78,
+      "h": 12
+    },
+    {
+      "id": "walk1",
+      "x": 1312,
+      "y": 499,
+      "w": 78,
+      "h": 12
+    }
+  ],
+  "dash_barriers": [],
+  "level_id": 36,
+  "width": 2020,
+  "height": 922,
+  "name": "Chamber 36 // The Observation Wing",
+  "abilities": {
+    "wall_jump": true,
+    "dash": true
+  },
+  "spawn": [
+    946,
+    525
+  ],
+  "exit": [
+    1077,
+    275
+  ],
+  "hint_route": [
+    "down",
+    "alpha",
+    "light",
+    "up",
+    "beta",
+    "park"
+  ],
+  "hint_notes": {
+    "down": [
+      "Turn the mirror toward the low pickup beside its foot.",
+      "Turn the mirror toward the low pickup beside its foot.",
+      "Turn the mirror toward the low pickup beside its foot."
+    ],
+    "alpha": [
+      "Keep down live, then interact with the recorder to hold the reading.",
+      "Keep down live, then interact with the recorder to hold the reading.",
+      "Keep down live, then interact with the recorder to hold the reading."
+    ],
+    "light": [
+      "Push the shutter crate past the optical receiver.",
+      "Push the shutter crate past the optical receiver.",
+      "Push the shutter crate past the optical receiver."
+    ],
+    "up": [
+      "Turn the mirror toward its ceiling pickup.",
+      "Turn the mirror toward its ceiling pickup.",
+      "Turn the mirror toward its ceiling pickup."
+    ],
+    "beta": [
+      "Keep light and up live, then interact with the recorder to hold the reading.",
+      "Keep light and up live, then interact with the recorder to hold the reading.",
+      "Keep light and up live, then interact with the recorder to hold the reading."
+    ],
+    "park": [
+      "Move the cargo right until it rests on the receiving scale.",
+      "Move the cargo right until it rests on the receiving scale.",
+      "Move the cargo right until it rests on the receiving scale."
+    ]
+  },
+  "solution_steps": [
+    "Turn the mirror toward the low pickup beside its foot.",
+    "Keep down live, then interact with the recorder to hold the reading.",
+    "Push the shutter crate past the optical receiver.",
+    "Turn the mirror toward its ceiling pickup.",
+    "Keep light and up live, then interact with the recorder to hold the reading.",
+    "Move the cargo right until it rests on the receiving scale."
+  ],
+  "subtitle": "Turn the mirror toward the low pickup beside its foot.",
+  "chapter": 4,
+  "theme": "optical",
+  "topology": "Three-Wing Security Hub",
+  "overhaul_version": 1,
+  "overhaul_design": {
+    "profile": "sequence",
+    "route": "left_switchback",
+    "actual_direction": -1,
+    "mandatory": false,
+    "service_platform_count": 0,
+    "retired_by_cleanup": true
+  },
+  "secondary_validation_1": {
+    "checkpoint": "beacon_36",
+    "extra_platforms": 0,
+    "signal": "sector_36_validated",
+    "retired_by_cleanup": true
+  },
+  "side_challenge_policy": {
+    "campaign_blocking": false,
+    "optional_signals": [],
+    "reason": "Deprecated optional side circuit removed; service record remains accessible."
+  },
+  "architectural_overhaul_v2": {
+    "archetype": "Segmented Security Bulkhead Corridor",
+    "chapter": 4,
+    "theme": "optical",
+    "original_tile_count": 12,
+    "final_tile_count": 31,
+    "thickened_decks": 0,
+    "added_piers": 0,
+    "added_corbels": 3,
+    "added_soffits": 6,
+    "added_buttresses": 4,
+    "tiles_before_cleanup_pass": 31,
+    "removed_legacy_platforms": 5,
+    "removed_legacy_devices": 5,
+    "added_partition_walls": 0,
+    "added_grounded_piers": 0,
+    "added_stepped_terraces": 0
+  },
+  "cleanup_v3_audit": {
+    "level": 36,
+    "chapter": 4,
+    "theme": "optical",
+    "name": "Chamber 36 // The Observation Wing",
+    "archetype": "Segmented Security Bulkhead Corridor",
+    "orig_backup_tiles": 12,
+    "final_tiles": 31,
+    "removed_platforms": 5,
+    "retained_platforms": 2,
+    "removed_devices": 5,
+    "added_walls": 0,
+    "added_piers": 0,
+    "added_terraces": 0,
+    "gate_links": [
+      "alpha",
+      "beta",
+      "park"
+    ]
+  }
+}

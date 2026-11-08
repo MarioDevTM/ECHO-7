@@ -1,0 +1,602 @@
+{
+  "tiles": [
+    [
+      0,
+      0,
+      36,
+      720
+    ],
+    [
+      2062,
+      0,
+      36,
+      720
+    ],
+    [
+      36,
+      0,
+      2026,
+      30
+    ],
+    [
+      932,
+      585,
+      432,
+      135
+    ],
+    [
+      150,
+      585,
+      340,
+      135
+    ],
+    [
+      150,
+      357,
+      70,
+      30
+    ],
+    [
+      400,
+      357,
+      90,
+      30
+    ],
+    [
+      932,
+      357,
+      432,
+      23
+    ],
+    [
+      1536,
+      357,
+      362,
+      23
+    ],
+    [
+      455,
+      340,
+      10,
+      17
+    ],
+    [
+      1659,
+      223,
+      155,
+      18
+    ],
+    [
+      1796,
+      241,
+      18,
+      116
+    ],
+    [
+      606,
+      387,
+      14,
+      162
+    ]
+  ],
+  "ladders": [],
+  "crates": [
+    {
+      "id": "load",
+      "x": 235,
+      "y": 321
+    }
+  ],
+  "plates": [
+    {
+      "link_id": "freight",
+      "x": 407,
+      "y": 357
+    }
+  ],
+  "switches": [
+    {
+      "link_id": "overhaul_53_first",
+      "x": 1004,
+      "y": 526,
+      "mode": "sequence"
+    },
+    {
+      "link_id": "overhaul_53_second",
+      "x": 1081,
+      "y": 460,
+      "mode": "sequence"
+    },
+    {
+      "link_id": "overhaul_53_third",
+      "x": 1161,
+      "y": 405,
+      "mode": "sequence"
+    }
+  ],
+  "doors": [
+    {
+      "id": "surface_lock",
+      "x": 1659,
+      "y": 241,
+      "w": 20,
+      "h": 116,
+      "required_links": [
+        "proof",
+        "B"
+      ]
+    }
+  ],
+  "moving_platforms": [
+    {
+      "id": "car0",
+      "x": 494,
+      "y": 571,
+      "w": 108,
+      "h": 16,
+      "end_x": 819,
+      "end_y": 571,
+      "speed": 120,
+      "active_by_default": false,
+      "required_links": [
+        "A"
+      ]
+    },
+    {
+      "id": "car1",
+      "x": 508,
+      "y": 577,
+      "w": 86,
+      "h": 16,
+      "end_x": 508,
+      "end_y": 349,
+      "speed": 120,
+      "active_by_default": true,
+      "required_links": []
+    },
+    {
+      "id": "car2",
+      "x": 494,
+      "y": 343,
+      "w": 108,
+      "h": 16,
+      "end_x": 819,
+      "end_y": 343,
+      "speed": 120,
+      "active_by_default": false,
+      "required_links": [
+        "A"
+      ]
+    }
+  ],
+  "conveyors": [
+    {
+      "id": "freight_line",
+      "x": 220,
+      "y": 357,
+      "w": 180,
+      "h": 18,
+      "speed": -85,
+      "reversed_by": "A"
+    }
+  ],
+  "wind_zones": [],
+  "water_zones": [],
+  "valves": [],
+  "generators": [],
+  "cables": [
+    {
+      "link_id": "freight",
+      "points": [
+        [
+          416,
+          345
+        ],
+        [
+          416,
+          381
+        ],
+        [
+          1164,
+          381
+        ],
+        [
+          1164,
+          347
+        ]
+      ]
+    },
+    {
+      "link_id": "A",
+      "points": [
+        [
+          329,
+          573
+        ],
+        [
+          329,
+          616
+        ],
+        [
+          1164,
+          616
+        ],
+        [
+          1164,
+          347
+        ]
+      ]
+    },
+    {
+      "link_id": "proof",
+      "points": [
+        [
+          1148,
+          345
+        ],
+        [
+          1148,
+          379
+        ],
+        [
+          1667,
+          379
+        ],
+        [
+          1667,
+          301
+        ]
+      ]
+    },
+    {
+      "link_id": "B",
+      "points": [
+        [
+          330,
+          573
+        ],
+        [
+          330,
+          614
+        ],
+        [
+          1667,
+          614
+        ],
+        [
+          1667,
+          301
+        ]
+      ]
+    }
+  ],
+  "mirrors": [],
+  "crushers": [],
+  "steam_vents": [
+    {
+      "id": "seam0",
+      "x": 693,
+      "y": 500,
+      "w": 36,
+      "h": 134,
+      "period": 3.1,
+      "duty_cycle": 0.43,
+      "disabled_by": []
+    },
+    {
+      "id": "seam3",
+      "x": 1432,
+      "y": 272,
+      "w": 36,
+      "h": 134,
+      "period": 3.1,
+      "duty_cycle": 0.43,
+      "disabled_by": []
+    }
+  ],
+  "collapsing_platforms": [],
+  "checkpoints": [
+    {
+      "id": "beacon_53",
+      "x": 1299,
+      "y": 357
+    }
+  ],
+  "spikes": [],
+  "acids": [
+    {
+      "x": 36,
+      "y": 645,
+      "w": 114,
+      "h": 75
+    },
+    {
+      "x": 490,
+      "y": 645,
+      "w": 442,
+      "h": 75
+    },
+    {
+      "x": 1364,
+      "y": 645,
+      "w": 698,
+      "h": 75
+    }
+  ],
+  "lasers": [],
+  "optical_beams": [],
+  "sequences": [
+    {
+      "group_id": "overhaul_53_order",
+      "order": [
+        "overhaul_53_first",
+        "overhaul_53_second",
+        "overhaul_53_third"
+      ]
+    }
+  ],
+  "collectibles": [
+    {
+      "id": "log_53",
+      "x": 192,
+      "y": 553,
+      "title": "Conveyor Polarity / Shift Notes",
+      "text": "Conveyor Polarity. Check the signal lines before you leave the service deck."
+    },
+    {
+      "id": "field_trace_53",
+      "x": 1286,
+      "y": 509,
+      "title": "FIELD TRACE 53 / REVERSIBLE CARGO BELT",
+      "text": "ECHO-7 field diagnostics: Add a real conveyor cargo-routing decision and an A/B bus dependency that must change later.",
+      "required_links": [
+        "proof"
+      ],
+      "optional_investigation": true
+    },
+    {
+      "id": "service_challenge_53",
+      "x": 1125,
+      "y": 190,
+      "title": "Optional Diagnostics 53",
+      "text": "Optional master circuit cleared. The standard exit never depends on this side challenge.",
+      "required_links": [
+        "sector_53_validated"
+      ],
+      "optional_investigation": true
+    }
+  ],
+  "decorations": [
+    {
+      "type": "warning_stripe",
+      "x": 162,
+      "y": 369,
+      "w": 120
+    },
+    {
+      "type": "warning_stripe",
+      "x": 944,
+      "y": 369,
+      "w": 120
+    },
+    {
+      "type": "warning_stripe",
+      "x": 1548,
+      "y": 369,
+      "w": 120
+    },
+    {
+      "type": "monitor",
+      "x": 280,
+      "y": 486,
+      "text": "SELECT A / B"
+    },
+    {
+      "type": "monitor",
+      "x": 344,
+      "y": 265,
+      "text": "RECEIVING SCALE"
+    },
+    {
+      "type": "monitor",
+      "x": 1118,
+      "y": 257,
+      "text": "HOLD FREIGHT + A"
+    },
+    {
+      "type": "monitor",
+      "x": 1682,
+      "y": 183,
+      "text": "EXIT LOCK"
+    },
+    {
+      "type": "monitor",
+      "x": 1299,
+      "y": 471,
+      "text": "FORENSIC TRACE 53"
+    },
+    {
+      "type": "monitor",
+      "x": 988,
+      "y": 423,
+      "text": "ACCESS / 53"
+    },
+    {
+      "type": "warning_stripe",
+      "x": 1143,
+      "y": 417,
+      "w": 78
+    }
+  ],
+  "latching_relays": [
+    {
+      "link_id": "proof",
+      "x": 1148,
+      "y": 357,
+      "required_links": [
+        "freight",
+        "A"
+      ]
+    },
+    {
+      "link_id": "sector_53_validated",
+      "x": 1113,
+      "y": 232,
+      "required_links": [
+        "overhaul_53_order"
+      ]
+    }
+  ],
+  "routing_consoles": [
+    {
+      "id": "selector",
+      "route_id": "supply",
+      "x": 320,
+      "y": 585,
+      "a_signal": "A",
+      "b_signal": "B"
+    }
+  ],
+  "signal_inverters": [],
+  "npcs": [
+    {
+      "id": "kip",
+      "x": 1032,
+      "y": 585,
+      "dialogue": [
+        "Conveyor Polarity. The backup is ready. It even looks worried.",
+        "Move the cargo right until it rests on the receiving scale.",
+        "Transfer the selector to B after recording the A-side reading."
+      ]
+    }
+  ],
+  "springs": [],
+  "dash_recharges": [],
+  "one_way_platforms": [
+    {
+      "id": "walk0",
+      "x": 686,
+      "y": 670,
+      "w": 56,
+      "h": 12
+    },
+    {
+      "id": "walk1",
+      "x": 686,
+      "y": 442,
+      "w": 56,
+      "h": 12
+    },
+    {
+      "id": "overhaul_step_53_0",
+      "x": 986,
+      "y": 526,
+      "w": 78,
+      "h": 12
+    },
+    {
+      "id": "overhaul_step_53_1",
+      "x": 1063,
+      "y": 460,
+      "w": 78,
+      "h": 12
+    },
+    {
+      "id": "overhaul_step_53_2",
+      "x": 1143,
+      "y": 405,
+      "w": 78,
+      "h": 12
+    },
+    {
+      "id": "validation_foot_53_0",
+      "x": 1180,
+      "y": 294,
+      "w": 78,
+      "h": 12
+    },
+    {
+      "id": "validation_foot_53_1",
+      "x": 1095,
+      "y": 232,
+      "w": 78,
+      "h": 12
+    }
+  ],
+  "dash_barriers": [],
+  "level_id": 53,
+  "width": 2098,
+  "height": 720,
+  "name": "Chamber 53 // Conveyor Polarity",
+  "abilities": {
+    "wall_jump": true,
+    "dash": true
+  },
+  "spawn": [
+    970,
+    539
+  ],
+  "exit": [
+    1716,
+    277
+  ],
+  "hint_route": [
+    "freight",
+    "A",
+    "proof",
+    "B"
+  ],
+  "hint_notes": {
+    "freight": [
+      "Move the cargo right until it rests on the receiving scale.",
+      "Move the cargo right until it rests on the receiving scale.",
+      "Move the cargo right until it rests on the receiving scale."
+    ],
+    "A": [
+      "Set the supply selector to A.",
+      "Set the supply selector to A.",
+      "Set the supply selector to A."
+    ],
+    "proof": [
+      "Keep freight and A live, then interact with the recorder to hold the reading.",
+      "Keep freight and A live, then interact with the recorder to hold the reading.",
+      "Keep freight and A live, then interact with the recorder to hold the reading."
+    ],
+    "B": [
+      "Transfer the selector to B after recording the A-side reading.",
+      "Transfer the selector to B after recording the A-side reading.",
+      "Transfer the selector to B after recording the A-side reading."
+    ]
+  },
+  "solution_steps": [
+    "Move the cargo right until it rests on the receiving scale.",
+    "Set the supply selector to A.",
+    "Keep freight and A live, then interact with the recorder to hold the reading.",
+    "Transfer the selector to B after recording the A-side reading."
+  ],
+  "subtitle": "Move the cargo right until it rests on the receiving scale.  //  SERVICE DETOUR: Visit three elevated diagnostics in the numbered order; an incorrect input resets the chain.",
+  "chapter": 6,
+  "theme": "furnace",
+  "topology": "Reversible Cargo Belt",
+  "overhaul_version": 1,
+  "overhaul_design": {
+    "profile": "sequence",
+    "route": "right_up",
+    "actual_direction": 1,
+    "mandatory": true,
+    "service_platform_count": 3
+  },
+  "secondary_validation_1": {
+    "checkpoint": "beacon_53",
+    "extra_platforms": 2,
+    "signal": "sector_53_validated"
+  },
+  "side_challenge_policy": {
+    "campaign_blocking": false,
+    "optional_signals": [
+      "overhaul_53_order",
+      "sector_53_validated"
+    ],
+    "reason": "Not proven traversable in the Pygame engine; preserve main progression."
+  }
+}

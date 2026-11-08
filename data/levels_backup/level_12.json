@@ -1,0 +1,336 @@
+{
+  "level_id": 12,
+  "chapter": 2,
+  "theme": "mechanical",
+  "name": "Chamber 12 // Overload",
+  "subtitle": "Clear the optical trip, bank its overload pulse, then restore the cooling route.",
+  "width": 2090,
+  "height": 870,
+  "spawn": [
+    85,
+    674
+  ],
+  "exit": [
+    1966,
+    460
+  ],
+  "tiles": [
+    [
+      0,
+      0,
+      40,
+      870
+    ],
+    [
+      40,
+      0,
+      2010,
+      32
+    ],
+    [
+      2050,
+      0,
+      40,
+      870
+    ],
+    [
+      40,
+      720,
+      940,
+      150
+    ],
+    [
+      1440,
+      640,
+      610,
+      230
+    ],
+    [
+      1895,
+      420,
+      155,
+      20
+    ],
+    [
+      1895,
+      540,
+      155,
+      20
+    ]
+  ],
+  "ladders": [],
+  "crates": [
+    {
+      "id": "shutter",
+      "x": 390,
+      "y": 684
+    }
+  ],
+  "plates": [
+    {
+      "link_id": "plate_12_hold",
+      "x": 830,
+      "y": 720
+    }
+  ],
+  "switches": [],
+  "doors": [
+    {
+      "id": "d12_exit",
+      "x": 1895,
+      "y": 440,
+      "w": 24,
+      "h": 100,
+      "required_links": [
+        "sample",
+        "cool",
+        "opt_12_cal"
+      ],
+      "logic": "ALL"
+    }
+  ],
+  "moving_platforms": [
+    {
+      "id": "mp12_bridge",
+      "x": 984,
+      "y": 712,
+      "w": 105,
+      "h": 18,
+      "end_x": 1328,
+      "end_y": 638,
+      "speed": 112,
+      "active_by_default": false,
+      "logic": "ALL",
+      "required_links": [
+        "opt_12_cal"
+      ]
+    }
+  ],
+  "conveyors": [],
+  "wind_zones": [],
+  "water_zones": [],
+  "valves": [],
+  "generators": [
+    {
+      "link_id": "gen_12_main",
+      "x": 230,
+      "y": 720
+    }
+  ],
+  "cables": [
+    {
+      "link_id": "sample",
+      "points": [
+        [
+          1262,
+          306
+        ],
+        [
+          1262,
+          544
+        ],
+        [
+          1903,
+          544
+        ],
+        [
+          1903,
+          490
+        ]
+      ]
+    },
+    {
+      "link_id": "plate_12_hold",
+      "points": [
+        [
+          842,
+          706
+        ],
+        [
+          842,
+          772
+        ],
+        [
+          1258,
+          772
+        ],
+        [
+          1258,
+          312
+        ]
+      ]
+    }
+  ],
+  "mirrors": [],
+  "crushers": [],
+  "steam_vents": [],
+  "collapsing_platforms": [],
+  "checkpoints": [
+    {
+      "id": "cp12_1",
+      "x": 1640,
+      "y": 640
+    }
+  ],
+  "spikes": [],
+  "acids": [
+    {
+      "x": 980,
+      "y": 790,
+      "w": 460,
+      "h": 80
+    }
+  ],
+  "lasers": [],
+  "optical_beams": [
+    {
+      "link_id": "opt_12_cal",
+      "x": 340,
+      "y": 700,
+      "dir": [
+        1,
+        0
+      ],
+      "max_length": 455,
+      "receiver": [
+        762,
+        691,
+        18,
+        18
+      ],
+      "enabled_by": "gen_12_main"
+    }
+  ],
+  "sequences": [],
+  "collectibles": [
+    {
+      "id": "log_12",
+      "x": 1505,
+      "y": 354,
+      "title": "Chief Physicist's Log",
+      "text": "Optical interlock tied directly to laser grid. Keep the beam clear at all costs."
+    }
+  ],
+  "decorations": [
+    {
+      "type": "monitor",
+      "x": 869,
+      "y": 631,
+      "text": "COOL / TEST"
+    },
+    {
+      "type": "monitor",
+      "x": 1224,
+      "y": 231,
+      "text": "PULSE SAMPLE"
+    }
+  ],
+  "solution_steps": [
+    "Power the beam and push its shutter clear onto the hold contact. Select TEST.",
+    "Cross to the east scaffold and back-jump to the overhead sampler. Store the overload, return to the splitter and restore cooling."
+  ],
+  "hint_route": [
+    "sample",
+    "cool",
+    "opt_12_cal"
+  ],
+  "npcs": [
+    {
+      "id": "kip",
+      "x": 155,
+      "y": 720
+    }
+  ],
+  "abilities": {
+    "wall_jump": true,
+    "dash": true
+  },
+  "springs": [],
+  "dash_recharges": [
+    {
+      "id": "ring1190",
+      "x": 1190,
+      "y": 580
+    }
+  ],
+  "one_way_platforms": [
+    {
+      "id": "deck1500_554",
+      "x": 1500,
+      "y": 554,
+      "w": 142,
+      "h": 14
+    },
+    {
+      "id": "deck1680_470",
+      "x": 1680,
+      "y": 470,
+      "w": 142,
+      "h": 14
+    },
+    {
+      "id": "deck1470_386",
+      "x": 1470,
+      "y": 386,
+      "w": 135,
+      "h": 14
+    },
+    {
+      "id": "deck1210_320",
+      "x": 1210,
+      "y": 320,
+      "w": 135,
+      "h": 14
+    },
+    {
+      "id": "deck1820_540",
+      "x": 1820,
+      "y": 540,
+      "w": 75,
+      "h": 14
+    }
+  ],
+  "dash_barriers": [],
+  "routing_consoles": [
+    {
+      "id": "splitter",
+      "x": 895,
+      "y": 720,
+      "route_id": "overload",
+      "a_signal": "cool",
+      "b_signal": "test",
+      "required_links": [
+        "gen_12_main"
+      ]
+    }
+  ],
+  "latching_relays": [
+    {
+      "link_id": "sample",
+      "x": 1250,
+      "y": 320,
+      "required_links": [
+        "test",
+        "opt_12_cal",
+        "plate_12_hold"
+      ]
+    }
+  ],
+  "hint_notes": {
+    "sample": [
+      "Clear the optical trip, bank its overload pulse, then restore the cooling route.",
+      "Power the beam and push its shutter clear onto the hold contact. Select TEST.",
+      "Cross to the east scaffold and back-jump to the overhead sampler. Store the overload, return to the splitter and restore cooling."
+    ],
+    "cool": [
+      "Clear the optical trip, bank its overload pulse, then restore the cooling route.",
+      "Power the beam and push its shutter clear onto the hold contact. Select TEST.",
+      "Cross to the east scaffold and back-jump to the overhead sampler. Store the overload, return to the splitter and restore cooling."
+    ],
+    "opt_12_cal": [
+      "Clear the optical trip, bank its overload pulse, then restore the cooling route.",
+      "Power the beam and push its shutter clear onto the hold contact. Select TEST.",
+      "Cross to the east scaffold and back-jump to the overhead sampler. Store the overload, return to the splitter and restore cooling."
+    ]
+  }
+}

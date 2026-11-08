@@ -1,0 +1,661 @@
+{
+  "tiles": [
+    [
+      0,
+      0,
+      36,
+      720
+    ],
+    [
+      2652,
+      0,
+      36,
+      720
+    ],
+    [
+      36,
+      0,
+      2616,
+      30
+    ],
+    [
+      150,
+      585,
+      340,
+      135
+    ],
+    [
+      652,
+      585,
+      432,
+      135
+    ],
+    [
+      652,
+      357,
+      432,
+      23
+    ],
+    [
+      1574,
+      357,
+      362,
+      23
+    ],
+    [
+      2098,
+      357,
+      390,
+      40
+    ],
+    [
+      1049,
+      340,
+      10,
+      17
+    ],
+    [
+      2235,
+      223,
+      155,
+      18
+    ],
+    [
+      2372,
+      241,
+      18,
+      116
+    ],
+    [
+      688,
+      380,
+      360,
+      22
+    ],
+    [
+      1610,
+      380,
+      290,
+      22
+    ],
+    [
+      2134,
+      397,
+      318,
+      22
+    ],
+    [
+      156,
+      30,
+      97,
+      28
+    ],
+    [
+      176,
+      58,
+      57,
+      16
+    ],
+    [
+      476,
+      30,
+      129,
+      56
+    ],
+    [
+      496,
+      86,
+      89,
+      16
+    ],
+    [
+      796,
+      30,
+      113,
+      42
+    ],
+    [
+      816,
+      72,
+      73,
+      16
+    ],
+    [
+      1116,
+      30,
+      97,
+      28
+    ],
+    [
+      1136,
+      58,
+      57,
+      16
+    ],
+    [
+      1436,
+      30,
+      129,
+      56
+    ],
+    [
+      1456,
+      86,
+      89,
+      16
+    ],
+    [
+      1756,
+      30,
+      113,
+      42
+    ],
+    [
+      1776,
+      72,
+      73,
+      16
+    ],
+    [
+      2076,
+      30,
+      97,
+      28
+    ],
+    [
+      2096,
+      58,
+      57,
+      16
+    ],
+    [
+      2396,
+      30,
+      129,
+      56
+    ],
+    [
+      2416,
+      86,
+      89,
+      16
+    ],
+    [
+      36,
+      140,
+      28,
+      85
+    ],
+    [
+      2624,
+      180,
+      28,
+      85
+    ],
+    [
+      36,
+      380,
+      28,
+      69
+    ],
+    [
+      2624,
+      420,
+      28,
+      69
+    ]
+  ],
+  "ladders": [],
+  "crates": [
+    {
+      "id": "load",
+      "x": 767,
+      "y": 321
+    }
+  ],
+  "plates": [
+    {
+      "link_id": "weight",
+      "x": 1001,
+      "y": 357
+    }
+  ],
+  "switches": [],
+  "doors": [
+    {
+      "id": "surface_lock",
+      "x": 2235,
+      "y": 241,
+      "w": 20,
+      "h": 116,
+      "required_links": [
+        "alpha",
+        "full"
+      ]
+    }
+  ],
+  "moving_platforms": [
+    {
+      "id": "car0",
+      "x": 495,
+      "y": 561,
+      "w": 65,
+      "h": 16,
+      "end_x": 582,
+      "end_y": 519,
+      "speed": 116,
+      "active_by_default": true,
+      "required_links": []
+    },
+    {
+      "id": "car1",
+      "x": 1088,
+      "y": 343,
+      "w": 108,
+      "h": 16,
+      "end_x": 1461,
+      "end_y": 343,
+      "speed": 116,
+      "active_by_default": false,
+      "required_links": [
+        "dry"
+      ]
+    }
+  ],
+  "conveyors": [],
+  "wind_zones": [],
+  "water_zones": [
+    {
+      "id": "sump",
+      "x": 682,
+      "y": 239,
+      "w": 382,
+      "h": 118,
+      "drained_y": 357,
+      "controlled_by": "dry"
+    }
+  ],
+  "valves": [
+    {
+      "link_id": "dry",
+      "x": 868,
+      "y": 585
+    }
+  ],
+  "generators": [],
+  "cables": [
+    {
+      "link_id": "weight",
+      "points": [
+        [
+          1010,
+          345
+        ],
+        [
+          1010,
+          381
+        ],
+        [
+          1771,
+          381
+        ],
+        [
+          1771,
+          347
+        ]
+      ]
+    },
+    {
+      "link_id": "alpha",
+      "points": [
+        [
+          1755,
+          345
+        ],
+        [
+          1755,
+          379
+        ],
+        [
+          2243,
+          379
+        ],
+        [
+          2243,
+          301
+        ]
+      ]
+    },
+    {
+      "link_id": "full",
+      "points": [
+        [
+          694,
+          225
+        ],
+        [
+          694,
+          330
+        ],
+        [
+          2243,
+          330
+        ],
+        [
+          2243,
+          301
+        ]
+      ]
+    }
+  ],
+  "mirrors": [],
+  "crushers": [],
+  "steam_vents": [
+    {
+      "id": "seam2",
+      "x": 1311,
+      "y": 272,
+      "w": 36,
+      "h": 134,
+      "period": 3.1,
+      "duty_cycle": 0.43,
+      "disabled_by": []
+    }
+  ],
+  "collapsing_platforms": [],
+  "checkpoints": [
+    {
+      "id": "beacon_45",
+      "x": 1871,
+      "y": 357
+    }
+  ],
+  "spikes": [],
+  "acids": [
+    {
+      "x": 36,
+      "y": 645,
+      "w": 114,
+      "h": 75
+    },
+    {
+      "x": 490,
+      "y": 645,
+      "w": 162,
+      "h": 75
+    },
+    {
+      "x": 1084,
+      "y": 645,
+      "w": 1568,
+      "h": 75
+    }
+  ],
+  "lasers": [],
+  "optical_beams": [],
+  "sequences": [],
+  "collectibles": [
+    {
+      "id": "log_45",
+      "x": 694,
+      "y": 553,
+      "title": "Turbine Intake / Shift Notes",
+      "text": "Turbine Intake. Check the signal lines before you leave the service deck."
+    },
+    {
+      "id": "field_trace_45",
+      "x": 425,
+      "y": 509,
+      "title": "FIELD TRACE 45 / HYDRO-FERRY CROSSING",
+      "text": "ECHO-7 field diagnostics: Turn the cargo-transfer crossing into a measured transport route: the lift/ferry must carry a real gameplay-critical object or enable its state, not merely....",
+      "required_links": [
+        "alpha"
+      ],
+      "optional_investigation": true
+    },
+    {
+      "id": "service_challenge_45",
+      "x": 1899,
+      "y": 315,
+      "title": "Optional Diagnostics 45",
+      "text": "Optional auxiliary service record recovered. This archive is no longer linked to a redundant side circuit and does not gate the exit.",
+      "required_links": [],
+      "optional_investigation": true
+    }
+  ],
+  "decorations": [
+    {
+      "type": "warning_stripe",
+      "x": 664,
+      "y": 369,
+      "w": 120
+    },
+    {
+      "type": "warning_stripe",
+      "x": 1586,
+      "y": 369,
+      "w": 120
+    },
+    {
+      "type": "warning_stripe",
+      "x": 2110,
+      "y": 369,
+      "w": 120
+    },
+    {
+      "type": "monitor",
+      "x": 820,
+      "y": 493,
+      "text": "DRAIN / FILL"
+    },
+    {
+      "type": "monitor",
+      "x": 938,
+      "y": 265,
+      "text": "RECEIVING SCALE"
+    },
+    {
+      "type": "monitor",
+      "x": 1725,
+      "y": 257,
+      "text": "HOLD WEIGHT"
+    },
+    {
+      "type": "monitor",
+      "x": 2258,
+      "y": 183,
+      "text": "EXIT LOCK"
+    },
+    {
+      "type": "monitor",
+      "x": 438,
+      "y": 471,
+      "text": "FORENSIC TRACE 45"
+    }
+  ],
+  "latching_relays": [
+    {
+      "link_id": "alpha",
+      "x": 1755,
+      "y": 357,
+      "required_links": [
+        "weight"
+      ]
+    }
+  ],
+  "routing_consoles": [],
+  "signal_inverters": [
+    {
+      "link_id": "full",
+      "input": "dry",
+      "water_zone": "sump"
+    }
+  ],
+  "npcs": [
+    {
+      "id": "kip",
+      "x": 250,
+      "y": 585,
+      "dialogue": [
+        "Turbine Intake. The upper deck has a fine view of the problem.",
+        "Turn the handwheel and watch which machinery changes.",
+        "Open the inlet again and let the basin refill. The float will lift off the scale."
+      ]
+    },
+    {
+      "id": "ada",
+      "x": 2142,
+      "y": 357
+    }
+  ],
+  "springs": [],
+  "dash_recharges": [
+    {
+      "id": "ring3",
+      "x": 2003,
+      "y": 259
+    }
+  ],
+  "one_way_platforms": [
+    {
+      "id": "walk0",
+      "x": 1124,
+      "y": 509,
+      "w": 83,
+      "h": 12
+    },
+    {
+      "id": "walk1",
+      "x": 1084,
+      "y": 433,
+      "w": 83,
+      "h": 12
+    },
+    {
+      "id": "walk2",
+      "x": 1124,
+      "y": 357,
+      "w": 83,
+      "h": 12
+    },
+    {
+      "id": "walk3",
+      "x": 1304,
+      "y": 442,
+      "w": 56,
+      "h": 12
+    }
+  ],
+  "dash_barriers": [],
+  "level_id": 45,
+  "width": 2688,
+  "height": 720,
+  "name": "Chamber 45 // Turbine Intake",
+  "abilities": {
+    "wall_jump": true,
+    "dash": true
+  },
+  "spawn": [
+    188,
+    539
+  ],
+  "exit": [
+    2292,
+    277
+  ],
+  "hint_route": [
+    "dry",
+    "weight",
+    "alpha",
+    "full"
+  ],
+  "hint_notes": {
+    "dry": [
+      "Turn the handwheel and watch which machinery changes.",
+      "Turn the handwheel and watch which machinery changes.",
+      "Turn the handwheel and watch which machinery changes."
+    ],
+    "weight": [
+      "Move the cargo right until it rests on the receiving scale.",
+      "Move the cargo right until it rests on the receiving scale.",
+      "Move the cargo right until it rests on the receiving scale."
+    ],
+    "alpha": [
+      "Keep weight live, then interact with the recorder to hold the reading.",
+      "Keep weight live, then interact with the recorder to hold the reading.",
+      "Keep weight live, then interact with the recorder to hold the reading."
+    ],
+    "full": [
+      "Open the inlet again and let the basin refill. The float will lift off the scale.",
+      "Open the inlet again and let the basin refill. The float will lift off the scale.",
+      "Open the inlet again and let the basin refill. The float will lift off the scale."
+    ]
+  },
+  "solution_steps": [
+    "Turn the handwheel and watch which machinery changes.",
+    "Move the cargo right until it rests on the receiving scale.",
+    "Keep weight live, then interact with the recorder to hold the reading.",
+    "Open the inlet again and let the basin refill. The float will lift off the scale."
+  ],
+  "subtitle": "Turn the handwheel and watch which machinery changes.",
+  "chapter": 5,
+  "theme": "environmental",
+  "topology": "Hydro-Ferry Crossing",
+  "overhaul_version": 1,
+  "overhaul_design": {
+    "profile": "route_proof",
+    "route": "left_rise",
+    "actual_direction": 1,
+    "mandatory": false,
+    "service_platform_count": 0,
+    "retired_by_cleanup": true
+  },
+  "secondary_validation_1": {
+    "checkpoint": "beacon_45",
+    "extra_platforms": 0,
+    "signal": "sector_45_validated",
+    "retired_by_cleanup": true
+  },
+  "side_challenge_policy": {
+    "campaign_blocking": false,
+    "optional_signals": [],
+    "reason": "Deprecated optional side circuit removed; service record remains accessible."
+  },
+  "architectural_overhaul_v2": {
+    "archetype": "Stepped Hydraulic Caisson & Manifold Bay",
+    "chapter": 5,
+    "theme": "environmental",
+    "original_tile_count": 11,
+    "final_tile_count": 34,
+    "thickened_decks": 1,
+    "added_piers": 0,
+    "added_corbels": 3,
+    "added_soffits": 8,
+    "added_buttresses": 4,
+    "tiles_before_cleanup_pass": 34,
+    "removed_legacy_platforms": 5,
+    "removed_legacy_devices": 3,
+    "added_partition_walls": 0,
+    "added_grounded_piers": 0,
+    "added_stepped_terraces": 0
+  },
+  "cleanup_v3_audit": {
+    "level": 45,
+    "chapter": 5,
+    "theme": "environmental",
+    "name": "Chamber 45 // Turbine Intake",
+    "archetype": "Stepped Hydraulic Caisson & Manifold Bay",
+    "orig_backup_tiles": 11,
+    "final_tiles": 34,
+    "removed_platforms": 5,
+    "retained_platforms": 4,
+    "removed_devices": 3,
+    "added_walls": 0,
+    "added_piers": 0,
+    "added_terraces": 0,
+    "gate_links": [
+      "alpha",
+      "full"
+    ]
+  }
+}

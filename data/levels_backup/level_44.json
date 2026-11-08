@@ -1,0 +1,610 @@
+{
+  "tiles": [
+    [
+      0,
+      0,
+      36,
+      720
+    ],
+    [
+      3142,
+      0,
+      36,
+      720
+    ],
+    [
+      36,
+      0,
+      3106,
+      30
+    ],
+    [
+      150,
+      369,
+      390,
+      23
+    ],
+    [
+      690,
+      369,
+      340,
+      23
+    ],
+    [
+      1180,
+      585,
+      432,
+      135
+    ],
+    [
+      2076,
+      585,
+      362,
+      135
+    ],
+    [
+      2076,
+      369,
+      362,
+      23
+    ],
+    [
+      2588,
+      369,
+      390,
+      23
+    ],
+    [
+      1577,
+      568,
+      10,
+      17
+    ],
+    [
+      2725,
+      235,
+      155,
+      18
+    ],
+    [
+      2862,
+      253,
+      18,
+      116
+    ]
+  ],
+  "ladders": [],
+  "crates": [
+    {
+      "id": "load",
+      "x": 1295,
+      "y": 549
+    }
+  ],
+  "plates": [
+    {
+      "link_id": "weight",
+      "x": 1529,
+      "y": 585
+    }
+  ],
+  "switches": [],
+  "doors": [
+    {
+      "id": "surface_lock",
+      "x": 2725,
+      "y": 253,
+      "w": 20,
+      "h": 116,
+      "required_links": [
+        "alpha",
+        "full"
+      ]
+    }
+  ],
+  "moving_platforms": [],
+  "conveyors": [],
+  "wind_zones": [],
+  "water_zones": [
+    {
+      "id": "sump",
+      "x": 1210,
+      "y": 467,
+      "w": 382,
+      "h": 118,
+      "drained_y": 585,
+      "controlled_by": "dry"
+    }
+  ],
+  "valves": [
+    {
+      "link_id": "dry",
+      "x": 860,
+      "y": 369
+    },
+    {
+      "link_id": "overhaul_44_valve",
+      "x": 341,
+      "y": 250
+    }
+  ],
+  "generators": [],
+  "cables": [
+    {
+      "link_id": "weight",
+      "points": [
+        [
+          1538,
+          573
+        ],
+        [
+          1538,
+          609
+        ],
+        [
+          2273,
+          609
+        ],
+        [
+          2273,
+          359
+        ]
+      ]
+    },
+    {
+      "link_id": "dry",
+      "points": [
+        [
+          869,
+          357
+        ],
+        [
+          869,
+          400
+        ],
+        [
+          2273,
+          400
+        ],
+        [
+          2273,
+          359
+        ]
+      ]
+    },
+    {
+      "link_id": "alpha",
+      "points": [
+        [
+          2257,
+          357
+        ],
+        [
+          2257,
+          391
+        ],
+        [
+          2733,
+          391
+        ],
+        [
+          2733,
+          313
+        ]
+      ]
+    },
+    {
+      "link_id": "full",
+      "points": [
+        [
+          1222,
+          453
+        ],
+        [
+          1222,
+          494
+        ],
+        [
+          2733,
+          494
+        ],
+        [
+          2733,
+          313
+        ]
+      ]
+    }
+  ],
+  "mirrors": [],
+  "crushers": [],
+  "steam_vents": [
+    {
+      "id": "jet",
+      "x": 2233,
+      "y": 423,
+      "w": 48,
+      "h": 162,
+      "period": 2.7,
+      "duty_cycle": 0.55,
+      "disabled_by": [
+        "dry"
+      ]
+    },
+    {
+      "id": "seam0",
+      "x": 597,
+      "y": 284,
+      "w": 36,
+      "h": 134,
+      "period": 3.1,
+      "duty_cycle": 0.43,
+      "disabled_by": []
+    },
+    {
+      "id": "flue2",
+      "x": 1742,
+      "y": 442,
+      "w": 36,
+      "h": 100,
+      "period": 2.8,
+      "duty_cycle": 0.45,
+      "disabled_by": [
+        "dry"
+      ]
+    }
+  ],
+  "collapsing_platforms": [],
+  "checkpoints": [
+    {
+      "id": "beacon_44",
+      "x": 2373,
+      "y": 369
+    }
+  ],
+  "spikes": [],
+  "acids": [
+    {
+      "x": 36,
+      "y": 645,
+      "w": 1144,
+      "h": 75
+    },
+    {
+      "x": 1612,
+      "y": 645,
+      "w": 464,
+      "h": 75
+    },
+    {
+      "x": 2438,
+      "y": 645,
+      "w": 704,
+      "h": 75
+    }
+  ],
+  "lasers": [],
+  "optical_beams": [],
+  "sequences": [],
+  "collectibles": [
+    {
+      "id": "log_44",
+      "x": 732,
+      "y": 337,
+      "title": "Pressurized Spillway / Shift Notes",
+      "text": "Pressurized Spillway. Check the signal lines before you leave the service deck."
+    },
+    {
+      "id": "field_trace_44",
+      "x": 744,
+      "y": 293,
+      "title": "FIELD TRACE 44 / STEAM-GATED SPILLWAY",
+      "text": "ECHO-7 field diagnostics: Require the player to isolate a vent, position a crate on a plate, and then return through a newly available maintenance passage.",
+      "required_links": [
+        "alpha"
+      ],
+      "optional_investigation": true
+    },
+    {
+      "id": "service_challenge_44",
+      "x": 2529,
+      "y": 202,
+      "title": "Optional Diagnostics 44",
+      "text": "Optional master circuit cleared. The standard exit never depends on this side challenge.",
+      "required_links": [
+        "sector_44_validated"
+      ],
+      "optional_investigation": true
+    }
+  ],
+  "decorations": [
+    {
+      "type": "warning_stripe",
+      "x": 162,
+      "y": 381,
+      "w": 120
+    },
+    {
+      "type": "warning_stripe",
+      "x": 702,
+      "y": 381,
+      "w": 120
+    },
+    {
+      "type": "warning_stripe",
+      "x": 2088,
+      "y": 381,
+      "w": 120
+    },
+    {
+      "type": "warning_stripe",
+      "x": 2600,
+      "y": 381,
+      "w": 120
+    },
+    {
+      "type": "monitor",
+      "x": 812,
+      "y": 277,
+      "text": "DRAIN / FILL"
+    },
+    {
+      "type": "monitor",
+      "x": 1466,
+      "y": 493,
+      "text": "RECEIVING SCALE"
+    },
+    {
+      "type": "monitor",
+      "x": 2086,
+      "y": 487,
+      "text": "STEAM LINE"
+    },
+    {
+      "type": "monitor",
+      "x": 2227,
+      "y": 269,
+      "text": "HOLD WEIGHT + DRY"
+    },
+    {
+      "type": "monitor",
+      "x": 2748,
+      "y": 195,
+      "text": "EXIT LOCK"
+    },
+    {
+      "type": "monitor",
+      "x": 757,
+      "y": 255,
+      "text": "FORENSIC TRACE 44"
+    },
+    {
+      "type": "monitor",
+      "x": 234,
+      "y": 201,
+      "text": "ACCESS / 44"
+    },
+    {
+      "type": "warning_stripe",
+      "x": 268,
+      "y": 203,
+      "w": 78
+    }
+  ],
+  "latching_relays": [
+    {
+      "link_id": "alpha",
+      "x": 2257,
+      "y": 369,
+      "required_links": [
+        "weight",
+        "dry"
+      ]
+    },
+    {
+      "link_id": "overhaul_44_record",
+      "x": 286,
+      "y": 191,
+      "required_links": [
+        "overhaul_44_valve"
+      ]
+    },
+    {
+      "link_id": "sector_44_validated",
+      "x": 2517,
+      "y": 244,
+      "required_links": [
+        "overhaul_44_record"
+      ]
+    }
+  ],
+  "routing_consoles": [],
+  "signal_inverters": [
+    {
+      "link_id": "full",
+      "input": "dry",
+      "water_zone": "sump"
+    }
+  ],
+  "npcs": [
+    {
+      "id": "kip",
+      "x": 250,
+      "y": 369,
+      "dialogue": [
+        "Pressurized Spillway. The crate gets paid by the metre.",
+        "Turn the handwheel and watch which machinery changes.",
+        "Open the inlet again and let the basin refill. The float will lift off the scale."
+      ]
+    }
+  ],
+  "springs": [],
+  "dash_recharges": [
+    {
+      "id": "ring4",
+      "x": 2499,
+      "y": 271
+    }
+  ],
+  "one_way_platforms": [
+    {
+      "id": "walk0",
+      "x": 1051,
+      "y": 441,
+      "w": 78,
+      "h": 12
+    },
+    {
+      "id": "walk1",
+      "x": 1101,
+      "y": 513,
+      "w": 78,
+      "h": 12
+    },
+    {
+      "id": "walk2",
+      "x": 1728,
+      "y": 547,
+      "w": 68,
+      "h": 12
+    },
+    {
+      "id": "walk3",
+      "x": 1896,
+      "y": 619,
+      "w": 68,
+      "h": 12
+    },
+    {
+      "id": "walk4",
+      "x": 2478,
+      "y": 513,
+      "w": 83,
+      "h": 12
+    },
+    {
+      "id": "walk5",
+      "x": 2438,
+      "y": 441,
+      "w": 83,
+      "h": 12
+    },
+    {
+      "id": "walk6",
+      "x": 2478,
+      "y": 369,
+      "w": 83,
+      "h": 12
+    },
+    {
+      "id": "overhaul_step_44_0",
+      "x": 232,
+      "y": 304,
+      "w": 78,
+      "h": 12
+    },
+    {
+      "id": "overhaul_step_44_1",
+      "x": 323,
+      "y": 250,
+      "w": 78,
+      "h": 12
+    },
+    {
+      "id": "overhaul_step_44_2",
+      "x": 268,
+      "y": 191,
+      "w": 78,
+      "h": 12
+    },
+    {
+      "id": "validation_foot_44_0",
+      "x": 2414,
+      "y": 306,
+      "w": 78,
+      "h": 12
+    },
+    {
+      "id": "validation_foot_44_1",
+      "x": 2499,
+      "y": 244,
+      "w": 78,
+      "h": 12
+    }
+  ],
+  "dash_barriers": [],
+  "level_id": 44,
+  "width": 3178,
+  "height": 720,
+  "name": "Chamber 44 // Pressurized Spillway",
+  "abilities": {
+    "wall_jump": true,
+    "dash": true
+  },
+  "spawn": [
+    188,
+    323
+  ],
+  "exit": [
+    2782,
+    289
+  ],
+  "hint_route": [
+    "dry",
+    "weight",
+    "alpha",
+    "full"
+  ],
+  "hint_notes": {
+    "dry": [
+      "Turn the handwheel and watch which machinery changes.",
+      "Turn the handwheel and watch which machinery changes.",
+      "Turn the handwheel and watch which machinery changes."
+    ],
+    "weight": [
+      "Move the cargo right until it rests on the receiving scale.",
+      "Move the cargo right until it rests on the receiving scale.",
+      "Move the cargo right until it rests on the receiving scale."
+    ],
+    "alpha": [
+      "Keep weight and dry live, then interact with the recorder to hold the reading.",
+      "Keep weight and dry live, then interact with the recorder to hold the reading.",
+      "Keep weight and dry live, then interact with the recorder to hold the reading."
+    ],
+    "full": [
+      "Open the inlet again and let the basin refill. The float will lift off the scale.",
+      "Open the inlet again and let the basin refill. The float will lift off the scale.",
+      "Open the inlet again and let the basin refill. The float will lift off the scale."
+    ]
+  },
+  "solution_steps": [
+    "Turn the handwheel and watch which machinery changes.",
+    "Move the cargo right until it rests on the receiving scale.",
+    "Keep weight and dry live, then interact with the recorder to hold the reading.",
+    "Open the inlet again and let the basin refill. The float will lift off the scale."
+  ],
+  "subtitle": "Turn the handwheel and watch which machinery changes.  //  SERVICE DETOUR: Use the intermediate valve and record its new state at the higher control point.",
+  "chapter": 5,
+  "theme": "environmental",
+  "topology": "Steam-Gated Spillway",
+  "overhaul_version": 1,
+  "overhaul_design": {
+    "profile": "valve_relay",
+    "route": "right_return",
+    "actual_direction": 1,
+    "mandatory": true,
+    "service_platform_count": 3
+  },
+  "secondary_validation_1": {
+    "checkpoint": "beacon_44",
+    "extra_platforms": 2,
+    "signal": "sector_44_validated"
+  },
+  "side_challenge_policy": {
+    "campaign_blocking": false,
+    "optional_signals": [
+      "overhaul_44_record",
+      "sector_44_validated"
+    ],
+    "reason": "Not proven traversable in the Pygame engine; preserve main progression."
+  }
+}

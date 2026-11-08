@@ -1,0 +1,430 @@
+{
+  "level_id": 11,
+  "hint_route": [
+    "opt_11_exit",
+    "relay_11_bridge",
+    "plate_11_lens"
+  ],
+  "chapter": 2,
+  "theme": "mechanical",
+  "name": "Chamber 11 // Laser Laboratory",
+  "subtitle": "The same mirror feeds a ferry and a hatch. Sample the upper receiver on the opposite bank.",
+  "width": 1970,
+  "height": 950,
+  "spawn": [
+    78,
+    739
+  ],
+  "exit": [
+    72,
+    410
+  ],
+  "tiles": [
+    [
+      0,
+      0,
+      40,
+      950
+    ],
+    [
+      40,
+      0,
+      1890,
+      32
+    ],
+    [
+      1930,
+      0,
+      40,
+      950
+    ],
+    [
+      40,
+      785,
+      940,
+      165
+    ],
+    [
+      1470,
+      700,
+      460,
+      250
+    ],
+    [
+      770,
+      710,
+      85,
+      14
+    ],
+    [
+      1670,
+      485,
+      180,
+      20
+    ],
+    [
+      1670,
+      377,
+      180,
+      16
+    ],
+    [
+      1834,
+      393,
+      16,
+      92
+    ],
+    [
+      40,
+      370,
+      152,
+      20
+    ],
+    [
+      40,
+      490,
+      152,
+      20
+    ],
+    [
+      975,
+      761,
+      5,
+      24
+    ],
+    [
+      192,
+      490,
+      43,
+      20
+    ],
+    [
+      1616,
+      485,
+      54,
+      20
+    ]
+  ],
+  "ladders": [],
+  "crates": [
+    {
+      "id": "lens",
+      "x": 426,
+      "y": 749
+    }
+  ],
+  "plates": [
+    {
+      "link_id": "plate_11_lens",
+      "x": 929,
+      "y": 785
+    }
+  ],
+  "switches": [
+    {
+      "link_id": "sw_beam_11",
+      "x": 275,
+      "y": 785,
+      "mode": "permanent",
+      "duration": 0
+    },
+    {
+      "link_id": "archive_11_a",
+      "x": 760,
+      "y": 655,
+      "mode": "sequence",
+      "duration": 0
+    },
+    {
+      "link_id": "archive_11_b",
+      "x": 1540,
+      "y": 620,
+      "mode": "sequence",
+      "duration": 0
+    }
+  ],
+  "doors": [
+    {
+      "id": "archive_11_gate",
+      "x": 1670,
+      "y": 393,
+      "w": 24,
+      "h": 92,
+      "required_links": [
+        "archive_11"
+      ],
+      "logic": "ALL"
+    },
+    {
+      "id": "d11_exit",
+      "x": 168,
+      "y": 390,
+      "w": 24,
+      "h": 100,
+      "required_links": [
+        "opt_11_exit",
+        "relay_11_bridge",
+        "plate_11_lens"
+      ],
+      "logic": "ALL"
+    }
+  ],
+  "moving_platforms": [
+    {
+      "id": "mp11_bridge",
+      "x": 986,
+      "y": 775,
+      "w": 115,
+      "h": 18,
+      "end_x": 1345,
+      "end_y": 698,
+      "speed": 118,
+      "active_by_default": false,
+      "logic": "ANY",
+      "required_links": [
+        "opt_11_main",
+        "relay_11_bridge"
+      ]
+    }
+  ],
+  "conveyors": [],
+  "wind_zones": [],
+  "water_zones": [],
+  "valves": [],
+  "generators": [],
+  "cables": [
+    {
+      "link_id": "plate_11_lens",
+      "points": [
+        [
+          941,
+          771
+        ],
+        [
+          941,
+          837
+        ],
+        [
+          176,
+          837
+        ],
+        [
+          176,
+          440
+        ]
+      ]
+    },
+    {
+      "link_id": "relay_11_bridge",
+      "points": [
+        [
+          1562,
+          686
+        ],
+        [
+          1562,
+          827
+        ],
+        [
+          994,
+          827
+        ],
+        [
+          994,
+          767
+        ]
+      ]
+    }
+  ],
+  "mirrors": [
+    {
+      "id": "m11_1",
+      "x": 590,
+      "y": 749,
+      "orientation": 1
+    }
+  ],
+  "crushers": [],
+  "steam_vents": [],
+  "collapsing_platforms": [],
+  "checkpoints": [
+    {
+      "id": "cp11_1",
+      "x": 1630,
+      "y": 700
+    }
+  ],
+  "spikes": [],
+  "acids": [
+    {
+      "x": 980,
+      "y": 850,
+      "w": 490,
+      "h": 100
+    }
+  ],
+  "lasers": [],
+  "optical_beams": [
+    {
+      "link_id": "opt_11_main",
+      "x": 340,
+      "y": 767,
+      "dir": [
+        1,
+        0
+      ],
+      "max_length": 680,
+      "receiver": [
+        596,
+        588,
+        18,
+        18
+      ],
+      "enabled_by": "sw_beam_11"
+    },
+    {
+      "link_id": "opt_11_exit",
+      "x": 340,
+      "y": 767,
+      "dir": [
+        1,
+        0
+      ],
+      "max_length": 680,
+      "receiver": [
+        596,
+        774,
+        18,
+        18
+      ],
+      "enabled_by": "sw_beam_11"
+    }
+  ],
+  "sequences": [
+    {
+      "group_id": "archive_11",
+      "order": [
+        "archive_11_a",
+        "archive_11_b"
+      ]
+    }
+  ],
+  "collectibles": [
+    {
+      "id": "archive_log_11",
+      "x": 1755,
+      "y": 453,
+      "title": "Shift handover",
+      "text": "Both inspectors signed off. The last shift never clocked out."
+    },
+    {
+      "id": "log_11",
+      "x": 280,
+      "y": 458,
+      "title": "Photonics Lab Note",
+      "text": "Calibration note: tilt the silver face toward the ceiling pickup."
+    }
+  ],
+  "decorations": [
+    {
+      "type": "monitor",
+      "x": 745,
+      "y": 582,
+      "text": "ARCHIVE 1"
+    },
+    {
+      "type": "monitor",
+      "x": 1548,
+      "y": 546,
+      "text": "ARCHIVE 2"
+    }
+  ],
+  "solution_steps": [
+    "Clear the beam by parking the crate east of the mirror. Aim up, ride the ferry and store light on the far bank.",
+    "Ride back, aim down and climb the west gallery to the hatch."
+  ],
+  "latching_relays": [
+    {
+      "link_id": "relay_11_bridge",
+      "x": 1550,
+      "y": 700,
+      "required_links": [
+        "opt_11_main"
+      ]
+    }
+  ],
+  "hint_notes": {
+    "opt_11_exit": [
+      "The same mirror feeds a ferry and a hatch. Sample the upper receiver on the opposite bank.",
+      "Clear the beam by parking the crate east of the mirror. Aim up, ride the ferry and store light on the far bank.",
+      "Ride back, aim down and climb the west gallery to the hatch."
+    ],
+    "relay_11_bridge": [
+      "The same mirror feeds a ferry and a hatch. Sample the upper receiver on the opposite bank.",
+      "Clear the beam by parking the crate east of the mirror. Aim up, ride the ferry and store light on the far bank.",
+      "Ride back, aim down and climb the west gallery to the hatch."
+    ],
+    "plate_11_lens": [
+      "The same mirror feeds a ferry and a hatch. Sample the upper receiver on the opposite bank.",
+      "Clear the beam by parking the crate east of the mirror. Aim up, ride the ferry and store light on the far bank.",
+      "Ride back, aim down and climb the west gallery to the hatch."
+    ]
+  },
+  "npcs": [
+    {
+      "id": "kip",
+      "x": 148,
+      "y": 785
+    },
+    {
+      "id": "ada",
+      "x": 1750,
+      "y": 700
+    }
+  ],
+  "abilities": {
+    "wall_jump": true,
+    "dash": true
+  },
+  "springs": [],
+  "dash_recharges": [],
+  "one_way_platforms": [
+    {
+      "id": "deck235_490",
+      "x": 235,
+      "y": 490,
+      "w": 230,
+      "h": 14
+    },
+    {
+      "id": "deck545_570",
+      "x": 545,
+      "y": 570,
+      "w": 175,
+      "h": 14
+    },
+    {
+      "id": "deck720_655",
+      "x": 720,
+      "y": 655,
+      "w": 160,
+      "h": 14
+    },
+    {
+      "id": "deck1520_620",
+      "x": 1520,
+      "y": 620,
+      "w": 125,
+      "h": 14
+    },
+    {
+      "id": "deck1430_546",
+      "x": 1430,
+      "y": 546,
+      "w": 110,
+      "h": 14
+    }
+  ],
+  "dash_barriers": [],
+  "routing_consoles": []
+}

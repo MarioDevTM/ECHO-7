@@ -1,0 +1,394 @@
+{
+  "level_id": 15,
+  "hint_route": [
+    "purge",
+    "isolation"
+  ],
+  "chapter": 2,
+  "theme": "mechanical",
+  "name": "Chamber 15 // Pressure System",
+  "subtitle": "Two isolation wheels feed a shared pressure line. Prove both closed, then reopen the purge branch.",
+  "width": 2130,
+  "height": 970,
+  "spawn": [
+    1810,
+    749
+  ],
+  "exit": [
+    72,
+    715
+  ],
+  "tiles": [
+    [
+      0,
+      0,
+      40,
+      970
+    ],
+    [
+      40,
+      0,
+      2050,
+      32
+    ],
+    [
+      2090,
+      0,
+      40,
+      970
+    ],
+    [
+      40,
+      795,
+      2050,
+      175
+    ],
+    [
+      1730,
+      530,
+      180,
+      20
+    ],
+    [
+      1730,
+      422,
+      180,
+      16
+    ],
+    [
+      1894,
+      438,
+      16,
+      92
+    ],
+    [
+      40,
+      675,
+      152,
+      20
+    ]
+  ],
+  "ladders": [],
+  "crates": [],
+  "plates": [],
+  "switches": [
+    {
+      "link_id": "archive_15_a",
+      "x": 1035,
+      "y": 545,
+      "mode": "sequence",
+      "duration": 0
+    },
+    {
+      "link_id": "archive_15_b",
+      "x": 1645,
+      "y": 626,
+      "mode": "sequence",
+      "duration": 0
+    }
+  ],
+  "doors": [
+    {
+      "id": "archive_15_gate",
+      "x": 1730,
+      "y": 438,
+      "w": 24,
+      "h": 92,
+      "required_links": [
+        "archive_15"
+      ],
+      "logic": "ALL"
+    },
+    {
+      "id": "d15_exit",
+      "x": 168,
+      "y": 695,
+      "w": 24,
+      "h": 100,
+      "required_links": [
+        "purge",
+        "isolation"
+      ],
+      "logic": "ALL"
+    }
+  ],
+  "moving_platforms": [],
+  "conveyors": [],
+  "wind_zones": [],
+  "water_zones": [],
+  "valves": [
+    {
+      "link_id": "valve_15_steam",
+      "x": 1660,
+      "y": 795
+    },
+    {
+      "link_id": "valve_15_aux",
+      "x": 780,
+      "y": 465
+    }
+  ],
+  "generators": [],
+  "cables": [
+    {
+      "link_id": "isolation",
+      "points": [
+        [
+          332,
+          293
+        ],
+        [
+          332,
+          805
+        ],
+        [
+          176,
+          805
+        ],
+        [
+          176,
+          745
+        ]
+      ]
+    },
+    {
+      "link_id": "valve_15_aux",
+      "points": [
+        [
+          792,
+          451
+        ],
+        [
+          792,
+          505
+        ],
+        [
+          328,
+          505
+        ],
+        [
+          328,
+          299
+        ]
+      ]
+    },
+    {
+      "link_id": "valve_15_steam",
+      "points": [
+        [
+          1672,
+          781
+        ],
+        [
+          1672,
+          841
+        ],
+        [
+          328,
+          841
+        ],
+        [
+          328,
+          299
+        ]
+      ]
+    }
+  ],
+  "mirrors": [],
+  "crushers": [],
+  "steam_vents": [
+    {
+      "id": "vent1320",
+      "x": 1320,
+      "y": 630,
+      "w": 50,
+      "h": 165,
+      "period": 2.8,
+      "duty_cycle": 0.48,
+      "disabled_by": [
+        "valve_15_steam"
+      ]
+    },
+    {
+      "id": "vent520",
+      "x": 520,
+      "y": 625,
+      "w": 50,
+      "h": 170,
+      "period": 2.8,
+      "duty_cycle": 0.48,
+      "disabled_by": [
+        "valve_15_aux"
+      ]
+    }
+  ],
+  "collapsing_platforms": [],
+  "checkpoints": [
+    {
+      "id": "cp15_1",
+      "x": 915,
+      "y": 795
+    }
+  ],
+  "spikes": [],
+  "acids": [],
+  "lasers": [],
+  "optical_beams": [],
+  "sequences": [
+    {
+      "group_id": "archive_15",
+      "order": [
+        "archive_15_a",
+        "archive_15_b"
+      ]
+    }
+  ],
+  "collectibles": [
+    {
+      "id": "archive_log_15",
+      "x": 1815,
+      "y": 498,
+      "title": "Steam inspector",
+      "text": "The isolation wheel still turns by hand during a blackout."
+    },
+    {
+      "id": "log_15",
+      "x": 575,
+      "y": 763,
+      "title": "Thermal Line Report",
+      "text": "Ruptured steam lines vent superheated vapor. Close isolation valves prior to transit."
+    }
+  ],
+  "decorations": [
+    {
+      "type": "monitor",
+      "x": 995,
+      "y": 452,
+      "text": "ARCHIVE 1"
+    },
+    {
+      "type": "monitor",
+      "x": 1560,
+      "y": 530,
+      "text": "ARCHIVE 2"
+    },
+    {
+      "type": "monitor",
+      "x": 294,
+      "y": 218,
+      "text": "ISOLATE BOTH"
+    },
+    {
+      "type": "monitor",
+      "x": 754,
+      "y": 376,
+      "text": "PURGE VALVE"
+    }
+  ],
+  "solution_steps": [
+    "Close the floor isolation wheel and climb west along the pipe racks. Close the auxiliary branch and record both at the high gauge.",
+    "Return to the auxiliary wheel, reopen the purge and time the west vent before entering the ground-level lock."
+  ],
+  "npcs": [
+    {
+      "id": "kip",
+      "x": 1880,
+      "y": 795
+    }
+  ],
+  "abilities": {
+    "wall_jump": true,
+    "dash": true
+  },
+  "springs": [],
+  "dash_recharges": [],
+  "one_way_platforms": [
+    {
+      "id": "deck1470_710",
+      "x": 1470,
+      "y": 710,
+      "w": 120,
+      "h": 14
+    },
+    {
+      "id": "deck1240_630",
+      "x": 1240,
+      "y": 630,
+      "w": 116,
+      "h": 14
+    },
+    {
+      "id": "deck1010_545",
+      "x": 1010,
+      "y": 545,
+      "w": 140,
+      "h": 14
+    },
+    {
+      "id": "deck745_465",
+      "x": 745,
+      "y": 465,
+      "w": 158,
+      "h": 14
+    },
+    {
+      "id": "deck490_380",
+      "x": 490,
+      "y": 380,
+      "w": 130,
+      "h": 14
+    },
+    {
+      "id": "deck280_307",
+      "x": 280,
+      "y": 307,
+      "w": 110,
+      "h": 14
+    },
+    {
+      "id": "deck1610_626",
+      "x": 1610,
+      "y": 626,
+      "w": 110,
+      "h": 14
+    },
+    {
+      "id": "deck1682_530",
+      "x": 1682,
+      "y": 530,
+      "w": 48,
+      "h": 14
+    }
+  ],
+  "dash_barriers": [],
+  "routing_consoles": [],
+  "latching_relays": [
+    {
+      "link_id": "isolation",
+      "x": 320,
+      "y": 307,
+      "required_links": [
+        "valve_15_aux",
+        "valve_15_steam"
+      ]
+    }
+  ],
+  "hint_notes": {
+    "purge": [
+      "Two isolation wheels feed a shared pressure line. Prove both closed, then reopen the purge branch.",
+      "Close the floor isolation wheel and climb west along the pipe racks. Close the auxiliary branch and record both at the high gauge.",
+      "Return to the auxiliary wheel, reopen the purge and time the west vent before entering the ground-level lock."
+    ],
+    "isolation": [
+      "Two isolation wheels feed a shared pressure line. Prove both closed, then reopen the purge branch.",
+      "Close the floor isolation wheel and climb west along the pipe racks. Close the auxiliary branch and record both at the high gauge.",
+      "Return to the auxiliary wheel, reopen the purge and time the west vent before entering the ground-level lock."
+    ]
+  },
+  "signal_inverters": [
+    {
+      "link_id": "purge",
+      "input": "valve_15_aux"
+    }
+  ]
+}

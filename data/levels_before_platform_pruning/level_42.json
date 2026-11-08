@@ -1,0 +1,635 @@
+{
+  "tiles": [
+    [
+      0,
+      0,
+      36,
+      1210
+    ],
+    [
+      1490,
+      0,
+      36,
+      1210
+    ],
+    [
+      36,
+      0,
+      1454,
+      30
+    ],
+    [
+      150,
+      1075,
+      432,
+      135
+    ],
+    [
+      964,
+      1075,
+      362,
+      135
+    ],
+    [
+      964,
+      835,
+      362,
+      23
+    ],
+    [
+      964,
+      595,
+      362,
+      23
+    ],
+    [
+      964,
+      355,
+      362,
+      23
+    ],
+    [
+      1291,
+      818,
+      10,
+      17
+    ],
+    [
+      1087,
+      221,
+      155,
+      18
+    ],
+    [
+      1224,
+      239,
+      18,
+      116
+    ],
+    [
+      742,
+      1113,
+      62,
+      97
+    ],
+    [
+      1000,
+      858,
+      290,
+      22
+    ],
+    [
+      1000,
+      618,
+      290,
+      22
+    ],
+    [
+      1000,
+      378,
+      290,
+      22
+    ],
+    [
+      156,
+      30,
+      94,
+      28
+    ],
+    [
+      176,
+      58,
+      54,
+      16
+    ],
+    [
+      476,
+      30,
+      126,
+      56
+    ],
+    [
+      496,
+      86,
+      86,
+      16
+    ],
+    [
+      796,
+      30,
+      110,
+      42
+    ],
+    [
+      816,
+      72,
+      70,
+      16
+    ],
+    [
+      1116,
+      30,
+      94,
+      28
+    ],
+    [
+      1136,
+      58,
+      54,
+      16
+    ],
+    [
+      36,
+      140,
+      40,
+      78
+    ],
+    [
+      36,
+      380,
+      40,
+      94
+    ],
+    [
+      36,
+      620,
+      40,
+      78
+    ],
+    [
+      36,
+      860,
+      40,
+      94
+    ]
+  ],
+  "ladders": [
+    {
+      "x": 1328,
+      "y": 797,
+      "h": 288
+    },
+    {
+      "x": 1328,
+      "y": 557,
+      "h": 288
+    },
+    {
+      "x": 1328,
+      "y": 317,
+      "h": 288
+    }
+  ],
+  "crates": [
+    {
+      "id": "load",
+      "x": 1079,
+      "y": 799
+    }
+  ],
+  "plates": [
+    {
+      "link_id": "weight",
+      "x": 1243,
+      "y": 835
+    }
+  ],
+  "switches": [],
+  "doors": [
+    {
+      "id": "surface_lock",
+      "x": 1087,
+      "y": 239,
+      "w": 20,
+      "h": 116,
+      "required_links": [
+        "proof",
+        "full"
+      ]
+    }
+  ],
+  "moving_platforms": [
+    {
+      "id": "car0",
+      "x": 1344,
+      "y": 587,
+      "w": 86,
+      "h": 16,
+      "end_x": 1344,
+      "end_y": 347,
+      "speed": 116,
+      "active_by_default": true,
+      "required_links": []
+    }
+  ],
+  "conveyors": [],
+  "wind_zones": [],
+  "water_zones": [
+    {
+      "id": "sump",
+      "x": 994,
+      "y": 717,
+      "w": 312,
+      "h": 118,
+      "drained_y": 835,
+      "controlled_by": "dry"
+    }
+  ],
+  "valves": [
+    {
+      "link_id": "dry",
+      "x": 1145,
+      "y": 1075
+    }
+  ],
+  "generators": [],
+  "cables": [
+    {
+      "link_id": "weight",
+      "points": [
+        [
+          1252,
+          823
+        ],
+        [
+          1252,
+          859
+        ],
+        [
+          1161,
+          859
+        ],
+        [
+          1161,
+          585
+        ]
+      ]
+    },
+    {
+      "link_id": "dry",
+      "points": [
+        [
+          1154,
+          1063
+        ],
+        [
+          1154,
+          1106
+        ],
+        [
+          1161,
+          1106
+        ],
+        [
+          1161,
+          585
+        ]
+      ]
+    },
+    {
+      "link_id": "proof",
+      "points": [
+        [
+          1145,
+          583
+        ],
+        [
+          1145,
+          617
+        ],
+        [
+          1095,
+          617
+        ],
+        [
+          1095,
+          299
+        ]
+      ]
+    },
+    {
+      "link_id": "full",
+      "points": [
+        [
+          1006,
+          703
+        ],
+        [
+          1006,
+          744
+        ],
+        [
+          1095,
+          744
+        ],
+        [
+          1095,
+          299
+        ]
+      ]
+    }
+  ],
+  "mirrors": [],
+  "crushers": [],
+  "steam_vents": [],
+  "collapsing_platforms": [],
+  "checkpoints": [
+    {
+      "id": "beacon_42",
+      "x": 1261,
+      "y": 595
+    }
+  ],
+  "spikes": [],
+  "acids": [
+    {
+      "x": 36,
+      "y": 1135,
+      "w": 114,
+      "h": 75
+    },
+    {
+      "x": 582,
+      "y": 1135,
+      "w": 382,
+      "h": 75
+    },
+    {
+      "x": 1326,
+      "y": 1135,
+      "w": 164,
+      "h": 75
+    }
+  ],
+  "lasers": [],
+  "optical_beams": [],
+  "sequences": [],
+  "collectibles": [
+    {
+      "id": "log_42",
+      "x": 1006,
+      "y": 1043,
+      "title": "The Drainage Shaft / Shift Notes",
+      "text": "The Drainage Shaft. Check the signal lines before you leave the service deck."
+    },
+    {
+      "id": "field_trace_42",
+      "x": 504,
+      "y": 999,
+      "title": "FIELD TRACE 42 / VERTICAL SUMP LOCK",
+      "text": "ECHO-7 field diagnostics: Add an upper/lower cargo transport problem where the crate and drain state must both be retained.",
+      "required_links": [
+        "proof"
+      ],
+      "optional_investigation": true
+    },
+    {
+      "id": "service_challenge_42",
+      "x": 1289,
+      "y": 553,
+      "title": "Optional Diagnostics 42",
+      "text": "Optional auxiliary service record recovered. This archive is no longer linked to a redundant side circuit and does not gate the exit.",
+      "required_links": [],
+      "optional_investigation": true
+    }
+  ],
+  "decorations": [
+    {
+      "type": "warning_stripe",
+      "x": 976,
+      "y": 847,
+      "w": 120
+    },
+    {
+      "type": "warning_stripe",
+      "x": 976,
+      "y": 607,
+      "w": 120
+    },
+    {
+      "type": "warning_stripe",
+      "x": 976,
+      "y": 367,
+      "w": 120
+    },
+    {
+      "type": "monitor",
+      "x": 1097,
+      "y": 983,
+      "text": "DRAIN / FILL"
+    },
+    {
+      "type": "monitor",
+      "x": 1180,
+      "y": 743,
+      "text": "RECEIVING SCALE"
+    },
+    {
+      "type": "monitor",
+      "x": 1115,
+      "y": 495,
+      "text": "HOLD WEIGHT + DRY"
+    },
+    {
+      "type": "monitor",
+      "x": 1110,
+      "y": 181,
+      "text": "EXIT LOCK"
+    },
+    {
+      "type": "monitor",
+      "x": 517,
+      "y": 961,
+      "text": "FORENSIC TRACE 42"
+    }
+  ],
+  "latching_relays": [
+    {
+      "link_id": "proof",
+      "x": 1145,
+      "y": 595,
+      "required_links": [
+        "weight",
+        "dry"
+      ]
+    }
+  ],
+  "routing_consoles": [],
+  "signal_inverters": [
+    {
+      "link_id": "full",
+      "input": "dry",
+      "water_zone": "sump"
+    }
+  ],
+  "npcs": [
+    {
+      "id": "kip",
+      "x": 250,
+      "y": 1075,
+      "dialogue": [
+        "The Drainage Shaft. I brought a spare fuse and a very small umbrella.",
+        "Turn the handwheel and watch which machinery changes.",
+        "Open the inlet again and let the basin refill. The float will lift off the scale."
+      ]
+    }
+  ],
+  "springs": [],
+  "dash_recharges": [],
+  "one_way_platforms": [
+    {
+      "id": "walk0",
+      "x": 1366,
+      "y": 995,
+      "w": 83,
+      "h": 12
+    },
+    {
+      "id": "walk1",
+      "x": 1326,
+      "y": 915,
+      "w": 83,
+      "h": 12
+    },
+    {
+      "id": "walk2",
+      "x": 1366,
+      "y": 835,
+      "w": 83,
+      "h": 12
+    },
+    {
+      "id": "walk3",
+      "x": 1366,
+      "y": 755,
+      "w": 83,
+      "h": 12
+    },
+    {
+      "id": "walk4",
+      "x": 1326,
+      "y": 675,
+      "w": 83,
+      "h": 12
+    },
+    {
+      "id": "walk5",
+      "x": 1366,
+      "y": 595,
+      "w": 83,
+      "h": 12
+    }
+  ],
+  "dash_barriers": [],
+  "level_id": 42,
+  "width": 1526,
+  "height": 1210,
+  "name": "Chamber 42 // The Drainage Shaft",
+  "abilities": {
+    "wall_jump": true,
+    "dash": true
+  },
+  "spawn": [
+    188,
+    1029
+  ],
+  "exit": [
+    1144,
+    275
+  ],
+  "hint_route": [
+    "dry",
+    "weight",
+    "proof",
+    "full"
+  ],
+  "hint_notes": {
+    "dry": [
+      "Turn the handwheel and watch which machinery changes.",
+      "Turn the handwheel and watch which machinery changes.",
+      "Turn the handwheel and watch which machinery changes."
+    ],
+    "weight": [
+      "Move the cargo right until it rests on the receiving scale.",
+      "Move the cargo right until it rests on the receiving scale.",
+      "Move the cargo right until it rests on the receiving scale."
+    ],
+    "proof": [
+      "Keep weight and dry live, then interact with the recorder to hold the reading.",
+      "Keep weight and dry live, then interact with the recorder to hold the reading.",
+      "Keep weight and dry live, then interact with the recorder to hold the reading."
+    ],
+    "full": [
+      "Open the inlet again and let the basin refill. The float will lift off the scale.",
+      "Open the inlet again and let the basin refill. The float will lift off the scale.",
+      "Open the inlet again and let the basin refill. The float will lift off the scale."
+    ]
+  },
+  "solution_steps": [
+    "Turn the handwheel and watch which machinery changes.",
+    "Move the cargo right until it rests on the receiving scale.",
+    "Keep weight and dry live, then interact with the recorder to hold the reading.",
+    "Open the inlet again and let the basin refill. The float will lift off the scale."
+  ],
+  "subtitle": "Turn the handwheel and watch which machinery changes.",
+  "chapter": 5,
+  "theme": "environmental",
+  "topology": "Vertical Sump Lock",
+  "overhaul_version": 1,
+  "overhaul_design": {
+    "profile": "generator_relay",
+    "route": "left_up",
+    "actual_direction": 1,
+    "mandatory": false,
+    "service_platform_count": 0,
+    "retired_by_cleanup": true
+  },
+  "secondary_validation_1": {
+    "checkpoint": "beacon_42",
+    "extra_platforms": 0,
+    "signal": "sector_42_validated",
+    "retired_by_cleanup": true
+  },
+  "side_challenge_policy": {
+    "campaign_blocking": false,
+    "optional_signals": [],
+    "reason": "Deprecated optional side circuit removed; service record remains accessible."
+  },
+  "architectural_overhaul_v2": {
+    "archetype": "Stepped Hydraulic Caisson & Manifold Bay",
+    "chapter": 5,
+    "theme": "environmental",
+    "original_tile_count": 12,
+    "final_tile_count": 27,
+    "thickened_decks": 0,
+    "added_piers": 0,
+    "added_corbels": 3,
+    "added_soffits": 4,
+    "added_buttresses": 4,
+    "tiles_before_cleanup_pass": 27,
+    "removed_legacy_platforms": 5,
+    "removed_legacy_devices": 3,
+    "added_partition_walls": 0,
+    "added_grounded_piers": 0,
+    "added_stepped_terraces": 0
+  },
+  "cleanup_v3_audit": {
+    "level": 42,
+    "chapter": 5,
+    "theme": "environmental",
+    "name": "Chamber 42 // The Drainage Shaft",
+    "archetype": "Stepped Hydraulic Caisson & Manifold Bay",
+    "orig_backup_tiles": 12,
+    "final_tiles": 27,
+    "removed_platforms": 5,
+    "retained_platforms": 6,
+    "removed_devices": 3,
+    "added_walls": 0,
+    "added_piers": 0,
+    "added_terraces": 0,
+    "gate_links": [
+      "proof",
+      "full"
+    ]
+  }
+}

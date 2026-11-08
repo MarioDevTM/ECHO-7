@@ -1,0 +1,309 @@
+{
+  "level_id": 14,
+  "hint_route": [
+    "sw_14_gate",
+    "plate_14_high"
+  ],
+  "chapter": 2,
+  "theme": "mechanical",
+  "name": "Chamber 14 // Ventilation",
+  "subtitle": "The fan launches from the well. Catch the east sill and cross above the return duct.",
+  "width": 1360,
+  "height": 1270,
+  "spawn": [
+    80,
+    1094
+  ],
+  "exit": [
+    72,
+    302
+  ],
+  "tiles": [
+    [
+      0,
+      0,
+      40,
+      1270
+    ],
+    [
+      40,
+      0,
+      1280,
+      32
+    ],
+    [
+      1320,
+      0,
+      40,
+      1270
+    ],
+    [
+      40,
+      1140,
+      1280,
+      130
+    ],
+    [
+      40,
+      262,
+      152,
+      20
+    ],
+    [
+      40,
+      382,
+      152,
+      20
+    ]
+  ],
+  "ladders": [],
+  "crates": [
+    {
+      "id": "filter",
+      "x": 330,
+      "y": 1104
+    }
+  ],
+  "plates": [
+    {
+      "link_id": "plate_14_high",
+      "x": 535,
+      "y": 1140
+    }
+  ],
+  "switches": [
+    {
+      "link_id": "sw_14_gate",
+      "x": 1050,
+      "y": 457,
+      "mode": "permanent",
+      "duration": 0
+    }
+  ],
+  "doors": [
+    {
+      "id": "d14_exit",
+      "x": 168,
+      "y": 282,
+      "w": 24,
+      "h": 100,
+      "required_links": [
+        "sw_14_gate",
+        "plate_14_high"
+      ],
+      "logic": "ALL"
+    }
+  ],
+  "moving_platforms": [],
+  "conveyors": [],
+  "wind_zones": [
+    {
+      "id": "updraft",
+      "x": 730,
+      "y": 435,
+      "w": 170,
+      "h": 705,
+      "vx": 0,
+      "vy": -2350,
+      "controlled_by": "plate_14_high",
+      "active_by_default": false
+    }
+  ],
+  "water_zones": [],
+  "valves": [],
+  "generators": [],
+  "cables": [
+    {
+      "link_id": "sw_14_gate",
+      "points": [
+        [
+          1062,
+          443
+        ],
+        [
+          1062,
+          497
+        ],
+        [
+          176,
+          497
+        ],
+        [
+          176,
+          332
+        ]
+      ]
+    },
+    {
+      "link_id": "plate_14_high",
+      "points": [
+        [
+          547,
+          1126
+        ],
+        [
+          547,
+          1186
+        ],
+        [
+          176,
+          1186
+        ],
+        [
+          176,
+          332
+        ]
+      ]
+    },
+    {
+      "link_id": "plate_14_high",
+      "points": [
+        [
+          547,
+          1126
+        ],
+        [
+          547,
+          1180
+        ],
+        [
+          738,
+          1180
+        ],
+        [
+          738,
+          787
+        ]
+      ]
+    }
+  ],
+  "mirrors": [],
+  "crushers": [],
+  "steam_vents": [],
+  "collapsing_platforms": [],
+  "checkpoints": [
+    {
+      "id": "cp14_1",
+      "x": 625,
+      "y": 1140
+    }
+  ],
+  "spikes": [],
+  "acids": [],
+  "lasers": [],
+  "optical_beams": [],
+  "sequences": [],
+  "collectibles": [
+    {
+      "id": "log_14",
+      "x": 1080,
+      "y": 753,
+      "title": "HVAC Engineering Note",
+      "text": "Intake turbine #4 generates sufficient vertical thrust to lift a suited operator."
+    }
+  ],
+  "decorations": [
+    {
+      "type": "monitor",
+      "x": 509,
+      "y": 1051,
+      "text": "FAN INTAKE"
+    },
+    {
+      "type": "monitor",
+      "x": 1024,
+      "y": 368,
+      "text": "DAMPER"
+    }
+  ],
+  "solution_steps": [
+    "Weight the fan intake and jump into the column. Steer out to the east damper.",
+    "Open the damper and cut west over the wind well using the narrow ceiling perches."
+  ],
+  "npcs": [
+    {
+      "id": "kip",
+      "x": 150,
+      "y": 1140
+    }
+  ],
+  "abilities": {
+    "wall_jump": true,
+    "dash": true
+  },
+  "springs": [
+    {
+      "id": "spring792",
+      "x": 792,
+      "y": 1130,
+      "w": 64,
+      "h": 10
+    }
+  ],
+  "dash_recharges": [
+    {
+      "id": "ring620",
+      "x": 620,
+      "y": 275
+    }
+  ],
+  "one_way_platforms": [
+    {
+      "id": "deck966_785",
+      "x": 966,
+      "y": 785,
+      "w": 280,
+      "h": 14
+    },
+    {
+      "id": "deck885_600",
+      "x": 885,
+      "y": 600,
+      "w": 170,
+      "h": 14
+    },
+    {
+      "id": "deck980_457",
+      "x": 980,
+      "y": 457,
+      "w": 235,
+      "h": 14
+    },
+    {
+      "id": "deck685_383",
+      "x": 685,
+      "y": 383,
+      "w": 115,
+      "h": 14
+    },
+    {
+      "id": "deck435_322",
+      "x": 435,
+      "y": 322,
+      "w": 115,
+      "h": 14
+    },
+    {
+      "id": "deck200_382",
+      "x": 200,
+      "y": 382,
+      "w": 145,
+      "h": 14
+    }
+  ],
+  "dash_barriers": [],
+  "routing_consoles": [],
+  "latching_relays": [],
+  "hint_notes": {
+    "sw_14_gate": [
+      "The fan launches from the well. Catch the east sill and cross above the return duct.",
+      "Weight the fan intake and jump into the column. Steer out to the east damper.",
+      "Open the damper and cut west over the wind well using the narrow ceiling perches."
+    ],
+    "plate_14_high": [
+      "The fan launches from the well. Catch the east sill and cross above the return duct.",
+      "Weight the fan intake and jump into the column. Steer out to the east damper.",
+      "Open the damper and cut west over the wind well using the narrow ceiling perches."
+    ]
+  }
+}

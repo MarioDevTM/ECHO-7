@@ -1,0 +1,364 @@
+{
+  "level_id": 19,
+  "chapter": 2,
+  "theme": "mechanical",
+  "name": "Chamber 19 // Containment Failure",
+  "subtitle": "Drain the containment trench and isolate its ram. The upper valve doubles as the start of the sprint.",
+  "width": 2180,
+  "height": 1030,
+  "spawn": [
+    85,
+    509
+  ],
+  "exit": [
+    2056,
+    735
+  ],
+  "tiles": [
+    [
+      0,
+      0,
+      40,
+      1030
+    ],
+    [
+      40,
+      0,
+      2100,
+      32
+    ],
+    [
+      2140,
+      0,
+      40,
+      1030
+    ],
+    [
+      40,
+      555,
+      450,
+      475
+    ],
+    [
+      490,
+      860,
+      1180,
+      170
+    ],
+    [
+      1670,
+      815,
+      470,
+      215
+    ],
+    [
+      1985,
+      695,
+      155,
+      20
+    ]
+  ],
+  "ladders": [],
+  "crates": [],
+  "plates": [],
+  "switches": [
+    {
+      "link_id": "sw_19_sprint",
+      "x": 248,
+      "y": 555,
+      "mode": "timed",
+      "duration": 12
+    }
+  ],
+  "doors": [
+    {
+      "id": "d19_exit",
+      "x": 1985,
+      "y": 715,
+      "w": 24,
+      "h": 100,
+      "required_links": [
+        "quarantine",
+        "full",
+        "sw_19_sprint"
+      ],
+      "logic": "ALL"
+    }
+  ],
+  "moving_platforms": [
+    {
+      "id": "sway795",
+      "x": 795,
+      "y": 520,
+      "w": 82,
+      "h": 18,
+      "end_x": 835,
+      "end_y": 580,
+      "speed": 68,
+      "active_by_default": true,
+      "logic": "ALL",
+      "required_links": []
+    }
+  ],
+  "conveyors": [],
+  "wind_zones": [],
+  "water_zones": [
+    {
+      "id": "coolant",
+      "x": 490,
+      "y": 655,
+      "w": 1180,
+      "h": 205,
+      "drained_y": 860,
+      "controlled_by": "valve_19_coolant"
+    }
+  ],
+  "valves": [
+    {
+      "link_id": "valve_19_coolant",
+      "x": 350,
+      "y": 555
+    }
+  ],
+  "generators": [
+    {
+      "link_id": "gen_19_stabilizer",
+      "x": 1410,
+      "y": 860
+    }
+  ],
+  "cables": [
+    {
+      "link_id": "quarantine",
+      "points": [
+        [
+          1522,
+          522
+        ],
+        [
+          1522,
+          819
+        ],
+        [
+          1993,
+          819
+        ],
+        [
+          1993,
+          765
+        ]
+      ]
+    },
+    {
+      "link_id": "gen_19_stabilizer",
+      "points": [
+        [
+          1422,
+          846
+        ],
+        [
+          1422,
+          900
+        ],
+        [
+          1518,
+          900
+        ],
+        [
+          1518,
+          528
+        ]
+      ]
+    },
+    {
+      "link_id": "valve_19_coolant",
+      "points": [
+        [
+          362,
+          541
+        ],
+        [
+          362,
+          601
+        ],
+        [
+          1518,
+          601
+        ],
+        [
+          1518,
+          528
+        ]
+      ]
+    }
+  ],
+  "mirrors": [],
+  "crushers": [
+    {
+      "id": "press1030",
+      "x": 1030,
+      "y": 640,
+      "w": 84,
+      "h": 40,
+      "travel": 176,
+      "period": 3,
+      "disabled_by": [
+        "gen_19_stabilizer"
+      ]
+    }
+  ],
+  "steam_vents": [],
+  "collapsing_platforms": [],
+  "checkpoints": [
+    {
+      "id": "cp19_1",
+      "x": 1775,
+      "y": 815
+    }
+  ],
+  "spikes": [],
+  "acids": [],
+  "lasers": [],
+  "optical_beams": [],
+  "sequences": [],
+  "collectibles": [
+    {
+      "id": "log_19",
+      "x": 1240,
+      "y": 575,
+      "title": "Emergency Broadcast",
+      "text": "Containment seals failing across Sector E. Surface freight elevator unlocked at Chamber 20."
+    }
+  ],
+  "decorations": [
+    {
+      "type": "monitor",
+      "x": 222,
+      "y": 466,
+      "text": "LOCK / 12s"
+    },
+    {
+      "type": "monitor",
+      "x": 1484,
+      "y": 447,
+      "text": "DRY + STABLE"
+    }
+  ],
+  "solution_steps": [
+    "Drain the trench and reach the stabilizer below the crane. Store the isolated state at its high quarantine station.",
+    "Return along the broken overhead route. Refill the trench, arm the west timer and sprint along its rim."
+  ],
+  "hint_route": [
+    "quarantine",
+    "full",
+    "sw_19_sprint"
+  ],
+  "npcs": [
+    {
+      "id": "kip",
+      "x": 155,
+      "y": 555
+    }
+  ],
+  "abilities": {
+    "wall_jump": true,
+    "dash": true
+  },
+  "springs": [],
+  "dash_recharges": [],
+  "one_way_platforms": [
+    {
+      "id": "deck560_770",
+      "x": 560,
+      "y": 770,
+      "w": 110,
+      "h": 14
+    },
+    {
+      "id": "deck715_685",
+      "x": 715,
+      "y": 685,
+      "w": 100,
+      "h": 14
+    },
+    {
+      "id": "deck585_605",
+      "x": 585,
+      "y": 605,
+      "w": 90,
+      "h": 14
+    },
+    {
+      "id": "deck965_568",
+      "x": 965,
+      "y": 568,
+      "w": 120,
+      "h": 14
+    },
+    {
+      "id": "deck1225_607",
+      "x": 1225,
+      "y": 607,
+      "w": 104,
+      "h": 14
+    },
+    {
+      "id": "deck1470_536",
+      "x": 1470,
+      "y": 536,
+      "w": 120,
+      "h": 14
+    },
+    {
+      "id": "deck1730_578",
+      "x": 1730,
+      "y": 578,
+      "w": 135,
+      "h": 14
+    },
+    {
+      "id": "deck1445_710",
+      "x": 1445,
+      "y": 710,
+      "w": 97,
+      "h": 14
+    }
+  ],
+  "dash_barriers": [],
+  "routing_consoles": [],
+  "latching_relays": [
+    {
+      "link_id": "quarantine",
+      "x": 1510,
+      "y": 536,
+      "required_links": [
+        "gen_19_stabilizer",
+        "valve_19_coolant"
+      ]
+    }
+  ],
+  "hint_notes": {
+    "quarantine": [
+      "Drain the containment trench and isolate its ram. The upper valve doubles as the start of the sprint.",
+      "Drain the trench and reach the stabilizer below the crane. Store the isolated state at its high quarantine station.",
+      "Return along the broken overhead route. Refill the trench, arm the west timer and sprint along its rim."
+    ],
+    "full": [
+      "Drain the containment trench and isolate its ram. The upper valve doubles as the start of the sprint.",
+      "Drain the trench and reach the stabilizer below the crane. Store the isolated state at its high quarantine station.",
+      "Return along the broken overhead route. Refill the trench, arm the west timer and sprint along its rim."
+    ],
+    "sw_19_sprint": [
+      "Drain the containment trench and isolate its ram. The upper valve doubles as the start of the sprint.",
+      "Drain the trench and reach the stabilizer below the crane. Store the isolated state at its high quarantine station.",
+      "Return along the broken overhead route. Refill the trench, arm the west timer and sprint along its rim."
+    ]
+  },
+  "signal_inverters": [
+    {
+      "link_id": "full",
+      "input": "valve_19_coolant",
+      "water_zone": "coolant"
+    }
+  ]
+}

@@ -1,0 +1,615 @@
+{
+  "tiles": [
+    [
+      0,
+      0,
+      36,
+      742
+    ],
+    [
+      2088,
+      0,
+      36,
+      742
+    ],
+    [
+      36,
+      0,
+      2052,
+      30
+    ],
+    [
+      150,
+      607,
+      362,
+      135
+    ],
+    [
+      688,
+      607,
+      390,
+      135
+    ],
+    [
+      688,
+      355,
+      390,
+      23
+    ],
+    [
+      1584,
+      355,
+      340,
+      23
+    ],
+    [
+      1584,
+      607,
+      340,
+      135
+    ],
+    [
+      1696,
+      473,
+      155,
+      18
+    ],
+    [
+      1833,
+      491,
+      18,
+      116
+    ],
+    [
+      156,
+      30,
+      119,
+      56
+    ],
+    [
+      176,
+      86,
+      79,
+      16
+    ],
+    [
+      556,
+      30,
+      135,
+      56
+    ],
+    [
+      576,
+      86,
+      95,
+      16
+    ],
+    [
+      956,
+      30,
+      103,
+      42
+    ],
+    [
+      976,
+      72,
+      63,
+      16
+    ],
+    [
+      1356,
+      30,
+      119,
+      42
+    ],
+    [
+      1376,
+      72,
+      79,
+      16
+    ],
+    [
+      1756,
+      30,
+      135,
+      28
+    ],
+    [
+      1776,
+      58,
+      95,
+      16
+    ],
+    [
+      36,
+      140,
+      28,
+      83
+    ],
+    [
+      36,
+      380,
+      28,
+      67
+    ]
+  ],
+  "ladders": [],
+  "crates": [],
+  "plates": [],
+  "switches": [],
+  "doors": [
+    {
+      "id": "surface_lock",
+      "x": 1696,
+      "y": 491,
+      "w": 20,
+      "h": 116,
+      "required_links": [
+        "proof",
+        "down"
+      ]
+    }
+  ],
+  "moving_platforms": [
+    {
+      "id": "car0",
+      "x": 1096,
+      "y": 599,
+      "w": 86,
+      "h": 16,
+      "end_x": 1096,
+      "end_y": 347,
+      "speed": 112,
+      "active_by_default": false,
+      "required_links": [
+        "power"
+      ]
+    },
+    {
+      "id": "car1",
+      "x": 1082,
+      "y": 341,
+      "w": 108,
+      "h": 16,
+      "end_x": 1471,
+      "end_y": 341,
+      "speed": 112,
+      "active_by_default": false,
+      "required_links": [
+        "up"
+      ]
+    }
+  ],
+  "conveyors": [],
+  "wind_zones": [],
+  "water_zones": [],
+  "valves": [],
+  "generators": [
+    {
+      "link_id": "power",
+      "x": 883,
+      "y": 607
+    }
+  ],
+  "cables": [
+    {
+      "link_id": "up",
+      "points": [
+        [
+          906,
+          201
+        ],
+        [
+          906,
+          379
+        ],
+        [
+          1770,
+          379
+        ],
+        [
+          1770,
+          345
+        ]
+      ]
+    },
+    {
+      "link_id": "power",
+      "points": [
+        [
+          892,
+          595
+        ],
+        [
+          892,
+          638
+        ],
+        [
+          1770,
+          638
+        ],
+        [
+          1770,
+          345
+        ]
+      ]
+    },
+    {
+      "link_id": "proof",
+      "points": [
+        [
+          1754,
+          343
+        ],
+        [
+          1754,
+          573
+        ],
+        [
+          1704,
+          573
+        ],
+        [
+          1704,
+          551
+        ]
+      ]
+    },
+    {
+      "link_id": "down",
+      "points": [
+        [
+          897,
+          332
+        ],
+        [
+          897,
+          580
+        ],
+        [
+          1704,
+          580
+        ],
+        [
+          1704,
+          551
+        ]
+      ]
+    }
+  ],
+  "mirrors": [
+    {
+      "id": "prism",
+      "x": 883,
+      "y": 319,
+      "orientation": 1
+    }
+  ],
+  "crushers": [],
+  "steam_vents": [
+    {
+      "id": "seam0",
+      "x": 582,
+      "y": 522,
+      "w": 36,
+      "h": 134,
+      "period": 3.1,
+      "duty_cycle": 0.43,
+      "disabled_by": []
+    }
+  ],
+  "collapsing_platforms": [],
+  "checkpoints": [
+    {
+      "id": "beacon_35",
+      "x": 1859,
+      "y": 355
+    }
+  ],
+  "spikes": [],
+  "acids": [
+    {
+      "x": 36,
+      "y": 667,
+      "w": 114,
+      "h": 75
+    },
+    {
+      "x": 512,
+      "y": 667,
+      "w": 176,
+      "h": 75
+    },
+    {
+      "x": 1078,
+      "y": 667,
+      "w": 506,
+      "h": 75
+    },
+    {
+      "x": 1924,
+      "y": 667,
+      "w": 164,
+      "h": 75
+    }
+  ],
+  "lasers": [],
+  "optical_beams": [
+    {
+      "link_id": "up",
+      "x": 743,
+      "y": 337,
+      "dir": [
+        1,
+        0
+      ],
+      "max_length": 480,
+      "receiver": [
+        890,
+        213,
+        14,
+        10
+      ],
+      "enabled_by": "power"
+    },
+    {
+      "link_id": "down",
+      "x": 743,
+      "y": 337,
+      "dir": [
+        1,
+        0
+      ],
+      "max_length": 480,
+      "receiver": [
+        890,
+        344,
+        14,
+        10
+      ],
+      "enabled_by": "power"
+    }
+  ],
+  "sequences": [],
+  "collectibles": [
+    {
+      "id": "log_35",
+      "x": 730,
+      "y": 575,
+      "title": "Sweep Frequency / Shift Notes",
+      "text": "Sweep Frequency. Check the signal lines before you leave the service deck."
+    },
+    {
+      "id": "field_trace_35",
+      "x": 446,
+      "y": 531,
+      "title": "FIELD TRACE 35 / OPTICAL FERRY BRIDGE",
+      "text": "ECHO-7 field diagnostics: Link the powered sightline to an actual moving crossing so the player must activate one state to summon travel, then safely reorient afterward.",
+      "required_links": [
+        "proof"
+      ],
+      "optional_investigation": true
+    },
+    {
+      "id": "service_challenge_35",
+      "x": 1887,
+      "y": 313,
+      "title": "Optional Diagnostics 35",
+      "text": "Optional auxiliary service record recovered. This archive is no longer linked to a redundant side circuit and does not gate the exit.",
+      "required_links": [],
+      "optional_investigation": true
+    }
+  ],
+  "decorations": [
+    {
+      "type": "warning_stripe",
+      "x": 700,
+      "y": 367,
+      "w": 120
+    },
+    {
+      "type": "warning_stripe",
+      "x": 1596,
+      "y": 367,
+      "w": 120
+    },
+    {
+      "type": "monitor",
+      "x": 853,
+      "y": 507,
+      "text": "ENERGIZE"
+    },
+    {
+      "type": "monitor",
+      "x": 1724,
+      "y": 255,
+      "text": "HOLD UP + POWER"
+    },
+    {
+      "type": "monitor",
+      "x": 1719,
+      "y": 433,
+      "text": "EXIT LOCK"
+    },
+    {
+      "type": "monitor",
+      "x": 459,
+      "y": 493,
+      "text": "FORENSIC TRACE 35"
+    }
+  ],
+  "latching_relays": [
+    {
+      "link_id": "proof",
+      "x": 1754,
+      "y": 355,
+      "required_links": [
+        "up",
+        "power"
+      ]
+    }
+  ],
+  "routing_consoles": [],
+  "signal_inverters": [],
+  "npcs": [
+    {
+      "id": "kip",
+      "x": 250,
+      "y": 607,
+      "dialogue": [
+        "Sweep Frequency. Maintenance says the gap is within budget.",
+        "Start the generator to bring the circuit online.",
+        "Turn the mirror toward the low pickup beside its foot."
+      ]
+    },
+    {
+      "id": "ada",
+      "x": 1628,
+      "y": 607
+    }
+  ],
+  "springs": [],
+  "dash_recharges": [],
+  "one_way_platforms": [
+    {
+      "id": "walk0",
+      "x": 1306,
+      "y": 440,
+      "w": 56,
+      "h": 12
+    },
+    {
+      "id": "walk1",
+      "x": 1964,
+      "y": 523,
+      "w": 83,
+      "h": 12
+    },
+    {
+      "id": "walk2",
+      "x": 1924,
+      "y": 439,
+      "w": 83,
+      "h": 12
+    },
+    {
+      "id": "walk3",
+      "x": 1964,
+      "y": 355,
+      "w": 83,
+      "h": 12
+    }
+  ],
+  "dash_barriers": [],
+  "level_id": 35,
+  "width": 2124,
+  "height": 742,
+  "name": "Chamber 35 // Sweep Frequency",
+  "abilities": {
+    "wall_jump": true,
+    "dash": true
+  },
+  "spawn": [
+    188,
+    561
+  ],
+  "exit": [
+    1753,
+    527
+  ],
+  "hint_route": [
+    "power",
+    "up",
+    "proof",
+    "down"
+  ],
+  "hint_notes": {
+    "power": [
+      "Start the generator to bring the circuit online.",
+      "Start the generator to bring the circuit online.",
+      "Start the generator to bring the circuit online."
+    ],
+    "up": [
+      "Turn the mirror toward its ceiling pickup.",
+      "Turn the mirror toward its ceiling pickup.",
+      "Turn the mirror toward its ceiling pickup."
+    ],
+    "proof": [
+      "Keep up and power live, then interact with the recorder to hold the reading.",
+      "Keep up and power live, then interact with the recorder to hold the reading.",
+      "Keep up and power live, then interact with the recorder to hold the reading."
+    ],
+    "down": [
+      "Turn the mirror toward the low pickup beside its foot.",
+      "Turn the mirror toward the low pickup beside its foot.",
+      "Turn the mirror toward the low pickup beside its foot."
+    ]
+  },
+  "solution_steps": [
+    "Start the generator to bring the circuit online.",
+    "Turn the mirror toward its ceiling pickup.",
+    "Keep up and power live, then interact with the recorder to hold the reading.",
+    "Turn the mirror toward the low pickup beside its foot."
+  ],
+  "subtitle": "Start the generator to bring the circuit online.",
+  "chapter": 4,
+  "theme": "optical",
+  "topology": "Optical Ferry Bridge",
+  "overhaul_version": 1,
+  "overhaul_design": {
+    "profile": "route_proof",
+    "route": "right_up",
+    "actual_direction": 1,
+    "mandatory": false,
+    "service_platform_count": 0,
+    "retired_by_cleanup": true
+  },
+  "secondary_validation_1": {
+    "checkpoint": "beacon_35",
+    "extra_platforms": 0,
+    "signal": "sector_35_validated",
+    "retired_by_cleanup": true
+  },
+  "side_challenge_policy": {
+    "campaign_blocking": false,
+    "optional_signals": [],
+    "reason": "Deprecated optional side circuit removed; service record remains accessible."
+  },
+  "architectural_overhaul_v2": {
+    "archetype": "Segmented Security Bulkhead Corridor",
+    "chapter": 4,
+    "theme": "optical",
+    "original_tile_count": 10,
+    "final_tile_count": 22,
+    "thickened_decks": 0,
+    "added_piers": 0,
+    "added_corbels": 0,
+    "added_soffits": 5,
+    "added_buttresses": 2,
+    "tiles_before_cleanup_pass": 22,
+    "removed_legacy_platforms": 5,
+    "removed_legacy_devices": 3,
+    "added_partition_walls": 0,
+    "added_grounded_piers": 0,
+    "added_stepped_terraces": 0
+  },
+  "cleanup_v3_audit": {
+    "level": 35,
+    "chapter": 4,
+    "theme": "optical",
+    "name": "Chamber 35 // Sweep Frequency",
+    "archetype": "Segmented Security Bulkhead Corridor",
+    "orig_backup_tiles": 10,
+    "final_tiles": 22,
+    "removed_platforms": 5,
+    "retained_platforms": 4,
+    "removed_devices": 3,
+    "added_walls": 0,
+    "added_piers": 0,
+    "added_terraces": 0,
+    "gate_links": [
+      "proof",
+      "down"
+    ]
+  }
+}

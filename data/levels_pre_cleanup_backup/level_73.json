@@ -1,0 +1,688 @@
+{
+  "tiles": [
+    [
+      0,
+      0,
+      36,
+      720
+    ],
+    [
+      2102,
+      0,
+      36,
+      720
+    ],
+    [
+      36,
+      0,
+      2066,
+      30
+    ],
+    [
+      682,
+      585,
+      432,
+      135
+    ],
+    [
+      150,
+      585,
+      340,
+      135
+    ],
+    [
+      150,
+      357,
+      340,
+      23
+    ],
+    [
+      682,
+      357,
+      432,
+      23
+    ],
+    [
+      1576,
+      357,
+      362,
+      23
+    ],
+    [
+      1576,
+      585,
+      362,
+      135
+    ],
+    [
+      1699,
+      451,
+      155,
+      18
+    ],
+    [
+      1836,
+      469,
+      18,
+      116
+    ],
+    [
+      606,
+      387,
+      14,
+      162
+    ],
+    [
+      2054,
+      387,
+      14,
+      162
+    ],
+    [
+      194,
+      380,
+      252,
+      22
+    ],
+    [
+      36,
+      140,
+      28,
+      65
+    ],
+    [
+      36,
+      380,
+      28,
+      81
+    ]
+  ],
+  "ladders": [
+    {
+      "x": 492,
+      "y": 319,
+      "h": 276
+    },
+    {
+      "x": 1940,
+      "y": 319,
+      "h": 276
+    }
+  ],
+  "crates": [],
+  "plates": [],
+  "switches": [],
+  "doors": [
+    {
+      "id": "surface_lock",
+      "x": 1699,
+      "y": 469,
+      "w": 20,
+      "h": 116,
+      "required_links": [
+        "power",
+        "alpha",
+        "beta"
+      ]
+    }
+  ],
+  "moving_platforms": [
+    {
+      "id": "car0",
+      "x": 495,
+      "y": 561,
+      "w": 65,
+      "h": 16,
+      "end_x": 612,
+      "end_y": 519,
+      "speed": 128,
+      "active_by_default": true,
+      "required_links": []
+    },
+    {
+      "id": "car1",
+      "x": 1118,
+      "y": 343,
+      "w": 108,
+      "h": 16,
+      "end_x": 1463,
+      "end_y": 343,
+      "speed": 128,
+      "active_by_default": false,
+      "required_links": [
+        "A"
+      ]
+    }
+  ],
+  "conveyors": [],
+  "wind_zones": [],
+  "water_zones": [],
+  "valves": [],
+  "generators": [
+    {
+      "link_id": "power",
+      "x": 320,
+      "y": 585
+    },
+    {
+      "link_id": "overhaul_73_generator",
+      "x": 748,
+      "y": 525
+    }
+  ],
+  "cables": [
+    {
+      "link_id": "A",
+      "points": [
+        [
+          329,
+          345
+        ],
+        [
+          329,
+          381
+        ],
+        [
+          914,
+          381
+        ],
+        [
+          914,
+          347
+        ]
+      ]
+    },
+    {
+      "link_id": "alpha",
+      "points": [
+        [
+          907,
+          345
+        ],
+        [
+          907,
+          381
+        ],
+        [
+          1773,
+          381
+        ],
+        [
+          1773,
+          347
+        ]
+      ]
+    },
+    {
+      "link_id": "B",
+      "points": [
+        [
+          339,
+          345
+        ],
+        [
+          339,
+          388
+        ],
+        [
+          1773,
+          388
+        ],
+        [
+          1773,
+          347
+        ]
+      ]
+    },
+    {
+      "link_id": "power",
+      "points": [
+        [
+          320,
+          573
+        ],
+        [
+          320,
+          607
+        ],
+        [
+          1707,
+          607
+        ],
+        [
+          1707,
+          529
+        ]
+      ]
+    },
+    {
+      "link_id": "alpha",
+      "points": [
+        [
+          898,
+          345
+        ],
+        [
+          898,
+          558
+        ],
+        [
+          1707,
+          558
+        ],
+        [
+          1707,
+          529
+        ]
+      ]
+    },
+    {
+      "link_id": "beta",
+      "points": [
+        [
+          1757,
+          345
+        ],
+        [
+          1757,
+          565
+        ],
+        [
+          1707,
+          565
+        ],
+        [
+          1707,
+          529
+        ]
+      ]
+    }
+  ],
+  "mirrors": [],
+  "crushers": [],
+  "steam_vents": [],
+  "collapsing_platforms": [],
+  "checkpoints": [
+    {
+      "id": "beacon_73",
+      "x": 1873,
+      "y": 357
+    }
+  ],
+  "spikes": [],
+  "acids": [
+    {
+      "x": 36,
+      "y": 645,
+      "w": 114,
+      "h": 75
+    },
+    {
+      "x": 490,
+      "y": 645,
+      "w": 192,
+      "h": 75
+    },
+    {
+      "x": 1114,
+      "y": 645,
+      "w": 462,
+      "h": 75
+    },
+    {
+      "x": 1938,
+      "y": 645,
+      "w": 164,
+      "h": 75
+    }
+  ],
+  "lasers": [],
+  "optical_beams": [],
+  "sequences": [],
+  "collectibles": [
+    {
+      "id": "log_73",
+      "x": 192,
+      "y": 553,
+      "title": "The Outer Substation / Shift Notes",
+      "text": "The Outer Substation. Check the signal lines before you leave the service deck."
+    },
+    {
+      "id": "field_trace_73",
+      "x": 1036,
+      "y": 509,
+      "title": "FIELD TRACE 73 / MOONLIT BUSBAR YARD",
+      "text": "ECHO-7 field diagnostics: Recontextualize A/B switching across sparse outdoor infrastructure, requiring a visit to both sides of a damaged substation.",
+      "required_links": [
+        "alpha"
+      ],
+      "optional_investigation": true
+    },
+    {
+      "id": "service_challenge_73",
+      "x": 1699,
+      "y": 190,
+      "title": "Optional Diagnostics 73",
+      "text": "Optional master circuit cleared. The standard exit never depends on this side challenge.",
+      "required_links": [
+        "sector_73_validated"
+      ],
+      "optional_investigation": true
+    }
+  ],
+  "decorations": [
+    {
+      "type": "warning_stripe",
+      "x": 162,
+      "y": 369,
+      "w": 120
+    },
+    {
+      "type": "warning_stripe",
+      "x": 694,
+      "y": 369,
+      "w": 120
+    },
+    {
+      "type": "warning_stripe",
+      "x": 1588,
+      "y": 369,
+      "w": 120
+    },
+    {
+      "type": "monitor",
+      "x": 290,
+      "y": 485,
+      "text": "ENERGIZE"
+    },
+    {
+      "type": "monitor",
+      "x": 280,
+      "y": 258,
+      "text": "SELECT A / B"
+    },
+    {
+      "type": "monitor",
+      "x": 868,
+      "y": 257,
+      "text": "HOLD A"
+    },
+    {
+      "type": "monitor",
+      "x": 1727,
+      "y": 257,
+      "text": "HOLD ALPHA + B"
+    },
+    {
+      "type": "monitor",
+      "x": 1722,
+      "y": 411,
+      "text": "EXIT LOCK"
+    },
+    {
+      "type": "monitor",
+      "x": 1049,
+      "y": 471,
+      "text": "FORENSIC TRACE 73"
+    },
+    {
+      "type": "monitor",
+      "x": 732,
+      "y": 422,
+      "text": "ACCESS / 73"
+    },
+    {
+      "type": "warning_stripe",
+      "x": 789,
+      "y": 415,
+      "w": 78
+    }
+  ],
+  "latching_relays": [
+    {
+      "link_id": "alpha",
+      "x": 898,
+      "y": 357,
+      "required_links": [
+        "A"
+      ]
+    },
+    {
+      "link_id": "beta",
+      "x": 1757,
+      "y": 357,
+      "required_links": [
+        "alpha",
+        "B"
+      ]
+    },
+    {
+      "link_id": "overhaul_73_record",
+      "x": 807,
+      "y": 403,
+      "required_links": [
+        "overhaul_73_generator"
+      ]
+    },
+    {
+      "link_id": "sector_73_validated",
+      "x": 1687,
+      "y": 232,
+      "required_links": [
+        "overhaul_73_record"
+      ]
+    }
+  ],
+  "routing_consoles": [
+    {
+      "id": "selector",
+      "route_id": "supply",
+      "x": 320,
+      "y": 357,
+      "a_signal": "A",
+      "b_signal": "B"
+    }
+  ],
+  "signal_inverters": [],
+  "npcs": [
+    {
+      "id": "kip",
+      "x": 782,
+      "y": 585,
+      "dialogue": [
+        "The Outer Substation. I signed the inspection sheet in pencil.",
+        "Start the generator to bring the circuit online.",
+        "Keep alpha and B live, then interact with the recorder to hold the reading."
+      ]
+    }
+  ],
+  "springs": [],
+  "dash_recharges": [
+    {
+      "id": "ring2",
+      "x": 572,
+      "y": 259
+    }
+  ],
+  "one_way_platforms": [
+    {
+      "id": "walk0",
+      "x": 530,
+      "y": 509,
+      "w": 70,
+      "h": 12
+    },
+    {
+      "id": "walk1",
+      "x": 490,
+      "y": 433,
+      "w": 70,
+      "h": 12
+    },
+    {
+      "id": "walk2",
+      "x": 530,
+      "y": 357,
+      "w": 70,
+      "h": 12
+    },
+    {
+      "id": "walk3",
+      "x": 1320,
+      "y": 442,
+      "w": 56,
+      "h": 12
+    },
+    {
+      "id": "walk4",
+      "x": 1978,
+      "y": 509,
+      "w": 70,
+      "h": 12
+    },
+    {
+      "id": "walk5",
+      "x": 1938,
+      "y": 433,
+      "w": 70,
+      "h": 12
+    },
+    {
+      "id": "walk6",
+      "x": 1978,
+      "y": 357,
+      "w": 70,
+      "h": 12
+    },
+    {
+      "id": "overhaul_step_73_0",
+      "x": 730,
+      "y": 525,
+      "w": 78,
+      "h": 12
+    },
+    {
+      "id": "overhaul_step_73_1",
+      "x": 835,
+      "y": 465,
+      "w": 78,
+      "h": 12
+    },
+    {
+      "id": "overhaul_step_73_2",
+      "x": 789,
+      "y": 403,
+      "w": 78,
+      "h": 12
+    },
+    {
+      "id": "validation_foot_73_0",
+      "x": 1754,
+      "y": 294,
+      "w": 78,
+      "h": 12
+    },
+    {
+      "id": "validation_foot_73_1",
+      "x": 1669,
+      "y": 232,
+      "w": 78,
+      "h": 12
+    }
+  ],
+  "dash_barriers": [],
+  "level_id": 73,
+  "width": 2138,
+  "height": 720,
+  "name": "Chamber 73 // The Outer Substation",
+  "abilities": {
+    "wall_jump": true,
+    "dash": true
+  },
+  "spawn": [
+    720,
+    539
+  ],
+  "exit": [
+    1756,
+    505
+  ],
+  "hint_route": [
+    "power",
+    "A",
+    "alpha",
+    "B",
+    "beta"
+  ],
+  "hint_notes": {
+    "power": [
+      "Start the generator to bring the circuit online.",
+      "Start the generator to bring the circuit online.",
+      "Start the generator to bring the circuit online."
+    ],
+    "A": [
+      "Set the supply selector to A.",
+      "Set the supply selector to A.",
+      "Set the supply selector to A."
+    ],
+    "alpha": [
+      "Keep A live, then interact with the recorder to hold the reading.",
+      "Keep A live, then interact with the recorder to hold the reading.",
+      "Keep A live, then interact with the recorder to hold the reading."
+    ],
+    "B": [
+      "Transfer the selector to B after recording the A-side reading.",
+      "Transfer the selector to B after recording the A-side reading.",
+      "Transfer the selector to B after recording the A-side reading."
+    ],
+    "beta": [
+      "Keep alpha and B live, then interact with the recorder to hold the reading.",
+      "Keep alpha and B live, then interact with the recorder to hold the reading.",
+      "Keep alpha and B live, then interact with the recorder to hold the reading."
+    ]
+  },
+  "solution_steps": [
+    "Start the generator to bring the circuit online.",
+    "Set the supply selector to A.",
+    "Keep A live, then interact with the recorder to hold the reading.",
+    "Transfer the selector to B after recording the A-side reading.",
+    "Keep alpha and B live, then interact with the recorder to hold the reading."
+  ],
+  "subtitle": "Start the generator to bring the circuit online.  //  SERVICE DETOUR: Restore the auxiliary feeder and latch a reading from the upper inspection platform.",
+  "chapter": 8,
+  "theme": "surface",
+  "topology": "Moonlit Busbar Yard",
+  "overhaul_version": 1,
+  "overhaul_design": {
+    "profile": "generator_relay",
+    "route": "right_switchback",
+    "actual_direction": 1,
+    "mandatory": true,
+    "service_platform_count": 3
+  },
+  "secondary_validation_1": {
+    "checkpoint": "beacon_73",
+    "extra_platforms": 2,
+    "signal": "sector_73_validated"
+  },
+  "side_challenge_policy": {
+    "campaign_blocking": false,
+    "optional_signals": [
+      "overhaul_73_record",
+      "sector_73_validated"
+    ],
+    "reason": "Not proven traversable in the Pygame engine; preserve main progression."
+  },
+  "architectural_overhaul_v2": {
+    "archetype": "Viaduct & Support Piers",
+    "chapter": 8,
+    "theme": "surface",
+    "original_tile_count": 13,
+    "final_tile_count": 16,
+    "thickened_decks": 0,
+    "added_piers": 0,
+    "added_corbels": 1,
+    "added_soffits": 0,
+    "added_buttresses": 2
+  }
+}

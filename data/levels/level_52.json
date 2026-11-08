@@ -1,0 +1,687 @@
+{
+  "tiles": [
+    [
+      0,
+      0,
+      36,
+      720
+    ],
+    [
+      3174,
+      0,
+      36,
+      720
+    ],
+    [
+      36,
+      0,
+      3138,
+      30
+    ],
+    [
+      150,
+      585,
+      390,
+      135
+    ],
+    [
+      700,
+      585,
+      340,
+      135
+    ],
+    [
+      1506,
+      585,
+      432,
+      135
+    ],
+    [
+      2098,
+      585,
+      362,
+      135
+    ],
+    [
+      2098,
+      369,
+      362,
+      23
+    ],
+    [
+      2620,
+      369,
+      390,
+      44
+    ],
+    [
+      2425,
+      568,
+      10,
+      17
+    ],
+    [
+      2757,
+      235,
+      155,
+      18
+    ],
+    [
+      2894,
+      253,
+      18,
+      116
+    ],
+    [
+      2576,
+      399,
+      14,
+      150
+    ],
+    [
+      2142,
+      392,
+      274,
+      22
+    ],
+    [
+      2664,
+      413,
+      302,
+      22
+    ],
+    [
+      156,
+      30,
+      120,
+      42
+    ],
+    [
+      176,
+      72,
+      80,
+      16
+    ],
+    [
+      516,
+      30,
+      96,
+      42
+    ],
+    [
+      536,
+      72,
+      56,
+      16
+    ],
+    [
+      876,
+      30,
+      120,
+      28
+    ],
+    [
+      896,
+      58,
+      80,
+      16
+    ],
+    [
+      1236,
+      30,
+      96,
+      56
+    ],
+    [
+      1256,
+      86,
+      56,
+      16
+    ],
+    [
+      1596,
+      30,
+      120,
+      42
+    ],
+    [
+      1616,
+      72,
+      80,
+      16
+    ],
+    [
+      1956,
+      30,
+      96,
+      42
+    ],
+    [
+      1976,
+      72,
+      56,
+      16
+    ],
+    [
+      2316,
+      30,
+      120,
+      28
+    ],
+    [
+      2336,
+      58,
+      80,
+      16
+    ],
+    [
+      2676,
+      30,
+      96,
+      56
+    ],
+    [
+      2696,
+      86,
+      56,
+      16
+    ],
+    [
+      36,
+      140,
+      40,
+      80
+    ],
+    [
+      3134,
+      180,
+      40,
+      80
+    ],
+    [
+      36,
+      380,
+      40,
+      64
+    ],
+    [
+      3134,
+      420,
+      40,
+      64
+    ],
+    [
+      329,
+      361,
+      32,
+      120
+    ]
+  ],
+  "ladders": [],
+  "crates": [
+    {
+      "id": "load",
+      "x": 2213,
+      "y": 549
+    }
+  ],
+  "plates": [
+    {
+      "link_id": "weight",
+      "x": 2377,
+      "y": 585
+    }
+  ],
+  "switches": [],
+  "doors": [
+    {
+      "id": "surface_lock",
+      "x": 2757,
+      "y": 253,
+      "w": 20,
+      "h": 116,
+      "required_links": [
+        "proof",
+        "power"
+      ]
+    }
+  ],
+  "moving_platforms": [],
+  "conveyors": [],
+  "wind_zones": [],
+  "water_zones": [],
+  "valves": [],
+  "generators": [
+    {
+      "link_id": "power",
+      "x": 1722,
+      "y": 585
+    }
+  ],
+  "cables": [
+    {
+      "link_id": "power",
+      "points": [
+        [
+          1731,
+          573
+        ],
+        [
+          1731,
+          609
+        ],
+        [
+          2295,
+          609
+        ],
+        [
+          2295,
+          359
+        ]
+      ]
+    },
+    {
+      "link_id": "weight",
+      "points": [
+        [
+          2386,
+          573
+        ],
+        [
+          2386,
+          616
+        ],
+        [
+          2295,
+          616
+        ],
+        [
+          2295,
+          359
+        ]
+      ]
+    },
+    {
+      "link_id": "proof",
+      "points": [
+        [
+          2279,
+          357
+        ],
+        [
+          2279,
+          391
+        ],
+        [
+          2765,
+          391
+        ],
+        [
+          2765,
+          313
+        ]
+      ]
+    },
+    {
+      "link_id": "power",
+      "points": [
+        [
+          1722,
+          573
+        ],
+        [
+          1722,
+          614
+        ],
+        [
+          2765,
+          614
+        ],
+        [
+          2765,
+          313
+        ]
+      ]
+    }
+  ],
+  "mirrors": [],
+  "crushers": [
+    {
+      "id": "ram1",
+      "x": 835,
+      "y": 370,
+      "w": 74,
+      "h": 42,
+      "travel": 172,
+      "period": 2.9,
+      "disabled_by": [
+        "power"
+      ]
+    },
+    {
+      "id": "hammer1",
+      "x": 1331,
+      "y": 407,
+      "w": 54,
+      "h": 33,
+      "travel": 178,
+      "period": 3.2,
+      "disabled_by": [
+        "power"
+      ]
+    }
+  ],
+  "steam_vents": [
+    {
+      "id": "seam1",
+      "x": 1255,
+      "y": 500,
+      "w": 36,
+      "h": 134,
+      "period": 3.1,
+      "duty_cycle": 0.43,
+      "disabled_by": []
+    },
+    {
+      "id": "seam4",
+      "x": 2522,
+      "y": 284,
+      "w": 36,
+      "h": 134,
+      "period": 3.1,
+      "duty_cycle": 0.43,
+      "disabled_by": []
+    }
+  ],
+  "collapsing_platforms": [],
+  "checkpoints": [
+    {
+      "id": "beacon_52",
+      "x": 2395,
+      "y": 369
+    }
+  ],
+  "spikes": [],
+  "acids": [
+    {
+      "x": 36,
+      "y": 645,
+      "w": 114,
+      "h": 75
+    },
+    {
+      "x": 540,
+      "y": 645,
+      "w": 160,
+      "h": 75
+    },
+    {
+      "x": 1040,
+      "y": 645,
+      "w": 466,
+      "h": 75
+    },
+    {
+      "x": 1938,
+      "y": 645,
+      "w": 160,
+      "h": 75
+    },
+    {
+      "x": 2460,
+      "y": 645,
+      "w": 714,
+      "h": 75
+    }
+  ],
+  "lasers": [],
+  "optical_beams": [],
+  "sequences": [],
+  "collectibles": [
+    {
+      "id": "log_52",
+      "x": 1548,
+      "y": 553,
+      "title": "The Stamping Line / Shift Notes",
+      "text": "The Stamping Line. Check the signal lines before you leave the service deck."
+    },
+    {
+      "id": "field_trace_52",
+      "x": 469,
+      "y": 509,
+      "title": "FIELD TRACE 52 / DUAL-PRESS POWER CORRIDOR",
+      "text": "ECHO-7 field diagnostics: Place two presses with different causal roles: one is disabled for traversal while the other must be proven from a remote control platform.",
+      "required_links": [
+        "proof"
+      ],
+      "optional_investigation": true
+    },
+    {
+      "id": "service_challenge_52",
+      "x": 2423,
+      "y": 327,
+      "title": "Optional Diagnostics 52",
+      "text": "Optional auxiliary service record recovered. This archive is no longer linked to a redundant side circuit and does not gate the exit.",
+      "required_links": [],
+      "optional_investigation": true
+    }
+  ],
+  "decorations": [
+    {
+      "type": "warning_stripe",
+      "x": 2110,
+      "y": 381,
+      "w": 120
+    },
+    {
+      "type": "warning_stripe",
+      "x": 2632,
+      "y": 381,
+      "w": 120
+    },
+    {
+      "type": "monitor",
+      "x": 710,
+      "y": 485,
+      "text": "PRESS LINE"
+    },
+    {
+      "type": "monitor",
+      "x": 1692,
+      "y": 485,
+      "text": "ENERGIZE"
+    },
+    {
+      "type": "monitor",
+      "x": 2314,
+      "y": 493,
+      "text": "RECEIVING SCALE"
+    },
+    {
+      "type": "monitor",
+      "x": 2249,
+      "y": 269,
+      "text": "HOLD POWER + WEIGHT"
+    },
+    {
+      "type": "monitor",
+      "x": 2780,
+      "y": 195,
+      "text": "EXIT LOCK"
+    },
+    {
+      "type": "monitor",
+      "x": 482,
+      "y": 471,
+      "text": "FORENSIC TRACE 52"
+    }
+  ],
+  "latching_relays": [
+    {
+      "link_id": "proof",
+      "x": 2279,
+      "y": 369,
+      "required_links": [
+        "power",
+        "weight"
+      ]
+    }
+  ],
+  "routing_consoles": [],
+  "signal_inverters": [],
+  "npcs": [
+    {
+      "id": "kip",
+      "x": 250,
+      "y": 585,
+      "dialogue": [
+        "The Stamping Line. Please count the clicks. I keep losing count.",
+        "Start the generator to bring the circuit online.",
+        "Keep power and weight live, then interact with the recorder to hold the reading."
+      ]
+    }
+  ],
+  "springs": [],
+  "dash_recharges": [
+    {
+      "id": "ring2",
+      "x": 2004,
+      "y": 487
+    }
+  ],
+  "one_way_platforms": [
+    {
+      "id": "walk0",
+      "x": 1157,
+      "y": 547,
+      "w": 68,
+      "h": 12
+    },
+    {
+      "id": "walk1",
+      "x": 1325,
+      "y": 619,
+      "w": 68,
+      "h": 12
+    },
+    {
+      "id": "walk2",
+      "x": 2500,
+      "y": 513,
+      "w": 70,
+      "h": 12
+    },
+    {
+      "id": "walk3",
+      "x": 2460,
+      "y": 441,
+      "w": 70,
+      "h": 12
+    }
+  ],
+  "dash_barriers": [],
+  "level_id": 52,
+  "width": 3210,
+  "height": 720,
+  "name": "Chamber 52 // The Stamping Line",
+  "abilities": {
+    "wall_jump": true,
+    "dash": true
+  },
+  "spawn": [
+    188,
+    539
+  ],
+  "exit": [
+    2814,
+    289
+  ],
+  "hint_route": [
+    "power",
+    "weight",
+    "proof"
+  ],
+  "hint_notes": {
+    "power": [
+      "Start the generator to bring the circuit online.",
+      "Start the generator to bring the circuit online.",
+      "Start the generator to bring the circuit online."
+    ],
+    "weight": [
+      "Move the cargo right until it rests on the receiving scale.",
+      "Move the cargo right until it rests on the receiving scale.",
+      "Move the cargo right until it rests on the receiving scale."
+    ],
+    "proof": [
+      "Keep power and weight live, then interact with the recorder to hold the reading.",
+      "Keep power and weight live, then interact with the recorder to hold the reading.",
+      "Keep power and weight live, then interact with the recorder to hold the reading."
+    ]
+  },
+  "solution_steps": [
+    "Start the generator to bring the circuit online.",
+    "Move the cargo right until it rests on the receiving scale.",
+    "Keep power and weight live, then interact with the recorder to hold the reading."
+  ],
+  "subtitle": "Start the generator to bring the circuit online.",
+  "chapter": 6,
+  "theme": "furnace",
+  "topology": "Dual-Press Power Corridor",
+  "overhaul_version": 1,
+  "overhaul_design": {
+    "profile": "relay_bus",
+    "route": "left_rise",
+    "actual_direction": 1,
+    "mandatory": false,
+    "service_platform_count": 0,
+    "retired_by_cleanup": true
+  },
+  "secondary_validation_1": {
+    "checkpoint": "beacon_52",
+    "extra_platforms": 0,
+    "signal": "sector_52_validated",
+    "retired_by_cleanup": true
+  },
+  "side_challenge_policy": {
+    "campaign_blocking": false,
+    "optional_signals": [],
+    "reason": "Deprecated optional side circuit removed; service record remains accessible."
+  },
+  "architectural_overhaul_v2": {
+    "archetype": "Slag Crucible & Crusher Gallery",
+    "chapter": 6,
+    "theme": "furnace",
+    "original_tile_count": 13,
+    "final_tile_count": 36,
+    "thickened_decks": 1,
+    "added_piers": 0,
+    "added_corbels": 2,
+    "added_soffits": 8,
+    "added_buttresses": 4,
+    "tiles_before_cleanup_pass": 35,
+    "removed_legacy_platforms": 5,
+    "removed_legacy_devices": 4,
+    "added_partition_walls": 1,
+    "added_grounded_piers": 0,
+    "added_stepped_terraces": 0
+  },
+  "cleanup_v3_audit": {
+    "level": 52,
+    "chapter": 6,
+    "theme": "furnace",
+    "name": "Chamber 52 // The Stamping Line",
+    "archetype": "Slag Crucible & Crusher Gallery",
+    "orig_backup_tiles": 13,
+    "final_tiles": 36,
+    "removed_platforms": 5,
+    "retained_platforms": 4,
+    "removed_devices": 4,
+    "added_walls": 1,
+    "added_piers": 0,
+    "added_terraces": 0,
+    "gate_links": [
+      "proof",
+      "power"
+    ]
+  }
+}

@@ -1,0 +1,542 @@
+{
+  "tiles": [
+    [
+      0,
+      0,
+      36,
+      742
+    ],
+    [
+      2622,
+      0,
+      36,
+      742
+    ],
+    [
+      36,
+      0,
+      2586,
+      30
+    ],
+    [
+      150,
+      607,
+      362,
+      135
+    ],
+    [
+      728,
+      607,
+      390,
+      135
+    ],
+    [
+      1334,
+      607,
+      340,
+      135
+    ],
+    [
+      1334,
+      355,
+      340,
+      23
+    ],
+    [
+      2026,
+      355,
+      432,
+      40
+    ],
+    [
+      2184,
+      221,
+      155,
+      18
+    ],
+    [
+      2321,
+      239,
+      18,
+      116
+    ],
+    [
+      1790,
+      385,
+      14,
+      186
+    ],
+    [
+      1819,
+      393,
+      62,
+      24
+    ],
+    [
+      1386,
+      378,
+      236,
+      22
+    ],
+    [
+      2078,
+      395,
+      328,
+      22
+    ],
+    [
+      36,
+      140,
+      28,
+      71
+    ],
+    [
+      2594,
+      180,
+      28,
+      71
+    ],
+    [
+      36,
+      380,
+      28,
+      87
+    ],
+    [
+      2594,
+      420,
+      28,
+      87
+    ]
+  ],
+  "ladders": [],
+  "crates": [],
+  "plates": [],
+  "switches": [],
+  "doors": [
+    {
+      "id": "surface_lock",
+      "x": 2184,
+      "y": 239,
+      "w": 20,
+      "h": 116,
+      "required_links": [
+        "alpha",
+        "power"
+      ]
+    }
+  ],
+  "moving_platforms": [],
+  "conveyors": [],
+  "wind_zones": [],
+  "water_zones": [],
+  "valves": [
+    {
+      "link_id": "overhaul_71_valve",
+      "x": 397,
+      "y": 423
+    }
+  ],
+  "generators": [
+    {
+      "link_id": "power",
+      "x": 923,
+      "y": 607
+    }
+  ],
+  "cables": [
+    {
+      "link_id": "power",
+      "points": [
+        [
+          932,
+          595
+        ],
+        [
+          932,
+          631
+        ],
+        [
+          1520,
+          631
+        ],
+        [
+          1520,
+          345
+        ]
+      ]
+    },
+    {
+      "link_id": "alpha",
+      "points": [
+        [
+          1504,
+          343
+        ],
+        [
+          1504,
+          377
+        ],
+        [
+          2192,
+          377
+        ],
+        [
+          2192,
+          299
+        ]
+      ]
+    },
+    {
+      "link_id": "power",
+      "points": [
+        [
+          923,
+          595
+        ],
+        [
+          923,
+          636
+        ],
+        [
+          2192,
+          636
+        ],
+        [
+          2192,
+          299
+        ]
+      ]
+    }
+  ],
+  "mirrors": [],
+  "crushers": [],
+  "steam_vents": [
+    {
+      "id": "seam0",
+      "x": 602,
+      "y": 522,
+      "w": 36,
+      "h": 134,
+      "period": 3.1,
+      "duty_cycle": 0.43,
+      "disabled_by": []
+    },
+    {
+      "id": "seam3",
+      "x": 1832,
+      "y": 270,
+      "w": 36,
+      "h": 134,
+      "period": 3.1,
+      "duty_cycle": 0.43,
+      "disabled_by": []
+    }
+  ],
+  "collapsing_platforms": [],
+  "checkpoints": [
+    {
+      "id": "beacon_71",
+      "x": 1609,
+      "y": 355
+    }
+  ],
+  "spikes": [],
+  "acids": [
+    {
+      "x": 36,
+      "y": 667,
+      "w": 114,
+      "h": 75
+    },
+    {
+      "x": 512,
+      "y": 667,
+      "w": 216,
+      "h": 75
+    },
+    {
+      "x": 1118,
+      "y": 667,
+      "w": 216,
+      "h": 75
+    },
+    {
+      "x": 1674,
+      "y": 667,
+      "w": 948,
+      "h": 75
+    }
+  ],
+  "lasers": [],
+  "optical_beams": [],
+  "sequences": [],
+  "collectibles": [
+    {
+      "id": "log_71",
+      "x": 770,
+      "y": 575,
+      "title": "Perimeter Breach / Shift Notes",
+      "text": "Perimeter Breach. Check the signal lines before you leave the service deck."
+    },
+    {
+      "id": "field_trace_71",
+      "x": 446,
+      "y": 531,
+      "title": "FIELD TRACE 71 / MOONLIT OUTFALL TERRACE",
+      "text": "ECHO-7 field diagnostics: Let the player restore a surviving exterior feeder and inspect an apparently irreversible seal crossing.",
+      "required_links": [
+        "alpha"
+      ],
+      "optional_investigation": true
+    },
+    {
+      "id": "service_challenge_71",
+      "x": 1435,
+      "y": 188,
+      "title": "Optional Diagnostics 71",
+      "text": "Optional master circuit cleared. The standard exit never depends on this side challenge.",
+      "required_links": [
+        "sector_71_validated"
+      ],
+      "optional_investigation": true
+    }
+  ],
+  "decorations": [
+    {
+      "type": "warning_stripe",
+      "x": 1346,
+      "y": 367,
+      "w": 120
+    },
+    {
+      "type": "warning_stripe",
+      "x": 2038,
+      "y": 367,
+      "w": 120
+    },
+    {
+      "type": "monitor",
+      "x": 893,
+      "y": 507,
+      "text": "ENERGIZE"
+    },
+    {
+      "type": "monitor",
+      "x": 1460,
+      "y": 475,
+      "text": "DASH SEAL"
+    },
+    {
+      "type": "monitor",
+      "x": 1474,
+      "y": 255,
+      "text": "HOLD POWER"
+    },
+    {
+      "type": "monitor",
+      "x": 2207,
+      "y": 181,
+      "text": "EXIT LOCK"
+    },
+    {
+      "type": "monitor",
+      "x": 459,
+      "y": 493,
+      "text": "FORENSIC TRACE 71"
+    },
+    {
+      "type": "monitor",
+      "x": 217,
+      "y": 443,
+      "text": "ACCESS / 71"
+    },
+    {
+      "type": "warning_stripe",
+      "x": 379,
+      "y": 435,
+      "w": 78
+    }
+  ],
+  "latching_relays": [
+    {
+      "link_id": "alpha",
+      "x": 1504,
+      "y": 355,
+      "required_links": [
+        "power"
+      ]
+    },
+    {
+      "link_id": "sector_71_validated",
+      "x": 1423,
+      "y": 230,
+      "required_links": [
+        "overhaul_71_valve"
+      ]
+    }
+  ],
+  "routing_consoles": [],
+  "signal_inverters": [],
+  "npcs": [
+    {
+      "id": "kip",
+      "x": 250,
+      "y": 607,
+      "dialogue": [
+        "Perimeter Breach. Maintenance says the gap is within budget.",
+        "Start the generator to bring the circuit online.",
+        "Keep power live, then interact with the recorder to hold the reading."
+      ]
+    }
+  ],
+  "springs": [],
+  "dash_recharges": [
+    {
+      "id": "ring1",
+      "x": 1212,
+      "y": 509
+    }
+  ],
+  "one_way_platforms": [
+    {
+      "id": "walk0",
+      "x": 1714,
+      "y": 523,
+      "w": 70,
+      "h": 12
+    },
+    {
+      "id": "walk1",
+      "x": 1674,
+      "y": 439,
+      "w": 70,
+      "h": 12
+    },
+    {
+      "id": "walk2",
+      "x": 1714,
+      "y": 355,
+      "w": 70,
+      "h": 12
+    },
+    {
+      "id": "overhaul_step_71_0",
+      "x": 215,
+      "y": 546,
+      "w": 78,
+      "h": 12
+    },
+    {
+      "id": "overhaul_step_71_1",
+      "x": 298,
+      "y": 487,
+      "w": 78,
+      "h": 12
+    },
+    {
+      "id": "overhaul_step_71_2",
+      "x": 379,
+      "y": 423,
+      "w": 78,
+      "h": 12
+    },
+    {
+      "id": "validation_foot_71_0",
+      "x": 1490,
+      "y": 292,
+      "w": 78,
+      "h": 12
+    },
+    {
+      "id": "validation_foot_71_1",
+      "x": 1405,
+      "y": 230,
+      "w": 78,
+      "h": 12
+    }
+  ],
+  "dash_barriers": [
+    {
+      "id": "seal",
+      "x": 1504,
+      "y": 519,
+      "w": 24,
+      "h": 88
+    }
+  ],
+  "level_id": 71,
+  "width": 2658,
+  "height": 742,
+  "name": "Chamber 71 // Perimeter Breach",
+  "abilities": {
+    "wall_jump": true,
+    "dash": true
+  },
+  "spawn": [
+    188,
+    561
+  ],
+  "exit": [
+    2241,
+    275
+  ],
+  "hint_route": [
+    "power",
+    "alpha"
+  ],
+  "hint_notes": {
+    "power": [
+      "Start the generator to bring the circuit online.",
+      "Start the generator to bring the circuit online.",
+      "Start the generator to bring the circuit online."
+    ],
+    "alpha": [
+      "Keep power live, then interact with the recorder to hold the reading.",
+      "Keep power live, then interact with the recorder to hold the reading.",
+      "Keep power live, then interact with the recorder to hold the reading."
+    ]
+  },
+  "solution_steps": [
+    "Start the generator to bring the circuit online.",
+    "Keep power live, then interact with the recorder to hold the reading.",
+    "Find the upper service handwheel and restore the isolated circuit."
+  ],
+  "subtitle": "Start the generator to bring the circuit online.  //  SERVICE DETOUR: Find the upper service handwheel and restore the isolated circuit.",
+  "chapter": 8,
+  "theme": "surface",
+  "topology": "Moonlit Outfall Terrace",
+  "overhaul_version": 1,
+  "overhaul_design": {
+    "profile": "valve",
+    "route": "right_rise",
+    "actual_direction": 1,
+    "mandatory": true,
+    "service_platform_count": 3
+  },
+  "secondary_validation_1": {
+    "checkpoint": "beacon_71",
+    "extra_platforms": 2,
+    "signal": "sector_71_validated"
+  },
+  "side_challenge_policy": {
+    "campaign_blocking": false,
+    "optional_signals": [
+      "overhaul_71_valve",
+      "sector_71_validated"
+    ],
+    "reason": "Not proven traversable in the Pygame engine; preserve main progression."
+  },
+  "architectural_overhaul_v2": {
+    "archetype": "Sunken Caisson & Overhangs",
+    "chapter": 8,
+    "theme": "surface",
+    "original_tile_count": 12,
+    "final_tile_count": 18,
+    "thickened_decks": 1,
+    "added_piers": 0,
+    "added_corbels": 2,
+    "added_soffits": 0,
+    "added_buttresses": 4
+  }
+}

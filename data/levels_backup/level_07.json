@@ -1,0 +1,369 @@
+{
+  "level_id": 7,
+  "chapter": 1,
+  "theme": "awakening",
+  "name": "Chamber 07 // Counterbalance",
+  "subtitle": "Use the first counterweight twice. Its lift can carry a stored load reading.",
+  "width": 1690,
+  "height": 960,
+  "spawn": [
+    80,
+    779
+  ],
+  "exit": [
+    72,
+    335
+  ],
+  "tiles": [
+    [
+      0,
+      0,
+      40,
+      960
+    ],
+    [
+      40,
+      0,
+      1610,
+      32
+    ],
+    [
+      1650,
+      0,
+      40,
+      960
+    ],
+    [
+      40,
+      825,
+      1610,
+      135
+    ],
+    [
+      40,
+      295,
+      152,
+      20
+    ],
+    [
+      40,
+      415,
+      152,
+      20
+    ]
+  ],
+  "ladders": [],
+  "crates": [
+    {
+      "id": "weight",
+      "x": 390,
+      "y": 789
+    }
+  ],
+  "plates": [
+    {
+      "link_id": "plate_counter_1",
+      "x": 650,
+      "y": 825
+    },
+    {
+      "link_id": "plate_counter_2",
+      "x": 1250,
+      "y": 825
+    }
+  ],
+  "switches": [],
+  "doors": [
+    {
+      "id": "d7_exit",
+      "x": 168,
+      "y": 315,
+      "w": 24,
+      "h": 100,
+      "required_links": [
+        "relay_7_counter",
+        "plate_counter_2"
+      ],
+      "logic": "ALL"
+    }
+  ],
+  "moving_platforms": [
+    {
+      "id": "mp7_counter",
+      "x": 810,
+      "y": 805,
+      "w": 112,
+      "h": 18,
+      "end_x": 810,
+      "end_y": 510,
+      "speed": 110,
+      "active_by_default": false,
+      "logic": "ANY",
+      "required_links": [
+        "plate_counter_1",
+        "relay_7_counter"
+      ]
+    },
+    {
+      "id": "upper_car",
+      "x": 665,
+      "y": 505,
+      "w": 90,
+      "h": 18,
+      "end_x": 516,
+      "end_y": 420,
+      "speed": 90,
+      "active_by_default": false,
+      "logic": "ALL",
+      "required_links": [
+        "plate_counter_2"
+      ]
+    }
+  ],
+  "conveyors": [],
+  "wind_zones": [],
+  "water_zones": [],
+  "valves": [],
+  "generators": [],
+  "cables": [
+    {
+      "link_id": "relay_7_counter",
+      "points": [
+        [
+          1122,
+          493
+        ],
+        [
+          1122,
+          547
+        ],
+        [
+          176,
+          547
+        ],
+        [
+          176,
+          365
+        ]
+      ]
+    },
+    {
+      "link_id": "plate_counter_2",
+      "points": [
+        [
+          1262,
+          811
+        ],
+        [
+          1262,
+          871
+        ],
+        [
+          176,
+          871
+        ],
+        [
+          176,
+          365
+        ]
+      ]
+    },
+    {
+      "link_id": "plate_counter_1",
+      "points": [
+        [
+          662,
+          811
+        ],
+        [
+          662,
+          865
+        ],
+        [
+          818,
+          865
+        ],
+        [
+          818,
+          797
+        ]
+      ]
+    },
+    {
+      "link_id": "relay_7_counter",
+      "points": [
+        [
+          1122,
+          493
+        ],
+        [
+          1122,
+          857
+        ],
+        [
+          818,
+          857
+        ],
+        [
+          818,
+          797
+        ]
+      ]
+    },
+    {
+      "link_id": "plate_counter_2",
+      "points": [
+        [
+          1262,
+          811
+        ],
+        [
+          1262,
+          865
+        ],
+        [
+          673,
+          865
+        ],
+        [
+          673,
+          497
+        ]
+      ]
+    },
+    {
+      "link_id": "plate_counter_1",
+      "points": [
+        [
+          662,
+          811
+        ],
+        [
+          662,
+          865
+        ],
+        [
+          1118,
+          865
+        ],
+        [
+          1118,
+          499
+        ]
+      ]
+    }
+  ],
+  "mirrors": [],
+  "crushers": [],
+  "steam_vents": [],
+  "collapsing_platforms": [],
+  "checkpoints": [
+    {
+      "id": "cp7_1",
+      "x": 1400,
+      "y": 825
+    }
+  ],
+  "spikes": [],
+  "acids": [],
+  "lasers": [],
+  "optical_beams": [],
+  "sequences": [],
+  "collectibles": [
+    {
+      "id": "log_07",
+      "x": 1340,
+      "y": 475,
+      "title": "Chief Engineer's Note",
+      "text": "The counterweight bridges hold steady even when primary power fluctuates."
+    }
+  ],
+  "decorations": [
+    {
+      "type": "monitor",
+      "x": 624,
+      "y": 736,
+      "text": "WEIGH"
+    },
+    {
+      "type": "monitor",
+      "x": 1224,
+      "y": 736,
+      "text": "TRANSFER"
+    },
+    {
+      "type": "monitor",
+      "x": 1084,
+      "y": 418,
+      "text": "HOLD WEIGHT"
+    }
+  ],
+  "solution_steps": [
+    "Weight the first scale, ride up and latch the reading on the east balcony.",
+    "Return to the freight floor. Move the same weight east to power the second car, then traverse west above the shaft."
+  ],
+  "hint_route": [
+    "relay_7_counter",
+    "plate_counter_2"
+  ],
+  "latching_relays": [
+    {
+      "link_id": "relay_7_counter",
+      "x": 1110,
+      "y": 507,
+      "required_links": [
+        "plate_counter_1"
+      ]
+    }
+  ],
+  "hint_notes": {
+    "relay_7_counter": [
+      "Use the first counterweight twice. Its lift can carry a stored load reading.",
+      "Weight the first scale, ride up and latch the reading on the east balcony.",
+      "Return to the freight floor. Move the same weight east to power the second car, then traverse west above the shaft."
+    ],
+    "plate_counter_2": [
+      "Use the first counterweight twice. Its lift can carry a stored load reading.",
+      "Weight the first scale, ride up and latch the reading on the east balcony.",
+      "Return to the freight floor. Move the same weight east to power the second car, then traverse west above the shaft."
+    ]
+  },
+  "npcs": [
+    {
+      "id": "kip",
+      "x": 150,
+      "y": 825
+    }
+  ],
+  "abilities": {
+    "wall_jump": true,
+    "dash": false
+  },
+  "springs": [],
+  "dash_recharges": [],
+  "one_way_platforms": [
+    {
+      "id": "deck982_507",
+      "x": 982,
+      "y": 507,
+      "w": 450,
+      "h": 14
+    },
+    {
+      "id": "deck193_415",
+      "x": 193,
+      "y": 415,
+      "w": 270,
+      "h": 14
+    },
+    {
+      "id": "deck763_505",
+      "x": 763,
+      "y": 505,
+      "w": 44,
+      "h": 14
+    }
+  ],
+  "dash_barriers": [],
+  "routing_consoles": []
+}

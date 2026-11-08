@@ -1,0 +1,659 @@
+{
+  "tiles": [
+    [
+      0,
+      0,
+      36,
+      922
+    ],
+    [
+      2724,
+      0,
+      36,
+      922
+    ],
+    [
+      36,
+      0,
+      2688,
+      30
+    ],
+    [
+      150,
+      787,
+      390,
+      135
+    ],
+    [
+      720,
+      787,
+      340,
+      135
+    ],
+    [
+      720,
+      571,
+      340,
+      23
+    ],
+    [
+      720,
+      355,
+      340,
+      23
+    ],
+    [
+      1586,
+      355,
+      432,
+      23
+    ],
+    [
+      1586,
+      571,
+      432,
+      23
+    ],
+    [
+      2198,
+      571,
+      362,
+      23
+    ],
+    [
+      2321,
+      437,
+      155,
+      18
+    ],
+    [
+      2458,
+      455,
+      18,
+      116
+    ],
+    [
+      1176,
+      601,
+      14,
+      150
+    ],
+    [
+      2134,
+      385,
+      14,
+      150
+    ],
+    [
+      764,
+      594,
+      252,
+      22
+    ],
+    [
+      764,
+      378,
+      252,
+      22
+    ],
+    [
+      1610,
+      378,
+      44,
+      56
+    ],
+    [
+      1630,
+      594,
+      344,
+      22
+    ],
+    [
+      2242,
+      594,
+      274,
+      22
+    ],
+    [
+      36,
+      140,
+      40,
+      72
+    ],
+    [
+      2684,
+      180,
+      40,
+      72
+    ],
+    [
+      36,
+      380,
+      40,
+      88
+    ],
+    [
+      2684,
+      420,
+      40,
+      88
+    ],
+    [
+      36,
+      620,
+      40,
+      72
+    ],
+    [
+      2684,
+      660,
+      40,
+      72
+    ],
+    [
+      329,
+      563,
+      32,
+      120
+    ],
+    [
+      788,
+      400,
+      36,
+      69
+    ]
+  ],
+  "ladders": [],
+  "crates": [],
+  "plates": [],
+  "switches": [
+    {
+      "link_id": "timer",
+      "x": 1802,
+      "y": 571,
+      "mode": "timed",
+      "duration": 19
+    }
+  ],
+  "doors": [
+    {
+      "id": "surface_lock",
+      "x": 2321,
+      "y": 455,
+      "w": 20,
+      "h": 116,
+      "required_links": [
+        "alpha",
+        "valve",
+        "timer"
+      ]
+    }
+  ],
+  "moving_platforms": [
+    {
+      "id": "car0",
+      "x": 2023,
+      "y": 547,
+      "w": 65,
+      "h": 16,
+      "end_x": 2128,
+      "end_y": 505,
+      "speed": 128,
+      "active_by_default": true,
+      "required_links": []
+    }
+  ],
+  "conveyors": [],
+  "wind_zones": [
+    {
+      "id": "column",
+      "x": 1044,
+      "y": 220,
+      "w": 104,
+      "h": 351,
+      "vx": 0,
+      "vy": -2400,
+      "controlled_by": "valve",
+      "active_by_default": false
+    }
+  ],
+  "water_zones": [],
+  "valves": [
+    {
+      "link_id": "valve",
+      "x": 890,
+      "y": 787
+    }
+  ],
+  "generators": [],
+  "cables": [
+    {
+      "link_id": "valve",
+      "points": [
+        [
+          899,
+          775
+        ],
+        [
+          899,
+          811
+        ],
+        [
+          906,
+          811
+        ],
+        [
+          906,
+          345
+        ]
+      ]
+    },
+    {
+      "link_id": "alpha",
+      "points": [
+        [
+          890,
+          343
+        ],
+        [
+          890,
+          537
+        ],
+        [
+          2329,
+          537
+        ],
+        [
+          2329,
+          515
+        ]
+      ]
+    },
+    {
+      "link_id": "valve",
+      "points": [
+        [
+          890,
+          775
+        ],
+        [
+          890,
+          816
+        ],
+        [
+          2329,
+          816
+        ],
+        [
+          2329,
+          515
+        ]
+      ]
+    },
+    {
+      "link_id": "timer",
+      "points": [
+        [
+          1802,
+          559
+        ],
+        [
+          1802,
+          607
+        ],
+        [
+          2329,
+          607
+        ],
+        [
+          2329,
+          515
+        ]
+      ]
+    }
+  ],
+  "mirrors": [],
+  "crushers": [],
+  "steam_vents": [],
+  "collapsing_platforms": [
+    {
+      "id": "walk0",
+      "x": 1100,
+      "y": 715,
+      "w": 70,
+      "h": 12,
+      "delay": 0.48,
+      "respawn": 2.4
+    },
+    {
+      "id": "walk2",
+      "x": 1100,
+      "y": 571,
+      "w": 70,
+      "h": 12,
+      "delay": 0.48,
+      "respawn": 2.4
+    },
+    {
+      "id": "walk4",
+      "x": 2058,
+      "y": 499,
+      "w": 70,
+      "h": 12,
+      "delay": 0.48,
+      "respawn": 2.4
+    },
+    {
+      "id": "walk6",
+      "x": 2058,
+      "y": 355,
+      "w": 70,
+      "h": 12,
+      "delay": 0.48,
+      "respawn": 2.4
+    }
+  ],
+  "checkpoints": [
+    {
+      "id": "beacon_76",
+      "x": 1953,
+      "y": 571
+    }
+  ],
+  "spikes": [],
+  "acids": [
+    {
+      "x": 36,
+      "y": 847,
+      "w": 114,
+      "h": 75
+    },
+    {
+      "x": 540,
+      "y": 847,
+      "w": 180,
+      "h": 75
+    },
+    {
+      "x": 1060,
+      "y": 847,
+      "w": 1664,
+      "h": 75
+    }
+  ],
+  "lasers": [],
+  "optical_beams": [],
+  "sequences": [],
+  "collectibles": [
+    {
+      "id": "log_76",
+      "x": 762,
+      "y": 755,
+      "title": "The Storm Trench / Shift Notes",
+      "text": "The Storm Trench. Check the signal lines before you leave the service deck."
+    },
+    {
+      "id": "field_trace_76",
+      "x": 469,
+      "y": 711,
+      "title": "FIELD TRACE 76 / WIND-SWEPT BREACH SPAN",
+      "text": "ECHO-7 field diagnostics: Present a readable airflow routing problem and a later dash seal; the player must store a valve reading before committing.",
+      "required_links": [
+        "alpha"
+      ],
+      "optional_investigation": true
+    },
+    {
+      "id": "service_challenge_76",
+      "x": 1981,
+      "y": 529,
+      "title": "Optional Diagnostics 76",
+      "text": "Optional auxiliary service record recovered. This archive is no longer linked to a redundant side circuit and does not gate the exit.",
+      "required_links": [],
+      "optional_investigation": true
+    }
+  ],
+  "decorations": [
+    {
+      "type": "warning_stripe",
+      "x": 732,
+      "y": 583,
+      "w": 120
+    },
+    {
+      "type": "warning_stripe",
+      "x": 732,
+      "y": 367,
+      "w": 120
+    },
+    {
+      "type": "warning_stripe",
+      "x": 1598,
+      "y": 367,
+      "w": 120
+    },
+    {
+      "type": "warning_stripe",
+      "x": 1598,
+      "y": 583,
+      "w": 120
+    },
+    {
+      "type": "warning_stripe",
+      "x": 2210,
+      "y": 583,
+      "w": 120
+    },
+    {
+      "type": "monitor",
+      "x": 842,
+      "y": 695,
+      "text": "ISOLATE"
+    },
+    {
+      "type": "monitor",
+      "x": 732,
+      "y": 477,
+      "text": "EXHAUST"
+    },
+    {
+      "type": "monitor",
+      "x": 860,
+      "y": 255,
+      "text": "HOLD VALVE"
+    },
+    {
+      "type": "monitor",
+      "x": 1758,
+      "y": 223,
+      "text": "DASH SEAL"
+    },
+    {
+      "type": "monitor",
+      "x": 1770,
+      "y": 478,
+      "text": "ESCAPE 19s"
+    },
+    {
+      "type": "monitor",
+      "x": 2344,
+      "y": 397,
+      "text": "EXIT LOCK"
+    },
+    {
+      "type": "monitor",
+      "x": 482,
+      "y": 673,
+      "text": "FORENSIC TRACE 76"
+    }
+  ],
+  "latching_relays": [
+    {
+      "link_id": "alpha",
+      "x": 890,
+      "y": 355,
+      "required_links": [
+        "valve"
+      ]
+    }
+  ],
+  "routing_consoles": [],
+  "signal_inverters": [],
+  "npcs": [
+    {
+      "id": "kip",
+      "x": 250,
+      "y": 787,
+      "dialogue": [
+        "The Storm Trench. Please count the clicks. I keep losing count.",
+        "Turn the handwheel and watch which machinery changes.",
+        "Start the clock after the other lock lights are green."
+      ]
+    }
+  ],
+  "springs": [],
+  "dash_recharges": [
+    {
+      "id": "span_charge3",
+      "x": 1311,
+      "y": 289
+    }
+  ],
+  "one_way_platforms": [
+    {
+      "id": "walk1",
+      "x": 1060,
+      "y": 643,
+      "w": 70,
+      "h": 12
+    },
+    {
+      "id": "walk3",
+      "x": 1293,
+      "y": 403,
+      "w": 60,
+      "h": 12
+    },
+    {
+      "id": "walk5",
+      "x": 2018,
+      "y": 427,
+      "w": 70,
+      "h": 12
+    }
+  ],
+  "dash_barriers": [
+    {
+      "id": "seal",
+      "x": 1802,
+      "y": 267,
+      "w": 24,
+      "h": 88
+    }
+  ],
+  "level_id": 76,
+  "width": 2760,
+  "height": 922,
+  "name": "Chamber 76 // The Storm Trench",
+  "abilities": {
+    "wall_jump": true,
+    "dash": true
+  },
+  "spawn": [
+    188,
+    741
+  ],
+  "exit": [
+    2378,
+    491
+  ],
+  "hint_route": [
+    "valve",
+    "alpha",
+    "timer"
+  ],
+  "hint_notes": {
+    "valve": [
+      "Turn the handwheel and watch which machinery changes.",
+      "Turn the handwheel and watch which machinery changes.",
+      "Turn the handwheel and watch which machinery changes."
+    ],
+    "alpha": [
+      "Keep valve live, then interact with the recorder to hold the reading.",
+      "Keep valve live, then interact with the recorder to hold the reading.",
+      "Keep valve live, then interact with the recorder to hold the reading."
+    ],
+    "timer": [
+      "Start the clock after the other lock lights are green.",
+      "Start the clock after the other lock lights are green.",
+      "Start the clock after the other lock lights are green."
+    ]
+  },
+  "solution_steps": [
+    "Turn the handwheel and watch which machinery changes.",
+    "Keep valve live, then interact with the recorder to hold the reading.",
+    "Start the clock after the other lock lights are green."
+  ],
+  "subtitle": "Turn the handwheel and watch which machinery changes.",
+  "chapter": 8,
+  "theme": "surface",
+  "topology": "Wind-Swept Breach Span",
+  "overhaul_version": 1,
+  "overhaul_design": {
+    "profile": "valve_relay",
+    "route": "left_switchback",
+    "actual_direction": 1,
+    "mandatory": false,
+    "service_platform_count": 0,
+    "retired_by_cleanup": true
+  },
+  "secondary_validation_1": {
+    "checkpoint": "beacon_76",
+    "extra_platforms": 0,
+    "signal": "sector_76_validated",
+    "retired_by_cleanup": true
+  },
+  "side_challenge_policy": {
+    "campaign_blocking": false,
+    "optional_signals": [],
+    "reason": "Deprecated optional side circuit removed; service record remains accessible."
+  },
+  "architectural_overhaul_v2": {
+    "archetype": "Ruined Exterior Bastion & Crag Terrace",
+    "chapter": 8,
+    "theme": "surface",
+    "original_tile_count": 14,
+    "final_tile_count": 27,
+    "thickened_decks": 0,
+    "added_piers": 0,
+    "added_corbels": 5,
+    "added_soffits": 0,
+    "added_buttresses": 6,
+    "tiles_before_cleanup_pass": 25,
+    "removed_legacy_platforms": 5,
+    "removed_legacy_devices": 3,
+    "added_partition_walls": 1,
+    "added_grounded_piers": 1,
+    "added_stepped_terraces": 0
+  },
+  "cleanup_v3_audit": {
+    "level": 76,
+    "chapter": 8,
+    "theme": "surface",
+    "name": "Chamber 76 // The Storm Trench",
+    "archetype": "Ruined Exterior Bastion & Crag Terrace",
+    "orig_backup_tiles": 14,
+    "final_tiles": 27,
+    "removed_platforms": 5,
+    "retained_platforms": 3,
+    "removed_devices": 3,
+    "added_walls": 1,
+    "added_piers": 0,
+    "added_terraces": 0,
+    "gate_links": [
+      "alpha",
+      "valve",
+      "timer"
+    ]
+  }
+}

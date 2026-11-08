@@ -1,0 +1,737 @@
+{
+  "tiles": [
+    [
+      0,
+      0,
+      36,
+      970
+    ],
+    [
+      1462,
+      0,
+      36,
+      970
+    ],
+    [
+      36,
+      0,
+      1426,
+      30
+    ],
+    [
+      936,
+      835,
+      362,
+      135
+    ],
+    [
+      150,
+      835,
+      432,
+      135
+    ],
+    [
+      150,
+      595,
+      432,
+      23
+    ],
+    [
+      936,
+      595,
+      362,
+      23
+    ],
+    [
+      936,
+      355,
+      362,
+      23
+    ],
+    [
+      150,
+      355,
+      432,
+      40
+    ],
+    [
+      308,
+      221,
+      155,
+      18
+    ],
+    [
+      445,
+      239,
+      18,
+      116
+    ],
+    [
+      194,
+      618,
+      344,
+      22
+    ],
+    [
+      980,
+      378,
+      274,
+      22
+    ],
+    [
+      194,
+      395,
+      344,
+      22
+    ],
+    [
+      156,
+      30,
+      102,
+      42
+    ],
+    [
+      176,
+      72,
+      62,
+      16
+    ],
+    [
+      516,
+      30,
+      126,
+      42
+    ],
+    [
+      536,
+      72,
+      86,
+      16
+    ],
+    [
+      876,
+      30,
+      102,
+      28
+    ],
+    [
+      896,
+      58,
+      62,
+      16
+    ],
+    [
+      36,
+      140,
+      40,
+      70
+    ],
+    [
+      36,
+      380,
+      40,
+      86
+    ],
+    [
+      36,
+      620,
+      40,
+      70
+    ],
+    [
+      1422,
+      660,
+      40,
+      70
+    ]
+  ],
+  "ladders": [],
+  "crates": [],
+  "plates": [],
+  "switches": [],
+  "doors": [
+    {
+      "id": "surface_lock",
+      "x": 308,
+      "y": 239,
+      "w": 20,
+      "h": 116,
+      "required_links": [
+        "alpha",
+        "beta",
+        "down"
+      ]
+    }
+  ],
+  "moving_platforms": [],
+  "conveyors": [],
+  "wind_zones": [],
+  "water_zones": [],
+  "valves": [],
+  "generators": [],
+  "cables": [
+    {
+      "link_id": "down",
+      "points": [
+        [
+          389,
+          812
+        ],
+        [
+          389,
+          848
+        ],
+        [
+          382,
+          848
+        ],
+        [
+          382,
+          585
+        ]
+      ]
+    },
+    {
+      "link_id": "east_up",
+      "points": [
+        [
+          1140,
+          441
+        ],
+        [
+          1140,
+          477
+        ],
+        [
+          1133,
+          477
+        ],
+        [
+          1133,
+          345
+        ]
+      ]
+    },
+    {
+      "link_id": "up",
+      "points": [
+        [
+          389,
+          681
+        ],
+        [
+          389,
+          724
+        ],
+        [
+          1133,
+          724
+        ],
+        [
+          1133,
+          345
+        ]
+      ]
+    },
+    {
+      "link_id": "alpha",
+      "points": [
+        [
+          366,
+          583
+        ],
+        [
+          366,
+          617
+        ],
+        [
+          316,
+          617
+        ],
+        [
+          316,
+          299
+        ]
+      ]
+    },
+    {
+      "link_id": "beta",
+      "points": [
+        [
+          1117,
+          343
+        ],
+        [
+          1117,
+          384
+        ],
+        [
+          316,
+          384
+        ],
+        [
+          316,
+          299
+        ]
+      ]
+    },
+    {
+      "link_id": "down",
+      "points": [
+        [
+          380,
+          812
+        ],
+        [
+          380,
+          860
+        ],
+        [
+          316,
+          860
+        ],
+        [
+          316,
+          299
+        ]
+      ]
+    }
+  ],
+  "mirrors": [
+    {
+      "id": "prism",
+      "x": 366,
+      "y": 799,
+      "orientation": 1
+    },
+    {
+      "id": "secondprism",
+      "x": 1117,
+      "y": 559,
+      "orientation": 1
+    }
+  ],
+  "crushers": [],
+  "steam_vents": [
+    {
+      "id": "seam4",
+      "x": 741,
+      "y": 270,
+      "w": 36,
+      "h": 134,
+      "period": 3.1,
+      "duty_cycle": 0.43,
+      "disabled_by": []
+    }
+  ],
+  "collapsing_platforms": [],
+  "checkpoints": [
+    {
+      "id": "beacon_34",
+      "x": 1233,
+      "y": 355
+    }
+  ],
+  "spikes": [],
+  "acids": [
+    {
+      "x": 36,
+      "y": 895,
+      "w": 114,
+      "h": 75
+    },
+    {
+      "x": 582,
+      "y": 895,
+      "w": 354,
+      "h": 75
+    },
+    {
+      "x": 1298,
+      "y": 895,
+      "w": 164,
+      "h": 75
+    }
+  ],
+  "lasers": [],
+  "optical_beams": [
+    {
+      "link_id": "up",
+      "x": 205,
+      "y": 817,
+      "dir": [
+        1,
+        0
+      ],
+      "max_length": 522,
+      "receiver": [
+        373,
+        693,
+        14,
+        10
+      ]
+    },
+    {
+      "link_id": "down",
+      "x": 205,
+      "y": 817,
+      "dir": [
+        1,
+        0
+      ],
+      "max_length": 522,
+      "receiver": [
+        373,
+        824,
+        14,
+        10
+      ]
+    },
+    {
+      "link_id": "east_up",
+      "x": 991,
+      "y": 577,
+      "dir": [
+        1,
+        0
+      ],
+      "max_length": 452,
+      "receiver": [
+        1124,
+        453,
+        14,
+        10
+      ]
+    },
+    {
+      "link_id": "east_down",
+      "x": 991,
+      "y": 577,
+      "dir": [
+        1,
+        0
+      ],
+      "max_length": 452,
+      "receiver": [
+        1124,
+        584,
+        14,
+        10
+      ]
+    }
+  ],
+  "sequences": [],
+  "collectibles": [
+    {
+      "id": "log_34",
+      "x": 192,
+      "y": 803,
+      "title": "Crossed Scanlines / Shift Notes",
+      "text": "Crossed Scanlines. Check the signal lines before you leave the service deck."
+    },
+    {
+      "id": "field_trace_34",
+      "x": 1232,
+      "y": 759,
+      "title": "FIELD TRACE 34 / INTERLOCKED MIRROR MATRIX",
+      "text": "ECHO-7 field diagnostics: Make the low/high mirror orientations serve two distinct surveillance gates in sequence; one observation determines the next.",
+      "required_links": [
+        "alpha"
+      ],
+      "optional_investigation": true
+    },
+    {
+      "id": "service_challenge_34",
+      "x": 1261,
+      "y": 313,
+      "title": "Optional Diagnostics 34",
+      "text": "Optional auxiliary service record recovered. This archive is no longer linked to a redundant side circuit and does not gate the exit.",
+      "required_links": [],
+      "optional_investigation": true
+    }
+  ],
+  "decorations": [
+    {
+      "type": "warning_stripe",
+      "x": 162,
+      "y": 607,
+      "w": 120
+    },
+    {
+      "type": "warning_stripe",
+      "x": 948,
+      "y": 607,
+      "w": 120
+    },
+    {
+      "type": "warning_stripe",
+      "x": 948,
+      "y": 367,
+      "w": 120
+    },
+    {
+      "type": "warning_stripe",
+      "x": 162,
+      "y": 367,
+      "w": 120
+    },
+    {
+      "type": "monitor",
+      "x": 336,
+      "y": 495,
+      "text": "HOLD DOWN"
+    },
+    {
+      "type": "monitor",
+      "x": 1087,
+      "y": 255,
+      "text": "HOLD EAST_UP + UP"
+    },
+    {
+      "type": "monitor",
+      "x": 331,
+      "y": 181,
+      "text": "EXIT LOCK"
+    },
+    {
+      "type": "monitor",
+      "x": 1245,
+      "y": 721,
+      "text": "FORENSIC TRACE 34"
+    }
+  ],
+  "latching_relays": [
+    {
+      "link_id": "alpha",
+      "x": 366,
+      "y": 595,
+      "required_links": [
+        "down"
+      ]
+    },
+    {
+      "link_id": "beta",
+      "x": 1117,
+      "y": 355,
+      "required_links": [
+        "east_up",
+        "up"
+      ]
+    }
+  ],
+  "routing_consoles": [],
+  "signal_inverters": [],
+  "npcs": [
+    {
+      "id": "kip",
+      "x": 1036,
+      "y": 835,
+      "dialogue": [
+        "Crossed Scanlines. If you hear applause, that is a loose pipe.",
+        "Turn the mirror toward the low pickup beside its foot.",
+        "Keep east_up and up live, then interact with the recorder to hold the reading."
+      ]
+    }
+  ],
+  "springs": [],
+  "dash_recharges": [],
+  "one_way_platforms": [
+    {
+      "id": "walk0",
+      "x": 663,
+      "y": 797,
+      "w": 68,
+      "h": 12
+    },
+    {
+      "id": "walk1",
+      "x": 791,
+      "y": 869,
+      "w": 68,
+      "h": 12
+    },
+    {
+      "id": "walk2",
+      "x": 622,
+      "y": 755,
+      "w": 83,
+      "h": 12
+    },
+    {
+      "id": "walk3",
+      "x": 582,
+      "y": 675,
+      "w": 83,
+      "h": 12
+    },
+    {
+      "id": "walk4",
+      "x": 622,
+      "y": 595,
+      "w": 83,
+      "h": 12
+    },
+    {
+      "id": "walk5",
+      "x": 663,
+      "y": 557,
+      "w": 68,
+      "h": 12
+    },
+    {
+      "id": "walk6",
+      "x": 791,
+      "y": 629,
+      "w": 68,
+      "h": 12
+    },
+    {
+      "id": "walk7",
+      "x": 1338,
+      "y": 515,
+      "w": 83,
+      "h": 12
+    },
+    {
+      "id": "walk8",
+      "x": 1298,
+      "y": 435,
+      "w": 83,
+      "h": 12
+    },
+    {
+      "id": "walk10",
+      "x": 663,
+      "y": 317,
+      "w": 68,
+      "h": 12
+    },
+    {
+      "id": "walk11",
+      "x": 791,
+      "y": 389,
+      "w": 68,
+      "h": 12
+    }
+  ],
+  "dash_barriers": [],
+  "level_id": 34,
+  "width": 1498,
+  "height": 970,
+  "name": "Chamber 34 // Crossed Scanlines",
+  "abilities": {
+    "wall_jump": true,
+    "dash": true
+  },
+  "spawn": [
+    974,
+    789
+  ],
+  "exit": [
+    365,
+    275
+  ],
+  "hint_route": [
+    "down",
+    "alpha",
+    "east_up",
+    "up",
+    "beta"
+  ],
+  "hint_notes": {
+    "down": [
+      "Turn the mirror toward the low pickup beside its foot.",
+      "Turn the mirror toward the low pickup beside its foot.",
+      "Turn the mirror toward the low pickup beside its foot."
+    ],
+    "alpha": [
+      "Keep down live, then interact with the recorder to hold the reading.",
+      "Keep down live, then interact with the recorder to hold the reading.",
+      "Keep down live, then interact with the recorder to hold the reading."
+    ],
+    "east_up": [
+      "Aim the second reflector at its overhead pickup.",
+      "Aim the second reflector at its overhead pickup.",
+      "Aim the second reflector at its overhead pickup."
+    ],
+    "up": [
+      "Turn the mirror toward its ceiling pickup.",
+      "Turn the mirror toward its ceiling pickup.",
+      "Turn the mirror toward its ceiling pickup."
+    ],
+    "beta": [
+      "Keep east_up and up live, then interact with the recorder to hold the reading.",
+      "Keep east_up and up live, then interact with the recorder to hold the reading.",
+      "Keep east_up and up live, then interact with the recorder to hold the reading."
+    ]
+  },
+  "solution_steps": [
+    "Turn the mirror toward the low pickup beside its foot.",
+    "Keep down live, then interact with the recorder to hold the reading.",
+    "Aim the second reflector at its overhead pickup.",
+    "Turn the mirror toward its ceiling pickup.",
+    "Keep east_up and up live, then interact with the recorder to hold the reading."
+  ],
+  "subtitle": "Turn the mirror toward the low pickup beside its foot.",
+  "chapter": 4,
+  "theme": "optical",
+  "topology": "Interlocked Mirror Matrix",
+  "overhaul_version": 1,
+  "overhaul_design": {
+    "profile": "generator",
+    "route": "left_up",
+    "actual_direction": -1,
+    "mandatory": false,
+    "service_platform_count": 0,
+    "retired_by_cleanup": true
+  },
+  "secondary_validation_1": {
+    "checkpoint": "beacon_34",
+    "extra_platforms": 0,
+    "signal": "sector_34_validated",
+    "retired_by_cleanup": true
+  },
+  "side_challenge_policy": {
+    "campaign_blocking": false,
+    "optional_signals": [],
+    "reason": "Deprecated optional side circuit removed; service record remains accessible."
+  },
+  "architectural_overhaul_v2": {
+    "archetype": "Segmented Security Bulkhead Corridor",
+    "chapter": 4,
+    "theme": "optical",
+    "original_tile_count": 11,
+    "final_tile_count": 24,
+    "thickened_decks": 1,
+    "added_piers": 0,
+    "added_corbels": 3,
+    "added_soffits": 3,
+    "added_buttresses": 4,
+    "tiles_before_cleanup_pass": 24,
+    "removed_legacy_platforms": 5,
+    "removed_legacy_devices": 2,
+    "added_partition_walls": 0,
+    "added_grounded_piers": 0,
+    "added_stepped_terraces": 0
+  },
+  "cleanup_v3_audit": {
+    "level": 34,
+    "chapter": 4,
+    "theme": "optical",
+    "name": "Chamber 34 // Crossed Scanlines",
+    "archetype": "Segmented Security Bulkhead Corridor",
+    "orig_backup_tiles": 11,
+    "final_tiles": 24,
+    "removed_platforms": 5,
+    "retained_platforms": 12,
+    "removed_devices": 2,
+    "added_walls": 0,
+    "added_piers": 0,
+    "added_terraces": 0,
+    "gate_links": [
+      "alpha",
+      "beta",
+      "down"
+    ]
+  }
+}

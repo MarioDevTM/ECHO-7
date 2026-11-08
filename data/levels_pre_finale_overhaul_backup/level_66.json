@@ -1,0 +1,751 @@
+{
+  "tiles": [
+    [
+      0,
+      0,
+      36,
+      970
+    ],
+    [
+      1590,
+      0,
+      36,
+      970
+    ],
+    [
+      36,
+      0,
+      1554,
+      30
+    ],
+    [
+      150,
+      835,
+      432,
+      135
+    ],
+    [
+      150,
+      595,
+      432,
+      23
+    ],
+    [
+      150,
+      355,
+      432,
+      23
+    ],
+    [
+      1064,
+      355,
+      362,
+      23
+    ],
+    [
+      1064,
+      595,
+      362,
+      23
+    ],
+    [
+      1064,
+      835,
+      362,
+      135
+    ],
+    [
+      1187,
+      701,
+      155,
+      18
+    ],
+    [
+      1324,
+      719,
+      18,
+      116
+    ],
+    [
+      698,
+      625,
+      14,
+      174
+    ],
+    [
+      698,
+      385,
+      14,
+      174
+    ],
+    [
+      1542,
+      385,
+      14,
+      174
+    ],
+    [
+      1542,
+      625,
+      14,
+      174
+    ],
+    [
+      186,
+      378,
+      360,
+      22
+    ],
+    [
+      1088,
+      618,
+      44,
+      56
+    ],
+    [
+      156,
+      30,
+      118,
+      28
+    ],
+    [
+      176,
+      58,
+      78,
+      16
+    ],
+    [
+      476,
+      30,
+      102,
+      56
+    ],
+    [
+      496,
+      86,
+      62,
+      16
+    ],
+    [
+      796,
+      30,
+      134,
+      42
+    ],
+    [
+      816,
+      72,
+      94,
+      16
+    ],
+    [
+      1116,
+      30,
+      118,
+      28
+    ],
+    [
+      1136,
+      58,
+      78,
+      16
+    ],
+    [
+      36,
+      140,
+      40,
+      70
+    ],
+    [
+      36,
+      380,
+      40,
+      86
+    ],
+    [
+      36,
+      620,
+      40,
+      70
+    ]
+  ],
+  "ladders": [
+    {
+      "x": 584,
+      "y": 557,
+      "h": 288
+    },
+    {
+      "x": 584,
+      "y": 317,
+      "h": 288
+    },
+    {
+      "x": 1428,
+      "y": 317,
+      "h": 288
+    },
+    {
+      "x": 1428,
+      "y": 557,
+      "h": 288
+    }
+  ],
+  "crates": [],
+  "plates": [],
+  "switches": [],
+  "doors": [
+    {
+      "id": "surface_lock",
+      "x": 1187,
+      "y": 719,
+      "w": 20,
+      "h": 116,
+      "required_links": [
+        "alpha",
+        "beta",
+        "power"
+      ]
+    }
+  ],
+  "moving_platforms": [
+    {
+      "id": "car0",
+      "x": 600,
+      "y": 827,
+      "w": 86,
+      "h": 16,
+      "end_x": 600,
+      "end_y": 587,
+      "speed": 124,
+      "active_by_default": true,
+      "required_links": []
+    },
+    {
+      "id": "car1",
+      "x": 586,
+      "y": 341,
+      "w": 108,
+      "h": 16,
+      "end_x": 951,
+      "end_y": 341,
+      "speed": 124,
+      "active_by_default": false,
+      "required_links": [
+        "A"
+      ]
+    },
+    {
+      "id": "car2",
+      "x": 1444,
+      "y": 587,
+      "w": 86,
+      "h": 16,
+      "end_x": 1444,
+      "end_y": 347,
+      "speed": 124,
+      "active_by_default": true,
+      "required_links": []
+    }
+  ],
+  "conveyors": [],
+  "wind_zones": [],
+  "water_zones": [],
+  "valves": [],
+  "generators": [
+    {
+      "link_id": "power",
+      "x": 366,
+      "y": 595
+    }
+  ],
+  "cables": [
+    {
+      "link_id": "A",
+      "points": [
+        [
+          375,
+          343
+        ],
+        [
+          375,
+          379
+        ],
+        [
+          1261,
+          379
+        ],
+        [
+          1261,
+          345
+        ]
+      ]
+    },
+    {
+      "link_id": "alpha",
+      "points": [
+        [
+          1254,
+          343
+        ],
+        [
+          1254,
+          619
+        ],
+        [
+          1261,
+          619
+        ],
+        [
+          1261,
+          585
+        ]
+      ]
+    },
+    {
+      "link_id": "B",
+      "points": [
+        [
+          385,
+          343
+        ],
+        [
+          385,
+          626
+        ],
+        [
+          1261,
+          626
+        ],
+        [
+          1261,
+          585
+        ]
+      ]
+    },
+    {
+      "link_id": "alpha",
+      "points": [
+        [
+          1245,
+          343
+        ],
+        [
+          1245,
+          801
+        ],
+        [
+          1195,
+          801
+        ],
+        [
+          1195,
+          779
+        ]
+      ]
+    },
+    {
+      "link_id": "beta",
+      "points": [
+        [
+          1245,
+          583
+        ],
+        [
+          1245,
+          808
+        ],
+        [
+          1195,
+          808
+        ],
+        [
+          1195,
+          779
+        ]
+      ]
+    },
+    {
+      "link_id": "power",
+      "points": [
+        [
+          366,
+          583
+        ],
+        [
+          366,
+          815
+        ],
+        [
+          1195,
+          815
+        ],
+        [
+          1195,
+          779
+        ]
+      ]
+    }
+  ],
+  "mirrors": [],
+  "crushers": [],
+  "steam_vents": [
+    {
+      "id": "seam2",
+      "x": 805,
+      "y": 270,
+      "w": 36,
+      "h": 134,
+      "period": 3.1,
+      "duty_cycle": 0.43,
+      "disabled_by": []
+    }
+  ],
+  "collapsing_platforms": [
+    {
+      "id": "walk0",
+      "x": 622,
+      "y": 515,
+      "w": 70,
+      "h": 12,
+      "delay": 0.42,
+      "respawn": 2.4
+    },
+    {
+      "id": "walk2",
+      "x": 622,
+      "y": 355,
+      "w": 70,
+      "h": 12,
+      "delay": 0.42,
+      "respawn": 2.4
+    },
+    {
+      "id": "walk4",
+      "x": 1466,
+      "y": 755,
+      "w": 70,
+      "h": 12,
+      "delay": 0.42,
+      "respawn": 2.4
+    },
+    {
+      "id": "walk6",
+      "x": 1466,
+      "y": 595,
+      "w": 70,
+      "h": 12,
+      "delay": 0.42,
+      "respawn": 2.4
+    }
+  ],
+  "checkpoints": [
+    {
+      "id": "beacon_66",
+      "x": 1361,
+      "y": 595
+    }
+  ],
+  "spikes": [],
+  "acids": [
+    {
+      "x": 36,
+      "y": 895,
+      "w": 114,
+      "h": 75
+    },
+    {
+      "x": 582,
+      "y": 895,
+      "w": 482,
+      "h": 75
+    },
+    {
+      "x": 1426,
+      "y": 895,
+      "w": 164,
+      "h": 75
+    }
+  ],
+  "lasers": [],
+  "optical_beams": [],
+  "sequences": [],
+  "collectibles": [
+    {
+      "id": "log_66",
+      "x": 192,
+      "y": 563,
+      "title": "The Split Spire / Shift Notes",
+      "text": "The Split Spire. Check the signal lines before you leave the service deck."
+    },
+    {
+      "id": "field_trace_66",
+      "x": 504,
+      "y": 759,
+      "title": "FIELD TRACE 66 / TWIN VERTICAL RUPTURE",
+      "text": "ECHO-7 field diagnostics: Create two different climb paths through the damaged interior, with an A-state stored at the top and B-side proof acquired on the return.",
+      "required_links": [
+        "alpha"
+      ],
+      "optional_investigation": true
+    },
+    {
+      "id": "service_challenge_66",
+      "x": 1389,
+      "y": 553,
+      "title": "Optional Diagnostics 66",
+      "text": "Optional auxiliary service record recovered. This archive is no longer linked to a redundant side circuit and does not gate the exit.",
+      "required_links": [],
+      "optional_investigation": true
+    }
+  ],
+  "decorations": [
+    {
+      "type": "warning_stripe",
+      "x": 162,
+      "y": 607,
+      "w": 120
+    },
+    {
+      "type": "warning_stripe",
+      "x": 162,
+      "y": 367,
+      "w": 120
+    },
+    {
+      "type": "warning_stripe",
+      "x": 1076,
+      "y": 367,
+      "w": 120
+    },
+    {
+      "type": "warning_stripe",
+      "x": 1076,
+      "y": 607,
+      "w": 120
+    },
+    {
+      "type": "monitor",
+      "x": 336,
+      "y": 495,
+      "text": "ENERGIZE"
+    },
+    {
+      "type": "monitor",
+      "x": 326,
+      "y": 256,
+      "text": "SELECT A / B"
+    },
+    {
+      "type": "monitor",
+      "x": 1215,
+      "y": 255,
+      "text": "HOLD A"
+    },
+    {
+      "type": "monitor",
+      "x": 1215,
+      "y": 495,
+      "text": "HOLD ALPHA + B"
+    },
+    {
+      "type": "monitor",
+      "x": 1210,
+      "y": 661,
+      "text": "EXIT LOCK"
+    },
+    {
+      "type": "monitor",
+      "x": 517,
+      "y": 721,
+      "text": "FORENSIC TRACE 66"
+    }
+  ],
+  "latching_relays": [
+    {
+      "link_id": "alpha",
+      "x": 1245,
+      "y": 355,
+      "required_links": [
+        "A"
+      ]
+    },
+    {
+      "link_id": "beta",
+      "x": 1245,
+      "y": 595,
+      "required_links": [
+        "alpha",
+        "B"
+      ]
+    }
+  ],
+  "routing_consoles": [
+    {
+      "id": "selector",
+      "route_id": "supply",
+      "x": 366,
+      "y": 355,
+      "a_signal": "A",
+      "b_signal": "B"
+    }
+  ],
+  "signal_inverters": [],
+  "npcs": [
+    {
+      "id": "kip",
+      "x": 250,
+      "y": 835,
+      "dialogue": [
+        "The Split Spire. I brought a spare fuse and a very small umbrella.",
+        "Set the supply selector to A.",
+        "Start the generator to bring the circuit online."
+      ]
+    }
+  ],
+  "springs": [],
+  "dash_recharges": [],
+  "one_way_platforms": [
+    {
+      "id": "walk1",
+      "x": 582,
+      "y": 435,
+      "w": 70,
+      "h": 12
+    },
+    {
+      "id": "walk3",
+      "x": 798,
+      "y": 440,
+      "w": 56,
+      "h": 12
+    },
+    {
+      "id": "walk5",
+      "x": 1426,
+      "y": 675,
+      "w": 70,
+      "h": 12
+    }
+  ],
+  "dash_barriers": [],
+  "level_id": 66,
+  "width": 1626,
+  "height": 970,
+  "name": "Chamber 66 // The Split Spire",
+  "abilities": {
+    "wall_jump": true,
+    "dash": true
+  },
+  "spawn": [
+    188,
+    789
+  ],
+  "exit": [
+    1244,
+    755
+  ],
+  "hint_route": [
+    "A",
+    "alpha",
+    "B",
+    "beta",
+    "power"
+  ],
+  "hint_notes": {
+    "A": [
+      "Set the supply selector to A.",
+      "Set the supply selector to A.",
+      "Set the supply selector to A."
+    ],
+    "alpha": [
+      "Keep A live, then interact with the recorder to hold the reading.",
+      "Keep A live, then interact with the recorder to hold the reading.",
+      "Keep A live, then interact with the recorder to hold the reading."
+    ],
+    "B": [
+      "Transfer the selector to B after recording the A-side reading.",
+      "Transfer the selector to B after recording the A-side reading.",
+      "Transfer the selector to B after recording the A-side reading."
+    ],
+    "beta": [
+      "Keep alpha and B live, then interact with the recorder to hold the reading.",
+      "Keep alpha and B live, then interact with the recorder to hold the reading.",
+      "Keep alpha and B live, then interact with the recorder to hold the reading."
+    ],
+    "power": [
+      "Start the generator to bring the circuit online.",
+      "Start the generator to bring the circuit online.",
+      "Start the generator to bring the circuit online."
+    ]
+  },
+  "solution_steps": [
+    "Set the supply selector to A.",
+    "Keep A live, then interact with the recorder to hold the reading.",
+    "Transfer the selector to B after recording the A-side reading.",
+    "Keep alpha and B live, then interact with the recorder to hold the reading.",
+    "Start the generator to bring the circuit online."
+  ],
+  "subtitle": "Set the supply selector to A.",
+  "chapter": 7,
+  "theme": "spire",
+  "topology": "Twin Vertical Rupture",
+  "overhaul_version": 1,
+  "overhaul_design": {
+    "profile": "relay_bus",
+    "route": "left_rise",
+    "actual_direction": 1,
+    "mandatory": false,
+    "service_platform_count": 0,
+    "retired_by_cleanup": true
+  },
+  "secondary_validation_1": {
+    "checkpoint": "beacon_66",
+    "extra_platforms": 0,
+    "signal": "sector_66_validated",
+    "retired_by_cleanup": true
+  },
+  "side_challenge_policy": {
+    "campaign_blocking": false,
+    "optional_signals": [],
+    "reason": "Deprecated optional side circuit removed; service record remains accessible."
+  },
+  "architectural_overhaul_v2": {
+    "archetype": "Fractured Upper-Spire Chamber",
+    "chapter": 7,
+    "theme": "spire",
+    "original_tile_count": 15,
+    "final_tile_count": 28,
+    "thickened_decks": 0,
+    "added_piers": 0,
+    "added_corbels": 2,
+    "added_soffits": 4,
+    "added_buttresses": 3,
+    "tiles_before_cleanup_pass": 28,
+    "removed_legacy_platforms": 5,
+    "removed_legacy_devices": 4,
+    "added_partition_walls": 0,
+    "added_grounded_piers": 0,
+    "added_stepped_terraces": 0
+  },
+  "cleanup_v3_audit": {
+    "level": 66,
+    "chapter": 7,
+    "theme": "spire",
+    "name": "Chamber 66 // The Split Spire",
+    "archetype": "Fractured Upper-Spire Chamber",
+    "orig_backup_tiles": 15,
+    "final_tiles": 28,
+    "removed_platforms": 5,
+    "retained_platforms": 3,
+    "removed_devices": 4,
+    "added_walls": 0,
+    "added_piers": 0,
+    "added_terraces": 0,
+    "gate_links": [
+      "alpha",
+      "beta",
+      "power"
+    ]
+  }
+}

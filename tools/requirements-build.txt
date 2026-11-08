@@ -1,0 +1,5 @@
+# Optional asset-regeneration dependencies; not needed to run the game.
+numpy>=1.26
+scipy>=1.12
+Pillow>=10.0
+# ffmpeg binary must also be available on PATH to rebuild soundtrack OGG files.

@@ -1,0 +1,490 @@
+{
+  "tiles": [
+    [
+      0,
+      0,
+      36,
+      720
+    ],
+    [
+      2616,
+      0,
+      36,
+      720
+    ],
+    [
+      36,
+      0,
+      2580,
+      30
+    ],
+    [
+      150,
+      585,
+      340,
+      135
+    ],
+    [
+      672,
+      585,
+      432,
+      135
+    ],
+    [
+      1518,
+      585,
+      362,
+      135
+    ],
+    [
+      1518,
+      357,
+      362,
+      23
+    ],
+    [
+      2062,
+      357,
+      390,
+      23
+    ],
+    [
+      1845,
+      340,
+      10,
+      17
+    ],
+    [
+      2199,
+      223,
+      155,
+      18
+    ],
+    [
+      2336,
+      241,
+      18,
+      116
+    ],
+    [
+      1996,
+      387,
+      14,
+      162
+    ]
+  ],
+  "ladders": [],
+  "crates": [
+    {
+      "id": "load",
+      "x": 1633,
+      "y": 321
+    }
+  ],
+  "plates": [
+    {
+      "link_id": "weight",
+      "x": 1797,
+      "y": 357
+    }
+  ],
+  "switches": [
+    {
+      "link_id": "lever",
+      "x": 888,
+      "y": 585,
+      "mode": "permanent",
+      "duration": 0
+    }
+  ],
+  "doors": [
+    {
+      "id": "surface_lock",
+      "x": 2199,
+      "y": 241,
+      "w": 20,
+      "h": 116,
+      "required_links": [
+        "lever",
+        "weight"
+      ]
+    }
+  ],
+  "moving_platforms": [
+    {
+      "id": "car0",
+      "x": 495,
+      "y": 561,
+      "w": 65,
+      "h": 16,
+      "end_x": 602,
+      "end_y": 519,
+      "speed": 124,
+      "active_by_default": true,
+      "required_links": []
+    },
+    {
+      "id": "car1",
+      "x": 1898,
+      "y": 577,
+      "w": 86,
+      "h": 16,
+      "end_x": 1898,
+      "end_y": 349,
+      "speed": 124,
+      "active_by_default": true,
+      "required_links": []
+    }
+  ],
+  "conveyors": [],
+  "wind_zones": [],
+  "water_zones": [],
+  "valves": [
+    {
+      "link_id": "overhaul_61_valve",
+      "x": 222,
+      "y": 526
+    }
+  ],
+  "generators": [],
+  "cables": [
+    {
+      "link_id": "lever",
+      "points": [
+        [
+          888,
+          573
+        ],
+        [
+          888,
+          607
+        ],
+        [
+          2207,
+          607
+        ],
+        [
+          2207,
+          301
+        ]
+      ]
+    },
+    {
+      "link_id": "weight",
+      "points": [
+        [
+          1797,
+          345
+        ],
+        [
+          1797,
+          386
+        ],
+        [
+          2207,
+          386
+        ],
+        [
+          2207,
+          301
+        ]
+      ]
+    }
+  ],
+  "mirrors": [],
+  "crushers": [],
+  "steam_vents": [
+    {
+      "id": "seam1",
+      "x": 1293,
+      "y": 500,
+      "w": 36,
+      "h": 134,
+      "period": 3.1,
+      "duty_cycle": 0.43,
+      "disabled_by": []
+    }
+  ],
+  "collapsing_platforms": [
+    {
+      "id": "walk0",
+      "x": 1281,
+      "y": 633,
+      "w": 60,
+      "h": 12,
+      "delay": 0.48,
+      "respawn": 2.4
+    }
+  ],
+  "checkpoints": [
+    {
+      "id": "beacon_61",
+      "x": 1550,
+      "y": 357
+    }
+  ],
+  "spikes": [],
+  "acids": [
+    {
+      "x": 36,
+      "y": 645,
+      "w": 114,
+      "h": 75
+    },
+    {
+      "x": 490,
+      "y": 645,
+      "w": 182,
+      "h": 75
+    },
+    {
+      "x": 1104,
+      "y": 645,
+      "w": 414,
+      "h": 75
+    },
+    {
+      "x": 1880,
+      "y": 645,
+      "w": 736,
+      "h": 75
+    }
+  ],
+  "lasers": [],
+  "optical_beams": [],
+  "sequences": [],
+  "collectibles": [
+    {
+      "id": "log_61",
+      "x": 714,
+      "y": 553,
+      "title": "Shear Line / Shift Notes",
+      "text": "Shear Line. Check the signal lines before you leave the service deck."
+    },
+    {
+      "id": "field_trace_61",
+      "x": 425,
+      "y": 509,
+      "title": "FIELD TRACE 61 / FRACTURE-SEAL BREACH",
+      "text": "ECHO-7 field diagnostics: Add a deliberate activation choice before crossing a broken interior section; crossing changes access to the weighted exit lock.",
+      "required_links": [
+        "lever"
+      ],
+      "optional_investigation": true
+    },
+    {
+      "id": "service_challenge_61",
+      "x": 1376,
+      "y": 190,
+      "title": "Optional Diagnostics 61",
+      "text": "Optional master circuit cleared. The standard exit never depends on this side challenge.",
+      "required_links": [
+        "sector_61_validated"
+      ],
+      "optional_investigation": true
+    }
+  ],
+  "decorations": [
+    {
+      "type": "warning_stripe",
+      "x": 1530,
+      "y": 369,
+      "w": 120
+    },
+    {
+      "type": "warning_stripe",
+      "x": 2074,
+      "y": 369,
+      "w": 120
+    },
+    {
+      "type": "monitor",
+      "x": 856,
+      "y": 492,
+      "text": "RELEASE"
+    },
+    {
+      "type": "monitor",
+      "x": 1655,
+      "y": 453,
+      "text": "DASH SEAL"
+    },
+    {
+      "type": "monitor",
+      "x": 1734,
+      "y": 265,
+      "text": "RECEIVING SCALE"
+    },
+    {
+      "type": "monitor",
+      "x": 2222,
+      "y": 183,
+      "text": "EXIT LOCK"
+    },
+    {
+      "type": "monitor",
+      "x": 438,
+      "y": 471,
+      "text": "FORENSIC TRACE 61"
+    },
+    {
+      "type": "monitor",
+      "x": 206,
+      "y": 423,
+      "text": "ACCESS / 61"
+    },
+    {
+      "type": "warning_stripe",
+      "x": 361,
+      "y": 417,
+      "w": 78
+    }
+  ],
+  "latching_relays": [
+    {
+      "link_id": "overhaul_61_proof",
+      "x": 379,
+      "y": 405,
+      "required_links": [
+        "overhaul_61_valve"
+      ]
+    },
+    {
+      "link_id": "sector_61_validated",
+      "x": 1364,
+      "y": 232,
+      "required_links": [
+        "overhaul_61_proof"
+      ]
+    }
+  ],
+  "routing_consoles": [],
+  "signal_inverters": [],
+  "npcs": [
+    {
+      "id": "kip",
+      "x": 250,
+      "y": 585,
+      "dialogue": [
+        "Shear Line. I signed the inspection sheet in pencil.",
+        "Use the release panel.",
+        "Move the cargo right until it rests on the receiving scale."
+      ]
+    }
+  ],
+  "springs": [],
+  "dash_recharges": [
+    {
+      "id": "span_charge1",
+      "x": 1299,
+      "y": 519
+    }
+  ],
+  "one_way_platforms": [
+    {
+      "id": "overhaul_step_61_0",
+      "x": 204,
+      "y": 526,
+      "w": 78,
+      "h": 12
+    },
+    {
+      "id": "overhaul_step_61_1",
+      "x": 281,
+      "y": 460,
+      "w": 78,
+      "h": 12
+    },
+    {
+      "id": "overhaul_step_61_2",
+      "x": 361,
+      "y": 405,
+      "w": 78,
+      "h": 12
+    },
+    {
+      "id": "validation_foot_61_0",
+      "x": 1431,
+      "y": 294,
+      "w": 78,
+      "h": 12
+    },
+    {
+      "id": "validation_foot_61_1",
+      "x": 1346,
+      "y": 232,
+      "w": 78,
+      "h": 12
+    }
+  ],
+  "dash_barriers": [
+    {
+      "id": "seal",
+      "x": 1699,
+      "y": 497,
+      "w": 24,
+      "h": 88
+    }
+  ],
+  "level_id": 61,
+  "width": 2652,
+  "height": 720,
+  "name": "Chamber 61 // Shear Line",
+  "abilities": {
+    "wall_jump": true,
+    "dash": true
+  },
+  "spawn": [
+    188,
+    539
+  ],
+  "exit": [
+    2256,
+    277
+  ],
+  "hint_route": [
+    "lever",
+    "weight"
+  ],
+  "hint_notes": {
+    "lever": [
+      "Use the release panel.",
+      "Use the release panel.",
+      "Use the release panel."
+    ],
+    "weight": [
+      "Move the cargo right until it rests on the receiving scale.",
+      "Move the cargo right until it rests on the receiving scale.",
+      "Move the cargo right until it rests on the receiving scale."
+    ]
+  },
+  "solution_steps": [
+    "Use the release panel.",
+    "Move the cargo right until it rests on the receiving scale."
+  ],
+  "subtitle": "Use the release panel.  //  SERVICE DETOUR: Activate the lower isolation valve, then climb and permanently record its state.",
+  "chapter": 7,
+  "theme": "spire",
+  "topology": "Fracture-Seal Breach",
+  "overhaul_version": 1,
+  "overhaul_design": {
+    "profile": "route_proof",
+    "route": "right_up",
+    "actual_direction": 1,
+    "mandatory": true,
+    "service_platform_count": 3
+  },
+  "secondary_validation_1": {
+    "checkpoint": "beacon_61",
+    "extra_platforms": 2,
+    "signal": "sector_61_validated"
+  },
+  "side_challenge_policy": {
+    "campaign_blocking": false,
+    "optional_signals": [
+      "overhaul_61_proof",
+      "sector_61_validated"
+    ],
+    "reason": "Not proven traversable in the Pygame engine; preserve main progression."
+  }
+}

@@ -1,0 +1,634 @@
+{
+  "level_id": 80,
+  "chapter": 8,
+  "theme": "surface",
+  "name": "Chamber 80 // Surface Breach",
+  "subtitle": "Power the west antenna, record both sensor proofs, select reserve B, latch central EVAC PROOF, then start the final timed escape.  //  SERVICE DETOUR: Optional elevated viewpoint; preserve all original escape dependencies.",
+  "topology": "Moon gate above a split service pier",
+  "width": 2860,
+  "height": 1040,
+  "spawn": [
+    1340,
+    834
+  ],
+  "exit": [
+    1430,
+    364
+  ],
+  "tiles": [
+    [
+      0,
+      0,
+      32,
+      1040
+    ],
+    [
+      2828,
+      0,
+      32,
+      1040
+    ],
+    [
+      32,
+      880,
+      798,
+      160
+    ],
+    [
+      985,
+      880,
+      860,
+      160
+    ],
+    [
+      2010,
+      880,
+      818,
+      160
+    ],
+    [
+      1390,
+      312,
+      178,
+      20
+    ],
+    [
+      1546,
+      332,
+      22,
+      112
+    ],
+    [
+      2440,
+      800,
+      230,
+      20
+    ],
+    [
+      2240,
+      723,
+      185,
+      20
+    ],
+    [
+      724,
+      860,
+      14,
+      20
+    ],
+    [
+      1386,
+      444,
+      182,
+      22
+    ],
+    [
+      36,
+      30,
+      220,
+      14
+    ]
+  ],
+  "ladders": [],
+  "crates": [
+    {
+      "id": "lens_cargo",
+      "x": 465,
+      "y": 844
+    }
+  ],
+  "plates": [
+    {
+      "link_id": "west_plate",
+      "x": 677,
+      "y": 880
+    }
+  ],
+  "switches": [
+    {
+      "link_id": "countdown",
+      "x": 2550,
+      "y": 800,
+      "mode": "timed",
+      "duration": 46
+    }
+  ],
+  "generators": [
+    {
+      "link_id": "feed",
+      "x": 360,
+      "y": 880
+    }
+  ],
+  "doors": [
+    {
+      "id": "moon_gate",
+      "x": 1390,
+      "y": 332,
+      "w": 22,
+      "h": 112,
+      "required_links": [
+        "evac_proof",
+        "countdown"
+      ],
+      "logic": "ALL"
+    }
+  ],
+  "moving_platforms": [
+    {
+      "id": "reserve_ferry",
+      "x": 1858,
+      "y": 859,
+      "w": 85,
+      "h": 18,
+      "end_x": 1916,
+      "end_y": 828,
+      "speed": 65,
+      "required_links": [
+        "west_record"
+      ],
+      "active_by_default": false
+    }
+  ],
+  "conveyors": [],
+  "wind_zones": [],
+  "water_zones": [],
+  "valves": [],
+  "cables": [
+    {
+      "link_id": "west_light",
+      "points": [
+        [
+          269,
+          725
+        ],
+        [
+          269,
+          920
+        ],
+        [
+          1380,
+          920
+        ],
+        [
+          1380,
+          390
+        ],
+        [
+          1390,
+          390
+        ]
+      ]
+    },
+    {
+      "link_id": "west_plate",
+      "points": [
+        [
+          698,
+          880
+        ],
+        [
+          698,
+          925
+        ],
+        [
+          1380,
+          925
+        ],
+        [
+          1380,
+          390
+        ],
+        [
+          1390,
+          390
+        ]
+      ]
+    },
+    {
+      "link_id": "west_record",
+      "points": [
+        [
+          590,
+          880
+        ],
+        [
+          590,
+          930
+        ],
+        [
+          1380,
+          930
+        ],
+        [
+          1380,
+          390
+        ],
+        [
+          1390,
+          390
+        ]
+      ]
+    },
+    {
+      "link_id": "reserve_B",
+      "points": [
+        [
+          2330,
+          723
+        ],
+        [
+          2330,
+          935
+        ],
+        [
+          1380,
+          935
+        ],
+        [
+          1380,
+          390
+        ],
+        [
+          1390,
+          390
+        ]
+      ]
+    },
+    {
+      "link_id": "countdown",
+      "points": [
+        [
+          2570,
+          800
+        ],
+        [
+          2570,
+          940
+        ],
+        [
+          1380,
+          940
+        ],
+        [
+          1380,
+          390
+        ],
+        [
+          1390,
+          390
+        ]
+      ]
+    },
+    {
+      "link_id": "evac_proof",
+      "points": [
+        [
+          1160,
+          802
+        ],
+        [
+          1160,
+          851
+        ],
+        [
+          1384,
+          851
+        ],
+        [
+          1384,
+          390
+        ],
+        [
+          1390,
+          390
+        ]
+      ]
+    }
+  ],
+  "mirrors": [
+    {
+      "id": "antenna",
+      "x": 255,
+      "y": 844,
+      "orientation": 1
+    }
+  ],
+  "crushers": [],
+  "steam_vents": [],
+  "collapsing_platforms": [
+    {
+      "id": "west_lip",
+      "x": 864,
+      "y": 865,
+      "w": 84,
+      "h": 15,
+      "delay": 0.5,
+      "respawn": 2.5
+    }
+  ],
+  "checkpoints": [
+    {
+      "id": "cp_80",
+      "x": 2160,
+      "y": 880
+    }
+  ],
+  "spikes": [],
+  "acids": [
+    {
+      "x": 830,
+      "y": 940,
+      "w": 155,
+      "h": 100
+    },
+    {
+      "x": 1845,
+      "y": 940,
+      "w": 165,
+      "h": 100
+    }
+  ],
+  "lasers": [],
+  "optical_beams": [
+    {
+      "link_id": "west_light",
+      "x": 115,
+      "y": 862,
+      "dir": [
+        1,
+        0
+      ],
+      "max_length": 500,
+      "receiver": [
+        260,
+        715,
+        18,
+        22
+      ],
+      "enabled_by": "feed"
+    }
+  ],
+  "sequences": [],
+  "collectibles": [
+    {
+      "id": "log_80",
+      "x": 2200,
+      "y": 840,
+      "title": "Last entry / open sky",
+      "text": "The outer microphone picked up wind. For once it was outside the facility."
+    },
+    {
+      "id": "field_trace_80",
+      "x": 1690,
+      "y": 804,
+      "title": "FIELD TRACE 80 / SURFACE BREACH FINALE",
+      "text": "ECHO-7 field diagnostics: Preserve the existing west antenna/weight `west_record`, east `reserve_B`, central `evac_proof` and final `countdown` dependency if those identifiers genuinely....",
+      "required_links": [
+        "west_record"
+      ],
+      "optional_investigation": true
+    },
+    {
+      "id": "overhaul_80_log",
+      "x": 1112,
+      "y": 677,
+      "title": "ECHO-7 / Last exterior relay",
+      "text": "A final observation point above the surface breach. Optional: the exit remains controlled by EVAC PROOF."
+    }
+  ],
+  "decorations": [
+    {
+      "type": "monitor",
+      "x": 1280,
+      "y": 802,
+      "text": "WEST / BEACON"
+    },
+    {
+      "type": "monitor",
+      "x": 1670,
+      "y": 800,
+      "text": "RESERVE / EAST"
+    },
+    {
+      "type": "monitor",
+      "x": 2250,
+      "y": 645,
+      "text": "TRANSFER B"
+    },
+    {
+      "type": "monitor",
+      "x": 2480,
+      "y": 718,
+      "text": "RETURN / 46s"
+    },
+    {
+      "type": "monitor",
+      "x": 1240,
+      "y": 371,
+      "text": "SURFACE AIRLOCK"
+    },
+    {
+      "type": "monitor",
+      "x": 1035,
+      "y": 747,
+      "text": "EVAC PROOF / A + B"
+    },
+    {
+      "type": "monitor",
+      "x": 1703,
+      "y": 766,
+      "text": "FORENSIC TRACE 80"
+    },
+    {
+      "type": "monitor",
+      "x": 1255,
+      "y": 717,
+      "text": "ACCESS / 80"
+    },
+    {
+      "type": "warning_stripe",
+      "x": 1094,
+      "y": 718,
+      "w": 78
+    }
+  ],
+  "npcs": [
+    {
+      "id": "kip",
+      "x": 1520,
+      "y": 880,
+      "dialogue": [
+        "An actual night sky. The building has excellent roof-removal policies.",
+        "Prove the western sensor reading, then bring the east reserve bus to B.",
+        "A central verification panel needs those two states before the final timed return. Set it before starting the countdown."
+      ]
+    },
+    {
+      "id": "ada_final",
+      "x": 1195,
+      "y": 444
+    }
+  ],
+  "abilities": {
+    "wall_jump": true,
+    "dash": true
+  },
+  "springs": [],
+  "dash_recharges": [],
+  "one_way_platforms": [
+    {
+      "id": "stair0",
+      "x": 1060,
+      "y": 802,
+      "w": 160,
+      "h": 14
+    },
+    {
+      "id": "stair1",
+      "x": 1240,
+      "y": 727,
+      "w": 165,
+      "h": 14
+    },
+    {
+      "id": "stair2",
+      "x": 1050,
+      "y": 652,
+      "w": 158,
+      "h": 14
+    },
+    {
+      "id": "stair3",
+      "x": 1230,
+      "y": 578,
+      "w": 155,
+      "h": 14
+    },
+    {
+      "id": "stair4",
+      "x": 1024,
+      "y": 511,
+      "w": 155,
+      "h": 14
+    },
+    {
+      "id": "moon_balcony",
+      "x": 1170,
+      "y": 444,
+      "w": 430,
+      "h": 18
+    },
+    {
+      "id": "overhaul_step_80_0",
+      "x": 1253,
+      "y": 820,
+      "w": 78,
+      "h": 12
+    },
+    {
+      "id": "overhaul_step_80_1",
+      "x": 1183,
+      "y": 762,
+      "w": 78,
+      "h": 12
+    },
+    {
+      "id": "overhaul_step_80_2",
+      "x": 1094,
+      "y": 706,
+      "w": 78,
+      "h": 12
+    }
+  ],
+  "dash_barriers": [],
+  "routing_consoles": [
+    {
+      "id": "reserve",
+      "route_id": "reserve",
+      "x": 2310,
+      "y": 723,
+      "a_signal": "reserve_A",
+      "b_signal": "reserve_B",
+      "required_links": [
+        "west_record"
+      ]
+    }
+  ],
+  "latching_relays": [
+    {
+      "link_id": "west_record",
+      "x": 570,
+      "y": 880,
+      "required_links": [
+        "west_light",
+        "west_plate"
+      ]
+    },
+    {
+      "link_id": "evac_proof",
+      "x": 1160,
+      "y": 802,
+      "required_links": [
+        "west_record",
+        "reserve_B"
+      ]
+    }
+  ],
+  "signal_inverters": [],
+  "solution_steps": [
+    "Restore the western antenna power. Align its reflector and position the lens cargo on the load scale. Interact with the west recorder while both readings are live.",
+    "Cross the gap and access the eastern reserve selector. Switch it to B; the western reading remains stored, so returning does not lose progress.",
+    "Return to the central stair. From its first shelf, latch EVAC PROOF while the western record and eastern B bus are available.",
+    "Return east only when the final route has been planned, arm the countdown, climb the central staircase and pass through the moon gate."
+  ],
+  "hint_route": [
+    "feed",
+    "west_plate",
+    "west_light",
+    "west_record",
+    "reserve_B",
+    "evac_proof",
+    "countdown"
+  ],
+  "hint_notes": {
+    "feed": [
+      "Start the west feed.",
+      "Start the west feed.",
+      "Start the west feed."
+    ],
+    "west_plate": [
+      "Roll the west crate right onto the pad.",
+      "Roll the west crate right onto the pad.",
+      "Roll the west crate right onto the pad."
+    ],
+    "west_light": [
+      "Reflect the beacon upward.",
+      "Reflect the beacon upward.",
+      "Reflect the beacon upward."
+    ],
+    "west_record": [
+      "Read both signals at the west recorder.",
+      "Read both signals at the west recorder.",
+      "Read both signals at the west recorder."
+    ],
+    "reserve_B": [
+      "Select B at the upper east station.",
+      "Select B at the upper east station.",
+      "Select B at the upper east station."
+    ],
+    "countdown": [
+      "Start the clock on the lower east balcony.",
+      "Start the clock on the lower east balcony.",
+      "Start the clock on the lower east balcony."
+    ]
+  },
+  "overhaul_version": 1,
+  "overhaul_design": {
+    "profile": "finale_detour",
+    "route": "left_up",
+    "actual_direction": -1,
+    "mandatory": false,
+    "service_platform_count": 3
+  }
+}

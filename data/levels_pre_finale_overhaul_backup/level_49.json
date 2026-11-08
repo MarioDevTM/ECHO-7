@@ -1,0 +1,746 @@
+{
+  "tiles": [
+    [
+      0,
+      0,
+      36,
+      946
+    ],
+    [
+      2638,
+      0,
+      36,
+      946
+    ],
+    [
+      36,
+      0,
+      2602,
+      30
+    ],
+    [
+      1560,
+      811,
+      362,
+      135
+    ],
+    [
+      652,
+      811,
+      432,
+      135
+    ],
+    [
+      652,
+      583,
+      432,
+      23
+    ],
+    [
+      652,
+      355,
+      432,
+      23
+    ],
+    [
+      1560,
+      355,
+      362,
+      23
+    ],
+    [
+      2084,
+      355,
+      390,
+      23
+    ],
+    [
+      2084,
+      583,
+      390,
+      23
+    ],
+    [
+      1887,
+      338,
+      10,
+      17
+    ],
+    [
+      2221,
+      449,
+      155,
+      18
+    ],
+    [
+      2358,
+      467,
+      18,
+      116
+    ],
+    [
+      1291,
+      849,
+      62,
+      97
+    ],
+    [
+      1291,
+      393,
+      62,
+      24
+    ],
+    [
+      696,
+      606,
+      344,
+      22
+    ],
+    [
+      696,
+      378,
+      344,
+      22
+    ],
+    [
+      1604,
+      378,
+      274,
+      22
+    ],
+    [
+      2406,
+      378,
+      44,
+      56
+    ],
+    [
+      2128,
+      606,
+      302,
+      22
+    ],
+    [
+      156,
+      30,
+      117,
+      42
+    ],
+    [
+      176,
+      72,
+      77,
+      16
+    ],
+    [
+      516,
+      30,
+      93,
+      42
+    ],
+    [
+      536,
+      72,
+      53,
+      16
+    ],
+    [
+      876,
+      30,
+      117,
+      28
+    ],
+    [
+      896,
+      58,
+      77,
+      16
+    ],
+    [
+      1236,
+      30,
+      93,
+      56
+    ],
+    [
+      1256,
+      86,
+      53,
+      16
+    ],
+    [
+      1596,
+      30,
+      117,
+      42
+    ],
+    [
+      1616,
+      72,
+      77,
+      16
+    ],
+    [
+      1956,
+      30,
+      93,
+      42
+    ],
+    [
+      1976,
+      72,
+      53,
+      16
+    ],
+    [
+      2316,
+      30,
+      117,
+      28
+    ],
+    [
+      2336,
+      58,
+      77,
+      16
+    ],
+    [
+      36,
+      140,
+      28,
+      73
+    ],
+    [
+      2610,
+      180,
+      28,
+      73
+    ],
+    [
+      36,
+      380,
+      28,
+      89
+    ],
+    [
+      2610,
+      420,
+      28,
+      89
+    ],
+    [
+      36,
+      620,
+      28,
+      73
+    ],
+    [
+      2610,
+      660,
+      28,
+      73
+    ],
+    [
+      1418,
+      707,
+      96,
+      28
+    ]
+  ],
+  "ladders": [],
+  "crates": [
+    {
+      "id": "load",
+      "x": 1675,
+      "y": 319
+    }
+  ],
+  "plates": [
+    {
+      "link_id": "weight",
+      "x": 1839,
+      "y": 355
+    }
+  ],
+  "switches": [],
+  "doors": [
+    {
+      "id": "surface_lock",
+      "x": 2221,
+      "y": 467,
+      "w": 20,
+      "h": 116,
+      "required_links": [
+        "alpha",
+        "full"
+      ]
+    }
+  ],
+  "moving_platforms": [
+    {
+      "id": "car0",
+      "x": 1927,
+      "y": 331,
+      "w": 65,
+      "h": 16,
+      "end_x": 2014,
+      "end_y": 289,
+      "speed": 116,
+      "active_by_default": true,
+      "required_links": []
+    },
+    {
+      "id": "car1",
+      "x": 2492,
+      "y": 575,
+      "w": 86,
+      "h": 16,
+      "end_x": 2492,
+      "end_y": 347,
+      "speed": 116,
+      "active_by_default": true,
+      "required_links": []
+    }
+  ],
+  "conveyors": [],
+  "wind_zones": [
+    {
+      "id": "column",
+      "x": 1068,
+      "y": 220,
+      "w": 104,
+      "h": 363,
+      "vx": 0,
+      "vy": -2400,
+      "controlled_by": "valve",
+      "active_by_default": false
+    }
+  ],
+  "water_zones": [
+    {
+      "id": "sump",
+      "x": 1590,
+      "y": 237,
+      "w": 312,
+      "h": 118,
+      "drained_y": 355,
+      "controlled_by": "dry"
+    }
+  ],
+  "valves": [
+    {
+      "link_id": "valve",
+      "x": 868,
+      "y": 811
+    },
+    {
+      "link_id": "dry",
+      "x": 868,
+      "y": 355
+    }
+  ],
+  "generators": [],
+  "cables": [
+    {
+      "link_id": "weight",
+      "points": [
+        [
+          1848,
+          343
+        ],
+        [
+          1848,
+          379
+        ],
+        [
+          2295,
+          379
+        ],
+        [
+          2295,
+          345
+        ]
+      ]
+    },
+    {
+      "link_id": "valve",
+      "points": [
+        [
+          877,
+          799
+        ],
+        [
+          877,
+          842
+        ],
+        [
+          2295,
+          842
+        ],
+        [
+          2295,
+          345
+        ]
+      ]
+    },
+    {
+      "link_id": "alpha",
+      "points": [
+        [
+          2279,
+          343
+        ],
+        [
+          2279,
+          549
+        ],
+        [
+          2229,
+          549
+        ],
+        [
+          2229,
+          527
+        ]
+      ]
+    },
+    {
+      "link_id": "full",
+      "points": [
+        [
+          1602,
+          223
+        ],
+        [
+          1602,
+          556
+        ],
+        [
+          2229,
+          556
+        ],
+        [
+          2229,
+          527
+        ]
+      ]
+    }
+  ],
+  "mirrors": [],
+  "crushers": [],
+  "steam_vents": [
+    {
+      "id": "seam4",
+      "x": 1985,
+      "y": 270,
+      "w": 36,
+      "h": 134,
+      "period": 3.1,
+      "duty_cycle": 0.43,
+      "disabled_by": []
+    }
+  ],
+  "collapsing_platforms": [],
+  "checkpoints": [
+    {
+      "id": "beacon_49",
+      "x": 2409,
+      "y": 355
+    }
+  ],
+  "spikes": [],
+  "acids": [
+    {
+      "x": 36,
+      "y": 871,
+      "w": 616,
+      "h": 75
+    },
+    {
+      "x": 1084,
+      "y": 871,
+      "w": 476,
+      "h": 75
+    },
+    {
+      "x": 1922,
+      "y": 871,
+      "w": 716,
+      "h": 75
+    }
+  ],
+  "lasers": [],
+  "optical_beams": [],
+  "sequences": [],
+  "collectibles": [
+    {
+      "id": "log_49",
+      "x": 694,
+      "y": 779,
+      "title": "Submerged Updraft / Shift Notes",
+      "text": "Submerged Updraft. Check the signal lines before you leave the service deck."
+    },
+    {
+      "id": "field_trace_49",
+      "x": 1856,
+      "y": 735,
+      "title": "FIELD TRACE 49 / UPDRAFT & BASIN HYBRID",
+      "text": "ECHO-7 field diagnostics: Link airflow/vent state to the approach to a raised reservoir, then require a separate basin decision.",
+      "required_links": [
+        "alpha"
+      ],
+      "optional_investigation": true
+    },
+    {
+      "id": "service_challenge_49",
+      "x": 2437,
+      "y": 313,
+      "title": "Optional Diagnostics 49",
+      "text": "Optional auxiliary service record recovered. This archive is no longer linked to a redundant side circuit and does not gate the exit.",
+      "required_links": [],
+      "optional_investigation": true
+    }
+  ],
+  "decorations": [
+    {
+      "type": "warning_stripe",
+      "x": 664,
+      "y": 595,
+      "w": 120
+    },
+    {
+      "type": "warning_stripe",
+      "x": 664,
+      "y": 367,
+      "w": 120
+    },
+    {
+      "type": "warning_stripe",
+      "x": 1572,
+      "y": 367,
+      "w": 120
+    },
+    {
+      "type": "warning_stripe",
+      "x": 2096,
+      "y": 367,
+      "w": 120
+    },
+    {
+      "type": "warning_stripe",
+      "x": 2096,
+      "y": 595,
+      "w": 120
+    },
+    {
+      "type": "monitor",
+      "x": 820,
+      "y": 719,
+      "text": "ISOLATE"
+    },
+    {
+      "type": "monitor",
+      "x": 664,
+      "y": 489,
+      "text": "EXHAUST"
+    },
+    {
+      "type": "monitor",
+      "x": 820,
+      "y": 263,
+      "text": "DRAIN / FILL"
+    },
+    {
+      "type": "monitor",
+      "x": 1776,
+      "y": 263,
+      "text": "RECEIVING SCALE"
+    },
+    {
+      "type": "monitor",
+      "x": 2249,
+      "y": 255,
+      "text": "HOLD WEIGHT + VALVE"
+    },
+    {
+      "type": "monitor",
+      "x": 2244,
+      "y": 409,
+      "text": "EXIT LOCK"
+    },
+    {
+      "type": "monitor",
+      "x": 1869,
+      "y": 697,
+      "text": "FORENSIC TRACE 49"
+    }
+  ],
+  "latching_relays": [
+    {
+      "link_id": "alpha",
+      "x": 2279,
+      "y": 355,
+      "required_links": [
+        "weight",
+        "valve"
+      ]
+    }
+  ],
+  "routing_consoles": [],
+  "signal_inverters": [
+    {
+      "link_id": "full",
+      "input": "dry",
+      "water_zone": "sump"
+    }
+  ],
+  "npcs": [
+    {
+      "id": "kip",
+      "x": 1660,
+      "y": 811,
+      "dialogue": [
+        "Submerged Updraft. I signed the inspection sheet in pencil.",
+        "Turn the handwheel and watch which machinery changes.",
+        "Open the inlet again and let the basin refill. The float will lift off the scale."
+      ]
+    }
+  ],
+  "springs": [],
+  "dash_recharges": [],
+  "one_way_platforms": [
+    {
+      "id": "walk0",
+      "x": 1124,
+      "y": 735,
+      "w": 83,
+      "h": 12
+    },
+    {
+      "id": "walk1",
+      "x": 1084,
+      "y": 659,
+      "w": 83,
+      "h": 12
+    }
+  ],
+  "dash_barriers": [],
+  "level_id": 49,
+  "width": 2674,
+  "height": 946,
+  "name": "Chamber 49 // Submerged Updraft",
+  "abilities": {
+    "wall_jump": true,
+    "dash": true
+  },
+  "spawn": [
+    1598,
+    765
+  ],
+  "exit": [
+    2278,
+    503
+  ],
+  "hint_route": [
+    "dry",
+    "weight",
+    "valve",
+    "alpha",
+    "full"
+  ],
+  "hint_notes": {
+    "dry": [
+      "Turn the handwheel and watch which machinery changes.",
+      "Turn the handwheel and watch which machinery changes.",
+      "Turn the handwheel and watch which machinery changes."
+    ],
+    "weight": [
+      "Move the cargo right until it rests on the receiving scale.",
+      "Move the cargo right until it rests on the receiving scale.",
+      "Move the cargo right until it rests on the receiving scale."
+    ],
+    "valve": [
+      "Turn the handwheel and watch which machinery changes.",
+      "Turn the handwheel and watch which machinery changes.",
+      "Turn the handwheel and watch which machinery changes."
+    ],
+    "alpha": [
+      "Keep weight and valve live, then interact with the recorder to hold the reading.",
+      "Keep weight and valve live, then interact with the recorder to hold the reading.",
+      "Keep weight and valve live, then interact with the recorder to hold the reading."
+    ],
+    "full": [
+      "Open the inlet again and let the basin refill. The float will lift off the scale.",
+      "Open the inlet again and let the basin refill. The float will lift off the scale.",
+      "Open the inlet again and let the basin refill. The float will lift off the scale."
+    ]
+  },
+  "solution_steps": [
+    "Turn the handwheel and watch which machinery changes.",
+    "Move the cargo right until it rests on the receiving scale.",
+    "Turn the handwheel and watch which machinery changes.",
+    "Keep weight and valve live, then interact with the recorder to hold the reading.",
+    "Open the inlet again and let the basin refill. The float will lift off the scale."
+  ],
+  "subtitle": "Turn the handwheel and watch which machinery changes.",
+  "chapter": 5,
+  "theme": "environmental",
+  "topology": "Updraft & Basin Hybrid",
+  "overhaul_version": 1,
+  "overhaul_design": {
+    "profile": "sequence",
+    "route": "left_up",
+    "actual_direction": -1,
+    "mandatory": false,
+    "service_platform_count": 0,
+    "retired_by_cleanup": true
+  },
+  "secondary_validation_1": {
+    "checkpoint": "beacon_49",
+    "extra_platforms": 0,
+    "signal": "sector_49_validated",
+    "retired_by_cleanup": true
+  },
+  "side_challenge_policy": {
+    "campaign_blocking": false,
+    "optional_signals": [],
+    "reason": "Deprecated optional side circuit removed; service record remains accessible."
+  },
+  "architectural_overhaul_v2": {
+    "archetype": "Stepped Hydraulic Caisson & Manifold Bay",
+    "chapter": 5,
+    "theme": "environmental",
+    "original_tile_count": 15,
+    "final_tile_count": 41,
+    "thickened_decks": 0,
+    "added_piers": 0,
+    "added_corbels": 5,
+    "added_soffits": 7,
+    "added_buttresses": 6,
+    "tiles_before_cleanup_pass": 40,
+    "removed_legacy_platforms": 5,
+    "removed_legacy_devices": 5,
+    "added_partition_walls": 0,
+    "added_grounded_piers": 0,
+    "added_stepped_terraces": 1
+  },
+  "cleanup_v3_audit": {
+    "level": 49,
+    "chapter": 5,
+    "theme": "environmental",
+    "name": "Chamber 49 // Submerged Updraft",
+    "archetype": "Stepped Hydraulic Caisson & Manifold Bay",
+    "orig_backup_tiles": 15,
+    "final_tiles": 41,
+    "removed_platforms": 5,
+    "retained_platforms": 3,
+    "removed_devices": 5,
+    "added_walls": 0,
+    "added_piers": 0,
+    "added_terraces": 1,
+    "gate_links": [
+      "alpha",
+      "full"
+    ]
+  }
+}

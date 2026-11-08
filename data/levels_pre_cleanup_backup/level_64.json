@@ -1,0 +1,739 @@
+{
+  "tiles": [
+    [
+      0,
+      0,
+      36,
+      922
+    ],
+    [
+      3270,
+      0,
+      36,
+      922
+    ],
+    [
+      36,
+      0,
+      3234,
+      30
+    ],
+    [
+      150,
+      571,
+      390,
+      40
+    ],
+    [
+      710,
+      571,
+      340,
+      40
+    ],
+    [
+      1582,
+      571,
+      432,
+      23
+    ],
+    [
+      1582,
+      355,
+      432,
+      23
+    ],
+    [
+      2184,
+      571,
+      362,
+      40
+    ],
+    [
+      2716,
+      571,
+      390,
+      40
+    ],
+    [
+      2853,
+      437,
+      155,
+      18
+    ],
+    [
+      2990,
+      455,
+      18,
+      116
+    ],
+    [
+      2130,
+      385,
+      14,
+      150
+    ],
+    [
+      194,
+      611,
+      302,
+      22
+    ],
+    [
+      754,
+      611,
+      252,
+      22
+    ],
+    [
+      1626,
+      594,
+      344,
+      22
+    ],
+    [
+      1606,
+      378,
+      44,
+      56
+    ],
+    [
+      1776,
+      378,
+      44,
+      56
+    ],
+    [
+      2228,
+      611,
+      274,
+      22
+    ],
+    [
+      2760,
+      611,
+      302,
+      22
+    ],
+    [
+      156,
+      30,
+      132,
+      42
+    ],
+    [
+      176,
+      72,
+      92,
+      16
+    ],
+    [
+      516,
+      30,
+      108,
+      42
+    ],
+    [
+      536,
+      72,
+      68,
+      16
+    ],
+    [
+      876,
+      30,
+      132,
+      28
+    ],
+    [
+      896,
+      58,
+      92,
+      16
+    ],
+    [
+      1236,
+      30,
+      108,
+      56
+    ],
+    [
+      1256,
+      86,
+      68,
+      16
+    ],
+    [
+      1596,
+      30,
+      132,
+      42
+    ],
+    [
+      1616,
+      72,
+      92,
+      16
+    ],
+    [
+      1956,
+      30,
+      108,
+      42
+    ],
+    [
+      1976,
+      72,
+      68,
+      16
+    ],
+    [
+      2316,
+      30,
+      132,
+      28
+    ],
+    [
+      2336,
+      58,
+      92,
+      16
+    ],
+    [
+      2676,
+      30,
+      108,
+      56
+    ],
+    [
+      2696,
+      86,
+      68,
+      16
+    ],
+    [
+      3036,
+      30,
+      132,
+      42
+    ],
+    [
+      3056,
+      72,
+      92,
+      16
+    ],
+    [
+      36,
+      140,
+      40,
+      76
+    ],
+    [
+      3230,
+      180,
+      40,
+      76
+    ],
+    [
+      36,
+      380,
+      40,
+      92
+    ],
+    [
+      3230,
+      420,
+      40,
+      92
+    ],
+    [
+      36,
+      620,
+      40,
+      76
+    ],
+    [
+      3230,
+      660,
+      40,
+      76
+    ]
+  ],
+  "ladders": [],
+  "crates": [],
+  "plates": [],
+  "switches": [
+    {
+      "link_id": "timer",
+      "x": 2365,
+      "y": 571,
+      "mode": "timed",
+      "duration": 19
+    }
+  ],
+  "doors": [
+    {
+      "id": "surface_lock",
+      "x": 2853,
+      "y": 455,
+      "w": 20,
+      "h": 116,
+      "required_links": [
+        "alpha",
+        "timer"
+      ]
+    }
+  ],
+  "moving_platforms": [
+    {
+      "id": "car0",
+      "x": 2032,
+      "y": 563,
+      "w": 86,
+      "h": 16,
+      "end_x": 2032,
+      "end_y": 347,
+      "speed": 124,
+      "active_by_default": false,
+      "required_links": [
+        "power"
+      ]
+    }
+  ],
+  "conveyors": [],
+  "wind_zones": [],
+  "water_zones": [],
+  "valves": [
+    {
+      "link_id": "overhaul_64_valve",
+      "x": 374,
+      "y": 397
+    }
+  ],
+  "generators": [
+    {
+      "link_id": "power",
+      "x": 880,
+      "y": 571
+    }
+  ],
+  "cables": [
+    {
+      "link_id": "power",
+      "points": [
+        [
+          889,
+          559
+        ],
+        [
+          889,
+          595
+        ],
+        [
+          1814,
+          595
+        ],
+        [
+          1814,
+          345
+        ]
+      ]
+    },
+    {
+      "link_id": "alpha",
+      "points": [
+        [
+          1798,
+          343
+        ],
+        [
+          1798,
+          537
+        ],
+        [
+          2861,
+          537
+        ],
+        [
+          2861,
+          515
+        ]
+      ]
+    },
+    {
+      "link_id": "timer",
+      "points": [
+        [
+          2365,
+          559
+        ],
+        [
+          2365,
+          600
+        ],
+        [
+          2861,
+          600
+        ],
+        [
+          2861,
+          515
+        ]
+      ]
+    }
+  ],
+  "mirrors": [],
+  "crushers": [],
+  "steam_vents": [
+    {
+      "id": "seam1",
+      "x": 1298,
+      "y": 486,
+      "w": 36,
+      "h": 134,
+      "period": 3.1,
+      "duty_cycle": 0.43,
+      "disabled_by": []
+    },
+    {
+      "id": "seam4",
+      "x": 2613,
+      "y": 486,
+      "w": 36,
+      "h": 134,
+      "period": 3.1,
+      "duty_cycle": 0.43,
+      "disabled_by": []
+    }
+  ],
+  "collapsing_platforms": [
+    {
+      "id": "walk0",
+      "x": 1286,
+      "y": 619,
+      "w": 60,
+      "h": 12,
+      "delay": 0.48,
+      "respawn": 2.4
+    },
+    {
+      "id": "walk2",
+      "x": 2098,
+      "y": 499,
+      "w": 58,
+      "h": 12,
+      "delay": 0.48,
+      "respawn": 2.4
+    }
+  ],
+  "checkpoints": [
+    {
+      "id": "beacon_64",
+      "x": 2481,
+      "y": 571
+    }
+  ],
+  "spikes": [],
+  "acids": [
+    {
+      "x": 36,
+      "y": 847,
+      "w": 3234,
+      "h": 75
+    }
+  ],
+  "lasers": [],
+  "optical_beams": [],
+  "sequences": [],
+  "collectibles": [
+    {
+      "id": "log_64",
+      "x": 752,
+      "y": 539,
+      "title": "The Fractured Bridge / Shift Notes",
+      "text": "The Fractured Bridge. Check the signal lines before you leave the service deck."
+    },
+    {
+      "id": "field_trace_64",
+      "x": 764,
+      "y": 495,
+      "title": "FIELD TRACE 64 / HIGH-ALTITUDE DASH CHASM",
+      "text": "ECHO-7 field diagnostics: Separate spring-launch preparation from far-bank power proof; only then arm a timed crossing.",
+      "required_links": [
+        "alpha"
+      ],
+      "optional_investigation": true
+    },
+    {
+      "id": "service_challenge_64",
+      "x": 2637,
+      "y": 404,
+      "title": "Optional Diagnostics 64",
+      "text": "Optional master circuit cleared. The standard exit never depends on this side challenge.",
+      "required_links": [
+        "sector_64_validated"
+      ],
+      "optional_investigation": true
+    }
+  ],
+  "decorations": [
+    {
+      "type": "warning_stripe",
+      "x": 162,
+      "y": 583,
+      "w": 120
+    },
+    {
+      "type": "warning_stripe",
+      "x": 722,
+      "y": 583,
+      "w": 120
+    },
+    {
+      "type": "warning_stripe",
+      "x": 1594,
+      "y": 583,
+      "w": 120
+    },
+    {
+      "type": "warning_stripe",
+      "x": 1594,
+      "y": 367,
+      "w": 120
+    },
+    {
+      "type": "warning_stripe",
+      "x": 2196,
+      "y": 583,
+      "w": 120
+    },
+    {
+      "type": "warning_stripe",
+      "x": 2728,
+      "y": 583,
+      "w": 120
+    },
+    {
+      "type": "monitor",
+      "x": 850,
+      "y": 471,
+      "text": "ENERGIZE"
+    },
+    {
+      "type": "monitor",
+      "x": 1594,
+      "y": 475,
+      "text": "LAUNCH"
+    },
+    {
+      "type": "monitor",
+      "x": 1768,
+      "y": 255,
+      "text": "HOLD POWER"
+    },
+    {
+      "type": "monitor",
+      "x": 2333,
+      "y": 478,
+      "text": "ESCAPE 19s"
+    },
+    {
+      "type": "monitor",
+      "x": 2876,
+      "y": 397,
+      "text": "EXIT LOCK"
+    },
+    {
+      "type": "monitor",
+      "x": 777,
+      "y": 457,
+      "text": "FORENSIC TRACE 64"
+    },
+    {
+      "type": "monitor",
+      "x": 199,
+      "y": 408,
+      "text": "ACCESS / 64"
+    },
+    {
+      "type": "warning_stripe",
+      "x": 356,
+      "y": 409,
+      "w": 78
+    }
+  ],
+  "latching_relays": [
+    {
+      "link_id": "alpha",
+      "x": 1798,
+      "y": 355,
+      "required_links": [
+        "power"
+      ]
+    },
+    {
+      "link_id": "sector_64_validated",
+      "x": 2625,
+      "y": 446,
+      "required_links": [
+        "overhaul_64_valve"
+      ]
+    }
+  ],
+  "routing_consoles": [],
+  "signal_inverters": [],
+  "npcs": [
+    {
+      "id": "kip",
+      "x": 250,
+      "y": 571,
+      "dialogue": [
+        "The Fractured Bridge. Please count the clicks. I keep losing count.",
+        "Start the generator to bring the circuit online.",
+        "Start the clock after the other lock lights are green."
+      ]
+    }
+  ],
+  "springs": [
+    {
+      "id": "launch",
+      "x": 1959,
+      "y": 561,
+      "w": 56,
+      "h": 10
+    }
+  ],
+  "dash_recharges": [
+    {
+      "id": "span_charge1",
+      "x": 1304,
+      "y": 505
+    }
+  ],
+  "one_way_platforms": [
+    {
+      "id": "walk1",
+      "x": 2042,
+      "y": 427,
+      "w": 58,
+      "h": 12
+    },
+    {
+      "id": "overhaul_step_64_0",
+      "x": 197,
+      "y": 511,
+      "w": 78,
+      "h": 12
+    },
+    {
+      "id": "overhaul_step_64_1",
+      "x": 267,
+      "y": 453,
+      "w": 78,
+      "h": 12
+    },
+    {
+      "id": "overhaul_step_64_2",
+      "x": 356,
+      "y": 397,
+      "w": 78,
+      "h": 12
+    },
+    {
+      "id": "validation_foot_64_0",
+      "x": 2522,
+      "y": 508,
+      "w": 78,
+      "h": 12
+    },
+    {
+      "id": "validation_foot_64_1",
+      "x": 2607,
+      "y": 446,
+      "w": 78,
+      "h": 12
+    }
+  ],
+  "dash_barriers": [],
+  "level_id": 64,
+  "width": 3306,
+  "height": 922,
+  "name": "Chamber 64 // The Fractured Bridge",
+  "abilities": {
+    "wall_jump": true,
+    "dash": true
+  },
+  "spawn": [
+    188,
+    525
+  ],
+  "exit": [
+    2910,
+    491
+  ],
+  "hint_route": [
+    "power",
+    "alpha",
+    "timer"
+  ],
+  "hint_notes": {
+    "power": [
+      "Start the generator to bring the circuit online.",
+      "Start the generator to bring the circuit online.",
+      "Start the generator to bring the circuit online."
+    ],
+    "alpha": [
+      "Keep power live, then interact with the recorder to hold the reading.",
+      "Keep power live, then interact with the recorder to hold the reading.",
+      "Keep power live, then interact with the recorder to hold the reading."
+    ],
+    "timer": [
+      "Start the clock after the other lock lights are green.",
+      "Start the clock after the other lock lights are green.",
+      "Start the clock after the other lock lights are green."
+    ]
+  },
+  "solution_steps": [
+    "Start the generator to bring the circuit online.",
+    "Keep power live, then interact with the recorder to hold the reading.",
+    "Start the clock after the other lock lights are green.",
+    "Find the upper service handwheel and restore the isolated circuit."
+  ],
+  "subtitle": "Start the generator to bring the circuit online.  //  SERVICE DETOUR: Find the upper service handwheel and restore the isolated circuit.",
+  "chapter": 7,
+  "theme": "spire",
+  "topology": "High-Altitude Dash Chasm",
+  "overhaul_version": 1,
+  "overhaul_design": {
+    "profile": "valve",
+    "route": "left_up",
+    "actual_direction": 1,
+    "mandatory": true,
+    "service_platform_count": 3
+  },
+  "secondary_validation_1": {
+    "checkpoint": "beacon_64",
+    "extra_platforms": 2,
+    "signal": "sector_64_validated"
+  },
+  "side_challenge_policy": {
+    "campaign_blocking": false,
+    "optional_signals": [
+      "overhaul_64_valve",
+      "sector_64_validated"
+    ],
+    "reason": "Not proven traversable in the Pygame engine; preserve main progression."
+  },
+  "architectural_overhaul_v2": {
+    "archetype": "Buttressed Machinery Core",
+    "chapter": 7,
+    "theme": "spire",
+    "original_tile_count": 12,
+    "final_tile_count": 43,
+    "thickened_decks": 4,
+    "added_piers": 0,
+    "added_corbels": 7,
+    "added_soffits": 9,
+    "added_buttresses": 6
+  }
+}

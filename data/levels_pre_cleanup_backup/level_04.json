@@ -1,0 +1,269 @@
+{
+  "level_id": 4,
+  "hint_route": [
+    "shield_4",
+    "sw_timed_4"
+  ],
+  "chapter": 1,
+  "theme": "awakening",
+  "name": "Chamber 04 // Emergency Exit",
+  "subtitle": "Stage the shield below, then run the emergency stair before the lock cycles.",
+  "width": 1970,
+  "height": 850,
+  "spawn": [
+    92,
+    664
+  ],
+  "exit": [
+    1846,
+    325
+  ],
+  "tiles": [
+    [
+      0,
+      0,
+      40,
+      850
+    ],
+    [
+      40,
+      0,
+      1890,
+      32
+    ],
+    [
+      1930,
+      0,
+      40,
+      850
+    ],
+    [
+      40,
+      710,
+      950,
+      140
+    ],
+    [
+      1080,
+      650,
+      175,
+      20
+    ],
+    [
+      1360,
+      570,
+      142,
+      20
+    ],
+    [
+      1550,
+      490,
+      135,
+      20
+    ],
+    [
+      1750,
+      405,
+      180,
+      445
+    ],
+    [
+      250,
+      625,
+      160,
+      20
+    ],
+    [
+      490,
+      545,
+      180,
+      20
+    ],
+    [
+      730,
+      475,
+      218,
+      20
+    ],
+    [
+      1775,
+      285,
+      155,
+      20
+    ]
+  ],
+  "ladders": [],
+  "crates": [
+    {
+      "id": "shield",
+      "x": 400,
+      "y": 674
+    }
+  ],
+  "plates": [
+    {
+      "link_id": "shield_4",
+      "x": 850,
+      "y": 710
+    }
+  ],
+  "switches": [
+    {
+      "link_id": "sw_timed_4",
+      "x": 790,
+      "y": 475,
+      "mode": "timed",
+      "duration": 11
+    }
+  ],
+  "doors": [
+    {
+      "id": "d4_exit",
+      "x": 1775,
+      "y": 305,
+      "w": 24,
+      "h": 100,
+      "required_links": [
+        "shield_4",
+        "sw_timed_4"
+      ],
+      "logic": "ALL"
+    }
+  ],
+  "moving_platforms": [],
+  "conveyors": [],
+  "wind_zones": [],
+  "water_zones": [],
+  "valves": [],
+  "generators": [],
+  "cables": [
+    {
+      "link_id": "shield_4",
+      "points": [
+        [
+          862,
+          696
+        ],
+        [
+          862,
+          750
+        ],
+        [
+          1783,
+          750
+        ],
+        [
+          1783,
+          355
+        ]
+      ]
+    },
+    {
+      "link_id": "sw_timed_4",
+      "points": [
+        [
+          802,
+          461
+        ],
+        [
+          802,
+          521
+        ],
+        [
+          1783,
+          521
+        ],
+        [
+          1783,
+          355
+        ]
+      ]
+    }
+  ],
+  "mirrors": [],
+  "crushers": [],
+  "steam_vents": [],
+  "collapsing_platforms": [],
+  "checkpoints": [
+    {
+      "id": "cp4_1",
+      "x": 700,
+      "y": 710
+    }
+  ],
+  "spikes": [],
+  "acids": [
+    {
+      "x": 990,
+      "y": 780,
+      "w": 760,
+      "h": 70
+    }
+  ],
+  "lasers": [
+    {
+      "x": 1430,
+      "y": 400,
+      "dir": [
+        0,
+        1
+      ],
+      "max_length": 167,
+      "disabled_by": [
+        "shield_4"
+      ]
+    }
+  ],
+  "optical_beams": [],
+  "sequences": [],
+  "collectibles": [
+    {
+      "id": "log_04",
+      "x": 535,
+      "y": 513,
+      "title": "Evacuation Directive",
+      "text": "Personnel proceeding to Mechanical Depths must wear rated hazard suits."
+    }
+  ],
+  "decorations": [
+    {
+      "type": "monitor",
+      "x": 764,
+      "y": 386,
+      "text": "ESCAPE / 11s"
+    }
+  ],
+  "solution_steps": [
+    "Park the shield on the interlock and arm the timer at the top of the west stair.",
+    "Drop forward onto the first landing and climb the broken evacuation stair."
+  ],
+  "npcs": [
+    {
+      "id": "kip",
+      "x": 162,
+      "y": 710
+    }
+  ],
+  "abilities": {
+    "wall_jump": false,
+    "dash": false
+  },
+  "springs": [],
+  "dash_recharges": [],
+  "one_way_platforms": [],
+  "dash_barriers": [],
+  "routing_consoles": [],
+  "latching_relays": [],
+  "hint_notes": {
+    "shield_4": [
+      "Stage the shield below, then run the emergency stair before the lock cycles.",
+      "Park the shield on the interlock and arm the timer at the top of the west stair.",
+      "Drop forward onto the first landing and climb the broken evacuation stair."
+    ],
+    "sw_timed_4": [
+      "Stage the shield below, then run the emergency stair before the lock cycles.",
+      "Park the shield on the interlock and arm the timer at the top of the west stair.",
+      "Drop forward onto the first landing and climb the broken evacuation stair."
+    ]
+  }
+}

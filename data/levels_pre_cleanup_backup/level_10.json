@@ -1,0 +1,310 @@
+{
+  "level_id": 10,
+  "chapter": 1,
+  "theme": "awakening",
+  "name": "Chamber 10 // Circuit Breaker",
+  "subtitle": "Trace the numbered breakers down from the crown. The transfer relay needs the complete chain.",
+  "width": 1530,
+  "height": 970,
+  "spawn": [
+    1260,
+    779
+  ],
+  "exit": [
+    72,
+    380
+  ],
+  "tiles": [
+    [
+      0,
+      0,
+      40,
+      970
+    ],
+    [
+      40,
+      0,
+      1450,
+      32
+    ],
+    [
+      1490,
+      0,
+      40,
+      970
+    ],
+    [
+      40,
+      825,
+      1450,
+      145
+    ],
+    [
+      40,
+      340,
+      152,
+      20
+    ],
+    [
+      40,
+      460,
+      152,
+      20
+    ],
+    [
+      192,
+      460,
+      58,
+      20
+    ]
+  ],
+  "ladders": [],
+  "crates": [],
+  "plates": [],
+  "switches": [
+    {
+      "link_id": "seq_10_1",
+      "x": 755,
+      "y": 300,
+      "mode": "sequence",
+      "duration": 0
+    },
+    {
+      "link_id": "seq_10_2",
+      "x": 350,
+      "y": 460,
+      "mode": "sequence",
+      "duration": 0
+    },
+    {
+      "link_id": "seq_10_3",
+      "x": 1180,
+      "y": 825,
+      "mode": "sequence",
+      "duration": 0
+    }
+  ],
+  "doors": [
+    {
+      "id": "d10_exit",
+      "x": 168,
+      "y": 360,
+      "w": 24,
+      "h": 100,
+      "required_links": [
+        "run",
+        "continuity"
+      ],
+      "logic": "ALL"
+    }
+  ],
+  "moving_platforms": [],
+  "conveyors": [],
+  "wind_zones": [],
+  "water_zones": [],
+  "valves": [],
+  "generators": [],
+  "cables": [
+    {
+      "link_id": "continuity",
+      "points": [
+        [
+          872,
+          636
+        ],
+        [
+          872,
+          696
+        ],
+        [
+          176,
+          696
+        ],
+        [
+          176,
+          410
+        ]
+      ]
+    }
+  ],
+  "mirrors": [],
+  "crushers": [],
+  "steam_vents": [],
+  "collapsing_platforms": [],
+  "checkpoints": [
+    {
+      "id": "cp10_1",
+      "x": 1000,
+      "y": 825
+    }
+  ],
+  "spikes": [],
+  "acids": [],
+  "lasers": [],
+  "optical_beams": [],
+  "sequences": [
+    {
+      "group_id": "chain",
+      "order": [
+        "seq_10_1",
+        "seq_10_2",
+        "seq_10_3"
+      ]
+    }
+  ],
+  "collectibles": [
+    {
+      "id": "log_10",
+      "x": 1245,
+      "y": 440,
+      "title": "Substation Schematic",
+      "text": "Dual timed breakers prevent arc-flash. Trigger upper bus before floor bus."
+    }
+  ],
+  "decorations": [
+    {
+      "type": "monitor",
+      "x": 723,
+      "y": 210,
+      "text": "01 / SOURCE"
+    },
+    {
+      "type": "monitor",
+      "x": 326,
+      "y": 365,
+      "text": "02 / RETURN"
+    },
+    {
+      "type": "monitor",
+      "x": 1195,
+      "y": 720,
+      "text": "03 / GROUND"
+    },
+    {
+      "type": "monitor",
+      "x": 834,
+      "y": 561,
+      "text": "TEST MEMORY"
+    },
+    {
+      "type": "monitor",
+      "x": 619,
+      "y": 736,
+      "text": "TEST / RUN"
+    }
+  ],
+  "solution_steps": [
+    "Ascend the right switchback, trace the numbered breakers across the crown and descend to ground.",
+    "Climb to the continuity meter while the selector is on TEST. Store the result and transfer to RUN."
+  ],
+  "hint_route": [
+    "run",
+    "continuity"
+  ],
+  "npcs": [
+    {
+      "id": "kip",
+      "x": 1330,
+      "y": 825
+    }
+  ],
+  "abilities": {
+    "wall_jump": true,
+    "dash": true
+  },
+  "springs": [],
+  "dash_recharges": [],
+  "one_way_platforms": [
+    {
+      "id": "deck1040_735",
+      "x": 1040,
+      "y": 735,
+      "w": 140,
+      "h": 14
+    },
+    {
+      "id": "deck810_650",
+      "x": 810,
+      "y": 650,
+      "w": 120,
+      "h": 14
+    },
+    {
+      "id": "deck1005_562",
+      "x": 1005,
+      "y": 562,
+      "w": 112,
+      "h": 14
+    },
+    {
+      "id": "deck1210_472",
+      "x": 1210,
+      "y": 472,
+      "w": 145,
+      "h": 14
+    },
+    {
+      "id": "deck970_385",
+      "x": 970,
+      "y": 385,
+      "w": 130,
+      "h": 14
+    },
+    {
+      "id": "deck715_300",
+      "x": 715,
+      "y": 300,
+      "w": 155,
+      "h": 14
+    },
+    {
+      "id": "deck510_380",
+      "x": 510,
+      "y": 380,
+      "w": 128,
+      "h": 14
+    },
+    {
+      "id": "deck250_460",
+      "x": 250,
+      "y": 460,
+      "w": 180,
+      "h": 14
+    }
+  ],
+  "dash_barriers": [],
+  "routing_consoles": [
+    {
+      "id": "selector",
+      "x": 645,
+      "y": 825,
+      "route_id": "breaker",
+      "a_signal": "test",
+      "b_signal": "run",
+      "required_links": []
+    }
+  ],
+  "latching_relays": [
+    {
+      "link_id": "continuity",
+      "x": 860,
+      "y": 650,
+      "required_links": [
+        "chain",
+        "test"
+      ]
+    }
+  ],
+  "hint_notes": {
+    "run": [
+      "Trace the numbered breakers down from the crown. The transfer relay needs the complete chain.",
+      "Ascend the right switchback, trace the numbered breakers across the crown and descend to ground.",
+      "Climb to the continuity meter while the selector is on TEST. Store the result and transfer to RUN."
+    ],
+    "continuity": [
+      "Trace the numbered breakers down from the crown. The transfer relay needs the complete chain.",
+      "Ascend the right switchback, trace the numbered breakers across the crown and descend to ground.",
+      "Climb to the continuity meter while the selector is on TEST. Store the result and transfer to RUN."
+    ]
+  }
+}

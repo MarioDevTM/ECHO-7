@@ -1,0 +1,484 @@
+{
+  "level_id": 24,
+  "chapter": 3,
+  "name": "Chamber 24 // Blackstart",
+  "subtitle": "Blackstart the island on battery A, synchronize the reserve, then transfer under load before the breaker trips.",
+  "theme": "power",
+  "width": 2030,
+  "height": 1110,
+  "spawn": [
+    85,
+    909
+  ],
+  "exit": [
+    72,
+    370
+  ],
+  "tiles": [
+    [
+      0,
+      0,
+      40,
+      1110
+    ],
+    [
+      40,
+      0,
+      1950,
+      32
+    ],
+    [
+      1990,
+      0,
+      40,
+      1110
+    ],
+    [
+      40,
+      955,
+      745,
+      155
+    ],
+    [
+      1370,
+      875,
+      620,
+      235
+    ],
+    [
+      40,
+      330,
+      152,
+      20
+    ],
+    [
+      40,
+      450,
+      152,
+      20
+    ]
+  ],
+  "hint_route": [
+    "sync",
+    "transfer",
+    "mains",
+    "trip_window"
+  ],
+  "switches": [
+    {
+      "link_id": "west",
+      "x": 650,
+      "y": 779,
+      "mode": "sequence",
+      "duration": 0
+    },
+    {
+      "link_id": "east",
+      "x": 1415,
+      "y": 464,
+      "mode": "sequence",
+      "duration": 0
+    },
+    {
+      "link_id": "trip_window",
+      "x": 680,
+      "y": 955,
+      "mode": "timed",
+      "duration": 12
+    }
+  ],
+  "sequences": [
+    {
+      "group_id": "armed",
+      "order": [
+        "west",
+        "east"
+      ]
+    }
+  ],
+  "generators": [
+    {
+      "link_id": "reserve",
+      "x": 1720,
+      "y": 698
+    }
+  ],
+  "collapsing_platforms": [],
+  "acids": [
+    {
+      "x": 785,
+      "y": 1020,
+      "w": 585,
+      "h": 90
+    }
+  ],
+  "lasers": [],
+  "doors": [
+    {
+      "id": "exit_lock",
+      "x": 168,
+      "y": 350,
+      "w": 24,
+      "h": 100,
+      "required_links": [
+        "sync",
+        "transfer",
+        "mains",
+        "trip_window"
+      ],
+      "logic": "ALL"
+    }
+  ],
+  "cables": [
+    {
+      "link_id": "transfer",
+      "points": [
+        [
+          497,
+          851
+        ],
+        [
+          497,
+          911
+        ],
+        [
+          176,
+          911
+        ],
+        [
+          176,
+          400
+        ]
+      ]
+    },
+    {
+      "link_id": "trip_window",
+      "points": [
+        [
+          692,
+          941
+        ],
+        [
+          692,
+          1013
+        ],
+        [
+          176,
+          1013
+        ],
+        [
+          176,
+          400
+        ]
+      ]
+    },
+    {
+      "link_id": "reserve",
+      "points": [
+        [
+          1732,
+          684
+        ],
+        [
+          1732,
+          750
+        ],
+        [
+          1668,
+          750
+        ],
+        [
+          1668,
+          526
+        ]
+      ]
+    },
+    {
+      "link_id": "sync",
+      "points": [
+        [
+          1672,
+          520
+        ],
+        [
+          1672,
+          911
+        ],
+        [
+          493,
+          911
+        ],
+        [
+          493,
+          857
+        ]
+      ]
+    },
+    {
+      "link_id": "reserve",
+      "points": [
+        [
+          1732,
+          684
+        ],
+        [
+          1732,
+          992
+        ],
+        [
+          798,
+          992
+        ],
+        [
+          798,
+          932
+        ]
+      ]
+    }
+  ],
+  "decorations": [
+    {
+      "type": "monitor",
+      "x": 620,
+      "y": 680,
+      "text": "1 / ISLAND"
+    },
+    {
+      "type": "monitor",
+      "x": 1360,
+      "y": 366,
+      "text": "2 / PHASE"
+    },
+    {
+      "type": "monitor",
+      "x": 459,
+      "y": 776,
+      "text": "LOAD TEST"
+    },
+    {
+      "type": "monitor",
+      "x": 1634,
+      "y": 445,
+      "text": "SYNC ISLAND"
+    },
+    {
+      "type": "monitor",
+      "x": 1474,
+      "y": 730,
+      "text": "ISLAND / GRID"
+    }
+  ],
+  "npcs": [
+    {
+      "id": "kip",
+      "x": 155,
+      "y": 955
+    }
+  ],
+  "abilities": {
+    "wall_jump": true,
+    "dash": true
+  },
+  "springs": [],
+  "dash_recharges": [
+    {
+      "id": "ring1070",
+      "x": 1070,
+      "y": 810
+    }
+  ],
+  "one_way_platforms": [
+    {
+      "id": "deck430_865",
+      "x": 430,
+      "y": 865,
+      "w": 116,
+      "h": 14
+    },
+    {
+      "id": "deck625_779",
+      "x": 625,
+      "y": 779,
+      "w": 98,
+      "h": 14
+    },
+    {
+      "id": "deck420_690",
+      "x": 420,
+      "y": 690,
+      "w": 95,
+      "h": 14
+    },
+    {
+      "id": "deck225_615",
+      "x": 225,
+      "y": 615,
+      "w": 102,
+      "h": 14
+    },
+    {
+      "id": "deck412_530",
+      "x": 412,
+      "y": 530,
+      "w": 112,
+      "h": 14
+    },
+    {
+      "id": "deck211_444",
+      "x": 211,
+      "y": 444,
+      "w": 112,
+      "h": 14
+    },
+    {
+      "id": "deck1470_783",
+      "x": 1470,
+      "y": 783,
+      "w": 118,
+      "h": 14
+    },
+    {
+      "id": "deck1680_698",
+      "x": 1680,
+      "y": 698,
+      "w": 112,
+      "h": 14
+    },
+    {
+      "id": "deck1870_615",
+      "x": 1870,
+      "y": 615,
+      "w": 98,
+      "h": 14
+    },
+    {
+      "id": "deck1620_534",
+      "x": 1620,
+      "y": 534,
+      "w": 118,
+      "h": 14
+    },
+    {
+      "id": "deck1390_464",
+      "x": 1390,
+      "y": 464,
+      "w": 115,
+      "h": 14
+    }
+  ],
+  "dash_barriers": [
+    {
+      "id": "seal",
+      "x": 137,
+      "y": 350,
+      "w": 18,
+      "h": 100
+    }
+  ],
+  "routing_consoles": [
+    {
+      "id": "west_bus",
+      "x": 260,
+      "y": 955,
+      "route_id": "grid",
+      "a_signal": "island",
+      "b_signal": "mains",
+      "required_links": []
+    },
+    {
+      "id": "east_bus",
+      "x": 1500,
+      "y": 875,
+      "route_id": "grid",
+      "a_signal": "island",
+      "b_signal": "mains",
+      "required_links": []
+    }
+  ],
+  "latching_relays": [
+    {
+      "link_id": "sync",
+      "x": 1660,
+      "y": 534,
+      "required_links": [
+        "armed",
+        "island",
+        "reserve"
+      ]
+    },
+    {
+      "link_id": "transfer",
+      "x": 485,
+      "y": 865,
+      "required_links": [
+        "sync",
+        "mains"
+      ]
+    }
+  ],
+  "ladders": [],
+  "checkpoints": [
+    {
+      "id": "cp24_1",
+      "x": 1570,
+      "y": 875
+    }
+  ],
+  "spikes": [],
+  "conveyors": [],
+  "steam_vents": [],
+  "hint_notes": {
+    "sync": [
+      "Arm the west breaker, cross on island power, start reserve and visit the high east phase tap.",
+      "Store synchronization on island power, then transfer to mains. Return on reserve and record the loaded transfer.",
+      "Arm the trip window and climb the alternating ledges to the west hatch."
+    ],
+    "transfer": [
+      "Arm the west breaker, cross on island power, start reserve and visit the high east phase tap.",
+      "Store synchronization on island power, then transfer to mains. Return on reserve and record the loaded transfer.",
+      "Arm the trip window and climb the alternating ledges to the west hatch."
+    ],
+    "mains": [
+      "Arm the west breaker, cross on island power, start reserve and visit the high east phase tap.",
+      "Store synchronization on island power, then transfer to mains. Return on reserve and record the loaded transfer.",
+      "Arm the trip window and climb the alternating ledges to the west hatch."
+    ],
+    "trip_window": [
+      "Arm the west breaker, cross on island power, start reserve and visit the high east phase tap.",
+      "Store synchronization on island power, then transfer to mains. Return on reserve and record the loaded transfer.",
+      "Arm the trip window and climb the alternating ledges to the west hatch."
+    ]
+  },
+  "solution_steps": [
+    "Arm the west breaker, cross on island power, start reserve and visit the high east phase tap.",
+    "Store synchronization on island power, then transfer to mains. Return on reserve and record the loaded transfer.",
+    "Arm the trip window and climb the alternating ledges to the west hatch."
+  ],
+  "collectibles": [
+    {
+      "id": "log_24",
+      "x": 210,
+      "y": 919,
+      "title": "Sector 3 / Recovery Log 24",
+      "text": "The facility reclassified optional service room 24 as essential for surface access."
+    }
+  ],
+  "moving_platforms": [
+    {
+      "id": "raft",
+      "x": 790,
+      "y": 940,
+      "w": 114,
+      "h": 18,
+      "end_x": 1246,
+      "end_y": 865,
+      "speed": 150,
+      "active_by_default": false,
+      "logic": "ANY",
+      "required_links": [
+        "island",
+        "reserve"
+      ]
+    }
+  ]
+}

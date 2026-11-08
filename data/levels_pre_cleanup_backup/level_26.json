@@ -1,0 +1,738 @@
+{
+  "tiles": [
+    [
+      0,
+      0,
+      36,
+      1210
+    ],
+    [
+      1432,
+      0,
+      36,
+      1210
+    ],
+    [
+      36,
+      0,
+      1396,
+      30
+    ],
+    [
+      150,
+      1075,
+      432,
+      135
+    ],
+    [
+      906,
+      1075,
+      362,
+      135
+    ],
+    [
+      906,
+      835,
+      362,
+      23
+    ],
+    [
+      906,
+      595,
+      362,
+      23
+    ],
+    [
+      906,
+      355,
+      362,
+      23
+    ],
+    [
+      150,
+      355,
+      432,
+      40
+    ],
+    [
+      308,
+      221,
+      155,
+      18
+    ],
+    [
+      445,
+      239,
+      18,
+      116
+    ],
+    [
+      713,
+      1113,
+      62,
+      97
+    ],
+    [
+      713,
+      393,
+      62,
+      24
+    ],
+    [
+      958,
+      858,
+      258,
+      22
+    ],
+    [
+      958,
+      618,
+      258,
+      22
+    ],
+    [
+      958,
+      378,
+      258,
+      22
+    ],
+    [
+      202,
+      395,
+      328,
+      22
+    ],
+    [
+      156,
+      30,
+      110,
+      56
+    ],
+    [
+      176,
+      86,
+      70,
+      16
+    ],
+    [
+      556,
+      30,
+      126,
+      56
+    ],
+    [
+      576,
+      86,
+      86,
+      16
+    ],
+    [
+      956,
+      30,
+      94,
+      42
+    ],
+    [
+      976,
+      72,
+      54,
+      16
+    ],
+    [
+      36,
+      140,
+      40,
+      94
+    ],
+    [
+      36,
+      380,
+      40,
+      78
+    ],
+    [
+      36,
+      620,
+      40,
+      94
+    ],
+    [
+      36,
+      860,
+      40,
+      78
+    ]
+  ],
+  "ladders": [
+    {
+      "x": 1270,
+      "y": 797,
+      "h": 288
+    },
+    {
+      "x": 1270,
+      "y": 557,
+      "h": 288
+    },
+    {
+      "x": 1270,
+      "y": 317,
+      "h": 288
+    }
+  ],
+  "crates": [],
+  "plates": [],
+  "switches": [
+    {
+      "link_id": "timer",
+      "x": 1087,
+      "y": 355,
+      "mode": "timed",
+      "duration": 19
+    },
+    {
+      "link_id": "overhaul_26_first",
+      "x": 233,
+      "y": 1014,
+      "mode": "sequence"
+    },
+    {
+      "link_id": "overhaul_26_second",
+      "x": 316,
+      "y": 955,
+      "mode": "sequence"
+    },
+    {
+      "link_id": "overhaul_26_third",
+      "x": 397,
+      "y": 891,
+      "mode": "sequence"
+    }
+  ],
+  "doors": [
+    {
+      "id": "surface_lock",
+      "x": 308,
+      "y": 239,
+      "w": 20,
+      "h": 116,
+      "required_links": [
+        "proof",
+        "B",
+        "timer"
+      ]
+    }
+  ],
+  "moving_platforms": [
+    {
+      "id": "car0",
+      "x": 1286,
+      "y": 1067,
+      "w": 86,
+      "h": 16,
+      "end_x": 1286,
+      "end_y": 827,
+      "speed": 108,
+      "active_by_default": false,
+      "required_links": [
+        "power"
+      ]
+    }
+  ],
+  "conveyors": [],
+  "wind_zones": [],
+  "water_zones": [],
+  "valves": [],
+  "generators": [
+    {
+      "link_id": "power",
+      "x": 1087,
+      "y": 1075
+    }
+  ],
+  "cables": [
+    {
+      "link_id": "A",
+      "points": [
+        [
+          1096,
+          823
+        ],
+        [
+          1096,
+          859
+        ],
+        [
+          1103,
+          859
+        ],
+        [
+          1103,
+          585
+        ]
+      ]
+    },
+    {
+      "link_id": "power",
+      "points": [
+        [
+          1096,
+          1063
+        ],
+        [
+          1096,
+          1106
+        ],
+        [
+          1103,
+          1106
+        ],
+        [
+          1103,
+          585
+        ]
+      ]
+    },
+    {
+      "link_id": "proof",
+      "points": [
+        [
+          1087,
+          583
+        ],
+        [
+          1087,
+          617
+        ],
+        [
+          316,
+          617
+        ],
+        [
+          316,
+          299
+        ]
+      ]
+    },
+    {
+      "link_id": "B",
+      "points": [
+        [
+          1097,
+          823
+        ],
+        [
+          1097,
+          864
+        ],
+        [
+          316,
+          864
+        ],
+        [
+          316,
+          299
+        ]
+      ]
+    },
+    {
+      "link_id": "timer",
+      "points": [
+        [
+          1087,
+          343
+        ],
+        [
+          1087,
+          391
+        ],
+        [
+          316,
+          391
+        ],
+        [
+          316,
+          299
+        ]
+      ]
+    }
+  ],
+  "mirrors": [],
+  "crushers": [],
+  "steam_vents": [
+    {
+      "id": "seam0",
+      "x": 726,
+      "y": 990,
+      "w": 36,
+      "h": 134,
+      "period": 3.1,
+      "duty_cycle": 0.43,
+      "disabled_by": []
+    }
+  ],
+  "collapsing_platforms": [],
+  "checkpoints": [
+    {
+      "id": "beacon_26",
+      "x": 1203,
+      "y": 355
+    }
+  ],
+  "spikes": [],
+  "acids": [
+    {
+      "x": 36,
+      "y": 1135,
+      "w": 114,
+      "h": 75
+    },
+    {
+      "x": 582,
+      "y": 1135,
+      "w": 324,
+      "h": 75
+    },
+    {
+      "x": 1268,
+      "y": 1135,
+      "w": 164,
+      "h": 75
+    }
+  ],
+  "lasers": [],
+  "optical_beams": [],
+  "sequences": [
+    {
+      "group_id": "overhaul_26_order",
+      "order": [
+        "overhaul_26_first",
+        "overhaul_26_second",
+        "overhaul_26_third"
+      ]
+    }
+  ],
+  "collectibles": [
+    {
+      "id": "log_26",
+      "x": 948,
+      "y": 1043,
+      "title": "The Relay Tower / Shift Notes",
+      "text": "The Relay Tower. Check the signal lines before you leave the service deck."
+    },
+    {
+      "id": "field_trace_26",
+      "x": 963,
+      "y": 999,
+      "title": "FIELD TRACE 26 / RELAY TOWER",
+      "text": "ECHO-7 field diagnostics: Give the vertical ascent a visible lower/upper power dependency and a planned return point.",
+      "required_links": [
+        "proof"
+      ],
+      "optional_investigation": true
+    },
+    {
+      "id": "service_challenge_26",
+      "x": 1359,
+      "y": 188,
+      "title": "Optional Diagnostics 26",
+      "text": "Optional master circuit cleared. The standard exit never depends on this side challenge.",
+      "required_links": [
+        "sector_26_validated"
+      ],
+      "optional_investigation": true
+    }
+  ],
+  "decorations": [
+    {
+      "type": "warning_stripe",
+      "x": 918,
+      "y": 847,
+      "w": 120
+    },
+    {
+      "type": "warning_stripe",
+      "x": 918,
+      "y": 607,
+      "w": 120
+    },
+    {
+      "type": "warning_stripe",
+      "x": 918,
+      "y": 367,
+      "w": 120
+    },
+    {
+      "type": "warning_stripe",
+      "x": 162,
+      "y": 367,
+      "w": 120
+    },
+    {
+      "type": "monitor",
+      "x": 1057,
+      "y": 975,
+      "text": "ENERGIZE"
+    },
+    {
+      "type": "monitor",
+      "x": 1047,
+      "y": 736,
+      "text": "SELECT A / B"
+    },
+    {
+      "type": "monitor",
+      "x": 1057,
+      "y": 495,
+      "text": "HOLD A + POWER"
+    },
+    {
+      "type": "monitor",
+      "x": 1055,
+      "y": 262,
+      "text": "ESCAPE 19s"
+    },
+    {
+      "type": "monitor",
+      "x": 331,
+      "y": 181,
+      "text": "EXIT LOCK"
+    },
+    {
+      "type": "monitor",
+      "x": 976,
+      "y": 961,
+      "text": "FORENSIC TRACE 26"
+    },
+    {
+      "type": "monitor",
+      "x": 217,
+      "y": 911,
+      "text": "ACCESS / 26"
+    },
+    {
+      "type": "warning_stripe",
+      "x": 379,
+      "y": 903,
+      "w": 78
+    }
+  ],
+  "latching_relays": [
+    {
+      "link_id": "proof",
+      "x": 1087,
+      "y": 595,
+      "required_links": [
+        "A",
+        "power"
+      ]
+    },
+    {
+      "link_id": "sector_26_validated",
+      "x": 1347,
+      "y": 230,
+      "required_links": [
+        "overhaul_26_order"
+      ]
+    }
+  ],
+  "routing_consoles": [
+    {
+      "id": "selector",
+      "route_id": "supply",
+      "x": 1087,
+      "y": 835,
+      "a_signal": "A",
+      "b_signal": "B"
+    }
+  ],
+  "signal_inverters": [],
+  "npcs": [
+    {
+      "id": "kip",
+      "x": 250,
+      "y": 1075,
+      "dialogue": [
+        "The Relay Tower. Our lift has ambitions. Mostly upward.",
+        "Set the supply selector to A.",
+        "Start the clock after the other lock lights are green."
+      ]
+    }
+  ],
+  "springs": [],
+  "dash_recharges": [],
+  "one_way_platforms": [
+    {
+      "id": "walk0",
+      "x": 1308,
+      "y": 755,
+      "w": 83,
+      "h": 12
+    },
+    {
+      "id": "walk1",
+      "x": 1268,
+      "y": 675,
+      "w": 83,
+      "h": 12
+    },
+    {
+      "id": "walk2",
+      "x": 1308,
+      "y": 595,
+      "w": 83,
+      "h": 12
+    },
+    {
+      "id": "walk3",
+      "x": 1308,
+      "y": 515,
+      "w": 83,
+      "h": 12
+    },
+    {
+      "id": "walk4",
+      "x": 1268,
+      "y": 435,
+      "w": 83,
+      "h": 12
+    },
+    {
+      "id": "walk5",
+      "x": 1308,
+      "y": 355,
+      "w": 83,
+      "h": 12
+    },
+    {
+      "id": "overhaul_step_26_0",
+      "x": 215,
+      "y": 1014,
+      "w": 78,
+      "h": 12
+    },
+    {
+      "id": "overhaul_step_26_1",
+      "x": 298,
+      "y": 955,
+      "w": 78,
+      "h": 12
+    },
+    {
+      "id": "overhaul_step_26_2",
+      "x": 379,
+      "y": 891,
+      "w": 78,
+      "h": 12
+    },
+    {
+      "id": "validation_foot_26_0",
+      "x": 1244,
+      "y": 292,
+      "w": 78,
+      "h": 12
+    },
+    {
+      "id": "validation_foot_26_1",
+      "x": 1329,
+      "y": 230,
+      "w": 78,
+      "h": 12
+    }
+  ],
+  "dash_barriers": [],
+  "level_id": 26,
+  "width": 1468,
+  "height": 1210,
+  "name": "Chamber 26 // The Relay Tower",
+  "abilities": {
+    "wall_jump": true,
+    "dash": true
+  },
+  "spawn": [
+    188,
+    1029
+  ],
+  "exit": [
+    365,
+    275
+  ],
+  "hint_route": [
+    "A",
+    "power",
+    "proof",
+    "B",
+    "timer"
+  ],
+  "hint_notes": {
+    "A": [
+      "Set the supply selector to A.",
+      "Set the supply selector to A.",
+      "Set the supply selector to A."
+    ],
+    "power": [
+      "Start the generator to bring the circuit online.",
+      "Start the generator to bring the circuit online.",
+      "Start the generator to bring the circuit online."
+    ],
+    "proof": [
+      "Keep A and power live, then interact with the recorder to hold the reading.",
+      "Keep A and power live, then interact with the recorder to hold the reading.",
+      "Keep A and power live, then interact with the recorder to hold the reading."
+    ],
+    "B": [
+      "Transfer the selector to B after recording the A-side reading.",
+      "Transfer the selector to B after recording the A-side reading.",
+      "Transfer the selector to B after recording the A-side reading."
+    ],
+    "timer": [
+      "Start the clock after the other lock lights are green.",
+      "Start the clock after the other lock lights are green.",
+      "Start the clock after the other lock lights are green."
+    ]
+  },
+  "solution_steps": [
+    "Set the supply selector to A.",
+    "Start the generator to bring the circuit online.",
+    "Keep A and power live, then interact with the recorder to hold the reading.",
+    "Transfer the selector to B after recording the A-side reading.",
+    "Start the clock after the other lock lights are green."
+  ],
+  "subtitle": "Set the supply selector to A.  //  SERVICE DETOUR: Visit three elevated diagnostics in the numbered order; an incorrect input resets the chain.",
+  "chapter": 3,
+  "theme": "power",
+  "topology": "Vertical Shaft",
+  "overhaul_version": 1,
+  "overhaul_design": {
+    "profile": "sequence",
+    "route": "right_rise",
+    "actual_direction": 1,
+    "mandatory": true,
+    "service_platform_count": 3
+  },
+  "secondary_validation_1": {
+    "checkpoint": "beacon_26",
+    "extra_platforms": 2,
+    "signal": "sector_26_validated"
+  },
+  "side_challenge_policy": {
+    "campaign_blocking": false,
+    "optional_signals": [
+      "overhaul_26_order",
+      "sector_26_validated"
+    ],
+    "reason": "Not proven traversable in the Pygame engine; preserve main progression."
+  },
+  "architectural_overhaul_v2": {
+    "archetype": "Vaulted Bulkhead Hall",
+    "chapter": 3,
+    "theme": "power",
+    "original_tile_count": 13,
+    "final_tile_count": 27,
+    "thickened_decks": 1,
+    "added_piers": 0,
+    "added_corbels": 4,
+    "added_soffits": 3,
+    "added_buttresses": 4
+  }
+}

@@ -1,0 +1,303 @@
+{
+  "level_id": 2,
+  "chapter": 1,
+  "theme": "awakening",
+  "name": "Chamber 02 // Locked Passage",
+  "subtitle": "Drop both counterweights. The upper lock controls the dividing wall.",
+  "width": 1830,
+  "height": 850,
+  "spawn": [
+    90,
+    664
+  ],
+  "exit": [
+    1706,
+    350
+  ],
+  "tiles": [
+    [
+      0,
+      0,
+      40,
+      850
+    ],
+    [
+      40,
+      0,
+      1750,
+      32
+    ],
+    [
+      1790,
+      0,
+      40,
+      850
+    ],
+    [
+      40,
+      710,
+      1750,
+      140
+    ],
+    [
+      240,
+      630,
+      210,
+      20
+    ],
+    [
+      500,
+      550,
+      275,
+      20
+    ],
+    [
+      795,
+      470,
+      195,
+      20
+    ],
+    [
+      1000,
+      32,
+      24,
+      535
+    ],
+    [
+      1190,
+      620,
+      300,
+      20
+    ],
+    [
+      1420,
+      530,
+      125,
+      20
+    ],
+    [
+      1570,
+      450,
+      50,
+      20
+    ],
+    [
+      1635,
+      310,
+      155,
+      20
+    ],
+    [
+      1635,
+      430,
+      155,
+      20
+    ]
+  ],
+  "ladders": [],
+  "crates": [
+    {
+      "id": "c2_upper",
+      "x": 610,
+      "y": 514
+    },
+    {
+      "id": "c2_lower",
+      "x": 1260,
+      "y": 584
+    }
+  ],
+  "plates": [
+    {
+      "link_id": "plate_2a",
+      "x": 790,
+      "y": 710
+    },
+    {
+      "link_id": "plate_2b",
+      "x": 1510,
+      "y": 710
+    }
+  ],
+  "switches": [
+    {
+      "link_id": "sw_upper_gate",
+      "x": 896,
+      "y": 470,
+      "mode": "permanent",
+      "duration": 0
+    }
+  ],
+  "doors": [
+    {
+      "id": "d2_mid",
+      "x": 1000,
+      "y": 567,
+      "w": 24,
+      "h": 143,
+      "required_links": [
+        "sw_upper_gate"
+      ],
+      "logic": "ALL"
+    },
+    {
+      "id": "d2_exit",
+      "x": 1635,
+      "y": 330,
+      "w": 24,
+      "h": 100,
+      "required_links": [
+        "plate_2a",
+        "plate_2b"
+      ],
+      "logic": "ALL"
+    }
+  ],
+  "moving_platforms": [],
+  "conveyors": [],
+  "wind_zones": [],
+  "water_zones": [],
+  "valves": [],
+  "generators": [],
+  "cables": [
+    {
+      "link_id": "sw_upper_gate",
+      "points": [
+        [
+          908,
+          456
+        ],
+        [
+          908,
+          692
+        ],
+        [
+          1008,
+          692
+        ],
+        [
+          1008,
+          638
+        ]
+      ]
+    },
+    {
+      "link_id": "plate_2a",
+      "points": [
+        [
+          802,
+          696
+        ],
+        [
+          802,
+          750
+        ],
+        [
+          1643,
+          750
+        ],
+        [
+          1643,
+          380
+        ]
+      ]
+    },
+    {
+      "link_id": "plate_2b",
+      "points": [
+        [
+          1522,
+          696
+        ],
+        [
+          1522,
+          756
+        ],
+        [
+          1643,
+          756
+        ],
+        [
+          1643,
+          380
+        ]
+      ]
+    }
+  ],
+  "mirrors": [],
+  "crushers": [],
+  "steam_vents": [],
+  "collapsing_platforms": [],
+  "checkpoints": [
+    {
+      "id": "cp2_1",
+      "x": 1100,
+      "y": 710
+    }
+  ],
+  "spikes": [],
+  "acids": [],
+  "lasers": [],
+  "optical_beams": [],
+  "sequences": [],
+  "collectibles": [
+    {
+      "id": "log_02",
+      "x": 280,
+      "y": 598,
+      "title": "Security Notice #04",
+      "text": "Dual-weight interlocks prevent unmanned drones from breaching Sector B."
+    }
+  ],
+  "decorations": [
+    {
+      "type": "monitor",
+      "x": 870,
+      "y": 381,
+      "text": "DIVIDER"
+    },
+    {
+      "type": "monitor",
+      "x": 1510,
+      "y": 621,
+      "text": "WEIGHT B"
+    }
+  ],
+  "solution_steps": [
+    "Drop the west cargo and move it to the first scale. Climb the split-level stairs to release the dividing wall.",
+    "Roll the east cargo from its shelf onto the second scale and climb past it to the exit."
+  ],
+  "hint_route": [
+    "plate_2a",
+    "plate_2b"
+  ],
+  "npcs": [
+    {
+      "id": "kip",
+      "x": 160,
+      "y": 710
+    }
+  ],
+  "abilities": {
+    "wall_jump": false,
+    "dash": false
+  },
+  "springs": [],
+  "dash_recharges": [],
+  "one_way_platforms": [],
+  "dash_barriers": [],
+  "routing_consoles": [],
+  "latching_relays": [],
+  "hint_notes": {
+    "plate_2a": [
+      "Drop both counterweights. The upper lock controls the dividing wall.",
+      "Drop the west cargo and move it to the first scale. Climb the split-level stairs to release the dividing wall.",
+      "Roll the east cargo from its shelf onto the second scale and climb past it to the exit."
+    ],
+    "plate_2b": [
+      "Drop both counterweights. The upper lock controls the dividing wall.",
+      "Drop the west cargo and move it to the first scale. Climb the split-level stairs to release the dividing wall.",
+      "Roll the east cargo from its shelf onto the second scale and climb past it to the exit."
+    ]
+  }
+}

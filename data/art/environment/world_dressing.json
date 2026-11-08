@@ -1,0 +1,76 @@
+{
+  "coordinate_system": "world_pixels",
+  "chapter_policy": {
+    "awakening": [],
+    "surface": [
+      "vines_hanging_cluster",
+      "bush_moss_flora"
+    ]
+  },
+  "levels": {
+    "71": [
+      {
+        "sprite": "bush_moss_flora",
+        "world": [
+          331,
+          607
+        ],
+        "size": [
+          40,
+          17
+        ],
+        "anchor": "bottom_center",
+        "layer": "back_terrain",
+        "role": "decorative"
+      }
+    ],
+    "73": [
+      {
+        "sprite": "vines_hanging_cluster",
+        "world": [
+          898,
+          382
+        ],
+        "size": [
+          33,
+          35
+        ],
+        "anchor": "top_center",
+        "layer": "back_terrain",
+        "role": "decorative"
+      }
+    ],
+    "78": [
+      {
+        "sprite": "vines_hanging_cluster",
+        "world": [
+          1273,
+          380
+        ],
+        "size": [
+          33,
+          35
+        ],
+        "anchor": "top_center",
+        "layer": "back_terrain",
+        "role": "decorative"
+      }
+    ],
+    "80": [
+      {
+        "sprite": "bush_moss_flora",
+        "world": [
+          2419,
+          880
+        ],
+        "size": [
+          40,
+          17
+        ],
+        "anchor": "bottom_center",
+        "layer": "back_terrain",
+        "role": "decorative"
+      }
+    ]
+  }
+}

@@ -1,0 +1,56 @@
+{
+  "unlocked_level": 3,
+  "current_level": 3,
+  "completed_levels": [
+    1,
+    2
+  ],
+  "collected_logs": [
+    "log_01",
+    "log_02",
+    "log_03"
+  ],
+  "settings": {
+    "master_volume": 0.8,
+    "sfx_volume": 0.8,
+    "music_volume": 0.5,
+    "fullscreen": true,
+    "camera_shake": true,
+    "keybinds": {
+      "left": [
+        97,
+        1073741904
+      ],
+      "right": [
+        100,
+        1073741903
+      ],
+      "up": [
+        119,
+        1073741906
+      ],
+      "down": [
+        115,
+        1073741905
+      ],
+      "jump": [
+        32,
+        119,
+        1073741906
+      ],
+      "interact": [
+        101
+      ],
+      "run": [
+        1073742049,
+        1073742053
+      ],
+      "restart": [
+        114
+      ],
+      "pause": [
+        27
+      ]
+    }
+  }
+}

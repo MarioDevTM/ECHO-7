@@ -1,0 +1,577 @@
+{
+  "tiles": [
+    [
+      0,
+      0,
+      36,
+      720
+    ],
+    [
+      3864,
+      0,
+      36,
+      720
+    ],
+    [
+      36,
+      0,
+      3828,
+      30
+    ],
+    [
+      150,
+      585,
+      432,
+      135
+    ],
+    [
+      766,
+      585,
+      70,
+      30
+    ],
+    [
+      1038,
+      585,
+      90,
+      30
+    ],
+    [
+      1312,
+      585,
+      390,
+      135
+    ],
+    [
+      2198,
+      585,
+      340,
+      135
+    ],
+    [
+      2722,
+      585,
+      432,
+      135
+    ],
+    [
+      3338,
+      585,
+      362,
+      135
+    ],
+    [
+      1093,
+      568,
+      10,
+      17
+    ],
+    [
+      3461,
+      451,
+      155,
+      18
+    ],
+    [
+      3598,
+      469,
+      18,
+      116
+    ]
+  ],
+  "ladders": [],
+  "crates": [
+    {
+      "id": "load",
+      "x": 851,
+      "y": 549
+    }
+  ],
+  "plates": [
+    {
+      "link_id": "freight",
+      "x": 1045,
+      "y": 585
+    }
+  ],
+  "switches": [],
+  "doors": [
+    {
+      "id": "surface_lock",
+      "x": 3461,
+      "y": 469,
+      "w": 20,
+      "h": 116,
+      "required_links": [
+        "alpha",
+        "B",
+        "freight"
+      ]
+    }
+  ],
+  "moving_platforms": [
+    {
+      "id": "car0",
+      "x": 1706,
+      "y": 571,
+      "w": 108,
+      "h": 16,
+      "end_x": 2085,
+      "end_y": 571,
+      "speed": 120,
+      "active_by_default": false,
+      "required_links": [
+        "freight"
+      ]
+    },
+    {
+      "id": "car1",
+      "x": 2543,
+      "y": 561,
+      "w": 65,
+      "h": 16,
+      "end_x": 2652,
+      "end_y": 519,
+      "speed": 120,
+      "active_by_default": true,
+      "required_links": []
+    }
+  ],
+  "conveyors": [
+    {
+      "id": "freight_line",
+      "x": 836,
+      "y": 585,
+      "w": 202,
+      "h": 18,
+      "speed": -85,
+      "reversed_by": "A"
+    }
+  ],
+  "wind_zones": [],
+  "water_zones": [],
+  "valves": [],
+  "generators": [
+    {
+      "link_id": "overhaul_58_power",
+      "x": 374,
+      "y": 411
+    }
+  ],
+  "cables": [
+    {
+      "link_id": "freight",
+      "points": [
+        [
+          1054,
+          573
+        ],
+        [
+          1054,
+          609
+        ],
+        [
+          1523,
+          609
+        ],
+        [
+          1523,
+          575
+        ]
+      ]
+    },
+    {
+      "link_id": "alpha",
+      "points": [
+        [
+          1507,
+          573
+        ],
+        [
+          1507,
+          607
+        ],
+        [
+          3469,
+          607
+        ],
+        [
+          3469,
+          529
+        ]
+      ]
+    },
+    {
+      "link_id": "B",
+      "points": [
+        [
+          2378,
+          573
+        ],
+        [
+          2378,
+          614
+        ],
+        [
+          3469,
+          614
+        ],
+        [
+          3469,
+          529
+        ]
+      ]
+    },
+    {
+      "link_id": "freight",
+      "points": [
+        [
+          1045,
+          573
+        ],
+        [
+          1045,
+          621
+        ],
+        [
+          3469,
+          621
+        ],
+        [
+          3469,
+          529
+        ]
+      ]
+    }
+  ],
+  "mirrors": [],
+  "crushers": [
+    {
+      "id": "ram4",
+      "x": 2903,
+      "y": 370,
+      "w": 74,
+      "h": 42,
+      "travel": 172,
+      "period": 2.9,
+      "disabled_by": [
+        "A"
+      ]
+    }
+  ],
+  "steam_vents": [
+    {
+      "id": "seam1",
+      "x": 1202,
+      "y": 500,
+      "w": 36,
+      "h": 134,
+      "period": 3.1,
+      "duty_cycle": 0.43,
+      "disabled_by": []
+    },
+    {
+      "id": "seam4",
+      "x": 3228,
+      "y": 500,
+      "w": 36,
+      "h": 134,
+      "period": 3.1,
+      "duty_cycle": 0.43,
+      "disabled_by": []
+    }
+  ],
+  "collapsing_platforms": [],
+  "checkpoints": [
+    {
+      "id": "beacon_58",
+      "x": 2473,
+      "y": 585
+    }
+  ],
+  "spikes": [],
+  "acids": [
+    {
+      "x": 36,
+      "y": 645,
+      "w": 114,
+      "h": 75
+    },
+    {
+      "x": 582,
+      "y": 645,
+      "w": 184,
+      "h": 75
+    },
+    {
+      "x": 1128,
+      "y": 645,
+      "w": 184,
+      "h": 75
+    },
+    {
+      "x": 1702,
+      "y": 645,
+      "w": 496,
+      "h": 75
+    },
+    {
+      "x": 2538,
+      "y": 645,
+      "w": 184,
+      "h": 75
+    },
+    {
+      "x": 3154,
+      "y": 645,
+      "w": 184,
+      "h": 75
+    },
+    {
+      "x": 3700,
+      "y": 645,
+      "w": 164,
+      "h": 75
+    }
+  ],
+  "lasers": [],
+  "optical_beams": [],
+  "sequences": [],
+  "collectibles": [
+    {
+      "id": "log_58",
+      "x": 1354,
+      "y": 553,
+      "title": "Reactor Feed Line / Shift Notes",
+      "text": "Reactor Feed Line. Check the signal lines before you leave the service deck."
+    },
+    {
+      "id": "field_trace_58",
+      "x": 504,
+      "y": 509,
+      "title": "FIELD TRACE 58 / SYNCHRONIZED BELT FERRY",
+      "text": "ECHO-7 field diagnostics: Stage freight on a moving transfer, latch a proof, then reroute power for the remaining press.",
+      "required_links": [
+        "alpha"
+      ],
+      "optional_investigation": true
+    },
+    {
+      "id": "service_challenge_58",
+      "x": 2629,
+      "y": 418,
+      "title": "Optional Diagnostics 58",
+      "text": "Optional master circuit cleared. The standard exit never depends on this side challenge.",
+      "required_links": [
+        "sector_58_validated"
+      ],
+      "optional_investigation": true
+    }
+  ],
+  "decorations": [
+    {
+      "type": "monitor",
+      "x": 982,
+      "y": 493,
+      "text": "RECEIVING SCALE"
+    },
+    {
+      "type": "monitor",
+      "x": 1477,
+      "y": 485,
+      "text": "HOLD FREIGHT"
+    },
+    {
+      "type": "monitor",
+      "x": 2328,
+      "y": 486,
+      "text": "SELECT A / B"
+    },
+    {
+      "type": "monitor",
+      "x": 2732,
+      "y": 485,
+      "text": "PRESS LINE"
+    },
+    {
+      "type": "monitor",
+      "x": 3484,
+      "y": 411,
+      "text": "EXIT LOCK"
+    },
+    {
+      "type": "monitor",
+      "x": 517,
+      "y": 471,
+      "text": "FORENSIC TRACE 58"
+    },
+    {
+      "type": "monitor",
+      "x": 199,
+      "y": 422,
+      "text": "ACCESS / 58"
+    },
+    {
+      "type": "warning_stripe",
+      "x": 356,
+      "y": 423,
+      "w": 78
+    }
+  ],
+  "latching_relays": [
+    {
+      "link_id": "alpha",
+      "x": 1507,
+      "y": 585,
+      "required_links": [
+        "freight"
+      ]
+    },
+    {
+      "link_id": "sector_58_validated",
+      "x": 2617,
+      "y": 460,
+      "required_links": [
+        "overhaul_58_power"
+      ]
+    }
+  ],
+  "routing_consoles": [
+    {
+      "id": "selector",
+      "route_id": "supply",
+      "x": 2368,
+      "y": 585,
+      "a_signal": "A",
+      "b_signal": "B"
+    }
+  ],
+  "signal_inverters": [],
+  "npcs": [
+    {
+      "id": "kip",
+      "x": 250,
+      "y": 585,
+      "dialogue": [
+        "Reactor Feed Line. If you hear applause, that is a loose pipe.",
+        "Move the cargo right until it rests on the receiving scale.",
+        "Transfer the selector to B after recording the A-side reading."
+      ]
+    }
+  ],
+  "springs": [],
+  "dash_recharges": [],
+  "one_way_platforms": [
+    {
+      "id": "walk0",
+      "x": 1925,
+      "y": 670,
+      "w": 56,
+      "h": 12
+    },
+    {
+      "id": "overhaul_step_58_0",
+      "x": 197,
+      "y": 525,
+      "w": 78,
+      "h": 12
+    },
+    {
+      "id": "overhaul_step_58_1",
+      "x": 267,
+      "y": 467,
+      "w": 78,
+      "h": 12
+    },
+    {
+      "id": "overhaul_step_58_2",
+      "x": 356,
+      "y": 411,
+      "w": 78,
+      "h": 12
+    },
+    {
+      "id": "validation_foot_58_0",
+      "x": 2514,
+      "y": 522,
+      "w": 78,
+      "h": 12
+    },
+    {
+      "id": "validation_foot_58_1",
+      "x": 2599,
+      "y": 460,
+      "w": 78,
+      "h": 12
+    }
+  ],
+  "dash_barriers": [],
+  "level_id": 58,
+  "width": 3900,
+  "height": 720,
+  "name": "Chamber 58 // Reactor Feed Line",
+  "abilities": {
+    "wall_jump": true,
+    "dash": true
+  },
+  "spawn": [
+    188,
+    539
+  ],
+  "exit": [
+    3518,
+    505
+  ],
+  "hint_route": [
+    "freight",
+    "alpha",
+    "B"
+  ],
+  "hint_notes": {
+    "freight": [
+      "Move the cargo right until it rests on the receiving scale.",
+      "Move the cargo right until it rests on the receiving scale.",
+      "Move the cargo right until it rests on the receiving scale."
+    ],
+    "alpha": [
+      "Keep freight live, then interact with the recorder to hold the reading.",
+      "Keep freight live, then interact with the recorder to hold the reading.",
+      "Keep freight live, then interact with the recorder to hold the reading."
+    ],
+    "B": [
+      "Transfer the selector to B after recording the A-side reading.",
+      "Transfer the selector to B after recording the A-side reading.",
+      "Transfer the selector to B after recording the A-side reading."
+    ]
+  },
+  "solution_steps": [
+    "Move the cargo right until it rests on the receiving scale.",
+    "Keep freight live, then interact with the recorder to hold the reading.",
+    "Transfer the selector to B after recording the A-side reading."
+  ],
+  "subtitle": "Move the cargo right until it rests on the receiving scale.  //  SERVICE DETOUR: Explore the elevated service detour and energize its auxiliary generator.",
+  "chapter": 6,
+  "theme": "furnace",
+  "topology": "Synchronized Belt Ferry",
+  "overhaul_version": 1,
+  "overhaul_design": {
+    "profile": "generator",
+    "route": "left_up",
+    "actual_direction": 1,
+    "mandatory": true,
+    "service_platform_count": 3
+  },
+  "secondary_validation_1": {
+    "checkpoint": "beacon_58",
+    "extra_platforms": 2,
+    "signal": "sector_58_validated"
+  },
+  "side_challenge_policy": {
+    "campaign_blocking": false,
+    "optional_signals": [
+      "overhaul_58_power",
+      "sector_58_validated"
+    ],
+    "reason": "Not proven traversable in the Pygame engine; preserve main progression."
+  }
+}
