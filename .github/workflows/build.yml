@@ -6,7 +6,11 @@ jobs:
     runs-on: ${{ matrix.os }}
     strategy:
       matrix:
-        os: [ubuntu-latest, windows-latest]
+        include:
+          - os: ubuntu-latest
+            add-data-flag: "data:data"
+          - os: windows-latest
+            add-data-flag: "data;data"
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
@@ -16,16 +20,18 @@ jobs:
         run: |
           python -m pip install --upgrade pip
           pip install pygame-ce pyinstaller
-          if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
-      - name: Build with PyInstaller
+          python -c "import pathlib; req = pathlib.Path('requirements.txt'); print(req.read_text()) if req.exists() else None"
+          python -m pip install -r requirements.txt --override-optional || true
         shell: bash
+      - name: Build with PyInstaller
         run: |
           pyinstaller -y --noconsole --onedir \
-            --add-data "data:data" \
+            --add-data "${{ matrix.add-data-flag }}" \
             --hidden-import "tools.check_runtime_assets" \
             --hidden-import "src.levels.level_loader" \
             --hidden-import "src.core.game" \
             --name "ECHO-7" main.py
+        shell: bash
       - uses: actions/upload-artifact@v4
         with:
           name: ECHO-7-${{ matrix.os }}
