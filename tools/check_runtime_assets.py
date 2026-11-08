@@ -40,15 +40,13 @@ def check_runtime_assets(root: Path) -> list[str]:
             except (OSError, ValueError) as exc:
                 problems.append(f"invalid image: {rel} ({exc})")
 
+    # Chapter painting/scenic/pixel PNG plates are reference or offline-build
+    # assets, not required by the procedural Pygame background renderer.
+    # Standalone Linux/Windows distributions can omit these large files.
+    # Keep mandatory music, gameplay sprites and levels strictly validated.
     for ch in CHAPTERS:
-        require(root / f'data/art/backgrounds/chapter_{ch:02d}.png', (1280,720))
-        require(root / f'data/art/backgrounds/scenic/chapter_{ch:02d}_scenic.png', (1280,720))
         require(root / f'data/music/chapter_{ch}_quiet.wav')
         require(root / f'data/music/chapter_{ch}_rhythm.wav')
-    for ch in (1, 3, 4, 5):
-        require(root / f'data/art/backgrounds/pixel/chapter_{ch:02}_hero.png', (640, 360))
-        for i in range(3):
-            require(root / f'data/art/backgrounds/pixel/chapter_{ch:02}_module_{i}.png', (160, 360))
     require(root / 'data/music/surface_resolution.wav')
     for name in ESSENTIAL_ENV:
         require(root / f'data/art/environment/{name}.png')
