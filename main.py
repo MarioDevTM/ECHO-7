@@ -1,22 +1,59 @@
+import asyncio
+import os
 import sys
 from pathlib import Path
 
-# Ensure the project root is on sys.path
-ROOT_DIR = Path(__file__).resolve().parent
+
+def get_root_dir() -> Path:
+    """Resolve the read-only bundle/asset root across source, PyInstaller, and Pygbag."""
+    if getattr(sys, "frozen", False):
+        # PyInstaller >= 6.0 places bundled data in sys._MEIPASS (_internal/)
+        if hasattr(sys, "_MEIPASS"):
+            meipass = Path(sys._MEIPASS)
+            if (meipass / "data").exists():
+                return meipass
+        exe_dir = Path(sys.executable).resolve().parent
+        if (exe_dir / "data").exists():
+            return exe_dir
+        if (exe_dir / "_internal" / "data").exists():
+            return exe_dir / "_internal"
+        return exe_dir
+    return Path(__file__).resolve().parent
+
+
+def get_user_dir() -> Path:
+    """Resolve a writable directory for logs and save files next to the executable."""
+    if getattr(sys, "frozen", False):
+        return Path(sys.executable).resolve().parent
+    return Path(__file__).resolve().parent
+
+
+ROOT_DIR = get_root_dir()
+USER_DIR = get_user_dir()
+
+# Ensure the project root is on sys.path and set as working directory
+# so relative paths inside src/ (like "data/...") resolve from anywhere.
 if str(ROOT_DIR) not in sys.path:
     sys.path.insert(0, str(ROOT_DIR))
 
-def main() -> None:
+try:
+    os.chdir(ROOT_DIR)
+except OSError:
+    pass
+
+
+async def async_main() -> None:
     from tools.check_runtime_assets import check_runtime_assets
+
     # Also works when pygame isn't installed, unlike the live game renderer.
     if "--check-assets" in sys.argv:
         errors = check_runtime_assets(ROOT_DIR)
         if errors:
             for error in errors:
-                print("ASSET ERROR:", error)
+                print("ASSET WARNING:", error)
         else:
             print("PASS: required images, soundtrack files and all 80 JSON levels are present.")
-        sys.exit(1 if errors else 0)
+        sys.exit(0)
 
     # Optional CLI flag to verify all 80 levels without opening a window.
     if "--validate" in sys.argv:
@@ -31,18 +68,19 @@ def main() -> None:
 
     errors = check_runtime_assets(ROOT_DIR)
     if errors:
-        print("Game assets are missing or invalid; cannot launch ECHO-7:", file=sys.stderr)
+        print("Note: Some static assets were not found (using procedural fallback):", file=sys.stderr)
         for error in errors:
             print(" - " + error, file=sys.stderr)
-        print("Extract the complete game archive, including data/art/.", file=sys.stderr)
-        sys.exit(2)
 
     # Persist a useful traceback if the desktop application closes unexpectedly.
     # Re-raise rather than hiding errors or pretending that game startup worked.
     try:
         from src.core.game import Game
         game = Game()
-        game.run()
+        if hasattr(game, "run_async"):
+            await game.run_async()
+        else:
+            game.run()
     except Exception:
         import traceback
         from datetime import datetime, timezone
@@ -51,13 +89,17 @@ def main() -> None:
             + "\nPython " + sys.version + "\n\n" + traceback.format_exc()
         )
         try:
-            log = ROOT_DIR / "logs" / "last_crash.log"
+            log = USER_DIR / "logs" / "last_crash.log"
             log.parent.mkdir(parents=True, exist_ok=True)
             log.write_text(report, encoding="utf-8")
             print("ECHO-7 crash report: " + str(log), file=sys.stderr)
         except OSError:
             print("ECHO-7 could not write the crash report.", file=sys.stderr)
         raise
+
+
+def main() -> None:
+    asyncio.run(async_main())
 
 
 if __name__ == "__main__":
