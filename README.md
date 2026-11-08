@@ -10,12 +10,43 @@
 </p>
 
 <p align="center">
-  <img alt="Status: Prototype" src="https://img.shields.io/badge/status-prototype-f59e0b" />
+  <img alt="Status: Alpha prototype" src="https://img.shields.io/badge/status-alpha%20prototype-f59e0b" />
   <img alt="Python 3.11 or later" src="https://img.shields.io/badge/Python-3.11%2B-3776ab" />
   <img alt="Pygame-ce" src="https://img.shields.io/badge/engine-Pygame--ce-25855a" />
   <img alt="80 levels" src="https://img.shields.io/badge/levels-80-64748b" />
   <img alt="8 chapters" src="https://img.shields.io/badge/chapters-8-64748b" />
 </p>
+
+<p align="center">
+  <a href="https://github.com/MarioDevTM/ECHO-7/releases">
+    <img alt="Download ECHO-7 for Windows" src="https://img.shields.io/badge/Download_for_Windows-0078D4?style=for-the-badge&logo=windows&logoColor=white" />
+  </a>
+  <a href="https://github.com/MarioDevTM/ECHO-7/releases">
+    <img alt="Download ECHO-7 for Linux" src="https://img.shields.io/badge/Download_for_Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black" />
+  </a>
+</p>
+
+<p align="center">
+  <sub>Standalone desktop builds available via <a href="https://github.com/MarioDevTM/ECHO-7/releases">GitHub Releases</a>. No Python installation required.</sub>
+</p>
+
+---
+
+## Download ECHO-7
+
+**ECHO-7's initial alpha release is available for Windows and Linux.** Visit the [Releases page](https://github.com/MarioDevTM/ECHO-7/releases), open the alpha release, and download the ZIP archive for your operating system from its **Assets** section. Do not use GitHub's automatically generated **Source code (zip)** archive if you want the ready-to-play game.
+
+| Platform | Download | How to launch |
+|:--|:--|:--|
+| **Windows** | [Windows game build](https://github.com/MarioDevTM/ECHO-7/releases) | Extract the entire ZIP and run `ECHO-7.exe`. |
+| **Linux** | [Linux game build](https://github.com/MarioDevTM/ECHO-7/releases) | Extract the entire ZIP, open a terminal beside the `ECHO-7` executable, then run the commands below. |
+
+```bash
+chmod +x ./ECHO-7
+./ECHO-7
+```
+
+**Keep the extracted game folder intact**, including `_internal/` and any accompanying assets. The standalone versions do not require a separate Python or Pygame-ce installation. If you prefer to run or modify the source code, follow the developer instructions under [Running from source](#running-from-source).
 
 ---
 
@@ -23,7 +54,7 @@
 
 **ECHO-7** is a single-player, non-combat puzzle platformer set inside an abandoned technological facility. You control a small robot and advance by exploring interconnected chambers, using movement abilities, interacting with machinery, and solving environmental puzzles.
 
-The project combines precise platforming with switches, cargo crates, power-routing systems, conveyors, hazards, and chapter-specific challenges. It is a **work-in-progress prototype**, built as a personal Python game-development project rather than a finished commercial release.
+The project combines precise platforming with switches, cargo crates, power-routing systems, conveyors, hazards, and chapter-specific challenges. It is a **work-in-progress alpha prototype**, built as a personal Python game-development project rather than a finished commercial release.
 
 > **Current scope:** 80 level definitions across eight chapters, a restored classic robot design with an expanded animation system, chapter-specific audiovisual presentation, checkpoint/progress handling, and desktop menus/settings. Level files have been subjected to static checks, but the entire campaign has **not** been confirmed through a complete hands-on playthrough.
 
@@ -79,7 +110,9 @@ These previews use the **original character frames from `data/art/player/`**. Th
 | **07 — Broken Spire** | 61–70 | Precision movement, changing supports, and power management |
 | **08 — Surface Breach** | 71–80 | Multi-stage mechanisms, final routes, and the escape sequence |
 
-## Getting started
+## Running from source
+
+The instructions below are for developers and players who want to run the Python source. **For normal play, use the prebuilt Windows or Linux download above instead.**
 
 ### Requirements
 
@@ -199,7 +232,7 @@ python -m unittest discover -s src/tests
 
 If the game unexpectedly closes, inspect `logs/last_crash.log` if it was created, and run `python main.py` from a terminal to see the traceback.
 
-**Testing status:** Successful syntax, asset, and offline level checks do **not** prove that every puzzle is solvable or that every graphical and audio interaction works correctly. Full interactive testing—especially late-game rooms, scene transitions, and the finale—remains part of development.
+**Testing status:** Standalone Windows and Linux builds have been produced, but successful packaging, syntax, asset, and offline level checks do **not** prove that every puzzle is solvable or that every graphical and audio interaction works correctly. Full interactive testing—especially late-game rooms, scene transitions, and the finale—remains part of development.
 
 ## Development notes
 
@@ -211,13 +244,13 @@ The `tools/` directory contains scripts for generating or inspecting music, back
 
 - Playtest and refine difficulty, clarity, and solvability across the full 80-level campaign.
 - Polish transitions, animations, performance, and chapter-specific visual effects.
-- Expand user documentation, capture genuine gameplay screenshots, and improve distribution/packaging.
+- Expand user documentation, capture genuine gameplay screenshots, and continue improving distribution and packaging.
 
 ## Credits and licensing
 
 ECHO-7 is a personal game-development project. Its repository contains game code, authored/generated artwork, music assets, and development tools. 
 
-**License:** Consult the repository's [`LICENSE`](LICENSE) file once one has been added. If you choose the **MIT License**, include its complete text in a root-level `LICENSE` file with the correct copyright year and owner. Confirm that all code and assets you intend to license or redistribute are yours or are covered by compatible permissions; software, images, fonts, and music may have different rights.
+**License:** See the repository's [`LICENSE`](LICENSE) file for its stated licensing terms. Confirm that any code and assets you distribute are yours or covered by compatible permissions; software, artwork, fonts, and music may have different rights.
 
 ---
 
