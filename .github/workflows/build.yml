@@ -20,8 +20,7 @@ jobs:
         run: |
           python -m pip install --upgrade pip
           pip install pygame-ce pyinstaller
-          python -c "import pathlib; req = pathlib.Path('requirements.txt'); print(req.read_text()) if req.exists() else None"
-          python -m pip install -r requirements.txt --override-optional || true
+          if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
         shell: bash
       - name: Build with PyInstaller
         run: |
